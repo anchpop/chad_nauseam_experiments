@@ -16,12 +16,16 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '2%',
+    padding: '5%',
     width: '100%',
     height: '100%',
+  },
+  submitButton: {
+    width: "100%", height: "100%", justifyContent: 'center', alignItems: 'center', backgroundColor: "rgb(80, 200, 120)"
   },
   submitButtonText: {
     color: baseTheme.buttonTextColor,
     fontSize: 24,
   },
+
 })
