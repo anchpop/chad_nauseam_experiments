@@ -1,0 +1,12 @@
+{
+    "english": [
+        {"original": "youre", "permutated": "you are"},
+        {"original": "hes", "permutated": "he is"},
+        {"original": "shes", "permutated": "she is"},
+        {"original": "dont", "permutated": "do not"},
+        {"original": "isnt", "permutated": "is not"},
+        {"original": "it is", "permutated": "its"}
+    ],
+    "french": [
+    ]
+}

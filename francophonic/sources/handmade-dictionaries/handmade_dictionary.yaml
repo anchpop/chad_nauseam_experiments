@@ -1,0 +1,54 @@
+# 
+# When adding verbs, make sure you put in the conjugations for passéSimple, imparfait, présent, passéComposé, all as seperate words. 
+# And don't forget the plain infinitive!
+# As an example:
+#   murmuré:
+#   - conjugations:
+#       passéComposé:
+#       - j'ai
+#       - tu as
+#       - il a
+#       - elle a
+#       - nous avons
+#       - vous avez
+#       - ils ont
+#       - elles ont
+#     display: murmuré
+#     gender: NA
+#     infinitive: murmurer
+#     pos: verb
+#     translations:
+#       - whisper
+#   murmurer:
+#   - display: murmurer
+#     gender: NA
+#     infinitive: murmurer
+#     pos: verb
+#     translations:
+#     - to whisper
+# 
+
+elles:
+- display: elles
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+exemple:
+- display: exemple
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+france:
+- display: france
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+pense:
+- display: pense
+  gender: ''
+  pos: ''
+  translations:
+  - ''

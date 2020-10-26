@@ -1,0 +1,1 @@
+export enum ProblemType {translateFrenchToEnglish, translateEnglishToFrench, transcribeSpokenFrench, frenchGender, frenchConjugation}
