@@ -23,7 +23,7 @@ def main():
 
 
 
-    dir = "../../francophonic-2/assets/audio/french/"
+    dir = "../../cn_experiments/assets/audio/french/"
     voice_name = "fr-FR-Wavenet-C" # C is a good female voice, D is a good male voice. D seem to be a bit slower than C.
 
 

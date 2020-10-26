@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Animated, KeyboardAvoidingView, TextInput, TouchableOpacity,  Button, StyleSheet, Text, View } from 'react-native';
+import { Animated, KeyboardAvoidingView, TextInput, TouchableOpacity, Button, StyleSheet, Text, View } from 'react-native';
 import { baseTheme, styles } from "./styles"
 import { EDIT_TEXT, SUBMIT, MODIFY_PERFORMANCE } from './redux/actions'
 import { getFirstSentence, lineToWordsEnglish, computeWordsScoresEnglish, lineToWordsFrench, clamp } from "./redux/selectors"
-import sentences, {Sentence} from './data/sentencedictionary'
+import sentences, { Sentence } from './data/sentencedictionary'
 import { Header } from 'react-navigation'
 import { Audio } from 'expo-av'
 import moment from 'moment'
@@ -137,78 +137,77 @@ class Screen2 extends React.Component<{ textContent: string,
 const QScreen = ({ textContent, style, submitted, sentenceInfo, performanceModifiers, editText, submitText, changeWordPerformanceScore, route, navigation }) => {
 
   const disabled = textContent === ""
-  const button = submitted ? 
-                    <TouchableOpacity style={[style.mainButton, style.nextButton]} disabled={disabled} >
-                      <Text style={style.submitButtonText}>Next</Text>
-                    </TouchableOpacity>
-                  : <TouchableOpacity style={[style.mainButton, disabled ? style.submitButtonDisabled : {}]} disabled={disabled} onPress={() => submitText(lineToWordsFrench(sentenceInfo.french).map(a => a.map(b => 0)))} >
-                      <Text style={style.submitButtonText}>Submit</Text>
-                    </TouchableOpacity>
+  const button = submitted ?
+    <TouchableOpacity style={[style.mainButton, style.nextButton]} disabled={disabled} >
+      <Text style={style.submitButtonText}>Next</Text>
+    </TouchableOpacity>
+    : <TouchableOpacity style={[style.mainButton, disabled ? style.submitButtonDisabled : {}]} disabled={disabled} onPress={() => submitText(lineToWordsFrench(sentenceInfo.french).map(a => a.map(b => 0)))} >
+      <Text style={style.submitButtonText}>Submit</Text>
+    </TouchableOpacity>
   let textArea = null
   let questionComponent = null
-  if (submitted)
-  {
+  if (submitted) {
     const scores = computeWordsScoresEnglish(textContent, sentenceInfo.french, sentenceInfo.englishTranslations.map(s => s.sentence))
     textArea = <View style={style.textbox}>
-                  <Text style={{fontSize: style.questionTextFontSize}}>{textContent}</Text>
-               </View>
-               
-    questionComponent = scores.flatMap((wordGroup, index1) => wordGroup.map(({part, word, correct}, index2) => 
-        <PanGestureHandler
-          key={index1 + "." + index2}
-          onGestureEvent={({nativeEvent}) => {
-              changeWordPerformanceScore(performanceModifiers, index1, index2, nativeEvent.velocityY / 6000, correct)
-            }}>
-          <Animated.View style={{
-            height: 150,
-            justifyContent: 'center',
-          }}>
-            <Text key={index1 + "." + index2} style={[style.questionText, {color: style.wordColorGradient[clamp((correct ? 2 : 0) + Math.floor(performanceModifiers[index1][index2]),0,style.wordColorGradient.length-1)]}]}>
-              {word}{' '}
-            </Text>
-          </Animated.View>
-        </PanGestureHandler>
-      )
+      <Text style={{ fontSize: style.questionTextFontSize }}>{textContent}</Text>
+    </View>
+
+    questionComponent = scores.flatMap((wordGroup, index1) => wordGroup.map(({ part, word, correct }, index2) =>
+      <PanGestureHandler
+        key={index1 + "." + index2}
+        onGestureEvent={({ nativeEvent }) => {
+          changeWordPerformanceScore(performanceModifiers, index1, index2, nativeEvent.velocityY / 6000, correct)
+        }}>
+        <Animated.View style={{
+          height: 150,
+          justifyContent: 'center',
+        }}>
+          <Text key={index1 + "." + index2} style={[style.questionText, { color: style.wordColorGradient[clamp((correct ? 2 : 0) + Math.floor(performanceModifiers[index1][index2]), 0, style.wordColorGradient.length - 1)] }]}>
+            {word}{' '}
+          </Text>
+        </Animated.View>
+      </PanGestureHandler>
     )
-     
+    )
+
   }
-  else { 
+  else {
     textArea = <TextInput
-                  multiline={true}
-                  onChangeText={(text) => editText(text)}
-                  value={textContent}
-                  style={[style.textbox, {fontSize: style.questionTextFontSize}]}
-                  placeholderTextColor={style.placeholderTextColor}
-                  placeholder="In English..."
-                />
+      multiline={true}
+      onChangeText={(text) => editText(text)}
+      value={textContent}
+      style={[style.textbox, { fontSize: style.questionTextFontSize }]}
+      placeholderTextColor={style.placeholderTextColor}
+      placeholder="In English..."
+    />
     questionComponent = <Text style={style.questionText}>
-                          {sentenceInfo.french}
-                        </Text>
+      {sentenceInfo.french}
+    </Text>
   }
 
   return (
     <View style={style.container}>
-        <View style={{flex: 1.5, justifyContent: "flex-start", alignContent: "center", flexDirection: "row" }}>
-          <View style={{height: "100%", width: "auto", justifyContent: "center"}}>
-            <TouchableOpacity onPress={async () => this.playSound(sentenceInfo.audio)}>
-              <MaterialCommunityIcons name="volume-high" raised reverse size={style.audioButtonSize}/>
-            </TouchableOpacity>
-          </View>
-          <View style={{height: "100%", width: "auto", justifyContent: "center"}}>
-            <View style={{flexDirection: "row", justifyContent: "flex-start"}}>
-              {questionComponent}
-            </View>
+      <View style={{ flex: 1.5, justifyContent: "flex-start", alignContent: "center", flexDirection: "row" }}>
+        <View style={{ height: "100%", width: "auto", justifyContent: "center" }}>
+          <TouchableOpacity onPress={async () => this.playSound(sentenceInfo.audio)}>
+            <MaterialCommunityIcons name="volume-high" raised reverse size={style.audioButtonSize} />
+          </TouchableOpacity>
+        </View>
+        <View style={{ height: "100%", width: "auto", justifyContent: "center" }}>
+          <View style={{ flexDirection: "row", justifyContent: "flex-start" }}>
+            {questionComponent}
           </View>
         </View>
-        {textArea}
-        <View style={{flex: 1}}>
+      </View>
+      {textArea}
+      <View style={{ flex: 1 }}>
         {button}
       </View>
 
     </View>
   );
 }
-  
+
 
 const mapStateToProps = state => ({
   textContent: state.editText.textBoxContent,
@@ -223,11 +222,11 @@ const mapDispatchToProps = dispatch => ({
   submitText: (initialModifiers) => dispatch(SUBMIT(initialModifiers)),
   changeWordPerformanceScore: (currentPerformanceModifiers, wordIndex, partIndex, modifyBy, correct) => dispatch(MODIFY_PERFORMANCE(produce(currentPerformanceModifiers, (mod) => {
     mod[wordIndex][partIndex] += modifyBy
-    mod[wordIndex][partIndex]  = clamp(mod[wordIndex][partIndex], 0 - (correct ? 2 : 0), 4 - (correct ? 2 : 0))
+    mod[wordIndex][partIndex] = clamp(mod[wordIndex][partIndex], 0 - (correct ? 2 : 0), 4 - (correct ? 2 : 0))
 
   })))
 })
-  
+
 
 export default connect(
   mapStateToProps,

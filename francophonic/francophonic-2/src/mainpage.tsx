@@ -4,7 +4,7 @@ import { baseTheme, styles } from "./styles"
 import { connect } from 'react-redux'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import QuestionsPage from  './questionspage'
+import QuestionsPage from './questionspage'
 
 function HomeScreen() {
   return (
@@ -27,7 +27,6 @@ const Tab = createBottomTabNavigator();
 const MainPage = ({ style, route, navigation }) => {
   return (
     <View style={style.container}>
-      
       <Tab.Navigator>
         <Tab.Screen name="Study" component={QuestionsPage} />
         <Tab.Screen name="Stats" component={StatsScreen} />
@@ -73,9 +72,9 @@ class MainPage extends React.Component<{ style: any, navigation: any}, {}> {
 */
 
 const mapStateToProps = state => {
-  return {style: styles(state.theme.currentTheme)}
+  return { style: styles(state.theme.currentTheme) }
 }
-  
+
 export default connect(
   mapStateToProps
 )(MainPage)

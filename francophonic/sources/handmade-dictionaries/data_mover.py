@@ -34,7 +34,7 @@ const sentences: Array<TranslationSet> = """
   sent += """
 export default sentences
 """
-  with open("../../francophonic-2/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
+  with open("../../cn_experiments/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
     f.write(sent)
 
   words = """export interface NotAWord {
@@ -147,12 +147,12 @@ export const frenchContractions  = {frenchContractions}
 export const englishContractions = {englishContractions}
 export default words
 """
-  with open("../../francophonic-2/src/data/worddictionary.tsx", "w", encoding='utf8') as f:
-    print("Writing word dictionary to francophonic-2")
+  with open("../../cn_experiments/src/data/worddictionary.tsx", "w", encoding='utf8') as f:
+    print("Writing word dictionary to cn_experiments")
     f.write(words)
 
     
-  vdir = "../../francophonic-2/assets/audio/french/"
+  vdir = "../../cn_experiments/assets/audio/french/"
   voice_name = "fr-FR-Wavenet-C" # C is a good female voice, D is a good male voice. D seem to be a bit slower than C.
   previous_files = set([f for f in listdir(vdir) if isfile(join(vdir, f))])
   fil = "export default {\n"
@@ -160,7 +160,7 @@ export default words
     fil += f"  '{previous_file.split(voice_name)[0]}': require('../../assets/audio/french/{previous_file}'),\n"
   fil += "}"
   
-  with open('../../francophonic-2/src/data/sentenceAudio.tsx', "w") as f:
+  with open('../../cn_experiments/src/data/sentenceAudio.tsx', "w") as f:
     print("Writing sentence audio database")
     f.write(fil)
 
