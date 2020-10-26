@@ -343,7 +343,6 @@ french:
   aucune:
     definitions:
     - display: aucune
-      exampleSentences: null
       gender: NA
       pos: determiner
       translations:
@@ -1491,7 +1490,7 @@ french:
       display: eut
       gender: NA
       infinitive: avoir
-      pos: noun
+      pos: verb
       translations:
       - had
     occurrences: 1003
@@ -1876,7 +1875,7 @@ french:
     definitions:
     - display: français
       gender: NA
-      pos: Adjective
+      pos: adjective
       translations:
       - French
     - display: français
@@ -2979,7 +2978,7 @@ french:
     definitions:
     - display: notre
       gender: NA
-      pos: posessive adjective
+      pos: possessive adjective
       translations:
       - our
     occurrences: 758
@@ -5686,7 +5685,7 @@ french:
     definitions:
     - display: ta
       gender: fem
-      pos: posessive adjective
+      pos: possessive adjective
       translations:
       - his/hers
     occurrences: 438
