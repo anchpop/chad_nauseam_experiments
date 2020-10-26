@@ -28,26 +28,26 @@
 #     - to whisper
 # 
 
-elles:
-- display: elles
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-exemple:
-- display: exemple
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-france:
-- display: france
+assez:
+- display: assez
   gender: ''
   pos: ''
   translations:
   - ''
 pense:
 - display: pense
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+personnes:
+- display: personnes
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+vie:
+- display: vie
   gender: ''
   pos: ''
   translations:

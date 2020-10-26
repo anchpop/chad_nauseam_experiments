@@ -1318,6 +1318,15 @@ french:
       - she
       - it
     occurrences: 3716
+  elles:
+    definitions:
+    - display: elles
+      gender: fem
+      pos: pronoun
+      translations:
+      - they
+      - them
+    occurrences: 709
   en:
     definitions:
     - display: en
@@ -1735,6 +1744,15 @@ french:
       translations:
       - exclaimed
     occurrences: 0
+  exemple:
+    definitions:
+    - display: exemple
+      gender: masc
+      pos: noun
+      translations:
+      - example
+      - model
+    occurrences: 714
   eûmes:
     definitions:
     - conjugations:
@@ -1846,6 +1864,14 @@ french:
       translations:
       - time
     occurrences: 1365
+  france:
+    definitions:
+    - display: France
+      gender: fem
+      pos: noun
+      translations:
+      - France
+    occurrences: 712
   français:
     definitions:
     - display: français

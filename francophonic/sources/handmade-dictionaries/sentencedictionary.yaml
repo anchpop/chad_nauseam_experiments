@@ -16821,3 +16821,147 @@
     source: hp
   handVerified: false
   uuid: c09e0225-5bc9-491e-b877-c7b85c7f95f6
+- englishTranslations:
+  - sentence: the tour of France.
+    source: google
+  frenchTranslations:
+  - sentence: le Tour de France.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: b3cf47ac-7375-417b-8d06-48ba3742bdcc
+- englishTranslations:
+  - sentence: Like what for example ?
+    source: google
+  frenchTranslations:
+  - sentence: Comme quoi, par exemple ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 1f119741-6313-4267-883e-57c0253a7266
+- englishTranslations:
+  - sentence: So that's a good example.
+    source: google
+  frenchTranslations:
+  - sentence: Ça, c’est donc un bon exemple.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 7483e664-4f22-4ca9-aefa-b3c542fc04e0
+- englishTranslations:
+  - sentence: Like you and Ron, for example?
+    source: google
+  frenchTranslations:
+  - sentence: Comme toi et Ron, par exemple ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 7f26f5b7-2b13-47aa-9eed-be4c8e816005
+- englishTranslations:
+  - sentence: They are all like that!
+    source: google
+  frenchTranslations:
+  - sentence: Elles sont toutes comme ça !
+    source:
+    - hp
+  handVerified: false
+  uuid: e596b415-8d2c-488c-a51e-37e2f2773ed7
+- englishTranslations:
+  - sentence: In France anyway.
+    source: google
+  frenchTranslations:
+  - sentence: En France en tout cas.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: b2083c3c-3021-4975-b6cd-725d45b0411e
+- englishTranslations:
+  - sentence: Yes, in France anyway!
+    source: google
+  frenchTranslations:
+  - sentence: Oui, en France en tout cas !
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 0b09eb3a-3202-467e-8f8d-5aedbb8d642c
+- englishTranslations:
+  - sentence: They have nothing to do with it!
+    source: google
+  frenchTranslations:
+  - sentence: Elles n’ont rien à voir !
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 43594ecb-4228-4acf-bb26-470393474aaf
+- englishTranslations:
+  - sentence: It's the same in France.
+    source: google
+  frenchTranslations:
+  - sentence: C’est la même chose en France.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: f087b40e-fbfa-4341-a7ce-5dbb297cb219
+- englishTranslations:
+  - sentence: Who, for example?
+    source: google
+  frenchTranslations:
+  - sentence: Qui, par exemple ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 7e0f4d8f-c619-4260-aec0-180976bfc9ec
+- englishTranslations:
+  - sentence: What for example ?
+    source: google
+  frenchTranslations:
+  - sentence: Quoi, par exemple ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 5d2f3c97-ca4b-4c1b-8221-94fba08bfb03
+- englishTranslations:
+  - sentence: This, for example !
+    source: google
+  frenchTranslations:
+  - sentence: Ça, par exemple !
+    source:
+    - hp
+  handVerified: false
+  uuid: 45b30af0-021f-4776-b8ee-8bc28360986d
+- englishTranslations:
+  - sentence: Where are they?
+    source: google
+  frenchTranslations:
+  - sentence: Où elles sont ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 77d0add6-abab-44d2-a606-6c4cea7c088c
+- englishTranslations:
+  - sentence: They are there, he said.
+    source: google
+  frenchTranslations:
+  - sentence: Elles sont là, dit-il.
+    source:
+    - hp
+  handVerified: false
+  uuid: feed68c7-47b6-40b4-81ab-ebef1a99c2ce
+- englishTranslations:
+  - sentence: In France, in any case, there are many.
+    source: google
+  frenchTranslations:
+  - sentence: En France, en tout cas, il y en a beaucoup.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: d378371e-d2a4-4970-9b48-0cb3152117c2
+- englishTranslations:
+  - sentence: Look at Ginny, for example.
+    source: google
+  frenchTranslations:
+  - sentence: Regarde Ginny, par exemple.
+    source:
+    - hp
+  handVerified: false
+  uuid: 2807ed5a-da8b-4784-a278-552c45411ee8
