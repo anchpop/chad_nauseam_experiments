@@ -16965,3 +16965,1329 @@
     - hp
   handVerified: false
   uuid: 2807ed5a-da8b-4784-a278-552c45411ee8
+- englishTranslations:
+  - sentence: Haven't you seen Ron and Hermione?
+    source: google
+  frenchTranslations:
+  - sentence: Tu n’aurais pas vu Ron et Hermione ?
+    source:
+    - hp
+  handVerified: false
+  uuid: a49b0dd4-4be3-4c6a-86ac-c011e5236037
+- englishTranslations:
+  - sentence: Professor McGonagall still said nothing.
+    source: google
+  frenchTranslations:
+  - sentence: Le professeur McGonagall ne disait toujours rien.
+    source:
+    - hp
+  handVerified: false
+  uuid: d1621d82-21be-4020-9f15-945caceed3f8
+- englishTranslations:
+  - sentence: Do nothing!
+    source: google
+  frenchTranslations:
+  - sentence: Ne faites rien !
+    source:
+    - hp
+  handVerified: false
+  uuid: f6039873-3625-4f7a-82ad-5025fedc5cdd
+- englishTranslations:
+  - sentence: What ... What are you doing?
+    source: google
+  frenchTranslations:
+  - sentence: Que… Qu’est-ce que vous faites ?
+    source:
+    - hp
+  handVerified: false
+  uuid: f2186aec-675d-4394-9f00-fb8b8baf1e80
+- englishTranslations:
+  - sentence: And you, what were you doing there?
+    source: google
+  frenchTranslations:
+  - sentence: Et vous, qu’est-ce que vous faisiez là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: a586d4e6-5dee-47df-b330-161361002dad
+- englishTranslations:
+  - sentence: Fred, what are you doing?
+    source: google
+  frenchTranslations:
+  - sentence: Fred, qu’est-ce que tu fais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 4730ab7d-a0e9-4cae-a35b-76818f503ebe
+- englishTranslations:
+  - sentence: WHAT ARE YOU DOING ?
+    source: google
+  frenchTranslations:
+  - sentence: QU’EST-CE QUE VOUS FAITES ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 15f62750-5f0f-4f68-b6be-7ec024afa503
+- englishTranslations:
+  - sentence: Don't be so sure!
+    source: google
+  frenchTranslations:
+  - sentence: N’en soyez pas si sûr !
+    source:
+    - hp
+  handVerified: false
+  uuid: 506f6eba-6387-465e-b96d-baf9d7679f92
+- englishTranslations:
+  - sentence: And you, what are you doing here?
+    source: google
+  frenchTranslations:
+  - sentence: Et vous, qu’est-ce que vous faites là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 06652a9f-1d5f-4a6a-8227-f6d03fcebf66
+- englishTranslations:
+  - sentence: They just say he went for a walk around the Malfoy house.
+    source: google
+  frenchTranslations:
+  - sentence: Ils disent simplement qu’il est allé faire un tour dans la maison des
+      Malefoy.
+    source:
+    - hp
+  handVerified: false
+  uuid: b28002cb-709b-4589-aefe-70f76fe26a90
+- englishTranslations:
+  - sentence: What are you doing here, Weasley?
+    source: google
+  frenchTranslations:
+  - sentence: Et toi, Weasley, qu’est-ce que tu fais là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 09a06b3c-e07b-45c0-921b-39628b5b4f7a
+- englishTranslations:
+  - sentence: But I won't tell you more.
+    source: google
+  frenchTranslations:
+  - sentence: Mais je ne vous en dis pas plus.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: cd56154a-c277-4b86-a0ea-983a64c9402a
+- englishTranslations:
+  - sentence: Don't worry about us, Hermione replied immediately.
+    source: google
+  frenchTranslations:
+  - sentence: Ne t’en fais pas pour nous, répondit aussitôt Hermione.
+    source:
+    - hp
+  handVerified: false
+  uuid: 1d631c2f-ebc7-4a3e-836f-7b0ca4880ac9
+- englishTranslations:
+  - sentence: What are you doing here ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu fais ici ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 2be91889-7985-4b0a-aa31-6a7aa721446f
+- englishTranslations:
+  - sentence: What are you saying ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu dis ?
+    source:
+    - hp
+  handVerified: false
+  uuid: f3277088-94c4-42e1-b96a-93127c8da461
+- englishTranslations:
+  - sentence: Do not do this to me !
+    source: google
+  frenchTranslations:
+  - sentence: Ne me fais pas ça !
+    source:
+    - hp
+  handVerified: false
+  uuid: 473feaac-1dce-4ae8-b106-dac36d7b0be9
+- englishTranslations:
+  - sentence: What are you doing here ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 574fd7fb-05f1-4750-896e-f5e6936e5b33
+- englishTranslations:
+  - sentence: And he was answering you?
+    source: google
+  frenchTranslations:
+  - sentence: Et il vous répondait ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 6b9f6d3f-6076-4f89-bf20-8eb821fb63ea
+- englishTranslations:
+  - sentence: You better go Harry, it's late.
+    source: google
+  frenchTranslations:
+  - sentence: Vous feriez bien d’y aller, Harry, il est tard.
+    source:
+    - hp
+  handVerified: false
+  uuid: 274d1080-3423-4ef4-ab28-134a13817ab6
+- englishTranslations:
+  - sentence: And you, what are you doing?
+    source: google
+  frenchTranslations:
+  - sentence: Et vous, qu’est-ce que vous faites ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 071912e1-0c49-42e0-90d0-2505ff676a76
+- englishTranslations:
+  - sentence: Where you go ?
+    source: google
+  frenchTranslations:
+  - sentence: Où tu vas ?
+    source:
+    - hp
+  handVerified: false
+  uuid: b1caec04-0636-4327-81ed-4eaff99974ee
+- englishTranslations:
+  - sentence: a voice said in his head.
+    source: google
+  frenchTranslations:
+  - sentence: lui disait une voix dans sa tête.
+    source:
+    - hp
+  handVerified: false
+  uuid: 01a2fbb3-c419-4b67-90dd-5c2996b0df79
+- englishTranslations:
+  - sentence: But I'm sure she won't.
+    source: google
+  frenchTranslations:
+  - sentence: Mais je suis sûre qu’elle ne le fera pas.
+    source:
+    - hp
+  handVerified: false
+  uuid: 0c824d4c-85d7-460c-997c-7dc403c742f6
+- englishTranslations:
+  - sentence: No, Harry and Ron replied with one voice.
+    source: google
+  frenchTranslations:
+  - sentence: Non, répondirent Harry et Ron d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: 0bda16f1-223f-4562-bdb8-9d1a0365cd36
+- englishTranslations:
+  - sentence: I will be behind.
+    source: google
+  frenchTranslations:
+  - sentence: Moi, je serai derrière.
+    source:
+    - hp
+  handVerified: false
+  uuid: eaab6767-8ee3-4e4a-a1c9-0a966d1a0ea5
+- englishTranslations:
+  - sentence: Who said what?
+    source: google
+  frenchTranslations:
+  - sentence: Qui disait quoi ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 74857aa2-14df-463c-8b0d-36d93a106ff5
+- englishTranslations:
+  - sentence: I was the one there, right?
+    source: google
+  frenchTranslations:
+  - sentence: C’est moi qui étais là, non ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 108fca21-16ed-4c81-8b8c-88714b8cf869
+- englishTranslations:
+  - sentence: Were you there too?
+    source: google
+  frenchTranslations:
+  - sentence: Vous y étiez aussi ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 5a48f898-f4cd-4487-844a-1095e7312cf6
+- englishTranslations:
+  - sentence: Oh, yes, Harry and Ron replied in a single voice.
+    source: google
+  frenchTranslations:
+  - sentence: Oh, si, répondirent Harry et Ron d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: 3062ca29-58c2-4451-b9a9-fb758d9db2d8
+- englishTranslations:
+  - sentence: Looks like it does, Hermione said.
+    source: google
+  frenchTranslations:
+  - sentence: On dirait que si, dit Hermione.
+    source:
+    - hp
+  handVerified: false
+  uuid: 32cd981a-2a47-4d33-a78c-efb85b6151ee
+- englishTranslations:
+  - sentence: I won't tell him anything at all.
+    source: google
+  frenchTranslations:
+  - sentence: Je ne lui dirai rien du tout.
+    source:
+    - hp
+  handVerified: false
+  uuid: f2aec450-b23e-4f65-a333-3cddf1a44476
+- englishTranslations:
+  - sentence: In a moment, you will have nothing.
+    source: google
+  frenchTranslations:
+  - sentence: Dans un instant, tu n’auras plus rien.
+    source:
+    - hp
+  handVerified: false
+  uuid: 14fa8360-5003-4601-bf9a-ed02c31c0b18
+- englishTranslations:
+  - sentence: Sirius and Lupine do it well.
+    source: google
+  frenchTranslations:
+  - sentence: Sirius et Lupin le font bien, eux.
+    source:
+    - hp
+  handVerified: false
+  uuid: 24e5a05c-b7fc-46ef-b2bd-a678ddb6cdb8
+- englishTranslations:
+  - sentence: What did I say ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que je disais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 6318acab-bf9b-4055-8943-ffbdd887c0fe
+- englishTranslations:
+  - sentence: No, Ron and Hermione replied with one voice.
+    source: google
+  frenchTranslations:
+  - sentence: Non, répondirent Ron et Hermione d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: bec57bcb-352f-4438-aac5-a655340c6f9a
+- englishTranslations:
+  - sentence: We'd better go.
+    source: google
+  frenchTranslations:
+  - sentence: On ferait bien d’y aller.
+    source:
+    - hp
+  handVerified: false
+  uuid: 99b8640d-90b2-4ea8-af88-68ffb62ef9a2
+- englishTranslations:
+  - sentence: Do something !
+    source: google
+  frenchTranslations:
+  - sentence: Faites quelque chose !
+    source:
+    - hp
+  handVerified: false
+  uuid: 565c231a-8095-4ef3-86c3-e75c206940e1
+- englishTranslations:
+  - sentence: Are you giving us a ride, Harry?
+    source: google
+  frenchTranslations:
+  - sentence: Tu nous fais faire un tour, Harry ?
+    source:
+    - hp
+  handVerified: false
+  uuid: df8078fb-05ba-45e0-b440-18b17f6e85f4
+- englishTranslations:
+  - sentence: What will your house be?
+    source: google
+  frenchTranslations:
+  - sentence: Ce que sera votre maison.
+    source:
+    - hp
+  handVerified: false
+  uuid: b0dc67f9-2150-4ee4-a3b5-e56a12d6ee21
+- englishTranslations:
+  - sentence: I'm not doing anything at all!
+    source: google
+  frenchTranslations:
+  - sentence: Je ne fais rien du tout !
+    source:
+    - hp
+  handVerified: false
+  uuid: 72886dda-4b6c-4f29-82f7-c31b1f4e0268
+- englishTranslations:
+  - sentence: Where you were, yes.
+    source: google
+  frenchTranslations:
+  - sentence: Où vous étiez, oui.
+    source:
+    - hp
+  handVerified: false
+  uuid: 13d44b71-3676-43b3-811f-28b96d95e751
+- englishTranslations:
+  - sentence: I WILL NOT ANSWER ANYTHING AT ALL!
+    source: google
+  frenchTranslations:
+  - sentence: JE NE RÉPONDRAI RIEN DU TOUT !
+    source:
+    - hp
+  handVerified: false
+  uuid: 8086cf5b-9074-47c9-8e0d-331a539d3023
+- englishTranslations:
+  - sentence: He won't be alone!
+    source: google
+  frenchTranslations:
+  - sentence: Il ne sera pas tout seul !
+    source:
+    - hp
+  handVerified: false
+  uuid: 07616643-77e0-4b4c-b7f0-43fec4dc02ab
+- englishTranslations:
+  - sentence: What are you doing here ?
+    source: google
+  frenchTranslations:
+  - sentence: Mais… qu’est-ce que tu fais là ?
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: f5ab14e4-fb21-4517-8a7f-07abfc8ef64e
+- englishTranslations:
+  - sentence: Yes, Harry and Ron said with one voice.
+    source: google
+  frenchTranslations:
+  - sentence: Oui, dirent Harry et Ron d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: 0197885f-c9b3-44cd-938b-09551c2e6a5f
+- englishTranslations:
+  - sentence: What are they doing ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce qu’ils FONT ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 134dee59-aa54-4240-97c6-bd423e7e8f0b
+- englishTranslations:
+  - sentence: Don't worry, Ron said.
+    source: google
+  frenchTranslations:
+  - sentence: Ne t’en fais pas, dit Ron.
+    source:
+    - hp
+  handVerified: false
+  uuid: 3eee6d3e-30f8-4b1f-b74f-3a080aad6b07
+- englishTranslations:
+  - sentence: What were you doing ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu faisais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: dd22ce9a-a9a5-4581-8afc-6e1f6ee74237
+- englishTranslations:
+  - sentence: You won't do that, will you, Harry?
+    source: google
+  frenchTranslations:
+  - sentence: Tu ne feras pas ça, n’est-ce pas, Harry ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 5e665c58-4daa-40d9-abef-15d9ee882876
+- englishTranslations:
+  - sentence: Yes, I too would have ... Harry, what's on your hand?
+    source: google
+  frenchTranslations:
+  - sentence: Oui, moi aussi, j’aurais… Harry, qu’est-ce que tu as sur la main ?
+    source:
+    - hp
+  handVerified: false
+  uuid: fbd5ac6a-b9cc-4a6f-8483-91b055d33dce
+- englishTranslations:
+  - sentence: And what are they doing?
+    source: google
+  frenchTranslations:
+  - sentence: Et ils font quoi ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 9787a274-1148-44af-9b9a-08091544411b
+- englishTranslations:
+  - sentence: So, won't we do magic?
+    source: google
+  frenchTranslations:
+  - sentence: Alors, on ne fera pas de magie ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 7569a6d4-4a62-411b-a36a-e3e67e94672a
+- englishTranslations:
+  - sentence: And the voice answered you?
+    source: google
+  frenchTranslations:
+  - sentence: Et la voix vous a répondu ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 6f133908-9e04-4352-b3c8-f2835ae46f79
+- englishTranslations:
+  - sentence: Who are you going with ?
+    source: google
+  frenchTranslations:
+  - sentence: Tu y vas avec qui ?
+    source:
+    - hp
+  handVerified: false
+  uuid: bb058843-c124-4435-ade7-a676a286a506
+- englishTranslations:
+  - sentence: I'm not doing this for you.
+    source: google
+  frenchTranslations:
+  - sentence: Je ne fais pas ça pour vous.
+    source:
+    - hp
+  handVerified: false
+  uuid: 7c2bc693-0fba-4a08-a708-e6f4071e168c
+- englishTranslations:
+  - sentence: Are you sure you are okay?
+    source: google
+  frenchTranslations:
+  - sentence: Tu es sûr que tu vas bien ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 4923a2bc-e9f4-41b2-8bda-32e67ef52da9
+- englishTranslations:
+  - sentence: Are you… are you okay?
+    source: google
+  frenchTranslations:
+  - sentence: Tu… tu vas bien ?
+    source:
+    - hp
+  handVerified: false
+  uuid: be6a0c34-f1ea-4c73-8f09-46c6f76f2dcb
+- englishTranslations:
+  - sentence: So how did she do it?
+    source: google
+  frenchTranslations:
+  - sentence: Alors, comment elle faisait ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 9974ec86-0b25-4a8f-9234-cb306330d98e
+- englishTranslations:
+  - sentence: So you go now!
+    source: google
+  frenchTranslations:
+  - sentence: Alors, tu t’en vas, maintenant !
+    source:
+    - hp
+  handVerified: false
+  uuid: 9d79d2db-fb2c-4729-8573-53cc9ca2b452
+- englishTranslations:
+  - sentence: Why are you doing this ?
+    source: google
+  frenchTranslations:
+  - sentence: Pourquoi tu fais ça ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 88dd64ed-42ff-4f7e-9f48-83e1ee98c07b
+- englishTranslations:
+  - sentence: Percy hasn't had time to answer us yet, Ron said.
+    source: google
+  frenchTranslations:
+  - sentence: Percy n’a pas encore eu le temps de nous répondre, dit Ron.
+    source:
+    - hp
+  handVerified: false
+  uuid: f2321ad3-3597-411d-8fd9-c5e105ae2bca
+- englishTranslations:
+  - sentence: How come you didn't tell us who you are?
+    source: google
+  frenchTranslations:
+  - sentence: Comment ça se fait que tu ne nous aies pas dit qui tu étais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 499debaa-7a05-465c-80ea-4ebde58f4006
+- englishTranslations:
+  - sentence: Do not say that !
+    source: google
+  frenchTranslations:
+  - sentence: Ne dis pas ça !
+    source:
+    - hp
+  handVerified: false
+  uuid: 191687b5-4690-4cb3-81ff-f6c15642ee1a
+- englishTranslations:
+  - sentence: Were you there?
+    source: google
+  frenchTranslations:
+  - sentence: Vous étiez là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: bc8a2e4e-9682-4e84-a932-b2b434c8e6d5
+- englishTranslations:
+  - sentence: So, I said I would go.
+    source: google
+  frenchTranslations:
+  - sentence: Alors, j’ai dit que j’irais.
+    source:
+    - hp
+  handVerified: false
+  uuid: 82783810-c499-4cbf-812a-823089881cf4
+- englishTranslations:
+  - sentence: I won't say anything, Hagrid replied simply.
+    source: google
+  frenchTranslations:
+  - sentence: Je ne dirai rien, répondit simplement Hagrid.
+    source:
+    - hp
+  handVerified: false
+  uuid: 1ebfb208-6b23-418d-84e4-a5b4692fe597
+- englishTranslations:
+  - sentence: I'm telling you, I saw it!
+    source: google
+  frenchTranslations:
+  - sentence: Je vous le dis, je l’ai vu !
+    source:
+    - hp
+  handVerified: false
+  uuid: 73f4e233-b2a2-4ff0-ba55-b4cdb5a9f1a7
+- englishTranslations:
+  - sentence: How come you're not in class?
+    source: google
+  frenchTranslations:
+  - sentence: Comment ça se fait que tu ne sois pas en classe ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 3c4b2ee1-b38d-4027-9914-51a67b465688
+- englishTranslations:
+  - sentence: Okay, so here we go… What were you saying, Harry?
+    source: google
+  frenchTranslations:
+  - sentence: Bon, alors, on y va… Qu’est-ce que tu disais, Harry ?
+    source:
+    - hp
+  handVerified: false
+  uuid: e32fb603-a541-4035-97a7-fadab183a943
+- englishTranslations:
+  - sentence: Looks like magic!
+    source: google
+  frenchTranslations:
+  - sentence: On dirait de la magie !
+    source:
+    - hp
+  handVerified: false
+  uuid: 609dc3c8-7a8a-40c8-8b6f-d6b9fb6c68e6
+- englishTranslations:
+  - sentence: But what are you doing here?
+    source: google
+  frenchTranslations:
+  - sentence: Mais qu’est-ce que vous faites là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 160abff0-f55c-47a1-9640-85b68cfed36c
+- englishTranslations:
+  - sentence: And what did you say to him?
+    source: google
+  frenchTranslations:
+  - sentence: Et qu’est-ce que tu lui as répondu ?
+    source:
+    - hp
+  handVerified: false
+  uuid: c0c280eb-0a8c-45c2-b2cb-78f213c93ef8
+- englishTranslations:
+  - sentence: So what do you say about this?
+    source: google
+  frenchTranslations:
+  - sentence: Alors, qu’est-ce que tu dis de ça ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 3eb787c7-b2d0-45f7-8f92-81bec72adb9c
+- englishTranslations:
+  - sentence: Harry didn't say anything.
+    source: google
+  frenchTranslations:
+  - sentence: Harry ne disait rien.
+    source:
+    - hp
+  handVerified: false
+  uuid: 5d2cd4b0-ade7-47ee-ac4b-db5b57d46f13
+- englishTranslations:
+  - sentence: We'd better get going, said Harry.
+    source: google
+  frenchTranslations:
+  - sentence: On ferait bien d’y aller, dit Harry.
+    source:
+    - hp
+  handVerified: false
+  uuid: 037cad13-3b43-4fe8-9218-73b79c94ef77
+- englishTranslations:
+  - sentence: What were you saying, Malfoy?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu disais, Malefoy ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 16f4952e-3dd4-4904-87ef-91779c0aa8b4
+- englishTranslations:
+  - sentence: What do you say ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu en dis ?
+    source:
+    - hp
+  handVerified: false
+  uuid: ef2b0294-b0e9-487a-9900-b457472bd63d
+- englishTranslations:
+  - sentence: WHAT ARE YOU DOING THERE?
+    source: google
+  frenchTranslations:
+  - sentence: QU’EST-CE QUE TU FAIS LÀ, TOI !
+    source:
+    - hp
+  handVerified: false
+  uuid: e19dc445-5407-408c-a6f1-e646b2361574
+- englishTranslations:
+  - sentence: It will do you good.
+    source: google
+  frenchTranslations:
+  - sentence: Ça vous fera du bien.
+    source:
+    - hp
+  handVerified: false
+  uuid: e1f6f027-34e1-4176-b726-d9cb878fd5c8
+- englishTranslations:
+  - sentence: I'm not making you say it!
+    source: google
+  frenchTranslations:
+  - sentence: Je ne vous le fais pas dire !
+    source:
+    - hp
+  handVerified: false
+  uuid: 1e3cbef8-999d-46ed-9845-a8adc0fbef38
+- englishTranslations:
+  - sentence: You say nothing.
+    source: google
+  frenchTranslations:
+  - sentence: Tu ne dis rien.
+    source:
+    - hp
+  handVerified: false
+  uuid: 77837811-4e6a-4636-8c95-120b669ff062
+- englishTranslations:
+  - sentence: What are you two doing here?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites là, tous les deux ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 541dcc11-b7f2-464d-a4ec-1632fea7556d
+- englishTranslations:
+  - sentence: Looks like, Harry replied.
+    source: google
+  frenchTranslations:
+  - sentence: On dirait, répondit Harry.
+    source:
+    - hp
+  handVerified: false
+  uuid: 249bb66e-c496-42a9-b9d7-8064c37ada7a
+- englishTranslations:
+  - sentence: Is she always like that or is it just because you were with her?
+    source: google
+  frenchTranslations:
+  - sentence: Elle est toujours comme ça ou bien c’est simplement parce que tu étais
+      avec elle ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 45c968c6-d6f7-49e5-b809-31df7630e2af
+- englishTranslations:
+  - sentence: His arm didn't hurt anymore.
+    source: google
+  frenchTranslations:
+  - sentence: Son bras ne lui faisait plus mal.
+    source:
+    - hp
+  handVerified: false
+  uuid: f4e06737-d0db-474f-9999-fd44d9f9a62f
+- englishTranslations:
+  - sentence: I wouldn't have done it.
+    source: google
+  frenchTranslations:
+  - sentence: Moi, je ne l’aurais pas fait.
+    source:
+    - hp
+  handVerified: false
+  uuid: 597549e6-4b83-4d6a-abcd-b102bb0250ef
+- englishTranslations:
+  - sentence: We won't have too much trouble with him.
+    source: google
+  frenchTranslations:
+  - sentence: Nous n’aurons pas trop de mal avec lui.
+    source:
+    - hp
+  handVerified: false
+  uuid: 10c6e393-609d-47f4-96fb-2b19d4f7815a
+- englishTranslations:
+  - sentence: This time, I'll get you!
+    source: google
+  frenchTranslations:
+  - sentence: Cette fois, je t’aurai !
+    source:
+    - hp
+  handVerified: false
+  uuid: e39d5678-334d-4d44-aa22-c5e959aacde8
+- englishTranslations:
+  - sentence: What was I telling you?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que je te disais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: e0041e76-d27d-4913-9907-846adc9fdde2
+- englishTranslations:
+  - sentence: That's it, Harry, Ron, and Hermione said with one voice.
+    source: google
+  frenchTranslations:
+  - sentence: C’est ça, dirent Harry, Ron et Hermione d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: 0b161d35-6ad3-4d15-b23e-decebed6b3e4
+- englishTranslations:
+  - sentence: What if it did, what would it do?
+    source: google
+  frenchTranslations:
+  - sentence: Et si c’était le cas, qu’est-ce que ça ferait ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 444e2726-b4f0-4d77-996f-85387e48ecd6
+- englishTranslations:
+  - sentence: I say no more now.
+    source: google
+  frenchTranslations:
+  - sentence: Je n’en dis pas plus maintenant.
+    source:
+    - hp
+  handVerified: false
+  uuid: 8c675b5b-af83-4781-8b8b-c5996b8e1188
+- englishTranslations:
+  - sentence: Are you going to Hogwarts this year?
+    source: google
+  frenchTranslations:
+  - sentence: Tu vas à Poudlard cette année ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 95758c23-e38f-4d5b-b7df-45cf99cb893f
+- englishTranslations:
+  - sentence: And I saw what you really are.
+    source: google
+  frenchTranslations:
+  - sentence: Et j’ai vu ce que vous étiez vraiment.
+    source:
+    - hp
+  handVerified: false
+  uuid: 963a64be-dc5f-4ce6-897b-920ce649cd76
+- englishTranslations:
+  - sentence: You won't hurt Harry Potter!
+    source: google
+  frenchTranslations:
+  - sentence: Vous ne ferez pas de mal à Harry Potter !
+    source:
+    - hp
+  handVerified: false
+  uuid: 44057cfd-9983-4bb8-a11b-29deb300eb35
+- englishTranslations:
+  - sentence: What are you doing here, Weasley?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu fais là, Weasley ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 465556a7-db92-4121-9b35-26a2226fb2e0
+- englishTranslations:
+  - sentence: I tell you I saw it!
+    source: google
+  frenchTranslations:
+  - sentence: Je te dis que je l’ai vu !
+    source:
+    - hp
+  handVerified: false
+  uuid: 9b597835-4fcd-46c7-a7a5-c91d930cf92c
+- englishTranslations:
+  - sentence: Whatever you do, say nothing!
+    source: google
+  frenchTranslations:
+  - sentence: QUOI QUE TU FASSES, NE DIS RIEN !
+    source:
+    - hp
+  handVerified: false
+  uuid: 2bb11fe5-8db6-4009-a2f7-04ae18e2f8e2
+- englishTranslations:
+  - sentence: What are you doing here, Potter?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites ici, Potter ?
+    source:
+    - hp
+  handVerified: false
+  uuid: e4232326-5a11-4bf2-b1ed-6eba74d3bd2e
+- englishTranslations:
+  - sentence: I was there, I saw him.
+    source: google
+  frenchTranslations:
+  - sentence: J’étais là, je l’ai vu.
+    source:
+    - hp
+  handVerified: false
+  uuid: bba6717b-ce4b-4b6c-a186-19456c9310ad
+- englishTranslations:
+  - sentence: Harry, what are you doing?
+    source: google
+  frenchTranslations:
+  - sentence: Harry, qu’est-ce que tu fais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 96122a1b-edc6-4b99-aca0-48dedc80d4ed
+- englishTranslations:
+  - sentence: Why are you telling me this ?
+    source: google
+  frenchTranslations:
+  - sentence: Pourquoi tu me dis ça ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 0321fa62-d277-4178-997a-c25e53d9b0dc
+- englishTranslations:
+  - sentence: And you, what do you do ?
+    source: google
+  frenchTranslations:
+  - sentence: Et toi, qu’est-ce que tu fais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 04d9453c-91b8-4897-adbe-f7ef678e8c08
+- englishTranslations:
+  - sentence: And what did he say?
+    source: google
+  frenchTranslations:
+  - sentence: Et qu’est-ce qu’il a répondu ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 16d6f72b-8bc4-480f-b5bc-413564433626
+- englishTranslations:
+  - sentence: I was sure it was you.
+    source: google
+  frenchTranslations:
+  - sentence: J’étais sûr que c’était toi.
+    source:
+    - hp
+  handVerified: false
+  uuid: 4ad3d41a-d70d-414a-b995-05128d589d24
+- englishTranslations:
+  - sentence: That's what I told him, but Dumbledore told me ... How was it already?
+    source: google
+  frenchTranslations:
+  - sentence: C’est ce que je lui ai dit, mais Dumbledore m’a répondu… Comment c’était,
+      déjà ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 51cbb77b-5a15-4bc3-aa56-f09ccd086e9e
+- englishTranslations:
+  - sentence: Don't do that, Harry, Neville said suddenly.
+    source: google
+  frenchTranslations:
+  - sentence: Ne fais pas ça, Harry, dit soudain Neville.
+    source:
+    - hp
+  handVerified: false
+  uuid: 277d8fe6-03ba-4147-bdb4-a844236eaba8
+- englishTranslations:
+  - sentence: Nobody said anything.
+    source: google
+  frenchTranslations:
+  - sentence: Personne ne disait rien.
+    source:
+    - hp
+  handVerified: false
+  uuid: 0bddbf2a-ab53-4ae8-8754-34640c378653
+- englishTranslations:
+  - sentence: I'm telling you no!
+    source: google
+  frenchTranslations:
+  - sentence: Je te dis que non !
+    source:
+    - hp
+  handVerified: false
+  uuid: 6d5cf6a6-2d8d-4501-8094-9204a7e5bbca
+- englishTranslations:
+  - sentence: Maybe it will be him.
+    source: google
+  frenchTranslations:
+  - sentence: Ce sera peut-être lui.
+    source:
+    - hp
+  handVerified: false
+  uuid: c46ecfe8-8512-4886-8148-112ed849b1cd
+- englishTranslations:
+  - sentence: The other hurt too much.
+    source: google
+  frenchTranslations:
+  - sentence: L’autre lui faisait trop mal.
+    source:
+    - hp
+  handVerified: false
+  uuid: 004cf16a-aa35-4e45-98ee-b07769785855
+- englishTranslations:
+  - sentence: You go away ?
+    source: google
+  frenchTranslations:
+  - sentence: Tu t’en vas ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 61aa03f4-3f4a-4c20-8f6d-9ccd65b1c8cf
+- englishTranslations:
+  - sentence: She didn't even respond.
+    source: google
+  frenchTranslations:
+  - sentence: Elle n’a même pas répondu.
+    source:
+    - hp
+  handVerified: false
+  uuid: 29dd4e38-8e1c-4952-bf57-d227c907f324
+- englishTranslations:
+  - sentence: But it will be better.
+    source: google
+  frenchTranslations:
+  - sentence: Mais ça ira mieux.
+    source:
+    - hp
+  handVerified: false
+  uuid: 9907e4e7-6c87-41b3-9ae5-9bd3188890d9
+- englishTranslations:
+  - sentence: I didn't reply.
+    source: google
+  frenchTranslations:
+  - sentence: Je n’ai rien répondu.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 5f1dfc9a-4388-4c24-9eab-bd2b9a71fe08
+- englishTranslations:
+  - sentence: What are they doing here?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce qu’ils font ici ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 4029cacd-52b2-45a1-a637-831ca8e2d81d
+- englishTranslations:
+  - sentence: He may answer me while I'm still here.
+    source: google
+  frenchTranslations:
+  - sentence: Il me répondra peut-être pendant que je serai encore ici.
+    source:
+    - hp
+  handVerified: false
+  uuid: 5b2f89b1-bbd4-4512-8b92-6b8d22e59ff6
+- englishTranslations:
+  - sentence: How do you say ?
+    source: google
+  frenchTranslations:
+  - sentence: Comment tu dis ?
+    source:
+    - hp
+  handVerified: false
+  uuid: e21334fc-a5c3-4160-90f9-a5acf1a73f0d
+- englishTranslations:
+  - sentence: I'm telling you he was there!
+    source: google
+  frenchTranslations:
+  - sentence: Je te dis qu’il était là !
+    source:
+    - hp
+  handVerified: false
+  uuid: 5f5bd0af-5d8f-4579-ac56-19946a936ca3
+- englishTranslations:
+  - sentence: What were they doing there?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce qu’ils faisaient là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 58f61548-fcdc-427b-afb7-eb0444d99049
+- englishTranslations:
+  - sentence: We do, Harry and Ron said together.
+    source: google
+  frenchTranslations:
+  - sentence: Nous, si, dirent Harry et Ron d’une même voix.
+    source:
+    - hp
+  handVerified: false
+  uuid: 89ffe01b-ea56-4d7b-b252-82e33fda1e72
+- englishTranslations:
+  - sentence: What are you doing ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 2bc5cbcf-cc61-4069-9edf-574e7ce63a76
+- englishTranslations:
+  - sentence: I'd better go!
+    source: google
+  frenchTranslations:
+  - sentence: Je ferais bien d’y aller !
+    source:
+    - hp
+  handVerified: false
+  uuid: 6ef1e73f-12ea-423f-a653-8b6e9392ed1b
+- englishTranslations:
+  - sentence: You better go, said Ron.
+    source: google
+  frenchTranslations:
+  - sentence: Tu ferais bien d’y aller, dit Ron.
+    source:
+    - hp
+  handVerified: false
+  uuid: c7f61024-3109-4025-9419-0edd9b0114d7
+- englishTranslations:
+  - sentence: You are doing too much.
+    source: google
+  frenchTranslations:
+  - sentence: Tu en fais trop.
+    source:
+    - hp
+  handVerified: false
+  uuid: 4db0adb7-9403-4921-ad99-644482ae67c9
+- englishTranslations:
+  - sentence: You'll never have time to do it all.
+    source: google
+  frenchTranslations:
+  - sentence: Tu n’auras jamais le temps de tout faire.
+    source:
+    - hp
+  handVerified: false
+  uuid: e7161a10-f4a1-420f-8c81-4d16284b4261
+- englishTranslations:
+  - sentence: But did you do what he said?
+    source: google
+  frenchTranslations:
+  - sentence: Mais tu as fait ce qu’il disait ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 9354dc07-1891-45e0-b150-d1d15eb57974
+- englishTranslations:
+  - sentence: What would you have done in our place?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu aurais fait à notre place ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 7e1817a6-c2d9-438d-a245-addcb917f5d3
+- englishTranslations:
+  - sentence: Okay, I'd better go.
+    source: google
+  frenchTranslations:
+  - sentence: Bon, je ferais bien d’y aller.
+    source:
+    - hp
+  handVerified: false
+  uuid: 82a084d1-e07e-49cc-be65-e6c0197b30d7
+- englishTranslations:
+  - sentence: Potter, what are you doing?
+    source: google
+  frenchTranslations:
+  - sentence: Potter, qu’est-ce que vous faites ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 9f56ea54-ca0e-498e-973c-d1e156baaa87
+- englishTranslations:
+  - sentence: And you, who will you be with?
+    source: google
+  frenchTranslations:
+  - sentence: Et vous, vous serez avec qui ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 2b39aff2-f1bd-47f4-80e3-3154383a7e15
+- englishTranslations:
+  - sentence: Me neither, I do not!
+    source: google
+  frenchTranslations:
+  - sentence: Moi non plus, je ne le fais pas !
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: eae0b83b-fcd1-4ffc-bec7-648ccd48cdf4
+- englishTranslations:
+  - sentence: I said no.
+    source: google
+  frenchTranslations:
+  - sentence: J’ai répondu que non.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: d9d6497a-8d9c-4f8a-9182-ecd3c5f9078e
+- englishTranslations:
+  - sentence: Are you going to Hogwarts too?
+    source: google
+  frenchTranslations:
+  - sentence: Toi aussi, tu vas à Poudlard ?
+    source:
+    - hp
+  handVerified: false
+  uuid: f947c5f0-598c-4882-94dd-faa710d12411
+- englishTranslations:
+  - sentence: But don't tell anyone.
+    source: google
+  frenchTranslations:
+  - sentence: Mais ne le dis à personne.
+    source:
+    - hp
+  handVerified: false
+  uuid: 6df3f85b-d10c-4cdf-926c-7473fe876a44
+- englishTranslations:
+  - sentence: It wasn't me, I'm telling you.
+    source: google
+  frenchTranslations:
+  - sentence: Ce n’était pas moi, je te dis.
+    source:
+    - hp
+  handVerified: false
+  uuid: 35cadc0e-7eb6-42aa-aa86-f436257542d5
+- englishTranslations:
+  - sentence: What are you doing ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu fais ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 8fac3ef0-1bf7-4483-8e8e-bcae27eec46e
+- englishTranslations:
+  - sentence: We're doing our best, said Lupine.
+    source: google
+  frenchTranslations:
+  - sentence: Nous faisons de notre mieux, dit Lupin.
+    source:
+    - hp
+  handVerified: false
+  uuid: 1afd7fcf-c06e-47b9-85c1-7a6c69e0dedf
+- englishTranslations:
+  - sentence: Come in, come in, make yourself at home!
+    source: google
+  frenchTranslations:
+  - sentence: Entre, entre, fais comme chez toi !
+    source:
+    - hp
+  handVerified: false
+  uuid: bc993b09-e968-43e9-b60a-987fd8ec5890
+- englishTranslations:
+  - sentence: He'll be here in a moment.
+    source: google
+  frenchTranslations:
+  - sentence: Il sera là dans un instant.
+    source:
+    - hp
+  handVerified: false
+  uuid: 7320a097-9c30-42c6-b755-006ab89169f7
+- englishTranslations:
+  - sentence: Harry, WHAT ARE YOU DOING?
+    source: google
+  frenchTranslations:
+  - sentence: Harry, QU’EST-CE QUE TU FAIS ?
+    source:
+    - hp
+  handVerified: false
+  uuid: aa7f3d0c-12f6-4897-9cc4-8a66da46c257
+- englishTranslations:
+  - sentence: He did not answer.
+    source: google
+  frenchTranslations:
+  - sentence: Il n’a pas répondu.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 8683f6ce-06dc-4880-8cf5-823f49e12391
+- englishTranslations:
+  - sentence: What are you doing, Potter?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites, Potter ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 751af5ca-9934-4f16-a9dd-115a1ce76ec3
+- englishTranslations:
+  - sentence: What did you say to him?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu lui as répondu ?
+    source:
+    - hp
+  handVerified: false
+  uuid: e77edc85-f05f-445b-9fd9-e046554ef075
+- englishTranslations:
+  - sentence: What are you doing here ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que vous faites ici ?
+    source:
+    - hp
+  handVerified: false
+  uuid: d623b706-5524-4050-90bc-890c52969037
+- englishTranslations:
+  - sentence: What are you doing here ?
+    source: google
+  frenchTranslations:
+  - sentence: Qu’est-ce que tu fais là ?
+    source:
+    - hp
+  handVerified: false
+  uuid: 6a4fd927-6246-428b-bc16-30580ae55aff
+- englishTranslations:
+  - sentence: But he didn't answer me.
+    source: google
+  frenchTranslations:
+  - sentence: Mais il ne m’a pas répondu.
+    source:
+    - inner_french_podcast
+  handVerified: false
+  uuid: 110150ce-4e6e-4774-9a0a-f2ef2fd06b96

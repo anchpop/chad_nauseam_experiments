@@ -55,6 +55,18 @@ def get_word_dictionary():
         word_dictionary = yaml.load(f, Loader=Loader)
     return word_dictionary
 
+def get_all_known_french_words():
+    word_dictionary = get_word_dictionary()
+    words = set([])
+    for word, entry in word_dictionary['french'].items():
+        words.add(word)
+        for definition in entry['definitions']:
+            for _, forms in definition.get('conjugations', {}).items():
+                for form, conjugations in forms.items():
+                    words.update(set(conjugations.values()))
+    return words
+            
+
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 def flatmap(l, f):
@@ -119,3 +131,6 @@ englishContractions = {
     "you're":    ["you"    , "are"  ],
     "we're":     ["we"     , "are"  ],
 }
+
+
+

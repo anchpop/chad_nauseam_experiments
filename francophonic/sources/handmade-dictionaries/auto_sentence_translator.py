@@ -19,8 +19,7 @@ def main():
     credential_path = "K:/private/anchpop/privatekeys/Francophonic-f72c700469aa.json"
     environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
-    with open("worddictionary.yaml", encoding='utf-8') as f:
-        current_dictionary = yaml.load(f, Loader=Loader)
+    current_dictionary = get_word_dictionary()
 
     allwords = {}
     with open("work/frenchwords.txt", encoding='utf-8') as f:
@@ -55,27 +54,34 @@ def main():
 
     if len(sentencesToTranslate) > 0:
         characters = sum([len(s) for s in sentencesToTranslate])
-        inp = input(
-            f"To translate these {len(sentencesToTranslate)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no) ")
-        if inp == "yes":
-            client = translate.TranslationServiceClient()
-            location = "global"
-            parent = f"projects/{project_id}/locations/{location}"
-            for sentence in sentencesToTranslate:
-                sentence = sentence.strip()
-                translation = client.translate_text(request={
-                    'parent': parent,
-                    'contents': [sentence],
-                    'mime_type': 'text/plain',
-                    'source_language_code': "fr",
-                    'target_language_code': "en-US"})
-                previous_translations_dictionary.append({'frenchTranslations': [{'sentence': sentence, 'source': allsentences[sentence]}], 'englishTranslations': [
-                                                        {'source': 'google', 'sentence': html.unescape(t.translated_text)} for t in translation.translations], 'uuid': str(uuid.uuid4()), 'handVerified': False})
+        while True:
+            inp = input(
+                f"To translate these {len(sentencesToTranslate)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no/view) ")
+            if inp == "view":
+                for sentence in sentencesToTranslate:
+                    print(sentence)
+            elif inp == "yes":
+                client = translate.TranslationServiceClient()
+                location = "global"
+                parent = f"projects/{project_id}/locations/{location}"
+                for sentence in sentencesToTranslate:
+                    sentence = sentence.strip()
+                    translation = client.translate_text(request={
+                        'parent': parent,
+                        'contents': [sentence],
+                        'mime_type': 'text/plain',
+                        'source_language_code': "fr",
+                        'target_language_code': "en-US"})
+                    previous_translations_dictionary.append({'frenchTranslations': [{'sentence': sentence, 'source': allsentences[sentence]}], 'englishTranslations': [
+                                                            {'source': 'google', 'sentence': html.unescape(t.translated_text)} for t in translation.translations], 'uuid': str(uuid.uuid4()), 'handVerified': False})
 
-                data = yaml.dump(previous_translations_dictionary,
-                                 Dumper=Dumper, allow_unicode=True)
-                with open("sentencedictionary.yaml", "w", encoding='utf-8') as f:
-                    f.write(data)
+                    data = yaml.dump(previous_translations_dictionary,
+                                    Dumper=Dumper, allow_unicode=True)
+                    with open("sentencedictionary.yaml", "w", encoding='utf-8') as f:
+                        f.write(data)
+                break
+            else:
+                break
 
 
 if __name__ == "__main__":

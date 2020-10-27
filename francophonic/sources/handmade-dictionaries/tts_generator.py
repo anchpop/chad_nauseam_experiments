@@ -30,17 +30,13 @@ def main():
                                           for translations in sentences_dictionary] for item in sublist])
     current_dictionary = get_word_dictionary()
     words = set([w for w in current_dictionary['french'].keys()])
-    phrases = set(flatten(flatten(flatten(
-        [
-            [
-                [
-                    [
-                        (conjugation if conjugation[-1] == "'" else conjugation + " ") + word for conjugation in conjugations
-                    ] for _, conjugations in definition.get('conjugations', {}).items()
-                ] for definition in entry['definitions']
-            ] for word, entry in current_dictionary['french'].items()
+    phrases = [(context.replace(" - ", " ") + " ").replace("' ", "'").replace("il/elle", "il").replace("ils/elles", "ils")  + conjugation
+        for word, entry in current_dictionary['french'].items() 
+            for definition in entry['definitions'] 
+                for _, forms in definition.get('conjugations', {}).items() 
+                    for _, conjugations in forms.items() 
+                        for context, conjugation in conjugations.items()
         ]
-    ))))
     tts_candidates = sentences.union(words).union(phrases)
     tts_candidates = set([w.lower().strip() for w in tts_candidates])
 
@@ -57,31 +53,38 @@ def main():
 
     characters = sum([len(s[0]) for s in candidates_to_tts])
     if len(candidates_to_tts) > 0:
-        inp = input(
-            f"To synthesize speech for these {len(candidates_to_tts)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no) ")
-        if inp == "yes":
-            for sentence, hashd in candidates_to_tts:
-                synthesis_input = texttospeech.SynthesisInput(text=sentence)
-                voice = texttospeech.VoiceSelectionParams(
-                    language_code='fr',
-                    ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL,
-                    name=voice_name)
+        while True:
+            inp = input(
+                f"To synthesize speech for these {len(candidates_to_tts)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no/view) ")
+            if inp == "view":
+                for candidate in candidates_to_tts:
+                    print(candidate)
+            elif inp == "yes":
+                for sentence, hashd in candidates_to_tts:
+                    synthesis_input = texttospeech.SynthesisInput(text=sentence)
+                    voice = texttospeech.VoiceSelectionParams(
+                        language_code='fr',
+                        ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL,
+                        name=voice_name)
 
-                # Select the type of audio file you want returned
-                audio_config = texttospeech.AudioConfig(
-                    audio_encoding=texttospeech.AudioEncoding.MP3)
+                    # Select the type of audio file you want returned
+                    audio_config = texttospeech.AudioConfig(
+                        audio_encoding=texttospeech.AudioEncoding.MP3)
 
-                # Perform the text-to-speech request on the text input with the selected
-                # voice parameters and audio file type
-                response = client.synthesize_speech(
-                    input=synthesis_input, voice=voice, audio_config=audio_config)
+                    # Perform the text-to-speech request on the text input with the selected
+                    # voice parameters and audio file type
+                    response = client.synthesize_speech(
+                        input=synthesis_input, voice=voice, audio_config=audio_config)
 
-                # The response's audio_content is binary.
-                with open(f'{dir}{hashd}.mp3', 'wb') as out:
-                    # Write the response to the output file.
-                    out.write(response.audio_content)
-                    print(f"sentence '{sentence}' written")
-                time.sleep(1)
+                    # The response's audio_content is binary.
+                    with open(f'{dir}{hashd}.mp3', 'wb') as out:
+                        # Write the response to the output file.
+                        out.write(response.audio_content)
+                        print(f"sentence '{sentence}' written")
+                    time.sleep(1)
+                break
+            else:
+                break
 
 
 if __name__ == "__main__":

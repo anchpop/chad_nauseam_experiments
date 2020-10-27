@@ -21,6 +21,154 @@ french:
       - air
       - tune
     occurrences: 965
+  aller:
+    definitions:
+    - auxiliary: être
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: allée
+            elles - fussent: allées
+            il - fût: allé
+            ils - fussent: allés
+            je - fusse: allé
+            nous - fussions: allés
+            tu - fusses: allé
+            vous - fussiez: allés
+          passé première forme:
+            elle - serait: allée
+            elles - seraient: allées
+            il - serait: allé
+            ils - seraient: allés
+            je - serais: allé
+            nous - serions: allés
+            tu - serais: allé
+            vous - seriez: allés
+          présent:
+            il/elle: irait
+            ils/elles: iraient
+            j': irais
+            nous: irions
+            tu: irais
+            vous: iriez
+        indicatif:
+          futur:
+            il/elle: ira
+            ils/elles: iront
+            j': irai
+            nous: irons
+            tu: iras
+            vous: irez
+          futur antérieur:
+            elle - sera: allée
+            elles - seront: allées
+            il - sera: allé
+            ils - seront: allés
+            je - serai: allé
+            nous - serons: allés
+            tu - seras: allé
+            vous - serez: allés
+          imparfait:
+            il/elle: allait
+            ils/elles: allaient
+            j': allais
+            nous: allions
+            tu: allais
+            vous: alliez
+          passé antérieur:
+            elle - fut: allée
+            elles - furent: allées
+            il - fut: allé
+            ils - furent: allés
+            je - fus: allé
+            nous - fûmes: allés
+            tu - fus: allé
+            vous - fûtes: allés
+          passé composé:
+            elle - est: allée
+            elles - sont: allées
+            il - est: allé
+            ils - sont: allés
+            je - suis: allé
+            nous - sommes: allés
+            tu - es: allé
+            vous - êtes: allés
+          passé simple:
+            il/elle: alla
+            ils/elles: allèrent
+            j': allai
+            nous: allâmes
+            tu: allas
+            vous: allâtes
+          plus-que-parfait:
+            elle - était: allée
+            elles - étaient: allées
+            il - était: allé
+            ils - étaient: allés
+            j' - étais: allé
+            nous - étions: allés
+            tu - étais: allé
+            vous - étiez: allés
+          présent:
+            il/elle: va
+            ils/elles: vont
+            je: vais
+            nous: allons
+            tu: vas
+            vous: allez
+        infinitif:
+          passé:
+            être: allé
+        participe:
+          passé:
+            sois: allé
+            soyez: allé
+            soyons: allé
+          passé composé:
+            étant: allée
+        subjonctif:
+          imparfait:
+            qu' - il/elle: allât
+            qu' - ils/elles: allassent
+            que - j': allasse
+            que - nous: allassions
+            que - tu: allasses
+            que - vous: allassiez
+          passé:
+            qu' - elle - soit: allée
+            qu' - elles - soient: allées
+            qu' - il - soit: allé
+            qu' - ils - soient: allés
+            que - je - sois: allé
+            que - nous - soyons: allés
+            que - tu - sois: allé
+            que - vous - soyez: allés
+          plus-que-parfait:
+            qu' - elle - fût: allée
+            qu' - elles - fussent: allées
+            qu' - il - fût: allé
+            qu' - ils - fussent: allés
+            que - je - fusse: allé
+            que - nous - fussions: allés
+            que - tu - fusses: allé
+            que - vous - fussiez: allés
+          présent:
+            qu' - il/elle: aille
+            qu' - ils/elles: aillent
+            que - j': aille
+            que - nous: allions
+            que - tu: ailles
+            que - vous: alliez
+      display: aller
+      gender: NA
+      model: aller
+      other_forms:
+      - ne pas aller
+      pos: verb
+      transitive: false
+      translations:
+      - to go
+    occurrences: 910
   alors:
     definitions:
     - display: alors
@@ -166,6 +314,136 @@ french:
       translations:
       - slowly
     occurrences: 4672
+  avoir:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: eu
+            ils/elles - eussent: eu
+            j' - eusse: eu
+            nous - eussions: eu
+            tu - eusses: eu
+            vous - eussiez: eu
+          passé première forme:
+            il/elle - aurait: eu
+            ils/elles - auraient: eu
+            j' - aurais: eu
+            nous - aurions: eu
+            tu - aurais: eu
+            vous - auriez: eu
+          présent:
+            il/elle: aurait
+            ils/elles: auraient
+            j': aurais
+            nous: aurions
+            tu: aurais
+            vous: auriez
+        indicatif:
+          futur:
+            il/elle: aura
+            ils/elles: auront
+            j': aurai
+            nous: aurons
+            tu: auras
+            vous: aurez
+          futur antérieur:
+            il/elle - aura: eu
+            ils/elles - auront: eu
+            j' - aurai: eu
+            nous - aurons: eu
+            tu - auras: eu
+            vous - aurez: eu
+          imparfait:
+            il/elle: avait
+            ils/elles: avaient
+            j': avais
+            nous: avions
+            tu: avais
+            vous: aviez
+          passé antérieur:
+            il/elle - eut: eu
+            ils/elles - eurent: eu
+            j' - eus: eu
+            nous - eûmes: eu
+            tu - eus: eu
+            vous - eûtes: eu
+          passé composé:
+            il/elle - a: eu
+            ils/elles - ont: eu
+            j' - ai: eu
+            nous - avons: eu
+            tu - as: eu
+            vous - avez: eu
+          passé simple:
+            il/elle: eut
+            ils/elles: eurent
+            j': eus
+            nous: eûmes
+            tu: eus
+            vous: eûtes
+          plus-que-parfait:
+            il/elle - avait: eu
+            ils/elles - avaient: eu
+            j' - avais: eu
+            nous - avions: eu
+            tu - avais: eu
+            vous - aviez: eu
+          présent:
+            il/elle: a
+            ils/elles: ont
+            j': ai
+            nous: avons
+            tu: as
+            vous: avez
+        infinitif:
+          passé:
+            avoir: eu
+        participe:
+          passé:
+            aie: eu
+            ayez: eu
+            ayons: eu
+          passé composé:
+            ayant: eu
+        subjonctif:
+          imparfait:
+            qu' - il/elle: eût
+            qu' - ils/elles: eussent
+            que - j': eusse
+            que - nous: eussions
+            que - tu: eusses
+            que - vous: eussiez
+          passé:
+            qu' - il/elle - ait: eu
+            qu' - ils/elles - aient: eu
+            que - j' - aie: eu
+            que - nous - ayons: eu
+            que - tu - aies: eu
+            que - vous - ayez: eu
+          plus-que-parfait:
+            qu' - il/elle - eût: eu
+            qu' - ils/elles - eussent: eu
+            que - j' - eusse: eu
+            que - nous - eussions: eu
+            que - tu - eusses: eu
+            que - vous - eussiez: eu
+          présent:
+            qu' - il/elle: ait
+            qu' - ils/elles: aient
+            que - j': aie
+            que - nous: ayons
+            que - tu: aies
+            que - vous: ayez
+      display: avoir
+      gender: NA
+      model: avoir
+      pos: verb
+      transitive: true
+      translations:
+      - to have
+    occurrences: 1804
   baguette:
     definitions:
     - display: baguette
@@ -514,6 +792,136 @@ french:
       - in front of
       - past
     occurrences: 1318
+  dire:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: dit
+            ils/elles - eussent: dit
+            j' - eusse: dit
+            nous - eussions: dit
+            tu - eusses: dit
+            vous - eussiez: dit
+          passé première forme:
+            il/elle - aurait: dit
+            ils/elles - auraient: dit
+            j' - aurais: dit
+            nous - aurions: dit
+            tu - aurais: dit
+            vous - auriez: dit
+          présent:
+            il/elle: dirait
+            ils/elles: diraient
+            je: dirais
+            nous: dirions
+            tu: dirais
+            vous: diriez
+        indicatif:
+          futur:
+            il/elle: dira
+            ils/elles: diront
+            je: dirai
+            nous: dirons
+            tu: diras
+            vous: direz
+          futur antérieur:
+            il/elle - aura: dit
+            ils/elles - auront: dit
+            j' - aurai: dit
+            nous - aurons: dit
+            tu - auras: dit
+            vous - aurez: dit
+          imparfait:
+            il/elle: disait
+            ils/elles: disaient
+            je: disais
+            nous: disions
+            tu: disais
+            vous: disiez
+          passé antérieur:
+            il/elle - eut: dit
+            ils/elles - eurent: dit
+            j' - eus: dit
+            nous - eûmes: dit
+            tu - eus: dit
+            vous - eûtes: dit
+          passé composé:
+            il/elle - a: dit
+            ils/elles - ont: dit
+            j' - ai: dit
+            nous - avons: dit
+            tu - as: dit
+            vous - avez: dit
+          passé simple:
+            il/elle: dit
+            ils/elles: dirent
+            je: dis
+            nous: dîmes
+            tu: dis
+            vous: dîtes
+          plus-que-parfait:
+            il/elle - avait: dit
+            ils/elles - avaient: dit
+            j' - avais: dit
+            nous - avions: dit
+            tu - avais: dit
+            vous - aviez: dit
+          présent:
+            il/elle: dit
+            ils/elles: disent
+            je: dis
+            nous: disons
+            tu: dis
+            vous: dites
+        infinitif:
+          passé:
+            avoir: dit
+        participe:
+          passé:
+            aie: dit
+            ayez: dit
+            ayons: dit
+          passé composé:
+            ayant: dit
+        subjonctif:
+          imparfait:
+            qu' - il/elle: dît
+            qu' - ils/elles: dissent
+            que - je: disse
+            que - nous: dissions
+            que - tu: disses
+            que - vous: dissiez
+          passé:
+            qu' - il/elle - ait: dit
+            qu' - ils/elles - aient: dit
+            que - j' - aie: dit
+            que - nous - ayons: dit
+            que - tu - aies: dit
+            que - vous - ayez: dit
+          plus-que-parfait:
+            qu' - il/elle - eût: dit
+            qu' - ils/elles - eussent: dit
+            que - j' - eusse: dit
+            que - nous - eussions: dit
+            que - tu - eusses: dit
+            que - vous - eussiez: dit
+          présent:
+            qu' - il/elle: dise
+            qu' - ils/elles: disent
+            que - je: dise
+            que - nous: disions
+            que - tu: dises
+            que - vous: disiez
+      display: dire
+      gender: NA
+      model: dire
+      pos: verb
+      transitive: true
+      translations:
+      - to say
+    occurrences: 1940
   dit-elle:
     definitions:
     - abbreviation: dit + elle
@@ -696,6 +1104,142 @@ french:
       - example
       - model
     occurrences: 714
+  faire:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: fait
+            ils/elles - eussent: fait
+            j' - eusse: fait
+            nous - eussions: fait
+            tu - eusses: fait
+            vous - eussiez: fait
+          passé première forme:
+            il/elle - aurait: fait
+            ils/elles - auraient: fait
+            j' - aurais: fait
+            nous - aurions: fait
+            tu - aurais: fait
+            vous - auriez: fait
+          présent:
+            il/elle: ferait
+            ils/elles: feraient
+            je: ferais
+            nous: ferions
+            tu: ferais
+            vous: feriez
+        indicatif:
+          futur:
+            il/elle: fera
+            ils/elles: feront
+            je: ferai
+            nous: ferons
+            tu: feras
+            vous: ferez
+          futur antérieur:
+            il/elle - aura: fait
+            ils/elles - auront: fait
+            j' - aurai: fait
+            nous - aurons: fait
+            tu - auras: fait
+            vous - aurez: fait
+          imparfait:
+            il/elle: faisait
+            ils/elles: faisaient
+            je: faisais
+            nous: faisions
+            tu: faisais
+            vous: faisiez
+          passé antérieur:
+            il/elle - eut: fait
+            ils/elles - eurent: fait
+            j' - eus: fait
+            nous - eûmes: fait
+            tu - eus: fait
+            vous - eûtes: fait
+          passé composé:
+            il/elle - a: fait
+            ils/elles - ont: fait
+            j' - ai: fait
+            nous - avons: fait
+            tu - as: fait
+            vous - avez: fait
+          passé simple:
+            il/elle: fit
+            ils/elles: firent
+            je: fis
+            nous: fîmes
+            tu: fis
+            vous: fîtes
+          plus-que-parfait:
+            il/elle - avait: fait
+            ils/elles - avaient: fait
+            j' - avais: fait
+            nous - avions: fait
+            tu - avais: fait
+            vous - aviez: fait
+          présent:
+            il/elle: fait
+            ils/elles: font
+            je: fais
+            nous: faisons
+            tu: fais
+            vous: faites
+        infinitif:
+          passé:
+            avoir: fait
+        participe:
+          passé:
+            aie: fait
+            ayez: fait
+            ayons: fait
+          passé composé:
+            ayant: fait
+        subjonctif:
+          imparfait:
+            qu' - il/elle: fît
+            qu' - ils/elles: fissent
+            que - je: fisse
+            que - nous: fissions
+            que - tu: fisses
+            que - vous: fissiez
+          passé:
+            qu' - il/elle - ait: fait
+            qu' - ils/elles - aient: fait
+            que - j' - aie: fait
+            que - nous - ayons: fait
+            que - tu - aies: fait
+            que - vous - ayez: fait
+          plus-que-parfait:
+            qu' - il/elle - eût: fait
+            qu' - ils/elles - eussent: fait
+            que - j' - eusse: fait
+            que - nous - eussions: fait
+            que - tu - eusses: fait
+            que - vous - eussiez: fait
+          présent:
+            qu' - il/elle: fasse
+            qu' - ils/elles: fassent
+            que - je: fasse
+            que - nous: fassions
+            que - tu: fasses
+            que - vous: fassiez
+      display: faire
+      gender: NA
+      model: faire
+      other_forms:
+      - se faire
+      - ne pas faire
+      - ne pas se faire
+      pos: verb
+      transitive: true
+      translations:
+      - to make
+      - to do
+      - to play
+    occurrences: 3370
   fois:
     definitions:
     - display: fois
@@ -735,7 +1279,7 @@ french:
   fudge:
     definitions:
     - notaword: true
-    occurrences: 
+    occurrences: null
   george:
     definitions:
     - notaword: true
@@ -1741,6 +2285,142 @@ french:
     definitions:
     - notaword: true
     occurrences: 5661
+  répondre:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: répondu
+            ils/elles - eussent: répondu
+            j' - eusse: répondu
+            nous - eussions: répondu
+            tu - eusses: répondu
+            vous - eussiez: répondu
+          passé première forme:
+            il/elle - aurait: répondu
+            ils/elles - auraient: répondu
+            j' - aurais: répondu
+            nous - aurions: répondu
+            tu - aurais: répondu
+            vous - auriez: répondu
+          présent:
+            il/elle: répondrait
+            ils/elles: répondraient
+            je: répondrais
+            nous: répondrions
+            tu: répondrais
+            vous: répondriez
+        indicatif:
+          futur:
+            il/elle: répondra
+            ils/elles: répondront
+            je: répondrai
+            nous: répondrons
+            tu: répondras
+            vous: répondrez
+          futur antérieur:
+            il/elle - aura: répondu
+            ils/elles - auront: répondu
+            j' - aurai: répondu
+            nous - aurons: répondu
+            tu - auras: répondu
+            vous - aurez: répondu
+          imparfait:
+            il/elle: répondait
+            ils/elles: répondaient
+            je: répondais
+            nous: répondions
+            tu: répondais
+            vous: répondiez
+          passé antérieur:
+            il/elle - eut: répondu
+            ils/elles - eurent: répondu
+            j' - eus: répondu
+            nous - eûmes: répondu
+            tu - eus: répondu
+            vous - eûtes: répondu
+          passé composé:
+            il/elle - a: répondu
+            ils/elles - ont: répondu
+            j' - ai: répondu
+            nous - avons: répondu
+            tu - as: répondu
+            vous - avez: répondu
+          passé simple:
+            il/elle: répondit
+            ils/elles: répondirent
+            je: répondis
+            nous: répondîmes
+            tu: répondis
+            vous: répondîtes
+          plus-que-parfait:
+            il/elle - avait: répondu
+            ils/elles - avaient: répondu
+            j' - avais: répondu
+            nous - avions: répondu
+            tu - avais: répondu
+            vous - aviez: répondu
+          présent:
+            il/elle: répond
+            ils/elles: répondent
+            je: réponds
+            nous: répondons
+            tu: réponds
+            vous: répondez
+        infinitif:
+          passé:
+            avoir: répondu
+        participe:
+          passé:
+            aie: répondu
+            ayez: répondu
+            ayons: répondu
+          passé composé:
+            ayant: répondu
+        subjonctif:
+          imparfait:
+            qu' - il/elle: répondît
+            qu' - ils/elles: répondissent
+            que - je: répondisse
+            que - nous: répondissions
+            que - tu: répondisses
+            que - vous: répondissiez
+          passé:
+            qu' - il/elle - ait: répondu
+            qu' - ils/elles - aient: répondu
+            que - j' - aie: répondu
+            que - nous - ayons: répondu
+            que - tu - aies: répondu
+            que - vous - ayez: répondu
+          plus-que-parfait:
+            qu' - il/elle - eût: répondu
+            qu' - ils/elles - eussent: répondu
+            que - j' - eusse: répondu
+            que - nous - eussions: répondu
+            que - tu - eusses: répondu
+            que - vous - eussiez: répondu
+          présent:
+            qu' - il/elle: réponde
+            qu' - ils/elles: répondent
+            que - je: réponde
+            que - nous: répondions
+            que - tu: répondes
+            que - vous: répondiez
+      display: répondre
+      gender: NA
+      model: attendre
+      other_forms:
+      - se répondre
+      - ne pas répondre
+      - ne pas se répondre
+      pos: verb
+      transitive: false
+      translations:
+      - to answer
+      - to reply
+      - to respond
+    occurrences: 208
   sa:
     definitions:
     - display: sa
@@ -2265,6 +2945,136 @@ french:
       translations:
       - school
     occurrences: 557
+  être:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: été
+            ils/elles - eussent: été
+            j' - eusse: été
+            nous - eussions: été
+            tu - eusses: été
+            vous - eussiez: été
+          passé première forme:
+            il/elle - aurait: été
+            ils/elles - auraient: été
+            j' - aurais: été
+            nous - aurions: été
+            tu - aurais: été
+            vous - auriez: été
+          présent:
+            il/elle: serait
+            ils/elles: seraient
+            je: serais
+            nous: serions
+            tu: serais
+            vous: seriez
+        indicatif:
+          futur:
+            il/elle: sera
+            ils/elles: seront
+            je: serai
+            nous: serons
+            tu: seras
+            vous: serez
+          futur antérieur:
+            il/elle - aura: été
+            ils/elles - auront: été
+            j' - aurai: été
+            nous - aurons: été
+            tu - auras: été
+            vous - aurez: été
+          imparfait:
+            il/elle: était
+            ils/elles: étaient
+            j': étais
+            nous: étions
+            tu: étais
+            vous: étiez
+          passé antérieur:
+            il/elle - eut: été
+            ils/elles - eurent: été
+            j' - eus: été
+            nous - eûmes: été
+            tu - eus: été
+            vous - eûtes: été
+          passé composé:
+            il/elle - a: été
+            ils/elles - ont: été
+            j' - ai: été
+            nous - avons: été
+            tu - as: été
+            vous - avez: été
+          passé simple:
+            il/elle: fut
+            ils/elles: furent
+            je: fus
+            nous: fûmes
+            tu: fus
+            vous: fûtes
+          plus-que-parfait:
+            il/elle - avait: été
+            ils/elles - avaient: été
+            j' - avais: été
+            nous - avions: été
+            tu - avais: été
+            vous - aviez: été
+          présent:
+            il/elle: est
+            ils/elles: sont
+            je: suis
+            nous: sommes
+            tu: es
+            vous: êtes
+        infinitif:
+          passé:
+            avoir: été
+        participe:
+          passé:
+            aie: été
+            ayez: été
+            ayons: été
+          passé composé:
+            ayant: été
+        subjonctif:
+          imparfait:
+            qu' - il/elle: fût
+            qu' - ils/elles: fussent
+            que - je: fusse
+            que - nous: fussions
+            que - tu: fusses
+            que - vous: fussiez
+          passé:
+            qu' - il/elle - ait: été
+            qu' - ils/elles - aient: été
+            que - j' - aie: été
+            que - nous - ayons: été
+            que - tu - aies: été
+            que - vous - ayez: été
+          plus-que-parfait:
+            qu' - il/elle - eût: été
+            qu' - ils/elles - eussent: été
+            que - j' - eusse: été
+            que - nous - eussions: été
+            que - tu - eusses: été
+            que - vous - eussiez: été
+          présent:
+            qu' - il/elle: soit
+            qu' - ils/elles: soient
+            que - je: sois
+            que - nous: soyons
+            que - tu: sois
+            que - vous: soyez
+      display: être
+      gender: NA
+      model: être
+      pos: verb
+      transitive: false
+      translations:
+      - to be
+    occurrences: 2078
   œil:
     definitions:
     - display: yeux

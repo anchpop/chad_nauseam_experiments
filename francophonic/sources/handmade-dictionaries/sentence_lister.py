@@ -13,9 +13,7 @@ from utils import *
 
 
 def main():
-
-    current_dictionary = get_word_dictionary()
-    knownwords = set(current_dictionary['french'].keys())
+    knownwords = get_all_known_french_words()
 
     allsentences = {}
     with open("work/frenchsentences.txt", encoding='utf-8') as f:

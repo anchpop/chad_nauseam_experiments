@@ -7,7 +7,7 @@ try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
-
+from utils import *
 
 
 
@@ -16,8 +16,7 @@ def main():
         print("No 'handmade_dictionary.yaml', so nothing to combine. Run the template generator to create a template then fill it in to add new words to the dictionary. ")
         return True
 
-    with open("worddictionary.yaml", encoding='utf-8') as f:
-        current_dictionary = yaml.load(f, Loader=Loader)
+    current_dictionary = get_word_dictionary()
 
     allwords = {}
     with open("work/frenchwords.txt", encoding='utf-8') as f:
@@ -44,11 +43,8 @@ def main():
                         if definition.get('pos', '') == '':
                             print(f"in a definition for the word {word}, you are missing 'pos'!")
                             return
-                        if definition["pos"] == "verb" and definition.get("infinitive", '') == '':
-                            print(f"in a definition for the word {word}, you are missing an infinitive! It's required since the word is a verb")
-                            return
-                        if definition["pos"] == "verb" and definition.get("conjugations", '') in ['', []] and definition['infinitive'] != definition['display']:
-                            print(f"in a definition for the word {word}, you are missing conjugations! It's required since the word is a verb")
+                        if definition["pos"] == "verb" and definition.get("conjugations", '') in ['', []]:
+                            print(f"in a definition for the verb {word}, you are missing conjugations! they're required since the word is a verb")
                             return
                     if definition.get('translations', '') == '':
                         print(f"in a definition for the word {word}, you are missing 'translations'!")

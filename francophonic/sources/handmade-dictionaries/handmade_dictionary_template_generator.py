@@ -7,43 +7,14 @@ try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
-
+from utils import *
 
 def main():
-
     instructions = """
-When adding verbs, make sure you put in the conjugations for passéSimple, imparfait, présent, passéComposé, all as seperate words. 
-And don't forget the plain infinitive!
-As an example:
-  murmuré:
-  - conjugations:
-      passéComposé:
-      - j'ai
-      - tu as
-      - il a
-      - elle a
-      - nous avons
-      - vous avez
-      - ils ont
-      - elles ont
-    display: murmuré
-    gender: NA
-    infinitive: murmurer
-    pos: verb
-    translations:
-      - whisper
-  murmurer:
-  - display: murmurer
-    gender: NA
-    infinitive: murmurer
-    pos: verb
-    translations:
-    - to whisper
+When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 """
 
-
-    with open("worddictionary.yaml", encoding='utf-8') as f:
-        current_dictionary = yaml.load(f, Loader=Loader)
+    known_words = get_all_known_french_words()
 
     allwords = {}
     with open("work/frenchwords.txt", encoding='utf-8') as f:
@@ -58,7 +29,7 @@ As an example:
 
     allunknownWords = {}
     for k, v in allwords.items():
-        if k not in current_dictionary['french']:
+        if k not in known_words:
             allunknownWords[k] = v
     allunknownWords = Counter(allunknownWords)
 

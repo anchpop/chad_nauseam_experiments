@@ -17,6 +17,8 @@ def grab_conjugation_soup(verb):
 
 def main():
     verb = input("Verb? ")
+    eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
+    trans = input("Transitive? ") == "y"
 
     contents = {}
 
@@ -25,6 +27,7 @@ def main():
     """with open("C:/Users/hyper/Desktop/Untitled-1.html", "r", encoding="utf-8") as f:
         text = f.read()
         soup = BeautifulSoup(text, 'html.parser')"""
+        
     
     soup = grab_conjugation_soup(verb)
 
@@ -54,14 +57,15 @@ def main():
                     
                     # print("    " + type_of_conjugation)
                     if len(info) > 0:
-                        contents[current_mode] = contents.get(current_mode, {}) | {type_of_conjugation: info}
+                        contents[current_mode] = {**contents.get(current_mode, {}), type_of_conjugation: info}
 
     model = soup.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
     auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
+    forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
     pp = pprint.PrettyPrinter(indent=4)
 
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations': contents, 'translations': [''], 'model': model, 'auxiliary': auxiliary}]}
+    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations': contents, 'translations': eng, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
     print(yaml.dump(output, allow_unicode=True))
 
 
