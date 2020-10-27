@@ -12,6 +12,8 @@
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.8.0",
     "@react-navigation/stack": "^5.10.0",
+    "@types/chroma-js": "^2.1.0",
+    "@types/react-responsive": "^8.0.2",
     "chroma-js": "^2.1.0",
     "expo": "~39.0.2",
     "expo-av": "~8.6.0",

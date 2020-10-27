@@ -15,9 +15,13 @@ const App = () => {
   const isMobileDevice = useMediaQuery({
     maxDeviceWidth: 1224
   })
+  const systemPrefersDark = useMediaQuery(
+    {
+      query: "(prefers-color-scheme: dark)"
+    })
 
   return (
-    <ThemeContext.Provider value={{ light: true, mobile: isMobileDevice }}>
+    <ThemeContext.Provider value={{ light: !systemPrefersDark, mobile: isMobileDevice }}>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Review" component={ReviewScreen} />

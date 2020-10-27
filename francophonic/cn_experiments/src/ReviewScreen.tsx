@@ -1,11 +1,11 @@
 import * as React from "react";
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 
 import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import Container from './components/Container'
+import Button from './components/Button'
 
 import useStyle from "./styles"
 
@@ -34,51 +34,12 @@ const Question = () => {
   )
 }
 
-const Working = () => (
-  <View style={{ flex: 1, alignItems: "center" }}>
-    <View
-      style={{
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "space-between",
-        paddingHorizontal: "5%",
-        paddingVertical: "0%",
-        width: "50%"
-      }}
-    >
-      <View
-        style={{
-          flex: 1,
-          marginTop: 4,
-          backgroundColor: "red",
-          width: "100%",
-          height: "100%"
-        }}
-        nativeID="buttoncontainer"
-      >
-        <TouchableOpacity
-          style={{
-            width: "100%",
-            height: "100%",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: 50,
-            backgroundColor: "green"
-          }}
-          nativeID="toubableopacity"
-        >
-          <Text>Submit</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  </View>)
-
 const ReviewScreen = () => {
   const [currentInput, setCurrentInput] = React.useState("")
   const style = useStyle()
 
   return (
-    <Container>
+    <Container imageLight={require('../assets/images/france/franceLight.jpg')} imageDark={require('../assets/images/france/franceDark.jpg')}>
       <Question />
 
       <View style={style.answerContainer} >
@@ -89,13 +50,14 @@ const ReviewScreen = () => {
           multiline={true}
           autoCorrect={false}
           autoFocus={true}
+          placeholder="In english..."
         />
       </View>
 
-      <View style={style.submitButtonContainer} nativeID="buttoncontainer">
-        <TouchableOpacity style={style.submitButton} nativeID="toubableopacity">
+      <View style={style.submitButtonContainer}>
+        <Button style={style.submitButton}>
           <Text style={style.submitButtonText}>Submit</Text>
-        </TouchableOpacity>
+        </Button>
       </View>
     </Container >
 

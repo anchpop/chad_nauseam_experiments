@@ -1,17 +1,17 @@
 import * as React from "react";
 import { useState, useEffect } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, ImageBackground, ImageSourcePropType } from 'react-native';
 
-import useStyle from "../styles"
+import useStyle, { ThemeContext } from "../styles"
 
-const Container: React.FC<{}> = ({ children }) => {
+const Container = ({ imageLight, imageDark, children }: { imageLight: ImageSourcePropType, imageDark: ImageSourcePropType, children: React.ReactNode }) => {
     const style = useStyle()
     return (
-        <View style={style.background}>
+        <ImageBackground source={React.useContext(ThemeContext).light ? imageLight : imageDark} style={style.background}>
             <View style={style.container}>
                 {children}
             </View>
-        </View>
+        </ImageBackground>
     )
 }
 
