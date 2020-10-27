@@ -43,6 +43,7 @@ export const getThemeInfo = (theme: Theme) => {
   }
 }
 
+
 export const styles = (theme) => {
   const themeInfo = getThemeInfo(theme)
   return {

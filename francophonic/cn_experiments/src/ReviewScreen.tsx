@@ -7,7 +7,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import Container from './components/Container'
 
-import style from "./styles"
+import useStyle from "./styles"
 
 const playSound = async () => {
   const soundObject = new Audio.Sound();
@@ -15,25 +15,75 @@ const playSound = async () => {
   await soundObject.playAsync();
 }
 
+const Question = () => {
+  const style = useStyle()
+  return (
+    <View style={style.questionContainer}>
+
+      <View style={{ paddingRight: 5 }}>
+        <TouchableOpacity onPress={playSound}>
+          <Ionicons name="md-volume-high" size={32} color="black" />
+        </TouchableOpacity>
+      </View>
+
+      <View>
+        <Text style={style.questionText}>Je te vois.</Text>
+      </View>
+
+    </View>
+  )
+}
+
+const Working = () => (
+  <View style={{ flex: 1, alignItems: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "space-between",
+        paddingHorizontal: "5%",
+        paddingVertical: "0%",
+        width: "50%"
+      }}
+    >
+      <View
+        style={{
+          flex: 1,
+          marginTop: 4,
+          backgroundColor: "red",
+          width: "100%",
+          height: "100%"
+        }}
+        nativeID="buttoncontainer"
+      >
+        <TouchableOpacity
+          style={{
+            width: "100%",
+            height: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            borderRadius: 50,
+            backgroundColor: "green"
+          }}
+          nativeID="toubableopacity"
+        >
+          <Text>Submit</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>)
+
 const ReviewScreen = () => {
   const [currentInput, setCurrentInput] = React.useState("")
+  const style = useStyle()
 
   return (
     <Container>
-      <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', width: "100%", height: "100%" }}>
-        <View style={{ paddingRight: 5 }}>
-          <TouchableOpacity onPress={playSound}>
-            <Ionicons name="md-volume-high" size={32} color="black" />
-          </TouchableOpacity>
-        </View>
-        <View>
-          <Text style={{ fontSize: 25 }}>Je te vois.</Text>
-        </View>
-      </View>
+      <Question />
 
-      <View style={{ flex: 5, width: "100%", height: "100%" }} >
+      <View style={style.answerContainer} >
         <TextInput
-          style={{ width: "100%", height: "100%", textAlignVertical: 'top', fontSize: 25 }}
+          style={style.answerTextInput}
           onChangeText={setCurrentInput}
           value={currentInput}
           multiline={true}
@@ -42,8 +92,8 @@ const ReviewScreen = () => {
         />
       </View>
 
-      <View style={{ flex: 1, width: "100%", height: "100%" }}>
-        <TouchableOpacity style={style.submitButton}>
+      <View style={style.submitButtonContainer} nativeID="buttoncontainer">
+        <TouchableOpacity style={style.submitButton} nativeID="toubableopacity">
           <Text style={style.submitButtonText}>Submit</Text>
         </TouchableOpacity>
       </View>
