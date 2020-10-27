@@ -18,7 +18,7 @@ def grab_conjugation_soup(verb):
 def main():
     verb = input("Verb? ")
     eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
-    trans = input("Transitive? ") == "y"
+    trans = input("Transitive? ")[0].lower() == "y"
 
     contents = {}
 
