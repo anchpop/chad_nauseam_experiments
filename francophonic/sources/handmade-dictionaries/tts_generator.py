@@ -30,13 +30,14 @@ def main():
                                           for translations in sentences_dictionary] for item in sublist])
     current_dictionary = get_word_dictionary()
     words = set([w for w in current_dictionary['french'].keys()])
+    # let's not generate phrases for now - there's a ton of them and it's not very fun
     phrases = [(context.replace(" - ", " ") + " ").replace("' ", "'").replace("il/elle", "il").replace("ils/elles", "ils")  + conjugation
         for word, entry in current_dictionary['french'].items() 
             for definition in entry['definitions'] 
                 for _, forms in definition.get('conjugations', {}).items() 
                     for _, conjugations in forms.items() 
                         for context, conjugation in conjugations.items()
-        ]
+        ] if False else []
     tts_candidates = sentences.union(words).union(phrases)
     tts_candidates = set([w.lower().strip() for w in tts_candidates])
 

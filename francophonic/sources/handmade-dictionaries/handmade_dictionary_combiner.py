@@ -18,11 +18,6 @@ def main():
 
     current_dictionary = get_word_dictionary()
 
-    allwords = {}
-    with open("work/frenchwords.txt", encoding='utf-8') as f:
-        for line in f:
-            v = re.split(r" ::: ", line)
-            allwords[v[0]] = int(v[1])
 
     with open("handmade_dictionary.yaml", encoding='utf-8') as f:
         new_dictionary = yaml.load(f, Loader=Loader)
@@ -56,7 +51,7 @@ def main():
                 else:
                     break
 
-            current_dictionary["french"][word] = {"occurrences": allwords.get(word, 0), "definitions": definitions}
+            current_dictionary["french"][word] = {"definitions": definitions}
             
     with open("worddictionary.yaml", "w", encoding='utf-8') as f:
         data = yaml.dump(current_dictionary, Dumper=Dumper, allow_unicode=True)

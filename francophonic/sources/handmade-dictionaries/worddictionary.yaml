@@ -6,7 +6,6 @@ french:
       pos: exclamation
       translations:
       - ah
-    occurrences: 453
   air:
     definitions:
     - display: air
@@ -20,7 +19,6 @@ french:
       translations:
       - air
       - tune
-    occurrences: 965
   aller:
     definitions:
     - auxiliary: être
@@ -168,7 +166,6 @@ french:
       transitive: false
       translations:
       - to go
-    occurrences: 910
   alors:
     definitions:
     - display: alors
@@ -177,7 +174,6 @@ french:
       translations:
       - then
       - at that time
-    occurrences: 2056
   année:
     definitions:
     - display: année
@@ -185,7 +181,6 @@ french:
       pos: noun
       translations:
       - year
-    occurrences: 667
   après:
     definitions:
     - display: après
@@ -193,7 +188,6 @@ french:
       pos: preposition
       translations:
       - après
-    occurrences: 709
   assez:
     definitions:
     - display: assez
@@ -207,7 +201,6 @@ french:
       translations:
       - enough
       - quite
-    occurrences: 709
   au:
     definitions:
     - abbreviation: à + le
@@ -217,7 +210,6 @@ french:
       translations:
       - in
       - to
-    occurrences: 4887
   aucun:
     definitions:
     - display: aucun
@@ -228,7 +220,6 @@ french:
       pos: determiner
       translations:
       - 'no'
-    occurrences: 451
   aucune:
     definitions:
     - display: aucune
@@ -236,7 +227,6 @@ french:
       pos: determiner
       translations:
       - 'no'
-    occurrences: 433
   aussi:
     definitions:
     - display: aussi
@@ -250,7 +240,6 @@ french:
       pos: adverb
       translations:
       - as ... as
-    occurrences: 1490
   aussitôt:
     definitions:
     - display: aussitôt
@@ -259,7 +248,6 @@ french:
       translations:
       - straight away
       - immediately
-    occurrences: 687
   autour:
     definitions:
     - display: autour
@@ -267,7 +255,6 @@ french:
       pos: adverb
       translations:
       - around
-    occurrences: 794
   autre:
     definitions:
     - display: autre
@@ -276,7 +263,6 @@ french:
       translations:
       - other
       - different
-    occurrences: 612
   autres:
     definitions:
     - display: autres
@@ -286,7 +272,6 @@ french:
       translations:
       - other
       - different
-    occurrences: 892
   aux:
     definitions:
     - abbreviation: à + les
@@ -296,7 +281,6 @@ french:
       translations:
       - in
       - to
-    occurrences: 1504
   avant:
     definitions:
     - display: avant
@@ -304,7 +288,6 @@ french:
       pos: preposition
       translations:
       - before
-    occurrences: 1098
   avec:
     definitions:
     - display: avec
@@ -327,7 +310,6 @@ french:
       pos: preposition
       translations:
       - slowly
-    occurrences: 4672
   avoir:
     definitions:
     - auxiliary: avoir
@@ -457,7 +439,6 @@ french:
       transitive: true
       translations:
       - to have
-    occurrences: 1804
   baguette:
     definitions:
     - display: baguette
@@ -465,7 +446,6 @@ french:
       pos: noun
       translations:
       - stick
-    occurrences: 1269
   beaucoup:
     definitions:
     - display: beaucoup
@@ -473,7 +453,6 @@ french:
       pos: adverb
       translations:
       - a lot
-    occurrences: 883
   bien:
     definitions:
     - display: bien
@@ -487,11 +466,9 @@ french:
       pos: noun
       translations:
       - good
-    occurrences: 3773
   black:
     definitions:
     - notaword: true
-    occurrences: 692
   bon:
     definitions:
     - display: bon
@@ -499,7 +476,6 @@ french:
       pos: adjective
       translations:
       - good
-    occurrences: 570
   bonne:
     definitions:
     - display: bonne
@@ -507,7 +483,6 @@ french:
       pos: noun
       translations:
       - maid
-    occurrences: 430
   bout:
     definitions:
     - display: bout
@@ -515,7 +490,6 @@ french:
       pos: noun
       translations:
       - bit
-    occurrences: 454
   bras:
     definitions:
     - display: bras
@@ -524,7 +498,6 @@ french:
       translations:
       - arm
       - branch
-    occurrences: 642
   bureau:
     definitions:
     - display: bureau
@@ -533,7 +506,6 @@ french:
       translations:
       - desk
       - office
-    occurrences: 652
   cape:
     definitions:
     - display: cape
@@ -542,7 +514,6 @@ french:
       translations:
       - cape
       - cloak
-    occurrences: 445
   cas:
     definitions:
     - display: cas
@@ -550,7 +521,6 @@ french:
       pos: noun
       translations:
       - case
-    occurrences: 447
   ce:
     definitions:
     - display: ce
@@ -559,7 +529,6 @@ french:
       translations:
       - this
       - that
-    occurrences: 6572
   ces:
     definitions:
     - display: ces
@@ -567,7 +536,6 @@ french:
       pos: demonstrative adjective
       translations:
       - these
-    occurrences: 760
   cette:
     definitions:
     - display: cette
@@ -575,7 +543,6 @@ french:
       pos: demonstrative adjective
       translations:
       - this
-    occurrences: 1727
   chaque:
     definitions:
     - display: chaque
@@ -586,7 +553,6 @@ french:
       pos: adjective
       translations:
       - each
-    occurrences: 481
   cheveu:
     definitions:
     - display: cheveux
@@ -594,7 +560,6 @@ french:
       pos: noun
       translations:
       - hair
-    occurrences: 10
   cheveux:
     definitions:
     - display: cheveux
@@ -603,7 +568,6 @@ french:
       pos: noun
       translations:
       - hair
-    occurrences: 521
   chez:
     definitions:
     - display: chez
@@ -614,7 +578,6 @@ french:
       pos: preposition
       translations:
       - place
-    occurrences: 480
   chose:
     definitions:
     - display: chose
@@ -622,7 +585,6 @@ french:
       pos: noun
       translations:
       - thing
-    occurrences: 1541
   choses:
     definitions:
     - display: choses
@@ -634,7 +596,6 @@ french:
       pos: noun
       translations:
       - things
-    occurrences: 863
   château:
     definitions:
     - display: château
@@ -642,7 +603,6 @@ french:
       pos: noun
       translations:
       - castle
-    occurrences: 503
   classe:
     definitions:
     - display: classe
@@ -652,7 +612,6 @@ french:
       - class
       - age group
       - income bracket
-    occurrences: 424
   comme:
     definitions:
     - display: comme
@@ -660,7 +619,6 @@ french:
       pos: preposition
       translations:
       - like
-    occurrences: 2923
   comment:
     definitions:
     - display: comment
@@ -668,7 +626,6 @@ french:
       pos: adverb
       translations:
       - how
-    occurrences: 958
   contre:
     definitions:
     - display: contre
@@ -676,7 +633,6 @@ french:
       pos: preposition
       translations:
       - against
-    occurrences: 1024
   coup:
     definitions:
     - display: coup
@@ -688,7 +644,6 @@ french:
       translations:
       - blow
       - shot
-    occurrences: 901
   cours:
     definitions:
     - display: cours
@@ -697,7 +652,6 @@ french:
       translations:
       - class
       - course
-    occurrences: 865
   croire:
     definitions:
     - auxiliary: avoir
@@ -831,7 +785,6 @@ french:
       transitive: true
       translations:
       - to believe
-    occurrences: 261
   côté:
     definitions:
     - display: côté
@@ -840,7 +793,6 @@ french:
       translations:
       - side
       - direction
-    occurrences: 820
   c’est:
     definitions:
     - abbreviation: ce + est
@@ -848,7 +800,6 @@ french:
       gender: NA
       translations:
       - it is
-    occurrences: 3505
   c’était:
     definitions:
     - abbreviation: ce + c’était
@@ -856,7 +807,6 @@ french:
       gender: NA
       translations:
       - it was
-    occurrences: 1523
   dans:
     definitions:
     - display: dans
@@ -867,7 +817,6 @@ french:
       - into
       - from
       - among
-    occurrences: 9856
   de:
     definitions:
     - display: de
@@ -876,7 +825,6 @@ french:
       translations:
       - of
       - from
-    occurrences: 47459
   demander:
     definitions:
     - auxiliary: avoir
@@ -1010,7 +958,6 @@ french:
       transitive: true
       translations:
       - to ask
-    occurrences: 320
   depuis:
     definitions:
     - display: depuis
@@ -1021,7 +968,6 @@ french:
       pos: preposition
       translations:
       - since
-    occurrences: 584
   derrière:
     definitions:
     - display: derrière
@@ -1039,7 +985,6 @@ french:
       pos: noun
       translations:
       - behind
-    occurrences: 1092
   des:
     definitions:
     - abbreviation: de + les
@@ -1050,7 +995,6 @@ french:
       translations:
       - of
       - from
-    occurrences: 9537
   deux:
     definitions:
     - display: deux
@@ -1058,7 +1002,6 @@ french:
       pos: number
       translations:
       - two
-    occurrences: 1698
   devant:
     definitions:
     - display: devant
@@ -1073,7 +1016,6 @@ french:
       translations:
       - in front of
       - past
-    occurrences: 1318
   dire:
     definitions:
     - auxiliary: avoir
@@ -1203,7 +1145,6 @@ french:
       transitive: true
       translations:
       - to say
-    occurrences: 1940
   dit-elle:
     definitions:
     - abbreviation: dit + elle
@@ -1211,7 +1152,6 @@ french:
       gender: NA
       translations:
       - she says
-    occurrences: 419
   dit-il:
     definitions:
     - abbreviation: dit + il
@@ -1219,7 +1159,6 @@ french:
       gender: NA
       translations:
       - he says
-    occurrences: 1079
   donc:
     definitions:
     - display: donc
@@ -1227,7 +1166,6 @@ french:
       pos: conjonction
       translations:
       - so
-    occurrences: 672
   dont:
     definitions:
     - display: dont
@@ -1236,7 +1174,6 @@ french:
       translations:
       - whose
       - of which
-    occurrences: 678
   doute:
     definitions:
     - display: doute
@@ -1244,7 +1181,6 @@ french:
       pos: noun
       translations:
       - doubt
-    occurrences: 427
   du:
     definitions:
     - abbreviation: de + le
@@ -1254,15 +1190,12 @@ french:
       translations:
       - of
       - from
-    occurrences: 6745
   dudley:
     definitions:
     - notaword: true
-    occurrences: 455
   dumbledore:
     definitions:
     - notaword: true
-    occurrences: 2785
   déjà:
     definitions:
     - display: déjà
@@ -1271,7 +1204,6 @@ french:
       translations:
       - already
       - before
-    occurrences: 813
   d’ici:
     definitions:
     - abbreviation: de + ici
@@ -1279,7 +1211,6 @@ french:
       gender: NA
       translations:
       - by then
-    occurrences: 101
   d’un:
     definitions:
     - abbreviation: de + un
@@ -1289,7 +1220,6 @@ french:
       - an
       - of an
       - from an
-    occurrences: 4737
   d’une:
     definitions:
     - abbreviation: de + une
@@ -1297,7 +1227,6 @@ french:
       gender: fem
       translations:
       - of one
-    occurrences: 2402
   elle:
     definitions:
     - display: elle
@@ -1306,7 +1235,6 @@ french:
       translations:
       - she
       - it
-    occurrences: 3716
   elles:
     definitions:
     - display: elles
@@ -1315,7 +1243,6 @@ french:
       translations:
       - they
       - them
-    occurrences: 709
   en:
     definitions:
     - display: en
@@ -1324,7 +1251,6 @@ french:
       translations:
       - in
       - to
-    occurrences: 14022
   encore:
     definitions:
     - display: encore
@@ -1334,7 +1260,6 @@ french:
       - still
       - again
       - another
-    occurrences: 1246
   enfin:
     definitions:
     - display: enfin
@@ -1342,7 +1267,6 @@ french:
       pos: adverb
       translations:
       - at last
-    occurrences: 723
   entre:
     definitions:
     - display: entre
@@ -1351,7 +1275,6 @@ french:
       translations:
       - between
       - among
-    occurrences: 602
   est-ce:
     definitions:
     - abbreviation: est + ce
@@ -1359,7 +1282,6 @@ french:
       gender: NA
       translations:
       - is it
-    occurrences: 1708
   et:
     definitions:
     - display: et
@@ -1367,7 +1289,6 @@ french:
       pos: conjonction
       translations:
       - and
-    occurrences: 22181
   eux:
     definitions:
     - display: eux
@@ -1376,7 +1297,6 @@ french:
       translations:
       - them
       - they
-    occurrences: 786
   exemple:
     definitions:
     - display: exemple
@@ -1385,7 +1305,6 @@ french:
       translations:
       - example
       - model
-    occurrences: 714
   faire:
     definitions:
     - auxiliary: avoir
@@ -1521,7 +1440,6 @@ french:
       - to make
       - to do
       - to play
-    occurrences: 3370
   falloir:
     definitions:
     - auxiliary: avoir
@@ -1573,7 +1491,6 @@ french:
       transitive: false
       translations:
       - to need to
-    occurrences: 32
   fois:
     definitions:
     - display: fois
@@ -1581,7 +1498,6 @@ french:
       pos: noun
       translations:
       - time
-    occurrences: 1365
   france:
     definitions:
     - display: France
@@ -1589,7 +1505,6 @@ french:
       pos: noun
       translations:
       - France
-    occurrences: 712
   français:
     definitions:
     - display: français
@@ -1605,23 +1520,18 @@ french:
       pos: noun
       translations:
       - French
-    occurrences: 1373
   fred:
     definitions:
     - notaword: true
-    occurrences: 867
   fudge:
     definitions:
     - notaword: true
-    occurrences: null
   george:
     definitions:
     - notaword: true
-    occurrences: 740
   ginny:
     definitions:
     - notaword: true
-    occurrences: 660
   grand:
     definitions:
     - display: grand
@@ -1629,7 +1539,6 @@ french:
       pos: adjective
       translations:
       - tall
-    occurrences: 801
   grande:
     definitions:
     - display: grande
@@ -1642,23 +1551,18 @@ french:
       pos: adjective
       translations:
       - tall
-    occurrences: 747
   gryffondor:
     definitions:
     - notaword: true
-    occurrences: 712
   hagrid:
     definitions:
     - notaword: true
-    occurrences: 1930
   harry:
     definitions:
     - notaword: true
-    occurrences: 16226
   hermione:
     definitions:
     - notaword: true
-    occurrences: 4178
   homme:
     definitions:
     - display: homme
@@ -1666,7 +1570,6 @@ french:
       pos: noun
       translations:
       - man
-    occurrences: 471
   ici:
     definitions:
     - display: ici
@@ -1674,7 +1577,6 @@ french:
       pos: adverb
       translations:
       - here
-    occurrences: 627
   idée:
     definitions:
     - display: idée
@@ -1682,7 +1584,6 @@ french:
       pos: noun
       translations:
       - idea
-    occurrences: 447
   il:
     definitions:
     - display: il
@@ -1691,7 +1592,6 @@ french:
       translations:
       - he
       - it
-    occurrences: 17100
   ils:
     definitions:
     - display: ils
@@ -1700,7 +1600,6 @@ french:
       pos: pronoun
       translations:
       - they
-    occurrences: 3140
   instant:
     definitions:
     - display: instant
@@ -1708,7 +1607,6 @@ french:
       pos: noun
       translations:
       - moment
-    occurrences: 529
   j'ai:
     definitions:
     - abbreviation: je + ai
@@ -1716,7 +1614,6 @@ french:
       gender: NA
       translations:
       - I have
-    occurrences: 0
   jamais:
     definitions:
     - display: jamais
@@ -1739,7 +1636,6 @@ french:
       pos: adverb
       translations:
       - ever
-    occurrences: 1748
   je:
     definitions:
     - display: je
@@ -1747,7 +1643,6 @@ french:
       pos: pronoun
       translations:
       - I
-    occurrences: 8892
   jour:
     definitions:
     - display: jour
@@ -1755,7 +1650,6 @@ french:
       pos: noun
       translations:
       - day
-    occurrences: 509
   jusque:
     definitions:
     - display: jusque
@@ -1763,7 +1657,6 @@ french:
       pos: preposition
       translations:
       - as far as
-    occurrences: 714
   jusqu’ici:
     definitions:
     - abbreviation: jusque + ici
@@ -1772,7 +1665,6 @@ french:
       translations:
       - so far
       - up to now
-    occurrences: 26
   j’ai:
     definitions:
     - abbreviation: je + ai
@@ -1780,7 +1672,6 @@ french:
       gender: NA
       translations:
       - I have
-    occurrences: 1606
   la:
     definitions:
     - display: la
@@ -1788,7 +1679,6 @@ french:
       pos: definite article
       translations:
       - the
-    occurrences: 26018
   le:
     definitions:
     - display: le
@@ -1796,7 +1686,6 @@ french:
       pos: definite article
       translations:
       - the
-    occurrences: 24979
   les:
     definitions:
     - display: les
@@ -1805,7 +1694,6 @@ french:
       pos: definite article
       translations:
       - the
-    occurrences: 15107
   leur:
     definitions:
     - display: leur
@@ -1816,7 +1704,6 @@ french:
       pos: possessive adjective
       translations:
       - their
-    occurrences: 2059
   leurs:
     definitions:
     - display: leurs
@@ -1831,7 +1718,6 @@ french:
       pos: possessive pronoun
       translations:
       - theirs
-    occurrences: 1123
   long:
     definitions:
     - display: long
@@ -1842,7 +1728,6 @@ french:
       pos: adjective
       translations:
       - long
-    occurrences: 522
   lorsque:
     definitions:
     - display: lorsque
@@ -1853,7 +1738,6 @@ french:
       pos: conjonction
       translations:
       - when
-    occurrences: 819
   lorsqu’il:
     definitions:
     - abbreviation: lorsque + il
@@ -1862,7 +1746,6 @@ french:
       translations:
       - when he
       - when it
-    occurrences: 545
   lui:
     definitions:
     - display: lui
@@ -1875,11 +1758,9 @@ french:
       pos: indirect object pronoun
       translations:
       - him
-    occurrences: 6962
   lupin:
     definitions:
     - notaword: true
-    occurrences: 970
   là:
     definitions:
     - display: là
@@ -1890,7 +1771,6 @@ french:
       pos: adverb
       translations:
       - there
-    occurrences: 999
   ma:
     definitions:
     - display: ma
@@ -1898,7 +1778,6 @@ french:
       pos: possessive adjective
       translations:
       - my
-    occurrences: 727
   madame:
     definitions:
     - display: madame
@@ -1906,7 +1785,6 @@ french:
       pos: noun
       translations:
       - Mrs
-    occurrences: 490
   magie:
     definitions:
     - display: magie
@@ -1914,7 +1792,6 @@ french:
       pos: noun
       translations:
       - magic
-    occurrences: 595
   magique:
     definitions:
     - display: magique
@@ -1923,7 +1800,6 @@ french:
       translations:
       - magic
       - magical
-    occurrences: 942
   main:
     definitions:
     - display: main
@@ -1934,7 +1810,6 @@ french:
       pos: noun
       translations:
       - hand
-    occurrences: 1304
   mains:
     definitions:
     - display: mains
@@ -1942,7 +1817,6 @@ french:
       pos: noun
       translations:
       - hand
-    occurrences: 554
   maintenant:
     definitions:
     - display: maintenant
@@ -1950,7 +1824,6 @@ french:
       pos: adverb
       translations:
       - now
-    occurrences: 855
   mais:
     definitions:
     - display: mais
@@ -1961,7 +1834,6 @@ french:
       pos: conjonction
       translations:
       - but
-    occurrences: 5979
   maison:
     definitions:
     - display: maison
@@ -1970,7 +1842,6 @@ french:
       translations:
       - house
       - home
-    occurrences: 640
   mal:
     definitions:
     - display: mal
@@ -1978,19 +1849,15 @@ french:
       pos: noun
       translations:
       - evil
-    occurrences: 870
   malefoy:
     definitions:
     - notaword: true
-    occurrences: 1408
   maugrey:
     definitions:
     - notaword: true
-    occurrences: 452
   mcgonagall:
     definitions:
     - notaword: true
-    occurrences: 750
   me:
     definitions:
     - display: me
@@ -1998,7 +1865,6 @@ french:
       pos: pronoun
       translations:
       - me
-    occurrences: 1883
   mieux:
     definitions:
     - display: mieux
@@ -2006,7 +1872,6 @@ french:
       pos: adverb
       translations:
       - better
-    occurrences: 504
   ministère:
     definitions:
     - display: ministère
@@ -2015,7 +1880,6 @@ french:
       translations:
       - ministry
       - department
-    occurrences: 567
   moi:
     definitions:
     - display: moi
@@ -2023,7 +1887,6 @@ french:
       pos: pronoun
       translations:
       - me
-    occurrences: 1091
   moins:
     definitions:
     - display: moins
@@ -2031,7 +1894,6 @@ french:
       pos: adverb
       translations:
       - less
-    occurrences: 638
   moment:
     definitions:
     - display: moment
@@ -2039,7 +1901,6 @@ french:
       pos: noun
       translations:
       - moment
-    occurrences: 886
   mon:
     definitions:
     - display: mon
@@ -2047,7 +1908,6 @@ french:
       pos: possessive pronoun
       translations:
       - my
-    occurrences: 1189
   monde:
     definitions:
     - display: monde
@@ -2055,7 +1915,6 @@ french:
       pos: noun
       translations:
       - world
-    occurrences: 898
   monsieur:
     definitions:
     - display: monsieur
@@ -2063,7 +1922,6 @@ french:
       pos: noun
       translations:
       - gentleman
-    occurrences: 462
   mort:
     definitions:
     - display: mort
@@ -2071,15 +1929,12 @@ french:
       pos: noun
       translations:
       - death
-    occurrences: 467
   mr:
     definitions:
     - notaword: true
-    occurrences: 1147
   mrs:
     definitions:
     - notaword: true
-    occurrences: 754
   même:
     definitions:
     - display: même
@@ -2090,7 +1945,6 @@ french:
       pos: pronoun
       translations:
       - me
-    occurrences: 1989
   ne:
     definitions:
     - display: ne ... pas
@@ -2098,11 +1952,9 @@ french:
       pos: adverb
       translations:
       - not
-    occurrences: 8794
   neville:
     definitions:
     - notaword: true
-    occurrences: 723
   non:
     definitions:
     - display: non
@@ -2110,7 +1962,6 @@ french:
       pos: adverb
       translations:
       - 'no'
-    occurrences: 1560
   notre:
     definitions:
     - display: notre
@@ -2118,7 +1969,6 @@ french:
       pos: possessive adjective
       translations:
       - our
-    occurrences: 758
   nous:
     definitions:
     - display: nous
@@ -2127,7 +1977,6 @@ french:
       translations:
       - we
       - us
-    occurrences: 2999
   nouveau:
     definitions:
     - display: nouveau
@@ -2136,7 +1985,6 @@ french:
       translations:
       - new
       - another
-    occurrences: 1199
   nuit:
     definitions:
     - display: nuit
@@ -2147,7 +1995,6 @@ french:
       pos: noun
       translations:
       - night
-    occurrences: 432
   n’avait:
     definitions:
     - abbreviation: ne + avait
@@ -2155,7 +2002,6 @@ french:
       gender: NA
       translations:
       - hasn't
-    occurrences: 991
   oh:
     definitions:
     - display: oh
@@ -2163,7 +2009,6 @@ french:
       pos: exclamation
       translations:
       - oh
-    occurrences: 617
   ombrage:
     definitions:
     - display: ombrage
@@ -2171,7 +2016,6 @@ french:
       pos: noun
       translations:
       - umbrage
-    occurrences: 584
   'on':
     definitions:
     - display: 'on'
@@ -2185,7 +2029,6 @@ french:
       translations:
       - you
       - one
-    occurrences: 2703
   oncle:
     definitions:
     - display: oncle
@@ -2193,7 +2036,6 @@ french:
       pos: noun
       translations:
       - uncle
-    occurrences: 622
   or:
     definitions:
     - display: or
@@ -2201,7 +2043,6 @@ french:
       pos: noun
       translations:
       - gold
-    occurrences: 560
   ou:
     definitions:
     - display: ou
@@ -2209,7 +2050,6 @@ french:
       pos: conjonction
       translations:
       - or
-    occurrences: 1152
   oui:
     definitions:
     - display: oui
@@ -2217,7 +2057,6 @@ french:
       pos: adverb
       translations:
       - 'yes'
-    occurrences: 1207
   où:
     definitions:
     - display: où
@@ -2228,7 +2067,6 @@ french:
       pos: relative pronoun
       translations:
       - where
-    occurrences: 1781
   par:
     definitions:
     - display: par
@@ -2236,7 +2074,6 @@ french:
       pos: preposition
       translations:
       - by
-    occurrences: 3264
   parce:
     definitions:
     - display: parce que
@@ -2244,7 +2081,6 @@ french:
       pos: conjonction
       translations:
       - because
-    occurrences: 454
   parler:
     definitions:
     - auxiliary: avoir
@@ -2379,7 +2215,6 @@ french:
       translations:
       - to speak
       - to talk
-    occurrences: 1057
   pas:
     definitions:
     - display: ne ... pas
@@ -2387,7 +2222,6 @@ french:
       pos: adverb
       translations:
       - not
-    occurrences: 11574
   passée:
     definitions:
     - display: passé
@@ -2396,7 +2230,6 @@ french:
       translations:
       - past
       - last
-    occurrences: 35
   pendant:
     definitions:
     - display: pendant
@@ -2404,7 +2237,6 @@ french:
       pos: preposition
       translations:
       - during
-    occurrences: 1123
   penser:
     definitions:
     - auxiliary: avoir
@@ -2533,147 +2365,13 @@ french:
       other_forms:
       - ne pas penser
       pos: verb
-      prendre: null
       transitive: false
       translations:
       - to think
-    - auxiliary: avoir
-      conjugations:
-        conditionnel:
-          passé deuxième forme:
-            il/elle - eût: pris
-            ils/elles - eussent: pris
-            j' - eusse: pris
-            nous - eussions: pris
-            tu - eusses: pris
-            vous - eussiez: pris
-          passé première forme:
-            il/elle - aurait: pris
-            ils/elles - auraient: pris
-            j' - aurais: pris
-            nous - aurions: pris
-            tu - aurais: pris
-            vous - auriez: pris
-          présent:
-            il/elle: prendrait
-            ils/elles: prendraient
-            je: prendrais
-            nous: prendrions
-            tu: prendrais
-            vous: prendriez
-        indicatif:
-          futur:
-            il/elle: prendra
-            ils/elles: prendront
-            je: prendrai
-            nous: prendrons
-            tu: prendras
-            vous: prendrez
-          futur antérieur:
-            il/elle - aura: pris
-            ils/elles - auront: pris
-            j' - aurai: pris
-            nous - aurons: pris
-            tu - auras: pris
-            vous - aurez: pris
-          imparfait:
-            il/elle: prenait
-            ils/elles: prenaient
-            je: prenais
-            nous: prenions
-            tu: prenais
-            vous: preniez
-          passé antérieur:
-            il/elle - eut: pris
-            ils/elles - eurent: pris
-            j' - eus: pris
-            nous - eûmes: pris
-            tu - eus: pris
-            vous - eûtes: pris
-          passé composé:
-            il/elle - a: pris
-            ils/elles - ont: pris
-            j' - ai: pris
-            nous - avons: pris
-            tu - as: pris
-            vous - avez: pris
-          passé simple:
-            il/elle: prit
-            ils/elles: prirent
-            je: pris
-            nous: prîmes
-            tu: pris
-            vous: prîtes
-          plus-que-parfait:
-            il/elle - avait: pris
-            ils/elles - avaient: pris
-            j' - avais: pris
-            nous - avions: pris
-            tu - avais: pris
-            vous - aviez: pris
-          présent:
-            il/elle: prend
-            ils/elles: prennent
-            je: prends
-            nous: prenons
-            tu: prends
-            vous: prenez
-        infinitif:
-          passé:
-            avoir: pris
-        participe:
-          passé:
-            aie: pris
-            ayez: pris
-            ayons: pris
-          passé composé:
-            ayant: pris
-        subjonctif:
-          imparfait:
-            qu' - il/elle: prît
-            qu' - ils/elles: prissent
-            que - je: prisse
-            que - nous: prissions
-            que - tu: prisses
-            que - vous: prissiez
-          passé:
-            qu' - il/elle - ait: pris
-            qu' - ils/elles - aient: pris
-            que - j' - aie: pris
-            que - nous - ayons: pris
-            que - tu - aies: pris
-            que - vous - ayez: pris
-          plus-que-parfait:
-            qu' - il/elle - eût: pris
-            qu' - ils/elles - eussent: pris
-            que - j' - eusse: pris
-            que - nous - eussions: pris
-            que - tu - eusses: pris
-            que - vous - eussiez: pris
-          présent:
-            qu' - il/elle: prenne
-            qu' - ils/elles: prennent
-            que - je: prenne
-            que - nous: prenions
-            que - tu: prennes
-            que - vous: preniez
-      display: prendre
-      gender: NA
-      model: prendre
-      other_forms:
-      - se prendre
-      - ne pas prendre
-      - ne pas se prendre
-      pos: verb
-      transitive: true
-      translations:
-      - to take
-    occurrences: 296
   percy:
     definitions:
     - display: percy
       notaword: true
-    occurrences: 431
   personne:
     definitions:
     - display: personne
@@ -2681,7 +2379,15 @@ french:
       pos: noun
       translations:
       - person
-    occurrences: 789
+  personnes:
+    definitions:
+    - display: personnes
+      gender: fem
+      plural: true
+      pos: noun
+      singularForm: personne
+      translations:
+      - people
   petit:
     definitions:
     - display: petit
@@ -2689,7 +2395,6 @@ french:
       pos: adjective
       translations:
       - small
-    occurrences: 807
   petite:
     definitions:
     - display: petite
@@ -2697,7 +2402,6 @@ french:
       pos: adjective
       translations:
       - small
-    occurrences: 483
   peu:
     definitions:
     - display: peu
@@ -2706,7 +2410,6 @@ french:
       translations:
       - not much
       - not very
-    occurrences: 1742
   peut-être:
     definitions:
     - display: peut-être
@@ -2715,7 +2418,6 @@ french:
       translations:
       - maybe
       - perhaps
-    occurrences: 779
   pièce:
     definitions:
     - display: pièce
@@ -2723,7 +2425,6 @@ french:
       pos: noun
       translations:
       - room
-    occurrences: 459
   place:
     definitions:
     - display: place
@@ -2737,7 +2438,6 @@ french:
       translations:
       - square
       - seat
-    occurrences: 434
   plus:
     definitions:
     - display: plus
@@ -2750,7 +2450,6 @@ french:
       pos: adverb
       translations:
       - no longer
-    occurrences: 5620
   porte:
     definitions:
     - display: porte
@@ -2759,15 +2458,12 @@ french:
       translations:
       - door
       - gate
-    occurrences: 1370
   potter:
     definitions:
     - notaword: true
-    occurrences: 1201
   poudlard:
     definitions:
     - notaword: true
-    occurrences: 904
   pour:
     definitions:
     - display: pour
@@ -2781,7 +2477,6 @@ french:
       pos: preposition
       translations:
       - in my view
-    occurrences: 7058
   pourquoi:
     definitions:
     - display: pourquoi
@@ -2799,7 +2494,6 @@ french:
       pos: noun
       translations:
       - reason
-    occurrences: 782
   pouvoir:
     definitions:
     - auxiliary: avoir
@@ -2933,7 +2627,6 @@ french:
       transitive: false
       translations:
       - to be able to
-    occurrences: 560
   premier:
     definitions:
     - display: premier
@@ -2941,7 +2634,6 @@ french:
       pos: adjective
       translations:
       - first
-    occurrences: 541
   première:
     definitions:
     - display: première
@@ -2949,7 +2641,139 @@ french:
       pos: adjective
       translations:
       - first
-    occurrences: 547
+  prendre:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: pris
+            ils/elles - eussent: pris
+            j' - eusse: pris
+            nous - eussions: pris
+            tu - eusses: pris
+            vous - eussiez: pris
+          passé première forme:
+            il/elle - aurait: pris
+            ils/elles - auraient: pris
+            j' - aurais: pris
+            nous - aurions: pris
+            tu - aurais: pris
+            vous - auriez: pris
+          présent:
+            il/elle: prendrait
+            ils/elles: prendraient
+            je: prendrais
+            nous: prendrions
+            tu: prendrais
+            vous: prendriez
+        indicatif:
+          futur:
+            il/elle: prendra
+            ils/elles: prendront
+            je: prendrai
+            nous: prendrons
+            tu: prendras
+            vous: prendrez
+          futur antérieur:
+            il/elle - aura: pris
+            ils/elles - auront: pris
+            j' - aurai: pris
+            nous - aurons: pris
+            tu - auras: pris
+            vous - aurez: pris
+          imparfait:
+            il/elle: prenait
+            ils/elles: prenaient
+            je: prenais
+            nous: prenions
+            tu: prenais
+            vous: preniez
+          passé antérieur:
+            il/elle - eut: pris
+            ils/elles - eurent: pris
+            j' - eus: pris
+            nous - eûmes: pris
+            tu - eus: pris
+            vous - eûtes: pris
+          passé composé:
+            il/elle - a: pris
+            ils/elles - ont: pris
+            j' - ai: pris
+            nous - avons: pris
+            tu - as: pris
+            vous - avez: pris
+          passé simple:
+            il/elle: prit
+            ils/elles: prirent
+            je: pris
+            nous: prîmes
+            tu: pris
+            vous: prîtes
+          plus-que-parfait:
+            il/elle - avait: pris
+            ils/elles - avaient: pris
+            j' - avais: pris
+            nous - avions: pris
+            tu - avais: pris
+            vous - aviez: pris
+          présent:
+            il/elle: prend
+            ils/elles: prennent
+            je: prends
+            nous: prenons
+            tu: prends
+            vous: prenez
+        infinitif:
+          passé:
+            avoir: pris
+        participe:
+          passé:
+            aie: pris
+            ayez: pris
+            ayons: pris
+          passé composé:
+            ayant: pris
+        subjonctif:
+          imparfait:
+            qu' - il/elle: prît
+            qu' - ils/elles: prissent
+            que - je: prisse
+            que - nous: prissions
+            que - tu: prisses
+            que - vous: prissiez
+          passé:
+            qu' - il/elle - ait: pris
+            qu' - ils/elles - aient: pris
+            que - j' - aie: pris
+            que - nous - ayons: pris
+            que - tu - aies: pris
+            que - vous - ayez: pris
+          plus-que-parfait:
+            qu' - il/elle - eût: pris
+            qu' - ils/elles - eussent: pris
+            que - j' - eusse: pris
+            que - nous - eussions: pris
+            que - tu - eusses: pris
+            que - vous - eussiez: pris
+          présent:
+            qu' - il/elle: prenne
+            qu' - ils/elles: prennent
+            que - je: prenne
+            que - nous: prenions
+            que - tu: prennes
+            que - vous: preniez
+      display: prendre
+      gender: NA
+      model: prendre
+      other_forms:
+      - se prendre
+      - ne pas prendre
+      - ne pas se prendre
+      pos: verb
+      transitive: true
+      translations:
+      - to take
   professeur:
     definitions:
     - display: professeur
@@ -2958,7 +2782,6 @@ french:
       translations:
       - teacher
       - lecturer
-    occurrences: 2415
   professeure:
     definitions:
     - display: professeure
@@ -2967,7 +2790,6 @@ french:
       translations:
       - teacher
       - lecturer
-    occurrences: 0
   près:
     definitions:
     - display: près=
@@ -2975,7 +2797,6 @@ french:
       pos: adverb
       translations:
       - near
-    occurrences: 475
   présent:
     definitions:
     - display: présent
@@ -2983,7 +2804,6 @@ french:
       pos: adjective
       translations:
       - present
-    occurrences: 779
   présente:
     definitions:
     - display: présent
@@ -2991,7 +2811,6 @@ french:
       pos: adjective
       translations:
       - present
-    occurrences: 46
   présentes:
     definitions:
     - display: présent
@@ -3000,7 +2819,6 @@ french:
       pos: adjective
       translations:
       - present
-    occurrences: 9
   père:
     definitions:
     - display: père
@@ -3008,7 +2826,6 @@ french:
       pos: noun
       translations:
       - father
-    occurrences: 522
   quand:
     definitions:
     - display: quand
@@ -3016,7 +2833,6 @@ french:
       pos: conjonction
       translations:
       - when
-    occurrences: 1371
   que:
     definitions:
     - display: que
@@ -3024,7 +2840,6 @@ french:
       pos: conjonction
       translations:
       - that
-    occurrences: 15182
   quelqu'un:
     definitions:
     - abbreviation: quelque + un
@@ -3032,7 +2847,6 @@ french:
       gender: NA
       translations:
       - someone
-    occurrences: 0
   quelque:
     definitions:
     - display: quelque
@@ -3042,7 +2856,6 @@ french:
       - some
       - whatever
       - whichever
-    occurrences: 1272
   quelques:
     definitions:
     - display: quelques
@@ -3052,7 +2865,6 @@ french:
       translations:
       - some
       - whatever
-    occurrences: 859
   quelqu’un:
     definitions:
     - display: quelqu’un
@@ -3060,7 +2872,6 @@ french:
       pos: pronoun
       translations:
       - someone
-    occurrences: 745
   qui:
     definitions:
     - display: qui
@@ -3068,7 +2879,6 @@ french:
       pos: relative pronoun
       translations:
       - who
-    occurrences: 10223
   quoi:
     definitions:
     - display: quoi
@@ -3076,7 +2886,6 @@ french:
       pos: pronoun
       translations:
       - what
-    occurrences: 846
   qu’elle:
     definitions:
     - abbreviation: que + elle
@@ -3084,7 +2893,6 @@ french:
       gender: NA
       translations:
       - that she
-    occurrences: 1146
   qu’est-ce:
     definitions:
     - abbreviation: que + est + ce + que
@@ -3093,7 +2901,6 @@ french:
       translations:
       - what is this which
       - what is this that
-    occurrences: 1087
   qu’il:
     definitions:
     - abbreviation: que + il
@@ -3101,7 +2908,6 @@ french:
       gender: NA
       translations:
       - He is
-    occurrences: 5316
   qu’ils:
     definitions:
     - abbreviation: que + ils
@@ -3109,7 +2915,6 @@ french:
       gender: NA
       translations:
       - that they
-    occurrences: 1173
   qu’on:
     definitions:
     - abbreviation: que + on
@@ -3118,7 +2923,6 @@ french:
       translations:
       - that we
       - that one
-    occurrences: 1110
   regard:
     definitions:
     - display: regard
@@ -3126,7 +2930,6 @@ french:
       pos: noun
       translations:
       - look
-    occurrences: 1127
   rien:
     definitions:
     - display: rien
@@ -3139,7 +2942,6 @@ french:
       pos: pronoun
       translations:
       - not ... anything
-    occurrences: 1380
   rogue:
     definitions:
     - display: rogue
@@ -3147,11 +2949,9 @@ french:
       pos: adjective
       translations:
       - arrogant
-    occurrences: 1737
   ron:
     definitions:
     - notaword: true
-    occurrences: 5661
   répondre:
     definitions:
     - auxiliary: avoir
@@ -3287,7 +3087,6 @@ french:
       - to answer
       - to reply
       - to respond
-    occurrences: 208
   sa:
     definitions:
     - display: sa
@@ -3296,7 +3095,6 @@ french:
       translations:
       - his
       - hers
-    occurrences: 5639
   salle:
     definitions:
     - display: salle
@@ -3305,7 +3103,6 @@ french:
       translations:
       - room
       - ward
-    occurrences: 1113
   sans:
     definitions:
     - display: sans
@@ -3313,7 +3110,6 @@ french:
       pos: preposition
       translations:
       - without
-    occurrences: 1823
   savoir:
     definitions:
     - auxiliary: avoir
@@ -3447,7 +3243,6 @@ french:
       transitive: true
       translations:
       - to know
-    occurrences: 614
   se:
     definitions:
     - display: se
@@ -3457,11 +3252,9 @@ french:
       - oneself
       - himself
       - itself
-    occurrences: 10675
   serpentard:
     definitions:
     - notaword: true
-    occurrences: 501
   ses:
     definitions:
     - display: ses
@@ -3471,7 +3264,6 @@ french:
       translations:
       - his
       - hers
-    occurrences: 3920
   seul:
     definitions:
     - display: seul
@@ -3480,7 +3272,6 @@ french:
       translations:
       - alone
       - on one's own
-    occurrences: 574
   seule:
     definitions:
     - display: seule
@@ -3489,7 +3280,6 @@ french:
       translations:
       - alone
       - on one's own
-    occurrences: 362
   si:
     definitions:
     - display: si
@@ -3497,7 +3287,6 @@ french:
       pos: adverb
       translations:
       - 'yes'
-    occurrences: 3476
   silence:
     definitions:
     - display: silence
@@ -3505,7 +3294,6 @@ french:
       pos: noun
       translations:
       - silence
-    occurrences: 448
   simplement:
     definitions:
     - display: simplement
@@ -3513,11 +3301,9 @@ french:
       pos: adverb
       translations:
       - simply
-    occurrences: 547
   sirius:
     definitions:
     - notaword: true
-    occurrences: 1190
   soir:
     definitions:
     - display: soir
@@ -3530,7 +3316,6 @@ french:
       pos: noun
       translations:
       - evening
-    occurrences: 421
   soit:
     definitions:
     - display: soit
@@ -3544,7 +3329,6 @@ french:
       pos: conjonction
       translations:
       - either ... or ...
-    occurrences: 563
   sol:
     definitions:
     - display: sol
@@ -3553,7 +3337,6 @@ french:
       translations:
       - ground
       - floor
-    occurrences: 524
   son:
     definitions:
     - display: son
@@ -3562,7 +3345,6 @@ french:
       translations:
       - his
       - hers
-    occurrences: 6679
   sorcier:
     definitions:
     - display: sorcier
@@ -3570,7 +3352,6 @@ french:
       pos: noun
       translations:
       - wizard
-    occurrences: 606
   sorciers:
     definitions:
     - display: sorciers
@@ -3579,7 +3360,6 @@ french:
       pos: noun
       translations:
       - wizards
-    occurrences: 558
   sorcière:
     definitions:
     - display: sorcière
@@ -3587,7 +3367,6 @@ french:
       pos: noun
       translations:
       - witch
-    occurrences: 220
   soudain:
     definitions:
     - display: soudain
@@ -3600,7 +3379,144 @@ french:
       pos: adverb
       translations:
       - suddenly
-    occurrences: 725
+  sourire:
+    definitions:
+    - display: sourire
+      gender: masc
+      pos: noun
+      translations:
+      - smile
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: souri
+            ils/elles - eussent: souri
+            j' - eusse: souri
+            nous - eussions: souri
+            tu - eusses: souri
+            vous - eussiez: souri
+          passé première forme:
+            il/elle - aurait: souri
+            ils/elles - auraient: souri
+            j' - aurais: souri
+            nous - aurions: souri
+            tu - aurais: souri
+            vous - auriez: souri
+          présent:
+            il/elle: sourirait
+            ils/elles: souriraient
+            je: sourirais
+            nous: souririons
+            tu: sourirais
+            vous: souririez
+        indicatif:
+          futur:
+            il/elle: sourira
+            ils/elles: souriront
+            je: sourirai
+            nous: sourirons
+            tu: souriras
+            vous: sourirez
+          futur antérieur:
+            il/elle - aura: souri
+            ils/elles - auront: souri
+            j' - aurai: souri
+            nous - aurons: souri
+            tu - auras: souri
+            vous - aurez: souri
+          imparfait:
+            il/elle: souriait
+            ils/elles: souriaient
+            je: souriais
+            nous: souriions
+            tu: souriais
+            vous: souriiez
+          passé antérieur:
+            il/elle - eut: souri
+            ils/elles - eurent: souri
+            j' - eus: souri
+            nous - eûmes: souri
+            tu - eus: souri
+            vous - eûtes: souri
+          passé composé:
+            il/elle - a: souri
+            ils/elles - ont: souri
+            j' - ai: souri
+            nous - avons: souri
+            tu - as: souri
+            vous - avez: souri
+          passé simple:
+            il/elle: sourit
+            ils/elles: sourirent
+            je: souris
+            nous: sourîmes
+            tu: souris
+            vous: sourîtes
+          plus-que-parfait:
+            il/elle - avait: souri
+            ils/elles - avaient: souri
+            j' - avais: souri
+            nous - avions: souri
+            tu - avais: souri
+            vous - aviez: souri
+          présent:
+            il/elle: sourit
+            ils/elles: sourient
+            je: souris
+            nous: sourions
+            tu: souris
+            vous: souriez
+        infinitif:
+          passé:
+            avoir: souri
+        participe:
+          passé:
+            aie: souri
+            ayez: souri
+            ayons: souri
+          passé composé:
+            ayant: souri
+        subjonctif:
+          imparfait:
+            qu' - il/elle: sourît
+            qu' - ils/elles: sourissent
+            que - je: sourisse
+            que - nous: sourissions
+            que - tu: sourisses
+            que - vous: sourissiez
+          passé:
+            qu' - il/elle - ait: souri
+            qu' - ils/elles - aient: souri
+            que - j' - aie: souri
+            que - nous - ayons: souri
+            que - tu - aies: souri
+            que - vous - ayez: souri
+          plus-que-parfait:
+            qu' - il/elle - eût: souri
+            qu' - ils/elles - eussent: souri
+            que - j' - eusse: souri
+            que - nous - eussions: souri
+            que - tu - eusses: souri
+            que - vous - eussiez: souri
+          présent:
+            qu' - il/elle: sourie
+            qu' - ils/elles: sourient
+            que - je: sourie
+            que - nous: souriions
+            que - tu: souries
+            que - vous: souriiez
+      display: sourire
+      gender: NA
+      model: rire
+      other_forms:
+      - se sourire
+      - ne pas sourire
+      - ne pas se sourire
+      pos: verb
+      transitive: false
+      translations:
+      - to smile
   sous:
     definitions:
     - display: sous
@@ -3609,7 +3525,6 @@ french:
       translations:
       - under
       - beneath
-    occurrences: 1025
   sur:
     definitions:
     - display: sur
@@ -3618,7 +3533,6 @@ french:
       translations:
       - 'on'
       - over
-    occurrences: 6233
   sûr:
     definitions:
     - display: sûr
@@ -3627,7 +3541,6 @@ french:
       translations:
       - sure
       - certain
-    occurrences: 800
   sûre:
     definitions:
     - display: sûre
@@ -3636,7 +3549,6 @@ french:
       translations:
       - sure
       - certain
-    occurrences: 72
   s’il:
     definitions:
     - abbreviation: se + il
@@ -3647,7 +3559,6 @@ french:
       gender: masc
       translations:
       - while he's
-    occurrences: 1066
   ta:
     definitions:
     - display: ta
@@ -3655,7 +3566,6 @@ french:
       pos: possessive adjective
       translations:
       - his/hers
-    occurrences: 438
   table:
     definitions:
     - display: table
@@ -3663,7 +3573,6 @@ french:
       pos: noun
       translations:
       - table
-    occurrences: 731
   tandis:
     definitions:
     - display: tandis
@@ -3671,7 +3580,6 @@ french:
       pos: conjonction
       translations:
       - while
-    occurrences: 788
   tante:
     definitions:
     - display: tante
@@ -3679,7 +3587,6 @@ french:
       pos: noun
       translations:
       - aunt
-    occurrences: 442
   tard:
     definitions:
     - display: tard
@@ -3687,7 +3594,6 @@ french:
       pos: adverb
       translations:
       - late
-    occurrences: 553
   te:
     definitions:
     - display: te
@@ -3698,7 +3604,6 @@ french:
       pos: pronoun
       translations:
       - you
-    occurrences: 1532
   temps:
     definitions:
     - display: temps
@@ -3707,7 +3612,6 @@ french:
       translations:
       - weather
       - time
-    occurrences: 1375
   toi:
     definitions:
     - display: toi
@@ -3715,7 +3619,6 @@ french:
       pos: pronoun
       translations:
       - you
-    occurrences: 792
   ton:
     definitions:
     - display: ton
@@ -3723,7 +3626,6 @@ french:
       pos: possessive adjective
       translations:
       - your
-    occurrences: 1970
   toujours:
     definitions:
     - display: toujours
@@ -3731,7 +3633,6 @@ french:
       pos: adverb
       translations:
       - always
-    occurrences: 1345
   tour:
     definitions:
     - display: tour
@@ -3739,7 +3640,6 @@ french:
       pos: noun
       translations:
       - tower
-    occurrences: 604
   tous:
     definitions:
     - display: tous
@@ -3749,7 +3649,6 @@ french:
       translations:
       - all
       - every
-    occurrences: 1522
   tout:
     definitions:
     - display: tout
@@ -3758,7 +3657,6 @@ french:
       translations:
       - all
       - every
-    occurrences: 4018
   toute:
     definitions:
     - display: toute
@@ -3766,7 +3664,6 @@ french:
       pos: adjective
       translations:
       - all
-    occurrences: 874
   toutes:
     definitions:
     - display: toute
@@ -3775,7 +3672,6 @@ french:
       pos: adjective
       translations:
       - all
-    occurrences: 524
   trois:
     definitions:
     - display: trois
@@ -3783,7 +3679,6 @@ french:
       pos: number
       translations:
       - three
-    occurrences: 837
   trop:
     definitions:
     - display: trop
@@ -3791,7 +3686,6 @@ french:
       pos: adverb
       translations:
       - too
-    occurrences: 656
   très:
     definitions:
     - display: très
@@ -3800,7 +3694,6 @@ french:
       translations:
       - very
       - highly
-    occurrences: 2557
   tu:
     definitions:
     - display: tu
@@ -3808,7 +3701,6 @@ french:
       pos: pronoun
       translations:
       - you
-    occurrences: 5115
   tête:
     definitions:
     - display: tête
@@ -3817,7 +3709,6 @@ french:
       translations:
       - head
       - face
-    occurrences: 1935
   un:
     definitions:
     - display: un
@@ -3826,7 +3717,6 @@ french:
       translations:
       - a
       - an
-    occurrences: 14784
   une:
     definitions:
     - display: une
@@ -3835,11 +3725,9 @@ french:
       translations:
       - a
       - an
-    occurrences: 8317
   vernon:
     definitions:
     - notaword: true
-    occurrences: 561
   vers:
     definitions:
     - display: vers
@@ -3847,7 +3735,146 @@ french:
       pos: noun
       translations:
       - line
-    occurrences: 1959
+  vider:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: vidé
+            ils/elles - eussent: vidé
+            j' - eusse: vidé
+            nous - eussions: vidé
+            tu - eusses: vidé
+            vous - eussiez: vidé
+          passé première forme:
+            il/elle - aurait: vidé
+            ils/elles - auraient: vidé
+            j' - aurais: vidé
+            nous - aurions: vidé
+            tu - aurais: vidé
+            vous - auriez: vidé
+          présent:
+            il/elle: viderait
+            ils/elles: videraient
+            je: viderais
+            nous: viderions
+            tu: viderais
+            vous: videriez
+        indicatif:
+          futur:
+            il/elle: videra
+            ils/elles: videront
+            je: viderai
+            nous: viderons
+            tu: videras
+            vous: viderez
+          futur antérieur:
+            il/elle - aura: vidé
+            ils/elles - auront: vidé
+            j' - aurai: vidé
+            nous - aurons: vidé
+            tu - auras: vidé
+            vous - aurez: vidé
+          imparfait:
+            il/elle: vidait
+            ils/elles: vidaient
+            je: vidais
+            nous: vidions
+            tu: vidais
+            vous: vidiez
+          passé antérieur:
+            il/elle - eut: vidé
+            ils/elles - eurent: vidé
+            j' - eus: vidé
+            nous - eûmes: vidé
+            tu - eus: vidé
+            vous - eûtes: vidé
+          passé composé:
+            il/elle - a: vidé
+            ils/elles - ont: vidé
+            j' - ai: vidé
+            nous - avons: vidé
+            tu - as: vidé
+            vous - avez: vidé
+          passé simple:
+            il/elle: vida
+            ils/elles: vidèrent
+            je: vidai
+            nous: vidâmes
+            tu: vidas
+            vous: vidâtes
+          plus-que-parfait:
+            il/elle - avait: vidé
+            ils/elles - avaient: vidé
+            j' - avais: vidé
+            nous - avions: vidé
+            tu - avais: vidé
+            vous - aviez: vidé
+          présent:
+            il/elle: vide
+            ils/elles: vident
+            je: vide
+            nous: vidons
+            tu: vides
+            vous: videz
+        infinitif:
+          passé:
+            avoir: vidé
+        participe:
+          passé:
+            aie: vidé
+            ayez: vidé
+            ayons: vidé
+          passé composé:
+            ayant: vidé
+        subjonctif:
+          imparfait:
+            qu' - il/elle: vidât
+            qu' - ils/elles: vidassent
+            que - je: vidasse
+            que - nous: vidassions
+            que - tu: vidasses
+            que - vous: vidassiez
+          passé:
+            qu' - il/elle - ait: vidé
+            qu' - ils/elles - aient: vidé
+            que - j' - aie: vidé
+            que - nous - ayons: vidé
+            que - tu - aies: vidé
+            que - vous - ayez: vidé
+          plus-que-parfait:
+            qu' - il/elle - eût: vidé
+            qu' - ils/elles - eussent: vidé
+            que - j' - eusse: vidé
+            que - nous - eussions: vidé
+            que - tu - eusses: vidé
+            que - vous - eussiez: vidé
+          présent:
+            qu' - il/elle: vide
+            qu' - ils/elles: vident
+            que - je: vide
+            que - nous: vidions
+            que - tu: vides
+            que - vous: vidiez
+      display: vider
+      gender: NA
+      model: marcher
+      other_forms:
+      - se vider
+      - ne pas vider
+      - ne pas se vider
+      pos: verb
+      transitive: false
+      translations:
+      - to live
+  vie:
+    definitions:
+    - display: vie
+      gender: fem
+      pos: noun
+      translations:
+      - life
   visage:
     definitions:
     - display: visage
@@ -3855,7 +3882,6 @@ french:
       pos: noun
       translations:
       - face
-    occurrences: 1084
   voir:
     definitions:
     - auxiliary: avoir
@@ -3989,7 +4015,6 @@ french:
       transitive: false
       translations:
       - to see
-    occurrences: 1577
   voix:
     definitions:
     - display: voix
@@ -3997,11 +4022,9 @@ french:
       pos: noun
       translations:
       - voice
-    occurrences: 2560
   voldemort:
     definitions:
     - notaword: true
-    occurrences: 859
   votre:
     definitions:
     - display: votre
@@ -4009,7 +4032,6 @@ french:
       pos: possessive adjective
       translations:
       - your
-    occurrences: 678
   vous:
     definitions:
     - display: vous
@@ -4017,7 +4039,6 @@ french:
       pos: pronoun
       translations:
       - you
-    occurrences: 6301
   vraiment:
     definitions:
     - display: vraiment
@@ -4025,7 +4046,6 @@ french:
       pos: adverb
       translations:
       - really
-    occurrences: 730
   vu:
     definitions:
     - display: vu
@@ -4033,11 +4053,9 @@ french:
       pos: preposition
       translations:
       - in view of
-    occurrences: 840
   weasley:
     definitions:
     - notaword: true
-    occurrences: 1580
   y:
     definitions:
     - display: y
@@ -4045,7 +4063,6 @@ french:
       pos: adverb
       translations:
       - there
-    occurrences: 2248
   yeux:
     definitions:
     - display: yeux
@@ -4054,7 +4071,6 @@ french:
       pos: noun
       translations:
       - eyes
-    occurrences: 1899
   à:
     definitions:
     - display: à
@@ -4063,7 +4079,6 @@ french:
       translations:
       - in
       - to
-    occurrences: 24079
   ça:
     definitions:
     - display: ça
@@ -4071,7 +4086,6 @@ french:
       pos: pronoun
       translations:
       - it
-    occurrences: 3068
   école:
     definitions:
     - display: école
@@ -4079,7 +4093,6 @@ french:
       pos: noun
       translations:
       - school
-    occurrences: 557
   élever:
     definitions:
     - auxiliary: avoir
@@ -4214,7 +4227,6 @@ french:
       translations:
       - to bring up
       - to raise
-    occurrences: 28
   être:
     definitions:
     - auxiliary: avoir
@@ -4344,7 +4356,6 @@ french:
       transitive: false
       translations:
       - to be
-    occurrences: 2078
   œil:
     definitions:
     - display: yeux
@@ -4352,4 +4363,3 @@ french:
       pos: noun
       translations:
       - eye
-    occurrences: 221
