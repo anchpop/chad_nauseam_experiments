@@ -26,19 +26,25 @@ def line_to_words(line, contractions, whole_word_basis):
 
 def clean_line(line):
     line = line.strip()
-    line = line.strip("“–«» ")
-    line = line.strip()
-    line = re.sub('\[.*?]', '', line)
+    #line = line.strip("“–«» ")
+    #line = line.strip()
+    line = re.sub('\[.*?]', '', line) # get rid of the timestamps in bits like "[00:00:12] Bonjour à tous ou bonsoir"
     line = " ".join(line.split())
-    line = re.sub('^.*?:', '', line)
-    line = line.strip("“–«» ")
+    # line = re.sub('^.*?:', '', line)
+    # line = line.strip("“–«» ")
     
-    if ":" in line:
-        return ""
+    #if ":" in line:
+    #    return ""
     return line.strip()
 
+def retain_only_characters(line):
+    line = line.strip()
+    line = re.sub(r"[^A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ a-zàâäèéêëîïôœùûüÿç']", "", line).strip()
+    return line
+
+
 def line_to_words_french(line):
-    return line_to_words(line, frenchContractions, whole_word_basis=False)
+    return line_to_words(retain_only_characters(line), frenchContractions, whole_word_basis=False)
 
 def line_to_words_english(line):
     return line_to_words(line, 
