@@ -2,26 +2,26 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-cet:
-- display: cet
+exclama:
+- display: exclama
   gender: ''
   pos: ''
   translations:
   - ''
-regarda:
-- display: regarda
+feu:
+- display: feu
   gender: ''
   pos: ''
   translations:
   - ''
-veut:
-- display: veut
+impression:
+- display: impression
   gender: ''
   pos: ''
   translations:
   - ''
-veux:
-- display: veux
+leva:
+- display: leva
   gender: ''
   pos: ''
   translations:

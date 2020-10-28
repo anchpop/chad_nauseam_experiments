@@ -181,6 +181,148 @@ french:
       pos: noun
       translations:
       - year
+  ans:
+    definitions:
+    - display: ans
+      gender: masc
+      plural: true
+      pos: noun
+      translations:
+      - year
+  apprendre:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: appris
+            ils/elles - eussent: appris
+            j' - eusse: appris
+            nous - eussions: appris
+            tu - eusses: appris
+            vous - eussiez: appris
+          passé première forme:
+            il/elle - aurait: appris
+            ils/elles - auraient: appris
+            j' - aurais: appris
+            nous - aurions: appris
+            tu - aurais: appris
+            vous - auriez: appris
+          présent:
+            il/elle: apprendrait
+            ils/elles: apprendraient
+            j': apprendrais
+            nous: apprendrions
+            tu: apprendrais
+            vous: apprendriez
+        indicatif:
+          futur:
+            il/elle: apprendra
+            ils/elles: apprendront
+            j': apprendrai
+            nous: apprendrons
+            tu: apprendras
+            vous: apprendrez
+          futur antérieur:
+            il/elle - aura: appris
+            ils/elles - auront: appris
+            j' - aurai: appris
+            nous - aurons: appris
+            tu - auras: appris
+            vous - aurez: appris
+          imparfait:
+            il/elle: apprenait
+            ils/elles: apprenaient
+            j': apprenais
+            nous: apprenions
+            tu: apprenais
+            vous: appreniez
+          passé antérieur:
+            il/elle - eut: appris
+            ils/elles - eurent: appris
+            j' - eus: appris
+            nous - eûmes: appris
+            tu - eus: appris
+            vous - eûtes: appris
+          passé composé:
+            il/elle - a: appris
+            ils/elles - ont: appris
+            j' - ai: appris
+            nous - avons: appris
+            tu - as: appris
+            vous - avez: appris
+          passé simple:
+            il/elle: apprit
+            ils/elles: apprirent
+            j': appris
+            nous: apprîmes
+            tu: appris
+            vous: apprîtes
+          plus-que-parfait:
+            il/elle - avait: appris
+            ils/elles - avaient: appris
+            j' - avais: appris
+            nous - avions: appris
+            tu - avais: appris
+            vous - aviez: appris
+          présent:
+            il/elle: apprend
+            ils/elles: apprennent
+            j': apprends
+            nous: apprenons
+            tu: apprends
+            vous: apprenez
+        infinitif:
+          passé:
+            avoir: appris
+        participe:
+          passé:
+            aie: appris
+            ayez: appris
+            ayons: appris
+          passé composé:
+            ayant: appris
+        subjonctif:
+          imparfait:
+            qu' - il/elle: apprît
+            qu' - ils/elles: apprissent
+            que - j': apprisse
+            que - nous: apprissions
+            que - tu: apprisses
+            que - vous: apprissiez
+          passé:
+            qu' - il/elle - ait: appris
+            qu' - ils/elles - aient: appris
+            que - j' - aie: appris
+            que - nous - ayons: appris
+            que - tu - aies: appris
+            que - vous - ayez: appris
+          plus-que-parfait:
+            qu' - il/elle - eût: appris
+            qu' - ils/elles - eussent: appris
+            que - j' - eusse: appris
+            que - nous - eussions: appris
+            que - tu - eusses: appris
+            que - vous - eussiez: appris
+          présent:
+            qu' - il/elle: apprenne
+            qu' - ils/elles: apprennent
+            que - j': apprenne
+            que - nous: apprenions
+            que - tu: apprennes
+            que - vous: appreniez
+      display: apprendre
+      gender: NA
+      model: prendre
+      other_forms:
+      - s'apprendre
+      - ne pas apprendre
+      - ne pas s'apprendre
+      pos: verb
+      transitive: true
+      translations:
+      - to learn
+      - to hear
   après:
     definitions:
     - display: après
@@ -453,6 +595,16 @@ french:
       pos: adverb
       translations:
       - a lot
+  besoin:
+    definitions:
+    - display: besoin
+      exampleSentences:
+      - english: the need for money
+        french: le besoin d’argent
+      gender: masc
+      pos: noun
+      translations:
+      - need
   bien:
     definitions:
     - display: bien
@@ -536,6 +688,13 @@ french:
       pos: demonstrative adjective
       translations:
       - these
+  cet:
+    definitions:
+    - display: cet
+      gender: NA
+      pos: demonstrative adjective
+      translations:
+      - this
   cette:
     definitions:
     - display: cette
@@ -1267,6 +1426,139 @@ french:
       pos: adverb
       translations:
       - at last
+  entendre:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: entendu
+            ils/elles - eussent: entendu
+            j' - eusse: entendu
+            nous - eussions: entendu
+            tu - eusses: entendu
+            vous - eussiez: entendu
+          passé première forme:
+            il/elle - aurait: entendu
+            ils/elles - auraient: entendu
+            j' - aurais: entendu
+            nous - aurions: entendu
+            tu - aurais: entendu
+            vous - auriez: entendu
+          présent:
+            il/elle: entendrait
+            ils/elles: entendraient
+            j': entendrais
+            nous: entendrions
+            tu: entendrais
+            vous: entendriez
+        indicatif:
+          futur:
+            il/elle: entendra
+            ils/elles: entendront
+            j': entendrai
+            nous: entendrons
+            tu: entendras
+            vous: entendrez
+          futur antérieur:
+            il/elle - aura: entendu
+            ils/elles - auront: entendu
+            j' - aurai: entendu
+            nous - aurons: entendu
+            tu - auras: entendu
+            vous - aurez: entendu
+          imparfait:
+            il/elle: entendait
+            ils/elles: entendaient
+            j': entendais
+            nous: entendions
+            tu: entendais
+            vous: entendiez
+          passé antérieur:
+            il/elle - eut: entendu
+            ils/elles - eurent: entendu
+            j' - eus: entendu
+            nous - eûmes: entendu
+            tu - eus: entendu
+            vous - eûtes: entendu
+          passé composé:
+            il/elle - a: entendu
+            ils/elles - ont: entendu
+            j' - ai: entendu
+            nous - avons: entendu
+            tu - as: entendu
+            vous - avez: entendu
+          passé simple:
+            il/elle: entendit
+            ils/elles: entendirent
+            j': entendis
+            nous: entendîmes
+            tu: entendis
+            vous: entendîtes
+          plus-que-parfait:
+            il/elle - avait: entendu
+            ils/elles - avaient: entendu
+            j' - avais: entendu
+            nous - avions: entendu
+            tu - avais: entendu
+            vous - aviez: entendu
+          présent:
+            il/elle: entend
+            ils/elles: entendent
+            j': entends
+            nous: entendons
+            tu: entends
+            vous: entendez
+        infinitif:
+          passé:
+            avoir: entendu
+        participe:
+          passé:
+            aie: entendu
+            ayez: entendu
+            ayons: entendu
+          passé composé:
+            ayant: entendu
+        subjonctif:
+          imparfait:
+            qu' - il/elle: entendît
+            qu' - ils/elles: entendissent
+            que - j': entendisse
+            que - nous: entendissions
+            que - tu: entendisses
+            que - vous: entendissiez
+          passé:
+            qu' - il/elle - ait: entendu
+            qu' - ils/elles - aient: entendu
+            que - j' - aie: entendu
+            que - nous - ayons: entendu
+            que - tu - aies: entendu
+            que - vous - ayez: entendu
+          plus-que-parfait:
+            qu' - il/elle - eût: entendu
+            qu' - ils/elles - eussent: entendu
+            que - j' - eusse: entendu
+            que - nous - eussions: entendu
+            que - tu - eusses: entendu
+            que - vous - eussiez: entendu
+          présent:
+            qu' - il/elle: entende
+            qu' - ils/elles: entendent
+            que - j': entende
+            que - nous: entendions
+            que - tu: entendes
+            que - vous: entendiez
+      display: entendre
+      gender: NA
+      model: attendre
+      other_forms:
+      - s'entendre
+      - ne pas entendre
+      - ne pas s'entendre
+      pos: verb
+      transitive: true
+      translations:
+      - to hear
   entre:
     definitions:
     - display: entre
@@ -1275,6 +1567,139 @@ french:
       translations:
       - between
       - among
+  essayer:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: essayé
+            ils/elles - eussent: essayé
+            j' - eusse: essayé
+            nous - eussions: essayé
+            tu - eusses: essayé
+            vous - eussiez: essayé
+          passé première forme:
+            il/elle - aurait: essayé
+            ils/elles - auraient: essayé
+            j' - aurais: essayé
+            nous - aurions: essayé
+            tu - aurais: essayé
+            vous - auriez: essayé
+          présent:
+            il/elle: essaierait
+            ils/elles: essaieraient
+            j': essaierais
+            nous: essaierions
+            tu: essaierais
+            vous: essaieriez
+        indicatif:
+          futur:
+            il/elle: essaiera
+            ils/elles: essaieront
+            j': essaierai
+            nous: essaierons
+            tu: essaieras
+            vous: essaierez
+          futur antérieur:
+            il/elle - aura: essayé
+            ils/elles - auront: essayé
+            j' - aurai: essayé
+            nous - aurons: essayé
+            tu - auras: essayé
+            vous - aurez: essayé
+          imparfait:
+            il/elle: essayait
+            ils/elles: essayaient
+            j': essayais
+            nous: essayions
+            tu: essayais
+            vous: essayiez
+          passé antérieur:
+            il/elle - eut: essayé
+            ils/elles - eurent: essayé
+            j' - eus: essayé
+            nous - eûmes: essayé
+            tu - eus: essayé
+            vous - eûtes: essayé
+          passé composé:
+            il/elle - a: essayé
+            ils/elles - ont: essayé
+            j' - ai: essayé
+            nous - avons: essayé
+            tu - as: essayé
+            vous - avez: essayé
+          passé simple:
+            il/elle: essaya
+            ils/elles: essayèrent
+            j': essayai
+            nous: essayâmes
+            tu: essayas
+            vous: essayâtes
+          plus-que-parfait:
+            il/elle - avait: essayé
+            ils/elles - avaient: essayé
+            j' - avais: essayé
+            nous - avions: essayé
+            tu - avais: essayé
+            vous - aviez: essayé
+          présent:
+            il/elle: essaie
+            ils/elles: essaient
+            j': essaie
+            nous: essayons
+            tu: essaies
+            vous: essayez
+        infinitif:
+          passé:
+            avoir: essayé
+        participe:
+          passé:
+            aie: essayé
+            ayez: essayé
+            ayons: essayé
+          passé composé:
+            ayant: essayé
+        subjonctif:
+          imparfait:
+            qu' - il/elle: essayât
+            qu' - ils/elles: essayassent
+            que - j': essayasse
+            que - nous: essayassions
+            que - tu: essayasses
+            que - vous: essayassiez
+          passé:
+            qu' - il/elle - ait: essayé
+            qu' - ils/elles - aient: essayé
+            que - j' - aie: essayé
+            que - nous - ayons: essayé
+            que - tu - aies: essayé
+            que - vous - ayez: essayé
+          plus-que-parfait:
+            qu' - il/elle - eût: essayé
+            qu' - ils/elles - eussent: essayé
+            que - j' - eusse: essayé
+            que - nous - eussions: essayé
+            que - tu - eusses: essayé
+            que - vous - eussiez: essayé
+          présent:
+            qu' - il/elle: essaie
+            qu' - ils/elles: essaient
+            que - j': essaie
+            que - nous: essayions
+            que - tu: essaies
+            que - vous: essayiez
+      display: essayer
+      gender: NA
+      model: marcher
+      other_forms:
+      - s'essayer
+      - ne pas essayer
+      - ne pas s'essayer
+      pos: verb
+      transitive: true
+      translations:
+      - to try
   est-ce:
     definitions:
     - abbreviation: est + ce
@@ -1865,6 +2290,20 @@ french:
       pos: pronoun
       translations:
       - me
+  merci:
+    definitions:
+    - display: merci
+      gender: NA
+      pos: exclamation
+      translations:
+      - thank you
+  mes:
+    definitions:
+    - display: mes
+      gender: NA
+      pos: possessive adjective
+      translations:
+      - my
   mieux:
     definitions:
     - display: mieux
@@ -2222,6 +2661,216 @@ french:
       pos: adverb
       translations:
       - not
+  passer:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: passée
+            elles - fussent: passées
+            il - fût: passé
+            il/elle - eût: passé
+            ils - fussent: passés
+            ils/elles - eussent: passé
+            j' - eusse: passé
+            je - fusse: passé
+            nous - eussions: passé
+            nous - fussions: passés
+            tu - eusses: passé
+            tu - fusses: passé
+            vous - eussiez: passé
+            vous - fussiez: passés
+          passé première forme:
+            elle - serait: passée
+            elles - seraient: passées
+            il - serait: passé
+            il/elle - aurait: passé
+            ils - seraient: passés
+            ils/elles - auraient: passé
+            j' - aurais: passé
+            je - serais: passé
+            nous - aurions: passé
+            nous - serions: passés
+            tu - aurais: passé
+            tu - serais: passé
+            vous - auriez: passé
+            vous - seriez: passés
+          présent:
+            il/elle: passerait
+            ils/elles: passeraient
+            je: passerais
+            nous: passerions
+            tu: passerais
+            vous: passeriez
+        indicatif:
+          futur:
+            il/elle: passera
+            ils/elles: passeront
+            je: passerai
+            nous: passerons
+            tu: passeras
+            vous: passerez
+          futur antérieur:
+            elle - sera: passée
+            elles - seront: passées
+            il - sera: passé
+            il/elle - aura: passé
+            ils - seront: passés
+            ils/elles - auront: passé
+            j' - aurai: passé
+            je - serai: passé
+            nous - aurons: passé
+            nous - serons: passés
+            tu - auras: passé
+            tu - seras: passé
+            vous - aurez: passé
+            vous - serez: passés
+          imparfait:
+            il/elle: passait
+            ils/elles: passaient
+            je: passais
+            nous: passions
+            tu: passais
+            vous: passiez
+          passé antérieur:
+            elle - fut: passée
+            elles - furent: passées
+            il - fut: passé
+            il/elle - eut: passé
+            ils - furent: passés
+            ils/elles - eurent: passé
+            j' - eus: passé
+            je - fus: passé
+            nous - eûmes: passé
+            nous - fûmes: passés
+            tu - eus: passé
+            tu - fus: passé
+            vous - eûtes: passé
+            vous - fûtes: passés
+          passé composé:
+            elle - est: passée
+            elles - sont: passées
+            il - est: passé
+            il/elle - a: passé
+            ils - sont: passés
+            ils/elles - ont: passé
+            j' - ai: passé
+            je - suis: passé
+            nous - avons: passé
+            nous - sommes: passés
+            tu - as: passé
+            tu - es: passé
+            vous - avez: passé
+            vous - êtes: passés
+          passé simple:
+            il/elle: passa
+            ils/elles: passèrent
+            je: passai
+            nous: passâmes
+            tu: passas
+            vous: passâtes
+          plus-que-parfait:
+            elle - était: passée
+            elles - étaient: passées
+            il - était: passé
+            il/elle - avait: passé
+            ils - étaient: passés
+            ils/elles - avaient: passé
+            j' - avais: passé
+            j' - étais: passé
+            nous - avions: passé
+            nous - étions: passés
+            tu - avais: passé
+            tu - étais: passé
+            vous - aviez: passé
+            vous - étiez: passés
+          présent:
+            il/elle: passe
+            ils/elles: passent
+            je: passe
+            nous: passons
+            tu: passes
+            vous: passez
+        infinitif:
+          passé:
+            avoir: passé
+            être: passé
+        participe:
+          passé:
+            aie: passé
+            ayez: passé
+            ayons: passé
+            sois: passé
+            soyez: passé
+            soyons: passé
+          passé composé:
+            ayant: passé
+            étant: passée
+        subjonctif:
+          imparfait:
+            qu' - il/elle: passât
+            qu' - ils/elles: passassent
+            que - je: passasse
+            que - nous: passassions
+            que - tu: passasses
+            que - vous: passassiez
+          passé:
+            qu' - elle - soit: passée
+            qu' - elles - soient: passées
+            qu' - il - soit: passé
+            qu' - il/elle - ait: passé
+            qu' - ils - soient: passés
+            qu' - ils/elles - aient: passé
+            que - j' - aie: passé
+            que - je - sois: passé
+            que - nous - ayons: passé
+            que - nous - soyons: passés
+            que - tu - aies: passé
+            que - tu - sois: passé
+            que - vous - ayez: passé
+            que - vous - soyez: passés
+          plus-que-parfait:
+            qu' - elle - fût: passée
+            qu' - elles - fussent: passées
+            qu' - il - fût: passé
+            qu' - il/elle - eût: passé
+            qu' - ils - fussent: passés
+            qu' - ils/elles - eussent: passé
+            que - j' - eusse: passé
+            que - je - fusse: passé
+            que - nous - eussions: passé
+            que - nous - fussions: passés
+            que - tu - eusses: passé
+            que - tu - fusses: passé
+            que - vous - eussiez: passé
+            que - vous - fussiez: passés
+          présent:
+            qu' - il/elle: passe
+            qu' - ils/elles: passent
+            que - je: passe
+            que - nous: passions
+            que - tu: passes
+            que - vous: passiez
+      display: passer
+      gender: NA
+      model: marcher
+      other_forms:
+      - se passer
+      - ne pas passer
+      - ne pas se passer
+      pos: verb
+      transitive: false
+      translations:
+      - to go
+      - to pass
+  passé:
+    definitions:
+    - display: passé
+      gender: masc
+      pos: adjective
+      translations:
+      - past
   passée:
     definitions:
     - display: passé
@@ -2450,6 +3099,20 @@ french:
       pos: adverb
       translations:
       - no longer
+  plutôt:
+    definitions:
+    - display: plutôt
+      gender: NA
+      pos: adverb
+      translations:
+      - rather
+  podcast:
+    definitions:
+    - display: podcast
+      gender: masc
+      pos: noun
+      translations:
+      - podcast
   porte:
     definitions:
     - display: porte
@@ -2930,6 +3593,140 @@ french:
       pos: noun
       translations:
       - look
+  regarder:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: regardé
+            ils/elles - eussent: regardé
+            j' - eusse: regardé
+            nous - eussions: regardé
+            tu - eusses: regardé
+            vous - eussiez: regardé
+          passé première forme:
+            il/elle - aurait: regardé
+            ils/elles - auraient: regardé
+            j' - aurais: regardé
+            nous - aurions: regardé
+            tu - aurais: regardé
+            vous - auriez: regardé
+          présent:
+            il/elle: regarderait
+            ils/elles: regarderaient
+            je: regarderais
+            nous: regarderions
+            tu: regarderais
+            vous: regarderiez
+        indicatif:
+          futur:
+            il/elle: regardera
+            ils/elles: regarderont
+            je: regarderai
+            nous: regarderons
+            tu: regarderas
+            vous: regarderez
+          futur antérieur:
+            il/elle - aura: regardé
+            ils/elles - auront: regardé
+            j' - aurai: regardé
+            nous - aurons: regardé
+            tu - auras: regardé
+            vous - aurez: regardé
+          imparfait:
+            il/elle: regardait
+            ils/elles: regardaient
+            je: regardais
+            nous: regardions
+            tu: regardais
+            vous: regardiez
+          passé antérieur:
+            il/elle - eut: regardé
+            ils/elles - eurent: regardé
+            j' - eus: regardé
+            nous - eûmes: regardé
+            tu - eus: regardé
+            vous - eûtes: regardé
+          passé composé:
+            il/elle - a: regardé
+            ils/elles - ont: regardé
+            j' - ai: regardé
+            nous - avons: regardé
+            tu - as: regardé
+            vous - avez: regardé
+          passé simple:
+            il/elle: regarda
+            ils/elles: regardèrent
+            je: regardai
+            nous: regardâmes
+            tu: regardas
+            vous: regardâtes
+          plus-que-parfait:
+            il/elle - avait: regardé
+            ils/elles - avaient: regardé
+            j' - avais: regardé
+            nous - avions: regardé
+            tu - avais: regardé
+            vous - aviez: regardé
+          présent:
+            il/elle: regarde
+            ils/elles: regardent
+            je: regarde
+            nous: regardons
+            tu: regardes
+            vous: regardez
+        infinitif:
+          passé:
+            avoir: regardé
+        participe:
+          passé:
+            aie: regardé
+            ayez: regardé
+            ayons: regardé
+          passé composé:
+            ayant: regardé
+        subjonctif:
+          imparfait:
+            qu' - il/elle: regardât
+            qu' - ils/elles: regardassent
+            que - je: regardasse
+            que - nous: regardassions
+            que - tu: regardasses
+            que - vous: regardassiez
+          passé:
+            qu' - il/elle - ait: regardé
+            qu' - ils/elles - aient: regardé
+            que - j' - aie: regardé
+            que - nous - ayons: regardé
+            que - tu - aies: regardé
+            que - vous - ayez: regardé
+          plus-que-parfait:
+            qu' - il/elle - eût: regardé
+            qu' - ils/elles - eussent: regardé
+            que - j' - eusse: regardé
+            que - nous - eussions: regardé
+            que - tu - eusses: regardé
+            que - vous - eussiez: regardé
+          présent:
+            qu' - il/elle: regarde
+            qu' - ils/elles: regardent
+            que - je: regarde
+            que - nous: regardions
+            que - tu: regardes
+            que - vous: regardiez
+      display: regarder
+      gender: NA
+      model: marcher
+      other_forms:
+      - se regarder
+      - ne pas regarder
+      - ne pas se regarder
+      pos: verb
+      transitive: true
+      translations:
+      - to look at
+      - to watch
   rien:
     definitions:
     - display: rien
@@ -2942,6 +3739,139 @@ french:
       pos: pronoun
       translations:
       - not ... anything
+  rire:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: ri
+            ils/elles - eussent: ri
+            j' - eusse: ri
+            nous - eussions: ri
+            tu - eusses: ri
+            vous - eussiez: ri
+          passé première forme:
+            il/elle - aurait: ri
+            ils/elles - auraient: ri
+            j' - aurais: ri
+            nous - aurions: ri
+            tu - aurais: ri
+            vous - auriez: ri
+          présent:
+            il/elle: rirait
+            ils/elles: riraient
+            je: rirais
+            nous: ririons
+            tu: rirais
+            vous: ririez
+        indicatif:
+          futur:
+            il/elle: rira
+            ils/elles: riront
+            je: rirai
+            nous: rirons
+            tu: riras
+            vous: rirez
+          futur antérieur:
+            il/elle - aura: ri
+            ils/elles - auront: ri
+            j' - aurai: ri
+            nous - aurons: ri
+            tu - auras: ri
+            vous - aurez: ri
+          imparfait:
+            il/elle: riait
+            ils/elles: riaient
+            je: riais
+            nous: riions
+            tu: riais
+            vous: riiez
+          passé antérieur:
+            il/elle - eut: ri
+            ils/elles - eurent: ri
+            j' - eus: ri
+            nous - eûmes: ri
+            tu - eus: ri
+            vous - eûtes: ri
+          passé composé:
+            il/elle - a: ri
+            ils/elles - ont: ri
+            j' - ai: ri
+            nous - avons: ri
+            tu - as: ri
+            vous - avez: ri
+          passé simple:
+            il/elle: rit
+            ils/elles: rirent
+            je: ris
+            nous: rîmes
+            tu: ris
+            vous: rîtes
+          plus-que-parfait:
+            il/elle - avait: ri
+            ils/elles - avaient: ri
+            j' - avais: ri
+            nous - avions: ri
+            tu - avais: ri
+            vous - aviez: ri
+          présent:
+            il/elle: rit
+            ils/elles: rient
+            je: ris
+            nous: rions
+            tu: ris
+            vous: riez
+        infinitif:
+          passé:
+            avoir: ri
+        participe:
+          passé:
+            aie: ri
+            ayez: ri
+            ayons: ri
+          passé composé:
+            ayant: ri
+        subjonctif:
+          imparfait:
+            qu' - il/elle: rît
+            qu' - ils/elles: rissent
+            que - je: risse
+            que - nous: rissions
+            que - tu: risses
+            que - vous: rissiez
+          passé:
+            qu' - il/elle - ait: ri
+            qu' - ils/elles - aient: ri
+            que - j' - aie: ri
+            que - nous - ayons: ri
+            que - tu - aies: ri
+            que - vous - ayez: ri
+          plus-que-parfait:
+            qu' - il/elle - eût: ri
+            qu' - ils/elles - eussent: ri
+            que - j' - eusse: ri
+            que - nous - eussions: ri
+            que - tu - eusses: ri
+            que - vous - eussiez: ri
+          présent:
+            qu' - il/elle: rie
+            qu' - ils/elles: rient
+            que - je: rie
+            que - nous: riions
+            que - tu: ries
+            que - vous: riiez
+      display: rire
+      gender: NA
+      model: rire
+      other_forms:
+      - se rire
+      - ne pas rire
+      - ne pas se rire
+      pos: verb
+      transitive: false
+      translations:
+      - to laugh
   rogue:
     definitions:
     - display: rogue
@@ -2952,6 +3882,139 @@ french:
   ron:
     definitions:
     - notaword: true
+  répliquer:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: répliqué
+            ils/elles - eussent: répliqué
+            j' - eusse: répliqué
+            nous - eussions: répliqué
+            tu - eusses: répliqué
+            vous - eussiez: répliqué
+          passé première forme:
+            il/elle - aurait: répliqué
+            ils/elles - auraient: répliqué
+            j' - aurais: répliqué
+            nous - aurions: répliqué
+            tu - aurais: répliqué
+            vous - auriez: répliqué
+          présent:
+            il/elle: répliquerait
+            ils/elles: répliqueraient
+            je: répliquerais
+            nous: répliquerions
+            tu: répliquerais
+            vous: répliqueriez
+        indicatif:
+          futur:
+            il/elle: répliquera
+            ils/elles: répliqueront
+            je: répliquerai
+            nous: répliquerons
+            tu: répliqueras
+            vous: répliquerez
+          futur antérieur:
+            il/elle - aura: répliqué
+            ils/elles - auront: répliqué
+            j' - aurai: répliqué
+            nous - aurons: répliqué
+            tu - auras: répliqué
+            vous - aurez: répliqué
+          imparfait:
+            il/elle: répliquait
+            ils/elles: répliquaient
+            je: répliquais
+            nous: répliquions
+            tu: répliquais
+            vous: répliquiez
+          passé antérieur:
+            il/elle - eut: répliqué
+            ils/elles - eurent: répliqué
+            j' - eus: répliqué
+            nous - eûmes: répliqué
+            tu - eus: répliqué
+            vous - eûtes: répliqué
+          passé composé:
+            il/elle - a: répliqué
+            ils/elles - ont: répliqué
+            j' - ai: répliqué
+            nous - avons: répliqué
+            tu - as: répliqué
+            vous - avez: répliqué
+          passé simple:
+            il/elle: répliqua
+            ils/elles: répliquèrent
+            je: répliquai
+            nous: répliquâmes
+            tu: répliquas
+            vous: répliquâtes
+          plus-que-parfait:
+            il/elle - avait: répliqué
+            ils/elles - avaient: répliqué
+            j' - avais: répliqué
+            nous - avions: répliqué
+            tu - avais: répliqué
+            vous - aviez: répliqué
+          présent:
+            il/elle: réplique
+            ils/elles: répliquent
+            je: réplique
+            nous: répliquons
+            tu: répliques
+            vous: répliquez
+        infinitif:
+          passé:
+            avoir: répliqué
+        participe:
+          passé:
+            aie: répliqué
+            ayez: répliqué
+            ayons: répliqué
+          passé composé:
+            ayant: répliqué
+        subjonctif:
+          imparfait:
+            qu' - il/elle: répliquât
+            qu' - ils/elles: répliquassent
+            que - je: répliquasse
+            que - nous: répliquassions
+            que - tu: répliquasses
+            que - vous: répliquassiez
+          passé:
+            qu' - il/elle - ait: répliqué
+            qu' - ils/elles - aient: répliqué
+            que - j' - aie: répliqué
+            que - nous - ayons: répliqué
+            que - tu - aies: répliqué
+            que - vous - ayez: répliqué
+          plus-que-parfait:
+            qu' - il/elle - eût: répliqué
+            qu' - ils/elles - eussent: répliqué
+            que - j' - eusse: répliqué
+            que - nous - eussions: répliqué
+            que - tu - eusses: répliqué
+            que - vous - eussiez: répliqué
+          présent:
+            qu' - il/elle: réplique
+            qu' - ils/elles: répliquent
+            que - je: réplique
+            que - nous: répliquions
+            que - tu: répliques
+            que - vous: répliquiez
+      display: répliquer
+      gender: NA
+      model: marcher
+      other_forms:
+      - se répliquer
+      - ne pas répliquer
+      - ne pas se répliquer
+      pos: verb
+      transitive: false
+      translations:
+      - to reply
   répondre:
     definitions:
     - auxiliary: avoir
@@ -3252,6 +4315,137 @@ french:
       - oneself
       - himself
       - itself
+  sembler:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: semblé
+            ils/elles - eussent: semblé
+            j' - eusse: semblé
+            nous - eussions: semblé
+            tu - eusses: semblé
+            vous - eussiez: semblé
+          passé première forme:
+            il/elle - aurait: semblé
+            ils/elles - auraient: semblé
+            j' - aurais: semblé
+            nous - aurions: semblé
+            tu - aurais: semblé
+            vous - auriez: semblé
+          présent:
+            il/elle: semblerait
+            ils/elles: sembleraient
+            je: semblerais
+            nous: semblerions
+            tu: semblerais
+            vous: sembleriez
+        indicatif:
+          futur:
+            il/elle: semblera
+            ils/elles: sembleront
+            je: semblerai
+            nous: semblerons
+            tu: sembleras
+            vous: semblerez
+          futur antérieur:
+            il/elle - aura: semblé
+            ils/elles - auront: semblé
+            j' - aurai: semblé
+            nous - aurons: semblé
+            tu - auras: semblé
+            vous - aurez: semblé
+          imparfait:
+            il/elle: semblait
+            ils/elles: semblaient
+            je: semblais
+            nous: semblions
+            tu: semblais
+            vous: sembliez
+          passé antérieur:
+            il/elle - eut: semblé
+            ils/elles - eurent: semblé
+            j' - eus: semblé
+            nous - eûmes: semblé
+            tu - eus: semblé
+            vous - eûtes: semblé
+          passé composé:
+            il/elle - a: semblé
+            ils/elles - ont: semblé
+            j' - ai: semblé
+            nous - avons: semblé
+            tu - as: semblé
+            vous - avez: semblé
+          passé simple:
+            il/elle: sembla
+            ils/elles: semblèrent
+            je: semblai
+            nous: semblâmes
+            tu: semblas
+            vous: semblâtes
+          plus-que-parfait:
+            il/elle - avait: semblé
+            ils/elles - avaient: semblé
+            j' - avais: semblé
+            nous - avions: semblé
+            tu - avais: semblé
+            vous - aviez: semblé
+          présent:
+            il/elle: semble
+            ils/elles: semblent
+            je: semble
+            nous: semblons
+            tu: sembles
+            vous: semblez
+        infinitif:
+          passé:
+            avoir: semblé
+        participe:
+          passé:
+            aie: semblé
+            ayez: semblé
+            ayons: semblé
+          passé composé:
+            ayant: semblé
+        subjonctif:
+          imparfait:
+            qu' - il/elle: semblât
+            qu' - ils/elles: semblassent
+            que - je: semblasse
+            que - nous: semblassions
+            que - tu: semblasses
+            que - vous: semblassiez
+          passé:
+            qu' - il/elle - ait: semblé
+            qu' - ils/elles - aient: semblé
+            que - j' - aie: semblé
+            que - nous - ayons: semblé
+            que - tu - aies: semblé
+            que - vous - ayez: semblé
+          plus-que-parfait:
+            qu' - il/elle - eût: semblé
+            qu' - ils/elles - eussent: semblé
+            que - j' - eusse: semblé
+            que - nous - eussions: semblé
+            que - tu - eusses: semblé
+            que - vous - eussiez: semblé
+          présent:
+            qu' - il/elle: semble
+            qu' - ils/elles: semblent
+            que - je: semble
+            que - nous: semblions
+            que - tu: sembles
+            que - vous: sembliez
+      display: sembler
+      gender: NA
+      model: marcher
+      other_forms:
+      - ne pas sembler
+      pos: verb
+      transitive: false
+      translations:
+      - to seem
   serpentard:
     definitions:
     - notaword: true
@@ -3882,6 +5076,13 @@ french:
       pos: noun
       translations:
       - face
+  voilà:
+    definitions:
+    - display: voilà
+      gender: NA
+      pos: preposition
+      translations:
+      - there is
   voir:
     definitions:
     - auxiliary: avoir
@@ -4032,6 +5233,139 @@ french:
       pos: possessive adjective
       translations:
       - your
+  vouloir:
+    definitions:
+    - auxiliary: avoir
+      conjugations:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: voulu
+            ils/elles - eussent: voulu
+            j' - eusse: voulu
+            nous - eussions: voulu
+            tu - eusses: voulu
+            vous - eussiez: voulu
+          passé première forme:
+            il/elle - aurait: voulu
+            ils/elles - auraient: voulu
+            j' - aurais: voulu
+            nous - aurions: voulu
+            tu - aurais: voulu
+            vous - auriez: voulu
+          présent:
+            il/elle: voudrait
+            ils/elles: voudraient
+            je: voudrais
+            nous: voudrions
+            tu: voudrais
+            vous: voudriez
+        indicatif:
+          futur:
+            il/elle: voudra
+            ils/elles: voudront
+            je: voudrai
+            nous: voudrons
+            tu: voudras
+            vous: voudrez
+          futur antérieur:
+            il/elle - aura: voulu
+            ils/elles - auront: voulu
+            j' - aurai: voulu
+            nous - aurons: voulu
+            tu - auras: voulu
+            vous - aurez: voulu
+          imparfait:
+            il/elle: voulait
+            ils/elles: voulaient
+            je: voulais
+            nous: voulions
+            tu: voulais
+            vous: vouliez
+          passé antérieur:
+            il/elle - eut: voulu
+            ils/elles - eurent: voulu
+            j' - eus: voulu
+            nous - eûmes: voulu
+            tu - eus: voulu
+            vous - eûtes: voulu
+          passé composé:
+            il/elle - a: voulu
+            ils/elles - ont: voulu
+            j' - ai: voulu
+            nous - avons: voulu
+            tu - as: voulu
+            vous - avez: voulu
+          passé simple:
+            il/elle: voulut
+            ils/elles: voulurent
+            je: voulus
+            nous: voulûmes
+            tu: voulus
+            vous: voulûtes
+          plus-que-parfait:
+            il/elle - avait: voulu
+            ils/elles - avaient: voulu
+            j' - avais: voulu
+            nous - avions: voulu
+            tu - avais: voulu
+            vous - aviez: voulu
+          présent:
+            il/elle: veut
+            ils/elles: veulent
+            je: veux
+            nous: voulons
+            tu: veux
+            vous: voulez
+        infinitif:
+          passé:
+            avoir: voulu
+        participe:
+          passé:
+            aie: voulu
+            ayez: voulu
+            ayons: voulu
+          passé composé:
+            ayant: voulu
+        subjonctif:
+          imparfait:
+            qu' - il/elle: voulût
+            qu' - ils/elles: voulussent
+            que - je: voulusse
+            que - nous: voulussions
+            que - tu: voulusses
+            que - vous: voulussiez
+          passé:
+            qu' - il/elle - ait: voulu
+            qu' - ils/elles - aient: voulu
+            que - j' - aie: voulu
+            que - nous - ayons: voulu
+            que - tu - aies: voulu
+            que - vous - ayez: voulu
+          plus-que-parfait:
+            qu' - il/elle - eût: voulu
+            qu' - ils/elles - eussent: voulu
+            que - j' - eusse: voulu
+            que - nous - eussions: voulu
+            que - tu - eusses: voulu
+            que - vous - eussiez: voulu
+          présent:
+            qu' - il/elle: veuille
+            qu' - ils/elles: veuillent
+            que - je: veuille
+            que - nous: voulions
+            que - tu: veuilles
+            que - vous: vouliez
+      display: vouloir
+      gender: NA
+      model: vouloir
+      other_forms:
+      - se vouloir
+      - ne pas vouloir
+      - ne pas se vouloir
+      pos: verb
+      transitive: true
+      translations:
+      - to want
   vous:
     definitions:
     - display: vous
@@ -4039,6 +5373,20 @@ french:
       pos: pronoun
       translations:
       - you
+  vrai:
+    definitions:
+    - display: vrai
+      gender: masc
+      pos: adjective
+      translations:
+      - 'true'
+  vraie:
+    definitions:
+    - display: vrai
+      gender: fem
+      pos: adjective
+      translations:
+      - 'true'
   vraiment:
     definitions:
     - display: vraiment
