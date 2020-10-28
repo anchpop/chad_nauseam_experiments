@@ -2,27 +2,281 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-exclama:
-- display: exclama
-  gender: ''
-  pos: ''
+ans:
+- display: ans
+  gender: masc
+  pos: noun
+  plural: true
   translations:
-  - ''
-feu:
-- display: feu
-  gender: ''
-  pos: ''
+  - year
+
+entendre:
+- auxiliary: avoir
+  conjugations:
+    conditionnel:
+      passé deuxième forme:
+        il/elle - eût: entendu
+        ils/elles - eussent: entendu
+        j' - eusse: entendu
+        nous - eussions: entendu
+        tu - eusses: entendu
+        vous - eussiez: entendu
+      passé première forme:
+        il/elle - aurait: entendu
+        ils/elles - auraient: entendu
+        j' - aurais: entendu
+        nous - aurions: entendu
+        tu - aurais: entendu
+        vous - auriez: entendu
+      présent:
+        il/elle: entendrait
+        ils/elles: entendraient
+        j': entendrais
+        nous: entendrions
+        tu: entendrais
+        vous: entendriez
+    indicatif:
+      futur:
+        il/elle: entendra
+        ils/elles: entendront
+        j': entendrai
+        nous: entendrons
+        tu: entendras
+        vous: entendrez
+      futur antérieur:
+        il/elle - aura: entendu
+        ils/elles - auront: entendu
+        j' - aurai: entendu
+        nous - aurons: entendu
+        tu - auras: entendu
+        vous - aurez: entendu
+      imparfait:
+        il/elle: entendait
+        ils/elles: entendaient
+        j': entendais
+        nous: entendions
+        tu: entendais
+        vous: entendiez
+      passé antérieur:
+        il/elle - eut: entendu
+        ils/elles - eurent: entendu
+        j' - eus: entendu
+        nous - eûmes: entendu
+        tu - eus: entendu
+        vous - eûtes: entendu
+      passé composé:
+        il/elle - a: entendu
+        ils/elles - ont: entendu
+        j' - ai: entendu
+        nous - avons: entendu
+        tu - as: entendu
+        vous - avez: entendu
+      passé simple:
+        il/elle: entendit
+        ils/elles: entendirent
+        j': entendis
+        nous: entendîmes
+        tu: entendis
+        vous: entendîtes
+      plus-que-parfait:
+        il/elle - avait: entendu
+        ils/elles - avaient: entendu
+        j' - avais: entendu
+        nous - avions: entendu
+        tu - avais: entendu
+        vous - aviez: entendu
+      présent:
+        il/elle: entend
+        ils/elles: entendent
+        j': entends
+        nous: entendons
+        tu: entends
+        vous: entendez
+    infinitif:
+      passé:
+        avoir: entendu
+    participe:
+      passé:
+        aie: entendu
+        ayez: entendu
+        ayons: entendu
+      passé composé:
+        ayant: entendu
+    subjonctif:
+      imparfait:
+        qu' - il/elle: entendît
+        qu' - ils/elles: entendissent
+        que - j': entendisse
+        que - nous: entendissions
+        que - tu: entendisses
+        que - vous: entendissiez
+      passé:
+        qu' - il/elle - ait: entendu
+        qu' - ils/elles - aient: entendu
+        que - j' - aie: entendu
+        que - nous - ayons: entendu
+        que - tu - aies: entendu
+        que - vous - ayez: entendu
+      plus-que-parfait:
+        qu' - il/elle - eût: entendu
+        qu' - ils/elles - eussent: entendu
+        que - j' - eusse: entendu
+        que - nous - eussions: entendu
+        que - tu - eusses: entendu
+        que - vous - eussiez: entendu
+      présent:
+        qu' - il/elle: entende
+        qu' - ils/elles: entendent
+        que - j': entende
+        que - nous: entendions
+        que - tu: entendes
+        que - vous: entendiez
+  display: entendre
+  model: attendre
+  other_forms:
+  - s'entendre
+  - ne pas entendre
+  - ne pas s'entendre
+  pos: verb
+  transitive: true
   translations:
-  - ''
-impression:
-- display: impression
-  gender: ''
-  pos: ''
+  - to hear
+
+podcast:
+- display: podcast
+  gender: masc
+  pos: noun
   translations:
-  - ''
-leva:
-- display: leva
-  gender: ''
-  pos: ''
+  - podcast
+
+répliquer:
+- auxiliary: avoir
+  conjugations:
+    conditionnel:
+      passé deuxième forme:
+        il/elle - eût: répliqué
+        ils/elles - eussent: répliqué
+        j' - eusse: répliqué
+        nous - eussions: répliqué
+        tu - eusses: répliqué
+        vous - eussiez: répliqué
+      passé première forme:
+        il/elle - aurait: répliqué
+        ils/elles - auraient: répliqué
+        j' - aurais: répliqué
+        nous - aurions: répliqué
+        tu - aurais: répliqué
+        vous - auriez: répliqué
+      présent:
+        il/elle: répliquerait
+        ils/elles: répliqueraient
+        je: répliquerais
+        nous: répliquerions
+        tu: répliquerais
+        vous: répliqueriez
+    indicatif:
+      futur:
+        il/elle: répliquera
+        ils/elles: répliqueront
+        je: répliquerai
+        nous: répliquerons
+        tu: répliqueras
+        vous: répliquerez
+      futur antérieur:
+        il/elle - aura: répliqué
+        ils/elles - auront: rconépliqué
+        j' - aurai: répliqué
+        nous - aurons: répliqué
+        tu - auras: répliqué
+        vous - aurez: répliqué
+      imparfait:
+        il/elle: répliquait
+        ils/elles: répliquaient
+        je: répliquais
+        nous: répliquions
+        tu: répliquais
+        vous: répliquiez
+      passé antérieur:
+        il/elle - eut: répliqué
+        ils/elles - eurent: répliqué
+        j' - eus: répliqué
+        nous - eûmes: répliqué
+        tu - eus: répliqué
+        vous - eûtes: répliqué
+      passé composé:
+        il/elle - a: répliqué
+        ils/elles - ont: répliqué
+        j' - ai: répliqué
+        nous - avons: répliqué
+        tu - as: répliqué
+        vous - avez: répliqué
+      passé simple:
+        il/elle: répliqua
+        ils/elles: répliquèrent
+        je: répliquai
+        nous: répliquâmes
+        tu: répliquas
+        vous: répliquâtes
+      plus-que-parfait:
+        il/elle - avait: répliqué
+        ils/elles - avaient: répliqué
+        j' - avais: répliqué
+        nous - avions: répliqué
+        tu - avais: répliqué
+        vous - aviez: répliqué
+      présent:
+        il/elle: réplique
+        ils/elles: répliquent
+        je: réplique
+        nous: répliquons
+        tu: répliques
+        vous: répliquez
+    infinitif:
+      passé:
+        avoir: répliqué
+    participe:
+      passé:
+        aie: répliqué
+        ayez: répliqué
+        ayons: répliqué
+      passé composé:
+        ayant: répliqué
+    subjonctif:
+      imparfait:
+        qu' - il/elle: répliquât
+        qu' - ils/elles: répliquassent
+        que - je: répliquasse
+        que - nous: répliquassions
+        que - tu: répliquasses
+        que - vous: répliquassiez
+      passé:
+        qu' - il/elle - ait: répliqué
+        qu' - ils/elles - aient: répliqué
+        que - j' - aie: répliqué
+        que - nous - ayons: répliqué
+        que - tu - aies: répliqué
+        que - vous - ayez: répliqué
+      plus-que-parfait:
+        qu' - il/elle - eût: répliqué
+        qu' - ils/elles - eussent: répliqué
+        que - j' - eusse: répliqué
+        que - nous - eussions: répliqué
+        que - tu - eusses: répliqué
+        que - vous - eussiez: répliqué
+      présent:
+        qu' - il/elle: réplique
+        qu' - ils/elles: répliquent
+        que - je: réplique
+        que - nous: répliquions
+        que - tu: répliques
+        que - vous: répliquiez
+  display: répliquer
+  model: marcher
+  other_forms:
+  - se répliquer
+  - ne pas répliquer
+  - ne pas se répliquer
+  pos: verb
+  transitive: false
   translations:
-  - ''
+  - to reply
