@@ -1,3 +1,5 @@
+import processor.sources_analysis
+
 from os import listdir
 from os.path import isfile, join
 from collections import Counter
@@ -72,6 +74,16 @@ def get_all_known_french_words():
                     words.update(set(conjugations.values()))
     return words
             
+def get_understandable_sentences(analysis = None):
+    if analysis == None:
+        analysis = processor.sources_analysis.do_analysis()
+    (_, collected_sentences) = analysis
+    known_words = get_all_known_french_words()
+    understandable_sentences = set()
+    for sentence in collected_sentences:
+        if all([word in known_words for word in line_to_words_french(sentence)]):
+            understandable_sentences.add(sentence)
+    return understandable_sentences
 
 
 flatten = lambda l: [item for sublist in l for item in sublist]

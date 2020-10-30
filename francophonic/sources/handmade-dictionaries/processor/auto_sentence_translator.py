@@ -1,3 +1,5 @@
+import processor.sources_analysis
+
 from os import listdir, environ
 from os.path import isfile, join
 from collections import Counter
@@ -13,26 +15,17 @@ except ImportError:
 from processor.utils import *
 
 
-def main():
-
+def main(analysis = processor.sources_analysis.do_analysis()):
     project_id = "francophonic-1565560815749"
     credential_path = "K:/private/anchpop/privatekeys/Francophonic-f72c700469aa.json"
     environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
     current_dictionary = get_word_dictionary()
 
-    allwords = {}
-    with open("work/frenchwords.txt", encoding='utf-8') as f:
-        for line in f:
-            v = re.split(r" ::: ", line)
-            allwords[v[0]] = int(v[1])
-    allwords = Counter(allwords)
-
-    allsentences = {}
-    with open("work/frenchsentences.txt", encoding='utf-8') as f:
-        for line in f:
-            v = re.split(r" ::: ", line)
-            allsentences[v[0]] = v[1].split()
+    (collected_words, collected_sentences) = analysis
+    understandable_sentences = get_understandable_sentences(analysis)
+    print(list(understandable_sentences)[0])
+    return
 
     previous_translations_dictionary = get_sentence_dictionary()
     previous_translations = set(flatten([[translation['sentence'] for translation in previous_translation['frenchTranslations']]

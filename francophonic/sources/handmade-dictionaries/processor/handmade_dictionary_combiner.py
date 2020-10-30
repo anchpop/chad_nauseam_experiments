@@ -1,3 +1,5 @@
+import processor.sources_analysis
+
 from os import listdir
 from os.path import isfile, join
 from collections import Counter
@@ -11,7 +13,7 @@ from processor.utils import *
 
 
 
-def main():
+def main(analysis):
     if not isfile("handmade_dictionary.yaml"):
         print("No 'handmade_dictionary.yaml', so nothing to combine. Run the template generator to create a template then fill it in to add new words to the dictionary. ")
         return True
@@ -62,4 +64,4 @@ def main():
     return True
 
 if __name__ == "__main__":
-    main() 
+    main(processor.sources_analysis.do_analysis()) 

@@ -1,0 +1,10 @@
+french_to_english:
+  "Bien, alors.":
+    google:
+      - "Well then."
+      - "Fine then."
+    deepl:
+      - "Well, then."
+      - "Good, then."
+      - "All right, then."
+      - "Fine, then."

@@ -1,3 +1,4 @@
+import processor.sources_analysis
 import processor.handmade_dictionary_combiner 
 import processor.sentence_lister 
 import processor.auto_sentence_translator 
@@ -9,7 +10,9 @@ import os
 
 
 def main():
-  if processor.handmade_dictionary_combiner.main() != True:
+  analysis = processor.sources_analysis.do_analysis()
+  
+  if processor.handmade_dictionary_combiner.main(analysis) != True:
     return
   processor.sentence_lister.main()
   processor.auto_sentence_translator.main()
