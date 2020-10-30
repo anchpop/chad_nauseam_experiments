@@ -2,26 +2,26 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-exclama:
-- display: exclama
+cela:
+- display: cela
   gender: ''
   pos: ''
   translations:
   - ''
-feu:
-- display: feu
+draco:
+- display: draco
   gender: ''
   pos: ''
   translations:
   - ''
-impression:
-- display: impression
+juste:
+- display: juste
   gender: ''
   pos: ''
   translations:
   - ''
-leva:
-- display: leva
+quirrell:
+- display: quirrell
   gender: ''
   pos: ''
   translations:

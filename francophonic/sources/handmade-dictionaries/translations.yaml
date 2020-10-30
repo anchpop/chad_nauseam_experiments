@@ -1,10 +1,13 @@
 french_to_english:
-  "Bien, alors.":
-    google:
-      - "Well then."
-      - "Fine then."
+  Bien, alors.:
     deepl:
-      - "Well, then."
-      - "Good, then."
-      - "All right, then."
-      - "Fine, then."
+    - Well, then.
+    - Good, then.
+    - All right, then.
+    - Fine, then.
+    google:
+    - Well then.
+    - Fine then.
+  Je me demande donc, Harry Potter.:
+    google:
+    - So I wonder, Harry Potter.

@@ -5,7 +5,7 @@ from os.path import isfile, join
 from collections import Counter
 import re
 import yaml
-from google.cloud import translate_v3beta1 as translate
+from google.cloud import translate
 import uuid
 import html
 try:
@@ -15,7 +15,9 @@ except ImportError:
 from processor.utils import *
 
 
-def main(analysis = processor.sources_analysis.do_analysis()):
+def main(analysis = None):
+    if analysis == None:
+        analysis = processor.sources_analysis.do_analysis()
     project_id = "francophonic-1565560815749"
     credential_path = "K:/private/anchpop/privatekeys/Francophonic-f72c700469aa.json"
     environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
@@ -24,57 +26,49 @@ def main(analysis = processor.sources_analysis.do_analysis()):
 
     (collected_words, collected_sentences) = analysis
     understandable_sentences = get_understandable_sentences(analysis)
-    print(list(understandable_sentences)[0])
-    return
 
-    previous_translations_dictionary = get_sentence_dictionary()
-    previous_translations = set(flatten([[translation['sentence'] for translation in previous_translation['frenchTranslations']]
-                                         for previous_translation in previous_translations_dictionary]))
+    translations = get_traslations()
 
-    sentencesToTranslate = set()
-    with open("work/usable_sentences.txt", encoding="utf-8") as f:
-        for sentence in f:
-            sentence = sentence.split(" ::: ")[0].strip()
-            if "«" in sentence or "»" in sentence:
-                continue
-            if sentence in previous_translations:
-                print(f"'{sentence} already has a translation, so skipping")
-                continue
-            else:
-                sentencesToTranslate.add(sentence)
+    sentences_to_translate = understandable_sentences - translations['french_to_english'].keys()
 
-    autosentences = []
-
-    if len(sentencesToTranslate) > 0:
-        characters = sum([len(s) for s in sentencesToTranslate])
+    print(f"{len(sentences_to_translate)} sentences to translate")
+    
+    if len(sentences_to_translate) > 0:
+        characters = sum([len(s) for s in sentences_to_translate])
         while True:
             inp = input(
-                f"To translate these {len(sentencesToTranslate)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no/view) ")
+                f"To translate these {len(sentences_to_translate)} sentences would cost around ${characters / 1000000 * 20}, continue? (yes/no/view) ")
             if inp == "view":
-                for sentence in sentencesToTranslate:
+                for sentence in sentences_to_translate:
                     print(sentence)
             elif inp == "yes":
                 client = translate.TranslationServiceClient()
                 location = "global"
                 parent = f"projects/{project_id}/locations/{location}"
-                for sentence in sentencesToTranslate:
-                    sentence = sentence.strip()
-                    translation = client.translate_text(request={
-                        'parent': parent,
-                        'contents': [sentence],
-                        'mime_type': 'text/plain',
-                        'source_language_code': "fr",
-                        'target_language_code': "en-US"})
-                    previous_translations_dictionary.append({'frenchTranslations': [{'sentence': sentence, 'source': allsentences[sentence]}], 'englishTranslations': [
-                                                            {'source': 'google', 'sentence': html.unescape(t.translated_text)} for t in translation.translations], 'uuid': str(uuid.uuid4()), 'handVerified': False})
+                for sentence in sentences_to_translate:
+                    if (sentence != sentence.strip()):
+                        raise Exception(f"sentence \"{sentence}\" is unstripped!")
 
-                    data = yaml.dump(previous_translations_dictionary,
-                                    Dumper=Dumper, allow_unicode=True)
-                    with open("sentencedictionary.yaml", "w", encoding='utf-8') as f:
-                        f.write(data)
-                break
+                    response = client.translate_text(
+                        request={
+                            "parent": parent,
+                            "contents": [sentence],
+                            "mime_type": "text/plain",  # mime types: text/plain, text/html
+                            "source_language_code": "fr",
+                            "target_language_code": "en-US",
+                        }
+                    )
+                    
+                    translations['french_to_english'][sentence] = {'google': [translation.translated_text for translation in response.translations]}
+                    break
+
+                data = yaml.dump(translations,
+                                Dumper=Dumper, allow_unicode=True)
+                with open("translations.yaml", "w", encoding='utf-8') as f:
+                    f.write(data)
             else:
                 break
+
 
 
 if __name__ == "__main__":

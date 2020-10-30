@@ -15,10 +15,11 @@ def line_to_words(line, contractions, whole_word_basis):
         word_split = w.strip("'").split("'") if not whole_word_basis else [w]
         new_words = []
         for index, word in enumerate(word_split):
-            if word in contractions.keys():
-                new_words.extend(contractions[word])
-            else: 
-                new_words.append(word)
+            if word != "-":
+                if word in contractions.keys():
+                    new_words.extend(contractions[word])
+                else: 
+                    new_words.append(word)
         return new_words
     words = line.split()
     words = [word_splitter(re.sub('[,!?.0-9()&/:;…«»]', '', word.replace("’", "'")).lower()) for word in words]
@@ -41,7 +42,7 @@ def clean_line(line):
 
 def retain_only_characters(line):
     line = line.strip()
-    line = re.sub(r"[^A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ a-zàâäèéêëîïôœùûüÿç']", "", line).strip()
+    line = re.sub(r"[^A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ a-zàâäèéêëîïôœùûüÿç'-]", "", line.replace('’',"'")).strip()
     return line
 
 
@@ -52,10 +53,10 @@ def line_to_words_english(line):
     return line_to_words(line, 
         englishContractions, whole_word_basis=True)
 
-def get_sentence_dictionary():
-    with open("sentencedictionary.yaml", encoding='utf-8') as f:
-        sentence_dictionary = yaml.load(f, Loader=Loader)
-    return sentence_dictionary
+def get_traslations():
+    with open("translations.yaml", encoding='utf-8') as f:
+        translations = yaml.load(f, Loader=Loader)
+    return translations
 
 
 def get_word_dictionary():
