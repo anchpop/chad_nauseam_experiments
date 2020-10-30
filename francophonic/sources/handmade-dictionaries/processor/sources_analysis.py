@@ -13,7 +13,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 import time
-from utils import *
+from processor.utils import *
 
 
 # The sentence extraction regex is super hacky. It can be tested at https://regex101.com/r/RTlar9/1/ .

@@ -2,7 +2,7 @@ import yaml
 import json
 from os import listdir, environ
 from os.path import isfile, join
-from utils import *
+from processor.utils import *
 
 
 def main():

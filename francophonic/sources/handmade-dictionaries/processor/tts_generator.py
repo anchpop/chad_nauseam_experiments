@@ -12,7 +12,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 import time
-from utils import *
+from processor.utils import *
 
 
 def main():
