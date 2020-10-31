@@ -253,6 +253,7 @@ french:
       other_forms:
       - ne pas aller
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to go
@@ -588,6 +589,7 @@ french:
       - ne pas apprendre
       - ne pas s'apprendre
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to learn
@@ -937,6 +939,7 @@ french:
       gender: NA
       model: avoir
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to have
@@ -1398,6 +1401,7 @@ french:
       - ne pas croire
       - ne pas se croire
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to believe
@@ -1647,6 +1651,7 @@ french:
       - ne pas demander
       - ne pas se demander
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to ask
@@ -1924,6 +1929,7 @@ french:
       gender: NA
       model: dire
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to say
@@ -2272,6 +2278,7 @@ french:
       - ne pas entendre
       - ne pas s'entendre
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to hear
@@ -2503,6 +2510,7 @@ french:
       - ne pas essayer
       - ne pas s'essayer
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to try
@@ -2934,6 +2942,7 @@ french:
       - ne pas faire
       - ne pas se faire
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to make
@@ -3077,6 +3086,7 @@ french:
       - ne pas falloir
       - ne pas se falloir
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to need
@@ -4004,6 +4014,7 @@ french:
       - ne pas parler
       - ne pas se parler
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to speak
@@ -4393,6 +4404,7 @@ french:
       - ne pas passer
       - ne pas se passer
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to go
@@ -4637,6 +4649,7 @@ french:
       other_forms:
       - ne pas penser
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to think
@@ -4902,6 +4915,10 @@ french:
             que - nous: puissions
             que - tu: puisses
             que - vous: puissiez
+      conjugations_english:
+        past: could
+        present: can
+        future: will be able to
       display: pouvoir
       gender: NA
       model: pouvoir
@@ -4910,6 +4927,7 @@ french:
       - ne pas pouvoir
       - ne pas se pouvoir
       pos: verb
+      modal_in_english: true
       transitive: false
       translations:
       - to be able to
@@ -5147,6 +5165,7 @@ french:
       - ne pas prendre
       - ne pas se prendre
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to take
@@ -5618,6 +5637,7 @@ french:
       - ne pas regarder
       - ne pas se regarder
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to look at
@@ -5854,6 +5874,7 @@ french:
       - ne pas rire
       - ne pas se rire
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to laugh
@@ -6087,6 +6108,7 @@ french:
       - ne pas répliquer
       - ne pas se répliquer
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to reply
@@ -6488,6 +6510,7 @@ french:
       - ne pas répondre
       - ne pas se répondre
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to answer
@@ -6736,6 +6759,7 @@ french:
       - ne pas savoir
       - ne pas se savoir
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to know
@@ -6966,6 +6990,7 @@ french:
       other_forms:
       - ne pas sembler
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to seem
@@ -7321,6 +7346,7 @@ french:
       - ne pas sourire
       - ne pas se sourire
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to smile
@@ -7762,6 +7788,7 @@ french:
       - ne pas vider
       - ne pas se vider
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to live
@@ -8006,6 +8033,7 @@ french:
       - ne pas voir
       - ne pas se voir
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to see
@@ -8246,6 +8274,7 @@ french:
       - ne pas vouloir
       - ne pas se vouloir
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to want
@@ -8633,6 +8662,7 @@ french:
       - ne pas élever
       - ne pas s'élever
       pos: verb
+      modal_in_english: false
       transitive: true
       translations:
       - to bring up
@@ -8853,6 +8883,7 @@ french:
       gender: NA
       model: être
       pos: verb
+      modal_in_english: false
       transitive: false
       translations:
       - to be
