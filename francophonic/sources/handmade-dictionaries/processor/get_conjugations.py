@@ -11,13 +11,13 @@ def get_reverso_url(verb, language):
 
 
 def grab_conjugation_soup(verbf, verbe):
-    #time.sleep(10)
-    rf = ()#requests.get(get_reverso_url(verbf, "french"))
-    soup_french = ()#BeautifulSoup(rf.text, 'html.parser')
+    time.sleep(10)
+    rf = requests.get(get_reverso_url(verbf, "french"))
+    soup_french = BeautifulSoup(rf.text, 'html.parser')
     
-    #time.sleep(10  )
-    re = ()#requests.get(get_reverso_url(verbe[0].split("to")[0].strip(), "english"))
-    soup_english = BeautifulSoup(open("C:\\Users\\hyper\\OneDrive\\Desktop\\Conjugation read _ Conjugate verb read _ Reverso Conjugator English.html", "r", encoding='utf8').read() if True else re.text, 'html.parser')
+    time.sleep(10)
+    re = requests.get(get_reverso_url(verbe[0].split("to")[0].strip(), "english"))
+    soup_english = BeautifulSoup(re if True else re.text, 'html.parser')
 
     return (soup_french, soup_english)
 
@@ -73,17 +73,14 @@ def get_conjugations(verbf, verbe, trans):
     
     (soupf, soupe) = grab_conjugation_soup(verbf, verbe)
 
-    #infinitivef, contentsf = parse_conjugations(soupf)
-    
+    infinitivef, contentsf = parse_conjugations(soupf)
     infinitivee, contentse = parse_conjugations(soupe)
-
-    return contentse
 
     model = soup.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
     auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': contentse, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {infinitivee: contentse}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
 
 def main():
     verb = input("Verb? ")
@@ -100,4 +97,6 @@ def main():
 
 
 
-main()
+
+if __name__ == "__main__":
+    main()
