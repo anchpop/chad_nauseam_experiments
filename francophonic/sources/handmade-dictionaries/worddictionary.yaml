@@ -681,6 +681,14 @@ french:
       translations:
       - this
       - that
+  cela:
+    definitions:
+    - display: cela
+      gender: NA
+      pos: pronoun
+      translations:
+      - it
+      - that
   ces:
     definitions:
     - display: ces
@@ -1340,6 +1348,9 @@ french:
       pos: noun
       translations:
       - doubt
+  draco:
+    definitions:
+    - notaword: true
   du:
     definitions:
     - abbreviation: de + le
@@ -2090,6 +2101,17 @@ french:
       translations:
       - so far
       - up to now
+  juste:
+    definitions:
+    - display: juste
+      exampleSentences:
+      - english: He’s strict but fair.
+        french: Il est sévère, mais juste.
+      gender: NA
+      pos: adjective
+      translations:
+      - fair
+      - just
   j’ai:
     definitions:
     - abbreviation: je + ai
@@ -3542,6 +3564,9 @@ french:
       pos: relative pronoun
       translations:
       - who
+  quirrell:
+    definitions:
+    - notaword: true
   quoi:
     definitions:
     - display: quoi

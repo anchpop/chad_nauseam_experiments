@@ -8,9 +8,15 @@ french_to_english:
   '"Ah !" dit soudain Harry.':
     google:
     - '"Ah!" Harry said suddenly.'
+  '"Ah bon ?" dit le professeur Quirrell.':
+    google:
+    - '"Is that so ?" said Professor Quirrell.'
   '"Ah, Harry," dit Dumbledore.':
     google:
     - “Ah, Harry,” Dumbledore said.
+  '"Ah, bon," dit le professeur Quirrell.':
+    google:
+    - '"Ah, good," said Professor Quirrell.'
   '"Ah, bon."':
     google:
     - '"Is that so."'
@@ -32,6 +38,12 @@ french_to_english:
   '"Ah," dit M. Lupin.':
     google:
     - “Ah,” Mr. Lupine said.
+  '"Ah," dit le professeur Quirrell, et il sourit.':
+    google:
+    - “Ah,” Professor Quirrell said, and he smiled.
+  '"Ah," dit le professeur Quirrell.':
+    google:
+    - '"Ah," said Professor Quirrell.'
   '"Ah… pourquoi ?" dit Harry.':
     google:
     - '"Oh why ?" Harry said.'
@@ -50,6 +62,12 @@ french_to_english:
   '"Ah…" répondit Harry.':
     google:
     - '"Ah…" Harry replied.'
+  '"Aller sur la - c''est juste un -"':
+    google:
+    - '"Go on the - it''s just a -"'
+  '"Allons, pas du tout," dit le professeur Quirrell.':
+    google:
+    - '"Come on, not at all," said Professor Quirrell.'
   '"Allons, tu ne le savais pas ?" dit Hermione.':
     google:
     - '"Come on, didn''t you know that?" Hermione said.'
@@ -74,6 +92,9 @@ french_to_english:
   '"Alors tu n''as pas pu le faire non plus," dit Hermione.':
     google:
     - '"So you couldn''t do it either," Hermione said.'
+  '"Alors, c''est lui," dit Draco.':
+    google:
+    - '"So that''s him," Draco said.'
   '"Alors, qu''est-ce que je peux faire ?"':
     google:
     - '"So what can I do?"'
@@ -83,6 +104,9 @@ french_to_english:
   '"Alors…" dit-il.':
     google:
     - '"So…" he said.'
+  '"Après toi," dit le professeur Quirrell.':
+    google:
+    - '"After you," said Professor Quirrell.'
   '"Après tout ce temps."':
     google:
     - '"After all this time."'
@@ -92,6 +116,9 @@ french_to_english:
   '"Assez, M. Potter." dit McGonagall.':
     google:
     - '"Enough, Mr. Potter." McGonagall said.'
+  '"Assez," dit Draco.':
+    google:
+    - “Enough,” Draco said.
   '"Assez," dit le professeur McGonagall.':
     google:
     - '"Enough," said Professor McGonagall.'
@@ -101,6 +128,12 @@ french_to_english:
   '"Aucun de vous deux ?"':
     google:
     - '"Neither of you?"'
+  '"Autre chose ?" dit Draco.':
+    google:
+    - '"Something else ?" Draco said.'
+  '"Avant que je le fasse," dit le professeur Quirrell.':
+    google:
+    - '"Before I do it," said Professor Quirrell.'
   '"Avant ça," dit Harry.':
     google:
     - “Before that,” Harry said.
@@ -155,6 +188,9 @@ french_to_english:
   '"C''en est un."':
     google:
     - '"It is."'
+  '"C''est - non, rien, juste que -"':
+    google:
+    - '"It''s - no, nothing, just that -"'
   '"C''est -"':
     google:
     - '"This is -"'
@@ -176,6 +212,9 @@ french_to_english:
   '"C''est ce que j''ai dit moi aussi," dit Dumbledore.':
     google:
     - '"That''s what I said too," Dumbledore said.'
+  '"C''est ce que je pensais," dit Draco.':
+    google:
+    - “That's what I thought,” Draco said.
   '"C''est ce que je vais faire," dit Harry.':
     google:
     - '"That''s what I''m going to do," Harry said.'
@@ -185,6 +224,15 @@ french_to_english:
   '"C''est fait," dit le professeur McGonagall.':
     google:
     - '"It''s done," said Professor McGonagall.'
+  '"C''est juste," dit le professeur Quirrell.':
+    google:
+    - '"It is right," said Professor Quirrell.'
+  '"C''est juste."':
+    google:
+    - '"It''s just."'
+  '"C''est le professeur Quirrell !"':
+    google:
+    - '"It''s Professor Quirrell!"'
   '"C''est lui qui a fait le coup ?" dit Dumbledore.':
     google:
     - '"Was he the one who did it?" said Dumbledore.'
@@ -218,6 +266,9 @@ french_to_english:
   '"C''est à mon tour, maintenant."':
     google:
     - '"It''s my turn now."'
+  '"C''est ça," dit Draco.':
+    google:
+    - '"That''s it," Draco said.'
   '"C''est… c''est… c''est…" dit Harry.':
     google:
     - '"It''s… it''s… it''s…" Harry said.'
@@ -236,18 +287,30 @@ french_to_english:
   '"C''était… c''était à peu près ça," dit Harry.':
     google:
     - '"It was… it was about it," Harry said.'
+  '"Ce n''est pas juste !" dit Hermione.':
+    google:
+    - '"It is not fair !" Hermione said.'
   '"Ce n''est pas tout à fait ce que ça veut dire."':
     google:
     - '"That''s not quite what it means."'
+  '"Ce n''est pas vrai !" dit Draco.':
+    google:
+    - '"It is not true!" Draco said.'
   '"Ce sera tout ?" dit Hermione.':
     google:
     - '"That''s it ?" Hermione said.'
+  '"Cela veut dire qu''il y a quelque chose," dit Harry.':
+    google:
+    - '"It means there is something," Harry said.'
   '"Cet œil," dit Harry Potter.':
     google:
     - “That eye,” Harry Potter said.
   '"Comme je le pensais."':
     google:
     - '"As I thought."'
+  '"Comme moi !" dit Draco.':
+    google:
+    - '"Like me !" Draco said.'
   '"Comme qui ?"':
     google:
     - '"Like who ?"'
@@ -287,12 +350,18 @@ french_to_english:
   '"De qui ?"':
     google:
     - '"From who?"'
+  '"De rien," dit le professeur Quirrell.':
+    google:
+    - '"You''re welcome," said Professor Quirrell.'
   '"De rien."':
     google:
     - '"You''re welcome."'
   '"Deux à la fois."':
     google:
     - '"Two at a time."'
+  '"Dis moi, Draco," dit Harry.':
+    google:
+    - “Tell me, Draco,” Harry said.
   '"Disons deux," dit Harry.':
     google:
     - “Let's say two,” Harry said.
@@ -302,6 +371,12 @@ french_to_english:
   '"Donc, Harry," dit Dumbledore.':
     google:
     - “So Harry,” Dumbledore said.
+  '"Donc, M. Potter," dit le professeur Quirrell.':
+    google:
+    - '"So, Mr. Potter," said Professor Quirrell.'
+  '"Donc," dit Draco.':
+    google:
+    - “So,” Draco said.
   '"Donc," dit Dumbledore.':
     google:
     - “So,” Dumbledore said.
@@ -323,9 +398,21 @@ french_to_english:
   '"Donc," dit l''un.':
     google:
     - “So,” said one.
+  '"Donc," dit le professeur Quirrell.':
+    google:
+    - '"So," said Professor Quirrell.'
   '"Donc…" dit Harry.':
     google:
     - '"So…" Harry said.'
+  '"Draco !" dit Harry.':
+    google:
+    - '"Draco!" Harry said.'
+  '"Draco, qu''est-ce qui -"':
+    google:
+    - '"Draco, what the -"'
+  '"Draco, tu n''as pas à -"':
+    google:
+    - '"Draco, you don''t have to-"'
   '"Du moins, je ne pense pas pouvoir le faire, je n''ai jamais vraiment essayé."':
     google:
     - '"At least I don''t think I can do it, I''ve never really tried."'
@@ -368,12 +455,18 @@ french_to_english:
   '"Et Harry… ne voit pas vraiment les autres comme ça," dit Hermione.':
     google:
     - '"And Harry… doesn''t really see other people like that," Hermione said.'
+  '"Et Père ?" dit Draco.':
+    google:
+    - '"What about Father?" Draco said.'
   '"Et alors ?"':
     google:
     - '"So what ?"'
   '"Et avant ça, quand tu as dit que ce que je disais semblait vrai -"':
     google:
     - '"And before that when you said what I was saying sounded true -"'
+  '"Et donc," dit Draco, "on fait quoi maintenant ?"':
+    google:
+    - '"So," Draco said, "what do we do now?"'
   '"Et en vrai c''est quoi ?" dit Hermione.':
     google:
     - '"And in real life what is it?" Hermione said.'
@@ -389,6 +482,9 @@ french_to_english:
   '"Et maintenant quoi ?" dit Ron.':
     google:
     - '"And now what?" Ron said.'
+  '"Et maintenant," dit le professeur Quirrell, "M. Potter.':
+    google:
+    - “And now,” said Professor Quirrell, “Mr. Potter.
   '"Et pourquoi donc, M. Potter ?"':
     google:
     - '"So why, Mr. Potter?"'
@@ -413,6 +509,9 @@ french_to_english:
   '"Faisons ça."':
     google:
     - '"Let''s do that."'
+  '"Fait," dit le professeur Quirrell.':
+    google:
+    - '"Done," said Professor Quirrell.'
   '"Ferez comme j''ai dit ?"':
     google:
     - '"Will do as I said?"'
@@ -443,6 +542,9 @@ french_to_english:
   '"Harry Potter ?"':
     google:
     - '"Harry Potter?"'
+  '"Harry Potter," dit le professeur Quirrell.':
+    google:
+    - '"Harry Potter," said Professor Quirrell.'
   '"Harry Potter."':
     google:
     - '"Harry Potter."'
@@ -458,6 +560,12 @@ french_to_english:
   '"Harry, tout va bien," dit-elle.':
     google:
     - '"Harry, everything is fine," she said.'
+  '"Harry," dit Dumbledore, "si tu ne veux pas, tu peux juste dire non."':
+    google:
+    - '"Harry," Dumbledore said, "if you don''t want to, you can just say no."'
+  '"Harry," dit enfin Draco.':
+    google:
+    - '"Harry," Draco said finally.'
   '"Harry," dit l''homme.':
     google:
     - “Harry,” the man said.
@@ -515,6 +623,9 @@ french_to_english:
   '"Ils le sont ?"':
     google:
     - '"They are ?"'
+  '"Ils ne parleront pas," dit Draco.':
+    google:
+    - “They won't talk,” Draco said.
   '"Ils sont à moi !"':
     google:
     - '"They are mine !"'
@@ -536,6 +647,9 @@ french_to_english:
   '"J''essaie de voir si je peux faire autre chose."':
     google:
     - '"I''m trying to see if I can do something else."'
+  '"J''y crois," dit le professeur Quirrell.':
+    google:
+    - '"I believe it," said Professor Quirrell.'
   '"Je -"':
     google:
     - '"I -"'
@@ -551,6 +665,12 @@ french_to_english:
   '"Je crois."':
     google:
     - '"I believe."'
+  '"Je ferai – ce qui est juste -"':
+    google:
+    - '"I will do - which is right -"'
+  '"Je le ferai ce soir," dit Draco, et il rit.':
+    google:
+    - '"I will do it tonight," Draco said, and laughed.'
   '"Je le savais déjà, Harry Potter," dit-elle.':
     google:
     - '"I already knew that, Harry Potter," she said.'
@@ -560,6 +680,9 @@ french_to_english:
   '"Je les vois," dit Harry.':
     google:
     - “I see them,” Harry said.
+  '"Je me demandais si vous diriez cela," dit Harry.':
+    google:
+    - '"I was wondering if you would say that," Harry said.'
   '"Je me demande comment tu ferais ça, mais je ne veux pas qu''on fasse des choses pour moi."':
     google:
     - '"I wonder how you would do that, but I don''t want people to do things for
@@ -582,6 +705,9 @@ french_to_english:
   '"Je n''en suis pas sûr," répondit Harry.':
     google:
     - '"I''m not sure," Harry replied.'
+  '"Je n''y ai jamais pensé," dit Draco.':
+    google:
+    - '"I never thought about it," Draco said.'
   '"Je n''y crois pas," dit une voix.':
     google:
     - '"I don''t believe it," a voice said.'
@@ -597,12 +723,18 @@ french_to_english:
   '"Je ne peux pas faire ça Harry, c''est trop pour moi."':
     google:
     - '"I can''t do this Harry, it''s too much for me."'
+  '"Je ne peux pas juste…" dit Hermione.':
+    google:
+    - '"I can''t just…" Hermione said.'
   '"Je ne sais pas vraiment quoi faire de ça," dit Harry.':
     google:
     - '"I don''t really know what to do with this," Harry said.'
   '"Je ne sais pas", dit-elle.':
     google:
     - “I don't know,” she said.
+  '"Je ne sais pas," dit Draco.':
+    google:
+    - “I don't know,” Draco said.
   '"Je ne sais pas," dit Fred après un moment "je n''y avais jamais pensé."':
     google:
     - '"I don''t know," Fred said after a moment, "I never thought about it."'
@@ -651,6 +783,9 @@ french_to_english:
   '"Je pense aussi."':
     google:
     - '"I think so too."'
+  '"Je pense que ce serait très juste," dit Draco.':
+    google:
+    - “I think that would be very fair,” Draco said.
   '"Je pense que je vais bien."':
     google:
     - '"I think I''m fine."'
@@ -681,6 +816,9 @@ french_to_english:
   '"Je sais ça, petit."':
     google:
     - '"I know that, kid."'
+  '"Je sais," dit Draco.':
+    google:
+    - “I know,” Draco said.
   '"Je sais," dit Hermione.':
     google:
     - “I know,” Hermione said.
@@ -711,6 +849,9 @@ french_to_english:
   '"Je veux dire - je -"':
     google:
     - '"I mean - I -"'
+  '"Je veux dire pourquoi est-ce que tu ne leur as pas juste dit non ?"':
+    google:
+    - '"I mean why didn''t you just tell them no?"'
   '"Je veux que vous fassiez tout," dit Harry Potter.':
     google:
     - “I want you to do everything,” Harry Potter said.
@@ -729,6 +870,9 @@ french_to_english:
   '"Je vois," dit Harry.':
     google:
     - “I see,” Harry said.
+  '"Je vois," dit le professeur Quirrell.':
+    google:
+    - '"I see," said Professor Quirrell.'
   '"Je vois."':
     google:
     - '"I see."'
@@ -753,6 +897,9 @@ french_to_english:
   '"Je, je ne voulais pas -"':
     google:
     - '"I, I didn''t mean -"'
+  '"Je, je…" dit Draco.':
+    google:
+    - '"I, I…" Draco said.'
   '"Je… je crois que oui," dit Harry.':
     google:
     - '"I… I believe so," Harry said.'
@@ -774,9 +921,25 @@ french_to_english:
   '"Je…" dit-elle.':
     google:
     - '"I…" she said.'
+  '"Juste au cas où quoi ?"':
+    google:
+    - '"Just in case what?"'
+  '"Juste au cas où, vous savez, quelque chose se passait."':
+    google:
+    - '"Just in case, you know, something was going on."'
   '"Le professeur McGonagall a dit que ça irait."':
     google:
     - '"Professor McGonagall said it would be fine."'
+  '"Le professeur Quirrell ?" dit Harry.':
+    google:
+    - '"Professor Quirrell?" Harry said.'
+  '"Le professeur Quirrell le sait aussi," dit Draco.':
+    google:
+    - '"Professor Quirrell knows that too," Draco said.'
+  '"Le professeur Quirrell parle juste comme ça," dit Harry Potter, même s''il avait l''air moins sûr de lui qu''avant.':
+    google:
+    - '"Professor Quirrell just talks like that," Harry Potter said, even though he
+      sounded less confident than before.'
   '"Les deux ou -"':
     google:
     - '"Both or -"'
@@ -801,6 +964,9 @@ french_to_english:
   '"M. Potter," dit le professeur McGonagall.':
     google:
     - '"Mr. Potter," said Professor McGonagall.'
+  '"M. Potter…" dit le professeur Quirrell.':
+    google:
+    - '"Mr. Potter…" said Professor Quirrell.'
   '"Magie," dit le professeur McGonagall.':
     google:
     - '"Magic," said Professor McGonagall.'
@@ -843,6 +1009,9 @@ french_to_english:
   '"Mais qu''est-ce que ça a à voir avec vous ?"':
     google:
     - '"But what does that have to do with you?"'
+  '"Mais…" dit Draco.':
+    google:
+    - '"But…" Draco said.'
   '"Mais…" dit Harry.':
     google:
     - '"But…" Harry said.'
@@ -852,6 +1021,9 @@ french_to_english:
   '"Merci beaucoup, Neville," dit Harry.':
     google:
     - “Thank you very much, Neville,” Harry said.
+  '"Merci beaucoup," dit le professeur Quirrell.':
+    google:
+    - '"Thank you very much," said Professor Quirrell.'
   '"Merci, M. Potter," dit McGonagall.':
     google:
     - “Thank you, Mr. Potter,” McGonagall said.
@@ -861,6 +1033,9 @@ french_to_english:
   '"Merci, Père !"':
     google:
     - '"Thank you, Father!"'
+  '"Merci," dit Draco.':
+    google:
+    - “Thanks,” Draco said.
   '"Merci," dit Harry.':
     google:
     - “Thanks,” Harry said.
@@ -870,12 +1045,18 @@ french_to_english:
   '"Merci," dit-il.':
     google:
     - “Thanks,” he said.
+  '"Mieux," dit le professeur Quirrell.':
+    google:
+    - “Better,” said Professor Quirrell.
   '"Moi !"':
     google:
     - '"Me !"'
   '"Moi ?" dit Harry.':
     google:
     - '"Me ?" Harry said.'
+  '"Moi non plus," dit Draco.':
+    google:
+    - '"Me neither," Draco said.'
   '"Moi non plus," dit Fred.':
     google:
     - '"Me neither," said Fred.'
@@ -885,6 +1066,9 @@ french_to_english:
   '"Moi non plus."':
     google:
     - '"Me neither."'
+  '"Moi pas," dit Draco.':
+    google:
+    - '"I don''t," Draco said.'
   '"Moi pas."':
     google:
     - '"Not me."'
@@ -903,6 +1087,12 @@ french_to_english:
   '"Ne fais pas ça", dit sa voix.':
     google:
     - '"Don''t do that," his voice said.'
+  '"Ne le dis pas," dit Draco.':
+    google:
+    - “Don't say it,” Draco said.
+  '"Ne le soyez pas," dit le professeur Quirrell.':
+    google:
+    - '"Don''t be," said Professor Quirrell.'
   '"Ne lui dis pas pour quoi c''est, quand même -"':
     google:
     - '"Don''t tell him what it is for, anyway -"'
@@ -954,6 +1144,12 @@ french_to_english:
   '"Non, rien," dit Harry.':
     google:
     - “No, nothing,” Harry said.
+  '"Non, vraiment," dit Draco.':
+    google:
+    - “No, really,” Draco said.
+  '"Non," dit Draco.':
+    google:
+    - “No,” Draco said.
   '"Non," dit Dumbledore.':
     google:
     - “No,” Dumbledore said.
@@ -981,6 +1177,15 @@ french_to_english:
   '"Non," dit le professeur McGonagall.':
     google:
     - '"No," said Professor McGonagall.'
+  '"Non," dit le professeur Quirrell au bout d''un moment.':
+    google:
+    - '"No," Professor Quirrell said after a while.'
+  '"Non," dit le professeur Quirrell.':
+    google:
+    - '"No," said Professor Quirrell.'
+  '"Non," dit simplement le professeur Quirrell.':
+    google:
+    - '"No," Professor Quirrell said simply.'
   '"Non," dit-elle enfin.':
     google:
     - '"No," she said finally.'
@@ -990,9 +1195,15 @@ french_to_english:
   '"Non," répondit Hermione.':
     google:
     - '"No," Hermione replied.'
+  '"Non." dit le professeur Quirrell.':
+    google:
+    - '"No." said Professor Quirrell.'
   '"Non… ?"':
     google:
     - '"No… ?"'
+  '"Non…" dit le professeur Quirrell.':
+    google:
+    - '"No…" said Professor Quirrell.'
   '"Non…" dit-elle après un moment.':
     google:
     - '"No…" she said after a moment.'
@@ -1002,6 +1213,12 @@ french_to_english:
   '"Oh ?" dit Harry.':
     google:
     - '"Oh ?" Harry said.'
+  '"Oh ?" dit le professeur Quirrell.':
+    google:
+    - '"Oh ?" said Professor Quirrell.'
+  '"Oh oh," dit Draco.':
+    google:
+    - “Oh oh,” Draco said.
   '"Oh oh," dit Harry.':
     google:
     - “Oh oh,” Harry said.
@@ -1011,12 +1228,21 @@ french_to_english:
   '"Oh, allons," dit Harry.':
     google:
     - “Oh, come on,” Harry said.
+  '"Oh, ce serait bien trop vous demander," dit le professeur Quirrell.':
+    google:
+    - '"Oh, that would be too much to ask of you," said Professor Quirrell.'
   '"Oh, je sais bien," dit Hermione.':
     google:
     - “Oh, I know,” Hermione said.
   '"Oh, je sais," dit Hermione.':
     google:
     - “Oh, I know,” Hermione said.
+  '"Oh, mais c''est ce que je fais," dit le professeur Quirrell.':
+    google:
+    - “Oh, but that's what I do,” Professor Quirrell said.
+  '"Oh, ne vous en faites pas," dit le professeur Quirrell.':
+    google:
+    - “Oh, don't worry,” Professor Quirrell said.
   '"Oh, peut-être," dit Harry.':
     google:
     - “Oh, maybe,” Harry said.
@@ -1056,6 +1282,9 @@ french_to_english:
   '"Oui ?"':
     google:
     - '"Yes ?"'
+  '"Oui ?" dit Draco.':
+    google:
+    - '"Yes ?" Draco said.'
   '"Oui, Harry," dit Dumbledore.':
     google:
     - “Yes, Harry,” Dumbledore said.
@@ -1074,12 +1303,18 @@ french_to_english:
   '"Oui, je suis Harry Potter."':
     google:
     - '"Yes, I am Harry Potter."'
+  '"Oui, professeur ?" dit Draco.':
+    google:
+    - '"Yes, professor?" Draco said.'
   '"Oui, vraiment."':
     google:
     - '"Yes really."'
   '"Oui," dirent Harry, Hermione, et quelques autres.':
     google:
     - '"Yes," said Harry, Hermione, and a few others.'
+  '"Oui," dit Draco.':
+    google:
+    - “Yes,” Draco said.
   '"Oui," dit Dumbledore.':
     google:
     - “Yes,” Dumbledore said.
@@ -1098,6 +1333,18 @@ french_to_english:
   '"Oui," dit le professeur McGonagall.':
     google:
     - “Yes,” said Professor McGonagall.
+  '"Oui," dit le professeur Quirrell, "c''est ce que vous auriez pensé, n''est-ce pas.':
+    google:
+    - “Yes,” said Professor Quirrell, “that's what you would have thought, right.
+  '"Oui," dit le professeur Quirrell, "je sais".':
+    google:
+    - “Yes,” Professor Quirrell said, “I know”.
+  '"Oui," dit le professeur Quirrell.':
+    google:
+    - '"Yes," said Professor Quirrell.'
+  '"Oui," dit simplement le professeur Quirrell.':
+    google:
+    - “Yes,” Professor Quirrell said simply.
   '"Oui," dit-elle d''une voix encore plus petite.':
     google:
     - '"Yes," she said in an even smaller voice.'
@@ -1113,12 +1360,18 @@ french_to_english:
   '"Parce que…" dit Harry.':
     google:
     - '"Because…" Harry said.'
+  '"Parle," dit Draco.':
+    google:
+    - “Speak,” Draco said.
   '"Parlons donc."':
     google:
     - '"So let''s talk."'
   '"Pas beaucoup," dit Harry.':
     google:
     - “Not a lot,” Harry said.
+  '"Pas du tout", dit le professeur Quirrell.':
+    google:
+    - '"Not at all," said Professor Quirrell.'
   '"Pas du tout."':
     google:
     - '"Not at all."'
@@ -1155,6 +1408,9 @@ french_to_english:
   '"Peut-être est-ce le cas."':
     google:
     - '"Maybe it is."'
+  '"Peut-être," dit Draco.':
+    google:
+    - “Maybe,” Draco said.
   '"Plus ou moins," dit Harry.':
     google:
     - “More or less,” Harry said.
@@ -1170,9 +1426,15 @@ french_to_english:
   '"Pourquoi ?" demanda Harry.':
     google:
     - '"Why ?" Harry asked.'
+  '"Pourquoi ?" dit Draco.':
+    google:
+    - '"Why ?" Draco said.'
   '"Pourquoi ?" dit Harry.':
     google:
     - '"Why ?" Harry said.'
+  '"Pourquoi ?" dit le professeur Quirrell.':
+    google:
+    - '"Why ?" said Professor Quirrell.'
   '"Pourquoi est-ce qu''aucun d''entre vous ne dit rien ?" demanda Hermione.':
     google:
     - '"Why didn''t any of you say anything?" Hermione asked.'
@@ -1194,9 +1456,15 @@ french_to_english:
   '"Pourquoi t''as fait ça, Harry ?"':
     google:
     - '"Why did you do that, Harry?"'
+  '"Pourquoi tu as fait ça, Draco ?"':
+    google:
+    - '"Why did you do that, Draco?"'
   '"Prends ton temps," dit Harry.':
     google:
     - “Take your time,” Harry said.
+  '"Professeur !" dit Draco.':
+    google:
+    - '"Professor!" Draco said.'
   '"Professeur ?" dit Harry.':
     google:
     - '"Professor?" Harry said.'
@@ -1206,9 +1474,24 @@ french_to_english:
   '"Professeur McGonagall," dit Harry.':
     google:
     - “Professor McGonagall,” Harry said.
+  '"Professeur Quirrell !" dit Harry.':
+    google:
+    - '"Professor Quirrell!" Harry said.'
+  '"Professeur Quirrell -"':
+    google:
+    - '"Professor Quirrell -"'
+  '"Professeur Quirrell ?" dit Harry.':
+    google:
+    - '"Professor Quirrell?" Harry said.'
+  '"Professeur Quirrell, bien sûr," dit Harry.':
+    google:
+    - “Professor Quirrell, of course,” Harry said.
   '"Professeur, nous avons vraiment besoin d''en parler après les cours -"':
     google:
     - '"Professor, we really need to talk about this after class -"'
+  '"Père," dit Draco d''une petite voix.':
+    google:
+    - “Father,” Draco said in a small voice.
   '"QUOI ?"':
     google:
     - '"WHAT?"'
@@ -1233,6 +1516,9 @@ french_to_english:
   '"Qu''est-ce que c''est ?"':
     google:
     - '"What is that ?"'
+  '"Qu''est-ce que c''est ?" dit Draco.':
+    google:
+    - '"What is that ?" Draco said.'
   '"Qu''est-ce que c''est ?" dit Hermione.':
     google:
     - '"What is that ?" Hermione said.'
@@ -1245,9 +1531,15 @@ french_to_english:
   '"Qu''est-ce que tu as fait alors ?"':
     google:
     - '"What did you do then?"'
+  '"Qu''est-ce que tu en as à faire ?" dit Draco.':
+    google:
+    - '"What do you have to do with it?" Draco said.'
   '"Qu''est-ce que ça fait ?" dit Maugrey.':
     google:
     - '"What does it do ?" said Moody.'
+  '"Qu''est-ce que ça veut dire ?" dit Draco.':
+    google:
+    - '"What does it mean ?" Draco said.'
   '"Qu''est-ce qui ne va pas ?"':
     google:
     - '"What''s wrong ?"'
@@ -1281,6 +1573,9 @@ french_to_english:
   '"Quoi ?" dirent Fred et George.':
     google:
     - '"What?" said Fred and George.'
+  '"Quoi ?" dit Draco.':
+    google:
+    - '"What?" Draco said.'
   '"Quoi ?" dit Dumbledore.':
     google:
     - '"What?" said Dumbledore.'
@@ -1320,6 +1615,9 @@ french_to_english:
   '"Regarde ce qu''on a pour toi !"':
     google:
     - '"Look what we got for you!"'
+  '"Regarde l''autre côté," dit le professeur Quirrell.':
+    google:
+    - '"Look at the other side," said Professor Quirrell.'
   '"Rogue et Dumbledore ?"':
     google:
     - '"Snape and Dumbledore?"'
@@ -1377,6 +1675,9 @@ french_to_english:
   '"Toi aussi."':
     google:
     - '"You too."'
+  '"Ton père ne t''a jamais dit que la vie n''est pas juste ?"':
+    google:
+    - '"Did your father never tell you that life is not fair?"'
   '"Toujours en vie."':
     google:
     - '"Still alive."'
@@ -1389,6 +1690,9 @@ french_to_english:
   '"Tout le monde ne pense pas comme toi, Harry."':
     google:
     - '"Not everyone thinks like you, Harry."'
+  '"Tout à fait," dit Draco.':
+    google:
+    - “Absolutely,” Draco said.
   '"Tout à fait," dit la voix de Dumbledore.':
     google:
     - “Absolutely,” Dumbledore's voice said.
@@ -1401,6 +1705,12 @@ french_to_english:
   '"Très bien, dans ce cas," dit Harry.':
     google:
     - '"Alright, then," Harry said.'
+  '"Très bien," dit Draco d''une voix vide.':
+    google:
+    - “Very well,” Draco said blankly.
+  '"Très bien," dit Draco.':
+    google:
+    - “Very well,” Draco said.
   '"Très bien," dit Harry après un moment.':
     google:
     - “Very well,” Harry said after a moment.
@@ -1413,6 +1723,9 @@ french_to_english:
   '"Très bien," dit le professeur McGonagall.':
     google:
     - '"Very well," said Professor McGonagall.'
+  '"Très bien," dit le professeur Quirrell.':
+    google:
+    - '"Very well," said Professor Quirrell.'
   '"Très bien," dit-elle.':
     google:
     - “Very well,” she said.
@@ -1461,6 +1774,9 @@ french_to_english:
   '"Tu ne sais vraiment pas ?"':
     google:
     - '"You really don''t know?"'
+  '"Tu peux demander au professeur Quirrell si tu ne me crois pas," dit Harry.':
+    google:
+    - '"You can ask Professor Quirrell if you don''t believe me," Harry said.'
   '"Tu peux parler à présent," dit Harry.':
     google:
     - '"You can talk now," Harry said.'
@@ -1470,6 +1786,9 @@ french_to_english:
   '"Tu sais que je ne veux pas -"':
     google:
     - '"You know I don''t want -"'
+  '"Tu sais," dit Draco.':
+    google:
+    - “You know,” Draco said.
   '"Tu vas bien ?"':
     google:
     - '"You''re okay ?"'
@@ -1485,12 +1804,18 @@ french_to_english:
   '"Une QUOI ?"':
     google:
     - '"A what ?"'
+  '"Une chose," dit le professeur Quirrell.':
+    google:
+    - '"One thing," said Professor Quirrell.'
   '"Une pièce ?" dit Hermione.':
     google:
     - '"A piece ?" Hermione said.'
   '"Vide ?" dit Harry.':
     google:
     - '"Empty?" Harry said.'
+  '"Voilà", dit le professeur Quirrell.':
+    google:
+    - '"There you go," said Professor Quirrell.'
   '"Voilà," dit Harry.':
     google:
     - '"There you go," Harry said.'
@@ -1503,6 +1828,9 @@ french_to_english:
   '"Vous dites ça comme si ça n''était pas bien !" dit Harry.':
     google:
     - '"You say that like it isn''t right!" Harry said.'
+  '"Vous feriez bien," dit le professeur Quirrell.':
+    google:
+    - '"You would do well," said Professor Quirrell.'
   '"Vous l''avez !"':
     google:
     - '"You have it !"'
@@ -1530,6 +1858,9 @@ french_to_english:
   '"Vous vous prenez pour qui ?"':
     google:
     - '"Who do you think you are?"'
+  '"Vous voyez ?" dit le professeur Quirrell.':
+    google:
+    - '"You see ?" said Professor Quirrell.'
   '"Vous étiez ce -"':
     google:
     - '"You were that -"'
@@ -1566,15 +1897,33 @@ french_to_english:
   '"Ça ?" dit M. Lupin.':
     google:
     - '"That?" Mr Lupine said.'
+  '"Ça aussi," dit le professeur Quirrell.':
+    google:
+    - '"That too," said Professor Quirrell.'
+  '"Ça n''en est pas une !" dit Draco.':
+    google:
+    - '"It is not!" Draco said.'
   '"Ça n''est pas -"':
     google:
     - '"It''s not -"'
+  '"Ça ne serait pas juste."':
+    google:
+    - '"It wouldn''t be fair."'
   '"Ça ne va pas," dit quelqu''un.':
     google:
     - “It's not right,” someone said.
+  '"Ça ne… ça n''a pas l''air vrai…" dit la voix de Draco.':
+    google:
+    - '"It doesn''t… it doesn''t sound true…" Draco''s voice said.'
+  '"Ça semble vrai," dit Draco.':
+    google:
+    - “It seems true,” Draco said.
   '"Ça va !"':
     google:
     - '"It''s okay !"'
+  '"… ce n''est pas juste."':
+    google:
+    - '"… it is not fair."'
   '"… je ne sais pas quoi dire."':
     google:
     - '"… I do not know what to say."'
@@ -2082,6 +2431,9 @@ french_to_english:
   Bien entendu.:
     google:
     - Of course.
+  Bien essayé, cela dit.:
+    google:
+    - Nice try, that said.
   Bien essayé, mais non.:
     google:
     - Nice try, but no.
@@ -2340,6 +2692,9 @@ french_to_english:
   C'est déjà fait !:
     google:
     - It's already done !
+  C'est juste au cas où !:
+    google:
+    - It's just in case!
   C'est le mal !:
     google:
     - This is evil!
@@ -2352,6 +2707,9 @@ french_to_english:
   C'est moi ?:
     google:
     - It's me ?
+  C'est pas juste, pas juste, pas juste !:
+    google:
+    - It's not fair, not fair, not fair!
   C'est quelque chose d'autre.:
     google:
     - It's something else.
@@ -2415,6 +2773,12 @@ french_to_english:
   C'était déjà trop tard pour lui.:
     google:
     - It was already too late for him.
+  C'était juste un tour, Hermione.:
+    google:
+    - It was just a trick, Hermione.
+  C'était juste… Poudlard.:
+    google:
+    - It was just… Hogwarts.
   C'était là quelque chose que Harry ne pouvait pas dire.:
     google:
     - This was something Harry couldn't say.
@@ -2424,6 +2788,10 @@ french_to_english:
   C'était passé bien trop près.:
     google:
     - It had come way too close.
+  C'était peut-être ce que Voldemort aurait essayé ; et c'était peut-être ce que le professeur Quirrell aurait répondu.:
+    google:
+    - Maybe that was what Voldemort would have tried; and maybe that was what Professor
+      Quirrell would have answered.
   C'était sa réplique.:
     google:
     - It was his line.
@@ -2463,6 +2831,12 @@ french_to_english:
   Ce n'est pas du Serpentard, c'est du Gryffondor -:
     google:
     - It's not Slytherin, it's Gryffindor -
+  Ce n'est pas juste !:
+    google:
+    - It is not fair !
+  Ce n'est pas pour cela que je suis ici.:
+    google:
+    - That is not what I am here for.
   Ce n'est pas pour ça que je l'ai fait !:
     google:
     - This is not why I did it!
@@ -2478,6 +2852,9 @@ french_to_english:
   Ce n'était pas ce que Harry Potter aurait fait.:
     google:
     - It wasn't what Harry Potter would have done.
+  Ce n'était pas juste.:
+    google:
+    - It wasn't fair.
   Ce n'était pas le cas.:
     google:
     - This was not the case.
@@ -2493,6 +2870,9 @@ french_to_english:
   Ce ne pouvait être que ça.:
     google:
     - It could only be that.
+  Ce ne serait pas juste du tout.:
+    google:
+    - It wouldn't be fair at all.
   Ce ne serait pas la première fois.:
     google:
     - It would not be the first time.
@@ -2547,6 +2927,9 @@ french_to_english:
   Ce que Harry fit.:
     google:
     - What Harry did.
+  Ce que Harry voulait faire, c'était en parler au professeur Quirrell.:
+    google:
+    - What Harry wanted to do was talk to Professor Quirrell about it.
   Ce que Harry voulait, bien sûr.:
     google:
     - What Harry wanted, of course.
@@ -2592,6 +2975,27 @@ french_to_english:
   Ce sont eux ?:
     google:
     - They are the ones ?
+  Cela aussi sera vrai.:
+    google:
+    - This will also be true.
+  Cela dit, Harry faisait ce qu'il pouvait.:
+    google:
+    - However, Harry was doing what he could.
+  Cela fit vraiment mal.:
+    google:
+    - It really hurt.
+  Cela prit un bon moment.:
+    google:
+    - It took a long time.
+  Cela prit un moment.:
+    google:
+    - It took a while.
+  Cela veut dire qu'on pourrait le faire si on essayait -:
+    google:
+    - That means we could do it if we tried -
+  Cela, je le sais.:
+    google:
+    - This I know.
   Cette fois – la première fois – il voulait être seul.:
     google:
     - This time - the first time - he wanted to be alone.
@@ -2751,6 +3155,9 @@ french_to_english:
   Cours !:
     google:
     - Classes !
+  Cours, Draco !:
+    google:
+    - Run, Draco!
   C’EST LUI QUI A FAIT ÇA, JE SAIS QUE C’EST LUI !:
     google:
     - HE DID THAT, I KNOW THAT IS HIM!
@@ -2790,6 +3197,12 @@ french_to_english:
   C’est bien ce qu’il semble.:
     google:
     - This is what it seems.
+  C’est bien cela ?:
+    google:
+    - That's right ?
+  C’est bien cela, n’est-ce pas ?:
+    google:
+    - That's it, isn't it?
   C’est bien là, dit-il.:
     google:
     - It is there, he said.
@@ -2856,6 +3269,9 @@ french_to_english:
   C’est encore cette voix.:
     google:
     - It’s that voice again.
+  C’est juste ?:
+    google:
+    - It's just ?
   C’est la même chose avec Harry Potter.:
     google:
     - It's the same with Harry Potter.
@@ -2955,6 +3371,9 @@ french_to_english:
   C’est simplement parce que Potter veut vous voir, Dumbledore.:
     google:
     - It’s just because Potter wants to see you, Dumbledore.
+  C’est simplement… plus juste, non ? dit-il.:
+    google:
+    - It's just… fairer, isn't it? he said.
   C’est toi ?:
     google:
     - It's you ?
@@ -3087,6 +3506,12 @@ french_to_english:
   C’était Percy.:
     google:
     - It was Percy.
+  C’était Quirrell !:
+    google:
+    - It was Quirrell!
+  C’était Quirrell.:
+    google:
+    - It was Quirrell.
   C’était Rogue.:
     google:
     - It was Snape.
@@ -3319,6 +3744,21 @@ french_to_english:
   Donc, vous avez pris la baguette magique, dit Dumbledore.:
     google:
     - So you took the magic wand, said Dumbledore.
+  Draco ?:
+    google:
+    - Draco?
+  Draco aurait aussi pu le faire, mais quand même, pas mal.:
+    google:
+    - Draco could have done it too, but still, not bad.
+  Draco n'avait pas su que Dumbledore pouvait faire ça.:
+    google:
+    - Draco hadn't known Dumbledore could do this.
+  Draco parla alors.:
+    google:
+    - Draco spoke then.
+  Draco sourit.:
+    google:
+    - Draco smiles.
   Du côté… Dumbledore ?:
     google:
     - On the side… Dumbledore?
@@ -3724,6 +4164,9 @@ french_to_english:
   Est-ce que ton père t’en a déjà parlé ?:
     google:
     - Has your dad ever told you about it?
+  Est-ce que tout cela est vrai ?:
+    google:
+    - Is all this true?
   Est-ce que tu es là ?:
     google:
     - Are you here ?
@@ -3965,6 +4408,9 @@ french_to_english:
   Et je ne parle pas d’or.:
     google:
     - And I'm not talking about gold.
+  Et je ne pense pas non plus que ce soit juste.:
+    google:
+    - And I don't think that's fair either.
   Et je n’ai pas encore parlé de ce qu’il fait à l’école.:
     google:
     - And I haven't talked about what he does in school yet.
@@ -4118,6 +4564,9 @@ french_to_english:
   Et si quelqu’un te voit ?:
     google:
     - What if someone sees you?
+  Et soudain Draco la vit.:
+    google:
+    - And suddenly Draco saw her.
   Et soudain, il le vit.:
     google:
     - And suddenly he saw it.
@@ -4163,6 +4612,9 @@ french_to_english:
   Et toi… tu peux.:
     google:
     - And you… you can.
+  Et tout cela était vrai.:
+    google:
+    - And it was all true.
   Et tu le feras.:
     google:
     - And you will.
@@ -4421,12 +4873,18 @@ french_to_english:
   Harry Potter.:
     google:
     - Harry Potter.
+  Harry avait beaucoup plus de mal à parler que le professeur Quirrell.:
+    google:
+    - Harry had a much harder time speaking than Professor Quirrell.
   Harry avait de plus en plus mal à la tête.:
     google:
     - Harry's head hurt more and more.
   Harry avait du mal à le croire.:
     google:
     - Harry found it hard to believe it.
+  Harry avait déjà pensé cela après la mort de Hermione.:
+    google:
+    - Harry had already thought this after Hermione died.
   Harry avait entendu, lui aussi.:
     google:
     - Harry had heard, too.
@@ -4545,6 +5003,9 @@ french_to_english:
   Harry ne répondit rien.:
     google:
     - Harry didn't answer.
+  Harry ne sait rien de tout cela, bien sûr.:
+    google:
+    - Harry doesn't know any of this, of course.
   Harry ne savait pas quoi dire.:
     google:
     - Harry didn't know what to say.
@@ -4635,6 +5096,12 @@ french_to_english:
   Harry regarda autour de lui.:
     google:
     - Harry looked around him.
+  Harry regarda le professeur Quirrell pendant un moment.:
+    google:
+    - Harry looked at Professor Quirrell for a moment.
+  Harry regarda le professeur Quirrell.:
+    google:
+    - Harry looked at Professor Quirrell.
   Harry regarda ses mains.:
     google:
     - Harry looked at his hands.
@@ -4647,6 +5114,9 @@ french_to_english:
   Harry regarda à nouveau la chose.:
     google:
     - Harry looked at the thing again.
+  Harry regardait Draco.:
+    google:
+    - Harry looked at Draco.
   Harry rit.:
     google:
     - Harry laughed.
@@ -4783,6 +5253,9 @@ french_to_english:
   Hermione ne savait même pas quoi.:
     google:
     - Hermione didn't even know what.
+  Hermione ne savait tout simplement pas quoi répondre à cela.:
+    google:
+    - Hermione just didn't know what to say to that.
   Hermione regardait à présent Harry comme si elle n’en croyait pas ses yeux.:
     google:
     - Hermione was now looking at Harry as if she couldn't believe her eyes.
@@ -5011,6 +5484,9 @@ french_to_english:
   Il fit un pas en avant.:
     google:
     - He took a step forward.
+  Il l'avait su, il l'avait juste su.:
+    google:
+    - He had known it, he had just known it.
   Il la regarda.:
     google:
     - He looked at her.
@@ -5065,6 +5541,9 @@ french_to_english:
   Il n'est pas professeur… ah, oui, vous pensez que c'est le professeur Rogue.:
     google:
     - He's not a professor… ah, yes, you think it's Professor Snape.
+  Il n'y a rien d'autre à faire que ce qui est juste.:
+    google:
+    - There is nothing else to do except what is right.
   Il n'y a rien que je puisse faire !:
     google:
     - There is nothing I can do!
@@ -5110,6 +5589,9 @@ french_to_english:
   Il ne fallait jamais être mal vu du professeur Rogue.:
     google:
     - Professor Snape should never be frowned upon.
+  Il ne faut pas que nous fassions cela.:
+    google:
+    - We must not do this.
   Il ne faut pas qu’on nous voie.:
     google:
     - We must not be seen.
@@ -5182,12 +5664,18 @@ french_to_english:
   Il ne t’a donc rien appris, Maugrey ?:
     google:
     - Didn't he teach you anything, Moody?
+  Il ne voulait pas que cela se sache.:
+    google:
+    - He didn't want that to be known.
   Il n’a jamais fait ça !:
     google:
     - He never did that!
   Il n’avait aucune idée de ce qu’il pourrait bien lui dire.:
     google:
     - He had no idea what to say to her.
+  Il n’avait pas voulu dire cela.:
+    google:
+    - He hadn't meant that.
   Il n’en a jamais demandé.:
     google:
     - He never asked for it.
@@ -5290,6 +5778,9 @@ french_to_english:
   Il savait donc.:
     google:
     - So he knew.
+  Il savait déjà tout cela.:
+    google:
+    - He already knew all of this.
   Il savait que c'était tout ce qu'il savait.:
     google:
     - He knew that was all he knew.
@@ -5504,6 +5995,9 @@ french_to_english:
   Ils ne vous ont rien dit d'autre ?:
     google:
     - Didn't they tell you anything else?
+  Ils parlaient quand même du Professeur Quirrell.:
+    google:
+    - They were talking about Professor Quirrell anyway.
   Ils parlent comme chaque jour.:
     google:
     - They talk like every day.
@@ -5579,6 +6073,9 @@ french_to_english:
   J'en ai assez entendu.:
     google:
     - I've heard enough.
+  J'en ai parlé au professeur Quirrell.:
+    google:
+    - I spoke to Professor Quirrell about it.
   J'entendais leurs voix et tout.:
     google:
     - I heard their voices and everything.
@@ -5621,6 +6118,9 @@ french_to_english:
   Jamais il n’aurait fait ça !:
     google:
     - He never would have done that!
+  Jamais le professeur Quirrell n'aurait pu entendre ça.:
+    google:
+    - Professor Quirrell could never have heard that.
   Jamais vu ça.:
     google:
     - Never seen that.
@@ -5699,6 +6199,9 @@ french_to_english:
   Je lui ai dit qu’il fallait faire quelque chose.:
     google:
     - I told him something had to be done.
+  Je lui ai répondu que cela ne voulait rien dire, mais qu’il me semblait que non.:
+    google:
+    - I told him it didn't mean anything, but it didn't seem to me.
   Je lui ai répondu que c’était vrai.:
     google:
     - I told him it was true.
@@ -5846,6 +6349,9 @@ french_to_english:
   Je ne pense pas.:
     google:
     - I do not think so.
+  Je ne peux croire à cela, Harry !:
+    google:
+    - I can't believe this, Harry!
   Je ne peux pas !:
     google:
     - I can not !
@@ -6125,6 +6631,9 @@ french_to_english:
   Je pensais que tu dirais ça.:
     google:
     - I thought you would say that.
+  Je pensais que vous pourriez dire cela.:
+    google:
+    - I thought you could say that.
   Je pensais que ça me ferait du bien.:
     google:
     - I thought it would do me good.
@@ -6395,6 +6904,9 @@ french_to_english:
   Je vois ce que tu veux dire.:
     google:
     - I see what you mean.
+  Je vois, dit le professeur Quirrell.:
+    google:
+    - I see, said Professor Quirrell.
   Je vois.:
     google:
     - I see.
@@ -6444,6 +6956,33 @@ french_to_english:
   Je… quoi ?:
     google:
     - What I ?
+  Juste au cas où.:
+    google:
+    - Just in case.
+  Juste avant toi, à vrai dire.:
+    google:
+    - Right before you, actually.
+  Juste cela, rien de plus.:
+    google:
+    - Just that, nothing more.
+  Juste comme ça.:
+    google:
+    - Just like that.
+  Juste dire ça ?:
+    google:
+    - Just say that?
+  Juste parce que tu le crois ?:
+    google:
+    - Just because you believe it?
+  Juste un ?:
+    google:
+    - Just one ?
+  Juste un exemple.:
+    google:
+    - Just one example.
+  Juste… juste… juste tout !:
+    google:
+    - Just… just… just everything!
   J’ai 20 ans.:
     google:
     - I'm 20 years old.
@@ -6591,6 +7130,9 @@ french_to_english:
   La sorcière le regarda.:
     google:
     - The witch looked at him.
+  La voie 9 est ici, la voie 10 juste à côté.:
+    google:
+    - Track 9 is here, track 10 right next to it.
   La voix de Harry s'éleva à nouveau.:
     google:
     - Harry's voice rose again.
@@ -6636,6 +7178,51 @@ french_to_english:
   Le professeur McGonagall souriait à présent.:
     google:
     - Professor McGonagall was smiling now.
+  Le professeur Quirrell est toujours en vie.:
+    google:
+    - Professor Quirrell is still alive.
+  Le professeur Quirrell le regarda.:
+    google:
+    - Professor Quirrell looked at him.
+  Le professeur Quirrell le regardait toujours.:
+    google:
+    - Professor Quirrell was still looking at him.
+  Le professeur Quirrell les regardait.:
+    google:
+    - Professor Quirrell watched them.
+  Le professeur Quirrell n'a pas dit ça et vous non plus.:
+    google:
+    - Professor Quirrell didn't say that and neither did you.
+  Le professeur Quirrell ne souriait plus.:
+    google:
+    - Professor Quirrell was no longer smiling.
+  Le professeur Quirrell parla.:
+    google:
+    - Professor Quirrell spoke.
+  Le professeur Quirrell regarda Draco.:
+    google:
+    - Professor Quirrell looked at Draco.
+  Le professeur Quirrell regarda Harry.:
+    google:
+    - Professor Quirrell looked at Harry.
+  Le professeur Quirrell regarda la classe.:
+    google:
+    - Professor Quirrell looked at the class.
+  Le professeur Quirrell rit.:
+    google:
+    - Professor Quirrell laughs.
+  Le professeur Quirrell souriait.:
+    google:
+    - Professor Quirrell was smiling.
+  Le professeur Quirrell sourit soudain.:
+    google:
+    - Professor Quirrell suddenly smiled.
+  Le professeur Quirrell sourit.:
+    google:
+    - Professor Quirrell smiles.
+  Le professeur Quirrell était donc en vie.:
+    google:
+    - So Professor Quirrell was alive.
   Le professeur Rogue non plus, dit-il.:
     google:
     - Neither did Professor Snape, he said.
@@ -6888,6 +7475,9 @@ french_to_english:
   Mais depuis, j’ai appris beaucoup de choses sur ce qui s’était passé.:
     google:
     - But since then I have learned a lot about what happened.
+  Mais elle le dit, juste pour être sûre.:
+    google:
+    - But she says so, just to be sure.
   Mais elle le savait déjà.:
     google:
     - But she already knew it.
@@ -7047,6 +7637,9 @@ french_to_english:
   Mais j’en ai besoin ce soir, Rogue !:
     google:
     - But I need it tonight, Snape!
+  Mais le Professeur McGonagall semblait penser qu'il y avait plus que cela.:
+    google:
+    - But Professor McGonagall seemed to think there was more to it.
   Mais le bon côté des choses c'est que -:
     google:
     - But the good part is that -
@@ -7158,6 +7751,9 @@ french_to_english:
   Mais qu’est-ce que j’ai ?:
     google:
     - But what do I have?
+  Mais qu’est-ce que tout cela a à voir avec… ?:
+    google:
+    - But what does all of this have to do with ...?
   Mais qu’est-ce que vous faites là ? demanda Harry.:
     google:
     - But what are you doing here? Harry asked.
@@ -7224,6 +7820,9 @@ french_to_english:
   Mais ça n’est pas tout !:
     google:
     - But that's not all !
+  Mais ça, on va en parler juste après.:
+    google:
+    - But that, we will talk about it right after.
   Mais “c’est la vie”, comme on dit en français.:
     google:
     - But “c’est la vie”, as we say in French.
@@ -7458,6 +8057,9 @@ french_to_english:
   Moi non plus, je ne veux pas de lui.:
     google:
     - I don't want him either.
+  Moi non plus, professeur Quirrell.:
+    google:
+    - Me neither, Professor Quirrell.
   Moi, c’est Harry Potter, dit Harry.:
     google:
     - I'm Harry Potter, said Harry.
@@ -7584,6 +8186,9 @@ french_to_english:
   Même pas à un professeur ?:
     google:
     - Not even to a teacher?
+  Même que ton père, Draco, même que lui.:
+    google:
+    - Same as your father, Draco, same as him.
   Même si ce n'était pas bien du tout, vraiment pas.:
     google:
     - Even if it wasn't good at all, it really wasn't.
@@ -7695,6 +8300,9 @@ french_to_english:
   Non ?:
     google:
     - No ?
+  Non Draco, tu n'y es pas.:
+    google:
+    - No Draco, you're not.
   Non mais très bien, très bien !:
     google:
     - No, but very good, very good!
@@ -8211,6 +8819,9 @@ french_to_english:
   Ombrage ne répondit pas.:
     google:
     - Umbridge didn't answer.
+  On aurait cru entendre le professeur Quirrell.:
+    google:
+    - You sounded like Professor Quirrell.
   On dirait que si, dit Hermione.:
     google:
     - Looks like it does, Hermione said.
@@ -8404,6 +9015,9 @@ french_to_english:
   Ou bien il avait mal entendu.:
     google:
     - Or he had misheard.
+  Ou est-ce que c'était juste 'magique' ?:
+    google:
+    - Or was it just 'magic'?
   Ou même de moins le faire.:
     google:
     - Or even to do it less.
@@ -8548,6 +9162,12 @@ french_to_english:
   Oui, je ne sais pas ce qui lui prend, dit Harry.:
     google:
     - Yeah, I don't know what's going on with him, Harry said.
+  Oui, je n’avais que cela.:
+    google:
+    - Yes, I only had that.
+  Oui, je pensais bien que vous diriez cela.:
+    google:
+    - Yes, I thought you would say that.
   Oui, je pense que c’est le moment, répondit Maugrey.:
     google:
     - Yes, I think now is, Moody replied.
@@ -8833,6 +9453,9 @@ french_to_english:
   Parle moi !:
     google:
     - Talk to me !
+  Pas Draco.:
+    google:
+    - Not Draco.
   Pas Dumbledore.:
     google:
     - Not Dumbledore.
@@ -8854,6 +9477,9 @@ french_to_english:
   Pas besoin.:
     google:
     - No need.
+  Pas cela.:
+    google:
+    - Not that.
   Pas comme ça !:
     google:
     - Not like this !
@@ -9016,6 +9642,9 @@ french_to_english:
   Personne n'est bon en tout !:
     google:
     - No one is good at everything!
+  Personne ne demanda comment Harry savait cela.:
+    google:
+    - No one asked how Harry knew this.
   Personne ne disait rien.:
     google:
     - Nobody said anything.
@@ -9085,6 +9714,9 @@ french_to_english:
   Peut-être que j’irai quand je pourrai mieux parler français.:
     google:
     - Maybe I'll go when I can speak French better.
+  Peut-être que le professeur Quirrell dirait tout ce que Harry lui dirait de dire.:
+    google:
+    - Maybe Professor Quirrell would say whatever Harry told him to say.
   Peut-être que pour vous, c’est la même chose.:
     google:
     - Maybe it's the same for you.
@@ -9262,6 +9894,9 @@ french_to_english:
   Pourquoi le faire, M. Potter ?:
     google:
     - Why do it, Mr. Potter?
+  Pourquoi le professeur Quirrell ne -:
+    google:
+    - Why does Professor Quirrell -
   Pourquoi lui ? demanda aussitôt Harry.:
     google:
     - Why him ? Harry asked immediately.
@@ -9319,6 +9954,9 @@ french_to_english:
   Professeur Lupin ? dit-il.:
     google:
     - Professor Lupine? he said.
+  Professeur Quirrell ?:
+    google:
+    - Professor Quirrell?
   Professeur, Potter !:
     google:
     - Professor, Potter!
@@ -9364,6 +10002,9 @@ french_to_english:
   Puis il pensa à Black.:
     google:
     - Then he thought of Black.
+  Puis il regarda Draco.:
+    google:
+    - Then he looked at Draco.
   Puis il regarda Harry.:
     google:
     - Then he looked at Harry.
@@ -9379,6 +10020,9 @@ french_to_english:
   Puis il sourit.:
     google:
     - Then he smiles.
+  Puis le professeur Quirrell irait mieux, pendant un moment.:
+    google:
+    - Then Professor Quirrell would be better, for a while.
   Puis un peu plus.:
     google:
     - Then a little more.
@@ -9454,6 +10098,9 @@ french_to_english:
   Qu'est-ce qui ne va pas ?:
     google:
     - What's wrong ?
+  Qu'est-ce qui ne va pas, professeur Quirrell ? cela, il ne pouvait pas le lui demander.:
+    google:
+    - What's wrong, Professor Quirrell? that he couldn't ask her.
   Qu'est-ce qui s'est passé ?:
     google:
     - What happened ?
@@ -9484,6 +10131,9 @@ french_to_english:
   Que ce soit Dumbledore ou quelqu'un d'autre.:
     google:
     - Whether it's Dumbledore or someone else.
+  Que diraient Ron et Hermione s’ils entendaient cela ?:
+    google:
+    - What would Ron and Hermione say if they heard that?
   'Quelqu''un d''autre à la table dit : "Alors de qui ça parle ?"':
     google:
     - Someone else at the table says, "So who's this about?"
@@ -9538,6 +10188,9 @@ french_to_english:
   Qui disait quoi ?:
     google:
     - Who said what?
+  Qui dit cela ? demanda Harry.:
+    google:
+    - Who says that? Harry asked.
   Qui d’autre ?:
     google:
     - Who else ?
@@ -9574,6 +10227,9 @@ french_to_english:
   Qui sait ?:
     google:
     - Who knows ?
+  Qui serait là pour Draco maintenant ?:
+    google:
+    - Who would be there for Draco now?
   Qui tu voulais !:
     google:
     - Who you wanted!
@@ -9598,6 +10254,12 @@ french_to_english:
   Qui était là ?:
     google:
     - Who was there ?
+  Quirrell la regarda un moment.:
+    google:
+    - Quirrell looked at her for a moment.
+  Quirrell était avec lui.:
+    google:
+    - Quirrell was with him.
   Quoi ?:
     google:
     - What?
@@ -10447,6 +11109,9 @@ french_to_english:
   Son quoi ?:
     google:
     - His what?
+  Soyez juste le professeur Quirrell, pour toujours !:
+    google:
+    - Just be Professor Quirrell, forever!
   Sus !:
     google:
     - Sus!
@@ -11020,6 +11685,9 @@ french_to_english:
   Tu sais ça.:
     google:
     - You know that.
+  Tu savais cela et tu as quand même dit ce que tu as dit à Dumbledore.:
+    google:
+    - You knew that and still said what you said to Dumbledore.
   Tu t'en veux trop.:
     google:
     - You blame yourself too much.
@@ -11158,6 +11826,9 @@ french_to_english:
   Un seul, répondit Hermione.:
     google:
     - Only one, Hermione replied.
+  Un silence répondit à cela.:
+    google:
+    - Silence answered that.
   Un silence, pendant un moment.:
     google:
     - Silence, for a moment.
@@ -11236,6 +11907,9 @@ french_to_english:
   Voilà ce qu'elle veut dire !:
     google:
     - This is what she means!
+  Voilà ce que le professeur Quirrell avait été.:
+    google:
+    - This is what Professor Quirrell had been.
   Voilà l’homme qu’il nous faut, dit-il.:
     google:
     - Here's the man for us, he said.
@@ -11353,6 +12027,9 @@ french_to_english:
   Vous feriez bien d’y aller, Harry, il est tard.:
     google:
     - You better go Harry, it's late.
+  Vous feriez cela ?:
+    google:
+    - Would you do that?
   Vous le croyez vraiment.:
     google:
     - You really believe it.
@@ -11389,6 +12066,9 @@ french_to_english:
   Vous m’entendez ?:
     google:
     - You hear me ?
+  Vous n'avez pas toujours fait ce qui est juste.:
+    google:
+    - You haven't always done the right thing.
   Vous ne croyez pas ?:
     google:
     - You do not believe ?
@@ -11740,9 +12420,15 @@ french_to_english:
   Ça n'a pas besoin d'être 2.:
     google:
     - It doesn't have to be 2.
+  Ça n'a pas l'air juste.:
+    google:
+    - It doesn't seem fair.
   Ça n'allait pas.:
     google:
     - It wasn't right.
+  Ça n'est pas juste, Hermione !:
+    google:
+    - It's not fair, Hermione!
   Ça ne fait rien, c’est très bien quand même.:
     google:
     - It doesn't matter, that's fine anyway.

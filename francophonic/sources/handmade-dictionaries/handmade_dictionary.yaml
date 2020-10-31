@@ -2,22 +2,27 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-cela:
-- display: cela
-  pos: pronoun
+façon:
+- display: façon
+  gender: ''
+  pos: ''
   translations:
-  - it
-  - that
-draco:
-- notaword: true
-juste:
-- display: juste
-  pos: adjective
+  - ''
+garçon:
+- display: garçon
+  gender: ''
+  pos: ''
   translations:
-  - fair
-  - just
-  exampleSentences:
-  - english: He’s strict but fair.
-    french: Il est sévère, mais juste.
-quirrell:
-- notaword: true
+  - ''
+gens:
+- display: gens
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+partie:
+- display: partie
+  gender: ''
+  pos: ''
+  translations:
+  - ''
