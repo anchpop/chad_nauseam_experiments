@@ -72,7 +72,7 @@ def main():
                         audio_encoding=texttospeech.AudioEncoding.MP3)
 
 
-                    print(f"sentence '{sentence}' ", end='')
+                    print(f"sentence '{sentence}' ", end='',  flush=True)
 
                     # Perform the text-to-speech request on the text input with the selected
                     # voice parameters and audio file type
@@ -83,8 +83,7 @@ def main():
                     with open(f'{dir}{hashd}.mp3', 'wb') as out:
                         # Write the response to the output file.
                         out.write(response.audio_content)
-                        print(f"written")
-                    time.sleep(1)
+                        print(f"written as {dir}{hashd}.mp3")
                 break
             else:
                 break
