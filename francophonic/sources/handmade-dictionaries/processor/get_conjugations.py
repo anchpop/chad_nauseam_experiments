@@ -16,8 +16,8 @@ def grab_conjugation_soup(verbf, verbe):
     soup_french = BeautifulSoup(rf.text, 'html.parser')
     
     time.sleep(10)
-    re = requests.get(get_reverso_url(verbe[0].split("to")[0].strip(), "english"))
-    soup_english = BeautifulSoup(re if True else re.text, 'html.parser')
+    re = requests.get(get_reverso_url(verbe[0].split("to")[-1].strip(), "english"))
+    soup_english = BeautifulSoup(re.text, 'html.parser')
 
     return (soup_french, soup_english)
 
@@ -40,6 +40,7 @@ def parse_conjugations(soup):
                     info = {}
                     type_of_conjugation = conjugations[0].p.contents[0].strip().lower() if conjugations[0].p else ""
                     cons = conjugations[0].ul.findAll("li")
+                    print(f"current_mode={current_mode}, type_of_conjugation={type_of_conjugation}")
                     for con in cons:
                         i = [i.contents[0].strip().lower() for i in con.findAll("i")]
                         if len(i) == 1 and current_mode == 'infinitif' :
@@ -80,7 +81,7 @@ def get_conjugations(verbf, verbe, trans):
     auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {infinitivee: contentse}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {"to " + infinitivee: contentse}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
 
 def main():
     verb = input("Verb? ")
