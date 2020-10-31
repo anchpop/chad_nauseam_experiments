@@ -5,7 +5,7 @@ description = ""
 authors = ["Andre Popovitch <andre@popovit.ch>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "~3.8.0"
 PyYAML = "^5.3"
 requests = "^2.24"
 beautifulsoup4 = "^4.9"
@@ -27,3 +27,4 @@ template = "processor.handmade_dictionary_template_generator:main"
 conjugate = "processor.get_conjugations:main"
 
 translate = "processor.auto_sentence_translator:main"
+generate_tts = "processor.tts_generator:main"

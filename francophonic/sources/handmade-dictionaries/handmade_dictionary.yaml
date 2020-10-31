@@ -4,25 +4,20 @@
 
 cela:
 - display: cela
-  gender: ''
-  pos: ''
+  pos: pronoun
   translations:
-  - ''
+  - it
+  - that
 draco:
-- display: draco
-  gender: ''
-  pos: ''
-  translations:
-  - ''
+- notaword: true
 juste:
 - display: juste
-  gender: ''
-  pos: ''
+  pos: adjective
   translations:
-  - ''
+  - fair
+  - just
+  exampleSentences:
+  - english: He’s strict but fair.
+    french: Il est sévère, mais juste.
 quirrell:
-- display: quirrell
-  gender: ''
-  pos: ''
-  translations:
-  - ''
+- notaword: true

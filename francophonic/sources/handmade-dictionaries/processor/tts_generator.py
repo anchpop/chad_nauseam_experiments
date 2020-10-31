@@ -25,12 +25,11 @@ def main():
     # C is a good female voice, D is a good male voice. D seem to be a bit slower than C.
     voice_name = "fr-FR-Wavenet-C"
 
-    sentences_dictionary = get_sentence_dictionary()
-    sentences = set([item for sublist in [[translation['sentence'] for translation in translations['frenchTranslations']]
-                                          for translations in sentences_dictionary] for item in sublist])
+    sentences = set(get_traslations()['french_to_english'].keys())
+
     current_dictionary = get_word_dictionary()
-    words = set([w for w in current_dictionary['french'].keys()])
-    # let's not generate phrases for now - there's a ton of them and it's not very fun
+    words = get_all_known_french_words()
+    # let's not generate phrases for now - there's a ton of theview and it's not very fun
     phrases = [(context.replace(" - ", " ") + " ").replace("' ", "'").replace("il/elle", "il").replace("ils/elles", "ils")  + conjugation
         for word, entry in current_dictionary['french'].items() 
             for definition in entry['definitions'] 
@@ -38,6 +37,7 @@ def main():
                     for _, conjugations in forms.items() 
                         for context, conjugation in conjugations.items()
         ] if False else []
+
     tts_candidates = sentences.union(words).union(phrases)
     tts_candidates = set([w.lower().strip() for w in tts_candidates])
 
@@ -45,7 +45,6 @@ def main():
                           for f in listdir(dir) if isfile(join(dir, f))])
 
     candidates_to_tts = set()
-    i = 0
     for candidate in tts_candidates:
         hash_object = hashlib.sha3_256((candidate).encode('utf-8'))
         hashd = hash_object.hexdigest() + voice_name
@@ -72,6 +71,9 @@ def main():
                     audio_config = texttospeech.AudioConfig(
                         audio_encoding=texttospeech.AudioEncoding.MP3)
 
+
+                    print(f"sentence '{sentence}' ", end='')
+
                     # Perform the text-to-speech request on the text input with the selected
                     # voice parameters and audio file type
                     response = client.synthesize_speech(
@@ -81,7 +83,7 @@ def main():
                     with open(f'{dir}{hashd}.mp3', 'wb') as out:
                         # Write the response to the output file.
                         out.write(response.audio_content)
-                        print(f"sentence '{sentence}' written")
+                        print(f"written")
                     time.sleep(1)
                 break
             else:

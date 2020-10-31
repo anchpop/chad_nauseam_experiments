@@ -60,12 +60,12 @@ def main(analysis = None):
                     )
                     
                     translations['french_to_english'][sentence] = {'google': [translation.translated_text for translation in response.translations]}
-                    break
 
                 data = yaml.dump(translations,
                                 Dumper=Dumper, allow_unicode=True)
                 with open("translations.yaml", "w", encoding='utf-8') as f:
                     f.write(data)
+                break
             else:
                 break
 

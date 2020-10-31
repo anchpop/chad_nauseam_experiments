@@ -36,6 +36,8 @@ Harry prit une profonde inspiration. "Je n'ai rien fait de tel," dit-il, "mais j
 "Oui," dit Harry Potter, "ça a été assez difficile de trouver un vœu qui symbolise le coût de l'unité. Mais le problème d'agir ensemble ne concerne pas que les guerres, c'est quelque chose que nous devons résoudre tout au long de notre vie, tous les jours. Si tout le monde se coordonne en utilisant les même règles et que les règles sont stupides, alors si une personne décide de faire les choses différemment, elle brise les règles. Mais si tout le monde décide de faire les choses différemment, alors un changement peut avoir lieu. C'est exactement le même problème quand tout le monde doit agir ensemble. Pour la première personne qui s'exprime, elle a l'air d'aller à l'encontre du désir de la foule. Et si l'on croit que la seule chose qui importe est que les gens soient toujours unis, alors on ne peut jamais changer les règles du jeu, peu importe à quel point les règles sont stupides. Donc mon vœu, pour symboliser ce qui se passe lorsque les gens s'unissent dans la mauvaise direction, est qu'à Poudlard, on joue au Quidditch sans le Vif d'Or."
 
 "QUOI ?" hurlèrent cent voix dans la foule, et la mâchoire de Draco s'affaissa.
+
+"Je crois," dit lentement Minerva McGonagall, "que je devrais donner tout de suite les lettres d'Albus à M. Potter.
 """
 # In big quotes containing many sentences, it often will mess up and include the first or last quote. I address this by checking if there's exactly one quote in the sentence and removing it if so. 
 # the ["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ] part of the regex is responsible for determining if a character is uppercase. I use this to try and check for starts of sentences. But maybe this is wrong-headed because it also would detect proper nouns. It remains to be seen how much of a problem this is. 
@@ -51,22 +53,39 @@ def do_analysis():
         with open(filename, "r", encoding='utf-8') as f:
             source = tuple(filename.parts[-2:])
             for index, line in enumerate(f):
+                if retain_only_characters(line).strip() == "": 
+                    continue
+
                 line = clean_line(line)
                 words = line_to_words_french(line)
                 for word in words:
                     collected_words[word] = collected_words.get(word, Counter())
                     collected_words[word][source] += 1
                 
-                if line == "":
-                    continue
-                
-                sentences = re.findall(r'(?:["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]).*?(?:(?:[.?!]["»]?)|-")(?=$| ["«]?[A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ])', line.strip())
-                sentences = [sentence.strip('– ') for sentence in sentences]
-                sentences = [sentence.replace('"', "") if sentence.count('"') == 1 else sentence for sentence in sentences]
-                for sentence in sentences:
-                    if sentence != "" and len(sentence.split()) > 1:
-                        collected_sentences[sentence] = collected_sentences.get(sentence, {})
-                        collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
+                if "»" in line or "»" in line or line == "":
+                    # Don't want to deal with these right now
+                    pass
+                else:                    
+                    sentences = re.findall(r'(?:["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]).*?(?:(?:[.?!]["»]?)|-")(?=$| ["«]?[A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ])', line.strip())
+                    sentences = [sentence.strip('– ') for sentence in sentences]
+                    # sentences = [sentence.strip('"') if sentence.count('"') == 2 and sentence[0] == '"' and sentence[-1] == '"' and sentence[-2] != "-" else sentence for sentence in sentences] # sometimes sentences are wrapped in "s
+
+
+                    sentence_buildup = "" # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
+                    for sentence in sentences:
+                        if sentence[-2:] == "M." or sentence[-2:] == "H." or sentence[-3:] == "Dr.":
+                            sentence_buildup += sentence + " "
+                        else:
+                            sentence = sentence_buildup + sentence
+                            sentence_buildup = ""
+
+                            sentence = sentence.strip()
+                            sentence = sentence.strip('– ')
+                            sentence = sentence.replace('"', "").strip() if sentence.count('"') == 1 else sentence
+                            sentence = sentence.strip()
+                            if sentence != "" and len(sentence.split()) > 1:
+                                collected_sentences[sentence] = collected_sentences.get(sentence, {})
+                                collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
 
     return (collected_words, collected_sentences)
 

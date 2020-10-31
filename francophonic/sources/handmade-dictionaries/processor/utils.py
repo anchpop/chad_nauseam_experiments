@@ -33,7 +33,7 @@ def clean_line(line):
     #line = line.strip()
     line = re.sub('\[.*?]', '', line) # get rid of the timestamps in bits like "[00:00:12] Bonjour à tous ou bonsoir"
     line = " ".join(line.split())
-    # line = re.sub('^.*?:', '', line)
+    line = re.sub('^[^ ]*? : ', '', line)
     # line = line.strip("“–«» ")
     
     #if ":" in line:
