@@ -11,11 +11,11 @@ def get_reverso_url(verb, language):
 
 
 def grab_conjugation_soup(verbf, verbe):
-    #time.sleep(5)
+    #time.sleep(10)
     rf = ()#requests.get(get_reverso_url(verbf, "french"))
     soup_french = ()#BeautifulSoup(rf.text, 'html.parser')
     
-    #time.sleep(5)
+    #time.sleep(10  )
     re = ()#requests.get(get_reverso_url(verbe[0].split("to")[0].strip(), "english"))
     soup_english = BeautifulSoup(open("C:\\Users\\hyper\\OneDrive\\Desktop\\Conjugation read _ Conjugate verb read _ Reverso Conjugator English.html", "r", encoding='utf8').read() if True else re.text, 'html.parser')
 
@@ -38,25 +38,22 @@ def parse_conjugations(soup):
                     # print(current_mode)
                 if len(conjugations) == 1:
                     info = {}
-                    print(conjugations[0])
-                    print(current_mode)
-                    if current_mode == "participle":
-                        print("participle")
-                    else:  
-                        type_of_conjugation = conjugations[0].p.contents[0].strip().lower() if conjugations[0].p else ""
-                        cons = conjugations[0].ul.findAll("li")
-                        for con in cons:
-                            i = [i.contents[0].strip().lower() for i in con.findAll("i")]
-                            if len(i) == 1 and current_mode == 'infinitif' :
-                                infinitive = i[0] 
-                            elif len(i) == 1 and current_mode == 'imperative':
-                                info[""] = info.get("", i[0])
-                            elif len(i) == 2 and current_mode == 'infinitive':
-                                infinitive = i[1]
-                            elif len(i) >= 2:
-                                info[" - ".join(i[:-1])] = i[-1]
-                            else:
-                                raise Exception("unexpected case")
+                    type_of_conjugation = conjugations[0].p.contents[0].strip().lower() if conjugations[0].p else ""
+                    cons = conjugations[0].ul.findAll("li")
+                    for con in cons:
+                        i = [i.contents[0].strip().lower() for i in con.findAll("i")]
+                        if len(i) == 1 and current_mode == 'infinitif' :
+                            infinitive = i[0] 
+                        elif len(i) == 1 and current_mode == 'imperative':
+                            info[""] = info.get("", i[0])
+                        elif len(i) == 2 and current_mode == 'infinitive':
+                            infinitive = i[1]
+                        elif len(i) == 1 and current_mode == 'participle' and type_of_conjugation in ['past', 'present']:
+                            info[''] = i[0] 
+                        elif len(i) >= 2:
+                            info[" - ".join(i[:-1])] = i[-1]
+                        else:
+                            raise Exception(f"Unexpected case - current_mode = {current_mode}, type_of_conjugation = {type_of_conjugation}, conjugation = {con}")
                         
                         # print("    " + type_of_conjugation)
                         if len(info) > 0:
@@ -86,7 +83,7 @@ def get_conjugations(verbf, verbe, trans):
     auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations': contents, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': contentse, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
 
 def main():
     verb = input("Verb? ")
@@ -98,8 +95,8 @@ def main():
 
 
     pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(output)
-    #print(yaml.dump(output, allow_unicode=True))
+    #pp.pprint(output)
+    print(yaml.dump(output, allow_unicode=True))
 
 
 
