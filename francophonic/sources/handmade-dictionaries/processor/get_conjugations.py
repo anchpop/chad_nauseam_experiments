@@ -1,36 +1,28 @@
 import pprint
-import yaml
+import time
 
+import yaml
 import requests
 from bs4 import BeautifulSoup
 
 
-def get_reverso_url(verb):
-    return f"https://conjugator.reverso.net/conjugation-french-verb-{verb}.html"
+def get_reverso_url(verb, language):
+    return f"https://conjugator.reverso.net/conjugation-{language}-verb-{verb}.html"
 
 
-def grab_conjugation_soup(verb):
-    r = requests.get(get_reverso_url(verb))
-    soup = BeautifulSoup(r.text, 'html.parser')
-    return soup
-
-
-def main():
-    verb = input("Verb? ")
-    eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
-    trans = input("Transitive? ")[0].lower() == "y"
-
-    contents = {}
-
-    current_mode = ""
-
-    """with open("C:/Users/hyper/Desktop/Untitled-1.html", "r", encoding="utf-8") as f:
-        text = f.read()
-        soup = BeautifulSoup(text, 'html.parser')"""
-        
+def grab_conjugation_soup(verbf, verbe):
+    #time.sleep(5)
+    rf = ()#requests.get(get_reverso_url(verbf, "french"))
+    soup_french = ()#BeautifulSoup(rf.text, 'html.parser')
     
-    soup = grab_conjugation_soup(verb)
+    #time.sleep(5)
+    re = ()#requests.get(get_reverso_url(verbe[0].split("to")[0].strip(), "english"))
+    soup_english = BeautifulSoup(open("C:\\Users\\hyper\\OneDrive\\Desktop\\Conjugation read _ Conjugate verb read _ Reverso Conjugator English.html", "r", encoding='utf8').read() if True else re.text, 'html.parser')
 
+    return (soup_french, soup_english)
+
+def parse_conjugations(soup):
+    contents = {}
     result_block = soup.findAll("div", {"class": "result-block-api"})[0]
     word_wrap_rows = result_block.findAll("div", {"class": "word-wrap-row"})
     for row in word_wrap_rows:
@@ -46,27 +38,68 @@ def main():
                     # print(current_mode)
                 if len(conjugations) == 1:
                     info = {}
-                    type_of_conjugation = conjugations[0].p.contents[0].strip().lower()
-                    cons = conjugations[0].ul.findAll("li")
-                    for con in cons:
-                        i = [i.contents[0].strip().lower() for i in con.findAll("i")]
-                        if len(i) == 1 and current_mode == 'infinitif':
-                            infinitive = i[0]
-                        elif len(i) >= 2:
-                            info[" - ".join(i[:-1])] = i[-1]
-                    
-                    # print("    " + type_of_conjugation)
-                    if len(info) > 0:
-                        contents[current_mode] = {**contents.get(current_mode, {}), type_of_conjugation: info}
+                    print(conjugations[0])
+                    print(current_mode)
+                    if current_mode == "participle":
+                        print("participle")
+                    else:  
+                        type_of_conjugation = conjugations[0].p.contents[0].strip().lower() if conjugations[0].p else ""
+                        cons = conjugations[0].ul.findAll("li")
+                        for con in cons:
+                            i = [i.contents[0].strip().lower() for i in con.findAll("i")]
+                            if len(i) == 1 and current_mode == 'infinitif' :
+                                infinitive = i[0] 
+                            elif len(i) == 1 and current_mode == 'imperative':
+                                info[""] = info.get("", i[0])
+                            elif len(i) == 2 and current_mode == 'infinitive':
+                                infinitive = i[1]
+                            elif len(i) >= 2:
+                                info[" - ".join(i[:-1])] = i[-1]
+                            else:
+                                raise Exception("unexpected case")
+                        
+                        # print("    " + type_of_conjugation)
+                        if len(info) > 0:
+                            contents[current_mode] = {**contents.get(current_mode, {}), type_of_conjugation: info}
+                    if current_mode == "imperative":
+                        current_mode = "participle"
+    return (infinitive, contents)
+
+
+def get_conjugations(verbf, verbe, trans):
+    current_mode = ""
+
+    """with open("C:/Users/hyper/Desktop/Untitled-1.html", "r", encoding="utf-8") as f:
+        text = f.read()
+        soup = BeautifulSoup(text, 'html.parser')"""
+        
+    
+    (soupf, soupe) = grab_conjugation_soup(verbf, verbe)
+
+    #infinitivef, contentsf = parse_conjugations(soupf)
+    
+    infinitivee, contentse = parse_conjugations(soupe)
+
+    return contentse
 
     model = soup.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
     auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    pp = pprint.PrettyPrinter(indent=4)
+    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations': contents, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
 
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations': contents, 'translations': eng, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
-    print(yaml.dump(output, allow_unicode=True))
+def main():
+    verb = input("Verb? ")
+    eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
+    trans = input("Transitive? ")[0].lower() == "y"
+    
+    output = get_conjugations(verb, eng, trans)
+
+
+
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(output)
+    #print(yaml.dump(output, allow_unicode=True))
 
 
 
