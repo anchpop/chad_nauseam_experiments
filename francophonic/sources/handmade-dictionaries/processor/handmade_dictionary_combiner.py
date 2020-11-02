@@ -10,6 +10,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 from processor.utils import *
+import uuid
 
 
 
@@ -53,7 +54,7 @@ def main(analysis):
                 else:
                     break
 
-            current_dictionary["french"][word] = {"definitions": definitions}
+            current_dictionary["french"][word] = {"definitions": definitions, 'uuid': str(uuid.uuid4())}
             
     with open("worddictionary.yaml", "w", encoding='utf-8') as f:
         data = yaml.dump(current_dictionary, Dumper=Dumper, allow_unicode=True)

@@ -15,34 +15,42 @@ def main(analysis = None):
     word_dict = get_word_dictionary()
     output_words = {'french': {}, 'english': {}}
 
+    seen_uuids = set()
+
     for french_word, entry in word_dict['french'].items():
+        if entry['uuid'] in seen_uuids:
+          raise Exception(f"UUID for {french_word} already in dictionary!")
+        else:
+          seen_uuids.add(entry['uuid'])
         for definition in entry.get('definitions', {}):
             if definition.get('pos', '') == 'verb':
-              print('skipping verb')
-              pass
+              print(f'skipping verb {french_word}')
             else:
-              output_words['french'][french_word] = entry
+              output_words['french'][french_word] = output_words['french'].get(french_word, {'definitions': [], 'occurrences': 0, 'uuid': entry['uuid']})
+              output_words['french'][french_word]['definitions'] += [definition]
               for translation in definition.get('translations', []):
                   output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
+        if french_word[0] != 'a': break
 
-    output_translations = {'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences}}
+
+    output_translations = {'english': {}, 'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences}}
 
     sent = """
-export interface Sentence {
-  sentence: String;
-  words: Array<Array<String>>;
-  source: String;
+export interface EnglishEntry {
+  english: Array<String>;
 }
 
-export interface TranslationSet {
-  englishTranslations: Array<Sentence>;
-  frenchTranslations: Array<Sentence>;
-  handVerified: Boolean;
-  uuid: String;
+export interface FrenchEntry {
+  french: Array<String>;
+}
+
+export interface Translations {
+  french: {[frenchSentence: string]: EnglishEntry};
+  english: {[englishSentence: string]: FrenchEntry}
 }
 
 
-const sentences: Array<TranslationSet> = """
+const sentences: Translations = """
     sent += json.dumps(output_translations, ensure_ascii=False)
     sent += """
 export default sentences
@@ -95,7 +103,10 @@ export interface FrenchVerbEntry {
   pos: "verb"
   gender: "NA";
   infinitive: String;
-  transitive?: Boolean;
+  transitive: Boolean;
+  auxillary: String;
+  model: String;
+  modal: String;
   display: String;
   conjugations?: {présent?: Array<String>, subjonctif?: Array<String>, passéSimple?: Array<String>, imparfait?: Array<String>, passéComposé?: Array<String>, conditionnelPrésent?: Array<String>};
   translations: Array<String>;
@@ -152,10 +163,11 @@ export interface FrenchArticle {
 export interface FrenchWordEntry {
   definitions: Array< NotAWord | FrenchNounEntry | FrenchExclamationEntry | FrenchVerbEntry | FrenchAdverbEntry | FrenchPropositionEntry | FrenchAbbreviation | FrenchAdjectiveEntry | FrenchDeterminer | FrenchNumber | FrenchConjonction | FrenchPronoun | FrenchArticle >;
   occurrences: Number;
+  uuid: String;
 }
 
 const words: {french: {[id: string] : FrenchWordEntry}, english: {[id: string] : Array<string>}} = """
-    words += json.dumps(word_dict, ensure_ascii=False)
+    words += json.dumps(output_words, ensure_ascii=False)
     words += f"""
 export const frenchContractions  = {frenchContractions}
 export const englishContractions = {englishContractions}
