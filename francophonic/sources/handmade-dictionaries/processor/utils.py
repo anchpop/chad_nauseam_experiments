@@ -75,19 +75,30 @@ def get_all_known_french_words():
     for word, entry in word_dictionary['french'].items():
         words.add(word)
         for definition in entry['definitions']:
-            for _, forms in definition.get('conjugations', {}).items():
-                for form, conjugations in forms.items():
-                    words.update(set(conjugations.values()))
+            for _, forms in definition.get('conjugations_french', {}).items():
+                for form, persons in forms.items():
+                    words.update(set(persons.values()))
     return words
             
-def get_understandable_sentences(analysis):
+
+def get_sentence_analysis(analysis):
     (_, collected_sentences) = analysis
     known_words = get_all_known_french_words()
     understandable_sentences = set()
-    for sentence in collected_sentences:
+    ununderstandable_sentences = set()
+    for i, sentence in enumerate(collected_sentences):
         if all([word in known_words for word in line_to_words_french(sentence)]):
             understandable_sentences.add(sentence)
-    return understandable_sentences
+        else:
+            # if (i < 100): print(line_to_words_french(sentence))
+            ununderstandable_sentences.add(sentence)
+    return understandable_sentences, ununderstandable_sentences
+
+
+
+
+def get_understandable_sentences(analysis):
+    return get_sentence_analysis(analysis)[0]
 
 
 flatten = lambda l: [item for sublist in l for item in sublist]

@@ -29,11 +29,6 @@ When adding verbs, use the `get_conjugations.py` script to easily generate the Y
     unknown_words = collected_words.keys() - known_words
     unknown_words = sorted(list(unknown_words), key=(lambda w: -sum(collected_words[w].values())))
 
-    print(f"{len(unknown_words)} unknown words")    
-
-
-    
-
 
     with open("handmade_dictionary.yaml", "w", encoding='utf-8') as f:
         template = {word: [{'display': word, 'gender': '', 'pos': '', 'translations': ['']}] for word in unknown_words[:4]}

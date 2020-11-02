@@ -33,7 +33,7 @@ def main():
     phrases = [(context.replace(" - ", " ") + " ").replace("' ", "'").replace("il/elle", "il").replace("ils/elles", "ils")  + conjugation
         for word, entry in current_dictionary['french'].items() 
             for definition in entry['definitions'] 
-                for _, forms in definition.get('conjugations', {}).items() 
+                for _, forms in definition.get('conjugations_french', {}).items() 
                     for _, conjugations in forms.items() 
                         for context, conjugation in conjugations.items()
         ] if False else []

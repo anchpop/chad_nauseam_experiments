@@ -168,7 +168,7 @@ def main(analysis = None):
             else:
               for translation in definition.get('translations', []):
                   output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word] 
-        if french_word[0] != 'a': break
+        # if french_word[0] != 'a': break
 
 
     output_translations = {'english': {}, 'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences if sentence in translation_dict['french_to_english']}}

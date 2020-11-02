@@ -43,6 +43,7 @@ Harry prit une profonde inspiration. "Je n'ai rien fait de tel," dit-il, "mais j
 # the ["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ] part of the regex is responsible for determining if a character is uppercase. I use this to try and check for starts of sentences. But maybe this is wrong-headed because it also would detect proper nouns. It remains to be seen how much of a problem this is. 
 
 def do_analysis():
+    print("Analyzing source files...")
     source_paths = ["../books/hp", "../books/inner_french_podcast", "../books/hprat"]
     source_files = [Path(join(p, f)) for p in source_paths for f in listdir(p) if isfile(join(p, f))]
 
