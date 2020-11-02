@@ -8,7 +8,7 @@ from processor.utils import *
 import processor.sources_analysis
 
 def french_conj_description_to_english(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
-    print(f"Finding an english conjugation for the word {french_word} ({french_mode} {french_form} {french_person})")
+    # print(f"Finding an english conjugation for the word {french_word} ({french_mode} {french_form} {french_person})")
 
     if french_mode == "infinitif":
       return english_infinitive
@@ -73,9 +73,13 @@ def french_conj_description_to_english(french_word, french_mode, french_form, fr
       if i in persons:
         english_person = persons[i]
     
+    
+    # for error detection
     conjugations_english[english_mode]
     conjugations_english[english_mode][english_tense]
-    
+    #
+
+
     possible_persons = {tuple(k.split(' - ')): v for k, v in conjugations_english[english_mode][english_tense].items()}
     if len(possible_persons) == 1:
       return list(possible_persons.values())[0]
@@ -87,8 +91,20 @@ def french_conj_description_to_english(french_word, french_mode, french_form, fr
     
 
 
-def french_description_to_english_modal(french_word, french_mode, french_form, french_person, conjugations_english):
-  return "temp"
+def french_description_to_english_modal(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
+  if french_mode == "infinitif": 
+    return english_infinitive
+
+  if french_form in ['présent']:
+    return conjugations_english['present']
+
+  if french_form in ['imparfait', 'passé simple', 'passé composé', 'plus-que-parfait', 'passé antérieur', 'passé première forme', 'passé deuxième forme', 'passé']:
+    return conjugations_english['past']
+
+  if french_form in ['futur', 'futur antérieur']:
+    return conjugations_english['future']
+
+  raise Exception(f"{french_word}'s {french_form} form wasn't understood ")
 
 def main(analysis = None):
     if analysis == None:
@@ -125,7 +141,8 @@ def main(analysis = None):
                         'infinitive': french_word, 
                         'isInfinitive': False,
                         'conjugates_for': [],
-                        'translations': set()
+                        'translations': set(),
+                        'gender': 'NA',
                       }
                     })
                     person = person.split(" - ")
@@ -135,13 +152,23 @@ def main(analysis = None):
                     english_infinitive = definition['translations'][0]
                     english_conjugations = definition['conjugations_english'][english_infinitive]
 
-                    english_translation = french_conj_description_to_english(french_word, mode, forme, person, english_conjugations, english_infinitive) if not definition['modal_in_english'] else french_description_to_english_modal(french_word, mode, forme, person, english_conjugations)
+                    english_translation = french_conj_description_to_english(french_word, mode, forme, person, english_conjugations, english_infinitive) if not definition['modal_in_english'] else french_description_to_english_modal(french_word, mode, forme, person, english_conjugations, english_infinitive)
 
                     reversed_dict[conjugation]['definition']['translations'].add(english_translation)
+              for french_word, entry in reversed_dict.items():
+                entry['definition']['translations'] = list(entry['definition']['translations'])
+                entry['definitions'] = [entry['definition']]
+                del entry['definition']
+                for translation in definition.get('translations', []):
+                    output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
+      
+                output_words['french'][french_word] = output_words['french'].get(french_word, {'definitions': [], 'occurrences': 0, 'uuid': str(entry['uuid'])})
+                output_words['french'][french_word]['definitions'] += entry['definitions']
+                
             else:
               for translation in definition.get('translations', []):
-                  output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
-        # if french_word[0] != 'a': break
+                  output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word] 
+        if french_word[0] != 'a': break
 
 
     output_translations = {'english': {}, 'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences if sentence in translation_dict['french_to_english']}}
@@ -210,16 +237,34 @@ export interface FrenchExclamationEntry {
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
 }
-export interface FrenchVerbEntry {
+export interface FrenchVerbConjugationEntry {
   pos: "verb"
   gender: "NA";
   infinitive: String;
-  transitive: Boolean;
-  auxillary: String;
-  model: String;
-  modal: String;
+  isInfinitive: false;
+
+  conjugates_for: Array<any>;
+  
   display: String;
-  conjugations?: {présent?: Array<String>, subjonctif?: Array<String>, passéSimple?: Array<String>, imparfait?: Array<String>, passéComposé?: Array<String>, conditionnelPrésent?: Array<String>};
+  translations: Array<String>;
+  exampleSentences?: Array<{french: String, english: string}>;
+}
+export interface FrenchVerbInfinitifEntry {
+  pos: "verb"
+  gender: "NA";
+  isInfinitive: true;
+  
+  conjugations_english: any;
+  conjugations_french: any;
+
+
+  transitive: Boolean;
+  auxiliary: String;
+  model: String;
+  modal_in_english: Boolean;
+  other_forms?: Array<String>;
+
+  display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
 }
@@ -272,7 +317,7 @@ export interface FrenchArticle {
 }
 
 export interface FrenchWordEntry {
-  definitions: Array< NotAWord | FrenchNounEntry | FrenchExclamationEntry | FrenchVerbEntry | FrenchAdverbEntry | FrenchPropositionEntry | FrenchAbbreviation | FrenchAdjectiveEntry | FrenchDeterminer | FrenchNumber | FrenchConjonction | FrenchPronoun | FrenchArticle >;
+  definitions: Array< NotAWord | FrenchNounEntry | FrenchExclamationEntry | FrenchVerbInfinitifEntry | FrenchVerbConjugationEntry | FrenchAdverbEntry | FrenchPropositionEntry | FrenchAbbreviation | FrenchAdjectiveEntry | FrenchDeterminer | FrenchNumber | FrenchConjonction | FrenchPronoun | FrenchArticle >;
   occurrences: Number;
   uuid: String;
 }
