@@ -4940,9 +4940,10 @@ french:
     definitions:
     - auxiliary: avoir
       conjugations_english:
-        future: will be able to
-        past: could
-        present: can
+        to be able to:
+          future: will be able to
+          past: could
+          present: can
       conjugations_french:
         conditionnel:
           passé deuxième forme:
@@ -5498,7 +5499,7 @@ french:
     definitions:
     - auxiliary: avoir
       conjugations_english:
-        to look:
+        to look at:
           imperative:
             '':
               '': look
@@ -8563,92 +8564,92 @@ french:
     definitions:
     - auxiliary: avoir
       conjugations_english:
-        to bring:
+        to bring up:
           imperative:
             '':
-              '': bring
-              let's: bring
+              '': bring up
+              let's: bring up
           indicative:
             future:
-              he/she/it - will: bring
-              i - will: bring
-              they - will: bring
-              we - will: bring
-              you - will: bring
+              he/she/it - will: bring up
+              i - will: bring up
+              they - will: bring up
+              we - will: bring up
+              you - will: bring up
             future continuous:
-              he/she/it - will - be: bringing
-              i - will - be: bringing
-              they - will - be: bringing
-              we - will - be: bringing
-              you - will - be: bringing
+              he/she/it - will - be: bringing up
+              i - will - be: bringing up
+              they - will - be: bringing up
+              we - will - be: bringing up
+              you - will - be: bringing up
             future perfect:
-              he/she/it - will - have: brought
-              i - will - have: brought
-              they - will - have: brought
-              we - will - have: brought
-              you - will - have: brought
+              he/she/it - will - have: brought up
+              i - will - have: brought up
+              they - will - have: brought up
+              we - will - have: brought up
+              you - will - have: brought up
             future perfect continuous:
-              he/she/it - will - have - been: bringing
-              i - will - have - been: bringing
-              they - will - have - been: bringing
-              we - will - have - been: bringing
-              you - will - have - been: bringing
+              he/she/it - will - have - been: bringing up
+              i - will - have - been: bringing up
+              they - will - have - been: bringing up
+              we - will - have - been: bringing up
+              you - will - have - been: bringing up
             past continous:
-              he/she/it - was: bringing
-              i - was: bringing
-              they - were: bringing
-              we - were: bringing
-              you - were: bringing
+              he/she/it - was: bringing up
+              i - was: bringing up
+              they - were: bringing up
+              we - were: bringing up
+              you - were: bringing up
             past perfect:
-              he/she/it - had: brought
-              i - had: brought
-              they - had: brought
-              we - had: brought
-              you - had: brought
+              he/she/it - had: brought up
+              i - had: brought up
+              they - had: brought up
+              we - had: brought up
+              you - had: brought up
             past perfect continuous:
-              he/she/it - had - been: bringing
-              i - had - been: bringing
-              they - had - been: bringing
-              we - had - been: bringing
-              you - had - been: bringing
+              he/she/it - had - been: bringing up
+              i - had - been: bringing up
+              they - had - been: bringing up
+              we - had - been: bringing up
+              you - had - been: bringing up
             present:
-              he/she/it: brings
-              i: bring
-              they: bring
-              we: bring
-              you: bring
+              he/she/it: brings up
+              i: bring up
+              they: bring up
+              we: bring up
+              you: bring up
             present continuous:
-              he/she/it - is: bringing
-              i - am: bringing
-              they - are: bringing
-              we - are: bringing
-              you - are: bringing
+              he/she/it - is: bringing up
+              i - am: bringing up
+              they - are: bringing up
+              we - are: bringing up
+              you - are: bringing up
             present perfect:
-              he/she/it - has: brought
-              i - have: brought
-              they - have: brought
-              we - have: brought
-              you - have: brought
+              he/she/it - has: brought up
+              i - have: brought up
+              they - have: brought up
+              we - have: brought up
+              you - have: brought up
             present perfect continuous:
-              he/she/it - has - been: bringing
-              i - have - been: bringing
-              they - have - been: bringing
-              we - have - been: bringing
-              you - have - been: bringing
+              he/she/it - has - been: bringing up
+              i - have - been: bringing up
+              they - have - been: bringing up
+              we - have - been: bringing up
+              you - have - been: bringing up
             preterite:
-              he/she/it: brought
-              i: brought
-              they: brought
-              we: brought
-              you: brought
+              he/she/it: brought up
+              i: brought up
+              they: brought up
+              we: brought up
+              you: brought up
           participle:
             past:
-              '': brought
+              '': brought up
             present:
-              '': bringing
+              '': bringing up
           perfect participle:
             '':
-              having: brought
+              having: brought up
         to raise:
           imperative:
             '':
