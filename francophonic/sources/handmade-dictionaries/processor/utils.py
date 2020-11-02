@@ -1,5 +1,3 @@
-import processor.sources_analysis
-
 from os import listdir
 from os.path import isfile, join
 from collections import Counter
@@ -64,6 +62,13 @@ def get_word_dictionary():
         word_dictionary = yaml.load(f, Loader=Loader)
     return word_dictionary
 
+
+def get_translations():
+    with open("translations.yaml", encoding='utf-8') as f:
+        word_dictionary = yaml.load(f, Loader=Loader)
+    return word_dictionary
+
+
 def get_all_known_french_words():
     word_dictionary = get_word_dictionary()
     words = set([])
@@ -75,9 +80,7 @@ def get_all_known_french_words():
                     words.update(set(conjugations.values()))
     return words
             
-def get_understandable_sentences(analysis = None):
-    if analysis == None:
-        analysis = processor.sources_analysis.do_analysis()
+def get_understandable_sentences(analysis):
     (_, collected_sentences) = analysis
     known_words = get_all_known_french_words()
     understandable_sentences = set()

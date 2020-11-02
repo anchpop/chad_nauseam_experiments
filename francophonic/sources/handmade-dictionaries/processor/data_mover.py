@@ -3,18 +3,29 @@ import json
 from os import listdir, environ
 from os.path import isfile, join
 from processor.utils import *
+import processor.sources_analysis
 
 
-def main():
-    sentence_dict = get_sentence_dictionary()
+def main(analysis = None):
+    if analysis == None:
+        analysis = processor.sources_analysis.do_analysis()
+      
+    translation_dict = get_translations()
+    understandable_sentences = get_understandable_sentences(analysis)
     word_dict = get_word_dictionary()
-    word_dict['english'] = {}
+    output_words = {'french': {}, 'english': {}}
 
-    for french_word, definitions in word_dict['french'].items():
-        for definition in definitions.get('definitions', {}):
-            for translation in definition.get('translations', []):
-                word_dict['english'][translation] = word_dict['english'].get(
-                    translation, []) + [french_word]
+    for french_word, entry in word_dict['french'].items():
+        for definition in entry.get('definitions', {}):
+            if definition.get('pos', '') == 'verb':
+              print('skipping verb')
+              pass
+            else:
+              output_words['french'][french_word] = entry
+              for translation in definition.get('translations', []):
+                  output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
+
+    output_translations = {'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences}}
 
     sent = """
 export interface Sentence {
@@ -32,7 +43,7 @@ export interface TranslationSet {
 
 
 const sentences: Array<TranslationSet> = """
-    sent += json.dumps(sentence_dict, ensure_ascii=False)
+    sent += json.dumps(output_translations, ensure_ascii=False)
     sent += """
 export default sentences
 """

@@ -28,3 +28,4 @@ conjugate = "processor.get_conjugations:main"
 
 translate = "processor.auto_sentence_translator:main"
 generate_tts = "processor.tts_generator:main"
+move_data = "processor.data_mover:main"
