@@ -54,6 +54,9 @@ def main(analysis):
                     if definition["translations"] == []:
                         print(f"in a definition for the word {word}, you did not write any translations!")
                         return
+                    if definition['pos'] == "verb":
+                        if definition.get('modal_in_english', None) is None:
+                            definition['modal_in_english'] = input(f"Is the verb '{definition['display']}' modal in english?").lower()[0] == "y"
                 else:
                     break
 

@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-car:
-- display: car
+aujourd:
+- display: aujourd
   gender: ''
   pos: ''
   translations:
   - ''
-comprendre:
-- display: comprendre
+celui:
+- display: celui
   gender: ''
   pos: ''
   translations:
   - ''
-compte:
-- display: compte
+difficile:
+- display: difficile
   gender: ''
   pos: ''
   translations:
   - ''
-dernière:
-- display: dernière
+donner:
+- display: donner
   gender: ''
   pos: ''
   translations:
   - ''
-directeur:
-- display: directeur
+eh:
+- display: eh
   gender: ''
   pos: ''
   translations:
   - ''
-défense:
-- display: défense
+ensuite:
+- display: ensuite
   gender: ''
   pos: ''
   translations:
   - ''
-esprit:
-- display: esprit
+fin:
+- display: fin
   gender: ''
   pos: ''
   translations:
   - ''
-face:
-- display: face
+hui:
+- display: hui
   gender: ''
   pos: ''
   translations:
   - ''
-feu:
-- display: feu
+impression:
+- display: impression
   gender: ''
   pos: ''
   translations:
   - ''
-histoire:
-- display: histoire
+lieu:
+- display: lieu
   gender: ''
   pos: ''
   translations:
   - ''
-leva:
-- display: leva
+loin:
+- display: loin
   gender: ''
   pos: ''
   translations:
   - ''
-ni:
-- display: ni
+malfoy:
+- display: malfoy
   gender: ''
   pos: ''
   translations:
   - ''
-part:
-- display: part
+mot:
+- display: mot
   gender: ''
   pos: ''
   translations:
   - ''
-peur:
-- display: peur
+nom:
+- display: nom
   gender: ''
   pos: ''
   translations:
   - ''
-presque:
-- display: presque
+point:
+- display: point
   gender: ''
   pos: ''
   translations:
   - ''
-question:
-- display: question
+seigneur:
+- display: seigneur
   gender: ''
   pos: ''
   translations:
   - ''
-raison:
-- display: raison
+sortilège:
+- display: sortilège
   gender: ''
   pos: ''
   translations:
   - ''
-sujet:
-- display: sujet
+venait:
+- display: venait
   gender: ''
   pos: ''
   translations:
   - ''
-trouver:
-- display: trouver
+vieux:
+- display: vieux
   gender: ''
   pos: ''
   translations:
   - ''
-vos:
-- display: vos
+vite:
+- display: vite
   gender: ''
   pos: ''
   translations:

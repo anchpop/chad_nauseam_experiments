@@ -1048,6 +1048,17 @@ french:
       - cape
       - cloak
     uuid: ce100347-024b-4617-920a-7779600b5331
+  car:
+    definitions:
+    - display: car
+      exampleSentences:
+      - english: a school bus
+        french: un car scolaire
+      gender: masc
+      pos: noun
+      translations:
+      - bus
+    uuid: 3eac1fdb-4a6d-4ba0-ad88-c9399b4b7723
   cas:
     definitions:
     - display: cas
@@ -1191,6 +1202,242 @@ french:
       translations:
       - how
     uuid: 57a70683-3cce-4e39-884e-9fc020116bd8
+  comprendre:
+    definitions:
+    - auxiliary: avoir
+      modal_in_english: false
+      conjugations_english:
+        to understand:
+          imperative:
+            '':
+              '': understand
+              let's: understand
+          indicative:
+            future:
+              he/she/it - will: understand
+              i - will: understand
+              they - will: understand
+              we - will: understand
+              you - will: understand
+            future continuous:
+              he/she/it - will - be: understanding
+              i - will - be: understanding
+              they - will - be: understanding
+              we - will - be: understanding
+              you - will - be: understanding
+            future perfect:
+              he/she/it - will - have: understood
+              i - will - have: understood
+              they - will - have: understood
+              we - will - have: understood
+              you - will - have: understood
+            future perfect continuous:
+              he/she/it - will - have - been: understanding
+              i - will - have - been: understanding
+              they - will - have - been: understanding
+              we - will - have - been: understanding
+              you - will - have - been: understanding
+            past continous:
+              he/she/it - was: understanding
+              i - was: understanding
+              they - were: understanding
+              we - were: understanding
+              you - were: understanding
+            past perfect:
+              he/she/it - had: understood
+              i - had: understood
+              they - had: understood
+              we - had: understood
+              you - had: understood
+            past perfect continuous:
+              he/she/it - had - been: understanding
+              i - had - been: understanding
+              they - had - been: understanding
+              we - had - been: understanding
+              you - had - been: understanding
+            present:
+              he/she/it: understands
+              i: understand
+              they: understand
+              we: understand
+              you: understand
+            present continuous:
+              he/she/it - is: understanding
+              i - am: understanding
+              they - are: understanding
+              we - are: understanding
+              you - are: understanding
+            present perfect:
+              he/she/it - has: understood
+              i - have: understood
+              they - have: understood
+              we - have: understood
+              you - have: understood
+            present perfect continuous:
+              he/she/it - has - been: understanding
+              i - have - been: understanding
+              they - have - been: understanding
+              we - have - been: understanding
+              you - have - been: understanding
+            preterite:
+              he/she/it: understood
+              i: understood
+              they: understood
+              we: understood
+              you: understood
+          participle:
+            past:
+              '': understood
+            present:
+              '': understanding
+          perfect participle:
+            '':
+              having: understood
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: compris
+            ils/elles - eussent: compris
+            j' - eusse: compris
+            nous - eussions: compris
+            tu - eusses: compris
+            vous - eussiez: compris
+          passé première forme:
+            il/elle - aurait: compris
+            ils/elles - auraient: compris
+            j' - aurais: compris
+            nous - aurions: compris
+            tu - aurais: compris
+            vous - auriez: compris
+          présent:
+            il/elle: comprendrait
+            ils/elles: comprendraient
+            je: comprendrais
+            nous: comprendrions
+            tu: comprendrais
+            vous: comprendriez
+        indicatif:
+          futur:
+            il/elle: comprendra
+            ils/elles: comprendront
+            je: comprendrai
+            nous: comprendrons
+            tu: comprendras
+            vous: comprendrez
+          futur antérieur:
+            il/elle - aura: compris
+            ils/elles - auront: compris
+            j' - aurai: compris
+            nous - aurons: compris
+            tu - auras: compris
+            vous - aurez: compris
+          imparfait:
+            il/elle: comprenait
+            ils/elles: comprenaient
+            je: comprenais
+            nous: comprenions
+            tu: comprenais
+            vous: compreniez
+          passé antérieur:
+            il/elle - eut: compris
+            ils/elles - eurent: compris
+            j' - eus: compris
+            nous - eûmes: compris
+            tu - eus: compris
+            vous - eûtes: compris
+          passé composé:
+            il/elle - a: compris
+            ils/elles - ont: compris
+            j' - ai: compris
+            nous - avons: compris
+            tu - as: compris
+            vous - avez: compris
+          passé simple:
+            il/elle: comprit
+            ils/elles: comprirent
+            je: compris
+            nous: comprîmes
+            tu: compris
+            vous: comprîtes
+          plus-que-parfait:
+            il/elle - avait: compris
+            ils/elles - avaient: compris
+            j' - avais: compris
+            nous - avions: compris
+            tu - avais: compris
+            vous - aviez: compris
+          présent:
+            il/elle: comprend
+            ils/elles: comprennent
+            je: comprends
+            nous: comprenons
+            tu: comprends
+            vous: comprenez
+        infinitif:
+          passé:
+            avoir: compris
+        participe:
+          passé:
+            aie: compris
+            ayez: compris
+            ayons: compris
+          passé composé:
+            ayant: compris
+          présent:
+            '': comprenez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: comprît
+            qu' - ils/elles: comprissent
+            que - je: comprisse
+            que - nous: comprissions
+            que - tu: comprisses
+            que - vous: comprissiez
+          passé:
+            qu' - il/elle - ait: compris
+            qu' - ils/elles - aient: compris
+            que - j' - aie: compris
+            que - nous - ayons: compris
+            que - tu - aies: compris
+            que - vous - ayez: compris
+          plus-que-parfait:
+            qu' - il/elle - eût: compris
+            qu' - ils/elles - eussent: compris
+            que - j' - eusse: compris
+            que - nous - eussions: compris
+            que - tu - eusses: compris
+            que - vous - eussiez: compris
+          présent:
+            qu' - il/elle: comprenne
+            qu' - ils/elles: comprennent
+            que - je: comprenne
+            que - nous: comprenions
+            que - tu: comprennes
+            que - vous: compreniez
+      display: comprendre
+      gender: NA
+      model: prendre
+      other_forms:
+      - se comprendre
+      - ne pas comprendre
+      - ne pas se comprendre
+      pos: verb
+      transitive: true
+      translations:
+      - to understand
+    uuid: 9bdaff6c-5c60-40aa-9a4f-23e9720b2c46
+  compte:
+    definitions:
+    - display: compte
+      exmapleSentences:
+      - english: That’s the right amount.
+        french: Le compte est bon.
+      gender: masc
+      pos: noun
+      translations:
+      - count
+      - number
+    uuid: f718b1e8-3e52-4f65-b19d-cad201501734
   contre:
     definitions:
     - display: contre
@@ -1704,6 +1951,25 @@ french:
       translations:
       - since
     uuid: 1450293e-9496-49f3-83df-52ccee7f9ddb
+  dernière:
+    definitions:
+    - display: dernière
+      exampleSentences:
+      - english: It’s the last house, after the post office.
+        french: C’est la dernière maison, après la poste.
+      gender: NA
+      pos: adjective
+      translations:
+      - last
+    - display: dernière
+      exampleSentences:
+      - english: the bottom of the class
+        french: le dernier de la classe
+      gender: NA
+      pos: noun
+      translations:
+      - last
+    uuid: 1a4f3389-0501-4959-90c8-5ef8bcab54a2
   derrière:
     definitions:
     - display: derrière
@@ -2121,6 +2387,17 @@ french:
       translations:
       - to say
     uuid: 92b6b886-7e4d-42ea-919c-3350d8777072
+  directeur:
+    definitions:
+    - display: directeur
+      gender: NA
+      pos: noun
+      translations:
+      - manager
+      - director
+      - head teacher
+      - principal
+    uuid: c398f9fb-2aeb-4ff0-b260-ede0992217b0
   dit-elle:
     definitions:
     - abbreviation: dit + elle
@@ -2184,6 +2461,15 @@ french:
     definitions:
     - notaword: true
     uuid: 1be1ba6c-99c3-44aa-864c-51209bf14eae
+  défense:
+    definitions:
+    - display: défense
+      gender: fem
+      pos: noun
+      translations:
+      - defense
+      - defence
+    uuid: b345e1d3-ccb6-4abb-b1cf-1ae4a8297ebc
   déjà:
     definitions:
     - display: déjà
@@ -2495,6 +2781,18 @@ french:
       - between
       - among
     uuid: 063d2e3f-f055-46b2-854e-427b8eb7966b
+  esprit:
+    definitions:
+    - display: esprit
+      exampleSentences:
+      - english: to lose one’s mind
+        french: perdre l’esprit
+      gender: masc
+      pos: noun
+      translations:
+      - mind
+      - wit
+    uuid: bafaf42b-ff5b-4ce0-82a6-0dd24c09bc7c
   essayer:
     definitions:
     - auxiliary: avoir
@@ -2751,6 +3049,14 @@ french:
       - example
       - model
     uuid: f7d6545c-1fc6-4747-9495-67789cebfd53
+  face:
+    definitions:
+    - display: face
+      gender: fem
+      pos: noun
+      translations:
+      - face
+    uuid: 23836282-8923-4d1a-a2aa-6adf9fbd0ba4
   faire:
     definitions:
     - auxiliary: avoir
@@ -3298,6 +3604,14 @@ french:
       translations:
       - way
     uuid: 59a3414d-2302-493b-bc27-af68ec1a4e67
+  feu:
+    definitions:
+    - display: feu
+      gender: masc
+      pos: noun
+      translations:
+      - fire
+    uuid: 27b4d4b6-f25e-44ec-b649-542f2e849d49
   fois:
     definitions:
     - display: fois
@@ -3405,6 +3719,14 @@ french:
     definitions:
     - notaword: true
     uuid: 585398a9-587f-44b1-aa94-cb5791e1f68b
+  histoire:
+    definitions:
+    - display: histoire
+      gender: fem
+      pos: noun
+      translations:
+      - history
+    uuid: ef293186-ab81-43b4-9e78-b68bf0f4fcf6
   homme:
     definitions:
     - display: homme
@@ -3590,6 +3912,230 @@ french:
       translations:
       - theirs
     uuid: 9f47fbcb-6c38-46a1-8779-ec3a0ba5f507
+  lever:
+    definitions:
+    - auxiliary: avoir
+      modal_in_english: false
+      conjugations_english:
+        to raise:
+          imperative:
+            '':
+              '': raise
+              let's: raise
+          indicative:
+            future:
+              he/she/it - will: raise
+              i - will: raise
+              they - will: raise
+              we - will: raise
+              you - will: raise
+            future continuous:
+              he/she/it - will - be: raising
+              i - will - be: raising
+              they - will - be: raising
+              we - will - be: raising
+              you - will - be: raising
+            future perfect:
+              he/she/it - will - have: raised
+              i - will - have: raised
+              they - will - have: raised
+              we - will - have: raised
+              you - will - have: raised
+            future perfect continuous:
+              he/she/it - will - have - been: raising
+              i - will - have - been: raising
+              they - will - have - been: raising
+              we - will - have - been: raising
+              you - will - have - been: raising
+            past continous:
+              he/she/it - was: raising
+              i - was: raising
+              they - were: raising
+              we - were: raising
+              you - were: raising
+            past perfect:
+              he/she/it - had: raised
+              i - had: raised
+              they - had: raised
+              we - had: raised
+              you - had: raised
+            past perfect continuous:
+              he/she/it - had - been: raising
+              i - had - been: raising
+              they - had - been: raising
+              we - had - been: raising
+              you - had - been: raising
+            present:
+              he/she/it: raises
+              i: raise
+              they: raise
+              we: raise
+              you: raise
+            present continuous:
+              he/she/it - is: raising
+              i - am: raising
+              they - are: raising
+              we - are: raising
+              you - are: raising
+            present perfect:
+              he/she/it - has: raised
+              i - have: raised
+              they - have: raised
+              we - have: raised
+              you - have: raised
+            present perfect continuous:
+              he/she/it - has - been: raising
+              i - have - been: raising
+              they - have - been: raising
+              we - have - been: raising
+              you - have - been: raising
+            preterite:
+              he/she/it: raised
+              i: raised
+              they: raised
+              we: raised
+              you: raised
+          participle:
+            past:
+              '': raised
+            present:
+              '': raising
+          perfect participle:
+            '':
+              having: raised
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: levé
+            ils/elles - eussent: levé
+            j' - eusse: levé
+            nous - eussions: levé
+            tu - eusses: levé
+            vous - eussiez: levé
+          passé première forme:
+            il/elle - aurait: levé
+            ils/elles - auraient: levé
+            j' - aurais: levé
+            nous - aurions: levé
+            tu - aurais: levé
+            vous - auriez: levé
+          présent:
+            il/elle: lèverait
+            ils/elles: lèveraient
+            je: lèverais
+            nous: lèverions
+            tu: lèverais
+            vous: lèveriez
+        indicatif:
+          futur:
+            il/elle: lèvera
+            ils/elles: lèveront
+            je: lèverai
+            nous: lèverons
+            tu: lèveras
+            vous: lèverez
+          futur antérieur:
+            il/elle - aura: levé
+            ils/elles - auront: levé
+            j' - aurai: levé
+            nous - aurons: levé
+            tu - auras: levé
+            vous - aurez: levé
+          imparfait:
+            il/elle: levait
+            ils/elles: levaient
+            je: levais
+            nous: levions
+            tu: levais
+            vous: leviez
+          passé antérieur:
+            il/elle - eut: levé
+            ils/elles - eurent: levé
+            j' - eus: levé
+            nous - eûmes: levé
+            tu - eus: levé
+            vous - eûtes: levé
+          passé composé:
+            il/elle - a: levé
+            ils/elles - ont: levé
+            j' - ai: levé
+            nous - avons: levé
+            tu - as: levé
+            vous - avez: levé
+          passé simple:
+            il/elle: leva
+            ils/elles: levèrent
+            je: levai
+            nous: levâmes
+            tu: levas
+            vous: levâtes
+          plus-que-parfait:
+            il/elle - avait: levé
+            ils/elles - avaient: levé
+            j' - avais: levé
+            nous - avions: levé
+            tu - avais: levé
+            vous - aviez: levé
+          présent:
+            il/elle: lève
+            ils/elles: lèvent
+            je: lève
+            nous: levons
+            tu: lèves
+            vous: levez
+        infinitif:
+          passé:
+            avoir: levé
+        participe:
+          passé:
+            aie: levé
+            ayez: levé
+            ayons: levé
+          passé composé:
+            ayant: levé
+          présent:
+            '': levez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: levât
+            qu' - ils/elles: levassent
+            que - je: levasse
+            que - nous: levassions
+            que - tu: levasses
+            que - vous: levassiez
+          passé:
+            qu' - il/elle - ait: levé
+            qu' - ils/elles - aient: levé
+            que - j' - aie: levé
+            que - nous - ayons: levé
+            que - tu - aies: levé
+            que - vous - ayez: levé
+          plus-que-parfait:
+            qu' - il/elle - eût: levé
+            qu' - ils/elles - eussent: levé
+            que - j' - eusse: levé
+            que - nous - eussions: levé
+            que - tu - eusses: levé
+            que - vous - eussiez: levé
+          présent:
+            qu' - il/elle: lève
+            qu' - ils/elles: lèvent
+            que - je: lève
+            que - nous: levions
+            que - tu: lèves
+            que - vous: leviez
+      display: lever
+      gender: NA
+      model: lever
+      other_forms:
+      - se lever
+      - ne pas lever
+      - ne pas se lever
+      pos: verb
+      transitive: true
+      translations:
+      - to raise
+    uuid: 3bb0ba82-4f1f-4383-8932-465f8cfb8dfb
   long:
     definitions:
     - display: long
@@ -3877,6 +4423,20 @@ french:
     definitions:
     - notaword: true
     uuid: 104d08c8-5881-47bb-b520-0cc1419e9305
+  ni:
+    definitions:
+    - display: ni
+      exmapleSentences:
+      - english: I like neither lentils nor spinach.
+        french: Je n’aime ni les lentilles ni les épinards.
+      - english: Neither of them came.
+        french: Elles ne sont venues ni l’une ni l’autre.
+      gender: NA
+      pos: conjonction
+      translations:
+      - neither
+      - nor
+    uuid: 1c1e2c2b-b2f6-443f-8892-f218b3b8c930
   non:
     definitions:
     - display: non
@@ -4328,6 +4888,14 @@ french:
       - to speak
       - to talk
     uuid: 346ba4c3-9670-4144-9ba6-eef4f52deaac
+  part:
+    definitions:
+    - display: part
+      gender: fem
+      pos: noun
+      translations:
+      - part
+    uuid: bf3630ea-bb37-4633-bfc9-cecec10b7c03
   partie:
     definitions:
     - display: partie
@@ -5018,6 +5586,17 @@ french:
       - not much
       - not very
     uuid: f06dae3f-b1b1-4144-8a6b-39c5097bff68
+  peur:
+    definitions:
+    - display: peur
+      exampleSentences:
+      - english: He’s afraid of the dark.
+        french: Il a peur du noir.
+      gender: fem
+      pos: noun
+      translations:
+      - fear
+    uuid: 81eb6bf8-90b0-4429-8f90-d6ae3a6b2ced
   peut-être:
     definitions:
     - display: peut-être
@@ -5505,6 +6084,15 @@ french:
       translations:
       - to take
     uuid: 59a174e6-0902-4a73-ab66-10b68b3b5f5c
+  presque:
+    definitions:
+    - display: presque
+      gender: NA
+      pos: adverb
+      translations:
+      - almost
+      - nearly
+    uuid: 3dcda99d-b773-492c-a1e9-56390f5fbaa8
   professeur:
     definitions:
     - display: professeur
@@ -5616,6 +6204,17 @@ french:
       translations:
       - someone
     uuid: 2591ebdf-d8c8-4f04-b9ae-416903e90c60
+  question:
+    definitions:
+    - display: question
+      exampleSentences:
+      - english: I asked you a question.
+        french: Je t’ai posé une question.
+      gender: fem
+      pos: noun
+      translations:
+      - question
+    uuid: 12823509-65eb-4adc-9af8-5e26f6a15804
   qui:
     definitions:
     - display: qui
@@ -5678,6 +6277,19 @@ french:
       - that we
       - that one
     uuid: edf9a77b-b35e-406c-95c5-caad2668fbff
+  raison:
+    definitions:
+    - display: raison
+      exampleSentences:
+      - english: to come to one’s senses
+        french: recouvrer la raison
+      - english: All the more reason for going.
+        french: Raison de plus pour y aller.
+      gender: fem
+      pos: noun
+      translations:
+      - reason
+    uuid: 39065fa3-3992-4758-accd-39847ce02081
   regard:
     definitions:
     - display: regard
@@ -7728,6 +8340,17 @@ french:
       - under
       - beneath
     uuid: dbedab1e-35d4-4697-810d-6516b1c9fa58
+  sujet:
+    definitions:
+    - display: sujet
+      exampleSentences:
+      - french: C’est un sujet intéressant.
+      - english: It’s an interesting subject.
+      gender: masc
+      pos: noun
+      translations:
+      - subject
+    uuid: 485f7373-7797-4fab-a0ee-e8bb5c5765fd
   sur:
     definitions:
     - display: sur
@@ -7910,6 +8533,230 @@ french:
       translations:
       - too
     uuid: aee06514-abe1-4c9d-9b1e-57ff91814cf1
+  trouver:
+    definitions:
+    - auxiliary: avoir
+      modal_in_english: false
+      conjugations_english:
+        to find:
+          imperative:
+            '':
+              '': find
+              let's: find
+          indicative:
+            future:
+              he/she/it - will: find
+              i - will: find
+              they - will: find
+              we - will: find
+              you - will: find
+            future continuous:
+              he/she/it - will - be: finding
+              i - will - be: finding
+              they - will - be: finding
+              we - will - be: finding
+              you - will - be: finding
+            future perfect:
+              he/she/it - will - have: found
+              i - will - have: found
+              they - will - have: found
+              we - will - have: found
+              you - will - have: found
+            future perfect continuous:
+              he/she/it - will - have - been: finding
+              i - will - have - been: finding
+              they - will - have - been: finding
+              we - will - have - been: finding
+              you - will - have - been: finding
+            past continous:
+              he/she/it - was: finding
+              i - was: finding
+              they - were: finding
+              we - were: finding
+              you - were: finding
+            past perfect:
+              he/she/it - had: found
+              i - had: found
+              they - had: found
+              we - had: found
+              you - had: found
+            past perfect continuous:
+              he/she/it - had - been: finding
+              i - had - been: finding
+              they - had - been: finding
+              we - had - been: finding
+              you - had - been: finding
+            present:
+              he/she/it: finds
+              i: find
+              they: find
+              we: find
+              you: find
+            present continuous:
+              he/she/it - is: finding
+              i - am: finding
+              they - are: finding
+              we - are: finding
+              you - are: finding
+            present perfect:
+              he/she/it - has: found
+              i - have: found
+              they - have: found
+              we - have: found
+              you - have: found
+            present perfect continuous:
+              he/she/it - has - been: finding
+              i - have - been: finding
+              they - have - been: finding
+              we - have - been: finding
+              you - have - been: finding
+            preterite:
+              he/she/it: found
+              i: found
+              they: found
+              we: found
+              you: found
+          participle:
+            past:
+              '': found
+            present:
+              '': finding
+          perfect participle:
+            '':
+              having: found
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: trouvé
+            ils/elles - eussent: trouvé
+            j' - eusse: trouvé
+            nous - eussions: trouvé
+            tu - eusses: trouvé
+            vous - eussiez: trouvé
+          passé première forme:
+            il/elle - aurait: trouvé
+            ils/elles - auraient: trouvé
+            j' - aurais: trouvé
+            nous - aurions: trouvé
+            tu - aurais: trouvé
+            vous - auriez: trouvé
+          présent:
+            il/elle: trouverait
+            ils/elles: trouveraient
+            je: trouverais
+            nous: trouverions
+            tu: trouverais
+            vous: trouveriez
+        indicatif:
+          futur:
+            il/elle: trouvera
+            ils/elles: trouveront
+            je: trouverai
+            nous: trouverons
+            tu: trouveras
+            vous: trouverez
+          futur antérieur:
+            il/elle - aura: trouvé
+            ils/elles - auront: trouvé
+            j' - aurai: trouvé
+            nous - aurons: trouvé
+            tu - auras: trouvé
+            vous - aurez: trouvé
+          imparfait:
+            il/elle: trouvait
+            ils/elles: trouvaient
+            je: trouvais
+            nous: trouvions
+            tu: trouvais
+            vous: trouviez
+          passé antérieur:
+            il/elle - eut: trouvé
+            ils/elles - eurent: trouvé
+            j' - eus: trouvé
+            nous - eûmes: trouvé
+            tu - eus: trouvé
+            vous - eûtes: trouvé
+          passé composé:
+            il/elle - a: trouvé
+            ils/elles - ont: trouvé
+            j' - ai: trouvé
+            nous - avons: trouvé
+            tu - as: trouvé
+            vous - avez: trouvé
+          passé simple:
+            il/elle: trouva
+            ils/elles: trouvèrent
+            je: trouvai
+            nous: trouvâmes
+            tu: trouvas
+            vous: trouvâtes
+          plus-que-parfait:
+            il/elle - avait: trouvé
+            ils/elles - avaient: trouvé
+            j' - avais: trouvé
+            nous - avions: trouvé
+            tu - avais: trouvé
+            vous - aviez: trouvé
+          présent:
+            il/elle: trouve
+            ils/elles: trouvent
+            je: trouve
+            nous: trouvons
+            tu: trouves
+            vous: trouvez
+        infinitif:
+          passé:
+            avoir: trouvé
+        participe:
+          passé:
+            aie: trouvé
+            ayez: trouvé
+            ayons: trouvé
+          passé composé:
+            ayant: trouvé
+          présent:
+            '': trouvez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: trouvât
+            qu' - ils/elles: trouvassent
+            que - je: trouvasse
+            que - nous: trouvassions
+            que - tu: trouvasses
+            que - vous: trouvassiez
+          passé:
+            qu' - il/elle - ait: trouvé
+            qu' - ils/elles - aient: trouvé
+            que - j' - aie: trouvé
+            que - nous - ayons: trouvé
+            que - tu - aies: trouvé
+            que - vous - ayez: trouvé
+          plus-que-parfait:
+            qu' - il/elle - eût: trouvé
+            qu' - ils/elles - eussent: trouvé
+            que - j' - eusse: trouvé
+            que - nous - eussions: trouvé
+            que - tu - eusses: trouvé
+            que - vous - eussiez: trouvé
+          présent:
+            qu' - il/elle: trouve
+            qu' - ils/elles: trouvent
+            que - je: trouve
+            que - nous: trouvions
+            que - tu: trouves
+            que - vous: trouviez
+      display: trouver
+      gender: NA
+      model: marcher
+      other_forms:
+      - se trouver
+      - ne pas trouver
+      - ne pas se trouver
+      pos: verb
+      transitive: true
+      translations:
+      - to find
+    uuid: ff855bf7-45e3-4d4f-836b-2babf5c070db
   très:
     definitions:
     - display: très
@@ -8455,6 +9302,15 @@ french:
     definitions:
     - notaword: true
     uuid: 0f326c28-c6ff-41a6-b369-af9b38f37b92
+  vos:
+    definitions:
+    - display: vos
+      gender: NA
+      pos: possessive adjective
+      see: votre
+      translations:
+      - your
+    uuid: 8435bcb3-d86c-460f-9bb1-87829b1c075e
   votre:
     definitions:
     - display: votre
