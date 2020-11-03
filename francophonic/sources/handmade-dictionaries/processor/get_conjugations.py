@@ -12,18 +12,26 @@ def get_reverso_url(verb, language):
 
 def grab_conjugation_soup(verbf, verbe):
     time.sleep(10)
-    rf = requests.get(get_reverso_url(verbf, "french"))
+    urlf = get_reverso_url(verbf, "french")
+    print(f"requesting {urlf}")
+    rf = requests.get(urlf)
     soup_french = BeautifulSoup(rf.text, 'html.parser')
     
     time.sleep(10)
-    re = requests.get(get_reverso_url(verbe[0].split("to")[-1].strip(), "english"))
+    urle = get_reverso_url(verbe.split("to")[-1].strip(), "english")
+    print(f"requesting {urle}")
+    re = requests.get(urle)
     soup_english = BeautifulSoup(re.text, 'html.parser')
 
     return (soup_french, soup_english)
 
-def parse_conjugations(soup):
+def parse_conjugations(soup, verb):
     contents = {}
-    result_block = soup.findAll("div", {"class": "result-block-api"})[0]
+    result_block = soup.find("div", {"class": "result-block-api"})
+    if result_block == None:
+        print(f"No result block found in soup for {verb}")
+        return (None, None)
+
     word_wrap_rows = result_block.findAll("div", {"class": "word-wrap-row"})
     for row in word_wrap_rows:
         for child in row.findAll("div", {}, False):
@@ -51,6 +59,8 @@ def parse_conjugations(soup):
                             infinitive = i[1]
                         elif len(i) == 1 and current_mode == 'participle' and type_of_conjugation in ['past', 'present']:
                             info[''] = i[0] 
+                        elif len(i) == 1 and current_mode == 'participe' and type_of_conjugation == 'présent':
+                            info[''] = i[0] 
                         elif len(i) >= 2:
                             info[" - ".join(i[:-1])] = i[-1]
                         else:
@@ -72,16 +82,17 @@ def get_conjugations(verbf, verbe, trans):
         soup = BeautifulSoup(text, 'html.parser')"""
         
     
-    (soupf, soupe) = grab_conjugation_soup(verbf, verbe)
+    (soupf, soupe) = grab_conjugation_soup(verbf, verbe[0])
 
-    infinitivef, contentsf = parse_conjugations(soupf)
-    infinitivee, contentse = parse_conjugations(soupe)
+    infinitivef, contentsf = parse_conjugations(soupf, verbf)
+    infinitivee, contentse = parse_conjugations(soupe, verbe[0])
 
-    model = soup.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
-    auxiliary = soup.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
-    forms = [form.contents[0].strip() for form in soup.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
+    model = soupf.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
+    auxiliary = soupf.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
+    forms = [form.contents[0].strip() for form in soupf.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    output = {infinitive: [{'display': infinitive, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {"to " + infinitivee: contentse}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    output = {infinitivef: [{'display': infinitivef, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {verbe[0]: contentse if contentse is not None else {}}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    return output
 
 def main():
     verb = input("Verb? ")

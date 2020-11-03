@@ -39,6 +39,9 @@ french_to_english:
   '"Ah," dit M. Lupin.':
     google:
     - “Ah,” Mr. Lupine said.
+  '"Ah," dit le garçon.':
+    google:
+    - “Ah,” the boy said.
   '"Ah," dit le professeur Quirrell, et il sourit.':
     google:
     - “Ah,” Professor Quirrell said, and he smiled.
@@ -75,6 +78,9 @@ french_to_english:
   '"Alors ?"':
     google:
     - '"So ?"'
+  '"Alors garçon ?" dit Maugrey.':
+    google:
+    - '"So boy?" said Moody.'
   '"Alors ne me parle pas," répondit Harry.':
     google:
     - '"So don''t talk to me," Harry replied.'
@@ -120,12 +126,18 @@ french_to_english:
   '"Assez," dit Draco.':
     google:
     - “Enough,” Draco said.
+  '"Assez," dit Granger.':
+    google:
+    - “Enough,” Granger said.
   '"Assez," dit le professeur McGonagall.':
     google:
     - '"Enough," said Professor McGonagall.'
   '"Au cas où personne ne vous l''a jamais dit -"':
     google:
     - '"In case nobody ever told you -"'
+  '"Au fait," dit le garçon.':
+    google:
+    - '"By the way," the boy said.'
   '"Aucun de vous deux ?"':
     google:
     - '"Neither of you?"'
@@ -138,6 +150,10 @@ french_to_english:
   '"Avant ça," dit Harry.':
     google:
     - “Before that,” Harry said.
+  '"Beaucoup de gens m''ont demandé ça, mais je ne pense pas que le professeur Quirrell aurait voulu que j''en parle."':
+    google:
+    - '"A lot of people have asked me this, but I don''t think Professor Quirrell
+      would have wanted me to talk about it."'
   '"Bien dit."':
     google:
     - '"Well said."'
@@ -210,6 +226,9 @@ french_to_english:
   '"C''est bon," dit Harry.':
     google:
     - “It's okay,” Harry said.
+  '"C''est ce que beaucoup de gens voient," dit Harry.':
+    google:
+    - “That's what a lot of people see,” Harry said.
   '"C''est ce que j''ai dit moi aussi," dit Dumbledore.':
     google:
     - '"That''s what I said too," Dumbledore said.'
@@ -237,6 +256,9 @@ french_to_english:
   '"C''est lui qui a fait le coup ?" dit Dumbledore.':
     google:
     - '"Was he the one who did it?" said Dumbledore.'
+  '"C''est moi", dit le garçon.':
+    google:
+    - '"It''s me," the boy said.'
   '"C''est moi."':
     google:
     - '"It''s me."'
@@ -306,6 +328,9 @@ french_to_english:
   '"Cet œil," dit Harry Potter.':
     google:
     - “That eye,” Harry Potter said.
+  '"Ce… n''était pas lui, ce n''était pas ce qu''il avait dit de faire, c''était seulement moi -"':
+    google:
+    - '"It… wasn''t him, it wasn''t what he said to do, it was only me -"'
   '"Comme je le pensais."':
     google:
     - '"As I thought."'
@@ -318,6 +343,9 @@ french_to_english:
   '"Comme quoi ?"':
     google:
     - '"Like what ?"'
+  '"Comme quoi ?" dit le garçon.':
+    google:
+    - '"Like what ?" the boy said.'
   '"Comment -"':
     google:
     - '"How? ''Or'' What -"'
@@ -357,6 +385,9 @@ french_to_english:
   '"De rien."':
     google:
     - '"You''re welcome."'
+  '"De toute façon," dit Draco.':
+    google:
+    - “Either way,” Draco said.
   '"Deux à la fois."':
     google:
     - '"Two at a time."'
@@ -435,6 +466,9 @@ french_to_english:
   '"Est-ce ce à quoi tu pensais, Harry ?"':
     google:
     - '"Is that what you were thinking, Harry?"'
+  '"Est-ce qu''il y a autre chose que je dois savoir ?"':
+    google:
+    - '"Is there anything else I need to know?"'
   '"Est-ce que -" quoi "est-ce que vous êtes sûr -" quoi.':
     google:
     - '"Is -" what "are you sure -" what.'
@@ -522,6 +556,9 @@ french_to_english:
   '"GRYFFONDOR !"':
     google:
     - '"GRYFFONDOR!"'
+  '"Granger, Hermione !"':
+    google:
+    - '"Granger, Hermione!"'
   '"HARRY !"':
     google:
     - '"HARRY!"'
@@ -582,6 +619,9 @@ french_to_english:
   '"Hermione ?" dit-il.':
     google:
     - '"Hermione?" he said.'
+  '"Hermione Granger."':
+    google:
+    - '"Hermione Granger."'
   '"Hermione," dit Harry.':
     google:
     - “Hermione,” Harry said.
@@ -603,6 +643,9 @@ french_to_english:
   '"Il le sait vraiment ?"':
     google:
     - '"Does he really know that?"'
+  '"Il n''a pas besoin de parler aux gens comme toi !"':
+    google:
+    - '"He doesn''t need to talk to people like you!"'
   '"Il n''a pas fait ça !" dit Hermione.':
     google:
     - '"He didn''t do that!" Hermione said.'
@@ -633,6 +676,9 @@ french_to_english:
   '"Il… quoi ?"':
     google:
     - '"He… what?"'
+  '"J''ai eu Harry Potter avant Granger."':
+    google:
+    - '"I had Harry Potter before Granger."'
   '"J''ai fait beaucoup pour vous," dit l''homme.':
     google:
     - “I have done a lot for you,” the man said.
@@ -666,6 +712,12 @@ french_to_english:
   '"Je crois."':
     google:
     - '"I believe."'
+  '"Je devrais apprendre à faire ça un jour."':
+    google:
+    - '"I should learn to do this someday."'
+  '"Je fais ce que je me dois de faire !"':
+    google:
+    - '"I do what I have to do!"'
   '"Je ferai – ce qui est juste -"':
     google:
     - '"I will do - which is right -"'
@@ -688,12 +740,21 @@ french_to_english:
     google:
     - '"I wonder how you would do that, but I don''t want people to do things for
       me."'
+  '"Je me demande si je devrais ?"':
+    google:
+    - '"I wonder if I should?"'
   '"Je n''ai pas -"':
     google:
     - '"I do not have -"'
   '"Je n''ai pas -" dit-elle.':
     google:
     - '"I haven''t -" she said.'
+  '"Je n''ai pas dit que j''étais Hermione Granger !"':
+    google:
+    - '"I didn''t say I was Hermione Granger!"'
+  '"Je n''aurais pas dû ?"':
+    google:
+    - '"I should not have ?"'
   '"Je n''avais pas pensé à ça !" dit Harry Potter.':
     google:
     - '"I did not think about that !" Harry Potter said.'
@@ -706,6 +767,9 @@ french_to_english:
   '"Je n''en suis pas sûr," répondit Harry.':
     google:
     - '"I''m not sure," Harry replied.'
+  '"Je n''essaie pas de dire que c''est seulement vous !" dit Hermione.':
+    google:
+    - '"I''m not trying to say it''s only you!" Hermione said.'
   '"Je n''y ai jamais pensé," dit Draco.':
     google:
     - '"I never thought about it," Draco said.'
@@ -835,6 +899,9 @@ french_to_english:
   '"Je suis sûr d''une chose."':
     google:
     - '"I''m sure of one thing."'
+  '"Je suis un bon garçon."':
+    google:
+    - '"I''m a good boy."'
   '"Je suis… en vie… ?"':
     google:
     - '"I''m alive… ?"'
@@ -1118,6 +1185,12 @@ french_to_english:
   '"Non -"':
     google:
     - '"No -"'
+  '"Non ?" dit Granger.':
+    google:
+    - '"No ?" Granger said.'
+  '"Non pas cette partie," dit le professeur Quirrell.':
+    google:
+    - '"Not that part," said Professor Quirrell.'
   '"Non, Harry, je veux entendre ce que tu as à dire."':
     google:
     - '"No Harry, I want to hear what you have to say."'
@@ -1154,6 +1227,9 @@ french_to_english:
   '"Non," dit Dumbledore.':
     google:
     - “No,” Dumbledore said.
+  '"Non," dit Granger.':
+    google:
+    - “No,” Granger said.
   '"Non," dit Harry Potter.':
     google:
     - “No,” Harry Potter said.
@@ -1163,6 +1239,9 @@ french_to_english:
   '"Non," dit Harry.':
     google:
     - “No,” Harry said.
+  '"Non," dit Hermione Granger.':
+    google:
+    - “No,” Hermione Granger said.
   '"Non," dit Hermione.':
     google:
     - “No,” Hermione said.
@@ -1175,6 +1254,9 @@ french_to_english:
   '"Non," dit la voix de Dumbledore.':
     google:
     - “No,” Dumbledore's voice said.
+  '"Non," dit le garçon.':
+    google:
+    - “No,” the boy said.
   '"Non," dit le professeur McGonagall.':
     google:
     - '"No," said Professor McGonagall.'
@@ -1259,6 +1341,9 @@ french_to_english:
   '"Oh…" dit Hermione.':
     google:
     - '"Oh…" Hermione said.'
+  '"On devrait peut-être y aller."':
+    google:
+    - '"Maybe we should go."'
   '"On dirait bien que non," répondit Harry.':
     google:
     - '"Looks like no," Harry replied.'
@@ -1286,6 +1371,9 @@ french_to_english:
   '"Oui ?" dit Draco.':
     google:
     - '"Yes ?" Draco said.'
+  '"Oui pourquoi, je vais très bien," répondit Hermione Granger.':
+    google:
+    - '"Yes why, I''m doing very well," Hermione Granger replied.'
   '"Oui, Harry," dit Dumbledore.':
     google:
     - “Yes, Harry,” Dumbledore said.
@@ -1331,6 +1419,9 @@ french_to_english:
   '"Oui," dit McGonagall.':
     google:
     - “Yes,” McGonagall said.
+  '"Oui," dit le garçon.':
+    google:
+    - “Yes,” the boy said.
   '"Oui," dit le professeur McGonagall.':
     google:
     - “Yes,” said Professor McGonagall.
@@ -1388,6 +1479,9 @@ french_to_english:
   '"Pas que je sache," dit Dumbledore.':
     google:
     - “Not that I know of,” Dumbledore said.
+  '"Pas seulement ça."':
+    google:
+    - '"Not just that."'
   '"Pas toi," dit Hagrid.':
     google:
     - “Not you,” Hagrid said.
@@ -1397,6 +1491,9 @@ french_to_english:
   '"Pas tout à fait," dit l''homme.':
     google:
     - “Not quite,” the man said.
+  '"Pas tout à fait," dit le garçon.':
+    google:
+    - “Not quite,” the boy said.
   '"Pas un tour."':
     google:
     - '"Not a ride."'
@@ -1508,6 +1605,9 @@ french_to_english:
   '"Qu''est ce que je -"':
     google:
     - '"What am I -"'
+  '"Qu''est-ce qu''il a contre toi ?" dit Granger.':
+    google:
+    - '"What''s wrong with you?" Granger said.'
   '"Qu''est-ce qu''il y a ?"':
     google:
     - '"What''s the matter ?"'
@@ -1535,6 +1635,9 @@ french_to_english:
   '"Qu''est-ce que tu en as à faire ?" dit Draco.':
     google:
     - '"What do you have to do with it?" Draco said.'
+  '"Qu''est-ce que ça a à voir avec Granger ?"':
+    google:
+    - '"What does this have to do with Granger?"'
   '"Qu''est-ce que ça fait ?" dit Maugrey.':
     google:
     - '"What does it do ?" said Moody.'
@@ -1562,6 +1665,9 @@ french_to_english:
   '"Qui ?" dit Hermione.':
     google:
     - '"Who ?" Hermione said.'
+  '"Qui a dit qu''on devait -"':
+    google:
+    - '"Who said we had to -"'
   '"Qui t''a parlé de moi ?"':
     google:
     - '"Who told you about me?"'
@@ -1721,6 +1827,9 @@ french_to_english:
   '"Très bien," dit Harry.':
     google:
     - “Very well,” Harry said.
+  '"Très bien," dit le garçon.':
+    google:
+    - “Very well,” the boy said.
   '"Très bien," dit le professeur McGonagall.':
     google:
     - '"Very well," said Professor McGonagall.'
@@ -1820,6 +1929,9 @@ french_to_english:
   '"Voilà," dit Harry.':
     google:
     - '"There you go," Harry said.'
+  '"Voilà," dit le garçon.':
+    google:
+    - “There,” the boy said.
   '"Vous -"':
     google:
     - '"You -"'
@@ -1850,6 +1962,12 @@ french_to_english:
   '"Vous n''y avez pas pensé non plus sur le moment, M. Potter."':
     google:
     - '"You didn''t think of that at the time either, Mr. Potter."'
+  '"Vous ne devriez pas être -"':
+    google:
+    - '"You shouldn''t be -"'
+  '"Vous ne pouvez pas croire que Granger va -"':
+    google:
+    - '"You can''t believe Granger is going -"'
   '"Vous pouvez y aller, maintenant."':
     google:
     - '"You can go now."'
@@ -1877,9 +1995,15 @@ french_to_english:
   '"Vraiment ?" dit Harry.':
     google:
     - '"Really ?" Harry said.'
+  '"Vraiment ?" dit Hermione Granger.':
+    google:
+    - '"Really ?" Hermione Granger said.'
   '"Vraiment ?".':
     google:
     - '"Really ?".'
+  '"Vraiment," dit Granger.':
+    google:
+    - “Really,” Granger said.
   '"Vraiment," dit Harry.':
     google:
     - “Really,” Harry said.
@@ -1922,6 +2046,9 @@ french_to_english:
   '"Ça va !"':
     google:
     - '"It''s okay !"'
+  '"Ça, je veux bien le croire," dit Hermione Granger.':
+    google:
+    - '"That I can believe," said Hermione Granger.'
   '"… ce n''est pas juste."':
     google:
     - '"… it is not fair."'
@@ -2078,6 +2205,9 @@ french_to_english:
   Ah, vous croyez ça ?:
     google:
     - Ah, do you believe that?
+  Ah, vous devez être l’oncle et la tante de Harry !:
+    google:
+    - Ah, you must be Harry's uncle and aunt!
   Ah, vous êtes là, Potter et Weasley.:
     google:
     - Ah, there you are, Potter and Weasley.
@@ -2150,6 +2280,9 @@ french_to_english:
   Alors ce ne sera pas elle.:
     google:
     - So it won't be her.
+  Alors j'aurais dû le savoir !:
+    google:
+    - So I should have known!
   Alors je ne le ferai plus jamais !:
     google:
     - So I will never do it again!
@@ -2180,6 +2313,9 @@ french_to_english:
   Alors qu’est-ce qui se passe ?:
     google:
     - So what is going on?
+  Alors voilà ce que je pense que nous devrions faire -:
+    google:
+    - So here's what I think we should do -
   Alors, EN AVANT !:
     google:
     - So, FORWARD!
@@ -2330,6 +2466,9 @@ french_to_english:
   Au bout d’un moment, on ne sait plus qui on est.:
     google:
     - After a while, you don't know who you are.
+  Au fait, je te présente Harry Potter et Hermione Granger.:
+    google:
+    - By the way, this is Harry Potter and Hermione Granger.
   Au fait, vous ne savez pas où il va, quand il n’est pas là ?:
     google:
     - By the way, you don't know where he's going, when he's not there?
@@ -2429,6 +2568,10 @@ french_to_english:
   Bien entendu, répondit le professeur McGonagall.:
     google:
     - Of course, Professor McGonagall replied.
+  Bien entendu, toi, elle ne pouvait pas te voir, elle a donc cru qu’on était seulement tous les deux.:
+    google:
+    - Of course, you, she couldn't see you, so she thought we were just the two of
+      us.
   Bien entendu.:
     google:
     - Of course.
@@ -2480,6 +2623,9 @@ french_to_english:
   Bien sûr que si.:
     google:
     - Of course yes.
+  Bien sûr que tu le dois !:
+    google:
+    - Of course you have to!
   Bien sûr que tu peux, répondit Harry.:
     google:
     - Of course you can, Harry replied.
@@ -2687,6 +2833,9 @@ french_to_english:
   C'est ce que je veux que tu dises.:
     google:
     - This is what I want you to say.
+  C'est comme ça que la vie aurait dû être.:
+    google:
+    - This is how life should have been.
   C'est du moins ce que je pensais.:
     google:
     - At least that's what I thought.
@@ -2732,6 +2881,9 @@ french_to_english:
   C'est une -:
     google:
     - It's a -
+  C'est une autre façon de penser.:
+    google:
+    - It's a different way of thinking.
   C'est vous !:
     google:
     - It's you !
@@ -2817,6 +2969,9 @@ french_to_english:
   Cape à Harry.:
     google:
     - Cape to Harry.
+  Ce doit être quelqu’un de ton côté.:
+    google:
+    - It must be someone on your side.
   Ce le sera toujours.:
     google:
     - It always will be.
@@ -2862,6 +3017,9 @@ french_to_english:
   Ce n'était pas mon idée.:
     google:
     - It wasn't my idea.
+  Ce n'était pas seulement deux fois par jour, alors.:
+    google:
+    - It wasn't just twice a day, then.
   Ce n'était pas un grand sourire, mais c'était un sourire quand même.:
     google:
     - It wasn't a big smile, but it was a smile nonetheless.
@@ -2940,6 +3098,9 @@ french_to_english:
   Ce que sera votre maison.:
     google:
     - What your house will be.
+  Ce que tu es, Hermione Granger, et ce que tu seras toujours.:
+    google:
+    - What you are, Hermione Granger, and what you always will be.
   Ce qui est fait est fait.:
     google:
     - What is done is done.
@@ -2952,6 +3113,9 @@ french_to_english:
   Ce qui veut dire ?:
     google:
     - Which means ?
+  Ce qui veut dire que les choses sont comme elles devraient être, à Poudlard et à la maison.:
+    google:
+    - Which means things are as they should be, at Hogwarts and at home.
   Ce qui était vrai, et l'est toujours.:
     google:
     - Which was and still is.
@@ -3021,6 +3185,9 @@ french_to_english:
   Cette voix !:
     google:
     - This voice !
+  Cette voix n'aurait pas dû être ici.:
+    google:
+    - That voice shouldn't have been here.
   Ce… ce serait bien fait pour vous !:
     google:
     - It… it would be well done for you!
@@ -3183,6 +3350,9 @@ french_to_english:
   C’est Harry Potter.:
     google:
     - It's Harry Potter.
+  C’est Hermione Granger qui me l’a dit.:
+    google:
+    - Hermione Granger told me.
   C’est Rogue.:
     google:
     - It's Snape.
@@ -3201,6 +3371,9 @@ french_to_english:
   C’est bien cela ?:
     google:
     - That's right ?
+  C’est bien cela, mon garçon ?:
+    google:
+    - Is that right, boy?
   C’est bien cela, n’est-ce pas ?:
     google:
     - That's it, isn't it?
@@ -3315,6 +3488,9 @@ french_to_english:
   C’est ma tante, dit-elle.:
     google:
     - This is my aunt, she said.
+  C’est maintenant que tu dois le faire ! lui disait une voix dans sa tête.:
+    google:
+    - Now is the time to do it! a voice said in his head.
   C’est moi qui le dis, répliqua Hermione.:
     google:
     - I'm the one saying that, Hermione replied.
@@ -3366,6 +3542,9 @@ french_to_english:
   C’est quoi, ça ?:
     google:
     - What is that ?
+  C’est sa façon de me parler… On dirait que j’ai trois ans !:
+    google:
+    - This is his way of talking to me ... Looks like I'm three!
   C’est sans doute vrai.:
     google:
     - It is undoubtedly true.
@@ -3495,6 +3674,9 @@ french_to_english:
   C’était Harry.:
     google:
     - It was Harry.
+  C’était Hermione Granger.:
+    google:
+    - It was Hermione Granger.
   C’était Hermione.:
     google:
     - It was Hermione.
@@ -3558,9 +3740,15 @@ french_to_english:
   C’était maintenant ou jamais.:
     google:
     - It was now or never.
+  C’était pour rire, dit le garçon.:
+    google:
+    - It was for a laugh, the boy said.
   C’était sans doute lui, le sorcier.:
     google:
     - It was probably him, the wizard.
+  C’était seulement moi qu’il voulait.:
+    google:
+    - It was only me he wanted.
   C’était trop tard.:
     google:
     - It was too late.
@@ -3655,6 +3843,15 @@ french_to_english:
   De rien.:
     google:
     - You're welcome.
+  De toute façon, il avait toujours toujours toujours voulu faire ça.:
+    google:
+    - Either way, he had always always wanted to do this.
+  De toute façon, il n’y aurait rien eu à voir, n’est-ce pas ?:
+    google:
+    - Either way, there wouldn't have been anything to do with it, right?
+  De toute façon, j’en ai trop.:
+    google:
+    - Either way, I have too many.
   Demande à McGonagall, Harry.:
     google:
     - Ask McGonagall, Harry.
@@ -3679,6 +3876,9 @@ french_to_english:
   Deux quoi ?:
     google:
     - Two what?
+  Deux seulement.:
+    google:
+    - Two only.
   Devant cette porte.:
     google:
     - In front of this door.
@@ -3703,6 +3903,9 @@ french_to_english:
   Donc c’est vrai que c’est vraiment bien.:
     google:
     - So it's true that it's really good.
+  Donc des choses qui sont seulement en français.:
+    google:
+    - So things that are only in French.
   Donc je pense que tu as vraiment un bon français.:
     google:
     - So I think you have really good French.
@@ -3859,6 +4062,9 @@ french_to_english:
   D’Hermione, dit Hagrid.:
     google:
     - From Hermione, Hagrid said.
+  D’après lui, c’est pour ça que les gens se font du mal.:
+    google:
+    - According to him, that's why people hurt each other.
   D’après vous, qui est-ce qui l’a, pour le moment ? demanda George.:
     google:
     - Who do you think has it right now? George asked.
@@ -3874,6 +4080,12 @@ french_to_english:
   Elle a passé l’été à nous parler de toi.:
     google:
     - She spent the summer telling us about you.
+  Elle aurait dû le faire.:
+    google:
+    - She should have done it.
+  Elle aurait dû être vraie.:
+    google:
+    - It should have been true.
   Elle avait toujours fait de son mieux, à chaque fois.:
     google:
     - She had always done her best, every time.
@@ -3985,6 +4197,9 @@ french_to_english:
   Elle regarda la porte.:
     google:
     - She looked at the door.
+  Elle regardait Harry Potter, et Harry Potter seulement.:
+    google:
+    - She was looking at Harry Potter, and Harry Potter only.
   Elle regardait Harry comme si elle ne l’avait encore jamais vu.:
     google:
     - She was looking at Harry as if she had never seen him before.
@@ -4015,6 +4230,9 @@ french_to_english:
   Elle était vide !:
     google:
     - It was empty!
+  Elles n'auraient pas dû.:
+    google:
+    - They shouldn't have.
   Elles sont là, dit-il.:
     google:
     - They are there, he said.
@@ -4225,6 +4443,12 @@ french_to_english:
   Et Fred et moi, on est qui ?:
     google:
     - And Fred and I, who are we?
+  Et Granger sait aussi cela.:
+    google:
+    - And Granger also knows that.
+  Et Hermione Granger n'est pas cette pièce.:
+    google:
+    - And Hermione Granger is not that room.
   Et Je.:
     google:
     - And I.
@@ -4309,6 +4533,9 @@ french_to_english:
   Et comment on fait tout ça ? demanda Harry.:
     google:
     - And how do we do all this? Harry asked.
+  Et c’est ce que pense une partie des Français.:
+    google:
+    - And that's what some of the French think.
   Et c’est le cas pour beaucoup de personnes.:
     google:
     - And that's the case for a lot of people.
@@ -4391,6 +4618,12 @@ french_to_english:
   Et ils ne furent plus que trois.:
     google:
     - And they were only three.
+  Et j'aurais dû le savoir !:
+    google:
+    - And I should have known it!
+  Et j'aurais dû.:
+    google:
+    - And I should have.
   Et j'en ferai de même.:
     google:
     - And I will do the same.
@@ -4607,6 +4840,9 @@ french_to_english:
   Et toi, je ne sais pas qui tu es.:
     google:
     - And you, I don't know who you are.
+  Et toi, mon garçon ?:
+    google:
+    - What about you, my boy?
   Et toi, qu’est-ce que tu fais ?:
     google:
     - And you, what do you do ?
@@ -4640,6 +4876,9 @@ french_to_english:
   Et voilà, dit Ron.:
     google:
     - There you go, said Ron.
+  Et voilà, mon garçon, dit-il.:
+    google:
+    - There you go, my boy, he said.
   Et vous ?:
     google:
     - And you ?
@@ -4652,6 +4891,9 @@ french_to_english:
   Et vous ne voulez le dire à personne ?:
     google:
     - And you don't want to tell anyone?
+  Et vous n’aurez pas besoin de faire ce devoir.:
+    google:
+    - And you won't need to do this homework.
   Et vous savez ce que c’est ?:
     google:
     - And do you know what it is?
@@ -4706,6 +4948,9 @@ french_to_english:
   Faudrait pas être trop bon avec eux, Hagrid.:
     google:
     - You shouldn't be too good to them, Hagrid.
+  Façon de parler, répliqua l’oncle Vernon.:
+    google:
+    - Way of speaking, replied Uncle Vernon.
   Fred !:
     google:
     - Fred!
@@ -4730,6 +4975,9 @@ french_to_english:
   Fred m’a dit que ça faisait très mal, mais je crois que c’était pour rire.:
     google:
     - Fred told me it hurt a lot, but I think it was a joke.
+  Fred, c’est pas moi, moi, c’est George, dit le garçon.:
+    google:
+    - Fred, it's not me, me, it's George, the boy said.
   Fred… George…, dit-il.:
     google:
     - Fred… George… he said.
@@ -4787,6 +5035,21 @@ french_to_english:
   Grande Salle.:
     google:
     - Big room.
+  Granger !:
+    google:
+    - Granger!
+  Granger ?:
+    google:
+    - Granger?
+  Granger aussi, tu sais.:
+    google:
+    - Granger too, you know.
+  Granger, Hermione !:
+    google:
+    - Granger, Hermione!
+  Granger, professeur.:
+    google:
+    - Granger, professor.
   Gryffondor !:
     google:
     - Gryffindor!
@@ -5064,6 +5327,9 @@ french_to_english:
   Harry n’eut pas besoin de se le faire dire deux fois.:
     google:
     - Harry didn't need to be told twice.
+  Harry n’était encore jamais allé dans cette partie du château.:
+    google:
+    - Harry had never been to this part of the castle before.
   Harry parla de nouveau.:
     google:
     - Harry spoke again.
@@ -5097,6 +5363,9 @@ french_to_english:
   Harry regarda autour de lui.:
     google:
     - Harry looked around him.
+  Harry regarda le garçon qui avait parlé.:
+    google:
+    - Harry looked at the boy who had spoken.
   Harry regarda le professeur Quirrell pendant un moment.:
     google:
     - Harry looked at Professor Quirrell for a moment.
@@ -5184,9 +5453,15 @@ french_to_english:
   Harry, je te parle, tu m’entends ?:
     google:
     - Harry, I'm talking to you, can you hear me?
+  Harry, j’ai pensé à quelque chose… Tu sais ce qu’on devrait faire ?:
+    google:
+    - Harry, I was thinking of something… You know what we should do?
   Harry, lui, ne regardait pas le visage d’Hermione.:
     google:
     - Harry wasn't looking at Hermione's face.
+  Harry, mon garçon ?:
+    google:
+    - Harry, my boy?
   Harry, non !:
     google:
     - Harry, no!
@@ -5239,6 +5514,24 @@ french_to_english:
   Hermione ?:
     google:
     - Hermione?
+  Hermione Granger le regardait.:
+    google:
+    - Hermione Granger was looking at him.
+  Hermione Granger n'était pas là.:
+    google:
+    - Hermione Granger was not there.
+  Hermione Granger s'en fut.:
+    google:
+    - Hermione Granger left.
+  Hermione Granger, monsieur.:
+    google:
+    - Hermione Granger, sir.
+  Hermione Granger, répondit Hermione.:
+    google:
+    - Hermione Granger, Hermione replied.
+  Hermione Granger.:
+    google:
+    - Hermione Granger.
   Hermione eut un petit rire.:
     google:
     - Hermione chuckled.
@@ -5305,6 +5598,9 @@ french_to_english:
   Ici, à Poudlard ?:
     google:
     - Here at Hogwarts?
+  Ici, ça devrait aller.:
+    google:
+    - Here it should be fine.
   Il a dit qu'on pouvait faire ce qu'il fait.:
     google:
     - He said we could do what he does.
@@ -5347,6 +5643,12 @@ french_to_english:
   Il allait mieux.:
     google:
     - He was doing better.
+  Il aurait dû y être.:
+    google:
+    - He should have been there.
+  Il aurait juste dû dire non à Harry Potter.:
+    google:
+    - He should just have said no to Harry Potter.
   Il aurait pu ne pas l’être, répliqua Hermione.:
     google:
     - He might not have been, Hermione replied.
@@ -5359,12 +5661,18 @@ french_to_english:
   Il avait maintenant un grand sourire sur le visage.:
     google:
     - He now had a big smile on his face.
+  Il devait être très tard.:
+    google:
+    - It must have been very late.
   'Il dirait : Pourquoi pas ?':
     google:
     - 'He would say: Why not?'
   Il dit vrai.:
     google:
     - He is telling the truth.
+  Il doit y avoir plus que ça !:
+    google:
+    - There must be more than that!
   Il est en première année à Poudlard !:
     google:
     - He's in his first year at Hogwarts!
@@ -5446,6 +5754,9 @@ french_to_english:
   Il faudra passer la nuit ici.:
     google:
     - We'll have to spend the night here.
+  Il faudra que je voie les gens du ministère quand ils seront là.:
+    google:
+    - I will have to see the people from the ministry when they get there.
   Il faudra que je voie ça.:
     google:
     - I'll have to see this.
@@ -5527,6 +5838,12 @@ french_to_english:
   Il n'aurait pas parlé de nous comme il l'a fait s'il n'en avait pas eu un.:
     google:
     - He wouldn't have talked about us like he did if he hadn't had one.
+  Il n'aurait vraiment vraiment vraiment pas dû faire ça.:
+    google:
+    - He really really really shouldn't have done that.
+  Il n'avait pas pensé à ça et il aurait vraiment, vraiment dû.:
+    google:
+    - He hadn't thought of that and he really, really should have.
   Il n'avait pas pensé à ça non plus.:
     google:
     - He hadn't thought of that either.
@@ -5668,6 +5985,9 @@ french_to_english:
   Il ne voulait pas que cela se sache.:
     google:
     - He didn't want that to be known.
+  Il ne voulait pas voir la façon dont ils le regardaient pour l'instant.:
+    google:
+    - He didn't want to see the way they were looking at him right now.
   Il n’a jamais fait ça !:
     google:
     - He never did that!
@@ -5993,6 +6313,9 @@ french_to_english:
   Ils ne sont pas à Poudlard ?:
     google:
     - Aren't they at Hogwarts?
+  Ils ne vous ont pas dit la seule chose que vous deviez savoir.:
+    google:
+    - They didn't tell you the only thing you needed to know.
   Ils ne vous ont rien dit d'autre ?:
     google:
     - Didn't they tell you anything else?
@@ -6011,6 +6334,9 @@ french_to_english:
   Ils s'en furent.:
     google:
     - They left.
+  Ils savaient que les Potter, eux aussi, avaient un petit garçon, mais ils ne l’avaient jamais vu.:
+    google:
+    - They knew the Potters also had a baby boy, but they had never seen him.
   Ils savaient.:
     google:
     - They knew.
@@ -6068,6 +6394,9 @@ french_to_english:
   J'ai peut-être une idée pour toi.:
     google:
     - I might have an idea for you.
+  J'aurais dû le savoir sans même demander !:
+    google:
+    - I should have known without even asking!
   J'en ai assez !:
     google:
     - I have enough !
@@ -6146,12 +6475,21 @@ french_to_english:
   Je croyais que tu ne nous parlais plus ? dit Harry.:
     google:
     - I thought you weren't talking to us anymore? Harry said.
+  Je devais le faire, professeur !:
+    google:
+    - I had to do it, professor!
   Je dirais plutôt d’homme.:
     google:
     - I would rather say male.
   Je dis ça comme ça.:
     google:
     - I say it like that.
+  Je dois aller jusqu’au bout !:
+    google:
+    - I have to go all the way!
+  Je dois vous parler.:
+    google:
+    - I need to talk to you.
   Je l'ai.:
     google:
     - I got it.
@@ -6278,6 +6616,16 @@ french_to_english:
   Je n'ai pas dit que je n'allais pas te répondre.:
     google:
     - I didn't say I wasn't going to answer you.
+  Je n'ai pas dit que tu avais dis que tu étais Hermione Granger, j'ai juste dit que tu étais Hermione Granger.:
+    google:
+    - I didn't say you said you were Hermione Granger, I just said you were Hermione
+      Granger.
+  Je n'aurais jamais dû penser comme ça.:
+    google:
+    - I should never have thought like this.
+  Je n'aurais pas dû dire ça.:
+    google:
+    - I shouldn't have said that.
   Je n'avais pas le temps, c'est tout !:
     google:
     - I didn't have time, that's all!
@@ -6389,6 +6737,9 @@ french_to_english:
   Je ne sais pas bien ce qui va se passer maintenant.:
     google:
     - I'm not sure what's going to happen now.
+  Je ne sais pas ce que je vais devoir faire.:
+    google:
+    - I don't know what I'm going to have to do.
   Je ne sais pas ce qui m’a pris !:
     google:
     - I do not know what happend to me !
@@ -6467,6 +6818,9 @@ french_to_english:
   Je ne sais rien.:
     google:
     - I know nothing.
+  Je ne sais toujours pas si je dois vous croire, répliqua Harry.:
+    google:
+    - I still don't know if I should believe you, Harry replied.
   Je ne sais vraiment pas.:
     google:
     - I really do not know.
@@ -6527,6 +6881,9 @@ french_to_english:
   Je ne veux rien.:
     google:
     - I do not want anything.
+  Je ne vois pas comment ce garçon pourrait faire mieux que vous, Dumbledore.:
+    google:
+    - I don't see how this boy could do better than you, Dumbledore.
   Je ne vois que toi.:
     google:
     - I only see you.
@@ -6569,6 +6926,9 @@ french_to_english:
   Je n’aurais jamais cru ça de vous.:
     google:
     - I never would have believed that from you.
+  Je n’aurais pas eu le temps, de toute façon.:
+    google:
+    - I wouldn't have had the time, anyway.
   Je n’aurais pas pu.:
     google:
     - I were not able to.
@@ -6924,6 +7284,9 @@ french_to_english:
   Je voulais qu'il soit mort.:
     google:
     - I wanted him to be dead.
+  Je vous demande seulement une chose.:
+    google:
+    - I only ask you one thing.
   Je vous demande un peu !:
     google:
     - I ask you a little!
@@ -6939,6 +7302,9 @@ french_to_english:
   Je… C’est Lupin qui me l’a dit.:
     google:
     - I ... Lupine told me.
+  Je… Hermione, je pense que tu pourrais vouloir faire ça de toute façon.:
+    google:
+    - I… Hermione, I think you might want to do this anyway.
   Je… Je ne pense pas que Sirius soit ici.:
     google:
     - I… I don't think Sirius is here.
@@ -7050,6 +7416,9 @@ french_to_english:
   J’apprends le français depuis deux ans.:
     google:
     - I've been learning French for two years.
+  J’aurais dû faire la même chose.:
+    google:
+    - I should have done the same.
   J’en ai assez !:
     google:
     - I have enough !
@@ -7143,6 +7512,21 @@ french_to_english:
   Le faire ?:
     google:
     - Do it ?
+  Le garçon est derrière toi !:
+    google:
+    - The boy is behind you!
+  Le garçon la regarda.:
+    google:
+    - The boy looked at her.
+  Le garçon parla.:
+    google:
+    - The boy spoke.
+  Le garçon sourit à nouveau.:
+    google:
+    - The boy smiles again.
+  Le ministère doit faire quelque chose.:
+    google:
+    - The department has to do something.
   Le ministère n’irait quand même pas s’en prendre à vous, Monsieur ?:
     google:
     - Wouldn't the ministry come after you, sir?
@@ -7194,6 +7578,9 @@ french_to_english:
   Le professeur Quirrell n'a pas dit ça et vous non plus.:
     google:
     - Professor Quirrell didn't say that and neither did you.
+  Le professeur Quirrell n'aurait pas dû lui dire cela.:
+    google:
+    - Professor Quirrell shouldn't have told him that.
   Le professeur Quirrell ne souriait plus.:
     google:
     - Professor Quirrell was no longer smiling.
@@ -7242,18 +7629,42 @@ french_to_english:
   Le quoi ? dit Harry.:
     google:
     - The what ? Harry said.
+  Le regard de Harry Potter passa de Granger à Draco.:
+    google:
+    - Harry Potter's gaze shifted from Granger to Draco.
   Le sorcier D.:
     google:
     - The sorcerer D.
   Le visage de Harry disait tout ce qu'elle avait besoin de savoir.:
     google:
     - Harry's face said all she needed to know.
+  Les Gryffondor la regardaient comme s'ils n'avaient pas la plus petite idée de la façon dont ils devaient la regarder.:
+    google:
+    - The Gryffindors were looking at her as if they had no idea how to look at her.
   Les autres semblaient sans voix.:
     google:
     - The others seemed speechless.
   Les autres sont de moi.:
     google:
     - The others are mine.
+  Les autres élèves devaient déjà être là.:
+    google:
+    - The other students must have already been there.
+  Les gens font juste ce qu'ils peuvent, quand ils le peuvent.:
+    google:
+    - People just do what they can, when they can.
+  Les gens le regardaient déjà.:
+    google:
+    - People were already looking at him.
+  Les gens savent qu'on le sait.:
+    google:
+    - People know we know it.
+  Les gens sont comme ça si on ne leur apprend rien d'autre.:
+    google:
+    - People are like that if you don't teach them anything else.
+  Les gens vont vouloir te prendre tout ton temps.:
+    google:
+    - People are going to want to take all of your time.
   Les première année sont tous là ?:
     google:
     - Are the first years all there?
@@ -7368,6 +7779,9 @@ french_to_english:
   Maintenant que nous savions.:
     google:
     - Now that we knew.
+  Maintenant que tu es avec moi, je ne dois plus faire de magie.:
+    google:
+    - Now that you're with me, I don't have to do magic anymore.
   Maintenant quoi ?:
     google:
     - Now what ?
@@ -7377,6 +7791,9 @@ french_to_english:
   Maintenant, allez !:
     google:
     - Now come on!
+  Maintenant, au moins, tu auras le temps de faire ton devoir pour Rogue !:
+    google:
+    - Now at least you'll have time to do your duty for Snape!
   Maintenant, c'était le jour de Harry Potter.:
     google:
     - Now it was Harry Potter day.
@@ -7491,6 +7908,9 @@ french_to_english:
   Mais en fait, il ne voulait pas que tu saches quoi que ce soit.:
     google:
     - But in fact, he didn't want you to know anything.
+  Mais en fait, tu n’aurais pas dû voir ça, Harry.:
+    google:
+    - But in fact, you shouldn't have seen this, Harry.
   Mais est-ce bien sûr ?:
     google:
     - But is it of course?
@@ -7575,6 +7995,10 @@ french_to_english:
   Mais je crois qu’Hermione le sait.:
     google:
     - But I think Hermione knows that.
+  Mais je dois dire que je crois que je parle mieux français maintenant qu’il y a… même quand j’étais en France.:
+    google:
+    - But I have to say that I think I speak better French now than there is… even
+      when I was in France.
   Mais je l'ai quand même fait !:
     google:
     - But I did it anyway!
@@ -7596,6 +8020,9 @@ french_to_english:
   Mais je ne peux pas.:
     google:
     - But I can not.
+  Mais je ne peux pas… Nous ne pouvons pas… Il y a des choses que je dois faire seul maintenant.:
+    google:
+    - But I can't… We can't… There are things I have to do alone now.
   Mais je ne pouvais pas voir à qui, il semblait être seul.:
     google:
     - But I couldn't see to whom, he seemed to be alone.
@@ -7656,6 +8083,9 @@ french_to_english:
   Mais maintenant, je ne sais pas ce qui va se passer.:
     google:
     - But now I don't know what's going to happen.
+  Mais maintenant, je sais ce que j'aurais dû lui dire.:
+    google:
+    - But now I know what I should have told him.
   Mais merci d'avoir demandé.:
     google:
     - But thanks for asking.
@@ -7782,6 +8212,9 @@ french_to_english:
   Mais tu as fait ce qu’il disait ?:
     google:
     - But did you do what he said?
+  Mais tu aurais dû entendre la façon dont il parlait de Ron et de Ginny !:
+    google:
+    - But you should have heard the way he was talking about Ron and Ginny!
   Mais tu es bien, ici, avec Hagrid, n’est-ce pas ?:
     google:
     - But you're good here with Hagrid, aren't you?
@@ -7980,6 +8413,9 @@ french_to_english:
   Merci, Harry.:
     google:
     - Thanks, Harry.
+  Merci, Hermione Granger.:
+    google:
+    - Thanks, Hermione Granger.
   Merci, Professeur.:
     google:
     - Thanks, Professor.
@@ -8196,6 +8632,9 @@ french_to_english:
   Même si je le pouvais, je ne le ferais pas.:
     google:
     - Even if I could, I wouldn't.
+  Même toi, Hermione Granger.:
+    google:
+    - Even you, Hermione Granger.
   Même à Rogue ? demanda Harry.:
     google:
     - Even in Snape? Harry asked.
@@ -8229,6 +8668,12 @@ french_to_english:
   Ne dites rien !:
     google:
     - Do not say anything !
+  Ne dois pas demander.:
+    google:
+    - Don't have to ask.
+  Ne doit pas !:
+    google:
+    - Must not !
   Ne fais pas ça, Harry, dit soudain Neville.:
     google:
     - Don't do that, Harry, Neville said suddenly.
@@ -8238,6 +8683,9 @@ french_to_english:
   Ne le prenez pas mal.:
     google:
     - Don't take it the wrong way.
+  Ne lui demande pas, garçon.:
+    google:
+    - Don't ask him, boy.
   Ne me dis pas que tu n’en as jamais entendu parler ?:
     google:
     - Don't tell me you've never heard of it?
@@ -8403,6 +8851,10 @@ french_to_english:
   Non, je suis tout seul.:
     google:
     - No, I'm all alone.
+  Non, je veux dire que tu aurais dû dire non, que ce soit ce que tu voulais vraiment ou pas.:
+    google:
+    - No, I mean you should have said no, whether that's what you really wanted or
+      not.
   Non, je voulais dire le mieux.:
     google:
     - No, I meant the best.
@@ -8541,6 +8993,9 @@ french_to_english:
   Non, tout le monde ne le sait pas !:
     google:
     - No, not everyone knows it!
+  Non, tu ne devrais pas penser ça, Harry !:
+    google:
+    - No, you shouldn't be thinking that, Harry!
   Non, tu ne le feras pas, dit Serpentard.:
     google:
     - No, you won't, Slytherin said.
@@ -8577,6 +9032,9 @@ french_to_english:
   Nous avons déjà ce qu’il nous faut, merci !:
     google:
     - We already have what we need, thank you!
+  Nous devons voir le professeur Maugrey, dit Hermione.:
+    google:
+    - We need to see Professor Moody, said Hermione.
   Nous en avons assez dit.:
     google:
     - We have said enough.
@@ -8613,6 +9071,9 @@ french_to_english:
   Nous n’en savons pas plus que toi, Hermione, répondit Mr Weasley.:
     google:
     - We don't know any more than you, Hermione, replied Mr. Weasley.
+  Nous parlons vraiment d'un garçon.:
+    google:
+    - We are really talking about a boy.
   Nous savons maintenant où va Malefoy !:
     google:
     - We now know where Malfoy is going!
@@ -8916,6 +9377,9 @@ french_to_english:
   On n’a jamais fait ça.:
     google:
     - We've never done that.
+  On n’a pas encore eu un seul devoir !:
+    google:
+    - We haven't had a single assignment yet!
   On n’a pas fait grand chose .:
     google:
     - We haven't done much.
@@ -9013,6 +9477,9 @@ french_to_english:
   On était tous là, dit-il, on a bien vu ce qui s’est passé.:
     google:
     - We were all there, he said, we saw what happened.
+  Ou - Hermione Granger, juste à côté ?:
+    google:
+    - Or - Hermione Granger, next door?
   Ou bien il avait mal entendu.:
     google:
     - Or he had misheard.
@@ -10060,6 +10527,9 @@ french_to_english:
   Qu'est-ce qu'il… non, je crois savoir ce que ça fait.:
     google:
     - What the… no, I think I know what it feels like.
+  Qu'est-ce que Dumbledore aurait dû croire ?:
+    google:
+    - What should Dumbledore have believed?
   Qu'est-ce que c'est que ça ?:
     google:
     - What is that ?
@@ -10150,6 +10620,9 @@ french_to_english:
   Quelque chose que je n'ai pas encore essayé.:
     google:
     - Something I haven't tried yet.
+  Quelqu’un a dû le faire à ma place.:
+    google:
+    - Someone must have done it for me.
   Quelqu’un d’autre veut essayer ?:
     google:
     - Anyone else want to try?
@@ -10672,6 +11145,9 @@ french_to_english:
   Qu’est-ce qu’ils FONT ?:
     google:
     - What are they doing ?
+  Qu’est-ce qu’ils doivent faire ?:
+    google:
+    - What are they supposed to do?
   Qu’est-ce qu’ils faisaient là ?:
     google:
     - What were they doing there?
@@ -10693,6 +11169,12 @@ french_to_english:
   Qu’est-ce qu’on a comme cours, maintenant ?:
     google:
     - What do we have for class now?
+  Qu’est-ce qu’on doit en faire, d’après toi ?:
+    google:
+    - What do you think we should do with it?
+  Qu’est-ce qu’on doit faire ?:
+    google:
+    - What do we have to do ?
   Qu’est-ce qu’on fait ?:
     google:
     - What are we doing ?
@@ -10777,6 +11259,9 @@ french_to_english:
   Regardez le petit Potter !:
     google:
     - Look at little Potter!
+  Regardez les gens !:
+    google:
+    - Look at the people!
   Regardez où vous allez, Potter !:
     google:
     - Watch where you are going, Potter!
@@ -10981,6 +11466,9 @@ french_to_english:
   Si ce n'était pas déjà le cas.:
     google:
     - If it wasn't already.
+  Si elle avait seulement essayé.:
+    google:
+    - If she had only tried.
   Si je fais ça, je n'aurais plus personne.:
     google:
     - If I do that, I wouldn't have anyone.
@@ -10993,6 +11481,12 @@ french_to_english:
   Si on allait faire un tour chez Hagrid ?:
     google:
     - How about taking a trip to Hagrid's?
+  Si seulement il avait pris la cape, dit Harry.:
+    google:
+    - If only he had taken the cloak, Harry said.
+  Si tu le sais, Hermione Granger, tu dois me le dire !:
+    google:
+    - If you know, Hermione Granger, you have to tell me!
   Si tu le veux.:
     google:
     - If you want it.
@@ -11062,6 +11556,9 @@ french_to_english:
   Si, tu l'es.:
     google:
     - If thou art.
+  Si, tu peux, parce que tu dois le faire.:
+    google:
+    - Yes, you can, because you have to.
   Silence !:
     google:
     - Silence!
@@ -11293,6 +11790,9 @@ french_to_english:
   Toute l’école ne parle que de ça, dit Ron.:
     google:
     - The whole school is just talking about this, Ron said.
+  Toutes les personnes doivent avoir entre 20 et 50 ans.:
+    google:
+    - All people must be between 20 and 50 years old.
   Trois -:
     google:
     - Three -
@@ -11434,6 +11934,9 @@ french_to_english:
   Tu as vu, Harry ?:
     google:
     - Did you see, Harry?
+  Tu aurais dû me demander avant de faire quelque chose comme ça, Harry !:
+    google:
+    - You should have asked me before you did something like this, Harry!
   Tu crois ? dit Harry.:
     google:
     - You think ? Harry said.
@@ -11446,9 +11949,21 @@ french_to_english:
   Tu crois qu’il voulait vraiment que tu y ailles ? demanda Ron.:
     google:
     - Do you think he really wanted you to go? Ron asked.
+  Tu crois qu’on devrait en parler à quelqu’un ? demanda Harry à Ron.:
+    google:
+    - Do you think we should talk to someone? Harry asked Ron.
   Tu crois ça ? répliqua George.:
     google:
     - You believe that ? George replied.
+  Tu dois ? dit Dumbledore.:
+    google:
+    - You must ? said Dumbledore.
+  Tu dois apprendre à dire non.:
+    google:
+    - You have to learn to say no.
+  Tu dois être vraiment très bon, Harry !:
+    google:
+    - You must be really, really good, Harry!
   Tu en fais trop.:
     google:
     - You are doing too much.
@@ -11536,6 +12051,9 @@ french_to_english:
   Tu l’as entendu.:
     google:
     - You heard it.
+  Tu me dois cela !:
+    google:
+    - You owe me that!
   Tu me l'as dit.:
     google:
     - You told me.
@@ -11605,6 +12123,9 @@ french_to_english:
   Tu n’as qu’à demander à mon père, ce soir.:
     google:
     - You just have to ask my father tonight.
+  Tu n’aurais pas dû faire ça.:
+    google:
+    - You should not have done that.
   Tu n’aurais pas vu Ron et Hermione ? demanda Harry.:
     google:
     - Haven't you seen Ron and Hermione? Harry asked.
@@ -11791,6 +12312,9 @@ french_to_english:
   Un autre silence.:
     google:
     - Another silence.
+  Un garçon.:
+    google:
+    - A boy.
   Un grand homme, Dumbledore.:
     google:
     - A great man, Dumbledore.
@@ -11812,6 +12336,9 @@ french_to_english:
   Un jour.:
     google:
     - One day.
+  Un petit garçon !:
+    google:
+    - A little boy !
   Un peu comme toi et Mr Malefoy.:
     google:
     - Kind of like you and Mr. Malfoy.
@@ -11854,6 +12381,9 @@ french_to_english:
   Une fois de plus.:
     google:
     - One more time.
+  Une fois seulement ?:
+    google:
+    - Once only ?
   Une petite idée ?:
     google:
     - A little idea?
@@ -11929,6 +12459,9 @@ french_to_english:
   Voilà tout ce que j’avais à vous dire.:
     google:
     - That's all I had to tell you.
+  Voilà une partie de ce qui s'est passé !:
+    google:
+    - This is part of what happened!
   Voilà, comme ça… Il faut que tout le monde puisse bien voir.:
     google:
     - Here it is, like that… Everyone must be able to see well.
@@ -12016,6 +12549,24 @@ french_to_english:
   Vous avez… Vous avez eu… ?:
     google:
     - Did you… Did you…?
+  Vous croyez qu’on devrait aller voir Hagrid et lui parler de tout ça ?:
+    google:
+    - Do you think we should go see Hagrid and talk to him about this?
+  Vous devez apprendre à penser avant de parler, M. Potter.:
+    google:
+    - You must learn to think before you speak, Mr. Potter.
+  Vous devez apprendre à savoir ce que vous ne savez pas.:
+    google:
+    - You have to learn to know what you don't know.
+  Vous devez savoir cela, Dumbledore.:
+    google:
+    - You must know this, Dumbledore.
+  Vous devriez savoir ça, maintenant.:
+    google:
+    - You should know that by now.
+  Vous dites que les gens voient Dumbledore comme ça ?:
+    google:
+    - You say people see Dumbledore like this?
   Vous en aurez assez ?:
     google:
     - Will you have enough?
@@ -12136,6 +12687,9 @@ french_to_english:
   Vous n’entendez pas ? demanda Harry.:
     google:
     - Can't you hear? Harry asked.
+  Vous parlez en classe, Granger ?:
+    google:
+    - Are you speaking in class, Granger?
   Vous pensez vraiment ?:
     google:
     - Do you really think?
@@ -12154,6 +12708,12 @@ french_to_english:
   Vous prendrez l’autre main de Ginny.:
     google:
     - You'll take Ginny's other hand.
+  Vous saurez déjà la chose que vous devez faire.:
+    google:
+    - You will already know the thing you need to do.
+  Vous savez ce que je dois vous demander.:
+    google:
+    - You know what I have to ask you.
   Vous savez ce que vous avez à faire !:
     google:
     - You know what you have to do!
@@ -12265,6 +12825,9 @@ french_to_english:
   Vraiment pas.:
     google:
     - Truly not.
+  Vraiment sûr, mon garçon ?:
+    google:
+    - Really sure, boy?
   Vraiment, Harry ?:
     google:
     - Really, Harry?
@@ -12295,6 +12858,9 @@ french_to_english:
   À Poudlard.:
     google:
     - At Hogwarts.
+  À côté de lui, Granger fit de même.:
+    google:
+    - Beside him, Granger did the same.
   À côté de lui, M. Lupin faisait de même.:
     google:
     - Next to him, Mr. Lupine did the same.
@@ -12397,6 +12963,18 @@ french_to_english:
   Ça demande du temps.:
     google:
     - It takes time.
+  Ça devait être ça.:
+    google:
+    - It had to be that.
+  Ça devra être fait de toute façon.:
+    google:
+    - It will have to be done anyway.
+  Ça devrait bien se passer, maintenant.:
+    google:
+    - It should be okay now.
+  Ça doit être mieux pour toi, non ?:
+    google:
+    - Must be better for you, right?
   Ça et la baguette et ce quelque chose qui faisait de vous un sorcier.:
     google:
     - That and the wand and that something that made you a wizard.
@@ -12427,6 +13005,9 @@ french_to_english:
   Ça n'allait pas.:
     google:
     - It wasn't right.
+  Ça n'aurait pas dû.:
+    google:
+    - It shouldn't have.
   Ça n'est pas juste, Hermione !:
     google:
     - It's not fair, Hermione!

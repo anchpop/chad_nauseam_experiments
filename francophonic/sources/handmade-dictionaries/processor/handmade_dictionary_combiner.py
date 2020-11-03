@@ -41,8 +41,11 @@ def main(analysis):
                         if definition.get('pos', '') == '':
                             print(f"in a definition for the word {word}, you are missing 'pos'!")
                             return
-                        if definition["pos"] == "verb" and definition.get("conjugations", '') in ['', []]:
-                            print(f"in a definition for the verb {word}, you are missing conjugations! they're required since the word is a verb")
+                        if definition["pos"] == "verb" and definition.get("conjugations_french", '') in ['', []]:
+                            print(f"in a definition for the verb {word}, you are missing french conjugations! they're required since the word is a verb")
+                            return
+                        if definition["pos"] == "verb" and definition.get("conjugations_english", '') in ['', []]:
+                            print(f"in a definition for the verb {word}, you are missing english conjugations! they're required since the word is a verb")
                             return
                     if definition.get('translations', '') == '':
                         print(f"in a definition for the word {word}, you are missing 'translations'!")

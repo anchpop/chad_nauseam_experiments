@@ -1756,6 +1756,153 @@ french:
       - in front of
       - past
     uuid: 0fb59105-000e-4df6-8fe7-e45c8f4d8465
+  devoir:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to have to:
+          future: have
+          past: have
+          present: have
+        to ought to:
+          future: ought
+          past: ought
+          present: ought
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: dû
+            ils/elles - eussent: dû
+            j' - eusse: dû
+            nous - eussions: dû
+            tu - eusses: dû
+            vous - eussiez: dû
+          passé première forme:
+            il/elle - aurait: dû
+            ils/elles - auraient: dû
+            j' - aurais: dû
+            nous - aurions: dû
+            tu - aurais: dû
+            vous - auriez: dû
+          présent:
+            il/elle: devrait
+            ils/elles: devraient
+            je: devrais
+            nous: devrions
+            tu: devrais
+            vous: devriez
+        indicatif:
+          futur:
+            il/elle: devra
+            ils/elles: devront
+            je: devrai
+            nous: devrons
+            tu: devras
+            vous: devrez
+          futur antérieur:
+            il/elle - aura: dû
+            ils/elles - auront: dû
+            j' - aurai: dû
+            nous - aurons: dû
+            tu - auras: dû
+            vous - aurez: dû
+          imparfait:
+            il/elle: devait
+            ils/elles: devaient
+            je: devais
+            nous: devions
+            tu: devais
+            vous: deviez
+          passé antérieur:
+            il/elle - eut: dû
+            ils/elles - eurent: dû
+            j' - eus: dû
+            nous - eûmes: dû
+            tu - eus: dû
+            vous - eûtes: dû
+          passé composé:
+            il/elle - a: dû
+            ils/elles - ont: dû
+            j' - ai: dû
+            nous - avons: dû
+            tu - as: dû
+            vous - avez: dû
+          passé simple:
+            il/elle: dut
+            ils/elles: durent
+            je: dus
+            nous: dûmes
+            tu: dus
+            vous: dûtes
+          plus-que-parfait:
+            il/elle - avait: dû
+            ils/elles - avaient: dû
+            j' - avais: dû
+            nous - avions: dû
+            tu - avais: dû
+            vous - aviez: dû
+          présent:
+            il/elle: doit
+            ils/elles: doivent
+            je: dois
+            nous: devons
+            tu: dois
+            vous: devez
+        infinitif:
+          passé:
+            avoir: dû
+        participe:
+          passé:
+            aie: dû
+            ayez: dû
+            ayons: dû
+          passé composé:
+            ayant: dû
+          présent:
+            '': devez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: dût
+            qu' - ils/elles: dussent
+            que - je: dusse
+            que - nous: dussions
+            que - tu: dusses
+            que - vous: dussiez
+          passé:
+            qu' - il/elle - ait: dû
+            qu' - ils/elles - aient: dû
+            que - j' - aie: dû
+            que - nous - ayons: dû
+            que - tu - aies: dû
+            que - vous - ayez: dû
+          plus-que-parfait:
+            qu' - il/elle - eût: dû
+            qu' - ils/elles - eussent: dû
+            que - j' - eusse: dû
+            que - nous - eussions: dû
+            que - tu - eusses: dû
+            que - vous - eussiez: dû
+          présent:
+            qu' - il/elle: doive
+            qu' - ils/elles: doivent
+            que - je: doive
+            que - nous: devions
+            que - tu: doives
+            que - vous: deviez
+      display: devoir
+      gender: NA
+      modal_in_english: true
+      model: devoir
+      other_forms:
+      - se devoir
+      - ne pas devoir
+      - ne pas se devoir
+      pos: verb
+      transitive: false
+      translations:
+      - to ought to
+      - to have to
+    uuid: 1237cf3c-cdc1-49e7-ac16-f4df8ac344a1
   dire:
     definitions:
     - auxiliary: avoir
@@ -3140,6 +3287,17 @@ french:
       translations:
       - to need
     uuid: a5920f27-771e-4ac2-a5c5-d80e1a7bff49
+  façon:
+    definitions:
+    - display: façon
+      exampleSentences:
+      - english: in another way
+        french: d’une autre façon
+      gender: fem
+      pos: noun
+      translations:
+      - way
+    uuid: 59a3414d-2302-493b-bc27-af68ec1a4e67
   fois:
     definitions:
     - display: fois
@@ -3180,6 +3338,23 @@ french:
     definitions:
     - notaword: true
     uuid: 87fab851-7b83-4651-90b3-82592394dee2
+  garçon:
+    definitions:
+    - display: garçon
+      gender: masc
+      pos: noun
+      translations:
+      - boy
+    uuid: fb6c4438-a88d-4c93-ad0b-b979e24f0b25
+  gens:
+    definitions:
+    - display: gens
+      gender: NA
+      plural: true
+      pos: noun
+      translations:
+      - people
+    uuid: 3001fad5-4f79-4334-87e2-17c3c6cd1909
   george:
     definitions:
     - notaword: true
@@ -3209,6 +3384,11 @@ french:
       translations:
       - tall
     uuid: 4bad3ae4-a413-48e7-a344-2f565780f841
+  granger:
+    definitions:
+    - display: granger
+      notaword: true
+    uuid: aeec3b91-2492-45f3-97a8-e0439bb93cbf
   gryffondor:
     definitions:
     - notaword: true
@@ -4148,6 +4328,17 @@ french:
       - to speak
       - to talk
     uuid: 346ba4c3-9670-4144-9ba6-eef4f52deaac
+  partie:
+    definitions:
+    - display: partie
+      exampleSentences:
+      - english: Part of the group will go to Italy.
+        french: Une partie du groupe partira en Italie.
+      gender: fem
+      pos: noun
+      translations:
+      - part
+    uuid: dc6f558c-6bf7-4b6d-a978-d2dd4598a51e
   pas:
     definitions:
     - display: ne ... pas
@@ -7179,6 +7370,17 @@ french:
       - alone
       - on one's own
     uuid: 6fd00f16-449a-44ee-ba64-3de40ecb9ce7
+  seulement:
+    definitions:
+    - display: seulement
+      exampleSentences:
+      - english: only yesterday
+        french: seulement hier
+      gender: NA
+      pos: adverb
+      translations:
+      - only
+    uuid: 13ec4c02-f671-423f-be91-89bb3a64f7e2
   si:
     definitions:
     - display: si
@@ -7725,6 +7927,15 @@ french:
       translations:
       - you
     uuid: 4020e882-f93a-4f68-b280-6c8e31e41813
+  ténèbres:
+    definitions:
+    - display: ténèbres
+      gender: fem
+      plural: true
+      pos: noun
+      translations:
+      - darkness
+    uuid: 450e75aa-a9ed-4ead-a6dd-0244ee3a31f8
   tête:
     definitions:
     - display: tête
