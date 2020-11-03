@@ -44,7 +44,7 @@ Harry prit une profonde inspiration. "Je n'ai rien fait de tel," dit-il, "mais j
 
 def do_analysis():
     print("Analyzing source files...")
-    source_paths = ["../books/hp", "../books/inner_french_podcast", "../books/hprat"]
+    source_paths = ["../books/hp", "../books/inner_french_podcast", "../books/hprat", "../books/le_petit_prince", '../books/le_petit_nicolas']
     source_files = [Path(join(p, f)) for p in source_paths for f in listdir(p) if isfile(join(p, f))]
 
     collected_words = {}

@@ -8,6 +8,60 @@ car:
   pos: ''
   translations:
   - ''
+comprendre:
+- display: comprendre
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+compte:
+- display: compte
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+dernière:
+- display: dernière
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+directeur:
+- display: directeur
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+défense:
+- display: défense
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+esprit:
+- display: esprit
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+face:
+- display: face
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+feu:
+- display: feu
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+histoire:
+- display: histoire
+  gender: ''
+  pos: ''
+  translations:
+  - ''
 leva:
 - display: leva
   gender: ''
@@ -20,8 +74,50 @@ ni:
   pos: ''
   translations:
   - ''
+part:
+- display: part
+  gender: ''
+  pos: ''
+  translations:
+  - ''
 peur:
 - display: peur
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+presque:
+- display: presque
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+question:
+- display: question
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+raison:
+- display: raison
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+sujet:
+- display: sujet
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+trouver:
+- display: trouver
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+vos:
+- display: vos
   gender: ''
   pos: ''
   translations:

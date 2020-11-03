@@ -31,7 +31,7 @@ When adding verbs, use the `get_conjugations.py` script to easily generate the Y
 
 
     with open("handmade_dictionary.yaml", "w", encoding='utf-8') as f:
-        template = {word: [{'display': word, 'gender': '', 'pos': '', 'translations': ['']}] for word in unknown_words[:4]}
+        template = {word: [{'display': word, 'gender': '', 'pos': '', 'translations': ['']}] for word in unknown_words[:20]}
         data = yaml.dump(template, Dumper=Dumper, allow_unicode=True)
         f.write("# " + "\n# ".join(instructions.split("\n")) + "\n\n")
         f.write(data)
