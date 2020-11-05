@@ -1483,7 +1483,7 @@ french:
   compte:
     definitions:
     - display: compte
-      exmapleSentences:
+      exampleSentences:
       - english: That’s the right amount.
         french: Le compte est bon.
       gender: masc
@@ -5107,7 +5107,7 @@ french:
   ni:
     definitions:
     - display: ni
-      exmapleSentences:
+      exampleSentences:
       - english: I like neither lentils nor spinach.
         french: Je n’aime ni les lentilles ni les épinards.
       - english: Neither of them came.
@@ -6263,7 +6263,6 @@ french:
       gender: fem
       plural: true
       pos: noun
-      singularForm: personne
       translations:
       - people
       see: personne
@@ -9123,7 +9122,7 @@ french:
     - display: sujet
       exampleSentences:
       - french: C’est un sujet intéressant.
-      - english: It’s an interesting subject.
+        english: It’s an interesting subject.
       gender: masc
       pos: noun
       translations:

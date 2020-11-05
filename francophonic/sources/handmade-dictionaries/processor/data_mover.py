@@ -215,14 +215,17 @@ export interface FrenchNounEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchAdjectiveEntry {
   pos: "adjective" | "demonstrative adjective" | "possessive adjective";
+  interrogative?: true;
   plural?: true;
   gender: "NA" | "masc" | "fem";
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchAdverbEntry {
   pos: "adverb";
@@ -230,6 +233,7 @@ export interface FrenchAdverbEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchPropositionEntry {
   pos: "preposition";
@@ -237,6 +241,7 @@ export interface FrenchPropositionEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchExclamationEntry {
   pos: "exclamation"
@@ -244,6 +249,7 @@ export interface FrenchExclamationEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchVerbConjugationEntry {
   pos: "verb"
@@ -256,6 +262,7 @@ export interface FrenchVerbConjugationEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchVerbInfinitifEntry {
   pos: "verb"
@@ -275,6 +282,7 @@ export interface FrenchVerbInfinitifEntry {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchAbbreviation {
   display: String;
@@ -284,6 +292,7 @@ export interface FrenchAbbreviation {
   translations?: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
   plural?: Boolean;
+  see?: String;
 }
 export interface FrenchDeterminer {
   pos: "determiner";
@@ -291,6 +300,7 @@ export interface FrenchDeterminer {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchConjonction {
   pos: "conjonction";
@@ -298,6 +308,7 @@ export interface FrenchConjonction {
   gender: "NA";
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 
 }
 export interface FrenchNumber {
@@ -306,6 +317,7 @@ export interface FrenchNumber {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchPronoun {
   pos: "pronoun" | "relative pronoun" | "possessive pronoun" | "disjunctive pronoun" | "indirect object pronoun";
@@ -314,6 +326,7 @@ export interface FrenchPronoun {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 export interface FrenchArticle {
   pos: "definite article" | "indefinite article" | "article";
@@ -322,6 +335,7 @@ export interface FrenchArticle {
   display: String;
   translations: Array<String>;
   exampleSentences?: Array<{french: String, english: string}>;
+  see?: String;
 }
 
 export interface FrenchWordEntry {
