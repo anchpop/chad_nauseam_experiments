@@ -20,7 +20,7 @@ const Question = () => {
   return (
     <View style={reviewPageStyles.questionContainer}>
 
-      <View style={{ paddingRight: 5 }}>
+      <View style={{ paddingRight: 7 }}>
         <TouchableOpacity onPress={playSound}>
           <Ionicons name="md-volume-high" size={32} color="black" />
         </TouchableOpacity>
