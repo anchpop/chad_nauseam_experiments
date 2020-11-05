@@ -71,7 +71,7 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       paddingVertical: mobile ? '2%' : '0%',
       marginVertical: mobile ? "0%" : '1%',
       borderRadius: mobile ? 0 : 20,
-      width: mobile ? '100%' : "50%",
+      width: mobile ? '100%' : 1000,
       ...(mobile ? {} : shadowedDeep)
     },
     // General
@@ -89,13 +89,18 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       width: "100%",
       height: "100%",
     },
-    questionText: {
-      fontSize: base.fontSize
-    },
     answerContainer: {
       flex: 5,
       width: "100%",
       height: "100%"
+    },
+    submitButtonContainer: {
+      flex: 1,
+      paddingVertical: mobile ? 10 : 25,
+      width: "100%",
+    },
+    questionText: {
+      fontSize: base.fontSize
     },
     answerTextInput: {
       width: "100%",
@@ -106,11 +111,6 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       borderColor: '#fff',
       backgroundColor: disaffect(base.backgroundColor, .2),
       borderRadius: 6,
-    },
-    submitButtonContainer: {
-      flex: 1,
-      paddingVertical: mobile ? 10 : 25,
-      width: "100%",
     },
     submitButton: {
       height: "100%",

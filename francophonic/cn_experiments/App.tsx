@@ -15,10 +15,9 @@ const App = () => {
   const isMobileDevice = useMediaQuery({
     maxDeviceWidth: 1224
   })
-  const systemPrefersDark = useMediaQuery(
-    {
-      query: "(prefers-color-scheme: dark)"
-    })
+  const systemPrefersDark = useMediaQuery({
+    query: "(prefers-color-scheme: dark)"
+  })
 
   return (
     <ThemeContext.Provider value={{ light: !systemPrefersDark, mobile: isMobileDevice }}>
