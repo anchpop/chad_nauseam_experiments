@@ -175,6 +175,9 @@ def main(analysis = None):
 
     output_translations = {'english': {}, 'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences if sentence in translation_dict['french_to_english']}}
 
+    output_word_frequencies = {word: {" - ".join(list(book)): counter for book, counter in info.items()} for word, info in analysis[0].items()}
+
+
     sent = """
 export interface EnglishEntry {
   english: Array<String>;
@@ -198,7 +201,10 @@ export default sentences
     with safer.open("../../cn_experiments/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
         f.write(sent)
 
-    words = """export interface NotAWord {
+
+
+
+    translationsOutput = """export interface NotAWord {
   notaword: true;
   exampleSentences?: Array<{french: String, english: string}>;
 }
@@ -325,18 +331,30 @@ export interface FrenchWordEntry {
 }
 
 const words: {french: {[id: string] : FrenchWordEntry}, english: {[id: string] : Array<string>}} = """
-    words += json.dumps(output_words, ensure_ascii=False)
-    words += f"""
+    translationsOutput += json.dumps(output_words, ensure_ascii=False)
+    translationsOutput += f"""
 export const frenchContractions  = {frenchContractions}
 export const englishContractions = {englishContractions}
 export default words
 """
     with safer.open("../../cn_experiments/src/data/worddictionary.tsx", "w", encoding='utf8') as f:
         print("Writing word dictionary to cn_experiments")
-        f.write(words)
+        f.write(translationsOutput)
+
+
+    translationsOutput = """
+const frequencies = """ + json.dumps(output_word_frequencies, ensure_ascii=False) + """
+export default frequencies;
+}"""
+    
+
+
+    with open("../../cn_experiments/src/data/freqdictionary.tsx", "w", encoding='utf8') as f:
+      f.write(translationsOutput)
+
+    
 
     vdir = "../../cn_experiments/assets/audio/french/"
-    # C is a good female voice, D is a good male voice. D seem to be a bit slower than C.
     voice_name = "fr-FR-Wavenet-C"
     previous_files = set([f for f in listdir(vdir) if isfile(join(vdir, f))])
     fil = "export default {\n"
