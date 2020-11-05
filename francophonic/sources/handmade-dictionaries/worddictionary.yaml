@@ -282,6 +282,7 @@ french:
       pos: noun
       translations:
       - year
+      see: an
     uuid: fbba17b5-0786-4a76-be32-9ee1ee223cd9
   apprendre:
     definitions:
@@ -4032,6 +4033,7 @@ french:
       pos: noun
       translations:
       - people
+      see: gen
     uuid: 3001fad5-4f79-4334-87e2-17c3c6cd1909
   george:
     definitions:
@@ -4145,6 +4147,7 @@ french:
       pos: pronoun
       translations:
       - they
+      see: il
     uuid: 4cee4800-cdd3-477b-b731-ab4451941c5c
   impression:
     definitions:
@@ -4278,6 +4281,7 @@ french:
       pos: definite article
       translations:
       - the
+      see: le
     uuid: 570cbcca-8324-4301-bb8e-aa954951bb71
   leur:
     definitions:
@@ -4298,12 +4302,14 @@ french:
       pos: possessive adjective
       translations:
       - their
+      see: leur
     - display: leurs
       gender: NA
       plural: true
       pos: possessive pronoun
       translations:
       - theirs
+      see: leur
     uuid: 9f47fbcb-6c38-46a1-8779-ec3a0ba5f507
   lever:
     definitions:
@@ -4551,6 +4557,7 @@ french:
       see: livre
       translations:
       - book
+      see: livre
     uuid: d4665031-6c17-4c7f-8801-38f51e268883
   loin:
     definitions:
@@ -5276,6 +5283,7 @@ french:
       translations:
       - relative
       - parent
+      see: parent
     uuid: 18117d90-236a-4737-9cb8-bc5995699b4a
   parler:
     definitions:
@@ -6258,6 +6266,7 @@ french:
       singularForm: personne
       translations:
       - people
+      see: personne
     uuid: b05bdbb0-172c-488b-9a60-f93939dabc1f
   petit:
     definitions:
@@ -6872,6 +6881,7 @@ french:
       pos: adjective
       translations:
       - present
+      see: présent
     uuid: 90319d8a-a3c9-4ae7-bf9c-d64bf119c452
   père:
     definitions:
@@ -6933,6 +6943,7 @@ french:
       translations:
       - some
       - whatever
+      see: quelque
     uuid: 081ddec2-9da0-4f4b-a4b8-03fcbf983be9
   quelqu’un:
     definitions:
@@ -8720,6 +8731,7 @@ french:
       translations:
       - his
       - hers
+      see: son
     uuid: bc0d5ecc-ce3e-4d8b-bd43-3c03fd17dc92
   seul:
     definitions:
@@ -8839,6 +8851,7 @@ french:
       pos: noun
       translations:
       - wizards
+      see: sorcier
     uuid: 69858767-c1a8-4cd6-ae57-e85c5bcc33b2
   sorcière:
     definitions:
@@ -9564,6 +9577,7 @@ french:
       translations:
       - all
       - every
+      see: tout
     uuid: ec8f4ee0-a6eb-4b98-af5d-fef294370ea5
   tout:
     definitions:
@@ -9590,6 +9604,7 @@ french:
       pos: adjective
       translations:
       - all
+      see: tout
     uuid: cafab3d7-f8b1-4761-8c35-a80a6d0e0157
   train:
     definitions:
@@ -10954,6 +10969,7 @@ french:
       pos: noun
       translations:
       - eyes
+      see: œil
     uuid: e9de1d81-3e6e-4fa4-b1b9-58eb511c6527
   à:
     definitions:

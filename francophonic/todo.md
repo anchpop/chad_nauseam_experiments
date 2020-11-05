@@ -1,14 +1,14 @@
-1. Separate occurrences from word dictionary (separate concerns belong in separate files)
+1. ✔️ Separate occurrences from word dictionary (separate concerns belong in separate files)
 
-   1. In fact, why do we store the sentences and word occurrences on disk, in ./work? we should just compute them. We should get rid of how we currently use ./work, and instead in it should go the handmade dictionary and anything else we want the user to work on. Then add ./data where we store the dictionary and translation pairs.
+   1. ✔️ In fact, why do we store the sentences and word occurrences on disk, in ./work? we should just compute them. We should get rid of how we currently use ./work, and instead in it should go the handmade dictionary and anything else we want the user to work on. Then add ./data where we store the dictionary and translation pairs.
 
-   2. Goals for storing translation pairs: I want it to be easy to check if google or deepl or a human already translated something. So I'm going to have a "translations" file with a structure like `{french_to_english: {<sentence>: {google: translation, deepl: translation, user1: translation, ...}}}`.
+   2. ✔️ Goals for storing translation pairs: I want it to be easy to check if google or deepl or a human already translated something. So I'm going to have a "translations" file with a structure like `{french_to_english: {<sentence>: {google: translation, deepl: translation, user1: translation, ...}}}`.
 
-   3. Then, just for the user's sake (since this won't change it should just be calculated each run), there should be a fourth file containing french word info. This is a list of words as well as how often they appear in each source. In addition, there should be a file containing each sentence and in which sources it appears. This should keep all the different concerns nicely separate.
+   3. ✔️ Then, just for the user's sake (since this won't change it should just be calculated each run), there should be a fourth file containing french word info. This is a list of words as well as how often they appear in each source. In addition, there should be a file containing each sentence and in which sources it appears. This should keep all the different concerns nicely separate.
 
-1.5: I need to also redo all the verbs, except this time I need to be sure to put in english translations of the different conjugations somehow. I didn't think this would be important but in hindsight it totally is. I'm going to do this by scraping the reverso page for the english versions and then figuring out how to automatically correlated them. Right now I scrape everything properly except the past/present participles which need to each be added somehow
+1.5: ✔️ I need to also redo all the verbs, except this time I need to be sure to put in english translations of the different conjugations somehow. I didn't think this would be important but in hindsight it totally is. I'm going to do this by scraping the reverso page for the english versions and then figuring out how to automatically correlated them. Right now I scrape everything properly except the past/present participles which need to each be added somehow
 
-2. Process word-dictionary into a format more useful to the react app before copying (some research will be needed to figure this out)
+2. ✔️ Process word-dictionary into a format more useful to the react app before copying (some research will be needed to figure this out)
 
 3. Add spaced-repetition flashcards for individual french words. I want to make the user type the correct answer, to really force them to recall it.
 
