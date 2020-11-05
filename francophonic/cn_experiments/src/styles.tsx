@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { StyleSheet } from "react-native";
+import {
+  StyleSheet,
+} from "react-native";
 
 
 import chroma from 'chroma-js'
@@ -17,7 +19,7 @@ const baseTheme = ({ light, mobile }: ThemeInfo) => ({
   buttonTextColor: 'rgb(255, 255, 255)',
   backgroundColor: '#fff',
   textColor: '#000',
-  fontSize: mobile ? 24 : 28,
+  fontSize: mobile ? 22 : 28,
   wordColorGradient: ['#BA0020', '#0BAB64', '#3BB78F', '#7CFFCB'],
 })
 
@@ -67,41 +69,39 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       container: {
         backgroundColor: base.backgroundColor,
         flex: 1,
-        alignItems: 'center',
+        alignItems: 'stretch',
         justifyContent: 'space-between',
         paddingHorizontal: '5%',
         paddingVertical: mobile ? '2%' : '0%',
         marginVertical: mobile ? "0%" : '1%',
         borderRadius: mobile ? 0 : 20,
-        width: mobile ? '100%' : 1000,
+        height: "100%",
+        width: mobile ? "100%" : 1000,
         ...(mobile ? {} : shadowedDeep)
       },
+    }),
 
-      // Review Screen
+    reviewPageStyles: StyleSheet.create({
       questionContainer: {
-        flex: mobile ? 1.1 : .7,
+        flexGrow: mobile ? 1 : .7,
+        paddingVertical: mobile ? 5 : 15,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        width: "100%",
-        height: "100%",
       },
       answerContainer: {
         flex: 5,
-        width: "100%",
-        height: "100%"
+        flexShrink: 2,
       },
       submitButtonContainer: {
         flex: 1,
         paddingVertical: mobile ? 10 : 25,
-        width: "100%",
       },
       questionText: {
         fontSize: base.fontSize
       },
       answerTextInput: {
-        width: "100%",
-        height: "100%",
+        flex: 1,
         textAlignVertical: 'top',
         fontSize: base.fontSize,
         padding: 10,
@@ -110,7 +110,7 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
         borderRadius: 6,
       },
       submitButton: {
-        height: "100%",
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: base.submitButtonColor
@@ -120,6 +120,7 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
         fontSize: 24,
       },
     }),
+
     // General
     buttonStyle: ({ pressed }: { pressed: Boolean }) => ({
       opacity: pressed ? .5 : 1,

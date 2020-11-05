@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ViewBase } from 'react-native';
 
 import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
@@ -16,9 +16,9 @@ const playSound = async () => {
 }
 
 const Question = () => {
-  const { styles } = useStyle()
+  const { reviewPageStyles } = useStyle()
   return (
-    <View style={styles.questionContainer}>
+    <View style={reviewPageStyles.questionContainer}>
 
       <View style={{ paddingRight: 5 }}>
         <TouchableOpacity onPress={playSound}>
@@ -26,9 +26,12 @@ const Question = () => {
         </TouchableOpacity>
       </View>
 
-      <View>
-        <Text style={styles.questionText}>Je te vois.</Text>
+      <View style={{ flex: 1 }}>
+        <Text style={reviewPageStyles.questionText}>
+          Je te vois. Je te vois. Je te vois.
+        </Text>
       </View>
+
 
     </View>
   )
@@ -36,15 +39,15 @@ const Question = () => {
 
 const ReviewScreen = () => {
   const [currentInput, setCurrentInput] = React.useState("")
-  const { styles } = useStyle()
+  const { reviewPageStyles } = useStyle()
 
   return (
     <Container imageLight={require('../assets/images/france/franceLight.jpg')} imageDark={require('../assets/images/france/franceDark.jpg')}>
       <Question />
 
-      <View style={styles.answerContainer} >
+      <View style={reviewPageStyles.answerContainer} >
         <TextInput
-          style={styles.answerTextInput}
+          style={reviewPageStyles.answerTextInput}
           onChangeText={setCurrentInput}
           value={currentInput}
           multiline={true}
@@ -54,9 +57,9 @@ const ReviewScreen = () => {
         />
       </View>
 
-      <View style={styles.submitButtonContainer}>
-        <Button style={styles.submitButton}>
-          <Text style={styles.submitButtonText}>Submit</Text>
+      <View style={reviewPageStyles.submitButtonContainer}>
+        <Button style={reviewPageStyles.submitButton}>
+          <Text style={reviewPageStyles.submitButtonText}>Submit</Text>
         </Button>
       </View>
     </Container >
