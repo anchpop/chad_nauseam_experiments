@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useState, useEffect } from 'react';
-import { ViewStyle, TouchableOpacity } from 'react-native';
+import { ViewStyle, Pressable } from 'react-native';
 
 import useStyle from "../styles"
 
 const Button = ({ style, children }: { style: ViewStyle, children: React.ReactNode }) => {
-    const styles = useStyle()
+    const { buttonStyle } = useStyle()
     return (
-        <TouchableOpacity style={[styles.Button, style]} >
+        <Pressable style={(i) => ([buttonStyle(i), style])} >
             {children}
-        </TouchableOpacity>
+        </Pressable>
     )
 }
 

@@ -16,9 +16,9 @@ const playSound = async () => {
 }
 
 const Question = () => {
-  const style = useStyle()
+  const { styles } = useStyle()
   return (
-    <View style={style.questionContainer}>
+    <View style={styles.questionContainer}>
 
       <View style={{ paddingRight: 5 }}>
         <TouchableOpacity onPress={playSound}>
@@ -27,7 +27,7 @@ const Question = () => {
       </View>
 
       <View>
-        <Text style={style.questionText}>Je te vois.</Text>
+        <Text style={styles.questionText}>Je te vois.</Text>
       </View>
 
     </View>
@@ -36,15 +36,15 @@ const Question = () => {
 
 const ReviewScreen = () => {
   const [currentInput, setCurrentInput] = React.useState("")
-  const style = useStyle()
+  const { styles } = useStyle()
 
   return (
     <Container imageLight={require('../assets/images/france/franceLight.jpg')} imageDark={require('../assets/images/france/franceDark.jpg')}>
       <Question />
 
-      <View style={style.answerContainer} >
+      <View style={styles.answerContainer} >
         <TextInput
-          style={style.answerTextInput}
+          style={styles.answerTextInput}
           onChangeText={setCurrentInput}
           value={currentInput}
           multiline={true}
@@ -54,9 +54,9 @@ const ReviewScreen = () => {
         />
       </View>
 
-      <View style={style.submitButtonContainer}>
-        <Button style={style.submitButton}>
-          <Text style={style.submitButtonText}>Submit</Text>
+      <View style={styles.submitButtonContainer}>
+        <Button style={styles.submitButton}>
+          <Text style={styles.submitButtonText}>Submit</Text>
         </Button>
       </View>
     </Container >
