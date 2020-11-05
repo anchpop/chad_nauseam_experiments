@@ -1,5 +1,6 @@
 import * as React from "react";
-import { View, Text, TextInput, TouchableOpacity, ViewBase } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+
 
 import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { useColorScheme, useWindowDimensions } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import '@expo/match-media'
@@ -12,12 +12,8 @@ import { ThemeContext } from './src/styles'
 const Stack = createStackNavigator()
 
 const App = () => {
-  const isMobileDevice = useMediaQuery({
-    maxDeviceWidth: 1224
-  })
-  const systemPrefersDark = false ? useMediaQuery({
-    query: "(prefers-color-scheme: dark)"
-  }) : false
+  const isMobileDevice = (useWindowDimensions().width * useWindowDimensions().scale) < 1224
+  const systemPrefersDark = false ? useColorScheme() !== "light" : false
 
   return (
     <ThemeContext.Provider value={{ light: !systemPrefersDark, mobile: isMobileDevice }}>
