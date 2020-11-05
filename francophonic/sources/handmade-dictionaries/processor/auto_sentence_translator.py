@@ -14,6 +14,7 @@ except ImportError:
     from yaml import Loader, Dumper
 from processor.utils import *
 
+import safer
 
 def main(analysis = None):
     if analysis == None:
@@ -64,7 +65,7 @@ def main(analysis = None):
                 translations['english_to_french'] = translations.get('english_to_french', [])
                 data = yaml.dump(translations,
                                 Dumper=Dumper, allow_unicode=True)
-                with open("translations.yaml", "w", encoding='utf-8') as f:
+                with safer.open("translations.yaml", "w", encoding='utf-8') as f:
                     f.write(data)
                 break
             else:

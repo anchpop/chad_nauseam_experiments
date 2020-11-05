@@ -15,6 +15,8 @@ except ImportError:
 import time
 from processor.utils import *
 
+import safer
+
 
 # The sentence extraction regex is super hacky. It can be tested at https://regex101.com/r/RTlar9/1/ .
 # Here are some test sentences: 
@@ -51,7 +53,7 @@ def do_analysis():
     collected_sentences = {}
 
     for filename in source_files:
-        with open(filename, "r", encoding='utf-8') as f:
+        with safer.open(filename, "r", encoding='utf-8') as f:
             source = tuple(filename.parts[-2:])
             for index, line in enumerate(f):
                 if retain_only_characters(line).strip() == "": 

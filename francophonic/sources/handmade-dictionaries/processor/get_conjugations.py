@@ -76,10 +76,6 @@ def parse_conjugations(soup, verb):
 
 def get_conjugations(verbf, verbe, trans):
     current_mode = ""
-
-    """with open("C:/Users/hyper/Desktop/Untitled-1.html", "r", encoding="utf-8") as f:
-        text = f.read()
-        soup = BeautifulSoup(text, 'html.parser')"""
         
     
     (soupf, soupe) = grab_conjugation_soup(verbf, verbe[0])

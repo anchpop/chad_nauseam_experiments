@@ -7,6 +7,8 @@ from os.path import isfile, join
 from processor.utils import *
 import processor.sources_analysis
 
+import safer
+
 def french_conj_description_to_english(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
     # print(f"Finding an english conjugation for the word {french_word} ({french_mode} {french_form} {french_person})")
 
@@ -193,7 +195,7 @@ const sentences: Translations = """
     sent += """
 export default sentences
 """
-    with open("../../cn_experiments/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
+    with safer.open("../../cn_experiments/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
         f.write(sent)
 
     words = """export interface NotAWord {
@@ -329,7 +331,7 @@ export const frenchContractions  = {frenchContractions}
 export const englishContractions = {englishContractions}
 export default words
 """
-    with open("../../cn_experiments/src/data/worddictionary.tsx", "w", encoding='utf8') as f:
+    with safer.open("../../cn_experiments/src/data/worddictionary.tsx", "w", encoding='utf8') as f:
         print("Writing word dictionary to cn_experiments")
         f.write(words)
 
@@ -342,7 +344,7 @@ export default words
         fil += f"  '{previous_file.split(voice_name)[0]}': require('../../assets/audio/french/{previous_file}'),\n"
     fil += "}"
 
-    with open('../../cn_experiments/src/data/sentenceAudio.tsx', "w") as f:
+    with safer.open('../../cn_experiments/src/data/sentenceAudio.tsx', "w") as f:
         print("Writing sentence audio database")
         f.write(fil)
 

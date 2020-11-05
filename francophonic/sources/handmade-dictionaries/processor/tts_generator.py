@@ -14,6 +14,8 @@ except ImportError:
 import time
 from processor.utils import *
 
+import safer
+
 
 def main():
     credential_path = "K:/private/anchpop/privatekeys/Francophonic-f72c700469aa.json"
@@ -80,7 +82,7 @@ def main():
                         input=synthesis_input, voice=voice, audio_config=audio_config)
 
                     # The response's audio_content is binary.
-                    with open(f'{dir}{hashd}.mp3', 'wb') as out:
+                    with safer.open(f'{dir}{hashd}.mp3', 'wb') as out:
                         # Write the response to the output file.
                         out.write(response.audio_content)
                         print(f"written as {dir}{hashd}.mp3")

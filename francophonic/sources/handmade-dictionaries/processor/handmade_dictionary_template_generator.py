@@ -12,6 +12,10 @@ except ImportError:
     from yaml import Loader, Dumper
 from processor.utils import *
 
+
+import safer
+
+
 def main(analysis = None):
     if isfile("handmade_dictionary.yaml"):
         print("can't create handmade_dictionary.yaml, it already exists!")
@@ -30,7 +34,7 @@ When adding verbs, use the `get_conjugations.py` script to easily generate the Y
     unknown_words = sorted(list(unknown_words), key=(lambda w: -sum(collected_words[w].values())))
 
 
-    with open("handmade_dictionary.yaml", "w", encoding='utf-8') as f:
+    with safer.open("handmade_dictionary.yaml", "w", encoding='utf-8') as f:
         template = {word: [{'display': word, 'gender': '', 'pos': '', 'translations': ['']}] for word in unknown_words[:20]}
         data = yaml.dump(template, Dumper=Dumper, allow_unicode=True)
         f.write("# " + "\n# ".join(instructions.split("\n")) + "\n\n")

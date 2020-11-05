@@ -8,17 +8,23 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 
+import safer
+
+
 def line_to_words(line, contractions, whole_word_basis):
     def word_splitter(w):
         word_split = w.strip("'").split("'") if not whole_word_basis else [w]
-        new_words = []
-        for index, word in enumerate(word_split):
-            if word != "-":
-                if word in contractions.keys():
-                    new_words.extend(contractions[word])
-                else: 
-                    new_words.append(word)
-        return new_words
+        if len([part for part in word_split[:-1] if part in frenchContractions]) + 1 == len(word_split):
+            new_words = []
+            for index, word in enumerate(word_split):
+                if word != "-":
+                    if word in contractions.keys():
+                        new_words.extend(contractions[word])
+                    else: 
+                        new_words.append(word)
+            return new_words
+        return [w]
+
     words = line.split()
     words = [word_splitter(re.sub('[,!?.0-9()&/:;…«»]', '', word.replace("’", "'")).lower()) for word in words]
     words = [item for sublist in words for item in sublist]
@@ -52,19 +58,19 @@ def line_to_words_english(line):
         englishContractions, whole_word_basis=True)
 
 def get_traslations():
-    with open("translations.yaml", encoding='utf-8') as f:
+    with safer.open("translations.yaml", encoding='utf-8') as f:
         translations = yaml.load(f, Loader=Loader)
     return translations
 
 
 def get_word_dictionary():
-    with open("worddictionary.yaml", encoding='utf-8') as f:
+    with safer.open("worddictionary.yaml", encoding='utf-8') as f:
         word_dictionary = yaml.load(f, Loader=Loader)
     return word_dictionary
 
 
 def get_translations():
-    with open("translations.yaml", encoding='utf-8') as f:
+    with safer.open("translations.yaml", encoding='utf-8') as f:
         word_dictionary = yaml.load(f, Loader=Loader)
     return word_dictionary
 

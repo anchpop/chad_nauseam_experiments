@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-aujourd:
-- display: aujourd
+argent:
+- display: argent
   gender: ''
   pos: ''
   translations:
   - ''
-celui:
-- display: celui
+attention:
+- display: attention
   gender: ''
   pos: ''
   translations:
   - ''
-difficile:
-- display: difficile
+bouche:
+- display: bouche
   gender: ''
   pos: ''
   translations:
   - ''
-donner:
-- display: donner
+ceux:
+- display: ceux
   gender: ''
   pos: ''
   translations:
   - ''
-eh:
-- display: eh
+corps:
+- display: corps
   gender: ''
   pos: ''
   translations:
   - ''
-ensuite:
-- display: ensuite
+envie:
+- display: envie
   gender: ''
   pos: ''
   translations:
   - ''
-fin:
-- display: fin
+forme:
+- display: forme
   gender: ''
   pos: ''
   translations:
   - ''
-hui:
-- display: hui
+genre:
+- display: genre
   gender: ''
   pos: ''
   translations:
   - ''
-impression:
-- display: impression
+heures:
+- display: heures
   gender: ''
   pos: ''
   translations:
   - ''
-lieu:
-- display: lieu
+lentement:
+- display: lentement
   gender: ''
   pos: ''
   translations:
   - ''
-loin:
-- display: loin
+livres:
+- display: livres
   gender: ''
   pos: ''
   translations:
   - ''
-malfoy:
-- display: malfoy
+mettre:
+- display: mettre
   gender: ''
   pos: ''
   translations:
   - ''
-mot:
-- display: mot
+mots:
+- display: mots
   gender: ''
   pos: ''
   translations:
   - ''
-nom:
-- display: nom
+parents:
+- display: parents
   gender: ''
   pos: ''
   translations:
   - ''
-point:
-- display: point
+pierre:
+- display: pierre
   gender: ''
   pos: ''
   translations:
   - ''
-seigneur:
-- display: seigneur
+possible:
+- display: possible
   gender: ''
   pos: ''
   translations:
   - ''
-sortilège:
-- display: sortilège
+quel:
+- display: quel
   gender: ''
   pos: ''
   translations:
   - ''
-venait:
-- display: venait
+sens:
+- display: sens
   gender: ''
   pos: ''
   translations:
   - ''
-vieux:
-- display: vieux
+terre:
+- display: terre
   gender: ''
   pos: ''
   translations:
   - ''
-vite:
-- display: vite
+travail:
+- display: travail
   gender: ''
   pos: ''
   translations:

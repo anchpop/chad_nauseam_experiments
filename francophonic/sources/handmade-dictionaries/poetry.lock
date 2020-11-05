@@ -345,7 +345,7 @@ description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
 python-versions = "*"
-version = "2020.1"
+version = "2020.4"
 
 [[package]]
 category = "main"
@@ -384,6 +384,14 @@ version = "4.6"
 
 [package.dependencies]
 pyasn1 = ">=0.1.3"
+
+[[package]]
+category = "main"
+description = "A safer file opener"
+name = "safer"
+optional = false
+python-versions = "*"
+version = "4.3.0"
 
 [[package]]
 category = "main"
@@ -444,7 +452,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "dedd2397643d394c8fd1f5a5a489a6140a1594e84bca18711751b45f15cc8259"
+content-hash = "12a4a3c50671a4f1a1251119e8a09257e33cdacc093723d49117093ed2fcbdd7"
 lock-version = "1.0"
 python-versions = "~3.8.0"
 
@@ -638,8 +646,8 @@ pytest = [
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
 ]
 pytz = [
-    {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
-    {file = "pytz-2020.1.tar.gz", hash = "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"},
+    {file = "pytz-2020.4-py2.py3-none-any.whl", hash = "sha256:5c55e189b682d420be27c6995ba6edce0c0a77dd67bfbe2ae6607134d5851ffd"},
+    {file = "pytz-2020.4.tar.gz", hash = "sha256:3e6b7dd2d1e0a59084bcee14a17af60c5c562cdc16d828e8eba2e683d3a7e268"},
 ]
 pyyaml = [
     {file = "PyYAML-5.3.1-cp27-cp27m-win32.whl", hash = "sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f"},
@@ -661,6 +669,10 @@ requests = [
 rsa = [
     {file = "rsa-4.6-py3-none-any.whl", hash = "sha256:6166864e23d6b5195a5cfed6cd9fed0fe774e226d8f854fcb23b7bbef0350233"},
     {file = "rsa-4.6.tar.gz", hash = "sha256:109ea5a66744dd859bf16fe904b8d8b627adafb9408753161e766a92e7d681fa"},
+]
+safer = [
+    {file = "safer-4.3.0-py3-none-any.whl", hash = "sha256:407ae0c40295687514315e86c1c2606740925603ead4302616a3f1e7d13c0cf5"},
+    {file = "safer-4.3.0.tar.gz", hash = "sha256:2d90ef3a01870c59bd1b29f5ffc515a380d736602b6d222e89a7585c3db0f34a"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},

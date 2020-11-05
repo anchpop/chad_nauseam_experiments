@@ -12,6 +12,7 @@ except ImportError:
 from processor.utils import *
 import uuid
 
+import safer
 
 
 def main(analysis):
@@ -22,7 +23,7 @@ def main(analysis):
     current_dictionary = get_word_dictionary()
 
 
-    with open("handmade_dictionary.yaml", encoding='utf-8') as f:
+    with safer.open("handmade_dictionary.yaml", encoding='utf-8') as f:
         new_dictionary = yaml.load(f, Loader=Loader)
         for word, definitions in new_dictionary.items():
             if word in current_dictionary["french"]:
@@ -56,13 +57,13 @@ def main(analysis):
                         return
                     if definition['pos'] == "verb":
                         if definition.get('modal_in_english', None) is None:
-                            definition['modal_in_english'] = input(f"Is the verb '{definition['display']}' modal in english?").lower()[0] == "y"
+                            definition['modal_in_english'] = input(f"Is the verb '{definition['display']}' modal in english? ").lower()[0] == "y"
                 else:
                     break
 
             current_dictionary["french"][word] = {"definitions": definitions, 'uuid': str(uuid.uuid4())}
             
-    with open("worddictionary.yaml", "w", encoding='utf-8') as f:
+    with safer.open("worddictionary.yaml", "w", encoding='utf-8') as f:
         data = yaml.dump(current_dictionary, Dumper=Dumper, allow_unicode=True)
         f.write(data)
         numelements = len(current_dictionary["french"])
