@@ -600,6 +600,14 @@ french:
       translations:
       - après
     uuid: 90989585-b3e6-4d72-82af-051a284d52b2
+  argent:
+    definitions:
+    - display: argent
+      gender: masc
+      pos: noun
+      translations:
+      - money
+    uuid: 2f149d35-0320-4ba7-a7cf-382cb9819cec
   assez:
     definitions:
     - display: assez
@@ -614,6 +622,14 @@ french:
       - enough
       - quite
     uuid: bc2b374f-2bc2-4a5d-895c-5734f38111e5
+  attention:
+    definitions:
+    - display: attention
+      gender: fem
+      pos: noun
+      translations:
+      - attention
+    uuid: d673be50-0fc6-4401-b1d0-3b1bd0c369b0
   au:
     definitions:
     - abbreviation: à + le
@@ -1013,6 +1029,14 @@ french:
       translations:
       - maid
     uuid: 6fc2a2ec-5ac8-4315-994c-11a2d1c9fd9b
+  bouche:
+    definitions:
+    - display: bouche
+      gender: fem
+      pos: noun
+      translations:
+      - mouth
+    uuid: 3a89ecca-afb8-4fa6-b7a7-afcec5159880
   bout:
     definitions:
     - display: bout
@@ -1128,6 +1152,16 @@ french:
       translations:
       - this
     uuid: 6b73f914-221c-4a2c-ac4d-fc67c8d45615
+  ceux:
+    definitions:
+    - display: ceux
+      gender: masc
+      plural: true
+      pos: pronoun
+      see: celui
+      translations:
+      - the one
+    uuid: 4acdf80f-154b-4f3b-b2b5-683c7c3af551
   chaque:
     definitions:
     - display: chaque
@@ -1465,6 +1499,21 @@ french:
       translations:
       - against
     uuid: 0c5e9d95-e524-4023-a561-30568ac0bf28
+  corps:
+    definitions:
+    - display: corps
+      exampleSentences:
+      - english: a beautiful body
+        french: un corps superbe
+      - english: slim-fitting jeans
+        french: un jean près du corps
+      - english: a figure-hugging dress
+        french: une robe près du corps
+      gender: masc
+      pos: noun
+      translations:
+      - body
+    uuid: 89e28272-7e7a-40bd-8134-9b6cb99e4fbd
   coup:
     definitions:
     - display: coup
@@ -3055,6 +3104,14 @@ french:
       - between
       - among
     uuid: 063d2e3f-f055-46b2-854e-427b8eb7966b
+  envie:
+    definitions:
+    - display: envie
+      gender: fem
+      pos: noun
+      translations:
+      - envy
+    uuid: db5a6155-c52b-4f89-9fb5-a9a4fd86831b
   esprit:
     definitions:
     - display: esprit
@@ -3905,6 +3962,15 @@ french:
       translations:
       - time
     uuid: 0069abee-976d-4d3e-9a02-65eca3e9e1e4
+  forme:
+    definitions:
+    - display: forme
+      gender: fem
+      pos: noun
+      translations:
+      - form
+      - shape
+    uuid: a861fe6d-0af6-4315-9af0-9a5575462bb6
   france:
     definitions:
     - display: France
@@ -3945,6 +4011,19 @@ french:
       translations:
       - boy
     uuid: fb6c4438-a88d-4c93-ad0b-b979e24f0b25
+  genre:
+    definitions:
+    - display: genre
+      exampleSentences:
+      - english: It’s a kind of cream cake.
+        french: C’est un genre de gâteau à la crème.
+      gender: masc
+      pos: noun
+      translations:
+      - kind
+      - type
+      - sort
+    uuid: b9b7c82f-6729-43aa-bbd6-222898dbf539
   gens:
     definitions:
     - display: gens
@@ -4004,6 +4083,19 @@ french:
     definitions:
     - notaword: true
     uuid: 585398a9-587f-44b1-aa94-cb5791e1f68b
+  heures:
+    definitions:
+    - display: heures
+      exampleSentences:
+      - english: 2 hours’ walk
+        french: 2 heures de marche
+      gender: fem
+      plural: true
+      pos: noun
+      see: heure
+      translations:
+      - hour
+    uuid: 831aacb2-8113-48d6-81a8-dfdfaa2d80c8
   histoire:
     definitions:
     - display: histoire
@@ -4170,6 +4262,14 @@ french:
       translations:
       - the
     uuid: 2f9722f9-b719-4194-9a5f-afda3c027348
+  lentement:
+    definitions:
+    - display: lentement
+      gender: NA
+      pos: adverb
+      translations:
+      - slowly
+    uuid: b9c8ceb1-4a0d-4ff8-bec2-f1c53a40f239
   les:
     definitions:
     - display: les
@@ -4442,6 +4542,16 @@ french:
       translations:
       - place
     uuid: 43237295-7fba-41ba-a236-fb2d32951291
+  livres:
+    definitions:
+    - display: livres
+      gender: masc
+      plural: true
+      pos: noun
+      see: livre
+      translations:
+      - book
+    uuid: d4665031-6c17-4c7f-8801-38f51e268883
   loin:
     definitions:
     - display: loin
@@ -4638,6 +4748,230 @@ french:
       translations:
       - my
     uuid: 14a51a31-07fb-4f8c-bf5f-2b8f391a00fe
+  mettre:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to put:
+          imperative:
+            '':
+              '': put
+              let's: put
+          indicative:
+            future:
+              he/she/it - will: put
+              i - will: put
+              they - will: put
+              we - will: put
+              you - will: put
+            future continuous:
+              he/she/it - will - be: putting
+              i - will - be: putting
+              they - will - be: putting
+              we - will - be: putting
+              you - will - be: putting
+            future perfect:
+              he/she/it - will - have: put
+              i - will - have: put
+              they - will - have: put
+              we - will - have: put
+              you - will - have: put
+            future perfect continuous:
+              he/she/it - will - have - been: putting
+              i - will - have - been: putting
+              they - will - have - been: putting
+              we - will - have - been: putting
+              you - will - have - been: putting
+            past continous:
+              he/she/it - was: putting
+              i - was: putting
+              they - were: putting
+              we - were: putting
+              you - were: putting
+            past perfect:
+              he/she/it - had: put
+              i - had: put
+              they - had: put
+              we - had: put
+              you - had: put
+            past perfect continuous:
+              he/she/it - had - been: putting
+              i - had - been: putting
+              they - had - been: putting
+              we - had - been: putting
+              you - had - been: putting
+            present:
+              he/she/it: puts
+              i: put
+              they: put
+              we: put
+              you: put
+            present continuous:
+              he/she/it - is: putting
+              i - am: putting
+              they - are: putting
+              we - are: putting
+              you - are: putting
+            present perfect:
+              he/she/it - has: put
+              i - have: put
+              they - have: put
+              we - have: put
+              you - have: put
+            present perfect continuous:
+              he/she/it - has - been: putting
+              i - have - been: putting
+              they - have - been: putting
+              we - have - been: putting
+              you - have - been: putting
+            preterite:
+              he/she/it: put
+              i: put
+              they: put
+              we: put
+              you: put
+          participle:
+            past:
+              '': put
+            present:
+              '': putting
+          perfect participle:
+            '':
+              having: put
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: mis
+            ils/elles - eussent: mis
+            j' - eusse: mis
+            nous - eussions: mis
+            tu - eusses: mis
+            vous - eussiez: mis
+          passé première forme:
+            il/elle - aurait: mis
+            ils/elles - auraient: mis
+            j' - aurais: mis
+            nous - aurions: mis
+            tu - aurais: mis
+            vous - auriez: mis
+          présent:
+            il/elle: mettrait
+            ils/elles: mettraient
+            je: mettrais
+            nous: mettrions
+            tu: mettrais
+            vous: mettriez
+        indicatif:
+          futur:
+            il/elle: mettra
+            ils/elles: mettront
+            je: mettrai
+            nous: mettrons
+            tu: mettras
+            vous: mettrez
+          futur antérieur:
+            il/elle - aura: mis
+            ils/elles - auront: mis
+            j' - aurai: mis
+            nous - aurons: mis
+            tu - auras: mis
+            vous - aurez: mis
+          imparfait:
+            il/elle: mettait
+            ils/elles: mettaient
+            je: mettais
+            nous: mettions
+            tu: mettais
+            vous: mettiez
+          passé antérieur:
+            il/elle - eut: mis
+            ils/elles - eurent: mis
+            j' - eus: mis
+            nous - eûmes: mis
+            tu - eus: mis
+            vous - eûtes: mis
+          passé composé:
+            il/elle - a: mis
+            ils/elles - ont: mis
+            j' - ai: mis
+            nous - avons: mis
+            tu - as: mis
+            vous - avez: mis
+          passé simple:
+            il/elle: mit
+            ils/elles: mirent
+            je: mis
+            nous: mîmes
+            tu: mis
+            vous: mîtes
+          plus-que-parfait:
+            il/elle - avait: mis
+            ils/elles - avaient: mis
+            j' - avais: mis
+            nous - avions: mis
+            tu - avais: mis
+            vous - aviez: mis
+          présent:
+            il/elle: met
+            ils/elles: mettent
+            je: mets
+            nous: mettons
+            tu: mets
+            vous: mettez
+        infinitif:
+          passé:
+            avoir: mis
+        participe:
+          passé:
+            aie: mis
+            ayez: mis
+            ayons: mis
+          passé composé:
+            ayant: mis
+          présent:
+            '': mettez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: mît
+            qu' - ils/elles: missent
+            que - je: misse
+            que - nous: missions
+            que - tu: misses
+            que - vous: missiez
+          passé:
+            qu' - il/elle - ait: mis
+            qu' - ils/elles - aient: mis
+            que - j' - aie: mis
+            que - nous - ayons: mis
+            que - tu - aies: mis
+            que - vous - ayez: mis
+          plus-que-parfait:
+            qu' - il/elle - eût: mis
+            qu' - ils/elles - eussent: mis
+            que - j' - eusse: mis
+            que - nous - eussions: mis
+            que - tu - eusses: mis
+            que - vous - eussiez: mis
+          présent:
+            qu' - il/elle: mette
+            qu' - ils/elles: mettent
+            que - je: mette
+            que - nous: mettions
+            que - tu: mettes
+            que - vous: mettiez
+      display: mettre
+      gender: NA
+      modal_in_english: false
+      model: mettre
+      other_forms:
+      - se mettre
+      - ne pas mettre
+      - ne pas se mettre
+      pos: verb
+      transitive: true
+      translations:
+      - to put
+    uuid: b9490682-13e8-400e-9401-a836e5137107
   mieux:
     definitions:
     - display: mieux
@@ -4722,6 +5056,16 @@ french:
       translations:
       - word
     uuid: bfd6ef9d-a7b3-4a4b-b644-c0749dc97965
+  mots:
+    definitions:
+    - display: mots
+      gender: masc
+      plural: true
+      pos: noun
+      see: mot
+      translations:
+      - words
+    uuid: 7ff1295a-9f62-4d20-a4cf-7fb473a72434
   mr:
     definitions:
     - notaword: true
@@ -4920,6 +5264,19 @@ french:
       translations:
       - because
     uuid: c847f28e-08a1-4ac3-9782-cbe81724476c
+  parents:
+    definitions:
+    - display: parents
+      exampleSentences:
+      - english: a distant relative
+        french: une parente éloignée
+      gender: NA
+      plural: true
+      pos: noun
+      translations:
+      - relative
+      - parent
+    uuid: 18117d90-236a-4737-9cb8-bc5995699b4a
   parler:
     definitions:
     - auxiliary: avoir
@@ -5947,6 +6304,14 @@ french:
       - maybe
       - perhaps
     uuid: b4b6f2ea-7ce9-4811-a546-ef1d02ca00a1
+  pierre:
+    definitions:
+    - display: pierre
+      gender: fem
+      pos: noun
+      translations:
+      - stone
+    uuid: be4802ef-5441-4b30-9fa1-e7db82ba6ba5
   pièce:
     definitions:
     - display: pièce
@@ -6015,6 +6380,21 @@ french:
       - door
       - gate
     uuid: d065e3b0-5aa2-4a7b-b588-9a287459a9e8
+  possible:
+    definitions:
+    - display: possible
+      exampleSentences:
+      - english: Alain told them it wasn’t possible.
+        french: Alain leur a dit que ce n’était pas possible.
+      - english: as early as possible
+        french: le plus tôt possible
+      - english: as little money as possible
+        french: le moins d’argent possible
+      gender: NA
+      pos: adjective
+      translations:
+      - possible
+    uuid: 562b7535-9697-40c1-83cf-8e6ce783a405
   potter:
     definitions:
     - notaword: true
@@ -6517,6 +6897,15 @@ french:
       translations:
       - that
     uuid: ad78cac0-9dc1-4ab3-8a7f-a31e779a1d3d
+  quel:
+    definitions:
+    - display: quel
+      gender: NA
+      interrogative: true
+      pos: adjective
+      translations:
+      - who
+    uuid: ed7ab5ea-d2bc-412d-a1be-ed8991e1dd4d
   quelqu'un:
     definitions:
     - abbreviation: quelque + un
@@ -8307,6 +8696,17 @@ french:
       translations:
       - to seem
     uuid: 1c8606a7-7011-4789-a8f2-404db4c00df8
+  sens:
+    definitions:
+    - display: sens
+      exampleSentences:
+      - english: the five senses
+        french: les cinq sens
+      gender: masc
+      pos: noun
+      translations:
+      - sense
+    uuid: 955674b2-82bc-451f-b1ed-a05575f19e0e
   serpentard:
     definitions:
     - notaword: true
@@ -8814,6 +9214,22 @@ french:
       - weather
       - time
     uuid: af5ef091-9a2e-4d32-8cb6-16a5f291a72b
+  terre:
+    definitions:
+    - display: terre
+      exampleSentences:
+      - english: the structure of the Earth
+        french: la structure de la Terre
+      - english: the Earth
+        french: la Terre
+      gender: fem
+      pos: noun
+      translations:
+      - Earth
+      - ground
+      - soil
+      - land
+    uuid: d6443294-28c7-4fac-8f37-3dc4c9f1636b
   toi:
     definitions:
     - display: toi
@@ -9183,6 +9599,14 @@ french:
       translations:
       - train
     uuid: 54193c02-a231-4fb5-b084-e1c972f7f52b
+  travail:
+    definitions:
+    - display: travail
+      gender: masc
+      pos: noun
+      translations:
+      - work
+    uuid: 7aa66518-91fb-4e19-8a8d-2e12a0ae1bf3
   trois:
     definitions:
     - display: trois

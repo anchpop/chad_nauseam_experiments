@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-argent:
-- display: argent
+accord:
+- display: accord
   gender: ''
   pos: ''
   translations:
   - ''
-attention:
-- display: attention
+ainsi:
+- display: ainsi
   gender: ''
   pos: ''
   translations:
   - ''
-bouche:
-- display: bouche
+au-dessus:
+- display: au-dessus
   gender: ''
   pos: ''
   translations:
   - ''
-ceux:
-- display: ceux
+aujourd'hui:
+- display: aujourd'hui
   gender: ''
   pos: ''
   translations:
   - ''
-corps:
-- display: corps
+couloir:
+- display: couloir
   gender: ''
   pos: ''
   translations:
   - ''
-envie:
-- display: envie
+dernier:
+- display: dernier
   gender: ''
   pos: ''
   translations:
   - ''
-forme:
-- display: forme
+expression:
+- display: expression
   gender: ''
   pos: ''
   translations:
   - ''
-genre:
-- display: genre
+famille:
+- display: famille
   gender: ''
   pos: ''
   translations:
   - ''
-heures:
-- display: heures
+laisser:
+- display: laisser
   gender: ''
   pos: ''
   translations:
   - ''
-lentement:
-- display: lentement
+langue:
+- display: langue
   gender: ''
   pos: ''
   translations:
   - ''
-livres:
-- display: livres
+livre:
+- display: livre
   gender: ''
   pos: ''
   translations:
   - ''
-mettre:
-- display: mettre
+longtemps:
+- display: longtemps
   gender: ''
   pos: ''
   translations:
   - ''
-mots:
-- display: mots
+lumière:
+- display: lumière
   gender: ''
   pos: ''
   translations:
   - ''
-parents:
-- display: parents
+murmura:
+- display: murmura
   gender: ''
   pos: ''
   translations:
   - ''
-pierre:
-- display: pierre
+ouvrit:
+- display: ouvrit
   gender: ''
   pos: ''
   translations:
   - ''
-possible:
-- display: possible
+plusieurs:
+- display: plusieurs
   gender: ''
   pos: ''
   translations:
   - ''
-quel:
-- display: quel
+quatre:
+- display: quatre
   gender: ''
   pos: ''
   translations:
   - ''
-sens:
-- display: sens
+tenait:
+- display: tenait
   gender: ''
   pos: ''
   translations:
   - ''
-terre:
-- display: terre
+tomber:
+- display: tomber
   gender: ''
   pos: ''
   translations:
   - ''
-travail:
-- display: travail
+travers:
+- display: travers
   gender: ''
   pos: ''
   translations:
