@@ -8,7 +8,7 @@
 
 1.5: ✔️ I need to also redo all the verbs, except this time I need to be sure to put in english translations of the different conjugations somehow. I didn't think this would be important but in hindsight it totally is. I'm going to do this by scraping the reverso page for the english versions and then figuring out how to automatically correlated them. Right now I scrape everything properly except the past/present participles which need to each be added somehow
 
-2. ✔️ Process word-dictionary into a format more useful to the react app before copying (some research will be needed to figure this out)
+2. Process word-dictionary into a format more useful to the react app before copying (some research will be needed to figure this out)
 
 3. Add spaced-repetition flashcards for individual french words. I want to make the user type the correct answer, to really force them to recall it.
 

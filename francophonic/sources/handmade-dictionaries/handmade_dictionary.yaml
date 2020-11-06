@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-accord:
-- display: accord
+aider:
+- display: aider
   gender: ''
   pos: ''
   translations:
   - ''
-ainsi:
-- display: ainsi
+assis:
+- display: assis
   gender: ''
   pos: ''
   translations:
   - ''
-au-dessus:
-- display: au-dessus
+chemin:
+- display: chemin
   gender: ''
   pos: ''
   translations:
   - ''
-aujourd'hui:
-- display: aujourd'hui
+colère:
+- display: colère
   gender: ''
   pos: ''
   translations:
   - ''
-couloir:
-- display: couloir
+droit:
+- display: droit
   gender: ''
   pos: ''
   translations:
   - ''
-dernier:
-- display: dernier
+enfants:
+- display: enfants
   gender: ''
   pos: ''
   translations:
   - ''
-expression:
-- display: expression
+exclama:
+- display: exclama
   gender: ''
   pos: ''
   translations:
   - ''
-famille:
-- display: famille
+heure:
+- display: heure
   gender: ''
   pos: ''
   translations:
   - ''
-laisser:
-- display: laisser
+jeta:
+- display: jeta
   gender: ''
   pos: ''
   translations:
   - ''
-langue:
-- display: langue
+lança:
+- display: lança
   gender: ''
   pos: ''
   translations:
   - ''
-livre:
-- display: livre
+laquelle:
+- display: laquelle
   gender: ''
   pos: ''
   translations:
   - ''
-longtemps:
-- display: longtemps
+lit:
+- display: lit
   gender: ''
   pos: ''
   translations:
   - ''
-lumière:
-- display: lumière
+lui-même:
+- display: lui-même
   gender: ''
   pos: ''
   translations:
   - ''
-murmura:
-- display: murmura
+mère:
+- display: mère
   gender: ''
   pos: ''
   translations:
   - ''
-ouvrit:
-- display: ouvrit
+parfois:
+- display: parfois
   gender: ''
   pos: ''
   translations:
   - ''
-plusieurs:
-- display: plusieurs
+reste:
+- display: reste
   gender: ''
   pos: ''
   translations:
   - ''
-quatre:
-- display: quatre
+sang:
+- display: sang
   gender: ''
   pos: ''
   translations:
   - ''
-tenait:
-- display: tenait
+serdaigle:
+- display: serdaigle
   gender: ''
   pos: ''
   translations:
   - ''
-tomber:
-- display: tomber
+sortir:
+- display: sortir
   gender: ''
   pos: ''
   translations:
   - ''
-travers:
-- display: travers
+souvent:
+- display: souvent
   gender: ''
   pos: ''
   translations:
