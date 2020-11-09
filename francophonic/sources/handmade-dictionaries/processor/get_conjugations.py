@@ -10,20 +10,24 @@ def get_reverso_url(verb, language):
     return f"https://conjugator.reverso.net/conjugation-{language}-verb-{verb}.html"
 
 
-def grab_conjugation_soup(verbf, verbe):
+def grab_conjugation_soup_french(verbf):
     time.sleep(10)
     urlf = get_reverso_url(verbf, "french")
     print(f"requesting {urlf}")
     rf = requests.get(urlf)
     soup_french = BeautifulSoup(rf.text, 'html.parser')
     
+
+    return soup_french
+
+def grab_conjugation_soup_english(verbe):
     time.sleep(10)
     urle = get_reverso_url(verbe.split("to")[-1].strip(), "english")
     print(f"requesting {urle}")
     re = requests.get(urle)
     soup_english = BeautifulSoup(re.text, 'html.parser')
+    return soup_english
 
-    return (soup_french, soup_english)
 
 def parse_conjugations(soup, verb):
     contents = {}
@@ -74,20 +78,16 @@ def parse_conjugations(soup, verb):
     return (infinitive, contents)
 
 
-def get_conjugations(verbf, verbe, trans):
-    current_mode = ""
-        
-    
-    (soupf, soupe) = grab_conjugation_soup(verbf, verbe[0])
-
+def get_conjugations(verbf, verbes, trans):
+    soupf = grab_conjugation_soup_french(verbf)
     infinitivef, contentsf = parse_conjugations(soupf, verbf)
-    infinitivee, contentse = parse_conjugations(soupe, verbe[0])
+    english = [(verbe, *parse_conjugations(grab_conjugation_soup_english(verbe), verbe)) for verbe in verbes]
 
     model = soupf.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
     auxiliary = soupf.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soupf.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
     
-    output = {infinitivef: [{'display': infinitivef, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {verbe[0]: contentse if contentse is not None else {}}, 'translations': verbe, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+    output = {infinitivef: [{'display': infinitivef, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {verbe: contentse for verbe, infinitivee, contentse in english}, 'translations': verbes, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
     return output
 
 def main():
