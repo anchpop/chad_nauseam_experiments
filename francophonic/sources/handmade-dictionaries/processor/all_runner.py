@@ -32,6 +32,19 @@ def print_stats(analysis):
     r = str(source).rjust(15)
     # print(f"    {r}: {round(100 * understood_words[source] / total_words[source], 1)}")
 
+  total_words_combined = {k: sum(v.values()) for k, v in analysis[0].items()}
+  total_words = sum(total_words_combined.values())
+  current_words = 0
+  words_added = {75: 0, 80: 0, 85: 0, 90: 0, 95: 0, 98: 0} 
+  for _, v in total_words_combined.items():
+    current_words += v
+    for goal_comprehension, required in words_added.items():
+      if goal_comprehension > (100 * current_words/total_words):
+        words_added[goal_comprehension] += 1
+
+  for goal_comprehension, required in words_added.items():
+    print(f"You'll need to know at least {str(required).ljust(max([len(str(w)) for w in words_added.values()]))} words to reach {goal_comprehension}% comprehension")
+
   pass
 
 
