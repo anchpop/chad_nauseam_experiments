@@ -1,4 +1,11 @@
-
+---
+contentType: book
+title: Alcatraz Versus the Knights of Crystallia
+series: Alcatraz Versus the Evil Librarians
+seriesNumber: 3
+author: Brandon Sanderson
+amazonLink: https://amazon.com/dp/B00SO5GBDI/
+---
 
 Titre original :
 

@@ -23,7 +23,7 @@ def main(analysis = None):
 
     if analysis == None:
         analysis = processor.sources_analysis.do_analysis()
-    (collected_words, collected_sentences) = analysis
+    (collected_words, collected_sentences, source_info) = analysis
 
     instructions = """
 When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).

@@ -1,3 +1,12 @@
+---
+contentType: book
+title: Harry Potter and the Order of the Phoenix
+series: Harry Potter
+seriesNumber: 5
+author: J. K. Rowling
+amazonLink: https://amazon.com/gp/product/B0192CTNAE
+---
+
 1
 
 

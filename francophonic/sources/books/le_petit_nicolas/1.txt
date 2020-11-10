@@ -1,3 +1,13 @@
+---
+contentType: book
+title: Le Petit Nicolas
+series: Le Petit Nicolas
+seriesNumber: 1
+author: René Goscinny
+amazonLink: https://smile.amazon.com/dp/B00CZ8IHBE
+---
+
+
 
 CE MATIN, NOUS SOMMES TOUS arrivés à l’école bien contents, parce qu’on va prendre une photo de la classe qui sera pour nous un souvenir que nous allons chérir toute notre vie, comme nous l’a dit la maîtresse. Elle nous a dit aussi de venir bien propres et bien coiffés.
 

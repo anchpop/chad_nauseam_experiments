@@ -1,3 +1,12 @@
+---
+contentType: book
+title: Alcatraz Versus the Shattered Lens
+series: Alcatraz Versus the Evil Librarians
+seriesNumber: 4
+author: Brandon Sanderson
+amazonLink: https://amazon.com/dp/B00SO5G9SU/
+---
+
 
 Titre original :
 

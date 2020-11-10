@@ -1,3 +1,12 @@
+---
+contentType: book
+title: Le Petit Nicolas
+author: Antoine Saint de Exupery
+amazonLink: https://smile.amazon.com/dp/B08M38BRLS/
+---
+
+
+
 Antoine de Saint-Exupéry
 
 

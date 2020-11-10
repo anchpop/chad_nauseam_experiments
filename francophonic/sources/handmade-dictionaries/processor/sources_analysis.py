@@ -51,46 +51,65 @@ def do_analysis():
 
     collected_words = {}
     collected_sentences = {}
+    source_info = {}
 
     for filename in source_files:
+        frontmatter = ""
+        source = tuple(filename.parts[-2:])
         with safer.open(filename, "r", encoding='utf-8') as f:
-            source = tuple(filename.parts[-2:])
+            out_of_frontmatter = False
             for index, line in enumerate(f):
                 if retain_only_characters(line).strip() == "": 
                     continue
-
-                line = clean_line(line)
-                words = line_to_words_french(line)
-                for word in words:
-                    collected_words[word] = collected_words.get(word, Counter())
-                    collected_words[word][source] += 1
                 
-                if "»" in line or "»" in line or line == "":
-                    # Don't want to deal with these right now
-                    pass
-                else:                    
-                    sentences = re.findall(r'(?:["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]).*?(?:(?:[.?!]["»]?)|-")(?=$| ["«]?[A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ])', line.strip())
-                    sentences = [sentence.strip('– ') for sentence in sentences]
-                    # sentences = [sentence.strip('"') if sentence.count('"') == 2 and sentence[0] == '"' and sentence[-1] == '"' and sentence[-2] != "-" else sentence for sentence in sentences] # sometimes sentences are wrapped in "s
+                if index == 0 and line.strip() == "---":
+                    out_of_frontmatter = False
+                    continue
+                else:
+                    out_of_frontmatter = True
+                
+                if index > 0 and line.strip() == "---":
+                    out_of_frontmatter = False
+                
+                if out_of_frontmatter == False:
+                    frontmatter += line
+                else:
+                    line = clean_line(line)
+                    words = line_to_words_french(line)
+                    for word in words:
+                        collected_words[word] = collected_words.get(word, Counter())
+                        collected_words[word][source] += 1
+                    
+                    if "»" in line or "»" in line or line == "":
+                        # Don't want to deal with these right now
+                        pass
+                    else:                    
+                        sentences = re.findall(r'(?:["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]).*?(?:(?:[.?!]["»]?)|-")(?=$| ["«]?[A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ])', line.strip())
+                        sentences = [sentence.strip('– ') for sentence in sentences]
+                        # sentences = [sentence.strip('"') if sentence.count('"') == 2 and sentence[0] == '"' and sentence[-1] == '"' and sentence[-2] != "-" else sentence for sentence in sentences] # sometimes sentences are wrapped in "s
 
 
-                    sentence_buildup = "" # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
-                    for sentence in sentences:
-                        if sentence[-2:] == "M." or sentence[-2:] == "H." or sentence[-3:] == "Dr.":
-                            sentence_buildup += sentence + " "
-                        else:
-                            sentence = sentence_buildup + sentence
-                            sentence_buildup = ""
+                        sentence_buildup = "" # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
+                        for sentence in sentences:
+                            if sentence[-2:] == "M." or sentence[-2:] == "H." or sentence[-3:] == "Dr.":
+                                sentence_buildup += sentence + " "
+                            else:
+                                sentence = sentence_buildup + sentence
+                                sentence_buildup = ""
 
-                            sentence = sentence.strip()
-                            sentence = sentence.strip('– ')
-                            sentence = sentence.replace('"', "").strip() if sentence.count('"') == 1 else sentence
-                            sentence = sentence.strip()
-                            if sentence != "" and len(sentence.split()) > 1:
-                                collected_sentences[sentence] = collected_sentences.get(sentence, {})
-                                collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
-
-    return (collected_words, collected_sentences)
+                                sentence = sentence.strip()
+                                sentence = sentence.strip('– ')
+                                sentence = sentence.replace('"', "").strip() if sentence.count('"') == 1 else sentence
+                                sentence = sentence.strip()
+                                if sentence != "" and len(sentence.split()) > 1:
+                                    collected_sentences[sentence] = collected_sentences.get(sentence, {})
+                                    collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
+        try:
+            source_info[source] = yaml.load(frontmatter, Loader=Loader)
+        except:
+            print(f"trouble processing frontmatter for {source}")
+            print(frontmatter)
+    return (collected_words, collected_sentences, source_info)
 
 
 def main():

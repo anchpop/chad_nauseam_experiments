@@ -29,7 +29,7 @@ const Question = () => {
 
       <View style={{ flex: 1 }}>
         <Text style={reviewPageStyles.questionText}>
-          Je te vois. Je te vois. Je te vois.
+          Je te vois.
         </Text>
       </View>
 

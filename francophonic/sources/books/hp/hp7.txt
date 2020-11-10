@@ -1,3 +1,13 @@
+---
+contentType: book
+title: Harry Potter and the Deathly Hallows
+series: Harry Potter
+seriesNumber: 7
+author: J. K. Rowling
+amazonLink: https://amazon.com/gp/product/B0192CTNG8
+---
+
+
 1
 
 

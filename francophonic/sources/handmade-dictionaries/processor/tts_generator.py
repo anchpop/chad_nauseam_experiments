@@ -62,7 +62,12 @@ def main():
                 for candidate in candidates_to_tts:
                     print(candidate)
             elif inp == "yes":
+                print("Sleeping for 10 minutes to avoid quota")
+                time.sleep(600)
                 for sentence, hashd in candidates_to_tts:
+                    if len(sentence) >= 5000:
+                        print("{sentence}\nis way too long!")
+                        break
                     synthesis_input = texttospeech.SynthesisInput(text=sentence)
                     voice = texttospeech.VoiceSelectionParams(
                         language_code='fr',
@@ -86,6 +91,7 @@ def main():
                         # Write the response to the output file.
                         out.write(response.audio_content)
                         print(f"written as {dir}{hashd}.mp3")
+                    time.sleep(3)
                 break
             else:
                 break

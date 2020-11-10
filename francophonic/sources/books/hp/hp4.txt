@@ -1,3 +1,12 @@
+---
+contentType: book
+title: Harry Potter and the Goblet of Fire
+series: Harry Potter
+seriesNumber: 4
+author: J. K. Rowling
+amazonLink: https://amazon.com/gp/product/B0192CTN7W
+---
+
 1
 
 

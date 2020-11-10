@@ -1,3 +1,13 @@
+---
+contentType: book
+title: Harry Potter and the Prisoner of Azkaban
+series: Harry Potter
+seriesNumber: 3
+author: J. K. Rowling
+amazonLink: https://amazon.com/gp/product/B0192CTN7W
+---
+
+
 1
 
 

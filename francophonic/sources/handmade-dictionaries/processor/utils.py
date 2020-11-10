@@ -88,7 +88,7 @@ def get_all_known_french_words():
             
 
 def get_sentence_analysis(analysis):
-    (_, collected_sentences) = analysis
+    (_, collected_sentences, _) = analysis
     known_words = get_all_known_french_words()
     understandable_sentences = set()
     ununderstandable_sentences = set()

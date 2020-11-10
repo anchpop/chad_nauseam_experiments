@@ -12,7 +12,9 @@ import { ThemeContext } from './src/styles'
 const Stack = createStackNavigator()
 
 const App = () => {
-  const isMobileDevice = (useWindowDimensions().width * useWindowDimensions().scale) < 1224
+  const isMobileDevice = useMediaQuery({
+    maxDeviceWidth: 1224
+  })
   const systemPrefersDark = false ? useColorScheme() !== "light" : false
 
   return (

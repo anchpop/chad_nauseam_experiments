@@ -25,7 +25,7 @@ def main(analysis = None):
 
     current_dictionary = get_word_dictionary()
 
-    (collected_words, collected_sentences) = analysis
+    (collected_words, collected_sentences, source_info) = analysis
     understandable_sentences = get_understandable_sentences(analysis)
 
     translations = get_traslations()
