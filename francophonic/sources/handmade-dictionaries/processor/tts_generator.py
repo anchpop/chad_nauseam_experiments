@@ -90,7 +90,7 @@ def main():
                         # Write the response to the output file.
                         out.write(response.audio_content)
                         print(f"written as {Style.DIM}{dir}{hashd}.mp3{Style.RESET_ALL}")
-                    time.sleep(3)
+                    time.sleep(1)
                 break
             else:
                 break
