@@ -32,6 +32,7 @@ def line_to_words(line, contractions, whole_word_basis):
     return words
 
 def clean_line(line):
+    line = line.replace('’', "'")
     line = line.strip()
     #line = line.strip("“–«» ")
     #line = line.strip()

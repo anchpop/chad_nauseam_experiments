@@ -4,7 +4,7 @@ french:
     - display: accord
       exampleSentences:
       - english: to come to an agreement
-        french: se mettre d’accord
+        french: se mettre d'accord
       gender: masc
       pos: noun
       translations:
@@ -268,7 +268,7 @@ french:
     - display: air
       exampleSentences:
       - english: The air we breathe.
-        french: L’air que l’on respire.
+        french: L'air que l'on respire.
       - english: She played a tune on the piano.
         french: Elle a joué un air au piano.
       gender: masc
@@ -1387,7 +1387,7 @@ french:
     - display: au-dessus
       exampleSentences:
       - english: I live upstairs.
-        french: J’habite au-dessus.
+        french: J'habite au-dessus.
       gender: NA
       pos: adverb
       translations:
@@ -1399,7 +1399,7 @@ french:
     - display: aucun
       exampleSentences:
       - english: There are no books in the drawer.
-        french: Il n’y a aucun livre dans le tiroir
+        french: Il n'y a aucun livre dans le tiroir
       gender: NA
       pos: determiner
       translations:
@@ -1770,7 +1770,7 @@ french:
     - display: besoin
       exampleSentences:
       - english: the need for money
-        french: le besoin d’argent
+        french: le besoin d'argent
       gender: masc
       pos: noun
       translations:
@@ -1920,15 +1920,15 @@ french:
     definitions:
     - display: celui
       exampleSentences:
-      - english: my brother’s
+      - english: my brother's
         french: celui de mon frère
       - english: the one below
         french: celui du dessous
-      - english: I haven’t got a camera but I can borrow my sister’s.
-        french: Je n’ai pas d’appareil photo mais je peux emprunter celui de ma sœur.
+      - english: I haven't got a camera but I can borrow my sister's.
+        french: Je n'ai pas d'appareil photo mais je peux emprunter celui de ma sœur.
       - english: Take the one you like best.
         french: Prends celui que tu préfères.
-      - english: the one I’m talking about
+      - english: the one I'm talking about
         french: celui dont je parle
       gender: masc
       pos: pronoun
@@ -2000,7 +2000,7 @@ french:
     - display: chaque
       exampleSentences:
       - english: The company has made a profit each year since 1995.
-        french: Depuis 1995, l’entreprise a fait chaque année du bénéfice
+        french: Depuis 1995, l'entreprise a fait chaque année du bénéfice
       gender: NA
       pos: adjective
       translations:
@@ -2262,7 +2262,7 @@ french:
     definitions:
     - display: chez
       exampleSentences:
-      - english: at Pierre’s place
+      - english: at Pierre's place
         french: chez Pierre
       gender: NA
       pos: preposition
@@ -2282,7 +2282,7 @@ french:
     - display: choses
       exampleSentences:
       - english: He told me something incredible.
-        french: Il m’a dit une chose incroyable.
+        french: Il m'a dit une chose incroyable.
       gender: fem
       plural: true
       pos: noun
@@ -2567,7 +2567,7 @@ french:
     definitions:
     - display: compte
       exampleSentences:
-      - english: That’s the right amount.
+      - english: That's the right amount.
         french: Le compte est bon.
       gender: masc
       pos: noun
@@ -3135,8 +3135,8 @@ french:
     definitions:
     - display: dernière
       exampleSentences:
-      - english: It’s the last house, after the post office.
-        french: C’est la dernière maison, après la poste.
+      - english: It's the last house, after the post office.
+        french: C'est la dernière maison, après la poste.
       gender: NA
       pos: adjective
       see: dernier
@@ -3966,7 +3966,7 @@ french:
       translations:
       - masc
     uuid: 154d9e82-bb3f-4f72-a659-b8c711256fef
-  d’ici:
+  d'ici:
     definitions:
     - abbreviation: de + ici
       display: d'ici
@@ -3974,20 +3974,20 @@ french:
       translations:
       - by then
     uuid: 9f07de64-234a-4fcd-b383-c8d21d448098
-  d’un:
+  d'un:
     definitions:
     - abbreviation: de + un
-      display: d’un
+      display: d'un
       gender: fem
       translations:
       - an
       - of an
       - from an
     uuid: 042aac0d-dfb3-4497-84a8-d6f4d2272b6a
-  d’une:
+  d'une:
     definitions:
     - abbreviation: de + une
-      display: d’une
+      display: d'une
       gender: fem
       translations:
       - of one
@@ -4354,8 +4354,8 @@ french:
     definitions:
     - display: esprit
       exampleSentences:
-      - english: to lose one’s mind
-        french: perdre l’esprit
+      - english: to lose one's mind
+        french: perdre l'esprit
       gender: masc
       pos: noun
       translations:
@@ -5641,7 +5641,7 @@ french:
     - display: façon
       exampleSentences:
       - english: in another way
-        french: d’une autre façon
+        french: d'une autre façon
       gender: fem
       pos: noun
       translations:
@@ -5659,8 +5659,8 @@ french:
     definitions:
     - display: fin
       exampleSentences:
-      - english: She didn’t watch the end of the film.
-        french: Elle n’a pas regardé la fin du film.
+      - english: She didn't watch the end of the film.
+        french: Elle n'a pas regardé la fin du film.
       gender: fem
       pos: noun
       translations:
@@ -5753,8 +5753,8 @@ french:
     definitions:
     - display: genre
       exampleSentences:
-      - english: It’s a kind of cream cake.
-        french: C’est un genre de gâteau à la crème.
+      - english: It's a kind of cream cake.
+        french: C'est un genre de gâteau à la crème.
       gender: masc
       pos: noun
       translations:
@@ -5849,7 +5849,7 @@ french:
     definitions:
     - display: heures
       exampleSentences:
-      - english: 2 hours’ walk
+      - english: 2 hours' walk
         french: 2 heures de marche
       gender: fem
       plural: true
@@ -6473,7 +6473,7 @@ french:
     - display: impossible
       exampleSentences:
       - english: the impossible
-        french: l’impossible
+        french: l'impossible
       gender: masc
       pos: noun
       translations:
@@ -6504,10 +6504,10 @@ french:
       - interior
     - display: intérieur
       exampleSentences:
-      - english: It’s cooler inside.
-        french: Il fait plus frais à l’intérieur.
+      - english: It's cooler inside.
+        french: Il fait plus frais à l'intérieur.
       - english: inside
-        french: à l’intérieur
+        french: à l'intérieur
       gender: masc
       pos: noun
       translations:
@@ -6539,15 +6539,15 @@ french:
       - english: Do you go to the cinema often? - No, never.
         french: Est-ce que tu vas souvent au cinéma ? - Non, jamais
       - english: He never drinks alcohol.
-        french: Il ne boit jamais d’alcool.
+        french: Il ne boit jamais d'alcool.
       gender: NA
       pos: adverb
       translations:
       - never
     - display: jamais
       exampleSentences:
-      - english: It’s the most beautiful thing I’ve ever seen.
-        french: C’est la plus belle chose que j’aie jamais vue.
+      - english: It's the most beautiful thing I've ever seen.
+        french: C'est la plus belle chose que j'aie jamais vue.
       - english: If you ever see him, give him this from me.
         french: Si jamais tu le vois, donne lui ceci de ma part.
       gender: NA
@@ -6821,10 +6821,10 @@ french:
       translations:
       - as far as
     uuid: 26e8c0a4-77a5-422f-b5ca-0a87ae6988f7
-  jusqu’ici:
+  jusqu'ici:
     definitions:
     - abbreviation: jusque + ici
-      display: jusqu’ici
+      display: jusqu'ici
       gender: NA
       translations:
       - so far
@@ -6834,7 +6834,7 @@ french:
     definitions:
     - display: juste
       exampleSentences:
-      - english: He’s strict but fair.
+      - english: He's strict but fair.
         french: Il est sévère, mais juste.
       gender: NA
       pos: adjective
@@ -6842,10 +6842,10 @@ french:
       - fair
       - just
     uuid: 3fccd7bb-799e-44d0-a0ab-fb63d5ef31cf
-  j’ai:
+  j'ai:
     definitions:
     - abbreviation: je + ai
-      display: j’ai
+      display: j'ai
       gender: NA
       translations:
       - I have
@@ -7931,16 +7931,16 @@ french:
     - display: lorsque
       exampleSentences:
       - english: I was about to dial your number when you called.
-        french: J’allais composer ton numéro lorsque tu as appelé.
+        french: J'allais composer ton numéro lorsque tu as appelé.
       gender: NA
       pos: conjonction
       translations:
       - when
     uuid: fe4db2f4-7fe2-4651-a320-cdfe3d048072
-  lorsqu’il:
+  lorsqu'il:
     definitions:
     - abbreviation: lorsque + il
-      display: lorsqu’il
+      display: lorsqu'il
       gender: NA
       translations:
       - when he
@@ -8000,7 +8000,7 @@ french:
     definitions:
     - display: là
       exampleSentences:
-      - english: Your book’s there, on the table.
+      - english: Your book's there, on the table.
         french: Ton livre est là, sur la table.
       gender: NA
       pos: adverb
@@ -8071,8 +8071,8 @@ french:
     definitions:
     - display: mais
       exampleSentences:
-      - english: It’s expensive, but very good quality.
-        french: C’est cher mais de très bonne qualité.
+      - english: It's expensive, but very good quality.
+        french: C'est cher mais de très bonne qualité.
       gender: NA
       pos: conjonction
       translations:
@@ -8812,9 +8812,9 @@ french:
     - display: ni
       exampleSentences:
       - english: I like neither lentils nor spinach.
-        french: Je n’aime ni les lentilles ni les épinards.
+        french: Je n'aime ni les lentilles ni les épinards.
       - english: Neither of them came.
-        french: Elles ne sont venues ni l’une ni l’autre.
+        french: Elles ne sont venues ni l'une ni l'autre.
       gender: NA
       pos: conjonction
       translations:
@@ -8925,10 +8925,10 @@ french:
       translations:
       - night
     uuid: 7dc0843a-9934-4221-8cfb-e9b719035c45
-  n’avait:
+  n'avait:
     definitions:
     - abbreviation: ne + avait
-      display: n’avait
+      display: n'avait
       gender: NA
       translations:
       - hasn't
@@ -8956,7 +8956,7 @@ french:
       - english: You can do it like this
         french: On peut le faire ainsi
       - english: From here one can see the French coast.
-        french: D’ici, on voit la côte française
+        french: D'ici, on voit la côte française
       gender: NA
       pos: pronoun
       translations:
@@ -9223,8 +9223,8 @@ french:
     definitions:
     - display: où
       exampleSentences:
-      - english: That’s the house where I was born.
-        french: C’est la maison où je suis né
+      - english: That's the house where I was born.
+        french: C'est la maison où je suis né
       gender: NA
       pos: relative pronoun
       translations:
@@ -10624,7 +10624,7 @@ french:
     definitions:
     - display: peur
       exampleSentences:
-      - english: He’s afraid of the dark.
+      - english: He's afraid of the dark.
         french: Il a peur du noir.
       gender: fem
       pos: noun
@@ -10767,12 +10767,12 @@ french:
     definitions:
     - display: possible
       exampleSentences:
-      - english: Alain told them it wasn’t possible.
-        french: Alain leur a dit que ce n’était pas possible.
+      - english: Alain told them it wasn't possible.
+        french: Alain leur a dit que ce n'était pas possible.
       - english: as early as possible
         french: le plus tôt possible
       - english: as little money as possible
-        french: le moins d’argent possible
+        french: le moins d'argent possible
       gender: NA
       pos: adjective
       translations:
@@ -11302,7 +11302,7 @@ french:
     definitions:
     - display: quatre
       exampleSentences:
-      - english: It’s four in the morning.
+      - english: It's four in the morning.
         french: Il est quatre heures du matin.
       gender: NA
       pos: number
@@ -11355,9 +11355,9 @@ french:
       - some
       - whatever
     uuid: 081ddec2-9da0-4f4b-a4b8-03fcbf983be9
-  quelqu’un:
+  quelqu'un:
     definitions:
-    - display: quelqu’un
+    - display: quelqu'un
       gender: NA
       pos: pronoun
       translations:
@@ -11368,7 +11368,7 @@ french:
     - display: question
       exampleSentences:
       - english: I asked you a question.
-        french: Je t’ai posé une question.
+        french: Je t'ai posé une question.
       gender: fem
       pos: noun
       translations:
@@ -11399,43 +11399,43 @@ french:
       translations:
       - what
     uuid: 13adbdff-1003-4b2c-9e3b-385522b865e2
-  qu’elle:
+  qu'elle:
     definitions:
     - abbreviation: que + elle
-      display: qu’elle
+      display: qu'elle
       gender: NA
       translations:
       - that she
     uuid: 764a601b-eb53-4439-a765-0049b6aa5305
-  qu’est-ce:
+  qu'est-ce:
     definitions:
     - abbreviation: que + est + ce + que
-      display: qu’est-ce
+      display: qu'est-ce
       gender: NA
       translations:
       - what is this which
       - what is this that
     uuid: 9033c7a7-e2ec-4458-a292-542a1818c4d4
-  qu’il:
+  qu'il:
     definitions:
     - abbreviation: que + il
-      display: qu’il
+      display: qu'il
       gender: NA
       translations:
       - He is
     uuid: cb57ab20-69a0-440c-9705-988aa90e1294
-  qu’ils:
+  qu'ils:
     definitions:
     - abbreviation: que + ils
-      display: qu’ils
+      display: qu'ils
       gender: NA
       translations:
       - that they
     uuid: 91a5908f-e427-4346-b110-4f4d6f25d03a
-  qu’on:
+  qu'on:
     definitions:
     - abbreviation: que + on
-      display: qu’on
+      display: qu'on
       gender: NA
       translations:
       - that we
@@ -11445,7 +11445,7 @@ french:
     definitions:
     - display: raison
       exampleSentences:
-      - english: to come to one’s senses
+      - english: to come to one's senses
         french: recouvrer la raison
       - english: All the more reason for going.
         french: Raison de plus pour y aller.
@@ -15201,8 +15201,8 @@ french:
     definitions:
     - display: sujet
       exampleSentences:
-      - english: It’s an interesting subject.
-        french: C’est un sujet intéressant.
+      - english: It's an interesting subject.
+        french: C'est un sujet intéressant.
       gender: masc
       pos: noun
       translations:
@@ -15244,13 +15244,13 @@ french:
       - sure
       - certain
     uuid: bbf49804-67e1-48f6-9f7b-32207ea09822
-  s’il:
+  s'il:
     definitions:
     - abbreviation: se + il
-      display: s’il
+      display: s'il
       exampleSentences:
-      - english: While he’s nice, they are really quite unpleasant.
-        french: S’il est aimable, eux par contre sont franchement désagréables
+      - english: While he's nice, they are really quite unpleasant.
+        french: S'il est aimable, eux par contre sont franchement désagréables
       gender: masc
       translations:
       - while he's
@@ -15284,7 +15284,7 @@ french:
     - display: tant
       exampleSentences:
       - english: I love him so much!
-        french: Je l’aime tant !
+        french: Je l'aime tant !
       gender: NA
       pos: adverb
       translations:
@@ -16263,12 +16263,12 @@ french:
     definitions:
     - display: travers
       exampleSentences:
-      - english: This window is so dirty you can’t see anything through it.
-        french: Cette vitre est tellement sale qu’on ne voit rien à travers.
+      - english: This window is so dirty you can't see anything through it.
+        french: Cette vitre est tellement sale qu'on ne voit rien à travers.
       - english: There was a tree lying across the road.
         french: Il y avait un arbre en travers de la route.
       - english: Something went down the wrong way.
-        french: J’ai avalé de travers.
+        french: J'ai avalé de travers.
       - english: to get the wrong idea
         french: comprendre de travers
       - english: She always gets the wrong idea.
@@ -17547,7 +17547,7 @@ french:
       exampleSentences:
       - english: He drives too fast.
         french: Il roule trop vite.
-      - english: It’ll soon be finished.
+      - english: It'll soon be finished.
         french: Ce sera vite fini.
       gender: NA
       pos: adverb
