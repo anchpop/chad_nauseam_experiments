@@ -13,6 +13,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 from processor.utils import *
+from colorama import Fore, Back, Style 
 
 import safer
 
@@ -48,8 +49,9 @@ def main(analysis = None):
                 parent = f"projects/{project_id}/locations/{location}"
                 for sentence in sentences_to_translate:
                     if (sentence != sentence.strip()):
-                        raise Exception(f"sentence \"{sentence}\" is unstripped!")
+                        raise Exception(f"sentence \"{Style.DIM}{sentence}{Style.RESET_ALL}\" is unstripped!")
 
+                    print(f"Translating \"{Style.DIM}{sentence}{Style.RESET_ALL}\"")
                     response = client.translate_text(
                         request={
                             "parent": parent,

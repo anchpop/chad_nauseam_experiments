@@ -13,6 +13,7 @@ except ImportError:
     from yaml import Loader, Dumper
 import time
 from processor.utils import *
+from colorama import Fore, Back, Style 
 
 import safer
 
@@ -62,12 +63,11 @@ def main():
                 for candidate in candidates_to_tts:
                     print(candidate)
             elif inp == "yes":
-                print("Sleeping for 10 minutes to avoid quota")
-                time.sleep(600)
                 for sentence, hashd in candidates_to_tts:
                     if len(sentence) >= 5000:
-                        print("{sentence}\nis way too long!")
-                        break
+                        raise Exception(f"\"{Style.DIM}{sentence}{Style.RESET_ALL}\" is way too long!")
+                    print(f"sentence \"{Style.DIM}{sentence}{Style.RESET_ALL}\" ", end='',  flush=True)
+
                     synthesis_input = texttospeech.SynthesisInput(text=sentence)
                     voice = texttospeech.VoiceSelectionParams(
                         language_code='fr',
@@ -79,7 +79,6 @@ def main():
                         audio_encoding=texttospeech.AudioEncoding.MP3)
 
 
-                    print(f"sentence '{sentence}' ", end='',  flush=True)
 
                     # Perform the text-to-speech request on the text input with the selected
                     # voice parameters and audio file type
@@ -90,7 +89,7 @@ def main():
                     with safer.open(f'{dir}{hashd}.mp3', 'wb') as out:
                         # Write the response to the output file.
                         out.write(response.audio_content)
-                        print(f"written as {dir}{hashd}.mp3")
+                        print(f"written as {Style.DIM}{dir}{hashd}.mp3{Style.RESET_ALL}")
                     time.sleep(3)
                 break
             else:
