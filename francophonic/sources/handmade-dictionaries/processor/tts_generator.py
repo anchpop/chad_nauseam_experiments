@@ -66,31 +66,34 @@ def main():
                 for sentence, hashd in candidates_to_tts:
                     if len(sentence) >= 5000:
                         raise Exception(f"\"{Style.DIM}{sentence}{Style.RESET_ALL}\" is way too long!")
-                    print(f"sentence \"{Style.DIM}{sentence}{Style.RESET_ALL}\" ", end='',  flush=True)
+                    try:
+                        print(f"sentence \"{Style.DIM}{sentence}{Style.RESET_ALL}\" ", end='',  flush=True)
 
-                    synthesis_input = texttospeech.SynthesisInput(text=sentence)
-                    voice = texttospeech.VoiceSelectionParams(
-                        language_code='fr',
-                        ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL,
-                        name=voice_name)
+                        synthesis_input = texttospeech.SynthesisInput(text=sentence)
+                        voice = texttospeech.VoiceSelectionParams(
+                            language_code='fr',
+                            ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL,
+                            name=voice_name)
 
-                    # Select the type of audio file you want returned
-                    audio_config = texttospeech.AudioConfig(
-                        audio_encoding=texttospeech.AudioEncoding.MP3)
+                        # Select the type of audio file you want returned
+                        audio_config = texttospeech.AudioConfig(
+                            audio_encoding=texttospeech.AudioEncoding.MP3)
 
 
 
-                    # Perform the text-to-speech request on the text input with the selected
-                    # voice parameters and audio file type
-                    response = client.synthesize_speech(
-                        input=synthesis_input, voice=voice, audio_config=audio_config)
+                        # Perform the text-to-speech request on the text input with the selected
+                        # voice parameters and audio file type
+                        response = client.synthesize_speech(
+                            input=synthesis_input, voice=voice, audio_config=audio_config)
 
-                    # The response's audio_content is binary.
-                    with safer.open(f'{dir}{hashd}.mp3', 'wb') as out:
-                        # Write the response to the output file.
-                        out.write(response.audio_content)
-                        print(f"written as {Style.DIM}{dir}{hashd}.mp3{Style.RESET_ALL}")
-                    time.sleep(1)
+                        # The response's audio_content is binary.
+                        with safer.open(f'{dir}{hashd}.mp3', 'wb') as out:
+                            # Write the response to the output file.
+                            out.write(response.audio_content)
+                            print(f"written as {Style.DIM}{dir}{hashd}.mp3{Style.RESET_ALL}")
+                        time.sleep(1)
+                    except:
+                        time.sleep(600)
                 break
             else:
                 break
