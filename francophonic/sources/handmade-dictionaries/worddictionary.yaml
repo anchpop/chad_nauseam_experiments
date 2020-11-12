@@ -11,6 +11,11 @@ french:
       - agreement
       - accord
     uuid: 4cb4e223-cda7-4f9b-86c2-41ab2f5d4f5f
+  agnan:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 01679e14-9af0-4534-950f-08e6ef9e6e49
   ah:
     definitions:
     - display: ah
@@ -252,6 +257,317 @@ french:
       - elsewhere
       - somewhere else
     uuid: 08144cd1-0198-4e15-94ab-cd4c50b8cd76
+  aimer:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to like:
+          imperative:
+            '':
+              '': like
+              let's: like
+          indicative:
+            future:
+              he/she/it - will: like
+              i - will: like
+              they - will: like
+              we - will: like
+              you - will: like
+            future continuous:
+              he/she/it - will - be: liking
+              i - will - be: liking
+              they - will - be: liking
+              we - will - be: liking
+              you - will - be: liking
+            future perfect:
+              he/she/it - will - have: liked
+              i - will - have: liked
+              they - will - have: liked
+              we - will - have: liked
+              you - will - have: liked
+            future perfect continuous:
+              he/she/it - will - have - been: liking
+              i - will - have - been: liking
+              they - will - have - been: liking
+              we - will - have - been: liking
+              you - will - have - been: liking
+            past continous:
+              he/she/it - was: liking
+              i - was: liking
+              they - were: liking
+              we - were: liking
+              you - were: liking
+            past perfect:
+              he/she/it - had: liked
+              i - had: liked
+              they - had: liked
+              we - had: liked
+              you - had: liked
+            past perfect continuous:
+              he/she/it - had - been: liking
+              i - had - been: liking
+              they - had - been: liking
+              we - had - been: liking
+              you - had - been: liking
+            present:
+              he/she/it: likes
+              i: like
+              they: like
+              we: like
+              you: like
+            present continuous:
+              he/she/it - is: liking
+              i - am: liking
+              they - are: liking
+              we - are: liking
+              you - are: liking
+            present perfect:
+              he/she/it - has: liked
+              i - have: liked
+              they - have: liked
+              we - have: liked
+              you - have: liked
+            present perfect continuous:
+              he/she/it - has - been: liking
+              i - have - been: liking
+              they - have - been: liking
+              we - have - been: liking
+              you - have - been: liking
+            preterite:
+              he/she/it: liked
+              i: liked
+              they: liked
+              we: liked
+              you: liked
+          participle:
+            past:
+              '': liked
+            present:
+              '': liking
+          perfect participle:
+            '':
+              having: liked
+        to love:
+          imperative:
+            '':
+              '': love
+              let's: love
+          indicative:
+            future:
+              he/she/it - will: love
+              i - will: love
+              they - will: love
+              we - will: love
+              you - will: love
+            future continuous:
+              he/she/it - will - be: loving
+              i - will - be: loving
+              they - will - be: loving
+              we - will - be: loving
+              you - will - be: loving
+            future perfect:
+              he/she/it - will - have: loved
+              i - will - have: loved
+              they - will - have: loved
+              we - will - have: loved
+              you - will - have: loved
+            future perfect continuous:
+              he/she/it - will - have - been: loving
+              i - will - have - been: loving
+              they - will - have - been: loving
+              we - will - have - been: loving
+              you - will - have - been: loving
+            past continous:
+              he/she/it - was: loving
+              i - was: loving
+              they - were: loving
+              we - were: loving
+              you - were: loving
+            past perfect:
+              he/she/it - had: loved
+              i - had: loved
+              they - had: loved
+              we - had: loved
+              you - had: loved
+            past perfect continuous:
+              he/she/it - had - been: loving
+              i - had - been: loving
+              they - had - been: loving
+              we - had - been: loving
+              you - had - been: loving
+            present:
+              he/she/it: loves
+              i: love
+              they: love
+              we: love
+              you: love
+            present continuous:
+              he/she/it - is: loving
+              i - am: loving
+              they - are: loving
+              we - are: loving
+              you - are: loving
+            present perfect:
+              he/she/it - has: loved
+              i - have: loved
+              they - have: loved
+              we - have: loved
+              you - have: loved
+            present perfect continuous:
+              he/she/it - has - been: loving
+              i - have - been: loving
+              they - have - been: loving
+              we - have - been: loving
+              you - have - been: loving
+            preterite:
+              he/she/it: loved
+              i: loved
+              they: loved
+              we: loved
+              you: loved
+          participle:
+            past:
+              '': loved
+            present:
+              '': loving
+          perfect participle:
+            '':
+              having: loved
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: aimé
+            ils/elles - eussent: aimé
+            j' - eusse: aimé
+            nous - eussions: aimé
+            tu - eusses: aimé
+            vous - eussiez: aimé
+          passé première forme:
+            il/elle - aurait: aimé
+            ils/elles - auraient: aimé
+            j' - aurais: aimé
+            nous - aurions: aimé
+            tu - aurais: aimé
+            vous - auriez: aimé
+          présent:
+            il/elle: aimerait
+            ils/elles: aimeraient
+            j': aimerais
+            nous: aimerions
+            tu: aimerais
+            vous: aimeriez
+        indicatif:
+          futur:
+            il/elle: aimera
+            ils/elles: aimeront
+            j': aimerai
+            nous: aimerons
+            tu: aimeras
+            vous: aimerez
+          futur antérieur:
+            il/elle - aura: aimé
+            ils/elles - auront: aimé
+            j' - aurai: aimé
+            nous - aurons: aimé
+            tu - auras: aimé
+            vous - aurez: aimé
+          imparfait:
+            il/elle: aimait
+            ils/elles: aimaient
+            j': aimais
+            nous: aimions
+            tu: aimais
+            vous: aimiez
+          passé antérieur:
+            il/elle - eut: aimé
+            ils/elles - eurent: aimé
+            j' - eus: aimé
+            nous - eûmes: aimé
+            tu - eus: aimé
+            vous - eûtes: aimé
+          passé composé:
+            il/elle - a: aimé
+            ils/elles - ont: aimé
+            j' - ai: aimé
+            nous - avons: aimé
+            tu - as: aimé
+            vous - avez: aimé
+          passé simple:
+            il/elle: aima
+            ils/elles: aimèrent
+            j': aimai
+            nous: aimâmes
+            tu: aimas
+            vous: aimâtes
+          plus-que-parfait:
+            il/elle - avait: aimé
+            ils/elles - avaient: aimé
+            j' - avais: aimé
+            nous - avions: aimé
+            tu - avais: aimé
+            vous - aviez: aimé
+          présent:
+            il/elle: aime
+            ils/elles: aiment
+            j': aime
+            nous: aimons
+            tu: aimes
+            vous: aimez
+        infinitif:
+          passé:
+            avoir: aimé
+        participe:
+          passé:
+            aie: aimé
+            ayez: aimé
+            ayons: aimé
+          passé composé:
+            ayant: aimé
+          présent:
+            '': aimez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: aimât
+            qu' - ils/elles: aimassent
+            que - j': aimasse
+            que - nous: aimassions
+            que - tu: aimasses
+            que - vous: aimassiez
+          passé:
+            qu' - il/elle - ait: aimé
+            qu' - ils/elles - aient: aimé
+            que - j' - aie: aimé
+            que - nous - ayons: aimé
+            que - tu - aies: aimé
+            que - vous - ayez: aimé
+          plus-que-parfait:
+            qu' - il/elle - eût: aimé
+            qu' - ils/elles - eussent: aimé
+            que - j' - eusse: aimé
+            que - nous - eussions: aimé
+            que - tu - eusses: aimé
+            que - vous - eussiez: aimé
+          présent:
+            qu' - il/elle: aime
+            qu' - ils/elles: aiment
+            que - j': aime
+            que - nous: aimions
+            que - tu: aimes
+            que - vous: aimiez
+      display: aimer
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - s'aimer
+      - ne pas aimer
+      - ne pas s'aimer
+      pos: verb
+      transitive: true
+      translations:
+      - to love
+      - to like
+    uuid: 7280d759-103c-4cb0-8ee8-103805cd6221
   ainsi:
     definitions:
     - display: ainsi
@@ -277,6 +593,11 @@ french:
       - air
       - tune
     uuid: 294c916b-27ba-465d-99be-a3c1c408543d
+  alceste:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 5aaa34e7-1be6-4a1c-900f-a1f1670a5e38
   aller:
     definitions:
     - auxiliary: être
@@ -1453,6 +1774,14 @@ french:
       - so much
       - so many
     uuid: 1983627a-531a-4e5e-8af4-d9105b901aea
+  auto:
+    definitions:
+    - display: auto
+      gender: masc
+      pos: noun
+      translations:
+      - car
+    uuid: f71951f4-46ac-4f18-8d66-5e38bf46429f
   autour:
     definitions:
     - display: autour
@@ -1794,6 +2123,11 @@ french:
     definitions:
     - notaword: true
     uuid: 8e97b267-f43e-418d-a29d-609dc9bcdbc0
+  blédurt:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 2b688e7f-bd39-4b90-8c08-d8964562ca25
   bon:
     definitions:
     - display: bon
@@ -1810,6 +2144,11 @@ french:
       translations:
       - maid
     uuid: 6fc2a2ec-5ac8-4315-994c-11a2d1c9fd9b
+  bordenave:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 0af00243-046f-4aad-8327-6b373e77e112
   bouche:
     definitions:
     - display: bouche
@@ -1818,6 +2157,20 @@ french:
       translations:
       - mouth
     uuid: 3a89ecca-afb8-4fa6-b7a7-afcec5159880
+  bouillon:
+    definitions:
+    - display: bouillon
+      exampleSentences:
+      - english: vegetable broth
+        french: du bouillon de légumes
+      gender: masc
+      pos: noun
+      translations:
+      - broth
+      - stock
+    - name: true
+      notaword: true
+    uuid: 0b48f84f-51f0-4283-abfe-d30b51c9431c
   bout:
     definitions:
     - display: bout
@@ -2289,6 +2642,26 @@ french:
       translations:
       - things
     uuid: 98e4e924-3274-4e28-83cb-036ef79bf343
+  chouette:
+    definitions:
+    - display: chouette
+      gender: fem
+      pos: noun
+      translations:
+      - owl
+    - display: chouette
+      exampleSentences:
+      - english: a great film
+        french: un chouette film
+      - english: I saw a really great film.
+        french: J’ai vu un film très chouette.
+      - english: really great
+        french: très chouette
+      gender: NA
+      pos: adjective
+      translations:
+      - great
+    uuid: 79da8424-3c4e-4565-b8fe-0798ccc98a4c
   château:
     definitions:
     - display: château
@@ -2297,6 +2670,14 @@ french:
       translations:
       - castle
     uuid: 443c5a6d-04fc-4e51-98a3-4e087f6ae6b7
+  cigare:
+    definitions:
+    - display: cigare
+      gender: masc
+      pos: noun
+      translations:
+      - cigar
+    uuid: 994ea774-8adc-4a98-8fe3-b1f7351b2d32
   cinq:
     definitions:
     - display: cinq
@@ -2315,6 +2696,11 @@ french:
       - age group
       - income bracket
     uuid: 14f2db8d-28f3-4f4a-bf68-8ed5943921ad
+  clotaire:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 4b89c314-6991-42a0-aa57-5947b39aa9c1
   colère:
     definitions:
     - display: colère
@@ -2331,6 +2717,386 @@ french:
       translations:
       - like
     uuid: c3c2623e-98f7-4000-b877-20cb4c616efd
+  commencer:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to begin:
+          imperative:
+            '':
+              '': begin
+              let's: begin
+          indicative:
+            future:
+              he/she/it - will: begin
+              i - will: begin
+              they - will: begin
+              we - will: begin
+              you - will: begin
+            future continuous:
+              he/she/it - will - be: beginning
+              i - will - be: beginning
+              they - will - be: beginning
+              we - will - be: beginning
+              you - will - be: beginning
+            future perfect:
+              he/she/it - will - have: begun
+              i - will - have: begun
+              they - will - have: begun
+              we - will - have: begun
+              you - will - have: begun
+            future perfect continuous:
+              he/she/it - will - have - been: beginning
+              i - will - have - been: beginning
+              they - will - have - been: beginning
+              we - will - have - been: beginning
+              you - will - have - been: beginning
+            past continous:
+              he/she/it - was: beginning
+              i - was: beginning
+              they - were: beginning
+              we - were: beginning
+              you - were: beginning
+            past perfect:
+              he/she/it - had: begun
+              i - had: begun
+              they - had: begun
+              we - had: begun
+              you - had: begun
+            past perfect continuous:
+              he/she/it - had - been: beginning
+              i - had - been: beginning
+              they - had - been: beginning
+              we - had - been: beginning
+              you - had - been: beginning
+            present:
+              he/she/it: begins
+              i: begin
+              they: begin
+              we: begin
+              you: begin
+            present continuous:
+              he/she/it - is: beginning
+              i - am: beginning
+              they - are: beginning
+              we - are: beginning
+              you - are: beginning
+            present perfect:
+              he/she/it - has: begun
+              i - have: begun
+              they - have: begun
+              we - have: begun
+              you - have: begun
+            present perfect continuous:
+              he/she/it - has - been: beginning
+              i - have - been: beginning
+              they - have - been: beginning
+              we - have - been: beginning
+              you - have - been: beginning
+            preterite:
+              he/she/it: began
+              i: began
+              they: began
+              we: began
+              you: began
+          participle:
+            past:
+              '': begun
+            present:
+              '': beginning
+          perfect participle:
+            '':
+              having: begun
+        to start:
+          imperative:
+            '':
+              '': start
+              let's: start
+          indicative:
+            future:
+              he/she/it - will: start
+              i - will: start
+              they - will: start
+              we - will: start
+              you - will: start
+            future continuous:
+              he/she/it - will - be: starting
+              i - will - be: starting
+              they - will - be: starting
+              we - will - be: starting
+              you - will - be: starting
+            future perfect:
+              he/she/it - will - have: started
+              i - will - have: started
+              they - will - have: started
+              we - will - have: started
+              you - will - have: started
+            future perfect continuous:
+              he/she/it - will - have - been: starting
+              i - will - have - been: starting
+              they - will - have - been: starting
+              we - will - have - been: starting
+              you - will - have - been: starting
+            past continous:
+              he/she/it - was: starting
+              i - was: starting
+              they - were: starting
+              we - were: starting
+              you - were: starting
+            past perfect:
+              he/she/it - had: started
+              i - had: started
+              they - had: started
+              we - had: started
+              you - had: started
+            past perfect continuous:
+              he/she/it - had - been: starting
+              i - had - been: starting
+              they - had - been: starting
+              we - had - been: starting
+              you - had - been: starting
+            present:
+              he/she/it: starts
+              i: start
+              they: start
+              we: start
+              you: start
+            present continuous:
+              he/she/it - is: starting
+              i - am: starting
+              they - are: starting
+              we - are: starting
+              you - are: starting
+            present perfect:
+              he/she/it - has: started
+              i - have: started
+              they - have: started
+              we - have: started
+              you - have: started
+            present perfect continuous:
+              he/she/it - has - been: starting
+              i - have - been: starting
+              they - have - been: starting
+              we - have - been: starting
+              you - have - been: starting
+            preterite:
+              he/she/it: started
+              i: started
+              they: started
+              we: started
+              you: started
+          participle:
+            past:
+              '': started
+            present:
+              '': starting
+          perfect participle:
+            '':
+              having: started
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: commencée
+            elles - fussent: commencées
+            il - fût: commencé
+            il/elle - eût: commencé
+            ils - fussent: commencés
+            ils/elles - eussent: commencé
+            j' - eusse: commencé
+            je - fusse: commencé
+            nous - eussions: commencé
+            nous - fussions: commencés
+            tu - eusses: commencé
+            tu - fusses: commencé
+            vous - eussiez: commencé
+            vous - fussiez: commencés
+          passé première forme:
+            elle - serait: commencée
+            elles - seraient: commencées
+            il - serait: commencé
+            il/elle - aurait: commencé
+            ils - seraient: commencés
+            ils/elles - auraient: commencé
+            j' - aurais: commencé
+            je - serais: commencé
+            nous - aurions: commencé
+            nous - serions: commencés
+            tu - aurais: commencé
+            tu - serais: commencé
+            vous - auriez: commencé
+            vous - seriez: commencés
+          présent:
+            il/elle: commencerait
+            ils/elles: commenceraient
+            je: commencerais
+            nous: commencerions
+            tu: commencerais
+            vous: commenceriez
+        indicatif:
+          futur:
+            il/elle: commencera
+            ils/elles: commenceront
+            je: commencerai
+            nous: commencerons
+            tu: commenceras
+            vous: commencerez
+          futur antérieur:
+            elle - sera: commencée
+            elles - seront: commencées
+            il - sera: commencé
+            il/elle - aura: commencé
+            ils - seront: commencés
+            ils/elles - auront: commencé
+            j' - aurai: commencé
+            je - serai: commencé
+            nous - aurons: commencé
+            nous - serons: commencés
+            tu - auras: commencé
+            tu - seras: commencé
+            vous - aurez: commencé
+            vous - serez: commencés
+          imparfait:
+            il/elle: commençait
+            ils/elles: commençaient
+            je: commençais
+            nous: commencions
+            tu: commençais
+            vous: commenciez
+          passé antérieur:
+            elle - fut: commencée
+            elles - furent: commencées
+            il - fut: commencé
+            il/elle - eut: commencé
+            ils - furent: commencés
+            ils/elles - eurent: commencé
+            j' - eus: commencé
+            je - fus: commencé
+            nous - eûmes: commencé
+            nous - fûmes: commencés
+            tu - eus: commencé
+            tu - fus: commencé
+            vous - eûtes: commencé
+            vous - fûtes: commencés
+          passé composé:
+            elle - est: commencée
+            elles - sont: commencées
+            il - est: commencé
+            il/elle - a: commencé
+            ils - sont: commencés
+            ils/elles - ont: commencé
+            j' - ai: commencé
+            je - suis: commencé
+            nous - avons: commencé
+            nous - sommes: commencés
+            tu - as: commencé
+            tu - es: commencé
+            vous - avez: commencé
+            vous - êtes: commencés
+          passé simple:
+            il/elle: commença
+            ils/elles: commencèrent
+            je: commençai
+            nous: commençâmes
+            tu: commenças
+            vous: commençâtes
+          plus-que-parfait:
+            elle - était: commencée
+            elles - étaient: commencées
+            il - était: commencé
+            il/elle - avait: commencé
+            ils - étaient: commencés
+            ils/elles - avaient: commencé
+            j' - avais: commencé
+            j' - étais: commencé
+            nous - avions: commencé
+            nous - étions: commencés
+            tu - avais: commencé
+            tu - étais: commencé
+            vous - aviez: commencé
+            vous - étiez: commencés
+          présent:
+            il/elle: commence
+            ils/elles: commencent
+            je: commence
+            nous: commençons
+            tu: commences
+            vous: commencez
+        infinitif:
+          passé:
+            avoir: commencé
+            être: commencé
+        participe:
+          passé:
+            aie: commencé
+            ayez: commencé
+            ayons: commencé
+            sois: commencé
+            soyez: commencé
+            soyons: commencé
+          passé composé:
+            ayant: commencé
+            étant: commencée
+          présent:
+            '': commencez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: commençât
+            qu' - ils/elles: commençassent
+            que - je: commençasse
+            que - nous: commençassions
+            que - tu: commençasses
+            que - vous: commençassiez
+          passé:
+            qu' - elle - soit: commencée
+            qu' - elles - soient: commencées
+            qu' - il - soit: commencé
+            qu' - il/elle - ait: commencé
+            qu' - ils - soient: commencés
+            qu' - ils/elles - aient: commencé
+            que - j' - aie: commencé
+            que - je - sois: commencé
+            que - nous - ayons: commencé
+            que - nous - soyons: commencés
+            que - tu - aies: commencé
+            que - tu - sois: commencé
+            que - vous - ayez: commencé
+            que - vous - soyez: commencés
+          plus-que-parfait:
+            qu' - elle - fût: commencée
+            qu' - elles - fussent: commencées
+            qu' - il - fût: commencé
+            qu' - il/elle - eût: commencé
+            qu' - ils - fussent: commencés
+            qu' - ils/elles - eussent: commencé
+            que - j' - eusse: commencé
+            que - je - fusse: commencé
+            que - nous - eussions: commencé
+            que - nous - fussions: commencés
+            que - tu - eusses: commencé
+            que - tu - fusses: commencé
+            que - vous - eussiez: commencé
+            que - vous - fussiez: commencés
+          présent:
+            qu' - il/elle: commence
+            qu' - ils/elles: commencent
+            que - je: commence
+            que - nous: commencions
+            que - tu: commences
+            que - vous: commenciez
+      display: commencer
+      gender: NA
+      modal_in_english: false
+      model: commencer
+      other_forms:
+      - se commencer
+      - ne pas commencer
+      - ne pas se commencer
+      pos: verb
+      transitive: both
+      translations:
+      - to start
+      - to begin
+    uuid: 9f6ab7be-d666-4ec4-a41e-a212caf066b7
   comment:
     definitions:
     - display: comment
@@ -2575,6 +3341,25 @@ french:
       - count
       - number
     uuid: f718b1e8-3e52-4f65-b19d-cad201501734
+  content:
+    definitions:
+    - display: content
+      gender: masc
+      pos: adjective
+      translations:
+      - pleased
+      - glad
+    uuid: 99990e69-d785-42e9-b04b-791b75bbad4f
+  contente:
+    definitions:
+    - display: content
+      gender: fem
+      pos: adjective
+      see: content
+      translations:
+      - pleased
+      - glad
+    uuid: 83b1cf4d-c75e-4b3f-9852-339c4c668db8
   contre:
     definitions:
     - display: contre
@@ -2583,6 +3368,35 @@ french:
       translations:
       - against
     uuid: 0c5e9d95-e524-4023-a561-30568ac0bf28
+  copain:
+    definitions:
+    - display: copain
+      gender: masc
+      pos: noun
+      translations:
+      - friend
+      - boyfriend
+    uuid: e4fe20a8-4ee6-4fcb-b10f-4ab49a45912d
+  copaine:
+    definitions:
+    - display: copaine
+      gender: fem
+      pos: noun
+      see: copain
+      translations:
+      - friend
+      - girlfriend
+    uuid: 4373e6da-c4d0-4589-ae46-beb20fccf4e9
+  copains:
+    definitions:
+    - display: copains
+      gender: NA
+      plural: true
+      pos: noun
+      see: copain
+      translations:
+      - friend
+    uuid: f3e0009e-d4aa-4949-b5d7-4835c650f366
   corps:
     definitions:
     - display: corps
@@ -2631,6 +3445,404 @@ french:
       - class
       - course
     uuid: 1305f186-4ce3-4715-935a-8f64db140af9
+  crier:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to cry:
+          imperative:
+            '':
+              '': cry
+              let's: cry
+          indicative:
+            future:
+              he/she/it - will: cry
+              i - will: cry
+              they - will: cry
+              we - will: cry
+              you - will: cry
+            future continuous:
+              he/she/it - will - be: crying
+              i - will - be: crying
+              they - will - be: crying
+              we - will - be: crying
+              you - will - be: crying
+            future perfect:
+              he/she/it - will - have: cried
+              i - will - have: cried
+              they - will - have: cried
+              we - will - have: cried
+              you - will - have: cried
+            future perfect continuous:
+              he/she/it - will - have - been: crying
+              i - will - have - been: crying
+              they - will - have - been: crying
+              we - will - have - been: crying
+              you - will - have - been: crying
+            past continous:
+              he/she/it - was: crying
+              i - was: crying
+              they - were: crying
+              we - were: crying
+              you - were: crying
+            past perfect:
+              he/she/it - had: cried
+              i - had: cried
+              they - had: cried
+              we - had: cried
+              you - had: cried
+            past perfect continuous:
+              he/she/it - had - been: crying
+              i - had - been: crying
+              they - had - been: crying
+              we - had - been: crying
+              you - had - been: crying
+            present:
+              he/she/it: cries
+              i: cry
+              they: cry
+              we: cry
+              you: cry
+            present continuous:
+              he/she/it - is: crying
+              i - am: crying
+              they - are: crying
+              we - are: crying
+              you - are: crying
+            present perfect:
+              he/she/it - has: cried
+              i - have: cried
+              they - have: cried
+              we - have: cried
+              you - have: cried
+            present perfect continuous:
+              he/she/it - has - been: crying
+              i - have - been: crying
+              they - have - been: crying
+              we - have - been: crying
+              you - have - been: crying
+            preterite:
+              he/she/it: cried
+              i: cried
+              they: cried
+              we: cried
+              you: cried
+          participle:
+            past:
+              '': cried
+            present:
+              '': crying
+          perfect participle:
+            '':
+              having: cried
+        to scream:
+          imperative:
+            '':
+              '': scream
+              let's: scream
+          indicative:
+            future:
+              he/she/it - will: scream
+              i - will: scream
+              they - will: scream
+              we - will: scream
+              you - will: scream
+            future continuous:
+              he/she/it - will - be: screaming
+              i - will - be: screaming
+              they - will - be: screaming
+              we - will - be: screaming
+              you - will - be: screaming
+            future perfect:
+              he/she/it - will - have: screamed
+              i - will - have: screamed
+              they - will - have: screamed
+              we - will - have: screamed
+              you - will - have: screamed
+            future perfect continuous:
+              he/she/it - will - have - been: screaming
+              i - will - have - been: screaming
+              they - will - have - been: screaming
+              we - will - have - been: screaming
+              you - will - have - been: screaming
+            past continous:
+              he/she/it - was: screaming
+              i - was: screaming
+              they - were: screaming
+              we - were: screaming
+              you - were: screaming
+            past perfect:
+              he/she/it - had: screamed
+              i - had: screamed
+              they - had: screamed
+              we - had: screamed
+              you - had: screamed
+            past perfect continuous:
+              he/she/it - had - been: screaming
+              i - had - been: screaming
+              they - had - been: screaming
+              we - had - been: screaming
+              you - had - been: screaming
+            present:
+              he/she/it: screams
+              i: scream
+              they: scream
+              we: scream
+              you: scream
+            present continuous:
+              he/she/it - is: screaming
+              i - am: screaming
+              they - are: screaming
+              we - are: screaming
+              you - are: screaming
+            present perfect:
+              he/she/it - has: screamed
+              i - have: screamed
+              they - have: screamed
+              we - have: screamed
+              you - have: screamed
+            present perfect continuous:
+              he/she/it - has - been: screaming
+              i - have - been: screaming
+              they - have - been: screaming
+              we - have - been: screaming
+              you - have - been: screaming
+            preterite:
+              he/she/it: screamed
+              i: screamed
+              they: screamed
+              we: screamed
+              you: screamed
+          participle:
+            past:
+              '': screamed
+            present:
+              '': screaming
+          perfect participle:
+            '':
+              having: screamed
+        to shout:
+          imperative:
+            '':
+              '': shout
+              let's: shout
+          indicative:
+            future:
+              he/she/it - will: shout
+              i - will: shout
+              they - will: shout
+              we - will: shout
+              you - will: shout
+            future continuous:
+              he/she/it - will - be: shouting
+              i - will - be: shouting
+              they - will - be: shouting
+              we - will - be: shouting
+              you - will - be: shouting
+            future perfect:
+              he/she/it - will - have: shouted
+              i - will - have: shouted
+              they - will - have: shouted
+              we - will - have: shouted
+              you - will - have: shouted
+            future perfect continuous:
+              he/she/it - will - have - been: shouting
+              i - will - have - been: shouting
+              they - will - have - been: shouting
+              we - will - have - been: shouting
+              you - will - have - been: shouting
+            past continous:
+              he/she/it - was: shouting
+              i - was: shouting
+              they - were: shouting
+              we - were: shouting
+              you - were: shouting
+            past perfect:
+              he/she/it - had: shouted
+              i - had: shouted
+              they - had: shouted
+              we - had: shouted
+              you - had: shouted
+            past perfect continuous:
+              he/she/it - had - been: shouting
+              i - had - been: shouting
+              they - had - been: shouting
+              we - had - been: shouting
+              you - had - been: shouting
+            present:
+              he/she/it: shouts
+              i: shout
+              they: shout
+              we: shout
+              you: shout
+            present continuous:
+              he/she/it - is: shouting
+              i - am: shouting
+              they - are: shouting
+              we - are: shouting
+              you - are: shouting
+            present perfect:
+              he/she/it - has: shouted
+              i - have: shouted
+              they - have: shouted
+              we - have: shouted
+              you - have: shouted
+            present perfect continuous:
+              he/she/it - has - been: shouting
+              i - have - been: shouting
+              they - have - been: shouting
+              we - have - been: shouting
+              you - have - been: shouting
+            preterite:
+              he/she/it: shouted
+              i: shouted
+              they: shouted
+              we: shouted
+              you: shouted
+          participle:
+            past:
+              '': shouted
+            present:
+              '': shouting
+          perfect participle:
+            '':
+              having: shouted
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: crié
+            ils/elles - eussent: crié
+            j' - eusse: crié
+            nous - eussions: crié
+            tu - eusses: crié
+            vous - eussiez: crié
+          passé première forme:
+            il/elle - aurait: crié
+            ils/elles - auraient: crié
+            j' - aurais: crié
+            nous - aurions: crié
+            tu - aurais: crié
+            vous - auriez: crié
+          présent:
+            il/elle: crierait
+            ils/elles: crieraient
+            je: crierais
+            nous: crierions
+            tu: crierais
+            vous: crieriez
+        indicatif:
+          futur:
+            il/elle: criera
+            ils/elles: crieront
+            je: crierai
+            nous: crierons
+            tu: crieras
+            vous: crierez
+          futur antérieur:
+            il/elle - aura: crié
+            ils/elles - auront: crié
+            j' - aurai: crié
+            nous - aurons: crié
+            tu - auras: crié
+            vous - aurez: crié
+          imparfait:
+            il/elle: criait
+            ils/elles: criaient
+            je: criais
+            nous: criions
+            tu: criais
+            vous: criiez
+          passé antérieur:
+            il/elle - eut: crié
+            ils/elles - eurent: crié
+            j' - eus: crié
+            nous - eûmes: crié
+            tu - eus: crié
+            vous - eûtes: crié
+          passé composé:
+            il/elle - a: crié
+            ils/elles - ont: crié
+            j' - ai: crié
+            nous - avons: crié
+            tu - as: crié
+            vous - avez: crié
+          passé simple:
+            il/elle: cria
+            ils/elles: crièrent
+            je: criai
+            nous: criâmes
+            tu: crias
+            vous: criâtes
+          plus-que-parfait:
+            il/elle - avait: crié
+            ils/elles - avaient: crié
+            j' - avais: crié
+            nous - avions: crié
+            tu - avais: crié
+            vous - aviez: crié
+          présent:
+            il/elle: crie
+            ils/elles: crient
+            je: crie
+            nous: crions
+            tu: cries
+            vous: criez
+        infinitif:
+          passé:
+            avoir: crié
+        participe:
+          passé:
+            aie: crié
+            ayez: crié
+            ayons: crié
+          passé composé:
+            ayant: crié
+          présent:
+            '': criez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: criât
+            qu' - ils/elles: criassent
+            que - je: criasse
+            que - nous: criassions
+            que - tu: criasses
+            que - vous: criassiez
+          passé:
+            qu' - il/elle - ait: crié
+            qu' - ils/elles - aient: crié
+            que - j' - aie: crié
+            que - nous - ayons: crié
+            que - tu - aies: crié
+            que - vous - ayez: crié
+          plus-que-parfait:
+            qu' - il/elle - eût: crié
+            qu' - ils/elles - eussent: crié
+            que - j' - eusse: crié
+            que - nous - eussions: crié
+            que - tu - eusses: crié
+            que - vous - eussiez: crié
+          présent:
+            qu' - il/elle: crie
+            qu' - ils/elles: crient
+            que - je: crie
+            que - nous: criions
+            que - tu: cries
+            que - vous: criiez
+      display: crier
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - se crier
+      - ne pas crier
+      - ne pas se crier
+      pos: verb
+      transitive: both
+      translations:
+      - to shout
+      - to cry
+      - to scream
+    uuid: 51f1bf81-fac6-4155-b582-bd544d714296
   croire:
     definitions:
     - auxiliary: avoir
@@ -2870,6 +4082,32 @@ french:
       translations:
       - heart
     uuid: 328f2562-3a0e-48c8-86d2-158df3e674dd
+  d'ici:
+    definitions:
+    - abbreviation: de + ici
+      display: d'ici
+      gender: NA
+      translations:
+      - by then
+    uuid: 9f07de64-234a-4fcd-b383-c8d21d448098
+  d'un:
+    definitions:
+    - abbreviation: de + un
+      display: d'un
+      gender: fem
+      translations:
+      - an
+      - of an
+      - from an
+    uuid: 042aac0d-dfb3-4497-84a8-d6f4d2272b6a
+  d'une:
+    definitions:
+    - abbreviation: de + une
+      display: d'une
+      gender: fem
+      translations:
+      - of one
+    uuid: 52c68176-6e54-498e-a50a-cc59dd4cae51
   dans:
     definitions:
     - display: dans
@@ -3623,6 +4861,11 @@ french:
       translations:
       - he says
     uuid: 426f154c-79af-40ae-a985-9fdc22e69613
+  djodjo:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 217a2ff7-b3da-41ac-a205-8c93e9e1b671
   donc:
     definitions:
     - display: donc
@@ -3874,7 +5117,8 @@ french:
     uuid: 997c016c-48c1-4396-8063-3c59292f0a2f
   draco:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 9e961dd4-7f87-4ee5-8543-637907cefdc0
   droit:
     definitions:
@@ -3893,6 +5137,17 @@ french:
       translations:
       - straight
     uuid: 75e58170-7d9f-4b93-a7fa-3c00b6d42ab1
+  drôlement:
+    definitions:
+    - display: drôlement
+      gender: NA
+      pos: adverb
+      translations:
+      - funnily
+      - strangely
+      - awfully
+      - terribly
+    uuid: 79178261-5719-4203-ade8-25ad43d30d1f
   du:
     definitions:
     - abbreviation: de + le
@@ -3909,7 +5164,8 @@ french:
     uuid: b9b3836d-f054-43bc-9183-97491ee6e5dc
   dumbledore:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 1be1ba6c-99c3-44aa-864c-51209bf14eae
   décidé:
     definitions:
@@ -3966,32 +5222,6 @@ french:
       translations:
       - masc
     uuid: 154d9e82-bb3f-4f72-a659-b8c711256fef
-  d'ici:
-    definitions:
-    - abbreviation: de + ici
-      display: d'ici
-      gender: NA
-      translations:
-      - by then
-    uuid: 9f07de64-234a-4fcd-b383-c8d21d448098
-  d'un:
-    definitions:
-    - abbreviation: de + un
-      display: d'un
-      gender: fem
-      translations:
-      - an
-      - of an
-      - from an
-    uuid: 042aac0d-dfb3-4497-84a8-d6f4d2272b6a
-  d'une:
-    definitions:
-    - abbreviation: de + une
-      display: d'une
-      gender: fem
-      translations:
-      - of one
-    uuid: 52c68176-6e54-498e-a50a-cc59dd4cae51
   eau:
     definitions:
     - display: eau
@@ -4824,6 +6054,11 @@ french:
       translations:
       - and
     uuid: 8b4093a9-71d3-41ef-b760-aae9b75c44e2
+  eudes:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 23ffd258-dbc0-44a2-a683-4daf76309d9f
   eux:
     definitions:
     - display: eux
@@ -5666,6 +6901,26 @@ french:
       translations:
       - end
     uuid: c13f60c4-116a-40a6-bf20-b0a032987ee3
+  fleur:
+    definitions:
+    - display: fleurs
+      gender: fem
+      pos: noun
+      translations:
+      - flower
+      - blossom
+    uuid: 6183b2d1-e8ef-4b57-8eba-53d4efe9ac27
+  fleurs:
+    definitions:
+    - display: fleurs
+      gender: NA
+      plural: true
+      pos: noun
+      see: fleur
+      translations:
+      - flowers
+      - blossoms
+    uuid: 79c71887-a6e3-411a-bb00-52cc3005345d
   fois:
     definitions:
     - display: fois
@@ -5735,11 +6990,13 @@ french:
     uuid: b6c0e3c4-2b34-4868-8176-771e7b32c4f8
   fred:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 22a43b4a-43cf-4a22-852a-d0e4c4f7d9ce
   fudge:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 87fab851-7b83-4651-90b3-82592394dee2
   garçon:
     definitions:
@@ -5772,13 +7029,20 @@ french:
       translations:
       - people
     uuid: 3001fad5-4f79-4334-87e2-17c3c6cd1909
+  geoffroy:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 04010426-0eaf-4d5d-8ee5-915ab5b7de3b
   george:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 37743c68-be38-42c2-994a-3ea461ff5e77
   ginny:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 6f741cc9-aab4-4b10-9823-7eae58c75094
   grand:
     definitions:
@@ -5814,8 +7078,36 @@ french:
   granger:
     definitions:
     - display: granger
+      name: true
       notaword: true
     uuid: aeec3b91-2492-45f3-97a8-e0439bb93cbf
+  gros:
+    definitions:
+    - display: gros
+      gender: masc
+      pos: adjective
+      translations:
+      - big
+      - large
+      - thick
+      - heavy
+      - fat
+      - great
+    uuid: dbc96249-d275-4bb8-af9c-372a1a55f44f
+  grosse:
+    definitions:
+    - display: grosse
+      gender: fem
+      pos: adjective
+      see: gros
+      translations:
+      - big
+      - large
+      - thick
+      - heavy
+      - fat
+      - great
+    uuid: 702cda7d-e389-4e2f-b887-6888885c8c20
   gryffondor:
     definitions:
     - display: Gryffondor
@@ -5827,15 +7119,18 @@ french:
     uuid: f98a3e29-e235-4ee3-b6b7-f799c9adaa65
   hagrid:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: af235c1e-b525-43a4-978c-15716ada1fcf
   harry:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 61227c29-331b-43c4-9c38-cef5334e2333
   hermione:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 585398a9-587f-44b1-aa94-cb5791e1f68b
   heure:
     definitions:
@@ -6487,6 +7782,22 @@ french:
       translations:
       - impression
     uuid: d11dbc01-40c0-430c-a834-1be738a4e99c
+  inspecteur:
+    definitions:
+    - display: inspecteur
+      gender: masc
+      pos: noun
+      translations:
+      - inspector
+    uuid: 73c0b6aa-622c-4599-82b1-4a3ce5585d27
+  inspectrice:
+    definitions:
+    - display: inspectrice
+      gender: fem
+      pos: noun
+      translations:
+      - inspector
+    uuid: 2e18dc5a-d3d0-4413-b1d1-2829fce04f02
   instant:
     definitions:
     - display: instant
@@ -6531,7 +7842,7 @@ french:
       gender: NA
       translations:
       - I have
-    uuid: 5709b251-4d5d-4688-a651-debcb1e0a151
+    uuid: 61becc8a-c226-49af-826e-156f22ee9c24
   jamais:
     definitions:
     - display: jamais
@@ -6555,6 +7866,14 @@ french:
       translations:
       - ever
     uuid: 1ed4d003-7966-4acf-b865-254ae2eb98a1
+  jardin:
+    definitions:
+    - display: jardin
+      gender: masc
+      pos: noun
+      translations:
+      - garden
+    uuid: 4d4d8a26-9708-4fa8-9b17-603655f6ab26
   je:
     definitions:
     - display: je
@@ -6795,6 +8114,409 @@ french:
       translations:
       - young
     uuid: 0fbfaf07-3c2e-4235-9bc3-cf383f1cb4d6
+  joachim:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: f5fb58b3-00c0-4ee1-8de3-ad236242e9c2
+  jouer:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to act:
+          imperative:
+            '':
+              '': act
+              let's: act
+          indicative:
+            future:
+              he/she/it - will: act
+              i - will: act
+              they - will: act
+              we - will: act
+              you - will: act
+            future continuous:
+              he/she/it - will - be: acting
+              i - will - be: acting
+              they - will - be: acting
+              we - will - be: acting
+              you - will - be: acting
+            future perfect:
+              he/she/it - will - have: acted
+              i - will - have: acted
+              they - will - have: acted
+              we - will - have: acted
+              you - will - have: acted
+            future perfect continuous:
+              he/she/it - will - have - been: acting
+              i - will - have - been: acting
+              they - will - have - been: acting
+              we - will - have - been: acting
+              you - will - have - been: acting
+            past continous:
+              he/she/it - was: acting
+              i - was: acting
+              they - were: acting
+              we - were: acting
+              you - were: acting
+            past perfect:
+              he/she/it - had: acted
+              i - had: acted
+              they - had: acted
+              we - had: acted
+              you - had: acted
+            past perfect continuous:
+              he/she/it - had - been: acting
+              i - had - been: acting
+              they - had - been: acting
+              we - had - been: acting
+              you - had - been: acting
+            present:
+              he/she/it: acts
+              i: act
+              they: act
+              we: act
+              you: act
+            present continuous:
+              he/she/it - is: acting
+              i - am: acting
+              they - are: acting
+              we - are: acting
+              you - are: acting
+            present perfect:
+              he/she/it - has: acted
+              i - have: acted
+              they - have: acted
+              we - have: acted
+              you - have: acted
+            present perfect continuous:
+              he/she/it - has - been: acting
+              i - have - been: acting
+              they - have - been: acting
+              we - have - been: acting
+              you - have - been: acting
+            preterite:
+              he/she/it: acted
+              i: acted
+              they: acted
+              we: acted
+              you: acted
+          participle:
+            past:
+              '': acted
+            present:
+              '': acting
+          perfect participle:
+            '':
+              having: acted
+        to gamble:
+          imperative:
+            '':
+              '': gamble
+              let's: gamble
+          indicative:
+            future:
+              he/she/it - will: gamble
+              i - will: gamble
+              they - will: gamble
+              we - will: gamble
+              you - will: gamble
+            future continuous:
+              he/she/it - will - be: gambling
+              i - will - be: gambling
+              they - will - be: gambling
+              we - will - be: gambling
+              you - will - be: gambling
+            future perfect:
+              he/she/it - will - have: gambled
+              i - will - have: gambled
+              they - will - have: gambled
+              we - will - have: gambled
+              you - will - have: gambled
+            future perfect continuous:
+              he/she/it - will - have - been: gambling
+              i - will - have - been: gambling
+              they - will - have - been: gambling
+              we - will - have - been: gambling
+              you - will - have - been: gambling
+            past continous:
+              he/she/it - was: gambling
+              i - was: gambling
+              they - were: gambling
+              we - were: gambling
+              you - were: gambling
+            past perfect:
+              he/she/it - had: gambled
+              i - had: gambled
+              they - had: gambled
+              we - had: gambled
+              you - had: gambled
+            past perfect continuous:
+              he/she/it - had - been: gambling
+              i - had - been: gambling
+              they - had - been: gambling
+              we - had - been: gambling
+              you - had - been: gambling
+            present:
+              he/she/it: gambles
+              i: gamble
+              they: gamble
+              we: gamble
+              you: gamble
+            present continuous:
+              he/she/it - is: gambling
+              i - am: gambling
+              they - are: gambling
+              we - are: gambling
+              you - are: gambling
+            present perfect:
+              he/she/it - has: gambled
+              i - have: gambled
+              they - have: gambled
+              we - have: gambled
+              you - have: gambled
+            present perfect continuous:
+              he/she/it - has - been: gambling
+              i - have - been: gambling
+              they - have - been: gambling
+              we - have - been: gambling
+              you - have - been: gambling
+            preterite:
+              he/she/it: gambled
+              i: gambled
+              they: gambled
+              we: gambled
+              you: gambled
+          participle:
+            past:
+              '': gambled
+            present:
+              '': gambling
+          perfect participle:
+            '':
+              having: gambled
+        to play:
+          imperative:
+            '':
+              '': play
+              let's: play
+          indicative:
+            future:
+              he/she/it - will: play
+              i - will: play
+              they - will: play
+              we - will: play
+              you - will: play
+            future continuous:
+              he/she/it - will - be: playing
+              i - will - be: playing
+              they - will - be: playing
+              we - will - be: playing
+              you - will - be: playing
+            future perfect:
+              he/she/it - will - have: played
+              i - will - have: played
+              they - will - have: played
+              we - will - have: played
+              you - will - have: played
+            future perfect continuous:
+              he/she/it - will - have - been: playing
+              i - will - have - been: playing
+              they - will - have - been: playing
+              we - will - have - been: playing
+              you - will - have - been: playing
+            past continous:
+              he/she/it - was: playing
+              i - was: playing
+              they - were: playing
+              we - were: playing
+              you - were: playing
+            past perfect:
+              he/she/it - had: played
+              i - had: played
+              they - had: played
+              we - had: played
+              you - had: played
+            past perfect continuous:
+              he/she/it - had - been: playing
+              i - had - been: playing
+              they - had - been: playing
+              we - had - been: playing
+              you - had - been: playing
+            present:
+              he/she/it: plays
+              i: play
+              they: play
+              we: play
+              you: play
+            present continuous:
+              he/she/it - is: playing
+              i - am: playing
+              they - are: playing
+              we - are: playing
+              you - are: playing
+            present perfect:
+              he/she/it - has: played
+              i - have: played
+              they - have: played
+              we - have: played
+              you - have: played
+            present perfect continuous:
+              he/she/it - has - been: playing
+              i - have - been: playing
+              they - have - been: playing
+              we - have - been: playing
+              you - have - been: playing
+            preterite:
+              he/she/it: played
+              i: played
+              they: played
+              we: played
+              you: played
+          participle:
+            past:
+              '': played
+            present:
+              '': playing
+          perfect participle:
+            '':
+              having: played
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: joué
+            ils/elles - eussent: joué
+            j' - eusse: joué
+            nous - eussions: joué
+            tu - eusses: joué
+            vous - eussiez: joué
+          passé première forme:
+            il/elle - aurait: joué
+            ils/elles - auraient: joué
+            j' - aurais: joué
+            nous - aurions: joué
+            tu - aurais: joué
+            vous - auriez: joué
+          présent:
+            il/elle: jouerait
+            ils/elles: joueraient
+            je: jouerais
+            nous: jouerions
+            tu: jouerais
+            vous: joueriez
+        indicatif:
+          futur:
+            il/elle: jouera
+            ils/elles: joueront
+            je: jouerai
+            nous: jouerons
+            tu: joueras
+            vous: jouerez
+          futur antérieur:
+            il/elle - aura: joué
+            ils/elles - auront: joué
+            j' - aurai: joué
+            nous - aurons: joué
+            tu - auras: joué
+            vous - aurez: joué
+          imparfait:
+            il/elle: jouait
+            ils/elles: jouaient
+            je: jouais
+            nous: jouions
+            tu: jouais
+            vous: jouiez
+          passé antérieur:
+            il/elle - eut: joué
+            ils/elles - eurent: joué
+            j' - eus: joué
+            nous - eûmes: joué
+            tu - eus: joué
+            vous - eûtes: joué
+          passé composé:
+            il/elle - a: joué
+            ils/elles - ont: joué
+            j' - ai: joué
+            nous - avons: joué
+            tu - as: joué
+            vous - avez: joué
+          passé simple:
+            il/elle: joua
+            ils/elles: jouèrent
+            je: jouai
+            nous: jouâmes
+            tu: jouas
+            vous: jouâtes
+          plus-que-parfait:
+            il/elle - avait: joué
+            ils/elles - avaient: joué
+            j' - avais: joué
+            nous - avions: joué
+            tu - avais: joué
+            vous - aviez: joué
+          présent:
+            il/elle: joue
+            ils/elles: jouent
+            je: joue
+            nous: jouons
+            tu: joues
+            vous: jouez
+        infinitif:
+          passé:
+            avoir: joué
+        participe:
+          passé:
+            aie: joué
+            ayez: joué
+            ayons: joué
+          passé composé:
+            ayant: joué
+          présent:
+            '': jouez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: jouât
+            qu' - ils/elles: jouassent
+            que - je: jouasse
+            que - nous: jouassions
+            que - tu: jouasses
+            que - vous: jouassiez
+          passé:
+            qu' - il/elle - ait: joué
+            qu' - ils/elles - aient: joué
+            que - j' - aie: joué
+            que - nous - ayons: joué
+            que - tu - aies: joué
+            que - vous - ayez: joué
+          plus-que-parfait:
+            qu' - il/elle - eût: joué
+            qu' - ils/elles - eussent: joué
+            que - j' - eusse: joué
+            que - nous - eussions: joué
+            que - tu - eusses: joué
+            que - vous - eussiez: joué
+          présent:
+            qu' - il/elle: joue
+            qu' - ils/elles: jouent
+            que - je: joue
+            que - nous: jouions
+            que - tu: joues
+            que - vous: jouiez
+      display: jouer
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - se jouer
+      - ne pas jouer
+      - ne pas se jouer
+      pos: verb
+      transitive: both
+      translations:
+      - to play
+      - to act
+      - to gamble
+    uuid: a8f34c4e-7bf9-4737-a83a-06d1ba8928c6
   jour:
     definitions:
     - display: jour
@@ -6813,14 +8535,6 @@ french:
       translations:
       - days
     uuid: 5062eb40-6fdd-4519-8c84-4a321b29dd08
-  jusque:
-    definitions:
-    - display: jusque
-      gender: NA
-      pos: preposition
-      translations:
-      - as far as
-    uuid: 26e8c0a4-77a5-422f-b5ca-0a87ae6988f7
   jusqu'ici:
     definitions:
     - abbreviation: jusque + ici
@@ -6830,6 +8544,14 @@ french:
       - so far
       - up to now
     uuid: 49440c47-bf24-49d6-bcea-e613e7a3b38b
+  jusque:
+    definitions:
+    - display: jusque
+      gender: NA
+      pos: preposition
+      translations:
+      - as far as
+    uuid: 26e8c0a4-77a5-422f-b5ca-0a87ae6988f7
   juste:
     definitions:
     - display: juste
@@ -6842,14 +8564,6 @@ french:
       - fair
       - just
     uuid: 3fccd7bb-799e-44d0-a0ab-fb63d5ef31cf
-  j'ai:
-    definitions:
-    - abbreviation: je + ai
-      display: j'ai
-      gender: NA
-      translations:
-      - I have
-    uuid: 61becc8a-c226-49af-826e-156f22ee9c24
   la:
     definitions:
     - display: la
@@ -7926,6 +9640,15 @@ french:
       - a long time
       - long
     uuid: 573fc3b3-0947-4184-b374-e90daa3febe2
+  lorsqu'il:
+    definitions:
+    - abbreviation: lorsque + il
+      display: lorsqu'il
+      gender: NA
+      translations:
+      - when he
+      - when it
+    uuid: 8af4912e-556b-4fc7-92c4-22a35d1160d8
   lorsque:
     definitions:
     - display: lorsque
@@ -7937,15 +9660,11 @@ french:
       translations:
       - when
     uuid: fe4db2f4-7fe2-4651-a320-cdfe3d048072
-  lorsqu'il:
+  louisette:
     definitions:
-    - abbreviation: lorsque + il
-      display: lorsqu'il
-      gender: NA
-      translations:
-      - when he
-      - when it
-    uuid: 8af4912e-556b-4fc7-92c4-22a35d1160d8
+    - name: true
+      notaword: true
+    uuid: 72f2a53e-5eac-4f9f-9f12-441ca3dfb153
   lui:
     definitions:
     - display: lui
@@ -7994,7 +9713,8 @@ french:
     uuid: 8daaf6ee-16e0-4964-ae33-2f9aa920f9c6
   lupin:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 0773635c-c465-4087-a528-98196b74899f
   là:
     definitions:
@@ -8087,6 +9807,11 @@ french:
       - house
       - home
     uuid: 087b2622-994c-43cb-a532-1c4f0abfe2c6
+  maixent:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 551c1a03-7ec0-411f-9a44-e33408952259
   mal:
     definitions:
     - display: mal
@@ -8097,13 +9822,249 @@ french:
     uuid: eba42352-8f87-4c8c-8158-d76a652f6347
   malefoy:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: a81af037-242c-439f-93ae-d911347fe7f9
   malfoy:
     definitions:
-    - display: malfoy
+    - name: true
       notaword: true
     uuid: 8290de6a-c556-4c15-882a-0eec85c55416
+  maman:
+    definitions:
+    - display: maman
+      gender: fem
+      pos: noun
+      translations:
+      - mom
+      - mum
+      - mum
+      - mummy
+    uuid: 90ef42d9-a9b8-4f77-b108-bc2bebcbfba7
+  manger:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to eat:
+          imperative:
+            '':
+              '': eat
+              let's: eat
+          indicative:
+            future:
+              he/she/it - will: eat
+              i - will: eat
+              they - will: eat
+              we - will: eat
+              you - will: eat
+            future continuous:
+              he/she/it - will - be: eating
+              i - will - be: eating
+              they - will - be: eating
+              we - will - be: eating
+              you - will - be: eating
+            future perfect:
+              he/she/it - will - have: eaten
+              i - will - have: eaten
+              they - will - have: eaten
+              we - will - have: eaten
+              you - will - have: eaten
+            future perfect continuous:
+              he/she/it - will - have - been: eating
+              i - will - have - been: eating
+              they - will - have - been: eating
+              we - will - have - been: eating
+              you - will - have - been: eating
+            past continous:
+              he/she/it - was: eating
+              i - was: eating
+              they - were: eating
+              we - were: eating
+              you - were: eating
+            past perfect:
+              he/she/it - had: eaten
+              i - had: eaten
+              they - had: eaten
+              we - had: eaten
+              you - had: eaten
+            past perfect continuous:
+              he/she/it - had - been: eating
+              i - had - been: eating
+              they - had - been: eating
+              we - had - been: eating
+              you - had - been: eating
+            present:
+              he/she/it: eats
+              i: eat
+              they: eat
+              we: eat
+              you: eat
+            present continuous:
+              he/she/it - is: eating
+              i - am: eating
+              they - are: eating
+              we - are: eating
+              you - are: eating
+            present perfect:
+              he/she/it - has: eaten
+              i - have: eaten
+              they - have: eaten
+              we - have: eaten
+              you - have: eaten
+            present perfect continuous:
+              he/she/it - has - been: eating
+              i - have - been: eating
+              they - have - been: eating
+              we - have - been: eating
+              you - have - been: eating
+            preterite:
+              he/she/it: ate
+              i: ate
+              they: ate
+              we: ate
+              you: ate
+          participle:
+            past:
+              '': eaten
+            present:
+              '': eating
+          perfect participle:
+            '':
+              having: eaten
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: mangé
+            ils/elles - eussent: mangé
+            j' - eusse: mangé
+            nous - eussions: mangé
+            tu - eusses: mangé
+            vous - eussiez: mangé
+          passé première forme:
+            il/elle - aurait: mangé
+            ils/elles - auraient: mangé
+            j' - aurais: mangé
+            nous - aurions: mangé
+            tu - aurais: mangé
+            vous - auriez: mangé
+          présent:
+            il/elle: mangerait
+            ils/elles: mangeraient
+            je: mangerais
+            nous: mangerions
+            tu: mangerais
+            vous: mangeriez
+        indicatif:
+          futur:
+            il/elle: mangera
+            ils/elles: mangeront
+            je: mangerai
+            nous: mangerons
+            tu: mangeras
+            vous: mangerez
+          futur antérieur:
+            il/elle - aura: mangé
+            ils/elles - auront: mangé
+            j' - aurai: mangé
+            nous - aurons: mangé
+            tu - auras: mangé
+            vous - aurez: mangé
+          imparfait:
+            il/elle: mangeait
+            ils/elles: mangeaient
+            je: mangeais
+            nous: mangions
+            tu: mangeais
+            vous: mangiez
+          passé antérieur:
+            il/elle - eut: mangé
+            ils/elles - eurent: mangé
+            j' - eus: mangé
+            nous - eûmes: mangé
+            tu - eus: mangé
+            vous - eûtes: mangé
+          passé composé:
+            il/elle - a: mangé
+            ils/elles - ont: mangé
+            j' - ai: mangé
+            nous - avons: mangé
+            tu - as: mangé
+            vous - avez: mangé
+          passé simple:
+            il/elle: mangea
+            ils/elles: mangèrent
+            je: mangeai
+            nous: mangeâmes
+            tu: mangeas
+            vous: mangeâtes
+          plus-que-parfait:
+            il/elle - avait: mangé
+            ils/elles - avaient: mangé
+            j' - avais: mangé
+            nous - avions: mangé
+            tu - avais: mangé
+            vous - aviez: mangé
+          présent:
+            il/elle: mange
+            ils/elles: mangent
+            je: mange
+            nous: mangeons
+            tu: manges
+            vous: mangez
+        infinitif:
+          passé:
+            avoir: mangé
+        participe:
+          passé:
+            aie: mangé
+            ayez: mangé
+            ayons: mangé
+          passé composé:
+            ayant: mangé
+          présent:
+            '': mangez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: mangeât
+            qu' - ils/elles: mangeassent
+            que - je: mangeasse
+            que - nous: mangeassions
+            que - tu: mangeasses
+            que - vous: mangeassiez
+          passé:
+            qu' - il/elle - ait: mangé
+            qu' - ils/elles - aient: mangé
+            que - j' - aie: mangé
+            que - nous - ayons: mangé
+            que - tu - aies: mangé
+            que - vous - ayez: mangé
+          plus-que-parfait:
+            qu' - il/elle - eût: mangé
+            qu' - ils/elles - eussent: mangé
+            que - j' - eusse: mangé
+            que - nous - eussions: mangé
+            que - tu - eusses: mangé
+            que - vous - eussiez: mangé
+          présent:
+            qu' - il/elle: mange
+            qu' - ils/elles: mangent
+            que - je: mange
+            que - nous: mangions
+            que - tu: manges
+            que - vous: mangiez
+      display: manger
+      gender: NA
+      modal_in_english: false
+      model: manger
+      other_forms:
+      - se manger
+      - ne pas manger
+      - ne pas se manger
+      pos: verb
+      transitive: both
+      translations:
+      - to eat
+    uuid: 67b6bac5-fad4-43d4-a7c6-874a53e62760
   matin:
     definitions:
     - display: matin
@@ -8114,7 +10075,8 @@ french:
     uuid: 0bd5c2e2-41b8-4daa-88a6-a4c58c564f25
   maugrey:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 80630d1b-fcb2-4305-b69f-f71a355226d4
   maître:
     definitions:
@@ -8149,7 +10111,8 @@ french:
     uuid: 58f2b72e-240b-495d-bd2e-bd0b166dc4f2
   mcgonagall:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 92180a77-aeb4-424a-b4a7-adcf2f7a695f
   me:
     definitions:
@@ -8795,6 +10758,14 @@ french:
       translations:
       - me
     uuid: 910b651a-7802-4f60-a7c8-761f38349e40
+  n'avait:
+    definitions:
+    - abbreviation: ne + avait
+      display: n'avait
+      gender: NA
+      translations:
+      - hasn't
+    uuid: 942a6c2d-646b-4672-99dd-3f920069fb86
   ne:
     definitions:
     - display: ne ... pas
@@ -8805,8 +10776,17 @@ french:
     uuid: a767fb98-9654-4542-96d3-9075c23b05f4
   neville:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 104d08c8-5881-47bb-b520-0cc1419e9305
+  nez:
+    definitions:
+    - display: nez
+      gender: masc
+      pos: noun
+      translations:
+      - nose
+    uuid: 0720d435-0e26-48c5-be19-4f515aa26d59
   ni:
     definitions:
     - display: ni
@@ -8821,6 +10801,11 @@ french:
       - neither
       - nor
     uuid: 1c1e2c2b-b2f6-443f-8892-f218b3b8c930
+  nicolas:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: d11c20b1-e109-49c2-b67a-d81e6443d8c2
   noir:
     definitions:
     - display: noir
@@ -8925,14 +10910,6 @@ french:
       translations:
       - night
     uuid: 7dc0843a-9934-4221-8cfb-e9b719035c45
-  n'avait:
-    definitions:
-    - abbreviation: ne + avait
-      display: n'avait
-      gender: NA
-      translations:
-      - hasn't
-    uuid: 942a6c2d-646b-4672-99dd-3f920069fb86
   oh:
     definitions:
     - display: oh
@@ -9230,6 +11207,15 @@ french:
       translations:
       - where
     uuid: 3eec7fd4-cb5f-4852-bd62-c2a3606e65b2
+  papa:
+    definitions:
+    - display: papa
+      gender: masc
+      pos: noun
+      translations:
+      - dad
+      - daddy
+    uuid: 7f31b516-8cf8-4b97-910e-9fd66564eae8
   par:
     definitions:
     - display: par
@@ -9585,6 +11571,14 @@ french:
       translations:
       - part
     uuid: bf3630ea-bb37-4633-bfc9-cecec10b7c03
+  parti:
+    definitions:
+    - display: parti
+      gender: masc
+      pos: noun
+      translations:
+      - party
+    uuid: 96a98103-6cd6-4fb8-ab56-f1ba91d619b1
   partie:
     definitions:
     - display: partie
@@ -9596,6 +11590,333 @@ french:
       translations:
       - part
     uuid: dc6f558c-6bf7-4b6d-a978-d2dd4598a51e
+  partir:
+    definitions:
+    - auxiliary: être
+      conjugations_english:
+        to go:
+          imperative:
+            '':
+              '': go
+              let's: go
+          indicative:
+            future:
+              he/she/it - will: go
+              i - will: go
+              they - will: go
+              we - will: go
+              you - will: go
+            future continuous:
+              he/she/it - will - be: going
+              i - will - be: going
+              they - will - be: going
+              we - will - be: going
+              you - will - be: going
+            future perfect:
+              he/she/it - will - have: gone
+              i - will - have: gone
+              they - will - have: gone
+              we - will - have: gone
+              you - will - have: gone
+            future perfect continuous:
+              he/she/it - will - have - been: going
+              i - will - have - been: going
+              they - will - have - been: going
+              we - will - have - been: going
+              you - will - have - been: going
+            past continous:
+              he/she/it - was: going
+              i - was: going
+              they - were: going
+              we - were: going
+              you - were: going
+            past perfect:
+              he/she/it - had: gone
+              i - had: gone
+              they - had: gone
+              we - had: gone
+              you - had: gone
+            past perfect continuous:
+              he/she/it - had - been: going
+              i - had - been: going
+              they - had - been: going
+              we - had - been: going
+              you - had - been: going
+            present:
+              he/she/it: goes
+              i: go
+              they: go
+              we: go
+              you: go
+            present continuous:
+              he/she/it - is: going
+              i - am: going
+              they - are: going
+              we - are: going
+              you - are: going
+            present perfect:
+              he/she/it - has: gone
+              i - have: gone
+              they - have: gone
+              we - have: gone
+              you - have: gone
+            present perfect continuous:
+              he/she/it - has - been: going
+              i - have - been: going
+              they - have - been: going
+              we - have - been: going
+              you - have - been: going
+            preterite:
+              he/she/it: went
+              i: went
+              they: went
+              we: went
+              you: went
+          participle:
+            past:
+              '': gone
+            present:
+              '': going
+          perfect participle:
+            '':
+              having: gone
+        to leave:
+          imperative:
+            '':
+              '': leave
+              let's: leave
+          indicative:
+            future:
+              he/she/it - will: leave
+              i - will: leave
+              they - will: leave
+              we - will: leave
+              you - will: leave
+            future continuous:
+              he/she/it - will - be: leaving
+              i - will - be: leaving
+              they - will - be: leaving
+              we - will - be: leaving
+              you - will - be: leaving
+            future perfect:
+              he/she/it - will - have: left
+              i - will - have: left
+              they - will - have: left
+              we - will - have: left
+              you - will - have: left
+            future perfect continuous:
+              he/she/it - will - have - been: leaving
+              i - will - have - been: leaving
+              they - will - have - been: leaving
+              we - will - have - been: leaving
+              you - will - have - been: leaving
+            past continous:
+              he/she/it - was: leaving
+              i - was: leaving
+              they - were: leaving
+              we - were: leaving
+              you - were: leaving
+            past perfect:
+              he/she/it - had: left
+              i - had: left
+              they - had: left
+              we - had: left
+              you - had: left
+            past perfect continuous:
+              he/she/it - had - been: leaving
+              i - had - been: leaving
+              they - had - been: leaving
+              we - had - been: leaving
+              you - had - been: leaving
+            present:
+              he/she/it: leaves
+              i: leave
+              they: leave
+              we: leave
+              you: leave
+            present continuous:
+              he/she/it - is: leaving
+              i - am: leaving
+              they - are: leaving
+              we - are: leaving
+              you - are: leaving
+            present perfect:
+              he/she/it - has: left
+              i - have: left
+              they - have: left
+              we - have: left
+              you - have: left
+            present perfect continuous:
+              he/she/it - has - been: leaving
+              i - have - been: leaving
+              they - have - been: leaving
+              we - have - been: leaving
+              you - have - been: leaving
+            preterite:
+              he/she/it: left
+              i: left
+              they: left
+              we: left
+              you: left
+          participle:
+            past:
+              '': left
+            present:
+              '': leaving
+          perfect participle:
+            '':
+              having: left
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: partie
+            elles - fussent: parties
+            il - fût: parti
+            ils - fussent: partis
+            je - fusse: parti
+            nous - fussions: partis
+            tu - fusses: parti
+            vous - fussiez: partis
+          passé première forme:
+            elle - serait: partie
+            elles - seraient: parties
+            il - serait: parti
+            ils - seraient: partis
+            je - serais: parti
+            nous - serions: partis
+            tu - serais: parti
+            vous - seriez: partis
+          présent:
+            il/elle: partirait
+            ils/elles: partiraient
+            je: partirais
+            nous: partirions
+            tu: partirais
+            vous: partiriez
+        indicatif:
+          futur:
+            il/elle: partira
+            ils/elles: partiront
+            je: partirai
+            nous: partirons
+            tu: partiras
+            vous: partirez
+          futur antérieur:
+            elle - sera: partie
+            elles - seront: parties
+            il - sera: parti
+            ils - seront: partis
+            je - serai: parti
+            nous - serons: partis
+            tu - seras: parti
+            vous - serez: partis
+          imparfait:
+            il/elle: partait
+            ils/elles: partaient
+            je: partais
+            nous: partions
+            tu: partais
+            vous: partiez
+          passé antérieur:
+            elle - fut: partie
+            elles - furent: parties
+            il - fut: parti
+            ils - furent: partis
+            je - fus: parti
+            nous - fûmes: partis
+            tu - fus: parti
+            vous - fûtes: partis
+          passé composé:
+            elle - est: partie
+            elles - sont: parties
+            il - est: parti
+            ils - sont: partis
+            je - suis: parti
+            nous - sommes: partis
+            tu - es: parti
+            vous - êtes: partis
+          passé simple:
+            il/elle: partit
+            ils/elles: partirent
+            je: partis
+            nous: partîmes
+            tu: partis
+            vous: partîtes
+          plus-que-parfait:
+            elle - était: partie
+            elles - étaient: parties
+            il - était: parti
+            ils - étaient: partis
+            j' - étais: parti
+            nous - étions: partis
+            tu - étais: parti
+            vous - étiez: partis
+          présent:
+            il/elle: part
+            ils/elles: partent
+            je: pars
+            nous: partons
+            tu: pars
+            vous: partez
+        infinitif:
+          passé:
+            être: parti
+        participe:
+          passé:
+            sois: parti
+            soyez: parti
+            soyons: parti
+          passé composé:
+            étant: partie
+          présent:
+            '': partez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: partît
+            qu' - ils/elles: partissent
+            que - je: partisse
+            que - nous: partissions
+            que - tu: partisses
+            que - vous: partissiez
+          passé:
+            qu' - elle - soit: partie
+            qu' - elles - soient: parties
+            qu' - il - soit: parti
+            qu' - ils - soient: partis
+            que - je - sois: parti
+            que - nous - soyons: partis
+            que - tu - sois: parti
+            que - vous - soyez: partis
+          plus-que-parfait:
+            qu' - elle - fût: partie
+            qu' - elles - fussent: parties
+            qu' - il - fût: parti
+            qu' - ils - fussent: partis
+            que - je - fusse: parti
+            que - nous - fussions: partis
+            que - tu - fusses: parti
+            que - vous - fussiez: partis
+          présent:
+            qu' - il/elle: parte
+            qu' - ils/elles: partent
+            que - je: parte
+            que - nous: partions
+            que - tu: partes
+            que - vous: partiez
+      display: partir
+      gender: NA
+      modal_in_english: false
+      model: mentir
+      other_forms:
+      - se partir
+      - ne pas partir
+      - ne pas se partir
+      pos: verb
+      transitive: false
+      translations:
+      - to go
+      - to leave
+    uuid: 22ff9b43-f23e-491f-b990-656425979f9e
   pas:
     definitions:
     - display: ne ... pas
@@ -10246,7 +12567,7 @@ french:
     uuid: d231d5cd-7628-4a4c-b176-0da9a95a4cff
   percy:
     definitions:
-    - display: percy
+    - name: true
       notaword: true
     uuid: 00df5f1f-1eac-4608-911a-833b86343757
   perdre:
@@ -10611,6 +12932,16 @@ french:
       translations:
       - small
     uuid: 65501616-e129-408c-88b0-25d66db6aae9
+  petits:
+    definitions:
+    - display: petits
+      gender: NA
+      plural: true
+      pos: adjective
+      see: petit
+      translations:
+      - small
+    uuid: 19bc1d73-b003-44b3-8379-c671b181a723
   peu:
     definitions:
     - display: peu
@@ -10706,6 +13037,230 @@ french:
       - full
       - solid
     uuid: 4b0f0a7f-35ae-4db5-8125-493da361ba8c
+  pleurer:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to cry:
+          imperative:
+            '':
+              '': cry
+              let's: cry
+          indicative:
+            future:
+              he/she/it - will: cry
+              i - will: cry
+              they - will: cry
+              we - will: cry
+              you - will: cry
+            future continuous:
+              he/she/it - will - be: crying
+              i - will - be: crying
+              they - will - be: crying
+              we - will - be: crying
+              you - will - be: crying
+            future perfect:
+              he/she/it - will - have: cried
+              i - will - have: cried
+              they - will - have: cried
+              we - will - have: cried
+              you - will - have: cried
+            future perfect continuous:
+              he/she/it - will - have - been: crying
+              i - will - have - been: crying
+              they - will - have - been: crying
+              we - will - have - been: crying
+              you - will - have - been: crying
+            past continous:
+              he/she/it - was: crying
+              i - was: crying
+              they - were: crying
+              we - were: crying
+              you - were: crying
+            past perfect:
+              he/she/it - had: cried
+              i - had: cried
+              they - had: cried
+              we - had: cried
+              you - had: cried
+            past perfect continuous:
+              he/she/it - had - been: crying
+              i - had - been: crying
+              they - had - been: crying
+              we - had - been: crying
+              you - had - been: crying
+            present:
+              he/she/it: cries
+              i: cry
+              they: cry
+              we: cry
+              you: cry
+            present continuous:
+              he/she/it - is: crying
+              i - am: crying
+              they - are: crying
+              we - are: crying
+              you - are: crying
+            present perfect:
+              he/she/it - has: cried
+              i - have: cried
+              they - have: cried
+              we - have: cried
+              you - have: cried
+            present perfect continuous:
+              he/she/it - has - been: crying
+              i - have - been: crying
+              they - have - been: crying
+              we - have - been: crying
+              you - have - been: crying
+            preterite:
+              he/she/it: cried
+              i: cried
+              they: cried
+              we: cried
+              you: cried
+          participle:
+            past:
+              '': cried
+            present:
+              '': crying
+          perfect participle:
+            '':
+              having: cried
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: pleuré
+            ils/elles - eussent: pleuré
+            j' - eusse: pleuré
+            nous - eussions: pleuré
+            tu - eusses: pleuré
+            vous - eussiez: pleuré
+          passé première forme:
+            il/elle - aurait: pleuré
+            ils/elles - auraient: pleuré
+            j' - aurais: pleuré
+            nous - aurions: pleuré
+            tu - aurais: pleuré
+            vous - auriez: pleuré
+          présent:
+            il/elle: pleurerait
+            ils/elles: pleureraient
+            je: pleurerais
+            nous: pleurerions
+            tu: pleurerais
+            vous: pleureriez
+        indicatif:
+          futur:
+            il/elle: pleurera
+            ils/elles: pleureront
+            je: pleurerai
+            nous: pleurerons
+            tu: pleureras
+            vous: pleurerez
+          futur antérieur:
+            il/elle - aura: pleuré
+            ils/elles - auront: pleuré
+            j' - aurai: pleuré
+            nous - aurons: pleuré
+            tu - auras: pleuré
+            vous - aurez: pleuré
+          imparfait:
+            il/elle: pleurait
+            ils/elles: pleuraient
+            je: pleurais
+            nous: pleurions
+            tu: pleurais
+            vous: pleuriez
+          passé antérieur:
+            il/elle - eut: pleuré
+            ils/elles - eurent: pleuré
+            j' - eus: pleuré
+            nous - eûmes: pleuré
+            tu - eus: pleuré
+            vous - eûtes: pleuré
+          passé composé:
+            il/elle - a: pleuré
+            ils/elles - ont: pleuré
+            j' - ai: pleuré
+            nous - avons: pleuré
+            tu - as: pleuré
+            vous - avez: pleuré
+          passé simple:
+            il/elle: pleura
+            ils/elles: pleurèrent
+            je: pleurai
+            nous: pleurâmes
+            tu: pleuras
+            vous: pleurâtes
+          plus-que-parfait:
+            il/elle - avait: pleuré
+            ils/elles - avaient: pleuré
+            j' - avais: pleuré
+            nous - avions: pleuré
+            tu - avais: pleuré
+            vous - aviez: pleuré
+          présent:
+            il/elle: pleure
+            ils/elles: pleurent
+            je: pleure
+            nous: pleurons
+            tu: pleures
+            vous: pleurez
+        infinitif:
+          passé:
+            avoir: pleuré
+        participe:
+          passé:
+            aie: pleuré
+            ayez: pleuré
+            ayons: pleuré
+          passé composé:
+            ayant: pleuré
+          présent:
+            '': pleurez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: pleurât
+            qu' - ils/elles: pleurassent
+            que - je: pleurasse
+            que - nous: pleurassions
+            que - tu: pleurasses
+            que - vous: pleurassiez
+          passé:
+            qu' - il/elle - ait: pleuré
+            qu' - ils/elles - aient: pleuré
+            que - j' - aie: pleuré
+            que - nous - ayons: pleuré
+            que - tu - aies: pleuré
+            que - vous - ayez: pleuré
+          plus-que-parfait:
+            qu' - il/elle - eût: pleuré
+            qu' - ils/elles - eussent: pleuré
+            que - j' - eusse: pleuré
+            que - nous - eussions: pleuré
+            que - tu - eusses: pleuré
+            que - vous - eussiez: pleuré
+          présent:
+            qu' - il/elle: pleure
+            qu' - ils/elles: pleurent
+            que - je: pleure
+            que - nous: pleurions
+            que - tu: pleures
+            que - vous: pleuriez
+      display: pleurer
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - se pleurer
+      - ne pas pleurer
+      - ne pas se pleurer
+      pos: verb
+      transitive: false
+      translations:
+      - to cry
+    uuid: 54726bca-7f69-4da0-9a48-4aef74d0a596
   plus:
     definitions:
     - display: plus
@@ -10746,6 +13301,17 @@ french:
       translations:
       - podcast
     uuid: 9ab50122-1953-4faf-8f54-0414be46d0ef
+  poing:
+    definitions:
+    - display: poing
+      exampleSentences:
+      - english: a punch
+        french: un coup de poing
+      gender: masc
+      pos: noun
+      translations:
+      - fist
+    uuid: 5ec3e243-54e2-4b5d-ac6e-869bc5c0abfd
   point:
     definitions:
     - display: point
@@ -10780,7 +13346,8 @@ french:
     uuid: 562b7535-9697-40c1-83cf-8e6ce783a405
   potter:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: bb58f538-0307-4ef5-bd61-1de38e3e883e
   poudlard:
     definitions:
@@ -11290,115 +13857,6 @@ french:
       translations:
       - father
     uuid: c6935f1e-9f50-4f24-a19c-ac300c45cf14
-  quand:
-    definitions:
-    - display: quand
-      gender: NA
-      pos: conjonction
-      translations:
-      - when
-    uuid: 6dc15f4a-9f68-421b-a377-1b1db59ac9ae
-  quatre:
-    definitions:
-    - display: quatre
-      exampleSentences:
-      - english: It's four in the morning.
-        french: Il est quatre heures du matin.
-      gender: NA
-      pos: number
-      translations:
-      - four
-    uuid: 711cc52f-c546-4d7e-af57-ed272c7cf648
-  que:
-    definitions:
-    - display: que
-      gender: NA
-      pos: conjonction
-      translations:
-      - that
-    uuid: ad78cac0-9dc1-4ab3-8a7f-a31e779a1d3d
-  quel:
-    definitions:
-    - display: quel
-      gender: NA
-      interrogative: true
-      pos: adjective
-      translations:
-      - who
-    uuid: ed7ab5ea-d2bc-412d-a1be-ed8991e1dd4d
-  quelqu'un:
-    definitions:
-    - abbreviation: quelque + un
-      display: quelqu'un
-      gender: NA
-      translations:
-      - someone
-    uuid: 02d5e371-82a7-4511-8f30-1325c29d8869
-  quelque:
-    definitions:
-    - display: quelque
-      gender: NA
-      pos: adjective
-      translations:
-      - some
-      - whatever
-      - whichever
-    uuid: fd979691-85db-47fe-b3fa-c61477942ec5
-  quelques:
-    definitions:
-    - display: quelques
-      gender: NA
-      plural: true
-      pos: adjective
-      see: quelque
-      translations:
-      - some
-      - whatever
-    uuid: 081ddec2-9da0-4f4b-a4b8-03fcbf983be9
-  quelqu'un:
-    definitions:
-    - display: quelqu'un
-      gender: NA
-      pos: pronoun
-      translations:
-      - someone
-    uuid: 2591ebdf-d8c8-4f04-b9ae-416903e90c60
-  question:
-    definitions:
-    - display: question
-      exampleSentences:
-      - english: I asked you a question.
-        french: Je t'ai posé une question.
-      gender: fem
-      pos: noun
-      translations:
-      - question
-    uuid: 12823509-65eb-4adc-9af8-5e26f6a15804
-  qui:
-    definitions:
-    - display: qui
-      gender: NA
-      pos: relative pronoun
-      translations:
-      - who
-    uuid: 8c6390a1-bd31-47e3-980a-f8756a0abb8f
-  quidditch:
-    definitions:
-    - display: quidditch
-      notaword: true
-    uuid: 9a7a7b32-ec3b-4852-897f-c195d6b9160f
-  quirrell:
-    definitions:
-    - notaword: true
-    uuid: d2a17899-59b0-41a1-839c-304934e062c4
-  quoi:
-    definitions:
-    - display: quoi
-      gender: NA
-      pos: pronoun
-      translations:
-      - what
-    uuid: 13adbdff-1003-4b2c-9e3b-385522b865e2
   qu'elle:
     definitions:
     - abbreviation: que + elle
@@ -11441,6 +13899,108 @@ french:
       - that we
       - that one
     uuid: edf9a77b-b35e-406c-95c5-caad2668fbff
+  quand:
+    definitions:
+    - display: quand
+      gender: NA
+      pos: conjonction
+      translations:
+      - when
+    uuid: 6dc15f4a-9f68-421b-a377-1b1db59ac9ae
+  quatre:
+    definitions:
+    - display: quatre
+      exampleSentences:
+      - english: It's four in the morning.
+        french: Il est quatre heures du matin.
+      gender: NA
+      pos: number
+      translations:
+      - four
+    uuid: 711cc52f-c546-4d7e-af57-ed272c7cf648
+  que:
+    definitions:
+    - display: que
+      gender: NA
+      pos: conjonction
+      translations:
+      - that
+    uuid: ad78cac0-9dc1-4ab3-8a7f-a31e779a1d3d
+  quel:
+    definitions:
+    - display: quel
+      gender: NA
+      interrogative: true
+      pos: adjective
+      translations:
+      - who
+    uuid: ed7ab5ea-d2bc-412d-a1be-ed8991e1dd4d
+  quelqu'un:
+    definitions:
+    - display: quelqu'un
+      gender: NA
+      pos: pronoun
+      translations:
+      - someone
+    uuid: 2591ebdf-d8c8-4f04-b9ae-416903e90c60
+  quelque:
+    definitions:
+    - display: quelque
+      gender: NA
+      pos: adjective
+      translations:
+      - some
+      - whatever
+      - whichever
+    uuid: fd979691-85db-47fe-b3fa-c61477942ec5
+  quelques:
+    definitions:
+    - display: quelques
+      gender: NA
+      plural: true
+      pos: adjective
+      see: quelque
+      translations:
+      - some
+      - whatever
+    uuid: 081ddec2-9da0-4f4b-a4b8-03fcbf983be9
+  question:
+    definitions:
+    - display: question
+      exampleSentences:
+      - english: I asked you a question.
+        french: Je t'ai posé une question.
+      gender: fem
+      pos: noun
+      translations:
+      - question
+    uuid: 12823509-65eb-4adc-9af8-5e26f6a15804
+  qui:
+    definitions:
+    - display: qui
+      gender: NA
+      pos: relative pronoun
+      translations:
+      - who
+    uuid: 8c6390a1-bd31-47e3-980a-f8756a0abb8f
+  quidditch:
+    definitions:
+    - display: quidditch
+      notaword: true
+    uuid: 9a7a7b32-ec3b-4852-897f-c195d6b9160f
+  quirrell:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: d2a17899-59b0-41a1-839c-304934e062c4
+  quoi:
+    definitions:
+    - display: quoi
+      gender: NA
+      pos: pronoun
+      translations:
+      - what
+    uuid: 13adbdff-1003-4b2c-9e3b-385522b865e2
   raison:
     definitions:
     - display: raison
@@ -12662,6 +15222,11 @@ french:
       translations:
       - to stay
     uuid: 73861633-c745-4818-a992-53f48bcb2efe
+  rex:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 9bb12747-fe3a-4898-bcff-4d235e8932e7
   rien:
     definitions:
     - display: rien
@@ -12675,6 +15240,317 @@ french:
       translations:
       - not ... anything
     uuid: 742c307c-24fe-47ae-be8a-68f0ecd6d1ff
+  rigoler:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to joke:
+          imperative:
+            '':
+              '': joke
+              let's: joke
+          indicative:
+            future:
+              he/she/it - will: joke
+              i - will: joke
+              they - will: joke
+              we - will: joke
+              you - will: joke
+            future continuous:
+              he/she/it - will - be: joking
+              i - will - be: joking
+              they - will - be: joking
+              we - will - be: joking
+              you - will - be: joking
+            future perfect:
+              he/she/it - will - have: joked
+              i - will - have: joked
+              they - will - have: joked
+              we - will - have: joked
+              you - will - have: joked
+            future perfect continuous:
+              he/she/it - will - have - been: joking
+              i - will - have - been: joking
+              they - will - have - been: joking
+              we - will - have - been: joking
+              you - will - have - been: joking
+            past continous:
+              he/she/it - was: joking
+              i - was: joking
+              they - were: joking
+              we - were: joking
+              you - were: joking
+            past perfect:
+              he/she/it - had: joked
+              i - had: joked
+              they - had: joked
+              we - had: joked
+              you - had: joked
+            past perfect continuous:
+              he/she/it - had - been: joking
+              i - had - been: joking
+              they - had - been: joking
+              we - had - been: joking
+              you - had - been: joking
+            present:
+              he/she/it: jokes
+              i: joke
+              they: joke
+              we: joke
+              you: joke
+            present continuous:
+              he/she/it - is: joking
+              i - am: joking
+              they - are: joking
+              we - are: joking
+              you - are: joking
+            present perfect:
+              he/she/it - has: joked
+              i - have: joked
+              they - have: joked
+              we - have: joked
+              you - have: joked
+            present perfect continuous:
+              he/she/it - has - been: joking
+              i - have - been: joking
+              they - have - been: joking
+              we - have - been: joking
+              you - have - been: joking
+            preterite:
+              he/she/it: joked
+              i: joked
+              they: joked
+              we: joked
+              you: joked
+          participle:
+            past:
+              '': joked
+            present:
+              '': joking
+          perfect participle:
+            '':
+              having: joked
+        to laugh:
+          imperative:
+            '':
+              '': laugh
+              let's: laugh
+          indicative:
+            future:
+              he/she/it - will: laugh
+              i - will: laugh
+              they - will: laugh
+              we - will: laugh
+              you - will: laugh
+            future continuous:
+              he/she/it - will - be: laughing
+              i - will - be: laughing
+              they - will - be: laughing
+              we - will - be: laughing
+              you - will - be: laughing
+            future perfect:
+              he/she/it - will - have: laughed
+              i - will - have: laughed
+              they - will - have: laughed
+              we - will - have: laughed
+              you - will - have: laughed
+            future perfect continuous:
+              he/she/it - will - have - been: laughing
+              i - will - have - been: laughing
+              they - will - have - been: laughing
+              we - will - have - been: laughing
+              you - will - have - been: laughing
+            past continous:
+              he/she/it - was: laughing
+              i - was: laughing
+              they - were: laughing
+              we - were: laughing
+              you - were: laughing
+            past perfect:
+              he/she/it - had: laughed
+              i - had: laughed
+              they - had: laughed
+              we - had: laughed
+              you - had: laughed
+            past perfect continuous:
+              he/she/it - had - been: laughing
+              i - had - been: laughing
+              they - had - been: laughing
+              we - had - been: laughing
+              you - had - been: laughing
+            present:
+              he/she/it: laughs
+              i: laugh
+              they: laugh
+              we: laugh
+              you: laugh
+            present continuous:
+              he/she/it - is: laughing
+              i - am: laughing
+              they - are: laughing
+              we - are: laughing
+              you - are: laughing
+            present perfect:
+              he/she/it - has: laughed
+              i - have: laughed
+              they - have: laughed
+              we - have: laughed
+              you - have: laughed
+            present perfect continuous:
+              he/she/it - has - been: laughing
+              i - have - been: laughing
+              they - have - been: laughing
+              we - have - been: laughing
+              you - have - been: laughing
+            preterite:
+              he/she/it: laughed
+              i: laughed
+              they: laughed
+              we: laughed
+              you: laughed
+          participle:
+            past:
+              '': laughed
+            present:
+              '': laughing
+          perfect participle:
+            '':
+              having: laughed
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: rigolé
+            ils/elles - eussent: rigolé
+            j' - eusse: rigolé
+            nous - eussions: rigolé
+            tu - eusses: rigolé
+            vous - eussiez: rigolé
+          passé première forme:
+            il/elle - aurait: rigolé
+            ils/elles - auraient: rigolé
+            j' - aurais: rigolé
+            nous - aurions: rigolé
+            tu - aurais: rigolé
+            vous - auriez: rigolé
+          présent:
+            il/elle: rigolerait
+            ils/elles: rigoleraient
+            je: rigolerais
+            nous: rigolerions
+            tu: rigolerais
+            vous: rigoleriez
+        indicatif:
+          futur:
+            il/elle: rigolera
+            ils/elles: rigoleront
+            je: rigolerai
+            nous: rigolerons
+            tu: rigoleras
+            vous: rigolerez
+          futur antérieur:
+            il/elle - aura: rigolé
+            ils/elles - auront: rigolé
+            j' - aurai: rigolé
+            nous - aurons: rigolé
+            tu - auras: rigolé
+            vous - aurez: rigolé
+          imparfait:
+            il/elle: rigolait
+            ils/elles: rigolaient
+            je: rigolais
+            nous: rigolions
+            tu: rigolais
+            vous: rigoliez
+          passé antérieur:
+            il/elle - eut: rigolé
+            ils/elles - eurent: rigolé
+            j' - eus: rigolé
+            nous - eûmes: rigolé
+            tu - eus: rigolé
+            vous - eûtes: rigolé
+          passé composé:
+            il/elle - a: rigolé
+            ils/elles - ont: rigolé
+            j' - ai: rigolé
+            nous - avons: rigolé
+            tu - as: rigolé
+            vous - avez: rigolé
+          passé simple:
+            il/elle: rigola
+            ils/elles: rigolèrent
+            je: rigolai
+            nous: rigolâmes
+            tu: rigolas
+            vous: rigolâtes
+          plus-que-parfait:
+            il/elle - avait: rigolé
+            ils/elles - avaient: rigolé
+            j' - avais: rigolé
+            nous - avions: rigolé
+            tu - avais: rigolé
+            vous - aviez: rigolé
+          présent:
+            il/elle: rigole
+            ils/elles: rigolent
+            je: rigole
+            nous: rigolons
+            tu: rigoles
+            vous: rigolez
+        infinitif:
+          passé:
+            avoir: rigolé
+        participe:
+          passé:
+            aie: rigolé
+            ayez: rigolé
+            ayons: rigolé
+          passé composé:
+            ayant: rigolé
+          présent:
+            '': rigolez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: rigolât
+            qu' - ils/elles: rigolassent
+            que - je: rigolasse
+            que - nous: rigolassions
+            que - tu: rigolasses
+            que - vous: rigolassiez
+          passé:
+            qu' - il/elle - ait: rigolé
+            qu' - ils/elles - aient: rigolé
+            que - j' - aie: rigolé
+            que - nous - ayons: rigolé
+            que - tu - aies: rigolé
+            que - vous - ayez: rigolé
+          plus-que-parfait:
+            qu' - il/elle - eût: rigolé
+            qu' - ils/elles - eussent: rigolé
+            que - j' - eusse: rigolé
+            que - nous - eussions: rigolé
+            que - tu - eusses: rigolé
+            que - vous - eussiez: rigolé
+          présent:
+            qu' - il/elle: rigole
+            qu' - ils/elles: rigolent
+            que - je: rigole
+            que - nous: rigolions
+            que - tu: rigoles
+            que - vous: rigoliez
+      display: rigoler
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - se rigoler
+      - ne pas rigoler
+      - ne pas se rigoler
+      pos: verb
+      transitive: false
+      translations:
+      - to laugh
+      - to joke
+    uuid: dea13e06-bd70-4f52-9998-281cf760c35c
   rire:
     definitions:
     - auxiliary: avoir
@@ -12907,8 +15783,14 @@ french:
     uuid: a25107a4-e4b9-498e-8cff-c4065eaab68a
   ron:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: e6962632-b20a-4074-9fc3-36d3ccc2b930
+  rufus:
+    definitions:
+    - name: true
+      notaword: true
+    uuid: 7aba3e01-003a-4eb6-a2e5-53356243b147
   répliquer:
     definitions:
     - auxiliary: avoir
@@ -13543,6 +16425,17 @@ french:
       translations:
       - successful
     uuid: bc537fe2-d0ed-48a6-b4a5-f6242b998eb9
+  s'il:
+    definitions:
+    - abbreviation: se + il
+      display: s'il
+      exampleSentences:
+      - english: While he's nice, they are really quite unpleasant.
+        french: S'il est aimable, eux par contre sont franchement désagréables
+      gender: masc
+      translations:
+      - while he's
+    uuid: 2ccada33-540c-4730-9aca-6d8dc03db3ad
   sa:
     definitions:
     - display: sa
@@ -14506,7 +17399,7 @@ french:
     uuid: 13ec4c02-f671-423f-be91-89bb3a64f7e2
   severus:
     definitions:
-    - display: severus
+    - name: true
       notaword: true
     uuid: 4e8c3bef-0e66-4294-b6e4-3a6953388a8e
   si:
@@ -14543,11 +17436,12 @@ french:
     uuid: 9c7a02c6-ec7c-4e9c-a854-9109868147bf
   sirius:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 6ad9f763-3c10-4cf5-9d81-241ff5131eea
   smedry:
     definitions:
-    - display: smedry
+    - name: true
       notaword: true
     uuid: 90650147-be37-4cac-a9a1-0d0736847960
   soir:
@@ -15244,17 +18138,6 @@ french:
       - sure
       - certain
     uuid: bbf49804-67e1-48f6-9f7b-32207ea09822
-  s'il:
-    definitions:
-    - abbreviation: se + il
-      display: s'il
-      exampleSentences:
-      - english: While he's nice, they are really quite unpleasant.
-        french: S'il est aimable, eux par contre sont franchement désagréables
-      gender: masc
-      translations:
-      - while he's
-    uuid: 2ccada33-540c-4730-9aca-6d8dc03db3ad
   ta:
     definitions:
     - display: ta
@@ -15306,6 +18189,15 @@ french:
       translations:
       - late
     uuid: fdd8f45a-76fc-427c-9c1e-fba3b1c5b1c3
+  tas:
+    definitions:
+    - display: tas
+      gender: masc
+      pos: noun
+      translations:
+      - pile
+      - heap
+    uuid: 5acd934d-2455-41e5-8920-8917bd6495a3
   te:
     definitions:
     - display: te
@@ -17264,7 +20156,8 @@ french:
     uuid: 0e141627-0959-47cd-a69a-1fe12a7bb909
   vernon:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: f67c6cea-01ee-4602-bdf0-5476f0495067
   verre:
     definitions:
@@ -17795,7 +20688,8 @@ french:
     uuid: 5ea2f1e6-2adc-447b-b478-80ded69b89ce
   voldemort:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: 0f326c28-c6ff-41a6-b369-af9b38f37b92
   vos:
     definitions:
@@ -18076,9 +20970,20 @@ french:
       translations:
       - in view of
     uuid: 669bd455-bf2c-4846-a2ce-f3fba4f2d0ee
+  vélo:
+    definitions:
+    - display: vélo
+      gender: masc
+      pos: noun
+      translations:
+      - bike
+      - bicycle
+      - cycle
+    uuid: 37b2bd8b-f684-4d1f-bf22-5943586bd087
   weasley:
     definitions:
-    - notaword: true
+    - name: true
+      notaword: true
     uuid: cfd87d5d-fefa-4d25-b235-1613439da2d6
   y:
     definitions:

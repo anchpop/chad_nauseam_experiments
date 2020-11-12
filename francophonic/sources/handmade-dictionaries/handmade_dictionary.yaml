@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-arrive:
-- display: arrive
+acheter:
+- display: acheter
   gender: ''
   pos: ''
   translations:
   - ''
-bientôt:
-- display: bientôt
+arithmétique:
+- display: arithmétique
   gender: ''
   pos: ''
   translations:
   - ''
-cause:
-- display: cause
+arrivé:
+- display: arrivé
   gender: ''
   pos: ''
   translations:
   - ''
-ciel:
-- display: ciel
+avion:
+- display: avion
   gender: ''
   pos: ''
   translations:
   - ''
-complètement:
-- display: complètement
+balle:
+- display: balle
   gender: ''
   pos: ''
   translations:
   - ''
-devenir:
-- display: devenir
+blanc:
+- display: blanc
   gender: ''
   pos: ''
   translations:
   - ''
-dos:
-- display: dos
+bouquet:
+- display: bouquet
   gender: ''
   pos: ''
   translations:
   - ''
-femme:
-- display: femme
+chien:
+- display: chien
   gender: ''
   pos: ''
   translations:
   - ''
-fenêtre:
-- display: fenêtre
+chocolat:
+- display: chocolat
   gender: ''
   pos: ''
   translations:
   - ''
-fille:
-- display: fille
+confiture:
+- display: confiture
   gender: ''
   pos: ''
   translations:
   - ''
-fini:
-- display: fini
+entré:
+- display: entré
   gender: ''
   pos: ''
   translations:
   - ''
-gros:
-- display: gros
+mademoiselle:
+- display: mademoiselle
   gender: ''
   pos: ''
   translations:
   - ''
-général:
-- display: général
+photographe:
+- display: photographe
   gender: ''
   pos: ''
   translations:
   - ''
-habitude:
-- display: habitude
+piquet:
+- display: piquet
   gender: ''
   pos: ''
   translations:
   - ''
-nez:
-- display: nez
+rouge:
+- display: rouge
   gender: ''
   pos: ''
   translations:
   - ''
-parchemin:
-- display: parchemin
+rue:
+- display: rue
   gender: ''
   pos: ''
   translations:
   - ''
-points:
-- display: points
+récré:
+- display: récré
   gender: ''
   pos: ''
   translations:
   - ''
-quelle:
-- display: quelle
+sandwich:
+- display: sandwich
   gender: ''
   pos: ''
   translations:
   - ''
-réponse:
-- display: réponse
+terrain:
+- display: terrain
   gender: ''
   pos: ''
   translations:
   - ''
-simple:
-- display: simple
+terrible:
+- display: terrible
   gender: ''
   pos: ''
   translations:

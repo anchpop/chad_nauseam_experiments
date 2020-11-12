@@ -28,9 +28,8 @@ def print_stats(analysis):
 
   print(f"Your current reading comprehension level is {round((sum(understood_words.values())/sum(total_words.values())) * 100, 1)}%.")
   
-  for source in understood_words:
-    r = str(source).rjust(15)
-    # print(f"    {r}: {round(100 * understood_words[source] / total_words[source], 1)}")
+  for (source, comprehension) in sorted([(" - ".join(list(source)).rjust(15), round(100 * understood_words[source] / total_words[source], 1)) for source in understood_words], key=lambda x: x[1]):
+    print(f"    {source}: {comprehension}")
 
   total_words_combined = {k: sum(v.values()) for k, v in analysis[0].items()}
   total_words = sum(total_words_combined.values())
@@ -51,12 +50,12 @@ def print_stats(analysis):
 def main():
   analysis = processor.sources_analysis.do_analysis()
 
+  print_stats(analysis)
+    
   
   if processor.handmade_dictionary_combiner.main(analysis) != True:
     return
 
-  print_stats(analysis)
-    
   processor.auto_sentence_translator.main(analysis)
   processor.tts_generator.main()
   if isfile("handmade_dictionary.yaml"):

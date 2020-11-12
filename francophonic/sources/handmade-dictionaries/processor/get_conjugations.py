@@ -93,7 +93,8 @@ def get_conjugations(verbf, verbes, trans):
 def main():
     verb = input("Verb? ")
     eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
-    trans = input("Transitive? ")[0].lower() == "y"
+    i = input("Transitive? ")
+    trans = True if i[0].lower() == "y" else ('both' if i[0].lower() == "b" else False)
     
     output = get_conjugations(verb, eng, trans)
 

@@ -31,7 +31,7 @@ When adding verbs, use the `get_conjugations.py` script to easily generate the Y
 
     known_words = get_all_known_french_words()
     unknown_words = collected_words.keys() - known_words
-    unknown_words = sorted(list(unknown_words), key=(lambda w: -sum(collected_words[w].values())))
+    unknown_words = sorted(list(unknown_words), key=(lambda w: -sum([v for k, v in collected_words[w].items() if k[0] == 'le_petit_nicolas'])))
 
 
     with safer.open("handmade_dictionary.yaml", "w", encoding='utf-8') as f:
