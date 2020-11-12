@@ -29,7 +29,7 @@ def main(analysis = None):
     (collected_words, collected_sentences, source_info) = analysis
     understandable_sentences = get_understandable_sentences(analysis)
 
-    translations = get_traslations(analysis)
+    translations = get_translations()
 
     sentences_to_translate = understandable_sentences - translations['french_to_english'].keys()
 

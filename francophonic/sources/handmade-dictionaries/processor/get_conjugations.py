@@ -5,6 +5,8 @@ import yaml
 import requests
 from bs4 import BeautifulSoup
 
+from functools import lru_cache
+
 
 def get_reverso_url(verb, language):
     return f"https://conjugator.reverso.net/conjugation-{language}-verb-{verb}.html"
@@ -20,6 +22,7 @@ def grab_conjugation_soup_french(verbf):
 
     return soup_french
 
+@lru_cache(maxsize=None)
 def grab_conjugation_soup_english(verbe):
     time.sleep(10)
     urle = get_reverso_url(verbe.split("to")[1].strip(), "english")
@@ -29,6 +32,7 @@ def grab_conjugation_soup_english(verbe):
     return soup_english
 
 
+@lru_cache(maxsize=None)
 def parse_conjugations(soup, verb):
     contents = {}
     result_block = soup.find("div", {"class": "result-block-api"})
@@ -36,30 +40,36 @@ def parse_conjugations(soup, verb):
         print(f"No result block found in soup for {verb}")
         return (None, None)
     
-    if len(verb.split(" ")) == 3:
-        toAdd = " " + verb.split(" ")[2]
+    if len(verb.split(" ")) in [3, 4]:
+        toAdd = " " + " ".join(verb.split(" ")[2:])
+        if input(f"is {toAdd} the appropriate suffix? ").lower()[0] != "y":
+            toAdd = input("please enter the appropriate suffix: ").strip().lower() 
     else:
         toAdd = ""
 
     word_wrap_rows = result_block.findAll("div", {"class": "word-wrap-row"})
-    for row in word_wrap_rows:
+    for rowIndex, row in enumerate(word_wrap_rows):
+        print(f"Analyzing row {rowIndex}")
         for child in row.findAll("div", {}, False):
-            if child['class'] == ["word-wrap-title"]:
+            if "word-wrap-title" in child['class']:
                 current_mode = child.h4.contents[0].strip().lower()
+                print(f"    Mood: {current_mode}")
                 # print(current_mode)
-            elif child['class'] == ["wrap-three-col"]:
+            elif "wrap-three-col" in child['class']:
                 titles = child.findAll("div", {'class': 'word-wrap-title'}, False)
                 conjugations = child.findAll("div", {'class': 'blue-box-wrap'}, False)
                 if len(titles) == 1:
                     current_mode = titles[0].h4.contents[0].strip().lower()
+                    print(f"    Mood: {current_mode}")
                     # print(current_mode)
                 if len(conjugations) == 1:
                     info = {}
                     type_of_conjugation = conjugations[0].p.contents[0].strip().lower() if conjugations[0].p else ""
                     cons = conjugations[0].ul.findAll("li")
-                    print(f"current_mode={current_mode}, type_of_conjugation={type_of_conjugation}")
+                    print(f"    current_mode={current_mode}, type_of_conjugation={type_of_conjugation}")
                     for con in cons:
                         i = [i.contents[0].strip().lower() for i in con.findAll("i")]
+                        print(f"        len({i}) = {len(i)}")
                         if len(i) == 1 and current_mode == 'infinitif' :
                             infinitive = i[0] + toAdd
                         elif len(i) == 1 and current_mode == 'imperative':
@@ -68,7 +78,9 @@ def parse_conjugations(soup, verb):
                             infinitive = i[1] + toAdd
                         elif len(i) == 1 and current_mode == 'participle' and type_of_conjugation in ['past', 'present']:
                             info[''] = i[0]  + toAdd
-                        elif len(i) == 1 and current_mode == 'participe' and type_of_conjugation == 'présent':
+                        elif len(i) == 1 and current_mode == 'participe' and type_of_conjugation in ['présent', 'passé']:
+                            info[''] = i[0]  + toAdd
+                        elif len(i) == 1 and current_mode == 'impératif' and type_of_conjugation in ['présent', 'passé']:
                             info[''] = i[0]  + toAdd
                         elif len(i) >= 2:
                             info[" - ".join(i[:-1])] = i[-1] + toAdd

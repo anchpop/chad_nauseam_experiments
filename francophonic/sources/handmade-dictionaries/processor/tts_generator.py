@@ -28,7 +28,7 @@ def main():
     # C is a good female voice, D is a good male voice. D seem to be a bit slower than C.
     voice_name = "fr-FR-Wavenet-C"
 
-    sentences = set(get_traslations()['french_to_english'].keys())
+    sentences = set(get_translations()['french_to_english'].keys())
 
     current_dictionary = get_word_dictionary()
     words = get_all_known_french_words()

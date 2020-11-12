@@ -2,44 +2,44 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-amuser:
-- display: amuser
+bleu:
+- display: bleu
   gender: ''
   pos: ''
   translations:
   - ''
-banc:
-- display: banc
+camarade:
+- display: camarade
   gender: ''
   pos: ''
   translations:
   - ''
-beau:
-- display: beau
+carnet:
+- display: carnet
   gender: ''
   pos: ''
   translations:
   - ''
-but:
-- display: but
+chemise:
+- display: chemise
   gender: ''
   pos: ''
   translations:
   - ''
-chouchou:
-- display: chouchou
+courant:
+- display: courant
   gender: ''
   pos: ''
   translations:
   - ''
-coups:
-- display: coups
+courir:
+- display: courir
   gender: ''
   pos: ''
   translations:
   - ''
-cour:
-- display: cour
+dessert:
+- display: dessert
   gender: ''
   pos: ''
   translations:
@@ -50,74 +50,74 @@ disant:
   pos: ''
   translations:
   - ''
-encre:
-- display: encre
+embrassé:
+- display: embrassé
   gender: ''
   pos: ''
   translations:
   - ''
-expliqué:
-- display: expliqué
+fumée:
+- display: fumée
   gender: ''
   pos: ''
   translations:
   - ''
-figure:
-- display: figure
+goscinny:
+- display: goscinny
   gender: ''
   pos: ''
   translations:
   - ''
-fumer:
-- display: fumer
+habillé:
+- display: habillé
   gender: ''
   pos: ''
   translations:
   - ''
-gentil:
-- display: gentil
+mamans:
+- display: mamans
   gender: ''
   pos: ''
   translations:
   - ''
-jouets:
-- display: jouets
+ours:
+- display: ours
   gender: ''
   pos: ''
   translations:
   - ''
-ministre:
-- display: ministre
+partout:
+- display: partout
   gender: ''
   pos: ''
   translations:
   - ''
-pain:
-- display: pain
+poucet:
+- display: poucet
   gender: ''
   pos: ''
   translations:
   - ''
-plu:
-- display: plu
+promis:
+- display: promis
   gender: ''
   pos: ''
   translations:
   - ''
-riche:
-- display: riche
+rang:
+- display: rang
   gender: ''
   pos: ''
   translations:
   - ''
-salon:
-- display: salon
+récréation:
+- display: récréation
   gender: ''
   pos: ''
   translations:
   - ''
-sonné:
-- display: sonné
+sifflet:
+- display: sifflet
   gender: ''
   pos: ''
   translations:

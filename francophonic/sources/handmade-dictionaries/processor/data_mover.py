@@ -60,6 +60,18 @@ def french_conj_description_to_english(french_word, french_mode, french_form, fr
       'ils': 'they',
       'elles': 'they',
 
+
+      'ayant': '',
+      'étant': '',
+
+      'aie': '',
+      'ayons': '',
+      'ayez': '',
+      'sois': '',
+      'soyons': '',
+      'soyez': '',
+
+
       'masc.sg.:': '',
       'masc.pl.:': '',
       'fém.sg.:': '',
@@ -74,11 +86,17 @@ def french_conj_description_to_english(french_word, french_mode, french_form, fr
     for i in french_person:
       if i in persons:
         english_person = persons[i]
+        break
+    
+    if english_person == None:
+      raise Exception(f"For french word '{french_word}', I couldn't find any of '{french_person}' in the dictionary mapping french persons to english person")
     
     
     # for error detection
-    conjugations_english[english_mode]
-    conjugations_english[english_mode][english_tense]
+    if conjugations_english.get(english_mode, None) == None:
+        raise Exception(f"The english conjugation in the mood {english_mode} for the french word {french_word} was not found in the dictionary {conjugations_english}")
+    if conjugations_english[english_mode].get(english_tense, None) == None:
+        raise Exception(f"The english conjugation in the tense {english_tense} for the french word {french_word} was not found in the dictionary {conjugations_english[english_mode]}")
     #
 
 
@@ -89,7 +107,7 @@ def french_conj_description_to_english(french_word, french_mode, french_form, fr
       if english_person.lower() in list(possible_person):
         return possible_persons[possible_person]
     else:
-      raise Exception(f"Couldn't find an english conjugation for the word {french_word}. {french_mode} ({english_mode}) - {french_form} ({english_tense}) {french_person} ({english_person})). Possible persons were {list(possible_persons.keys())}")
+      raise Exception(f"Couldn't find an english conjugation for the word '{french_word}'. {french_mode} ({english_mode}) - {french_form} ({english_tense}) {french_person} ({english_person})). Possible persons were {list(possible_persons.keys())}")
     
 
 

@@ -58,7 +58,7 @@ def line_to_words_english(line):
     return line_to_words(line, 
         englishContractions, whole_word_basis=True)
 
-def get_traslations():
+def get_translations():
     with safer.open("translations.yaml", encoding='utf-8') as f:
         translations = yaml.load(f, Loader=Loader)
     return translations
@@ -70,10 +70,6 @@ def get_word_dictionary():
     return word_dictionary
 
 
-def get_translations():
-    with safer.open("translations.yaml", encoding='utf-8') as f:
-        word_dictionary = yaml.load(f, Loader=Loader)
-    return word_dictionary
 
 
 def get_all_known_french_words():
