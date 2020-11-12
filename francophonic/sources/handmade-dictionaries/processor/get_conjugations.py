@@ -22,7 +22,7 @@ def grab_conjugation_soup_french(verbf):
 
 def grab_conjugation_soup_english(verbe):
     time.sleep(10)
-    urle = get_reverso_url(verbe.split("to")[-1].strip(), "english")
+    urle = get_reverso_url(verbe.split("to")[1].strip(), "english")
     print(f"requesting {urle}")
     re = requests.get(urle)
     soup_english = BeautifulSoup(re.text, 'html.parser')
@@ -35,6 +35,11 @@ def parse_conjugations(soup, verb):
     if result_block == None:
         print(f"No result block found in soup for {verb}")
         return (None, None)
+    
+    if len(verb.split(" ")) == 3:
+        toAdd = " " + verb.split(" ")[2]
+    else:
+        toAdd = ""
 
     word_wrap_rows = result_block.findAll("div", {"class": "word-wrap-row"})
     for row in word_wrap_rows:
@@ -56,17 +61,17 @@ def parse_conjugations(soup, verb):
                     for con in cons:
                         i = [i.contents[0].strip().lower() for i in con.findAll("i")]
                         if len(i) == 1 and current_mode == 'infinitif' :
-                            infinitive = i[0] 
+                            infinitive = i[0] + toAdd
                         elif len(i) == 1 and current_mode == 'imperative':
-                            info[""] = info.get("", i[0])
+                            info[""] = info.get("", i[0]) + toAdd
                         elif len(i) == 2 and current_mode == 'infinitive':
-                            infinitive = i[1]
+                            infinitive = i[1] + toAdd
                         elif len(i) == 1 and current_mode == 'participle' and type_of_conjugation in ['past', 'present']:
-                            info[''] = i[0] 
+                            info[''] = i[0]  + toAdd
                         elif len(i) == 1 and current_mode == 'participe' and type_of_conjugation == 'présent':
-                            info[''] = i[0] 
+                            info[''] = i[0]  + toAdd
                         elif len(i) >= 2:
-                            info[" - ".join(i[:-1])] = i[-1]
+                            info[" - ".join(i[:-1])] = i[-1] + toAdd
                         else:
                             raise Exception(f"Unexpected case - current_mode = {current_mode}, type_of_conjugation = {type_of_conjugation}, conjugation = {con}")
                         

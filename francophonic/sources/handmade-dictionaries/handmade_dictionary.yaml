@@ -2,122 +2,122 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-acheter:
-- display: acheter
+amuser:
+- display: amuser
   gender: ''
   pos: ''
   translations:
   - ''
-arithmétique:
-- display: arithmétique
+banc:
+- display: banc
   gender: ''
   pos: ''
   translations:
   - ''
-arrivé:
-- display: arrivé
+beau:
+- display: beau
   gender: ''
   pos: ''
   translations:
   - ''
-avion:
-- display: avion
+but:
+- display: but
   gender: ''
   pos: ''
   translations:
   - ''
-balle:
-- display: balle
+chouchou:
+- display: chouchou
   gender: ''
   pos: ''
   translations:
   - ''
-blanc:
-- display: blanc
+coups:
+- display: coups
   gender: ''
   pos: ''
   translations:
   - ''
-bouquet:
-- display: bouquet
+cour:
+- display: cour
   gender: ''
   pos: ''
   translations:
   - ''
-chien:
-- display: chien
+disant:
+- display: disant
   gender: ''
   pos: ''
   translations:
   - ''
-chocolat:
-- display: chocolat
+encre:
+- display: encre
   gender: ''
   pos: ''
   translations:
   - ''
-confiture:
-- display: confiture
+expliqué:
+- display: expliqué
   gender: ''
   pos: ''
   translations:
   - ''
-entré:
-- display: entré
+figure:
+- display: figure
   gender: ''
   pos: ''
   translations:
   - ''
-mademoiselle:
-- display: mademoiselle
+fumer:
+- display: fumer
   gender: ''
   pos: ''
   translations:
   - ''
-photographe:
-- display: photographe
+gentil:
+- display: gentil
   gender: ''
   pos: ''
   translations:
   - ''
-piquet:
-- display: piquet
+jouets:
+- display: jouets
   gender: ''
   pos: ''
   translations:
   - ''
-rouge:
-- display: rouge
+ministre:
+- display: ministre
   gender: ''
   pos: ''
   translations:
   - ''
-rue:
-- display: rue
+pain:
+- display: pain
   gender: ''
   pos: ''
   translations:
   - ''
-récré:
-- display: récré
+plu:
+- display: plu
   gender: ''
   pos: ''
   translations:
   - ''
-sandwich:
-- display: sandwich
+riche:
+- display: riche
   gender: ''
   pos: ''
   translations:
   - ''
-terrain:
-- display: terrain
+salon:
+- display: salon
   gender: ''
   pos: ''
   translations:
   - ''
-terrible:
-- display: terrible
+sonné:
+- display: sonné
   gender: ''
   pos: ''
   translations:

@@ -11,6 +11,230 @@ french:
       - agreement
       - accord
     uuid: 4cb4e223-cda7-4f9b-86c2-41ab2f5d4f5f
+  acheter:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to buy:
+          imperative:
+            '':
+              '': buy
+              let's: buy
+          indicative:
+            future:
+              he/she/it - will: buy
+              i - will: buy
+              they - will: buy
+              we - will: buy
+              you - will: buy
+            future continuous:
+              he/she/it - will - be: buying
+              i - will - be: buying
+              they - will - be: buying
+              we - will - be: buying
+              you - will - be: buying
+            future perfect:
+              he/she/it - will - have: bought
+              i - will - have: bought
+              they - will - have: bought
+              we - will - have: bought
+              you - will - have: bought
+            future perfect continuous:
+              he/she/it - will - have - been: buying
+              i - will - have - been: buying
+              they - will - have - been: buying
+              we - will - have - been: buying
+              you - will - have - been: buying
+            past continous:
+              he/she/it - was: buying
+              i - was: buying
+              they - were: buying
+              we - were: buying
+              you - were: buying
+            past perfect:
+              he/she/it - had: bought
+              i - had: bought
+              they - had: bought
+              we - had: bought
+              you - had: bought
+            past perfect continuous:
+              he/she/it - had - been: buying
+              i - had - been: buying
+              they - had - been: buying
+              we - had - been: buying
+              you - had - been: buying
+            present:
+              he/she/it: buys
+              i: buy
+              they: buy
+              we: buy
+              you: buy
+            present continuous:
+              he/she/it - is: buying
+              i - am: buying
+              they - are: buying
+              we - are: buying
+              you - are: buying
+            present perfect:
+              he/she/it - has: bought
+              i - have: bought
+              they - have: bought
+              we - have: bought
+              you - have: bought
+            present perfect continuous:
+              he/she/it - has - been: buying
+              i - have - been: buying
+              they - have - been: buying
+              we - have - been: buying
+              you - have - been: buying
+            preterite:
+              he/she/it: bought
+              i: bought
+              they: bought
+              we: bought
+              you: bought
+          participle:
+            past:
+              '': bought
+            present:
+              '': buying
+          perfect participle:
+            '':
+              having: bought
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: acheté
+            ils/elles - eussent: acheté
+            j' - eusse: acheté
+            nous - eussions: acheté
+            tu - eusses: acheté
+            vous - eussiez: acheté
+          passé première forme:
+            il/elle - aurait: acheté
+            ils/elles - auraient: acheté
+            j' - aurais: acheté
+            nous - aurions: acheté
+            tu - aurais: acheté
+            vous - auriez: acheté
+          présent:
+            il/elle: achèterait
+            ils/elles: achèteraient
+            j': achèterais
+            nous: achèterions
+            tu: achèterais
+            vous: achèteriez
+        indicatif:
+          futur:
+            il/elle: achètera
+            ils/elles: achèteront
+            j': achèterai
+            nous: achèterons
+            tu: achèteras
+            vous: achèterez
+          futur antérieur:
+            il/elle - aura: acheté
+            ils/elles - auront: acheté
+            j' - aurai: acheté
+            nous - aurons: acheté
+            tu - auras: acheté
+            vous - aurez: acheté
+          imparfait:
+            il/elle: achetait
+            ils/elles: achetaient
+            j': achetais
+            nous: achetions
+            tu: achetais
+            vous: achetiez
+          passé antérieur:
+            il/elle - eut: acheté
+            ils/elles - eurent: acheté
+            j' - eus: acheté
+            nous - eûmes: acheté
+            tu - eus: acheté
+            vous - eûtes: acheté
+          passé composé:
+            il/elle - a: acheté
+            ils/elles - ont: acheté
+            j' - ai: acheté
+            nous - avons: acheté
+            tu - as: acheté
+            vous - avez: acheté
+          passé simple:
+            il/elle: acheta
+            ils/elles: achetèrent
+            j': achetai
+            nous: achetâmes
+            tu: achetas
+            vous: achetâtes
+          plus-que-parfait:
+            il/elle - avait: acheté
+            ils/elles - avaient: acheté
+            j' - avais: acheté
+            nous - avions: acheté
+            tu - avais: acheté
+            vous - aviez: acheté
+          présent:
+            il/elle: achète
+            ils/elles: achètent
+            j': achète
+            nous: achetons
+            tu: achètes
+            vous: achetez
+        infinitif:
+          passé:
+            avoir: acheté
+        participe:
+          passé:
+            aie: acheté
+            ayez: acheté
+            ayons: acheté
+          passé composé:
+            ayant: acheté
+          présent:
+            '': achetez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: achetât
+            qu' - ils/elles: achetassent
+            que - j': achetasse
+            que - nous: achetassions
+            que - tu: achetasses
+            que - vous: achetassiez
+          passé:
+            qu' - il/elle - ait: acheté
+            qu' - ils/elles - aient: acheté
+            que - j' - aie: acheté
+            que - nous - ayons: acheté
+            que - tu - aies: acheté
+            que - vous - ayez: acheté
+          plus-que-parfait:
+            qu' - il/elle - eût: acheté
+            qu' - ils/elles - eussent: acheté
+            que - j' - eusse: acheté
+            que - nous - eussions: acheté
+            que - tu - eusses: acheté
+            que - vous - eussiez: acheté
+          présent:
+            qu' - il/elle: achète
+            qu' - ils/elles: achètent
+            que - j': achète
+            que - nous: achetions
+            que - tu: achètes
+            que - vous: achetiez
+      display: acheter
+      gender: NA
+      modal_in_english: false
+      model: acheter
+      other_forms:
+      - s'acheter
+      - ne pas acheter
+      - ne pas s'acheter
+      pos: verb
+      transitive: true
+      translations:
+      - to buy
+    uuid: f9dcdd49-0126-49c6-87a5-89d00789a0f6
   agnan:
     definitions:
     - name: true
@@ -1447,6 +1671,340 @@ french:
       translations:
       - money
     uuid: 2f149d35-0320-4ba7-a7cf-382cb9819cec
+  arithmétique:
+    definitions:
+    - display: arithmétique
+      gender: fem
+      pos: noun
+      translations:
+      - arithmetic
+      - math
+    uuid: 8d1ce5fc-ab61-4d44-a578-1268d3bf87ca
+  arriver:
+    definitions:
+    - auxiliary: être
+      conjugations_english:
+        to arrive:
+          imperative:
+            '':
+              '': arrive
+              let's: arrive
+          indicative:
+            future:
+              he/she/it - will: arrive
+              i - will: arrive
+              they - will: arrive
+              we - will: arrive
+              you - will: arrive
+            future continuous:
+              he/she/it - will - be: arriving
+              i - will - be: arriving
+              they - will - be: arriving
+              we - will - be: arriving
+              you - will - be: arriving
+            future perfect:
+              he/she/it - will - have: arrived
+              i - will - have: arrived
+              they - will - have: arrived
+              we - will - have: arrived
+              you - will - have: arrived
+            future perfect continuous:
+              he/she/it - will - have - been: arriving
+              i - will - have - been: arriving
+              they - will - have - been: arriving
+              we - will - have - been: arriving
+              you - will - have - been: arriving
+            past continous:
+              he/she/it - was: arriving
+              i - was: arriving
+              they - were: arriving
+              we - were: arriving
+              you - were: arriving
+            past perfect:
+              he/she/it - had: arrived
+              i - had: arrived
+              they - had: arrived
+              we - had: arrived
+              you - had: arrived
+            past perfect continuous:
+              he/she/it - had - been: arriving
+              i - had - been: arriving
+              they - had - been: arriving
+              we - had - been: arriving
+              you - had - been: arriving
+            present:
+              he/she/it: arrives
+              i: arrive
+              they: arrive
+              we: arrive
+              you: arrive
+            present continuous:
+              he/she/it - is: arriving
+              i - am: arriving
+              they - are: arriving
+              we - are: arriving
+              you - are: arriving
+            present perfect:
+              he/she/it - has: arrived
+              i - have: arrived
+              they - have: arrived
+              we - have: arrived
+              you - have: arrived
+            present perfect continuous:
+              he/she/it - has - been: arriving
+              i - have - been: arriving
+              they - have - been: arriving
+              we - have - been: arriving
+              you - have - been: arriving
+            preterite:
+              he/she/it: arrived
+              i: arrived
+              they: arrived
+              we: arrived
+              you: arrived
+          participle:
+            past:
+              '': arrived
+            present:
+              '': arriving
+          perfect participle:
+            '':
+              having: arrived
+        to happen:
+          imperative:
+            '':
+              '': happen
+              let's: happen
+          indicative:
+            future:
+              he/she/it - will: happen
+              i - will: happen
+              they - will: happen
+              we - will: happen
+              you - will: happen
+            future continuous:
+              he/she/it - will - be: happening
+              i - will - be: happening
+              they - will - be: happening
+              we - will - be: happening
+              you - will - be: happening
+            future perfect:
+              he/she/it - will - have: happened
+              i - will - have: happened
+              they - will - have: happened
+              we - will - have: happened
+              you - will - have: happened
+            future perfect continuous:
+              he/she/it - will - have - been: happening
+              i - will - have - been: happening
+              they - will - have - been: happening
+              we - will - have - been: happening
+              you - will - have - been: happening
+            past continous:
+              he/she/it - was: happening
+              i - was: happening
+              they - were: happening
+              we - were: happening
+              you - were: happening
+            past perfect:
+              he/she/it - had: happened
+              i - had: happened
+              they - had: happened
+              we - had: happened
+              you - had: happened
+            past perfect continuous:
+              he/she/it - had - been: happening
+              i - had - been: happening
+              they - had - been: happening
+              we - had - been: happening
+              you - had - been: happening
+            present:
+              he/she/it: happens
+              i: happen
+              they: happen
+              we: happen
+              you: happen
+            present continuous:
+              he/she/it - is: happening
+              i - am: happening
+              they - are: happening
+              we - are: happening
+              you - are: happening
+            present perfect:
+              he/she/it - has: happened
+              i - have: happened
+              they - have: happened
+              we - have: happened
+              you - have: happened
+            present perfect continuous:
+              he/she/it - has - been: happening
+              i - have - been: happening
+              they - have - been: happening
+              we - have - been: happening
+              you - have - been: happening
+            preterite:
+              he/she/it: happened
+              i: happened
+              they: happened
+              we: happened
+              you: happened
+          participle:
+            past:
+              '': happened
+            present:
+              '': happening
+          perfect participle:
+            '':
+              having: happened
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: arrivée
+            elles - fussent: arrivées
+            il - fût: arrivé
+            ils - fussent: arrivés
+            je - fusse: arrivé
+            nous - fussions: arrivés
+            tu - fusses: arrivé
+            vous - fussiez: arrivés
+          passé première forme:
+            elle - serait: arrivée
+            elles - seraient: arrivées
+            il - serait: arrivé
+            ils - seraient: arrivés
+            je - serais: arrivé
+            nous - serions: arrivés
+            tu - serais: arrivé
+            vous - seriez: arrivés
+          présent:
+            il/elle: arriverait
+            ils/elles: arriveraient
+            j': arriverais
+            nous: arriverions
+            tu: arriverais
+            vous: arriveriez
+        indicatif:
+          futur:
+            il/elle: arrivera
+            ils/elles: arriveront
+            j': arriverai
+            nous: arriverons
+            tu: arriveras
+            vous: arriverez
+          futur antérieur:
+            elle - sera: arrivée
+            elles - seront: arrivées
+            il - sera: arrivé
+            ils - seront: arrivés
+            je - serai: arrivé
+            nous - serons: arrivés
+            tu - seras: arrivé
+            vous - serez: arrivés
+          imparfait:
+            il/elle: arrivait
+            ils/elles: arrivaient
+            j': arrivais
+            nous: arrivions
+            tu: arrivais
+            vous: arriviez
+          passé antérieur:
+            elle - fut: arrivée
+            elles - furent: arrivées
+            il - fut: arrivé
+            ils - furent: arrivés
+            je - fus: arrivé
+            nous - fûmes: arrivés
+            tu - fus: arrivé
+            vous - fûtes: arrivés
+          passé composé:
+            elle - est: arrivée
+            elles - sont: arrivées
+            il - est: arrivé
+            ils - sont: arrivés
+            je - suis: arrivé
+            nous - sommes: arrivés
+            tu - es: arrivé
+            vous - êtes: arrivés
+          passé simple:
+            il/elle: arriva
+            ils/elles: arrivèrent
+            j': arrivai
+            nous: arrivâmes
+            tu: arrivas
+            vous: arrivâtes
+          plus-que-parfait:
+            elle - était: arrivée
+            elles - étaient: arrivées
+            il - était: arrivé
+            ils - étaient: arrivés
+            j' - étais: arrivé
+            nous - étions: arrivés
+            tu - étais: arrivé
+            vous - étiez: arrivés
+          présent:
+            il/elle: arrive
+            ils/elles: arrivent
+            j': arrive
+            nous: arrivons
+            tu: arrives
+            vous: arrivez
+        infinitif:
+          passé:
+            être: arrivé
+        participe:
+          passé:
+            sois: arrivé
+            soyez: arrivé
+            soyons: arrivé
+          passé composé:
+            étant: arrivée
+          présent:
+            '': arrivez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: arrivât
+            qu' - ils/elles: arrivassent
+            que - j': arrivasse
+            que - nous: arrivassions
+            que - tu: arrivasses
+            que - vous: arrivassiez
+          passé:
+            qu' - elle - soit: arrivée
+            qu' - elles - soient: arrivées
+            qu' - il - soit: arrivé
+            qu' - ils - soient: arrivés
+            que - je - sois: arrivé
+            que - nous - soyons: arrivés
+            que - tu - sois: arrivé
+            que - vous - soyez: arrivés
+          plus-que-parfait:
+            qu' - elle - fût: arrivée
+            qu' - elles - fussent: arrivées
+            qu' - il - fût: arrivé
+            qu' - ils - fussent: arrivés
+            que - je - fusse: arrivé
+            que - nous - fussions: arrivés
+            que - tu - fusses: arrivé
+            que - vous - fussiez: arrivés
+          présent:
+            qu' - il/elle: arrive
+            qu' - ils/elles: arrivent
+            que - j': arrive
+            que - nous: arrivions
+            que - tu: arrives
+            que - vous: arriviez
+      display: arriver
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - ne pas arriver
+      pos: verb
+      transitive: false
+      translations:
+      - to arrive
+      - to happen
+    uuid: 6f11ea92-bd83-4b8b-adb1-dcda6cb93181
   asseoir:
     definitions:
     - auxiliary: avoir
@@ -1850,6 +2408,14 @@ french:
       translations:
       - slowly
     uuid: 64f7c0b4-2a44-4811-9412-b1ecb01aab8f
+  avion:
+    definitions:
+    - display: avion
+      gender: masc
+      pos: noun
+      translations:
+      - plane
+    uuid: d2a7768c-1e99-4eb2-ae03-5378c8fa9974
   avoir:
     definitions:
     - auxiliary: avoir
@@ -2081,6 +2647,15 @@ french:
       translations:
       - stick
     uuid: 95ae4cd5-0e39-484d-8746-c1970456ae63
+  balle:
+    definitions:
+    - display: balle
+      gender: fem
+      pos: noun
+      translations:
+      - bullet
+      - ball
+    uuid: de8517a1-f5d0-491f-8cbb-540aab74b6b5
   bastille:
     definitions:
     - display: bastille
@@ -2123,6 +2698,23 @@ french:
     definitions:
     - notaword: true
     uuid: 8e97b267-f43e-418d-a29d-609dc9bcdbc0
+  blanc:
+    definitions:
+    - display: blanc
+      gender: masc
+      pos: adjective
+      translations:
+      - white
+    uuid: 2d79de5d-f428-474c-8cc8-364c2d0cf4b9
+  blanche:
+    definitions:
+    - display: blanche
+      gender: fem
+      pos: adjective
+      see: blanc
+      translations:
+      - white
+    uuid: 4716970b-3352-470a-a5c5-6e94b9d722c9
   blédurt:
     definitions:
     - name: true
@@ -2171,6 +2763,14 @@ french:
     - name: true
       notaword: true
     uuid: 0b48f84f-51f0-4283-abfe-d30b51c9431c
+  bouquet:
+    definitions:
+    - display: bouquet
+      gender: masc
+      pos: noun
+      translations:
+      - bunch
+    uuid: f441395f-0407-4374-9925-52863edbea2c
   bout:
     definitions:
     - display: bout
@@ -2622,6 +3222,31 @@ french:
       translations:
       - place
     uuid: ab0e2fbb-3d2d-4e8c-9a3c-848f869d3c88
+  chien:
+    definitions:
+    - display: chien
+      gender: masc
+      pos: noun
+      translations:
+      - dog
+    uuid: 2e3ed748-a457-4f56-8746-fd11605fcb04
+  chienne:
+    definitions:
+    - display: chienne
+      gender: fem
+      pos: noun
+      see: chien
+      translations:
+      - dog
+    uuid: 2c224c81-923c-4467-813a-90b33ed9df9e
+  chocolat:
+    definitions:
+    - display: chocolat
+      gender: masc
+      pos: noun
+      translations:
+      - chocolate
+    uuid: b0693f65-3b48-4900-86ef-01b4478ac773
   chose:
     definitions:
     - display: chose
@@ -3341,6 +3966,14 @@ french:
       - count
       - number
     uuid: f718b1e8-3e52-4f65-b19d-cad201501734
+  confiture:
+    definitions:
+    - display: confiture
+      gender: fem
+      pos: noun
+      translations:
+      - jam
+    uuid: afbfc811-9cdf-4c96-9de0-4f09ca944e3e
   content:
     definitions:
     - display: content
@@ -5552,6 +6185,471 @@ french:
       - between
       - among
     uuid: 063d2e3f-f055-46b2-854e-427b8eb7966b
+  entrer:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to come in:
+          imperative:
+            '':
+              '': come in in
+              let's: come in
+          indicative:
+            future:
+              he/she/it - will: come in
+              i - will: come in
+              they - will: come in
+              we - will: come in
+              you - will: come in
+            future continuous:
+              he/she/it - will - be: coming in
+              i - will - be: coming in
+              they - will - be: coming in
+              we - will - be: coming in
+              you - will - be: coming in
+            future perfect:
+              he/she/it - will - have: come in
+              i - will - have: come in
+              they - will - have: come in
+              we - will - have: come in
+              you - will - have: come in
+            future perfect continuous:
+              he/she/it - will - have - been: coming in
+              i - will - have - been: coming in
+              they - will - have - been: coming in
+              we - will - have - been: coming in
+              you - will - have - been: coming in
+            past continous:
+              he/she/it - was: coming in
+              i - was: coming in
+              they - were: coming in
+              we - were: coming in
+              you - were: coming in
+            past perfect:
+              he/she/it - had: come in
+              i - had: come in
+              they - had: come in
+              we - had: come in
+              you - had: come in
+            past perfect continuous:
+              he/she/it - had - been: coming in
+              i - had - been: coming in
+              they - had - been: coming in
+              we - had - been: coming in
+              you - had - been: coming in
+            present:
+              he/she/it: comes in
+              i: come in
+              they: come in
+              we: come in
+              you: come in
+            present continuous:
+              he/she/it - is: coming in
+              i - am: coming in
+              they - are: coming in
+              we - are: coming in
+              you - are: coming in
+            present perfect:
+              he/she/it - has: come in
+              i - have: come in
+              they - have: come in
+              we - have: come in
+              you - have: come in
+            present perfect continuous:
+              he/she/it - has - been: coming in
+              i - have - been: coming in
+              they - have - been: coming in
+              we - have - been: coming in
+              you - have - been: coming in
+            preterite:
+              he/she/it: came in
+              i: came in
+              they: came in
+              we: came in
+              you: came in
+          participle:
+            past:
+              '': come in
+            present:
+              '': coming in
+          perfect participle:
+            '':
+              having: come in
+        to enter:
+          imperative:
+            '':
+              '': enter
+              let's: enter
+          indicative:
+            future:
+              he/she/it - will: enter
+              i - will: enter
+              they - will: enter
+              we - will: enter
+              you - will: enter
+            future continuous:
+              he/she/it - will - be: entering
+              i - will - be: entering
+              they - will - be: entering
+              we - will - be: entering
+              you - will - be: entering
+            future perfect:
+              he/she/it - will - have: entered
+              i - will - have: entered
+              they - will - have: entered
+              we - will - have: entered
+              you - will - have: entered
+            future perfect continuous:
+              he/she/it - will - have - been: entering
+              i - will - have - been: entering
+              they - will - have - been: entering
+              we - will - have - been: entering
+              you - will - have - been: entering
+            past continous:
+              he/she/it - was: entering
+              i - was: entering
+              they - were: entering
+              we - were: entering
+              you - were: entering
+            past perfect:
+              he/she/it - had: entered
+              i - had: entered
+              they - had: entered
+              we - had: entered
+              you - had: entered
+            past perfect continuous:
+              he/she/it - had - been: entering
+              i - had - been: entering
+              they - had - been: entering
+              we - had - been: entering
+              you - had - been: entering
+            present:
+              he/she/it: enters
+              i: enter
+              they: enter
+              we: enter
+              you: enter
+            present continuous:
+              he/she/it - is: entering
+              i - am: entering
+              they - are: entering
+              we - are: entering
+              you - are: entering
+            present perfect:
+              he/she/it - has: entered
+              i - have: entered
+              they - have: entered
+              we - have: entered
+              you - have: entered
+            present perfect continuous:
+              he/she/it - has - been: entering
+              i - have - been: entering
+              they - have - been: entering
+              we - have - been: entering
+              you - have - been: entering
+            preterite:
+              he/she/it: entered
+              i: entered
+              they: entered
+              we: entered
+              you: entered
+          participle:
+            past:
+              '': entered
+            present:
+              '': entering
+          perfect participle:
+            '':
+              having: entered
+        to go in:
+          imperative:
+            '':
+              '': go in in
+              let's: go in
+          indicative:
+            future:
+              he/she/it - will: go in
+              i - will: go in
+              they - will: go in
+              we - will: go in
+              you - will: go in
+            future continuous:
+              he/she/it - will - be: going in
+              i - will - be: going in
+              they - will - be: going in
+              we - will - be: going in
+              you - will - be: going in
+            future perfect:
+              he/she/it - will - have: gone in
+              i - will - have: gone in
+              they - will - have: gone in
+              we - will - have: gone in
+              you - will - have: gone in
+            future perfect continuous:
+              he/she/it - will - have - been: going in
+              i - will - have - been: going in
+              they - will - have - been: going in
+              we - will - have - been: going in
+              you - will - have - been: going in
+            past continous:
+              he/she/it - was: going in
+              i - was: going in
+              they - were: going in
+              we - were: going in
+              you - were: going in
+            past perfect:
+              he/she/it - had: gone in
+              i - had: gone in
+              they - had: gone in
+              we - had: gone in
+              you - had: gone in
+            past perfect continuous:
+              he/she/it - had - been: going in
+              i - had - been: going in
+              they - had - been: going in
+              we - had - been: going in
+              you - had - been: going in
+            present:
+              he/she/it: goes in
+              i: go in
+              they: go in
+              we: go in
+              you: go in
+            present continuous:
+              he/she/it - is: going in
+              i - am: going in
+              they - are: going in
+              we - are: going in
+              you - are: going in
+            present perfect:
+              he/she/it - has: gone in
+              i - have: gone in
+              they - have: gone in
+              we - have: gone in
+              you - have: gone in
+            present perfect continuous:
+              he/she/it - has - been: going in
+              i - have - been: going in
+              they - have - been: going in
+              we - have - been: going in
+              you - have - been: going in
+            preterite:
+              he/she/it: went in
+              i: went in
+              they: went in
+              we: went in
+              you: went in
+          participle:
+            past:
+              '': gone in
+            present:
+              '': going in
+          perfect participle:
+            '':
+              having: gone in
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            elle - fût: entrée
+            elles - fussent: entrées
+            il - fût: entré
+            il/elle - eût: entré
+            ils - fussent: entrés
+            ils/elles - eussent: entré
+            j' - eusse: entré
+            je - fusse: entré
+            nous - eussions: entré
+            nous - fussions: entrés
+            tu - eusses: entré
+            tu - fusses: entré
+            vous - eussiez: entré
+            vous - fussiez: entrés
+          passé première forme:
+            elle - serait: entrée
+            elles - seraient: entrées
+            il - serait: entré
+            il/elle - aurait: entré
+            ils - seraient: entrés
+            ils/elles - auraient: entré
+            j' - aurais: entré
+            je - serais: entré
+            nous - aurions: entré
+            nous - serions: entrés
+            tu - aurais: entré
+            tu - serais: entré
+            vous - auriez: entré
+            vous - seriez: entrés
+          présent:
+            il/elle: entrerait
+            ils/elles: entreraient
+            j': entrerais
+            nous: entrerions
+            tu: entrerais
+            vous: entreriez
+        indicatif:
+          futur:
+            il/elle: entrera
+            ils/elles: entreront
+            j': entrerai
+            nous: entrerons
+            tu: entreras
+            vous: entrerez
+          futur antérieur:
+            elle - sera: entrée
+            elles - seront: entrées
+            il - sera: entré
+            il/elle - aura: entré
+            ils - seront: entrés
+            ils/elles - auront: entré
+            j' - aurai: entré
+            je - serai: entré
+            nous - aurons: entré
+            nous - serons: entrés
+            tu - auras: entré
+            tu - seras: entré
+            vous - aurez: entré
+            vous - serez: entrés
+          imparfait:
+            il/elle: entrait
+            ils/elles: entraient
+            j': entrais
+            nous: entrions
+            tu: entrais
+            vous: entriez
+          passé antérieur:
+            elle - fut: entrée
+            elles - furent: entrées
+            il - fut: entré
+            il/elle - eut: entré
+            ils - furent: entrés
+            ils/elles - eurent: entré
+            j' - eus: entré
+            je - fus: entré
+            nous - eûmes: entré
+            nous - fûmes: entrés
+            tu - eus: entré
+            tu - fus: entré
+            vous - eûtes: entré
+            vous - fûtes: entrés
+          passé composé:
+            elle - est: entrée
+            elles - sont: entrées
+            il - est: entré
+            il/elle - a: entré
+            ils - sont: entrés
+            ils/elles - ont: entré
+            j' - ai: entré
+            je - suis: entré
+            nous - avons: entré
+            nous - sommes: entrés
+            tu - as: entré
+            tu - es: entré
+            vous - avez: entré
+            vous - êtes: entrés
+          passé simple:
+            il/elle: entra
+            ils/elles: entrèrent
+            j': entrai
+            nous: entrâmes
+            tu: entras
+            vous: entrâtes
+          plus-que-parfait:
+            elle - était: entrée
+            elles - étaient: entrées
+            il - était: entré
+            il/elle - avait: entré
+            ils - étaient: entrés
+            ils/elles - avaient: entré
+            j' - avais: entré
+            j' - étais: entré
+            nous - avions: entré
+            nous - étions: entrés
+            tu - avais: entré
+            tu - étais: entré
+            vous - aviez: entré
+            vous - étiez: entrés
+          présent:
+            il/elle: entre
+            ils/elles: entrent
+            j': entre
+            nous: entrons
+            tu: entres
+            vous: entrez
+        infinitif:
+          passé:
+            avoir: entré
+            être: entré
+        participe:
+          passé:
+            aie: entré
+            ayez: entré
+            ayons: entré
+            sois: entré
+            soyez: entré
+            soyons: entré
+          passé composé:
+            ayant: entré
+            étant: entrée
+          présent:
+            '': entrez
+        subjonctif:
+          imparfait:
+            qu' - il/elle: entrât
+            qu' - ils/elles: entrassent
+            que - j': entrasse
+            que - nous: entrassions
+            que - tu: entrasses
+            que - vous: entrassiez
+          passé:
+            qu' - elle - soit: entrée
+            qu' - elles - soient: entrées
+            qu' - il - soit: entré
+            qu' - il/elle - ait: entré
+            qu' - ils - soient: entrés
+            qu' - ils/elles - aient: entré
+            que - j' - aie: entré
+            que - je - sois: entré
+            que - nous - ayons: entré
+            que - nous - soyons: entrés
+            que - tu - aies: entré
+            que - tu - sois: entré
+            que - vous - ayez: entré
+            que - vous - soyez: entrés
+          plus-que-parfait:
+            qu' - elle - fût: entrée
+            qu' - elles - fussent: entrées
+            qu' - il - fût: entré
+            qu' - il/elle - eût: entré
+            qu' - ils - fussent: entrés
+            qu' - ils/elles - eussent: entré
+            que - j' - eusse: entré
+            que - je - fusse: entré
+            que - nous - eussions: entré
+            que - nous - fussions: entrés
+            que - tu - eusses: entré
+            que - tu - fusses: entré
+            que - vous - eussiez: entré
+            que - vous - fussiez: entrés
+          présent:
+            qu' - il/elle: entre
+            qu' - ils/elles: entrent
+            que - j': entre
+            que - nous: entrions
+            que - tu: entres
+            que - vous: entriez
+      display: entrer
+      gender: NA
+      modal_in_english: false
+      model: marcher
+      other_forms:
+      - ne pas entrer
+      pos: verb
+      transitive: false
+      translations:
+      - to enter
+      - to go in
+      - to come in
+    uuid: 50d578f4-4d50-4c55-91fd-1acf3eb54988
   envie:
     definitions:
     - display: envie
@@ -9743,6 +10841,23 @@ french:
       translations:
       - Mrs
     uuid: 845c5b98-a7cd-4c17-8157-bbdb3dfdc18d
+  mademoiselle:
+    definitions:
+    - display: Mademoiselle
+      gender: fem
+      pos: noun
+      translations:
+      - Miss
+    uuid: 02735207-32a4-4f5e-b684-4cd975e23804
+  mademoiselles:
+    definitions:
+    - display: Mademoiselles
+      gender: fem
+      pos: noun
+      see: mademoiselle
+      translations:
+      - Miss
+    uuid: d84d6cf2-250a-4cb6-be5c-d07fc452cd26
   magie:
     definitions:
     - display: magie
@@ -12971,6 +14086,14 @@ french:
       - maybe
       - perhaps
     uuid: b4b6f2ea-7ce9-4811-a546-ef1d02ca00a1
+  photographe:
+    definitions:
+    - display: photographe
+      gender: both
+      pos: noun
+      translations:
+      - photographer
+    uuid: 4451e4b0-d516-48eb-8f10-56f3cabb0335
   pied:
     definitions:
     - display: pied
@@ -12996,6 +14119,15 @@ french:
       translations:
       - stone
     uuid: be4802ef-5441-4b30-9fa1-e7db82ba6ba5
+  piquet:
+    definitions:
+    - display: piquet
+      gender: masc
+      pos: noun
+      translations:
+      - post
+      - peg
+    uuid: e2eb3547-a699-4efb-9734-5752d036bd29
   pièce:
     definitions:
     - display: pièce
@@ -15786,11 +16918,35 @@ french:
     - name: true
       notaword: true
     uuid: e6962632-b20a-4074-9fc3-36d3ccc2b930
+  rouge:
+    definitions:
+    - display: rouge
+      gender: NA
+      pos: adjective
+      translations:
+      - red
+    uuid: 8187c0e3-ada4-4dc4-8588-8d4cbbcd70ef
+  rue:
+    definitions:
+    - display: rue
+      gender: fem
+      pos: noun
+      translations:
+      - street
+    uuid: a140556a-60c8-472a-82b0-2fea67505bcb
   rufus:
     definitions:
     - name: true
       notaword: true
     uuid: 7aba3e01-003a-4eb6-a2e5-53356243b147
+  récré:
+    definitions:
+    - display: récré
+      gender: fem
+      pos: noun
+      translations:
+      - recess
+    uuid: 2bd0fa44-e4a8-445a-bd80-bfeece1acdb4
   répliquer:
     definitions:
     - auxiliary: avoir
@@ -16454,6 +17610,14 @@ french:
       - room
       - ward
     uuid: 35558c34-71d4-47d5-9e38-1c7bcef807fe
+  sandwich:
+    definitions:
+    - display: sandwich
+      gender: masc
+      pos: noun
+      translations:
+      - sandwich
+    uuid: da7cdfb8-a4bb-4c34-860b-07114a81c74f
   sang:
     definitions:
     - display: sang
@@ -18453,6 +19617,14 @@ french:
       translations:
       - to hold
     uuid: 51e14a76-d5ef-4f45-88b5-3decf0ea3ed7
+  terrain:
+    definitions:
+    - display: terrain
+      gender: masc
+      pos: noun
+      translations:
+      - ground
+    uuid: 85ee4bd1-431b-4cc9-a489-510013695ca4
   terre:
     definitions:
     - display: terre
@@ -18469,6 +19641,16 @@ french:
       - soil
       - land
     uuid: d6443294-28c7-4fac-8f37-3dc4c9f1636b
+  terrible:
+    definitions:
+    - display: terrible
+      gender: NA
+      pos: adjective
+      translations:
+      - terrible
+      - dreadful
+      - awful
+    uuid: 0e8e40e8-cfd1-49ca-b196-0e7e2b2da446
   tes:
     definitions:
     - display: tes

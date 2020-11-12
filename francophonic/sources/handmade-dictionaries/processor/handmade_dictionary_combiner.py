@@ -35,6 +35,8 @@ def main(analysis):
                 if 'notaword' not in definition:
                     if definition.get('gender', '') == '':
                         definition['gender'] = "NA"
+                    if definition.get('gender', '') not in ['masc', 'fem', 'both'] and definition.get('pos', '') == "noun":
+                        print(f"in a definition for the noun {word}, you don't have a valid gender (either 'masc', 'fem', 'both')!")
                     if definition.get('display', '') == '':
                         print(f"in a definition for the word {word}, you are missing 'display'!")
                         return
