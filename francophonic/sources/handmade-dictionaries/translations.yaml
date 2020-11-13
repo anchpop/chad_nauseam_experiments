@@ -739,6 +739,9 @@ french_to_english:
   '"Est-ce ce à quoi tu pensais, Harry ?"':
     google:
     - '"Is that what you were thinking, Harry?"'
+  '"Est-ce qu''elle voulait se faire battre ?"':
+    google:
+    - '"Did she want to be beaten?"'
   '"Est-ce qu''il y a autre chose que je dois savoir ?"':
     google:
     - '"Is there anything else I need to know?"'
@@ -1597,6 +1600,9 @@ french_to_english:
   '"Je veux que vous fassiez tout," dit Harry Potter.':
     google:
     - “I want you to do everything,” Harry Potter said.
+  '"Je veux rester ici et me battre avec toi contre… contre ce qui se passe."':
+    google:
+    - '"I want to stay here and fight with you against… against what''s going on."'
   '"Je veux savoir pourquoi," dit Harry.':
     google:
     - “I want to know why,” Harry said.
@@ -4485,6 +4491,9 @@ french_to_english:
   Après tout, ils avaient bien essayé de me tuer plusieurs fois.:
     google:
     - After all, they had tried to kill me several times.
+  Après tout, jamais encore ils n'avaient été battus par l'équipe de Malefoy.:
+    google:
+    - After all, they had never been beaten by Malfoy's team before.
   Après tout, je suis son père.:
     google:
     - After all, I am his father.
@@ -4627,6 +4636,9 @@ french_to_english:
   Aucun d'entre nous ne sait pourquoi il est là.:
     google:
     - None of us know why he's here.
+  Aucun d'entre nous ne sait pourquoi il se bat.:
+    google:
+    - None of us know why he is fighting.
   Aucun d'eux ne parla pendant un moment.:
     google:
     - Neither of them spoke for a while.
@@ -4660,6 +4672,9 @@ french_to_english:
   Aucune chance.:
     google:
     - No chance.
+  Aucune d'elles ne se trouvait au ministère le jour où vous vous êtes battus à côté de moi.:
+    google:
+    - None of them were in the ministry the day you fought next to me.
   Aucune idée !:
     google:
     - No idea !
@@ -4879,6 +4894,9 @@ french_to_english:
   Beaucoup moins.:
     google:
     - Much less.
+  Beaucoup ont tenu bon et se sont battus lorsque le Mal est venu les chercher.:
+    google:
+    - Many have stood their ground and fought when evil came for them.
   Beaucoup trop d'un coup.:
     google:
     - Much too much at once.
@@ -4950,6 +4968,9 @@ french_to_english:
   Bien sûr qu'il allait nous trouver.:
     google:
     - Of course he would find us.
+  Bien sûr qu'ils doivent se battre !:
+    google:
+    - Of course they have to fight!
   Bien sûr qu'ils venaient le chercher.:
     google:
     - Of course they were coming to get him.
@@ -6069,6 +6090,9 @@ french_to_english:
   C'est pour ça qu'il faut que je parle au professeur Dumbledore.:
     google:
     - That's why I need to talk to Professor Dumbledore.
+  C'est pour ça qu'il l'avait battue.:
+    google:
+    - That's why he had beaten her.
   C'est pour ça qu'il m'a fallu si longtemps.:
     google:
     - That's why it took me so long.
@@ -6771,6 +6795,9 @@ french_to_english:
   C'était pour rire, dit le garçon.:
     google:
     - It was for fun, said the boy.
+  C'était pour ça qu'ils se battaient.:
+    google:
+    - That was what they were fighting for.
   C'était quoi ?:
     google:
     - It was what ?
@@ -10192,6 +10219,9 @@ french_to_english:
   Elle avait peur des Détraqueurs.:
     google:
     - She was afraid of the Dementors.
+  Elle avait quand même l'impression qu'elle ferait mieux de ne pas essayer de se battre avec ça pendant trop longtemps.:
+    google:
+    - She still felt like she better not try to fight it for too long.
   Elle avait quelques années de plus que ton père et moi.:
     google:
     - She was a few years older than your father and me.
@@ -11500,6 +11530,9 @@ french_to_english:
   Et ?:
     google:
     - And?
+  Et Bastille l'avait battu.:
+    google:
+    - And Bastille had beaten him.
   Et Draco comprit.:
     google:
     - And Draco understood.
@@ -12151,6 +12184,9 @@ french_to_english:
   Et je ne dirai rien de plus.:
     google:
     - And I won't say anything more.
+  Et je ne dois pas vous apprendre à vous battre tant que vous ne savez pas perdre.:
+    google:
+    - And I don't have to teach you how to fight until you know how to lose.
   Et je ne le ferai pas.:
     google:
     - And I won't.
@@ -12540,6 +12576,9 @@ french_to_english:
   Et puis la maman d'Agnan est entrée.:
     google:
     - And then Agnan's mother came in.
+  Et puis le professeur Quirrell est allé se battre contre le Seigneur des Ténèbres.:
+    google:
+    - And then Professor Quirrell went to fight the Dark Lord.
   Et puis plus rien.:
     google:
     - And then nothing.
@@ -13069,6 +13108,9 @@ french_to_english:
   Et… vous les cherchez toujours, monsieur ?:
     google:
     - And… are you still looking for them, sir?
+  Eudes, a dit la maîtresse, laissez votre place à votre camarade.:
+    google:
+    - Eudes, said the teacher, give your place to your comrade.
   Exactement !:
     google:
     - Exactly!
@@ -15344,6 +15386,9 @@ french_to_english:
   Il fallait qu’il le tue.:
     google:
     - He had to kill him.
+  Il fallait rester et se battre.:
+    google:
+    - We had to stay and fight.
   Il fallait sortir d'ici le plus vite possible.:
     google:
     - We had to get out of here as quickly as possible.
@@ -15990,6 +16035,9 @@ french_to_english:
   Il n'était même pas sûr qu'elle en ait un.:
     google:
     - He wasn't even sure she had one.
+  Il n'était pas content que Gryffondor ait battu Serdaigle au Quidditch.:
+    google:
+    - He wasn't happy that Gryffindor had beaten Ravenclaw in Quidditch.
   Il n'était pas le seul.:
     google:
     - He was not the only one.
@@ -16871,6 +16919,9 @@ french_to_english:
   Il voulait savoir où j’en étais.:
     google:
     - He wanted to know where I was.
+  Il voulait se battre ?:
+    google:
+    - He wanted to fight?
   Il vous a eu en plein dans la figure, pas vrai ?:
     google:
     - He got you right in the face, didn't he?
@@ -17417,6 +17468,9 @@ french_to_english:
   Ils savent beaucoup de choses.:
     google:
     - They know a lot of things.
+  Ils se battraient sous l'eau.:
+    google:
+    - They would fight underwater.
   Ils se faisaient la cour !:
     google:
     - They were courting each other!
@@ -17468,6 +17522,9 @@ french_to_english:
   Ils sont… partis.:
     google:
     - They left.
+  Ils veulent battre Dumbledore.:
+    google:
+    - They want to beat Dumbledore.
   Ils veulent comprendre ce qu'est la mort.:
     google:
     - They want to understand what death is.
@@ -17988,6 +18045,9 @@ french_to_english:
   J'aurais dû m'en rendre compte !:
     google:
     - I should have realized it!
+  J'aurais dû, j'aurais dû me battre contre Granger, pour lui -:
+    google:
+    - I should have, should have fought Granger, for him -
   J'aurais pu te dire quel effet ça fait.:
     google:
     - I could have told you how it feels.
@@ -18742,6 +18802,9 @@ french_to_english:
   Je l'ai vu, dit lentement Harry.:
     google:
     - I saw him, Harry said slowly.
+  Je l'ai vu, je me suis battu contre lui !:
+    google:
+    - I saw him, I fought him!
   Je l'ai vu, je peux l'appeler par son nom.:
     google:
     - I saw him, I can call him by name.
@@ -19003,6 +19066,9 @@ french_to_english:
   Je m'entendais mieux avec ton père que ta mère.:
     google:
     - I got along better with your father than your mother.
+  Je me battrais contre le Seigneur des Ténèbres sans aucune magie si besoin était.:
+    google:
+    - I would fight the Dark Lord without any magic if needed.
   Je me crois toujours chez moi !:
     google:
     - I always feel at home !
@@ -20933,6 +20999,9 @@ french_to_english:
   Je vais t'expliquer.:
     google:
     - I'll explain.
+  Je vais te battre.:
+    google:
+    - I'm going to beat you.
   Je vais te dire pourquoi, répliqua Black.:
     google:
     - I'll tell you why, Black replied.
@@ -22143,6 +22212,15 @@ french_to_english:
   Le coup partit.:
     google:
     - The blow went off.
+  Le cœur de Harry se mit à battre de plus en plus vite.:
+    google:
+    - Harry's heart began to beat faster and faster.
+  Le cœur de Harry se mit à battre plus fort.:
+    google:
+    - Harry's heart began to beat faster.
+  Le cœur de Harry se mit à battre plus vite.:
+    google:
+    - Harry's heart began to beat faster.
   Le dernier jour.:
     google:
     - The last day.
@@ -23801,6 +23879,9 @@ french_to_english:
   Mais je ne le ferai pas.:
     google:
     - But I won't.
+  Mais je ne me suis pas battu aujourd'hui, M. le directeur.:
+    google:
+    - But I didn't fight today, Mr. Director.
   Mais je ne pense pas qu'il puisse se trouver près de chez moi en ce moment, qu'est-ce que tu en penses ?:
     google:
     - But I don't think he could be near my place right now, what do you think?
@@ -26460,6 +26541,9 @@ french_to_english:
   Nous ne t'avions pas entendu arriver !:
     google:
     - We didn't hear you coming!
+  Nous nous battons parce que nous aimons ça.:
+    google:
+    - We fight because we like it.
   Nous nous ferons tout petits.:
     google:
     - We will make ourselves very small.
@@ -26985,6 +27069,9 @@ french_to_english:
   On a dû arriver tout près de chez Hagrid, maintenant !:
     google:
     - We must have arrived very close to Hagrid's place now!
+  On a eu une peur bleue !:
+    google:
+    - We were scared to death!
   On a pensé que ce serait une bonne idée de venir te voir, Harry !:
     google:
     - We thought it would be a good idea to come see you, Harry!
@@ -27362,6 +27449,9 @@ french_to_english:
   On ne sait même plus lire leur langue.:
     google:
     - We no longer even know how to read their language.
+  On ne sait pas très bien mais on pense qu'il s'est donné un coup avec sa propre batte.:
+    google:
+    - We don't quite know but we think he kicked himself with his own bat.
   On ne saura peut-être jamais.:
     google:
     - We may never know.
@@ -27516,6 +27606,9 @@ french_to_english:
   On sait aussi que T.:
     google:
     - We also know that T.
+  On se battra.:
+    google:
+    - We will fight.
   On se dit qu'on ne fait pas quelque chose parce qu'on n'a pas le temps de le faire.:
     google:
     - We tell ourselves that we are not doing something because we do not have the
@@ -28211,6 +28304,9 @@ french_to_english:
   Oui, répondit Harry avec un sourire, c’est très bien.:
     google:
     - Yes, Harry replied with a smile, that's very good.
+  Oui, répondit Harry, dont le cœur se mit à battre un peu plus vite.:
+    google:
+    - Yes, Harry replied, his heart racing a little faster.
   Oui, répondit Harry.:
     google:
     - Yes, Harry replied.
@@ -28698,6 +28794,9 @@ french_to_english:
   Pas besoin.:
     google:
     - No need.
+  Pas blanc ni noir, mais bleu cette fois.:
+    google:
+    - Not white or black, but blue this time.
   Pas cela.:
     google:
     - Not that.
@@ -32032,6 +32131,9 @@ french_to_english:
   Regardez bien ce que va faire Fred.:
     google:
     - Take a good look at what Fred will do.
+  Regardez bien, vous autres… Potter s'est battu !:
+    google:
+    - Take a good look, you guys… Potter fought!
   Regardez bien.:
     google:
     - Look carefully.
@@ -32901,6 +33003,10 @@ french_to_english:
     google:
     - If you think there is anything strange there, then you haven't been at Hogwarts
       for very long.
+  Si vous étiez Hermione Granger et que Harry Potter vous battait, ça voulait juste dire que vous n'étiez personne.:
+    google:
+    - If you were Hermione Granger and Harry Potter beat you, it just meant you were
+      nobody.
   Si vous êtes seul, ça veut dire qu'il y a quelque chose qui ne va pas avec vous.:
     google:
     - If you are alone, that means there is something wrong with you.
@@ -33054,6 +33160,16 @@ french_to_english:
   Son corps également.:
     google:
     - His body too.
+  Son cœur battait si fort qu'il lui faisait mal.:
+    google:
+    - Her heart was beating so hard it hurt.
+  Son cœur battait si vite et si fort, à présent, qu'on devait le sentir dans sa façon de parler.:
+    google:
+    - Her heart was beating so fast and so hard now that you could feel it in the
+      way she spoke.
+  Son cœur battait très vite et très fort.:
+    google:
+    - His heart was beating very fast and very strong.
   Son nom ?:
     google:
     - Her name ?
@@ -34301,6 +34417,9 @@ french_to_english:
   Tu l'aimes ?:
     google:
     - You love it ?
+  Tu l'as déjà battu une fois, non ?:
+    google:
+    - You already beat him once, right?
   Tu l'as entendu.:
     google:
     - You heard it.
@@ -34331,6 +34450,12 @@ french_to_english:
   Tu le vois ?:
     google:
     - You see it ?
+  Tu les as battus !:
+    google:
+    - You beat them!
+  Tu les as battus, Harry !:
+    google:
+    - You beat them, Harry!
   Tu les veux tout de suite ?:
     google:
     - Do you want them now?
@@ -34502,6 +34627,9 @@ french_to_english:
   Tu ne l'aimes pas, ce chocolat ?:
     google:
     - Don't you like this chocolate?
+  Tu ne l'aimes pas, simplement parce qu'il a battu Gryffondor au Quidditch.:
+    google:
+    - You don't like him, just because he beat Gryffindor in Quidditch.
   Tu ne l'as jamais vu, Hermione.:
     google:
     - You've never seen him, Hermione.
@@ -35999,6 +36127,9 @@ french_to_english:
   Vous devez savoir cela, Dumbledore.:
     google:
     - You must know this, Dumbledore.
+  Vous devez vous battre !:
+    google:
+    - You must fight!
   Vous devrez nous tuer tous les trois.:
     google:
     - You will have to kill the three of us.
@@ -36306,6 +36437,9 @@ french_to_english:
   Vous ne voulez rien nous dire ?:
     google:
     - You don't want to tell us?
+  Vous ne vous êtes quand même pas battus, j'espère ?:
+    google:
+    - You didn't fight anyway, I hope?
   Vous ne voyez pas Hagrid en train de pleurer ?:
     google:
     - Can't you see Hagrid crying?
@@ -37240,6 +37374,9 @@ french_to_english:
   Ça ne devrait pas être très difficile pour toi.:
     google:
     - It shouldn't be too hard for you.
+  Ça ne dit pas quand se battre et quand ne pas se battre.:
+    google:
+    - It doesn't say when to fight and when not to fight.
   Ça ne fait rien, c'est tellement petit, chez moi !:
     google:
     - It doesn't matter, it's so small at home!
@@ -37600,6 +37737,9 @@ french_to_english:
   Ça, c'est le deuxième problème.:
     google:
     - This is the second problem.
+  Ça, c'est parce qu'il vous fait une peur bleue, dit Ron.:
+    google:
+    - That's because he scares you, Ron said.
   Ça, c'est pas quelque chose de nouveau.:
     google:
     - This is not something new.

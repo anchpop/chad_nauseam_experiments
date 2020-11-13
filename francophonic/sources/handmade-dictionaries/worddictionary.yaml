@@ -2981,6 +2981,325 @@ french:
     - display: bastille
       notaword: true
     uuid: 19b81a77-1a8a-47b9-969f-cce5790a7d07
+  battre:
+    definitions:
+    - auxiliary: avoir
+      conjugations_english:
+        to beat:
+          imperative:
+            '':
+              '': beat
+              let's: beat
+          indicative:
+            future:
+              he/she/it - will: beat
+              i - will: beat
+              they - will: beat
+              we - will: beat
+              you - will: beat
+            future continuous:
+              he/she/it - will - be: beating
+              i - will - be: beating
+              they - will - be: beating
+              we - will - be: beating
+              you - will - be: beating
+            future perfect:
+              he/she/it - will - have: beaten
+              i - will - have: beaten
+              they - will - have: beaten
+              we - will - have: beaten
+              you - will - have: beaten
+            future perfect continuous:
+              he/she/it - will - have - been: beating
+              i - will - have - been: beating
+              they - will - have - been: beating
+              we - will - have - been: beating
+              you - will - have - been: beating
+            past continous:
+              he/she/it - was: beating
+              i - was: beating
+              they - were: beating
+              we - were: beating
+              you - were: beating
+            past perfect:
+              he/she/it - had: beaten
+              i - had: beaten
+              they - had: beaten
+              we - had: beaten
+              you - had: beaten
+            past perfect continuous:
+              he/she/it - had - been: beating
+              i - had - been: beating
+              they - had - been: beating
+              we - had - been: beating
+              you - had - been: beating
+            present:
+              he/she/it: beats
+              i: beat
+              they: beat
+              we: beat
+              you: beat
+            present continuous:
+              he/she/it - is: beating
+              i - am: beating
+              they - are: beating
+              we - are: beating
+              you - are: beating
+            present perfect:
+              he/she/it - has: beaten
+              i - have: beaten
+              they - have: beaten
+              we - have: beaten
+              you - have: beaten
+            present perfect continuous:
+              he/she/it - has - been: beating
+              i - have - been: beating
+              they - have - been: beating
+              we - have - been: beating
+              you - have - been: beating
+            preterite:
+              he/she/it: beat
+              i: beat
+              they: beat
+              we: beat
+              you: beat
+          participle:
+            past:
+              '': beaten
+            present:
+              '': beating
+          perfect participle:
+            '':
+              having: beaten
+        to beat against:
+          imperative:
+            '':
+              '': beat against against
+              let's: beat against
+          indicative:
+            future:
+              he/she/it - will: beat against
+              i - will: beat against
+              they - will: beat against
+              we - will: beat against
+              you - will: beat against
+            future continuous:
+              he/she/it - will - be: beating against
+              i - will - be: beating against
+              they - will - be: beating against
+              we - will - be: beating against
+              you - will - be: beating against
+            future perfect:
+              he/she/it - will - have: beaten against
+              i - will - have: beaten against
+              they - will - have: beaten against
+              we - will - have: beaten against
+              you - will - have: beaten against
+            future perfect continuous:
+              he/she/it - will - have - been: beating against
+              i - will - have - been: beating against
+              they - will - have - been: beating against
+              we - will - have - been: beating against
+              you - will - have - been: beating against
+            past continous:
+              he/she/it - was: beating against
+              i - was: beating against
+              they - were: beating against
+              we - were: beating against
+              you - were: beating against
+            past perfect:
+              he/she/it - had: beaten against
+              i - had: beaten against
+              they - had: beaten against
+              we - had: beaten against
+              you - had: beaten against
+            past perfect continuous:
+              he/she/it - had - been: beating against
+              i - had - been: beating against
+              they - had - been: beating against
+              we - had - been: beating against
+              you - had - been: beating against
+            present:
+              he/she/it: beats against
+              i: beat against
+              they: beat against
+              we: beat against
+              you: beat against
+            present continuous:
+              he/she/it - is: beating against
+              i - am: beating against
+              they - are: beating against
+              we - are: beating against
+              you - are: beating against
+            present perfect:
+              he/she/it - has: beaten against
+              i - have: beaten against
+              they - have: beaten against
+              we - have: beaten against
+              you - have: beaten against
+            present perfect continuous:
+              he/she/it - has - been: beating against
+              i - have - been: beating against
+              they - have - been: beating against
+              we - have - been: beating against
+              you - have - been: beating against
+            preterite:
+              he/she/it: beat against
+              i: beat against
+              they: beat against
+              we: beat against
+              you: beat against
+          participle:
+            past:
+              '': beaten against
+            present:
+              '': beating against
+          perfect participle:
+            '':
+              having: beaten against
+      conjugations_french:
+        conditionnel:
+          passé deuxième forme:
+            il/elle - eût: battu
+            ils/elles - eussent: battu
+            j' - eusse: battu
+            nous - eussions: battu
+            tu - eusses: battu
+            vous - eussiez: battu
+          passé première forme:
+            il/elle - aurait: battu
+            ils/elles - auraient: battu
+            j' - aurais: battu
+            nous - aurions: battu
+            tu - aurais: battu
+            vous - auriez: battu
+          présent:
+            il/elle: battrait
+            ils/elles: battraient
+            je: battrais
+            nous: battrions
+            tu: battrais
+            vous: battriez
+        impératif:
+          passé:
+            aie: battu
+            ayez: battu
+            ayons: battu
+          présent:
+            '': battez
+        indicatif:
+          futur:
+            il/elle: battra
+            ils/elles: battront
+            je: battrai
+            nous: battrons
+            tu: battras
+            vous: battrez
+          futur antérieur:
+            il/elle - aura: battu
+            ils/elles - auront: battu
+            j' - aurai: battu
+            nous - aurons: battu
+            tu - auras: battu
+            vous - aurez: battu
+          imparfait:
+            il/elle: battait
+            ils/elles: battaient
+            je: battais
+            nous: battions
+            tu: battais
+            vous: battiez
+          passé antérieur:
+            il/elle - eut: battu
+            ils/elles - eurent: battu
+            j' - eus: battu
+            nous - eûmes: battu
+            tu - eus: battu
+            vous - eûtes: battu
+          passé composé:
+            il/elle - a: battu
+            ils/elles - ont: battu
+            j' - ai: battu
+            nous - avons: battu
+            tu - as: battu
+            vous - avez: battu
+          passé simple:
+            il/elle: battit
+            ils/elles: battirent
+            je: battis
+            nous: battîmes
+            tu: battis
+            vous: battîtes
+          plus-que-parfait:
+            il/elle - avait: battu
+            ils/elles - avaient: battu
+            j' - avais: battu
+            nous - avions: battu
+            tu - avais: battu
+            vous - aviez: battu
+          présent:
+            il/elle: bat
+            ils/elles: battent
+            je: bats
+            nous: battons
+            tu: bats
+            vous: battez
+        infinitif:
+          passé:
+            avoir: battu
+        participe:
+          passé:
+            'fém.pl.:': battues
+            'fém.sg.:': battue
+            'masc.pl.:': battus
+            'masc.sg.:': battu
+          passé composé:
+            ayant: battu
+          présent:
+            '': battant
+        subjonctif:
+          imparfait:
+            qu' - il/elle: battît
+            qu' - ils/elles: battissent
+            que - je: battisse
+            que - nous: battissions
+            que - tu: battisses
+            que - vous: battissiez
+          passé:
+            qu' - il/elle - ait: battu
+            qu' - ils/elles - aient: battu
+            que - j' - aie: battu
+            que - nous - ayons: battu
+            que - tu - aies: battu
+            que - vous - ayez: battu
+          plus-que-parfait:
+            qu' - il/elle - eût: battu
+            qu' - ils/elles - eussent: battu
+            que - j' - eusse: battu
+            que - nous - eussions: battu
+            que - tu - eusses: battu
+            que - vous - eussiez: battu
+          présent:
+            qu' - il/elle: batte
+            qu' - ils/elles: battent
+            que - je: batte
+            que - nous: battions
+            que - tu: battes
+            que - vous: battiez
+      display: battre
+      gender: NA
+      modal_in_english: false
+      model: battre
+      other_forms:
+      - se battre
+      - ne pas battre
+      - ne pas se battre
+      pos: verb
+      transitive: true
+      translations:
+      - to beat
+      - to beat against
+    uuid: 9fd87a76-b925-48c0-b773-5986047a29e1
   beau:
     definitions:
     - display: beau
@@ -3070,6 +3389,23 @@ french:
       translations:
       - white
     uuid: 4716970b-3352-470a-a5c5-6e94b9d722c9
+  bleu:
+    definitions:
+    - display: bleu
+      gender: masc
+      pos: adjective
+      translations:
+      - blue
+    uuid: 4d0ea700-80f0-430f-a25a-8a18d0eb45b3
+  bleue:
+    definitions:
+    - display: bleue
+      gender: fem
+      pos: adjective
+      see: bleu
+      translations:
+      - blue
+    uuid: bd33edb9-7e6c-4979-b955-0a7f1e28d773
   blédurt:
     definitions:
     - name: true
@@ -3169,6 +3505,15 @@ french:
       - goal
       - aim
     uuid: 12623dfe-3e5e-4e77-9491-4fc6d6f8c39e
+  camarade:
+    definitions:
+    - display: camarade
+      gender: both
+      pos: noun
+      translations:
+      - classmate
+      - comrade
+    uuid: d6c85594-b965-4f19-a0a3-f0deb90ee5b6
   capable:
     definitions:
     - display: capable
@@ -15396,6 +15741,8 @@ french:
       conjugations_english:
         to rain:
           indicative:
+            future:
+              it - will: rain
             future continuous:
               it - will - be: raining
             future perfect:
@@ -15418,8 +15765,6 @@ french:
               it - has - been: raining
             preterite:
               it: rained
-            future: 
-              it - will: rain
           participle:
             past:
               '': rained

@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from functools import lru_cache
+import pyperclip
 
 
 def get_reverso_url(verb, language):
@@ -18,9 +19,9 @@ def grab_conjugation_soup_french(verbf):
     print(f"requesting {urlf}")
     rf = requests.get(urlf)
     soup_french = BeautifulSoup(rf.text, 'html.parser')
-    
 
     return soup_french
+
 
 @lru_cache(maxsize=None)
 def grab_conjugation_soup_english(verbe):
@@ -39,11 +40,11 @@ def parse_conjugations(soup, verb):
     if result_block == None:
         print(f"No result block found in soup for {verb}")
         return (None, None)
-    
+
     if len(verb.split(" ")) in [3, 4]:
         toAdd = " " + " ".join(verb.split(" ")[2:])
         if input(f"is {toAdd} the appropriate suffix? ").lower()[0] != "y":
-            toAdd = input("please enter the appropriate suffix: ").strip().lower() 
+            toAdd = input("please enter the appropriate suffix: ").strip().lower()
     else:
         toAdd = ""
 
@@ -70,23 +71,23 @@ def parse_conjugations(soup, verb):
                     for con in cons:
                         i = [i.contents[0].strip().lower() for i in con.findAll("i")]
                         print(f"        len({i}) = {len(i)}")
-                        if len(i) == 1 and current_mode == 'infinitif' :
+                        if len(i) == 1 and current_mode == 'infinitif':
                             infinitive = i[0] + toAdd
                         elif len(i) == 1 and current_mode == 'imperative':
                             info[""] = info.get("", i[0]) + toAdd
                         elif len(i) == 2 and current_mode == 'infinitive':
                             infinitive = i[1] + toAdd
                         elif len(i) == 1 and current_mode == 'participle' and type_of_conjugation in ['past', 'present']:
-                            info[''] = i[0]  + toAdd
+                            info[''] = i[0] + toAdd
                         elif len(i) == 1 and current_mode == 'participe' and type_of_conjugation in ['présent', 'passé']:
-                            info[''] = i[0]  + toAdd
+                            info[''] = i[0] + toAdd
                         elif len(i) == 1 and current_mode == 'impératif' and type_of_conjugation in ['présent', 'passé']:
-                            info[''] = i[0]  + toAdd
+                            info[''] = i[0] + toAdd
                         elif len(i) >= 2:
                             info[" - ".join(i[:-1])] = i[-1] + toAdd
                         else:
                             raise Exception(f"Unexpected case - current_mode = {current_mode}, type_of_conjugation = {type_of_conjugation}, conjugation = {con}")
-                        
+
                         # print("    " + type_of_conjugation)
                         if len(info) > 0:
                             contents[current_mode] = {**contents.get(current_mode, {}), type_of_conjugation: info}
@@ -103,25 +104,25 @@ def get_conjugations(verbf, verbes, trans):
     model = soupf.find("span", {"tooltip": "See more info on the conjugation model and verbs which conjugate the same way."}).a.contents[0].strip()
     auxiliary = soupf.find("span", {"tooltip": "The auxiliary verb used in the conjugation of the compounds forms."}).a.contents[0].strip()
     forms = [form.contents[0].strip() for form in soupf.find("span", {"id": 'ch_lblAutreForm'}).findAll("a")]
-    
-    output = {infinitivef: [{'display': infinitivef, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {verbe: contentse for verbe, infinitivee, contentse in english}, 'translations': verbes, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
+
+    output = {infinitivef: [{'display': infinitivef, 'pos': 'verb', 'conjugations_french': contentsf, 'conjugations_english': {verbe: contentse for verbe,
+                                                                                                                               infinitivee, contentse in english}, 'translations': verbes, 'model': model, 'auxiliary': auxiliary, 'other_forms': forms, 'transitive': trans}]}
     return output
+
 
 def main():
     verb = input("Verb? ")
     eng = [e.strip().lower() for e in input("infinitive english translation? ").split(",")]
     i = input("Transitive? ")
     trans = True if i[0].lower() == "y" else ('both' if i[0].lower() == "b" else False)
-    
+
     output = get_conjugations(verb, eng, trans)
 
-
-
     pp = pprint.PrettyPrinter(indent=4)
-    #pp.pprint(output)
-    print(yaml.dump(output, allow_unicode=True))
-
-
+    # pp.pprint(output)
+    dump = yaml.dump(output, allow_unicode=True)
+    print(dump)
+    pyperclip.copy(dump)
 
 
 if __name__ == "__main__":

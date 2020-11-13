@@ -2,24 +2,6 @@
 # When adding verbs, use the `get_conjugations.py` script to easily generate the YAML required (this is very time-consuming to do by hand).
 # 
 
-battre:
-- display: battre
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-bleu:
-- display: bleu
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-camarade:
-- display: camarade
-  gender: ''
-  pos: ''
-  translations:
-  - ''
 carnet:
 - display: carnet
   gender: ''
@@ -28,12 +10,6 @@ carnet:
   - ''
 chemise:
 - display: chemise
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-cinéma:
-- display: cinéma
   gender: ''
   pos: ''
   translations:
@@ -62,6 +38,12 @@ dessert:
   pos: ''
   translations:
   - ''
+dessus:
+- display: dessus
+  gender: ''
+  pos: ''
+  translations:
+  - ''
 disant:
 - display: disant
   gender: ''
@@ -74,8 +56,20 @@ embrassé:
   pos: ''
   translations:
   - ''
+fumée:
+- display: fumée
+  gender: ''
+  pos: ''
+  translations:
+  - ''
 goscinny:
 - display: goscinny
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+guignol:
+- display: guignol
   gender: ''
   pos: ''
   translations:
@@ -86,14 +80,14 @@ habillé:
   pos: ''
   translations:
   - ''
-ours:
-- display: ours
+montre:
+- display: montre
   gender: ''
   pos: ''
   translations:
   - ''
-partout:
-- display: partout
+ours:
+- display: ours
   gender: ''
   pos: ''
   translations:
@@ -112,6 +106,12 @@ promis:
   - ''
 rang:
 - display: rang
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+récréation:
+- display: récréation
   gender: ''
   pos: ''
   translations:
