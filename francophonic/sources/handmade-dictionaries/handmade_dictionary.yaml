@@ -38,6 +38,12 @@ cinéma:
   pos: ''
   translations:
   - ''
+coin:
+- display: coin
+  gender: ''
+  pos: ''
+  translations:
+  - ''
 courant:
 - display: courant
   gender: ''
@@ -68,26 +74,14 @@ embrassé:
   pos: ''
   translations:
   - ''
-gifle:
-- display: gifle
+goscinny:
+- display: goscinny
   gender: ''
   pos: ''
   translations:
   - ''
-guignol:
-- display: guignol
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-mamans:
-- display: mamans
-  gender: ''
-  pos: ''
-  translations:
-  - ''
-montre:
-- display: montre
+habillé:
+- display: habillé
   gender: ''
   pos: ''
   translations:
@@ -118,6 +112,12 @@ promis:
   - ''
 rang:
 - display: rang
+  gender: ''
+  pos: ''
+  translations:
+  - ''
+sifflet:
+- display: sifflet
   gender: ''
   pos: ''
   translations:
