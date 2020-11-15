@@ -20,7 +20,15 @@ const App = () => {
     <ThemeContext.Provider
       value={{ light: !systemPrefersDark, mobile: isMobileDevice }}
     >
-      <ReviewScreen />
+      {false ? (
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen name="Review" component={ReviewScreen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      ) : (
+        <ReviewScreen />
+      )}
     </ThemeContext.Provider>
   );
 };

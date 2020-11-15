@@ -1,9 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import {
-  View,
-  Text,
-  TextInput,
   ImageBackground,
   ImageSourcePropType,
   KeyboardAvoidingView,

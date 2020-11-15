@@ -9,127 +9,129 @@ import processor.sources_analysis
 
 import safer
 
+
 def french_conj_description_to_english(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
     # print(f"Finding an english conjugation for the word {french_word} ({french_mode} {french_form} {french_person})")
 
     if french_mode == "infinitif":
-      return english_infinitive
+        return english_infinitive
 
     modes = {
-      'indicatif': ('indicative', {
-        'présent': 'present', 
-        'imparfait': 'past continous',
-        'futur': 'future', # this is a guess
-        'passé simple': 'preterite', 
-        'passé composé': 'preterite', 
-        'plus-que-parfait': 'past perfect',
-        'passé antérieur': 'past perfect continuous', # only used in literature, as far as I can tell has no direct analogue in english
-        'futur antérieur': 'future perfect continuous',
-      }), 
-      'subjonctif': ('indicative', { # I don't think english has a subjunctive mood, let's just map these to english as if they were indicative
-        'présent': 'present', 
-        'imparfait': 'past continous',
-        'plus-que-parfait': 'past perfect',
-        'passé': 'preterite',
-      }), 'conditionnel': ('indicative', { # I also don't think english has a conditional mood, you just put "would" before the verb. That's reflected in the person, we'll have to get that later
-        'présent': 'present',
-        'passé première forme': 'present perfect',
-        'passé deuxième forme': 'present perfect', # Only ever used in excessively fancy writing
-      }), 'participe': ('participle', {
-        'présent': 'present',
-        'passé composé': 'past',
-        'passé': 'past',
-      }), 'impératif': ('imperative', { # These are easy - english has no imperative tenses
-        'présent': '',
-        'passé': '',
-      }), 'infinitif': ('infinitive', {
-        'présent': '',
-        'passé': '',
-      })}
+        'indicatif': ('indicative', {
+            'présent': 'present',
+            'imparfait': 'past continous',
+            'futur': 'future',  # this is a guess
+            'passé simple': 'preterite',
+            'passé composé': 'preterite',
+            'plus-que-parfait': 'past perfect',
+            'passé antérieur': 'past perfect continuous',  # only used in literature, as far as I can tell has no direct analogue in english
+            'futur antérieur': 'future perfect continuous',
+        }),
+        'subjonctif': ('indicative', {  # I don't think english has a subjunctive mood, let's just map these to english as if they were indicative
+            'présent': 'present',
+            'imparfait': 'past continous',
+            'plus-que-parfait': 'past perfect',
+            'passé': 'preterite',
+            # I also don't think english has a conditional mood, you just put "would" before the verb. That's reflected in the person, we'll have to get that later
+        }), 'conditionnel': ('indicative', {
+            'présent': 'present',
+            'passé première forme': 'present perfect',
+            'passé deuxième forme': 'present perfect',  # Only ever used in excessively fancy writing
+        }), 'participe': ('participle', {
+            'présent': 'present',
+            'passé composé': 'past',
+            'passé': 'past',
+        }), 'impératif': ('imperative', {  # These are easy - english has no imperative tenses
+            'présent': '',
+            'passé': '',
+        }), 'infinitif': ('infinitive', {
+            'présent': '',
+            'passé': '',
+        })}
 
     persons = {
-      'je': 'I',
-      'j\'': 'I',
-      'tu': 'you',
-      'il/elle': 'he/she/it',
-      'elle': 'he/she/it',
-      'il': 'he/she/it',
-      'nous': 'we',
-      'vous': 'you',
-      'ils/elles': 'they',
-      'ils': 'they',
-      'elles': 'they',
+        'je': 'I',
+        'j\'': 'I',
+        'tu': 'you',
+        'il/elle': 'he/she/it',
+        'elle': 'he/she/it',
+        'il': 'he/she/it',
+        'nous': 'we',
+        'vous': 'you',
+        'ils/elles': 'they',
+        'ils': 'they',
+        'elles': 'they',
 
 
-      'ayant': '',
-      'étant': '',
+        'ayant': '',
+        'étant': '',
 
-      'aie': '',
-      'ayons': '',
-      'ayez': '',
-      'sois': '',
-      'soyons': '',
-      'soyez': '',
+        'aie': '',
+        'ayons': '',
+        'ayez': '',
+        'sois': '',
+        'soyons': '',
+        'soyez': '',
 
 
-      'masc.sg.:': '',
-      'masc.pl.:': '',
-      'fém.sg.:': '',
-      'fém.pl.:': '',
+        'masc.sg.:': '',
+        'masc.pl.:': '',
+        'fém.sg.:': '',
+        'fém.pl.:': '',
 
-      '': '',
+        '': '',
     }
 
     english_mode, tenses = modes[french_mode]
     english_tense = tenses[french_form]
     english_person = None
     for i in french_person:
-      if i in persons:
-        english_person = persons[i]
-        break
-    
+        if i in persons:
+            english_person = persons[i]
+            break
+
     if english_person == None:
-      raise Exception(f"For french word '{french_word}', I couldn't find any of '{french_person}' in the dictionary mapping french persons to english person")
-    
-    
+        raise Exception(f"For french word '{french_word}', I couldn't find any of '{french_person}' in the dictionary mapping french persons to english person")
+
     # for error detection
     if conjugations_english.get(english_mode, None) == None:
         raise Exception(f"The english conjugation in the mood {english_mode} for the french word {french_word} was not found in the dictionary {conjugations_english}")
     if conjugations_english[english_mode].get(english_tense, None) == None:
-        raise Exception(f"The english conjugation in the tense {english_tense} for the french word {french_word} was not found in the dictionary {conjugations_english[english_mode]}")
+        raise Exception(
+            f"The english conjugation in the tense {english_tense} for the french word {french_word} was not found in the dictionary {conjugations_english[english_mode]}")
     #
-
 
     possible_persons = {tuple(k.split(' - ')): v for k, v in conjugations_english[english_mode][english_tense].items()}
     if len(possible_persons) == 1:
-      return list(possible_persons.values())[0]
+        return list(possible_persons.values())[0]
     for possible_person in possible_persons:
-      if english_person.lower() in list(possible_person):
-        return possible_persons[possible_person]
+        if english_person.lower() in list(possible_person):
+            return possible_persons[possible_person]
     else:
-      raise Exception(f"Couldn't find an english conjugation for the word '{french_word}'. {french_mode} ({english_mode}) - {french_form} ({english_tense}) {french_person} ({english_person})). Possible persons were {list(possible_persons.keys())}")
-    
+        raise Exception(
+            f"Couldn't find an english conjugation for the word '{french_word}'. {french_mode} ({english_mode}) - {french_form} ({english_tense}) {french_person} ({english_person})). Possible persons were {list(possible_persons.keys())}")
 
 
 def french_description_to_english_modal(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
-  if french_mode == "infinitif": 
-    return english_infinitive
+    if french_mode == "infinitif":
+        return english_infinitive
 
-  if french_form in ['présent']:
-    return conjugations_english['present']
+    if french_form in ['présent']:
+        return conjugations_english['present']
 
-  if french_form in ['imparfait', 'passé simple', 'passé composé', 'plus-que-parfait', 'passé antérieur', 'passé première forme', 'passé deuxième forme', 'passé']:
-    return conjugations_english['past']
+    if french_form in ['imparfait', 'passé simple', 'passé composé', 'plus-que-parfait', 'passé antérieur', 'passé première forme', 'passé deuxième forme', 'passé']:
+        return conjugations_english['past']
 
-  if french_form in ['futur', 'futur antérieur']:
-    return conjugations_english['future']
+    if french_form in ['futur', 'futur antérieur']:
+        return conjugations_english['future']
 
-  raise Exception(f"{french_word}'s {french_form} form wasn't understood ")
+    raise Exception(f"{french_word}'s {french_form} form wasn't understood ")
 
-def main(analysis = None):
+
+def main(analysis=None):
     if analysis == None:
         analysis = processor.sources_analysis.do_analysis()
-      
+
     translation_dict = get_translations()
     understandable_sentences = get_understandable_sentences(analysis)
     word_dict = get_word_dictionary()
@@ -139,62 +141,62 @@ def main(analysis = None):
 
     for french_word, entry in word_dict['french'].items():
         if entry['uuid'] in seen_uuids:
-          raise Exception(f"UUID for {french_word} already in dictionary!")
+            raise Exception(f"UUID for {french_word} already in dictionary!")
         else:
-          seen_uuids.add(entry['uuid'])
+            seen_uuids.add(entry['uuid'])
         for definition in entry.get('definitions', {}):
             if definition.get('pos', None) == 'verb':
-              definition['isInfinitive'] = True
+                definition['isInfinitive'] = True
             output_words['french'][french_word] = output_words['french'].get(french_word, {'definitions': [], 'occurrences': 0, 'uuid': entry['uuid']})
             output_words['french'][french_word]['definitions'] += [definition]
 
             if definition.get('pos', '') == 'verb':
-              reversed_dict = {}
-              for mode, formes in definition['conjugations_french'].items():
-                for forme, persons in formes.items():
-                  for person, conjugation in persons.items():
-                    reversed_dict[conjugation] = reversed_dict.get(conjugation, {
-                      'uuid': uuid.uuid5(uuid.NAMESPACE_DNS, f"{french_word}.{conjugation}."), 
-                      'definition': {
-                        'display': conjugation, 
-                        'pos': 'verb', 
-                        'infinitive': french_word, 
-                        'isInfinitive': False,
-                        'conjugates_for': [],
-                        'translations': set(),
-                        'gender': 'NA',
-                      }
-                    })
-                    person = person.split(" - ")
-                    reversed_dict[conjugation]['definition']['conjugates_for'].append((mode, forme, person))
+                reversed_dict = {}
+                for mode, formes in definition['conjugations_french'].items():
+                    for forme, persons in formes.items():
+                        for person, conjugation in persons.items():
+                            reversed_dict[conjugation] = reversed_dict.get(conjugation, {
+                                'uuid': uuid.uuid5(uuid.NAMESPACE_DNS, f"{french_word}.{conjugation}."),
+                                'definition': {
+                                    'display': conjugation,
+                                    'pos': 'verb',
+                                    'infinitive': french_word,
+                                    'isInfinitive': False,
+                                    'conjugates_for': [],
+                                    'translations': set(),
+                                    'gender': 'NA',
+                                }
+                            })
+                            person = person.split(" - ")
+                            reversed_dict[conjugation]['definition']['conjugates_for'].append((mode, forme, person))
 
+                            english_infinitive = definition['translations'][0]
+                            english_conjugations = definition['conjugations_english'][english_infinitive]
 
-                    english_infinitive = definition['translations'][0]
-                    english_conjugations = definition['conjugations_english'][english_infinitive]
+                            english_translation = french_conj_description_to_english(french_word, mode, forme, person, english_conjugations, english_infinitive) if not definition['modal_in_english'] else french_description_to_english_modal(
+                                french_word, mode, forme, person, english_conjugations, english_infinitive)
 
-                    english_translation = french_conj_description_to_english(french_word, mode, forme, person, english_conjugations, english_infinitive) if not definition['modal_in_english'] else french_description_to_english_modal(french_word, mode, forme, person, english_conjugations, english_infinitive)
+                            reversed_dict[conjugation]['definition']['translations'].add(english_translation)
+                for french_word, entry in reversed_dict.items():
+                    entry['definition']['translations'] = list(entry['definition']['translations'])
+                    entry['definitions'] = [entry['definition']]
+                    del entry['definition']
+                    for translation in definition.get('translations', []):
+                        output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
 
-                    reversed_dict[conjugation]['definition']['translations'].add(english_translation)
-              for french_word, entry in reversed_dict.items():
-                entry['definition']['translations'] = list(entry['definition']['translations'])
-                entry['definitions'] = [entry['definition']]
-                del entry['definition']
+                    output_words['french'][french_word] = output_words['french'].get(french_word, {'definitions': [], 'occurrences': 0, 'uuid': str(entry['uuid'])})
+                    output_words['french'][french_word]['definitions'] += entry['definitions']
+
+            else:
                 for translation in definition.get('translations', []):
                     output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word]
-      
-                output_words['french'][french_word] = output_words['french'].get(french_word, {'definitions': [], 'occurrences': 0, 'uuid': str(entry['uuid'])})
-                output_words['french'][french_word]['definitions'] += entry['definitions']
-                
-            else:
-              for translation in definition.get('translations', []):
-                  output_words['english'][translation] = output_words['english'].get(translation, []) + [french_word] 
         # if french_word[0] != 'a': break
 
-
-    output_translations = {'english': {}, 'french': {sentence: {'english': list(set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences if sentence in translation_dict['french_to_english']}}
+    output_translations = {'english': {}, 'french': {sentence: {'english': list(
+        set(flatten(translation_dict['french_to_english'][sentence].values())))} for sentence in understandable_sentences if sentence in translation_dict['french_to_english']}}
 
     output_word_frequencies = {word: {" - ".join(list(book)): counter for book, counter in info.items()} for word, info in analysis[0].items()}
-
+    # output_words_frequency_sorted = sorted([word for word, _ in analysis[0].items()], key=lambda word: sum(analysis[0][word].values()))
 
     sent = """
 export interface EnglishEntry {
@@ -218,9 +220,6 @@ export default sentences
 """
     with safer.open("../../cn_experiments/src/data/sentencedictionary.tsx", "w", encoding='utf8') as f:
         f.write(sent)
-
-
-
 
     translationsOutput = """export interface NotAWord {
   notaword: true;
@@ -373,18 +372,13 @@ export default words
         print("Writing word dictionary to cn_experiments")
         f.write(translationsOutput)
 
-
     translationsOutput = """
 const frequencies = """ + json.dumps(output_word_frequencies, ensure_ascii=False) + """
 export default frequencies;
-}"""
-    
-
+"""
 
     with open("../../cn_experiments/src/data/freqdictionary.tsx", "w", encoding='utf8') as f:
-      f.write(translationsOutput)
-
-    
+        f.write(translationsOutput)
 
     vdir = "../../cn_experiments/assets/audio/french/"
     voice_name = "fr-FR-Wavenet-C"
