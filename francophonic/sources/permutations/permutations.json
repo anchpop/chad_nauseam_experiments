@@ -1,12 +1,15 @@
 {
-    "english": [
-        {"original": "youre", "permutated": "you are"},
-        {"original": "hes", "permutated": "he is"},
-        {"original": "shes", "permutated": "she is"},
-        {"original": "dont", "permutated": "do not"},
-        {"original": "isnt", "permutated": "is not"},
-        {"original": "it is", "permutated": "its"}
-    ],
-    "french": [
-    ]
+  "english": [
+    { "original": "your'e", "permutated": ["you are"] },
+    { "original": "he's", "permutated": ["he is"] },
+    { "original": "she's", "permutated": ["she is"] },
+    { "original": "don't", "permutated": ["do not"] },
+    { "original": "isn't", "permutated": ["is not"] },
+    { "original": "it's", "permutated": ["it is"] },
+    { "original": "I'd", "permutated": ["I would", "I had"] },
+    { "original": "he'd", "permutated": ["he would", "he had"] },
+    { "original": "she'd", "permutated": ["she would", "she had"] },
+    { "original": "they'd", "permutated": ["they would", "they had"] }
+  ],
+  "french": []
 }

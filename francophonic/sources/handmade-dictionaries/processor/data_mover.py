@@ -1,11 +1,11 @@
-import yaml
-import json
-import uuid
-
-from os import listdir, environ
+from os import listdir
 from os.path import isfile, join
 from processor.utils import *
 import processor.sources_analysis
+
+import yaml
+import json
+import uuid
 
 import safer
 
