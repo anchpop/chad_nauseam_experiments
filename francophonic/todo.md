@@ -18,11 +18,11 @@
 
       "You're very pretty." -> [[("You", "you"), ("'re", "are")], [("very", "very")], [("pretty", "pretty")], [(".", "")]]
 
-      Except not that because that ignores that some words have multiple outputs "I'd -> I would/had"
+      Except not that because that ignores that some words have multiple outputs "I'd -> I would/had", so I need to figure out that too.
 
       And I'm going to take care to make it as simple as humanly possible so it can be written in python and javascript and it won't be a maintenance burden to keep both in sync. Ideally I'll have all the data in both be fed from some external source like a couple json files and a regex that can be interpreted by python and js, so small changes are automatically updated on both sides. This way there's no weird bugs caused by them being different on each side.
 
-   2. Then
+   2. Then I need a way to figure out which words in the english translation correspond to which words in the french translation.
 
 4. Sort flashcards by usage frequency. Start by prioritizing the words in that simple french short stories book, then move on to le petit nicolas, then le petit prince, then alcatraz, then harry potter, or something like that.
 

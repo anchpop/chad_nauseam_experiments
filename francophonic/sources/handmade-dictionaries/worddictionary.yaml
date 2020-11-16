@@ -11328,6 +11328,7 @@ french:
       pos: noun
       translations:
       - Gryffindor
+      glossary: true
     uuid: f98a3e29-e235-4ee3-b6b7-f799c9adaa65
   guignol:
     definitions:
@@ -18039,6 +18040,7 @@ french:
       pos: noun
       translations:
       - Hufflepuff
+      glossary: true
     uuid: 3af5c257-d9b8-41aa-8711-55ac502b343c
   pour:
     definitions:
@@ -23007,6 +23009,7 @@ french:
       pos: noun
       translations:
       - Ravenclaw
+      glossary: true
     uuid: 0ea9bf18-0708-4e06-8c04-5a46cccab2e4
   serpentard:
     definitions:
@@ -23016,6 +23019,7 @@ french:
       pos: noun
       translations:
       - Slytherin
+      glossary: true
     uuid: 2844bae6-19c0-41f8-b14a-b7b56fdd2435
   ses:
     definitions:

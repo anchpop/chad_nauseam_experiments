@@ -16,10 +16,15 @@ import time
 from processor.utils import *
 
 import safer
+import spacy
 
+
+nlpfr = spacy.load("fr_core_news_md")
+# sentencizerfr = nlpfr.create_pipe("sentencizer")
+nlpfr.add_pipe("sentencizer",  first=True)
 
 # The sentence extraction regex is super hacky. It can be tested at https://regex101.com/r/RTlar9/1/ .
-# Here are some test sentences: 
+# Here are some test sentences:
 """
 L’asile de vieillards est à Marengo, à quatre-vingts kilomètres d’Alger.
 
@@ -41,8 +46,9 @@ Harry prit une profonde inspiration. "Je n'ai rien fait de tel," dit-il, "mais j
 
 "Je crois," dit lentement Minerva McGonagall, "que je devrais donner tout de suite les lettres d'Albus à M. Potter.
 """
-# In big quotes containing many sentences, it often will mess up and include the first or last quote. I address this by checking if there's exactly one quote in the sentence and removing it if so. 
-# the ["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ] part of the regex is responsible for determining if a character is uppercase. I use this to try and check for starts of sentences. But maybe this is wrong-headed because it also would detect proper nouns. It remains to be seen how much of a problem this is. 
+# In big quotes containing many sentences, it often will mess up and include the first or last quote. I address this by checking if there's exactly one quote in the sentence and removing it if so.
+# the ["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ] part of the regex is responsible for determining if a character is uppercase. I use this to try and check for starts of sentences. But maybe this is wrong-headed because it also would detect proper nouns. It remains to be seen how much of a problem this is.
+
 
 def do_analysis():
     print("Analyzing source files...")
@@ -59,18 +65,18 @@ def do_analysis():
         with safer.open(filename, "r", encoding='utf-8') as f:
             out_of_frontmatter = False
             for index, line in enumerate(f):
-                if retain_only_characters(line).strip() == "": 
+                if retain_only_characters(line).strip() == "":
                     continue
-                
+
                 if index == 0 and line.strip() == "---":
                     out_of_frontmatter = False
                     continue
                 else:
                     out_of_frontmatter = True
-                
+
                 if index > 0 and line.strip() == "---":
                     out_of_frontmatter = False
-                
+
                 if out_of_frontmatter == False:
                     frontmatter += line
                 else:
@@ -79,17 +85,26 @@ def do_analysis():
                     for word in words:
                         collected_words[word] = collected_words.get(word, Counter())
                         collected_words[word][source] += 1
-                    
+
                     if "»" in line or "»" in line or line == "":
                         # Don't want to deal with these right now
                         pass
-                    else:                    
+                    else:
+                        # I was hoping this would work but it fails by splitting "– Allez, ouste ! s'exclama Mr Dursley." into two seperate sentences.
+                        """ 
+                        doc = nlpfr(line)
+                        for sentence in doc.sents:
+                            print(sentence)
+                            if False and sentence != "" and len(sentence.split()) > 1:
+                                collected_sentences[sentence] = collected_sentences.get(sentence, {})
+                                collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
+                        """
+
                         sentences = re.findall(r'(?:["«A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]).*?(?:(?:[.?!]["»]?)|-")(?=$| ["«]?[A-ZÉÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ])', line.strip())
                         sentences = [sentence.strip('– ') for sentence in sentences]
                         # sentences = [sentence.strip('"') if sentence.count('"') == 2 and sentence[0] == '"' and sentence[-1] == '"' and sentence[-2] != "-" else sentence for sentence in sentences] # sometimes sentences are wrapped in "s
 
-
-                        sentence_buildup = "" # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
+                        sentence_buildup = ""  # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
                         for sentence in sentences:
                             if sentence[-2:] == "M." or sentence[-2:] == "H." or sentence[-3:] == "Dr.":
                                 sentence_buildup += sentence + " "
@@ -104,6 +119,7 @@ def do_analysis():
                                 if sentence != "" and len(sentence.split()) > 1:
                                     collected_sentences[sentence] = collected_sentences.get(sentence, {})
                                     collected_sentences[sentence][source] = collected_sentences[sentence].get(source, []) + [index]
+
         try:
             source_info[source] = yaml.load(frontmatter, Loader=Loader)
         except:
@@ -113,8 +129,7 @@ def do_analysis():
 
 
 def main():
-    do_analysis()   
-    
+    do_analysis()
 
 
 if __name__ == '__main__':
