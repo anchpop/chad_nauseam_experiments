@@ -59,7 +59,7 @@ def line_to_words_french(line):
 
 
 def line_to_words_english(line):
-    return line_to_words(line,
+    return line_to_words(retain_only_characters(line),
                          englishContractions, whole_word_basis=True)
 
 
@@ -118,7 +118,6 @@ def flatdmap(d, f):
 
 def french_conj_description_to_english(french_word, french_mode, french_form, french_person, conjugations_english, english_infinitive):
     # print(f"Finding an english conjugation for the word {french_word} ({french_mode} {french_form} {french_person})")
-
     if french_mode == "infinitif":
         return english_infinitive
 

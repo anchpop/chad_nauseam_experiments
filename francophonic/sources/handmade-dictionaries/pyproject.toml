@@ -15,7 +15,7 @@ safer = "^4.3"
 colorama = "^0.4"
 pyperclip = "^1.8"
 spacy-nightly = "3.0.0rc2"
-fr-core-news-md = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.0.0a0/fr_core_news_md-3.0.0a0.tar.gz"}
+fr-core-news-md = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.0.0a0/fr_core_news_md-3.0.0a0.tar.gz"} 
 
 
 [tool.poetry.dev-dependencies]
