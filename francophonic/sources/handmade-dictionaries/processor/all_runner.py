@@ -23,13 +23,14 @@ def main():
 
     processor.auto_sentence_translator.main(analysis)
     processor.tts_generator.main()
-    if isfile("handmade_dictionary.yaml") and not nodelete:
-        i = input("would you like to delete `handmade_dictionary.yaml` and generate a new template? (yes/no) ")
-        if i.strip() == "yes":
-            os.remove("handmade_dictionary.yaml")
-            processor.handmade_dictionary_template_generator.main(analysis)
-    else:
-        processor.handmade_dictionary_template_generator.main(analysis)
+    if not nodelete:
+      if isfile("handmade_dictionary.yaml"):
+          i = input("would you like to delete `handmade_dictionary.yaml` and generate a new template? (yes/no) ")
+          if i.strip() == "yes":
+              os.remove("handmade_dictionary.yaml")
+              processor.handmade_dictionary_template_generator.main(analysis)
+      else:
+          processor.handmade_dictionary_template_generator.main(analysis)
 
     processor.data_mover.main(analysis)
 

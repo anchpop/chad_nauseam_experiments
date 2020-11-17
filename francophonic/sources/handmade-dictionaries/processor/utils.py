@@ -20,8 +20,8 @@ def line_to_words(line, contractions, whole_word_basis):
             for index, word in enumerate(word_split):
                 if word != "-":
                     if word in contractions.keys():
-                        new_words.extend(contractions[word])
-                    else:
+                        new_words.extend(contractions[word][0]) # Just stick with the first contraction for now
+                    else: 
                         new_words.append(word)
             return new_words
         return [w]
@@ -59,9 +59,8 @@ def line_to_words_french(line):
 
 
 def line_to_words_english(line):
-    return line_to_words(retain_only_characters(line),
-                         englishContractions, whole_word_basis=True)
-
+    return line_to_words(retain_only_characters(line), 
+        englishContractions, whole_word_basis=True)
 
 def get_translations():
     with safer.open("translations.yaml", encoding='utf-8') as f:
@@ -294,58 +293,62 @@ def make_useful_dictionary(word_dict):
 
 
 frenchContractions = {
-    'n': ['ne'],
-    'l': ['le'],
-    'lorsqu': ['lorsque'],
-    'j': ['je'],
-    's': ['se'],
-    'jusqu': ['jusque'],
-    'quelqu': ['quelque'],
-    'm': ['me'],
-    'c': ['ce'],
-    'd': ['de'],
-    'qu': ['que'],
-    't': ['te'],
-    'm': ['me']
+    'n':      [['ne'     ]], 
+    'l':      [['le'     ]], 
+    'lorsqu': [['lorsque']], 
+    'j':      [['je'     ]], 
+    's':      [['se'     ]], 
+    'jusqu':  [['jusque' ]], 
+    'quelqu': [['quelque']], 
+    'm':      [['me'     ]], 
+    'c':      [['ce'     ]], 
+    'd':      [['de'     ]], 
+    'qu':     [['que'    ]], 
+    't':      [['te'     ]], 
+    'm':      [['me'     ]],
 }
 englishContractions = {
-    "aren't":    ["are", "not"],
-    "can't":     ["can", "not"],
-    "couldn't":  ["could", "not"],
-    "shouldn't": ["should", "not"],
-    "wouldn't":  ["would", "not"],
-    "didn't":    ["did", "not"],
-    "doesn't":   ["does", "not"],
-    "hadn't":    ["had", "not"],
-    "hasn't":    ["has", "not"],
-    "haven't":   ["have", "not"],
-    "mightn't":  ["might", "not"],
-    "shan't":    ["shall", "not"],
-    "weren't":   ["were", "not"],
-    "won't":     ["will", "not"],
-    "isn't":     ["is", "not"],
-    "he'll":     ["he", "will"],
-    "she'll":    ["she", "will"],
-    "you'll":    ["you", "will"],
-    "they'll":   ["they", "will"],
-    "what'll":   ["what", "will"],
-    "who'll":    ["who", "will"],
-    "i'd":       ["i", "had"],
-    "she'd":     ["she", "had"],
-    "he'd":      ["he", "had"],
-    "they'd":    ["they", "had"],
-    "i'm":       ["i", 'am'],
-    "i've":      ['i', 'had'],
-    "we've":     ["we", "have"],
-    "you've":    ["you", "have"],
-    "they've":   ["they", "have"],
-    "let's":     ['let', 'us'],
-    "that's":    ["that", "is"],
-    "there's":   ["there", "is"],
-    "what's":    ["what", "is"],
-    "he's":      ["he", "is"],
-    "she's":     ["she", "is"],
-    "they're":   ["they", "are"],
-    "you're":    ["you", "are"],
-    "we're":     ["we", "are"],
+    "aren't":    [["are"    , "not"  ]],
+    "can't":     [["can"    , "not"  ]],
+    "couldn't":  [["could"  , "not"  ]],
+    "shouldn't": [["should" , "not"  ]],
+    "wouldn't":  [["would"  , "not"  ]],
+    "didn't":    [["did"    , "not"  ]],
+    "doesn't":   [["does"   , "not"  ]],
+    "hadn't":    [["had"    , "not"  ]],
+    "hasn't":    [["has"    , "not"  ]],
+    "haven't":   [["have"   , "not"  ]],
+    "mightn't":  [["might"  , "not"  ]],
+    "shan't":    [["shall"  , "not"  ]],
+    "weren't":   [["were"   , "not"  ]],
+    "won't":     [["will"   , "not"  ]],
+    "isn't":     [["is"     , "not"  ]],
+    "he'll":     [["he"     , "will" ]],
+    "she'll":    [["she"    , "will" ]],
+    "you'll":    [["you"    , "will" ]],
+    "they'll":   [["they"   , "will" ]],
+    "what'll":   [["what"   , "will" ]],
+    "who'll":    [["who"    , "will" ]],
+    "i'd":       [["i"      , "had"  ]],
+    "she'd":     [["she"    , "had"  ]],
+    "he'd":      [["he"     , "had"  ]],
+    "they'd":    [["they"   , "had"  ]],
+    "i'm":       [["I"      , 'am'   ]],
+    "i've":      [['I'      , 'had'  ]],
+    "we've":     [["we"     , "have" ]],
+    "you've":    [["you"    , "have" ]],
+    "they've":   [["they"   , "have" ]],
+    "let's":     [['let'    , 'us'   ]],
+    "that's":    [["that"   , "is"   ]],
+    "there's":   [["there"  , "is"   ]],
+    "what's":    [["what"   , "is"   ]],
+    "he's":      [["he"     , "is"   ]],
+    "she's":     [["she"    , "is"   ]],
+    "they're":   [["they"   , "are"  ]],
+    "you're":    [["you"    , "are"  ]],
+    "we're":     [["we"     , "are"  ]],
+    "i'd":       [["I"      , "would"], ["I", "had"]],
+    "he'd":      [["he"     , "would"], ["he", "had"]],
+    "they'd":    [["they"   , "would"], ["they", "had"]],
+    "she'd":     [["she"    , "would"], ["she", "had"]],
 }

@@ -14,7 +14,12 @@
 
 3. Add spaced-repetition flashcards for individual french words. I want to make the user type the correct answer, to really force them to recall it.
 
-   1. Okay, some things I want to do better this time. I'm going to write a function like:
+   1. Okay, some things I want to do better this time:
+   
+      1. Before giving putting them in the actual french app, run the english translations through [this](https://pypi.org/project/pycontractions/). Why? Because *some contractions are ambiguous*, particularly "I'd" (I would or I had?). With the expanded translation, recreating the contracted ones is easy. The only reason I'm not doing this yet is because it requires java which I don't feel like downloading lol.
+   
+   
+      2. I'm going to write a function like:
 
       "You're very pretty." -> [[("You", "you"), ("'re", "are")], [("very", "very")], [("pretty", "pretty")], [(".", "")]]
 
@@ -22,7 +27,7 @@
 
       And I'm going to take care to make it as simple as humanly possible so it can be written in python and javascript and it won't be a maintenance burden to keep both in sync. Ideally I'll have all the data in both be fed from some external source like a couple json files and a regex that can be interpreted by python and js, so small changes are automatically updated on both sides. This way there's no weird bugs caused by them being different on each side.
 
-   2. Then I need a way to figure out which words in the english translation correspond to which words in the french translation.
+      4. Then I need a robust to figure out which words in the english translation correspond to which words in the french translation.
 
 4. Sort flashcards by usage frequency. Start by prioritizing the words in that simple french short stories book, then move on to le petit nicolas, then le petit prince, then alcatraz, then harry potter, or something like that.
 
