@@ -15,9 +15,11 @@ safer = "^4.3"
 colorama = "^0.4"
 pyperclip = "^1.8"
 spacy-nightly = "3.0.0rc2"
-fr-core-news-md = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.0.0a0/fr_core_news_md-3.0.0a0.tar.gz"}
-en-core-web-trf = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.0.0a0/en_core_web_trf-3.0.0a0.tar.gz", python = "~3.8.0", platform = "windows"}
 pycontractions = "^2.0"
+fr-core-news-lg = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_lg-3.0.0a0/fr_core_news_lg-3.0.0a0.tar.gz"}
+# I should probably start using en_core_web_trf eventually, but it wasn't seeming to get installed properly :/ 
+# also I'm worried that using news for french and web for eng is going to cause problems 
+en-core-web-lg = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0a0/en_core_web_lg-3.0.0a0.tar.gz"} 
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
