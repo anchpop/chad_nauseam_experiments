@@ -1,8 +1,13 @@
 """
 from collections import namedtuple
+try:
+    from yaml import CLoader as Loader, CDumper as Dumper
+except ImportError:
+    from yaml import Loader, Dumper
 
 import spacy
 from spacy import displacy
+
 from processor.utils import *
 
 sentences = get_translations()['french_to_english']
@@ -17,7 +22,7 @@ Sentence = namedtuple('Sentence', ['fr', 'en'])
 Words = namedtuple('Words', ['fr', 'en'])
 
 def run(i=0):
-    firstPair = [(k, v) for k, v in sentences.items() if False or ('"' not in k and '-' not in k)][i]
+    firstPair = [(k, v) for k, v in sentences.items() if True or ('"' not in k and '-' not in k)][i]
     sent = Sentence(fr=firstPair[0], en=firstPair[1]['google'][0])
     words = Words(fr=line_to_words_french(sent.fr), en=line_to_words_english(sent.en))
     print(f"{len(words.fr)} - {sent.fr} - {' '.join(words.fr)}")
@@ -35,27 +40,26 @@ def run(i=0):
     used_indices = []
     output = []
 
-    doc = nlp_fr(sent.fr)
 
-    print("Tokens")
-    for token in doc:
-        print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, {[child for child in token.children]}")
+    print("Tokens (french)")
+    doc_fr = nlp_fr(sent.fr)
+    for token in doc_fr:
+        print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, \"{token.whitespace_}\"")
+    tokens_fr = [{'text': token.text, 'norm': token.norm_, 'pos': token.pos_, "dep": token.dep_, "idx": token.idx, "trailing_whitespace": token.whitespace_} for token in doc_fr]
     print()
 
-    print("Noun chunks")
-    for chunk in doc.noun_chunks:
-        print(f"{chunk.text}, {chunk.root.text}, {chunk.root.dep_}, {chunk.root.head.text}")
+    
+    print("Tokens (english)")
+    doc_en = nlp_en(sent.en)
+    for token in doc_en:
+        print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, \"{token.whitespace_}\"")
+    tokens_en = [{'text': token.text, 'norm': token.norm_, 'pos': token.pos_, "dep": token.dep_, "idx": token.idx, "trailing_whitespace": token.whitespace_} for token in doc_en]
     print()
 
 
-    doc = nlp_en("Autonomous cars shift insurance liability toward automobile manufacturers")
-    for token in doc:
-        print(token.text, token.dep_, token.head.text, token.head.pos_,
-                [child for child in token.children])
-
-    for wordf in words.fr:
-        break
-        translations = [translation for definition in useful_word_dict['french'][wordf]['definitions'] for translation in definition.get('translations', [wordf])]
-        print(f"{wordf}: {translations}")
-run()
+    yam = {sent.fr: {'tokens_fr': tokens_fr, 'tokens_en': tokens_en}}
+    return yam
+data = run()
+dump = yaml.dump(data, Dumper=Dumper, allow_unicode=True)
+print(dump)
 """
