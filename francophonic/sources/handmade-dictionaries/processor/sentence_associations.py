@@ -16,8 +16,8 @@ nlp_fr = spacy.load("fr_core_news_lg")
 Sentence = namedtuple('Sentence', ['fr', 'en'])
 Words = namedtuple('Words', ['fr', 'en'])
 
-def run():
-    firstPair = [(k, v) for k, v in sentences.items() if '"' not in k and '-' not in k][0]
+def run(i=0):
+    firstPair = [(k, v) for k, v in sentences.items() if False or ('"' not in k and '-' not in k)][i]
     sent = Sentence(fr=firstPair[0], en=firstPair[1]['google'][0])
     words = Words(fr=line_to_words_french(sent.fr), en=line_to_words_english(sent.en))
     print(f"{len(words.fr)} - {sent.fr} - {' '.join(words.fr)}")
@@ -34,6 +34,24 @@ def run():
 
     used_indices = []
     output = []
+
+    doc = nlp_fr(sent.fr)
+
+    print("Tokens")
+    for token in doc:
+        print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, {[child for child in token.children]}")
+    print()
+
+    print("Noun chunks")
+    for chunk in doc.noun_chunks:
+        print(f"{chunk.text}, {chunk.root.text}, {chunk.root.dep_}, {chunk.root.head.text}")
+    print()
+
+
+    doc = nlp_en("Autonomous cars shift insurance liability toward automobile manufacturers")
+    for token in doc:
+        print(token.text, token.dep_, token.head.text, token.head.pos_,
+                [child for child in token.children])
 
     for wordf in words.fr:
         break
