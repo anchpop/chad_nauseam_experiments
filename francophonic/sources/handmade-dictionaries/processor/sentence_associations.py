@@ -23,10 +23,10 @@ Words = namedtuple('Words', ['fr', 'en'])
 
 def run(i=0):
     firstPair = [(k, v) for k, v in sentences.items() if True or ('"' not in k and '-' not in k)][i]
-    sent = Sentence(fr=firstPair[0], en=firstPair[1]['google'][0])
-    words = Words(fr=line_to_words_french(sent.fr), en=line_to_words_english(sent.en))
+    sent = Sentence(fr=firstPair[0], en=set([sentence for source, sentences in firstPair[1].items() for sentence in sentences]))
+    words = Words(fr=line_to_words_french(sent.fr), en=[line_to_words_english(sent_en) for sent_en in sent.en])
     print(f"{len(words.fr)} - {sent.fr} - {' '.join(words.fr)}")
-    print(f"{len(words.en)} - {sent.en} - {' '.join(words.en)}")
+    # print(f"{len(words.en)} - {sent.en} - {' '.join(words.en)}")
     print()
 
 
@@ -50,10 +50,12 @@ def run(i=0):
 
     
     print("Tokens (english)")
-    doc_en = nlp_en(sent.en)
-    for token in doc_en:
-        print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, \"{token.whitespace_}\"")
-    tokens_en = [{'text': token.text, 'norm': token.norm_, 'pos': token.pos_, "dep": token.dep_, "idx": token.idx, "trailing_whitespace": token.whitespace_} for token in doc_en]
+    tokens_en = {}
+    for sent_en in sent.en:
+        doc_en = nlp_en(sent_en)
+        for token in doc_en:
+            print(f"{token.text} ({token.norm_}), {token.pos_}, {token.dep_}, {token.idx}, \"{token.whitespace_}\"")
+        tokens_en[sent_en] = [{'text': token.text, 'norm': token.norm_, 'pos': token.pos_, "dep": token.dep_, "idx": token.idx, "trailing_whitespace": token.whitespace_} for token in doc_en]
     print()
 
 
