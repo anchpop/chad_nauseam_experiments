@@ -33,6 +33,7 @@ build-backend = "poetry.core.masonry.api"
 process = "processor.all_runner:main"
 template = "processor.handmade_dictionary_template_generator:main"
 conjugate = "processor.get_conjugations:main"
+nlp = "processor.sentence_nlp_gen:main"
 
 translate = "processor.auto_sentence_translator:main"
 generate_tts = "processor.tts_generator:main"

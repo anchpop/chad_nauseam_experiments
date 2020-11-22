@@ -1,0 +1,220 @@
+'" Mais je…", murmura Harry, sans même se rendre compte de ce qu''il disait.':
+  tokens_en:
+    '"But I…" Harry whispered, not even realizing what he was saying.':
+    - dep: punct
+      idx: 0
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ''
+    - dep: cc
+      idx: 1
+      norm: but
+      pos: CCONJ
+      text: But
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 5
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 6
+      norm: '...'
+      pos: PUNCT
+      text: …
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 7
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 9
+      norm: harry
+      pos: PROPN
+      text: Harry
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 15
+      norm: whispered
+      pos: VERB
+      text: whispered
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 24
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: neg
+      idx: 26
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 30
+      norm: even
+      pos: ADV
+      text: even
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 35
+      norm: realizing
+      pos: VERB
+      text: realizing
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 45
+      norm: what
+      pos: PRON
+      text: what
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 50
+      norm: he
+      pos: PRON
+      text: he
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 53
+      norm: was
+      pos: AUX
+      text: was
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 57
+      norm: saying
+      pos: VERB
+      text: saying
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 63
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: punct
+    idx: 0
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 2
+    norm: mais
+    pos: CCONJ
+    text: Mais
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 7
+    norm: je
+    pos: PRON
+    text: je
+    trailing_whitespace: ''
+  - dep: advcl
+    idx: 9
+    norm: '...'
+    pos: PRON
+    text: …
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 10
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 11
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 13
+    norm: murmura
+    pos: VERB
+    text: murmura
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 21
+    norm: harry
+    pos: PROPN
+    text: Harry
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 26
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 28
+    norm: sans
+    pos: ADP
+    text: sans
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 33
+    norm: même
+    pos: ADV
+    text: même
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 38
+    norm: se
+    pos: PRON
+    text: se
+    trailing_whitespace: ' '
+  - dep: advcl
+    idx: 41
+    norm: rendre
+    pos: VERB
+    text: rendre
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 48
+    norm: compte
+    pos: NOUN
+    text: compte
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 55
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: obl:arg
+    idx: 58
+    norm: ce
+    pos: PRON
+    text: ce
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 61
+    norm: qu'
+    pos: PRON
+    text: qu'
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 64
+    norm: il
+    pos: PRON
+    text: il
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 67
+    norm: disait
+    pos: VERB
+    text: disait
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 73
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
