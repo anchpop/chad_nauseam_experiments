@@ -109,7 +109,7 @@ def do_analysis():
 
                         sentence_buildup = ""  # sometimes we have false-negatives where sentences end where they shouldn't, mostly in names like M. McGonagall or whatever. This detects those
                         for sentence in sentences:
-                            if sentence[-2:] == "M." or sentence[-2:] == "H." or sentence[-3:] == "Dr.":
+                            if sentence[-3:] == " M." or sentence[-3:] == " H." or sentence[-4:] == " Dr." or sentence[-3:] == " D." or sentence[-3:] == " J.":
                                 sentence_buildup += sentence + " "
                             else:
                                 sentence = sentence_buildup + sentence

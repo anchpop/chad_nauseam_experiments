@@ -424,64 +424,6 @@ De la chance ?:
     pos: PUNCT
     text: '?'
     trailing_whitespace: ''
-De la part de Bastille ?:
-  tokens_en:
-    From Bastille?:
-    - dep: ROOT
-      idx: 0
-      norm: from
-      pos: ADP
-      text: From
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 5
-      norm: bastille
-      pos: PROPN
-      text: Bastille
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 13
-      norm: '?'
-      pos: PUNCT
-      text: '?'
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: case
-    idx: 0
-    norm: de
-    pos: ADP
-    text: De
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 3
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 6
-    norm: part
-    pos: NOUN
-    text: part
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 11
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 14
-    norm: bastille
-    pos: PROPN
-    text: Bastille
-    trailing_whitespace: ' '
-  - dep: punct
-    idx: 23
-    norm: '?'
-    pos: PUNCT
-    text: '?'
-    trailing_whitespace: ''
 De la tuer ?:
   tokens_en:
     To kill her?:
@@ -865,6 +807,52 @@ Le sorcier D.:
     norm: d.
     pos: NOUN
     text: D.
+    trailing_whitespace: ''
+Nom de nom !:
+  tokens_en:
+    Name name!:
+    - dep: compound
+      idx: 0
+      norm: name
+      pos: NOUN
+      text: Name
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 5
+      norm: name
+      pos: NOUN
+      text: name
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 9
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: nom
+    pos: NOUN
+    text: Nom
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 4
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 7
+    norm: nom
+    pos: NOUN
+    text: nom
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 11
+    norm: '!'
+    pos: PUNCT
+    text: '!'
     trailing_whitespace: ''
 Que… ?:
   tokens_en:

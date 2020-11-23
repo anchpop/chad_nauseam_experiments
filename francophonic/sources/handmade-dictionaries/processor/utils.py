@@ -105,7 +105,7 @@ def get_understandable_sentences(analysis):
 
 
 def rate_french_sentence_easiness(sentence, analysis):
-    words = line_to_words_french(sentence)
+    words = set(line_to_words_french(sentence))
     return (1 / len(words)) * sum([
         sum(analysis.words[word].values()) for word in words
     ]) 
