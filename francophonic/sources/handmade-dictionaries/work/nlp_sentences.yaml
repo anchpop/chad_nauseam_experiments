@@ -1,101 +1,163 @@
-'" Mais je…", murmura Harry, sans même se rendre compte de ce qu''il disait.':
+'"D''accord -"':
   tokens_en:
-    '"But I…" Harry whispered, not even realizing what he was saying.':
+    '"Okay -"':
     - dep: punct
       idx: 0
       norm: '"'
       pos: PUNCT
       text: '"'
       trailing_whitespace: ''
-    - dep: cc
-      idx: 1
-      norm: but
-      pos: CCONJ
-      text: But
-      trailing_whitespace: ' '
     - dep: ROOT
-      idx: 5
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ''
+      idx: 1
+      norm: okay
+      pos: INTJ
+      text: Okay
+      trailing_whitespace: ' '
     - dep: punct
       idx: 6
-      norm: '...'
+      norm: '-'
       pos: PUNCT
-      text: …
+      text: '-'
       trailing_whitespace: ''
     - dep: punct
       idx: 7
       norm: '"'
       pos: PUNCT
       text: '"'
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 9
-      norm: harry
-      pos: PROPN
-      text: Harry
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 15
-      norm: whispered
-      pos: VERB
-      text: whispered
       trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+  - dep: case
+    idx: 1
+    norm: d'
+    pos: ADP
+    text: D'
+    trailing_whitespace: ''
+  - dep: nmod
+    idx: 3
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 10
+    norm: '-'
+    pos: PUNCT
+    text: '-'
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 11
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+'"De qui ?"':
+  tokens_en:
+    '"From who?"':
     - dep: punct
-      idx: 24
-      norm: ','
+      idx: 0
+      norm: '"'
       pos: PUNCT
-      text: ','
+      text: '"'
+      trailing_whitespace: ''
+    - dep: ROOT
+      idx: 1
+      norm: from
+      pos: ADP
+      text: From
       trailing_whitespace: ' '
-    - dep: neg
-      idx: 26
-      norm: not
-      pos: PART
-      text: not
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 30
-      norm: even
-      pos: ADV
-      text: even
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 35
-      norm: realizing
-      pos: VERB
-      text: realizing
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 45
-      norm: what
+    - dep: pobj
+      idx: 6
+      norm: who
       pos: PRON
-      text: what
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 50
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 53
-      norm: was
-      pos: AUX
-      text: was
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 57
-      norm: saying
-      pos: VERB
-      text: saying
+      text: who
       trailing_whitespace: ''
     - dep: punct
-      idx: 63
+      idx: 9
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 10
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+  - dep: case
+    idx: 1
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 4
+    norm: qui
+    pos: PRON
+    text: qui
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 8
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 9
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+'"De rien."':
+  tokens_en:
+    '"You''re welcome."':
+    - dep: punct
+      idx: 0
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ''
+    - dep: nsubj
+      idx: 1
+      norm: you
+      pos: PRON
+      text: You
+      trailing_whitespace: ''
+    - dep: ROOT
+      idx: 4
+      norm: are
+      pos: VERB
+      text: '''re'
+      trailing_whitespace: ' '
+    - dep: acomp
+      idx: 8
+      norm: welcome
+      pos: ADJ
+      text: welcome
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 15
       norm: .
       pos: PUNCT
       text: .
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 16
+      norm: '"'
+      pos: PUNCT
+      text: '"'
       trailing_whitespace: ''
   tokens_fr:
   - dep: punct
@@ -103,118 +165,744 @@
     norm: '"'
     pos: PUNCT
     text: '"'
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 2
-    norm: mais
-    pos: CCONJ
-    text: Mais
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 7
-    norm: je
-    pos: PRON
-    text: je
     trailing_whitespace: ''
-  - dep: advcl
-    idx: 9
-    norm: '...'
+  - dep: case
+    idx: 1
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 4
+    norm: rien
     pos: PRON
-    text: …
+    text: rien
     trailing_whitespace: ''
   - dep: punct
-    idx: 10
+    idx: 8
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 9
     norm: '"'
     pos: PUNCT
     text: '"'
     trailing_whitespace: ''
-  - dep: punct
-    idx: 11
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
+D'accord !:
+  tokens_en:
+    Okay !:
+    - dep: ROOT
+      idx: 0
+      norm: okay
+      pos: INTJ
+      text: Okay
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 5
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: d'
+    pos: ADP
+    text: D'
+    trailing_whitespace: ''
   - dep: ROOT
-    idx: 13
-    norm: murmura
-    pos: VERB
-    text: murmura
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
     trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 21
-    norm: harry
-    pos: PROPN
-    text: Harry
+  - dep: punct
+    idx: 9
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
+D'accord ?:
+  tokens_en:
+    Okay ?:
+    - dep: ROOT
+      idx: 0
+      norm: okay
+      pos: INTJ
+      text: Okay
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 5
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: d'
+    pos: ADP
+    text: D'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 9
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+D'accord, d'accord.:
+  tokens_en:
+    Alright Alright.:
+    - dep: intj
+      idx: 0
+      norm: alright
+      pos: INTJ
+      text: Alright
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 8
+      norm: alright
+      pos: INTJ
+      text: Alright
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 15
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: d'
+    pos: ADP
+    text: D'
+    trailing_whitespace: ''
+  - dep: nmod
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
     trailing_whitespace: ''
   - dep: punct
-    idx: 26
+    idx: 8
     norm: ','
     pos: PUNCT
     text: ','
     trailing_whitespace: ' '
-  - dep: mark
-    idx: 28
-    norm: sans
+  - dep: case
+    idx: 10
+    norm: d'
     pos: ADP
-    text: sans
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 33
-    norm: même
-    pos: ADV
-    text: même
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 38
-    norm: se
-    pos: PRON
-    text: se
-    trailing_whitespace: ' '
-  - dep: advcl
-    idx: 41
-    norm: rendre
-    pos: VERB
-    text: rendre
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 48
-    norm: compte
+    text: d'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 12
+    norm: accord
     pos: NOUN
-    text: compte
+    text: accord
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 18
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+De ?:
+  tokens_en:
+    From?:
+    - dep: ROOT
+      idx: 0
+      norm: from
+      pos: ADP
+      text: From
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 4
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 3
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De l'air !:
+  tokens_en:
+    Air !:
+    - dep: ROOT
+      idx: 0
+      norm: air
+      pos: NOUN
+      text: Air
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 4
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 3
+    norm: l'
+    pos: DET
+    text: l'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 5
+    norm: air
+    pos: NOUN
+    text: air
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 9
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
+De la chance ?:
+  tokens_en:
+    Luck ?:
+    - dep: ROOT
+      idx: 0
+      norm: luck
+      pos: NOUN
+      text: Luck
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 5
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 3
+    norm: la
+    pos: DET
+    text: la
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 6
+    norm: chance
+    pos: NOUN
+    text: chance
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 13
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De la part de Bastille ?:
+  tokens_en:
+    From Bastille?:
+    - dep: ROOT
+      idx: 0
+      norm: from
+      pos: ADP
+      text: From
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 5
+      norm: bastille
+      pos: PROPN
+      text: Bastille
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 13
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 3
+    norm: la
+    pos: DET
+    text: la
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 6
+    norm: part
+    pos: NOUN
+    text: part
     trailing_whitespace: ' '
   - dep: case
-    idx: 55
+    idx: 11
     norm: de
     pos: ADP
     text: de
     trailing_whitespace: ' '
-  - dep: obl:arg
-    idx: 58
-    norm: ce
-    pos: PRON
-    text: ce
+  - dep: nmod
+    idx: 14
+    norm: bastille
+    pos: PROPN
+    text: Bastille
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 23
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De la tuer ?:
+  tokens_en:
+    To kill her?:
+    - dep: aux
+      idx: 0
+      norm: to
+      pos: PART
+      text: To
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 3
+      norm: kill
+      pos: VERB
+      text: kill
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 8
+      norm: her
+      pos: PRON
+      text: her
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 11
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: mark
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
     trailing_whitespace: ' '
   - dep: obj
-    idx: 61
-    norm: qu'
+    idx: 3
+    norm: la
     pos: PRON
-    text: qu'
-    trailing_whitespace: ''
-  - dep: nsubj
-    idx: 64
-    norm: il
-    pos: PRON
-    text: il
+    text: la
     trailing_whitespace: ' '
-  - dep: acl:relcl
-    idx: 67
-    norm: disait
+  - dep: ROOT
+    idx: 6
+    norm: tuer
     pos: VERB
-    text: disait
+    text: tuer
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 11
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De l’air !:
+  tokens_en:
+    Air !:
+    - dep: ROOT
+      idx: 0
+      norm: air
+      pos: NOUN
+      text: Air
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 4
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 3
+    norm: l’
+    pos: DET
+    text: l’
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 5
+    norm: air
+    pos: NOUN
+    text: air
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 9
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
+De moi ?:
+  tokens_en:
+    Of me ?:
+    - dep: ROOT
+      idx: 0
+      norm: of
+      pos: ADP
+      text: Of
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 3
+      norm: me
+      pos: PRON
+      text: me
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 6
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 3
+    norm: moi
+    pos: PRON
+    text: moi
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 7
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De quoi ?:
+  tokens_en:
+    About what ?:
+    - dep: ROOT
+      idx: 0
+      norm: about
+      pos: ADP
+      text: About
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 6
+      norm: what
+      pos: PRON
+      text: what
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 11
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 3
+    norm: quoi
+    pos: PRON
+    text: quoi
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 8
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+De rien.:
+  tokens_en:
+    You're welcome.:
+    - dep: nsubj
+      idx: 0
+      norm: you
+      pos: PRON
+      text: You
+      trailing_whitespace: ''
+    - dep: ROOT
+      idx: 3
+      norm: are
+      pos: VERB
+      text: '''re'
+      trailing_whitespace: ' '
+    - dep: acomp
+      idx: 7
+      norm: welcome
+      pos: ADJ
+      text: welcome
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 14
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: case
+    idx: 0
+    norm: de
+    pos: ADP
+    text: De
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 3
+    norm: rien
+    pos: PRON
+    text: rien
     trailing_whitespace: ''
   - dep: punct
-    idx: 73
+    idx: 7
     norm: .
     pos: PUNCT
     text: .
+    trailing_whitespace: ''
+D’accord !:
+  tokens_en:
+    Okay !:
+    - dep: ROOT
+      idx: 0
+      norm: okay
+      pos: INTJ
+      text: Okay
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 5
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: d’
+    pos: ADP
+    text: D’
+    trailing_whitespace: ''
+  - dep: fixed
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 9
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
+D’accord ?:
+  tokens_en:
+    Okay ?:
+    - dep: ROOT
+      idx: 0
+      norm: okay
+      pos: INTJ
+      text: Okay
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 5
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: d’
+    pos: ADP
+    text: D’
+    trailing_whitespace: ''
+  - dep: fixed
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 9
+    norm: '?'
+    pos: PUNCT
+    text: '?'
+    trailing_whitespace: ''
+D’accord, d’accord.:
+  tokens_en:
+    Alright Alright.:
+    - dep: intj
+      idx: 0
+      norm: alright
+      pos: INTJ
+      text: Alright
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 8
+      norm: alright
+      pos: INTJ
+      text: Alright
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 15
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: ROOT
+    idx: 0
+    norm: d’
+    pos: ADP
+    text: D’
+    trailing_whitespace: ''
+  - dep: fixed
+    idx: 2
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 8
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 10
+    norm: d’
+    pos: ADP
+    text: d’
+    trailing_whitespace: ''
+  - dep: fixed
+    idx: 12
+    norm: accord
+    pos: NOUN
+    text: accord
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 18
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+Le sorcier D.:
+  tokens_en:
+    The sorcerer D.:
+    - dep: det
+      idx: 0
+      norm: the
+      pos: DET
+      text: The
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 4
+      norm: sorcerer
+      pos: NOUN
+      text: sorcerer
+      trailing_whitespace: ' '
+    - dep: appos
+      idx: 13
+      norm: d.
+      pos: PROPN
+      text: D.
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: det
+    idx: 0
+    norm: le
+    pos: DET
+    text: Le
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 3
+    norm: sorcier
+    pos: NOUN
+    text: sorcier
+    trailing_whitespace: ' '
+  - dep: flat:name
+    idx: 11
+    norm: d.
+    pos: NOUN
+    text: D.
+    trailing_whitespace: ''
+Que… ?:
+  tokens_en:
+    That… ?:
+    - dep: ROOT
+      idx: 0
+      norm: that
+      pos: DET
+      text: That
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 4
+      norm: '...'
+      pos: PUNCT
+      text: …
+      trailing_whitespace: ' '
+    - dep: punct
+      idx: 6
+      norm: '?'
+      pos: PUNCT
+      text: '?'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: mark
+    idx: 0
+    norm: que
+    pos: SCONJ
+    text: Que
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 3
+    norm: '...'
+    pos: NOUN
+    text: …
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 5
+    norm: '?'
+    pos: PUNCT
+    text: '?'
     trailing_whitespace: ''

@@ -104,6 +104,13 @@ def get_understandable_sentences(analysis):
     return get_sentence_analysis(analysis)[0]
 
 
+def rate_french_sentence_easiness(sentence, analysis):
+    words = line_to_words_french(sentence)
+    return (1 / len(words)) * sum([
+        sum(analysis.words[word].values()) for word in words
+    ]) 
+
+
 def flatten(l): return [item for sublist in l for item in sublist]
 
 

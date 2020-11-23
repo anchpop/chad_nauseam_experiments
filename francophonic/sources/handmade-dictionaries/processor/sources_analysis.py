@@ -19,9 +19,12 @@ import safer
 import spacy
 
 
-nlpfr = spacy.load("fr_core_news_md")
+from collections import namedtuple
+
+Analysis = namedtuple('Analysis', ['words', 'sentences', 'source_info'])
+
 # sentencizerfr = nlpfr.create_pipe("sentencizer")
-nlpfr.add_pipe("sentencizer",  first=True)
+# nlp_fr.add_pipe("sentencizer",  first=True)
 
 # The sentence extraction regex is super hacky. It can be tested at https://regex101.com/r/RTlar9/1/ .
 # Here are some test sentences:
@@ -125,7 +128,7 @@ def do_analysis():
         except:
             print(f"trouble processing frontmatter for {source}")
             print(frontmatter)
-    return (collected_words, collected_sentences, source_info)
+    return Analysis(words=collected_words, sentences=collected_sentences, source_info=source_info)
 
 
 def main():
