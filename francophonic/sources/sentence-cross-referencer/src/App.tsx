@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import { promises } from "fs";
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
-import logo from "./logo.svg";
+import './sakura-vader.css'
 import "./App.css";
 
 const yaml = require("js-yaml");
+
+interface File { text: () => string };
+interface FileHandle { getFile: () => Promise<File> };
+
+declare global {
+  interface Window {
+    showOpenFilePicker: () => Promise<FileHandle[]>;
+  }
+}
+
 
 interface Token {
   text: string;
@@ -17,12 +29,7 @@ interface Sentences {
   };
 }
 
-const getFile = async () => {
-  const [fileHandle] = await (window as any).showOpenFilePicker();
-  const file = await fileHandle.getFile();
-  const contents = await file.text();
-  return contents;
-};
+
 
 const saveFile = async () => {
   const options = {
@@ -39,21 +46,36 @@ const saveFile = async () => {
   return handle;
 };
 
+
+
+
+const analyzeNlpFile = async (setSentencesToAssociate: React.Dispatch<React.SetStateAction<Sentences>>, setNlpFileHandle: React.Dispatch<React.SetStateAction<FileHandle | null>>) => {
+  const [fileHandle] = await window.showOpenFilePicker();
+  const file = await fileHandle.getFile();
+  const contents = await file.text();
+
+  setNlpFileHandle(fileHandle)
+  setSentencesToAssociate(yaml.safeLoad(contents))
+}
+
 const App = () => {
-  const [sentencesToAssociate, setSentencesToAssociate] = useState<Sentences>(
-    {}
+  const [sentencesToAssociate, setSentencesToAssociate] = React.useState(
+    {} as Sentences
+  );
+  const [nlpFileHandle, setNlpFileHandle] = React.useState(
+    null as FileHandle | null
   );
   return (
     <div className="App">
-      <header className="App-header">
+
+      <div className="Main-container">
         <button
-          onClick={async () =>
-            setSentencesToAssociate(yaml.safeLoad(await getFile()))
-          }
+          onClick={async () => await analyzeNlpFile(setSentencesToAssociate, setNlpFileHandle)}
+          id="But-get-nlp"
         >
-          Activate Lasers
+          {nlpFileHandle !== null ? "NLP File Loaded" : "Load NLP File"}
         </button>
-      </header>
+      </div>
       {Object.entries(sentencesToAssociate).map(([frenchSentence, info]) => (
         <p>
           {info.tokens_fr.map(({ text }) => (
