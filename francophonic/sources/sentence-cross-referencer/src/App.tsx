@@ -5,6 +5,18 @@ import "./App.css";
 
 const yaml = require("js-yaml");
 
+interface Token {
+  text: string;
+  whitespace: string;
+}
+
+interface Sentences {
+  [key: string]: {
+    tokens_fr: Token[];
+    tokens_en: { [key: string]: Token[] };
+  };
+}
+
 const getFile = async () => {
   const [fileHandle] = await (window as any).showOpenFilePicker();
   const file = await fileHandle.getFile();
@@ -28,7 +40,9 @@ const saveFile = async () => {
 };
 
 const App = () => {
-  const [sentencesToAssociate, setSentencesToAssociate] = useState({});
+  const [sentencesToAssociate, setSentencesToAssociate] = useState<Sentences>(
+    {}
+  );
   return (
     <div className="App">
       <header className="App-header">
@@ -40,11 +54,13 @@ const App = () => {
           Activate Lasers
         </button>
       </header>
-      {Object.entries(sentencesToAssociate).map(
-        ([frenchSentence, englishSentences]) => (
-          <p>{frenchSentence}</p>
-        )
-      )}
+      {Object.entries(sentencesToAssociate).map(([frenchSentence, info]) => (
+        <p>
+          {info.tokens_fr.map(({ text }) => (
+            <span className="french token">{text}</span>
+          ))}
+        </p>
+      ))}
     </div>
   );
 };
