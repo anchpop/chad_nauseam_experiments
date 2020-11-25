@@ -1,21 +1,23 @@
 import { promises } from "fs";
 import * as React from "react";
-import { Helmet } from "react-helmet";
 
-import './sakura-vader.css'
+import "./sakura-vader.css";
 import "./App.css";
 
 const yaml = require("js-yaml");
 
-interface File { text: () => string };
-interface FileHandle { getFile: () => Promise<File> };
+interface File {
+  text: () => string;
+}
+interface FileHandle {
+  getFile: () => Promise<File>;
+}
 
 declare global {
   interface Window {
     showOpenFilePicker: () => Promise<FileHandle[]>;
   }
 }
-
 
 interface Token {
   text: string;
@@ -29,7 +31,19 @@ interface Sentences {
   };
 }
 
+interface AppStateLoaded {
+  nlpFileLoaded: true;
+  nlpFileHandle: FileHandle;
+  sentencesToAssociate: Sentences;
+}
 
+interface AppStateUnloaded {
+  nlpFileLoaded: false;
+}
+
+type AppState = AppStateLoaded | AppStateUnloaded;
+
+const startingAppState: AppStateUnloaded = { nlpFileLoaded: false };
 
 const saveFile = async () => {
   const options = {
@@ -46,43 +60,51 @@ const saveFile = async () => {
   return handle;
 };
 
-
-
-
-const analyzeNlpFile = async (setSentencesToAssociate: React.Dispatch<React.SetStateAction<Sentences>>, setNlpFileHandle: React.Dispatch<React.SetStateAction<FileHandle | null>>) => {
+const analyzeNlpFile = async (
+  appState: AppState,
+  setAppState: React.Dispatch<React.SetStateAction<AppState>>
+) => {
   const [fileHandle] = await window.showOpenFilePicker();
   const file = await fileHandle.getFile();
   const contents = await file.text();
+  const sentences = yaml.safeLoad(contents);
 
-  setNlpFileHandle(fileHandle)
-  setSentencesToAssociate(yaml.safeLoad(contents))
-}
+  var newState: AppStateLoaded = {
+    ...appState,
+    nlpFileLoaded: true,
+    nlpFileHandle: fileHandle,
+    sentencesToAssociate: sentences,
+  };
+
+  setAppState(newState);
+};
 
 const App = () => {
-  const [sentencesToAssociate, setSentencesToAssociate] = React.useState(
-    {} as Sentences
-  );
-  const [nlpFileHandle, setNlpFileHandle] = React.useState(
-    null as FileHandle | null
-  );
+  const [appState, setAppState] = React.useState<AppState>(startingAppState);
+
   return (
     <div className="App">
-
       <div className="Main-container">
         <button
-          onClick={async () => await analyzeNlpFile(setSentencesToAssociate, setNlpFileHandle)}
+          onClick={async () => await analyzeNlpFile(appState, setAppState)}
           id="But-get-nlp"
         >
-          {nlpFileHandle !== null ? "NLP File Loaded" : "Load NLP File"}
+          {appState !== startingAppState ? "NLP File Loaded" : "Load NLP File"}
         </button>
       </div>
-      {Object.entries(sentencesToAssociate).map(([frenchSentence, info]) => (
-        <p>
-          {info.tokens_fr.map(({ text }) => (
-            <span className="french token">{text}</span>
-          ))}
-        </p>
-      ))}
+      {appState.nlpFileLoaded == true ? (
+        Object.entries(appState.sentencesToAssociate).map(
+          ([frenchSentence, info]) => (
+            <p>
+              {info.tokens_fr.map(({ text }) => (
+                <span className="french token">{text}</span>
+              ))}
+            </p>
+          )
+        )
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
