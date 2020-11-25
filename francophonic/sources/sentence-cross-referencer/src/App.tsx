@@ -35,6 +35,7 @@ interface AppStateLoaded {
   nlpFileLoaded: true;
   nlpFileHandle: FileHandle;
   sentencesToAssociate: Sentences;
+  currentSentenceString: string;
 }
 
 interface AppStateUnloaded {
@@ -67,13 +68,14 @@ const analyzeNlpFile = async (
   const [fileHandle] = await window.showOpenFilePicker();
   const file = await fileHandle.getFile();
   const contents = await file.text();
-  const sentences = yaml.safeLoad(contents);
+  const sentences: Sentences = yaml.safeLoad(contents);
 
   var newState: AppStateLoaded = {
     ...appState,
     nlpFileLoaded: true,
     nlpFileHandle: fileHandle,
     sentencesToAssociate: sentences,
+    currentSentenceString: Object.entries(sentences)[0][0],
   };
 
   setAppState(newState);
@@ -89,10 +91,36 @@ const App = () => {
           onClick={async () => await analyzeNlpFile(appState, setAppState)}
           id="But-get-nlp"
         >
-          {appState !== startingAppState ? "NLP File Loaded" : "Load NLP File"}
+          {appState.nlpFileLoaded ? "NLP File Loaded" : "Load NLP File"}
         </button>
+
+        {appState.nlpFileLoaded ? (
+          <>
+            <div>
+              <p>
+                {appState.sentencesToAssociate[
+                  appState.currentSentenceString
+                ].tokens_fr.map((word) => (
+                  <span className="french token">{word.text}</span>
+                ))}
+              </p>
+            </div>
+            <div>
+              {Object.entries(
+                appState.sentencesToAssociate[appState.currentSentenceString]
+                  .tokens_en
+              ).map(([englishSentence, info]) =>
+                info.map((word) => (
+                  <span className="french token">{word.text}</span>
+                ))
+              )}
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
-      {appState.nlpFileLoaded == true ? (
+      {appState.nlpFileLoaded === true ? (
         Object.entries(appState.sentencesToAssociate).map(
           ([frenchSentence, info]) => (
             <p>
