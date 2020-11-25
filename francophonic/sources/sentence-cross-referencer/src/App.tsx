@@ -1,6 +1,5 @@
 import { promises } from "fs";
 import * as React from "react";
-import { Helmet } from "react-helmet";
 
 import './sakura-vader.css'
 import "./App.css";
