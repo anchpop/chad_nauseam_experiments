@@ -39,12 +39,15 @@ interface TransitiveVerb {
   verb: SentenceRange;
   subject: SentenceRange;
   directObject: SentenceRange;
+  indirectObject?: SentenceRange;
+  auxiliary?: SentenceRange;
 }
 
 interface IntransitiveVerb {
   element: "intransitive verb";
   verb: SentenceRange;
   subject: SentenceRange;
+  auxiliary?: SentenceRange;
 }
 
 interface Preposition {
@@ -73,13 +76,13 @@ interface NounPhrase {
 }
 
 interface Conjunction {
-  element: "adverb";
+  element: "conjunction";
   conjunction: SentenceRange;
   part1: SentenceRange;
   part2: SentenceRange;
 }
 
-type ParseTree =
+type ParseItem =
   | Number
   | Quote
   | TransitiveVerb
@@ -90,6 +93,8 @@ type ParseTree =
   | Noun
   | NounPhrase
   | Conjunction;
+
+type ParseTree = ParseItem[];
 
 interface File {
   text: () => string;
