@@ -105,7 +105,11 @@ const analyzeNlpFile = async (
 
 const range = (from: number, to: number) => {
   const [start, end] = [from, to].sort();
-  return Array.from(new Array(end - start), (x, i) => start + i);
+  const arr = Array.from(new Array(end - start), (x, i) => start + i);
+  if (from > to) {
+    return arr.reverse();
+  }
+  return arr;
 };
 
 const toggleTokens = (index: number, shift: boolean, tokens: number[]) => {
