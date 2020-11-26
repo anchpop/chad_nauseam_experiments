@@ -37,3 +37,7 @@ body {
   margin-left: 0.1em;
   font-size: larger;
 }
+
+button.token.selected {
+  background-color: #9a2d38;
+}
