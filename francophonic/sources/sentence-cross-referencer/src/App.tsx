@@ -10,6 +10,87 @@ var classNames = require("classnames");
 
 enableMapSet();
 
+type Indices = number[];
+
+interface SentenceRangeRoot {
+  french: Indices;
+  english: { [key: string]: Indices };
+}
+
+interface SentenceRangeNode {
+  french: [Indices, ParseTree[]];
+  english: { [key: string]: [Indices, ParseTree[]] };
+}
+
+type SentenceRange = SentenceRangeRoot | SentenceRangeNode;
+
+interface Quote {
+  element: "quote";
+  quote: SentenceRange;
+}
+
+interface Number {
+  element: "number";
+  number: SentenceRange;
+}
+
+interface TransitiveVerb {
+  element: "transitive verb";
+  verb: SentenceRange;
+  subject: SentenceRange;
+  directObject: SentenceRange;
+}
+
+interface IntransitiveVerb {
+  element: "intransitive verb";
+  verb: SentenceRange;
+  subject: SentenceRange;
+}
+
+interface Preposition {
+  element: "preposition";
+  preposition: SentenceRange;
+}
+
+interface Adverb {
+  element: "adverb";
+  adverb: SentenceRange;
+}
+
+interface Adjective {
+  element: "adjective";
+  adjective: SentenceRange;
+}
+
+interface Noun {
+  element: "noun";
+  noun: SentenceRange;
+}
+
+interface NounPhrase {
+  element: "noun phrase";
+  adverb: SentenceRange;
+}
+
+interface Conjunction {
+  element: "adverb";
+  conjunction: SentenceRange;
+  part1: SentenceRange;
+  part2: SentenceRange;
+}
+
+type ParseTree =
+  | Number
+  | Quote
+  | TransitiveVerb
+  | IntransitiveVerb
+  | Preposition
+  | Adverb
+  | Adjective
+  | Noun
+  | NounPhrase
+  | Conjunction;
+
 interface File {
   text: () => string;
 }
@@ -26,6 +107,7 @@ declare global {
 interface Token {
   text: string;
   whitespace: string;
+  pos: string;
 }
 
 interface Sentences {
@@ -182,12 +264,19 @@ const App = () => {
               <p>
                 {appState.sentencesToAssociate[
                   appState.currentSentenceString
-                ].tokens_fr.map((word, index) => (
+                ].tokens_fr.map(({ text, pos }, index) => (
                   <button
                     key={appState.currentSentenceString + index}
-                    className={classNames("french", "token", {
-                      selected: appState.selectedTokens.french.includes(index),
-                    })}
+                    className={classNames(
+                      "french",
+                      pos.toLocaleLowerCase(),
+                      "token",
+                      {
+                        selected: appState.selectedTokens.french.includes(
+                          index
+                        ),
+                      }
+                    )}
                     onClick={(e) =>
                       toggleSelectFrenchToken(
                         index,
@@ -197,7 +286,7 @@ const App = () => {
                       )
                     }
                   >
-                    {word.text}
+                    {text}
                   </button>
                 ))}
               </p>
@@ -208,14 +297,19 @@ const App = () => {
                   .tokens_en
               ).map(([englishSentence, info]) => (
                 <div key={englishSentence}>
-                  {info.map((word, index) => (
+                  {info.map(({ text, pos }, index) => (
                     <button
                       key={englishSentence + index}
-                      className={classNames("english", "token", {
-                        selected: appState.selectedTokens.english[
-                          englishSentence
-                        ].includes(index),
-                      })}
+                      className={classNames(
+                        "english",
+                        pos.toLocaleLowerCase(),
+                        "token",
+                        {
+                          selected: appState.selectedTokens.english[
+                            englishSentence
+                          ].includes(index),
+                        }
+                      )}
                       onClick={(e) =>
                         toggleSelectEnglishToken(
                           englishSentence,
@@ -226,7 +320,7 @@ const App = () => {
                         )
                       }
                     >
-                      {word.text}
+                      {text}
                     </button>
                   ))}
                 </div>
