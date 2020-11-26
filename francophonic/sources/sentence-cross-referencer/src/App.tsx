@@ -42,9 +42,9 @@ interface AppStateLoaded {
   currentSentenceString: string;
   selectedTokens: {
     english: {
-      [k: string]: Set<number>;
+      [k: string]: number[];
     };
-    french: Set<number>;
+    french: number[];
   };
 }
 
@@ -86,9 +86,9 @@ const analyzeNlpFile = async (
     english: Object.fromEntries(
       Object.keys(
         sentencesToAssociate[currentSentenceString].tokens_en
-      ).map((k) => [k, new Set() as Set<number>])
+      ).map((k) => [k, [] as number[]])
     ),
-    french: new Set() as Set<number>,
+    french: [] as number[],
   };
 
   var newState: AppStateLoaded = {
@@ -103,18 +103,40 @@ const analyzeNlpFile = async (
   setAppState(newState);
 };
 
+const range = (from: number, to: number) => {
+  const [start, end] = [from, to].sort();
+  return Array.from(new Array(end - start), (x, i) => start + i);
+};
+
+const toggleTokens = (index: number, shift: boolean, tokens: number[]) => {
+  const tokensToSelect =
+    shift && tokens.length > 0
+      ? range(tokens[tokens.length - 1] + 1, index + 1)
+      : [index];
+
+  tokensToSelect.forEach((currentIndex) => {
+    if (tokens.includes(currentIndex)) {
+      tokens = tokens.filter((i) => i !== currentIndex);
+    } else {
+      tokens.push(currentIndex);
+    }
+  });
+  return tokens;
+};
+
 const toggleSelectFrenchToken = (
   index: number,
+  shift: boolean,
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
-      if (draftState.selectedTokens.french.has(index)) {
-        draftState.selectedTokens.french.delete(index);
-      } else {
-        draftState.selectedTokens.french.add(index);
-      }
+      draftState.selectedTokens.french = toggleTokens(
+        index,
+        shift,
+        draftState.selectedTokens.french
+      );
     })
   );
 };
@@ -122,16 +144,17 @@ const toggleSelectFrenchToken = (
 const toggleSelectEnglishToken = (
   sentence: string,
   index: number,
+  shift: boolean,
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
-      if (draftState.selectedTokens.english[sentence].has(index)) {
-        draftState.selectedTokens.english[sentence].delete(index);
-      } else {
-        draftState.selectedTokens.english[sentence].add(index);
-      }
+      draftState.selectedTokens.english[sentence] = toggleTokens(
+        index,
+        shift,
+        draftState.selectedTokens.english[sentence]
+      );
     })
   );
 };
@@ -159,10 +182,15 @@ const App = () => {
                   <button
                     key={appState.currentSentenceString + index}
                     className={classNames("french", "token", {
-                      selected: appState.selectedTokens.french.has(index),
+                      selected: appState.selectedTokens.french.includes(index),
                     })}
-                    onClick={() =>
-                      toggleSelectFrenchToken(index, appState, setAppState)
+                    onClick={(e) =>
+                      toggleSelectFrenchToken(
+                        index,
+                        e.shiftKey,
+                        appState,
+                        setAppState
+                      )
                     }
                   >
                     {word.text}
@@ -174,28 +202,31 @@ const App = () => {
               {Object.entries(
                 appState.sentencesToAssociate[appState.currentSentenceString]
                   .tokens_en
-              ).map(([englishSentence, info]) =>
-                info.map((word, index) => (
-                  <button
-                    key={englishSentence + index}
-                    className={classNames("english", "token", {
-                      selected: appState.selectedTokens.english[
-                        englishSentence
-                      ].has(index),
-                    })}
-                    onClick={() =>
-                      toggleSelectEnglishToken(
-                        englishSentence,
-                        index,
-                        appState,
-                        setAppState
-                      )
-                    }
-                  >
-                    {word.text}
-                  </button>
-                ))
-              )}
+              ).map(([englishSentence, info]) => (
+                <div key={englishSentence}>
+                  {info.map((word, index) => (
+                    <button
+                      key={englishSentence + index}
+                      className={classNames("english", "token", {
+                        selected: appState.selectedTokens.english[
+                          englishSentence
+                        ].includes(index),
+                      })}
+                      onClick={(e) =>
+                        toggleSelectEnglishToken(
+                          englishSentence,
+                          index,
+                          e.shiftKey,
+                          appState,
+                          setAppState
+                        )
+                      }
+                    >
+                      {word.text}
+                    </button>
+                  ))}
+                </div>
+              ))}
             </div>
           </>
         ) : (
