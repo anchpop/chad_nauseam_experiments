@@ -26,60 +26,80 @@ type SentenceRange = SentenceRangeRoot | SentenceRangeNode;
 
 interface Quote {
   element: "quote";
-  quote: SentenceRange;
+  root: SentenceRange;
 }
 
 interface Number {
   element: "number";
-  number: SentenceRange;
+  root: SentenceRange;
 }
 
 interface TransitiveVerb {
   element: "transitive verb";
-  verb: SentenceRange;
+  root: SentenceRange;
   subject: SentenceRange;
   directObject: SentenceRange;
   indirectObject?: SentenceRange;
   auxiliary?: SentenceRange;
+  modification?: SentenceRange;
 }
 
 interface IntransitiveVerb {
   element: "intransitive verb";
-  verb: SentenceRange;
+  root: SentenceRange;
   subject: SentenceRange;
   auxiliary?: SentenceRange;
+  modification?: SentenceRange;
 }
 
 interface Preposition {
   element: "preposition";
-  preposition: SentenceRange;
+  root: SentenceRange;
+  relation?: SentenceRange;
 }
 
 interface Adverb {
   element: "adverb";
-  adverb: SentenceRange;
+  root: SentenceRange;
 }
 
-interface Adjective {
-  element: "adjective";
-  adjective: SentenceRange;
+interface Article {
+  element: "article";
+  root: SentenceRange;
+}
+
+interface Pronoun {
+  element: "pronoun";
+  root: SentenceRange;
 }
 
 interface Noun {
   element: "noun";
-  noun: SentenceRange;
+  root: SentenceRange;
+  article?: SentenceRange;
+  modification?: SentenceRange;
+}
+
+interface Adjective {
+  element: "adjective";
+  root: SentenceRange;
 }
 
 interface NounPhrase {
   element: "noun phrase";
-  adverb: SentenceRange;
+  root: SentenceRange;
 }
 
 interface Conjunction {
   element: "conjunction";
-  conjunction: SentenceRange;
+  root: SentenceRange;
   part1: SentenceRange;
   part2: SentenceRange;
+}
+
+interface Interjection {
+  element: "interjection";
+  root: SentenceRange;
 }
 
 type ParseItem =
@@ -90,9 +110,12 @@ type ParseItem =
   | Preposition
   | Adverb
   | Adjective
+  | Article
+  | Pronoun
   | Noun
   | NounPhrase
-  | Conjunction;
+  | Conjunction
+  | Interjection;
 
 type ParseTree = ParseItem[];
 
