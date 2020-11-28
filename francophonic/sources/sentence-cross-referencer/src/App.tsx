@@ -133,11 +133,15 @@ interface Token {
   pos: string;
 }
 
-interface Sentences {
-  [key: string]: {
-    tokens_fr: Token[];
-    tokens_en: { [key: string]: Token[] };
+interface SentenceInfo {
+  tokens_fr: Token[];
+  tokens_en: {
+    [key: string]: Token[];
   };
+}
+
+interface Sentences {
+  [key: string]: SentenceInfo;
 }
 
 interface AppStateLoaded {
@@ -186,6 +190,31 @@ const range = (from: number, to: number) => {
   return arr;
 };
 
+const initializeParseTree = (
+  sentence: string,
+  { tokens_fr, tokens_en }: SentenceInfo
+): { [key: string]: ParseTree } =>
+  tokens_fr.filter(({ text }) => text === '"').length === 2 &&
+  tokens_fr[0].text === '"' &&
+  tokens_fr[tokens_fr.length - 1].text === '"'
+    ? {
+        [sentence]: [
+          {
+            element: "quote",
+            root: {
+              french: [range(0, tokens_fr.length), []],
+              english: Object.fromEntries(
+                Object.entries(tokens_en).map(([sentence, tokens]) => [
+                  sentence,
+                  [range(0, tokens.length), []],
+                ])
+              ),
+            },
+          },
+        ],
+      }
+    : { [sentence]: [] };
+
 const analyzeNlpFile = async (
   appState: AppState,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
@@ -212,29 +241,11 @@ const analyzeNlpFile = async (
     sentencesToAssociate[currentSentenceString].tokens_en;
 
   // Initialize the parse tree to be a quote if it seems like that's what this is
-  const parseTrees: { [key: string]: ParseTree } =
-    currentSentenceTokensFr.filter(({ text }) => text === '"').length === 2 &&
-    currentSentenceTokensFr[0].text === '"' &&
-    currentSentenceTokensFr[currentSentenceTokensFr.length - 1].text === '"'
-      ? {
-          currentSentenceString: [
-            {
-              element: "quote",
-              root: {
-                french: [range(0, currentSentenceTokensFr.length), []],
-                english: Object.fromEntries(
-                  Object.entries(
-                    currentSentenceTokensEn
-                  ).map(([sentence, tokens]) => [
-                    sentence,
-                    [range(0, tokens.length), []],
-                  ])
-                ),
-              },
-            },
-          ],
-        }
-      : {};
+  const parseTrees: { [key: string]: ParseTree } = Object.entries(
+    sentencesToAssociate
+  )
+    .map(([sentence, info]) => initializeParseTree(sentence, info))
+    .reduce((x, acc) => ({ ...x, ...acc }));
 
   var newState: AppStateLoaded = {
     ...appState,
@@ -355,6 +366,10 @@ const englishButtons = (
 const App = () => {
   const [appState, setAppState] = React.useState<AppState>(startingAppState);
 
+  if (appState.nlpFileLoaded) {
+    console.log(appState.parseTrees);
+  }
+
   return (
     <div className="App">
       <div className="Main-container">
@@ -371,6 +386,13 @@ const App = () => {
               <p>{frenchButtons(appState, setAppState)}</p>
             </div>
             <div>{englishButtons(appState, setAppState)}</div>
+            <div>
+              {appState.parseTrees[appState.currentSentenceString].map(
+                (tree, index) => (
+                  <div key={index}>{"" + tree}</div>
+                )
+              )}
+            </div>
           </>
         ) : (
           <></>
