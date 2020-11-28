@@ -12,17 +12,12 @@ enableMapSet();
 
 type Indices = number[];
 
-interface SentenceRangeRoot {
-  french: Indices;
-  english: { [key: string]: Indices };
-}
-
 interface SentenceRangeNode {
   french: [Indices, ParseTree[]];
   english: { [key: string]: [Indices, ParseTree[]] };
 }
 
-type SentenceRange = SentenceRangeRoot | SentenceRangeNode;
+type SentenceRange = SentenceRangeNode;
 
 interface Quote {
   element: "quote";
@@ -150,6 +145,7 @@ interface AppStateLoaded {
   nlpFileHandle: FileHandle;
   sentencesToAssociate: Sentences;
   currentSentenceString: string;
+  parseTrees: { [key: string]: ParseTree };
   selectedTokens: {
     english: {
       [k: string]: number[];
@@ -181,6 +177,15 @@ const saveFile = async () => {
   return handle;
 };
 
+const range = (from: number, to: number) => {
+  const [start, end] = [from, to].sort();
+  const arr = Array.from(new Array(end - start), (x, i) => start + i);
+  if (from > to) {
+    return arr.reverse();
+  }
+  return arr;
+};
+
 const analyzeNlpFile = async (
   appState: AppState,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
@@ -190,7 +195,7 @@ const analyzeNlpFile = async (
   const contents = await file.text();
   const sentencesToAssociate: Sentences = yaml.safeLoad(contents);
 
-  const currentSentenceString = Object.entries(sentencesToAssociate)[0][0];
+  const currentSentenceString: string = Object.keys(sentencesToAssociate)[0];
 
   const selectedTokens = {
     english: Object.fromEntries(
@@ -201,6 +206,36 @@ const analyzeNlpFile = async (
     french: [] as number[],
   };
 
+  const currentSentenceTokensFr =
+    sentencesToAssociate[currentSentenceString].tokens_fr;
+  const currentSentenceTokensEn =
+    sentencesToAssociate[currentSentenceString].tokens_en;
+
+  // Initialize the parse tree to be a quote if it seems like that's what this is
+  const parseTrees: { [key: string]: ParseTree } =
+    currentSentenceTokensFr.filter(({ text }) => text === '"').length === 2 &&
+    currentSentenceTokensFr[0].text === '"' &&
+    currentSentenceTokensFr[currentSentenceTokensFr.length - 1].text === '"'
+      ? {
+          currentSentenceString: [
+            {
+              element: "quote",
+              root: {
+                french: [range(0, currentSentenceTokensFr.length), []],
+                english: Object.fromEntries(
+                  Object.entries(
+                    currentSentenceTokensEn
+                  ).map(([sentence, tokens]) => [
+                    sentence,
+                    [range(0, tokens.length), []],
+                  ])
+                ),
+              },
+            },
+          ],
+        }
+      : {};
+
   var newState: AppStateLoaded = {
     ...appState,
     nlpFileLoaded: true,
@@ -208,18 +243,10 @@ const analyzeNlpFile = async (
     sentencesToAssociate,
     currentSentenceString,
     selectedTokens,
+    parseTrees,
   };
 
   setAppState(newState);
-};
-
-const range = (from: number, to: number) => {
-  const [start, end] = [from, to].sort();
-  const arr = Array.from(new Array(end - start), (x, i) => start + i);
-  if (from > to) {
-    return arr.reverse();
-  }
-  return arr;
 };
 
 const toggleTokens = (index: number, shift: boolean, tokens: number[]) => {
@@ -273,6 +300,58 @@ const toggleSelectEnglishToken = (
   );
 };
 
+const frenchButtons = (
+  appState: AppStateLoaded,
+  setAppState: React.Dispatch<React.SetStateAction<AppState>>
+) =>
+  appState.sentencesToAssociate[appState.currentSentenceString].tokens_fr.map(
+    ({ text, pos }, index) => (
+      <button
+        key={appState.currentSentenceString + index}
+        className={classNames("french", pos.toLocaleLowerCase(), "token", {
+          selected: appState.selectedTokens.french.includes(index),
+        })}
+        onClick={(e) =>
+          toggleSelectFrenchToken(index, e.shiftKey, appState, setAppState)
+        }
+      >
+        {text}
+      </button>
+    )
+  );
+
+const englishButtons = (
+  appState: AppStateLoaded,
+  setAppState: React.Dispatch<React.SetStateAction<AppState>>
+) =>
+  Object.entries(
+    appState.sentencesToAssociate[appState.currentSentenceString].tokens_en
+  ).map(([englishSentence, info]) => (
+    <div key={englishSentence}>
+      {info.map(({ text, pos }, index) => (
+        <button
+          key={englishSentence + index}
+          className={classNames("english", pos.toLocaleLowerCase(), "token", {
+            selected: appState.selectedTokens.english[englishSentence].includes(
+              index
+            ),
+          })}
+          onClick={(e) =>
+            toggleSelectEnglishToken(
+              englishSentence,
+              index,
+              e.shiftKey,
+              appState,
+              setAppState
+            )
+          }
+        >
+          {text}
+        </button>
+      ))}
+    </div>
+  ));
+
 const App = () => {
   const [appState, setAppState] = React.useState<AppState>(startingAppState);
 
@@ -289,71 +368,9 @@ const App = () => {
         {appState.nlpFileLoaded ? (
           <>
             <div>
-              <p>
-                {appState.sentencesToAssociate[
-                  appState.currentSentenceString
-                ].tokens_fr.map(({ text, pos }, index) => (
-                  <button
-                    key={appState.currentSentenceString + index}
-                    className={classNames(
-                      "french",
-                      pos.toLocaleLowerCase(),
-                      "token",
-                      {
-                        selected: appState.selectedTokens.french.includes(
-                          index
-                        ),
-                      }
-                    )}
-                    onClick={(e) =>
-                      toggleSelectFrenchToken(
-                        index,
-                        e.shiftKey,
-                        appState,
-                        setAppState
-                      )
-                    }
-                  >
-                    {text}
-                  </button>
-                ))}
-              </p>
+              <p>{frenchButtons(appState, setAppState)}</p>
             </div>
-            <div>
-              {Object.entries(
-                appState.sentencesToAssociate[appState.currentSentenceString]
-                  .tokens_en
-              ).map(([englishSentence, info]) => (
-                <div key={englishSentence}>
-                  {info.map(({ text, pos }, index) => (
-                    <button
-                      key={englishSentence + index}
-                      className={classNames(
-                        "english",
-                        pos.toLocaleLowerCase(),
-                        "token",
-                        {
-                          selected: appState.selectedTokens.english[
-                            englishSentence
-                          ].includes(index),
-                        }
-                      )}
-                      onClick={(e) =>
-                        toggleSelectEnglishToken(
-                          englishSentence,
-                          index,
-                          e.shiftKey,
-                          appState,
-                          setAppState
-                        )
-                      }
-                    >
-                      {text}
-                    </button>
-                  ))}
-                </div>
-              ))}
-            </div>
+            <div>{englishButtons(appState, setAppState)}</div>
           </>
         ) : (
           <></>
