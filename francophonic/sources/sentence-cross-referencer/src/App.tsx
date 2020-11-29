@@ -1,6 +1,7 @@
 import { promises } from "fs";
 import * as React from "react";
-import produce, { enableMapSet } from "immer";
+import produce, { current, enableMapSet } from "immer";
+import * as _ from "lodash";
 
 import "./sakura-vader.css";
 import "./App.css";
@@ -36,8 +37,8 @@ interface TransitiveVerb {
   subject: SentenceRange;
   directObject: SentenceRange;
   indirectObject?: SentenceRange;
-  auxiliary?: SentenceRange;
-  modification?: SentenceRange;
+  auxiliary: SentenceRange;
+  modification: SentenceRange;
 }
 
 interface IntransitiveVerb {
@@ -98,6 +99,19 @@ interface Interjection {
   root: SentenceRange;
 }
 
+type PathItem =
+  | "root"
+  | "subject"
+  | "directObject"
+  | "indirectObject"
+  | "auxiliary"
+  | "modification"
+  | "relation"
+  | "article"
+  | "part1"
+  | "part2";
+type ParsePath = [number, PathItem][];
+
 type ParseItem =
   | Number
   | Quote
@@ -114,6 +128,21 @@ type ParseItem =
   | Interjection;
 
 type ParseTree = ParseItem[];
+
+const traversePathItem = (
+  tree: ParseTree,
+  [index, item]: [number, PathItem]
+): ParseTree => {
+  const elem = tree[index];
+  return (elem as any)[item];
+};
+
+const parseIndex = (tree: ParseTree, parsePath: ParsePath): ParseTree => {
+  if (parsePath.length === 0) {
+    return tree;
+  }
+  return parseIndex(traversePathItem(tree, parsePath[0]), _.tail(parsePath));
+};
 
 interface File {
   text: () => string;
@@ -157,6 +186,7 @@ interface AppStateLoaded {
     };
     french: number[];
   };
+  selectedParseNode: ParsePath;
 }
 
 interface AppStateUnloaded {
@@ -249,6 +279,8 @@ const analyzeNlpFile = async (
     .map(([sentence, info]) => initializeParseTree(sentence, info))
     .reduce((x, acc) => ({ ...x, ...acc }));
 
+  const selectedParseNode: ParsePath = [];
+
   var newState: AppStateLoaded = {
     ...appState,
     nlpFileLoaded: true,
@@ -257,6 +289,7 @@ const analyzeNlpFile = async (
     currentSentenceString,
     selectedTokens,
     parseTrees,
+    selectedParseNode,
   };
 
   setAppState(newState);
@@ -317,10 +350,12 @@ const TokenButtons = ({
   sentenceTokens,
   selectedTokens,
   toggleSelect,
+  buttonIsDisabled,
 }: {
   sentenceTokens: Token[];
   selectedTokens: number[];
   toggleSelect: (index: number, shift: boolean) => void;
+  buttonIsDisabled: (index: number) => boolean;
 }): JSX.Element => (
   <div>
     <p>
@@ -331,6 +366,7 @@ const TokenButtons = ({
             selected: selectedTokens.includes(index),
           })}
           onClick={(e) => toggleSelect(index, e.shiftKey)}
+          disabled={buttonIsDisabled(index)}
         >
           {text}
         </button>
@@ -342,44 +378,78 @@ const TokenButtons = ({
 const ViewParseTree = ({
   sentence,
   parseTree,
+  selectedNode,
+  setSelectedNode,
 }: {
   sentence: SentenceInfo;
   parseTree: ParseTree;
+  selectedNode: ParsePath;
+  setSelectedNode: (parsePath: ParsePath) => void;
 }): JSX.Element => {
-  const SubParse = ({ node }: { node: SentenceRangeNode }): JSX.Element => {
-    if (node.subTree.length === 0) {
-      return (
-        <span>
-          {node.french.map((index) => (
-            <span key={index}>{sentence.tokens_fr[index].text} </span>
-          ))}
-        </span>
-      );
-    } else {
-      return <ContinueParseTree tree={node.subTree} />;
-    }
-  };
+  const SubParse = ({
+    node,
+    currentPath,
+  }: {
+    node: SentenceRangeNode;
+    currentPath: ParsePath;
+  }): JSX.Element => (
+    <span
+      className={classNames("Subparse", {
+        Selected: _.isEqual(selectedNode, currentPath),
+      })}
+      onClick={(e) => {
+        setSelectedNode(currentPath);
+        e.stopPropagation();
+      }}
+    >
+      {node.subTree.length === 0 ? (
+        node.french.map((index) => (
+          <span key={index}>{sentence.tokens_fr[index].text} </span>
+        ))
+      ) : (
+        <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
+      )}
+    </span>
+  );
 
-  const ContinueParseTree = ({ tree }: { tree: ParseTree }) => (
-    <span>
+  const ContinueParseTree = ({
+    tree,
+    currentPath,
+  }: {
+    tree: ParseTree;
+    currentPath: ParsePath;
+  }) => (
+    <>
       {tree.map((parseItem, index) => {
         if (parseItem.element === "quote") {
           const { root } = parseItem;
           return (
-            <div key={index} className="Subparse">
-              Quote: <SubParse node={root} />
+            <div key={index} className="Continueparse">
+              Quote:
+              <SubParse
+                node={root}
+                currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
+              />
             </div>
           );
         }
         return <></>;
       })}
-    </span>
+    </>
   );
 
   return (
     <div className="Parse-area">
-      <div className="Subparse">
-        Master: <ContinueParseTree tree={parseTree} />
+      <div
+        className={classNames("Subparse", {
+          Selected: selectedNode.length === 0,
+        })}
+        onClick={(e) => {
+          setSelectedNode([]);
+          e.stopPropagation();
+        }}
+      >
+        Master: <ContinueParseTree tree={parseTree} currentPath={[]} />
       </div>
     </div>
   );
@@ -413,6 +483,7 @@ const App = () => {
                   .tokens_fr
               }
               selectedTokens={appState.selectedTokens.french}
+              buttonIsDisabled={(index) => false}
             />
 
             {Object.entries(
@@ -429,8 +500,10 @@ const App = () => {
                     setAppState
                   )
                 }
+                key={sentence}
                 sentenceTokens={tokens}
                 selectedTokens={appState.selectedTokens.english[sentence]}
+                buttonIsDisabled={(index) => false}
               />
             ))}
 
@@ -439,6 +512,11 @@ const App = () => {
                 appState.sentencesToAssociate[appState.currentSentenceString]
               }
               parseTree={appState.parseTrees[appState.currentSentenceString]}
+              selectedNode={appState.selectedParseNode}
+              setSelectedNode={(path) => {
+                setAppState({ ...appState, selectedParseNode: path });
+                console.log(path);
+              }}
             />
           </>
         ) : (

@@ -42,10 +42,24 @@ button.token.selected {
   background-color: #9a2d38;
 }
 
+.Continueparse {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0.5rem;
+  background-color: black;
+}
+
 .Subparse {
   display: inline-block;
   border: 1px solid red;
-  padding: 3px;
+  border-radius: 2px;
+  padding: 0.5rem;
+  background-color: black;
+  margin-left: 1rem;
+}
+
+.Subparse.Selected {
+  background-color: #9a2d38;
 }
 
 .Parse-area {
