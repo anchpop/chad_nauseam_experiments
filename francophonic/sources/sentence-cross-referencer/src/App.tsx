@@ -13,8 +13,9 @@ enableMapSet();
 type Indices = number[];
 
 interface SentenceRangeNode {
-  french: [Indices, ParseTree[]];
-  english: { [key: string]: [Indices, ParseTree[]] };
+  french: Indices;
+  english: { [key: string]: Indices };
+  subTree: ParseTree;
 }
 
 type SentenceRange = SentenceRangeNode;
@@ -202,13 +203,14 @@ const initializeParseTree = (
         {
           element: "quote",
           root: {
-            french: [range(0, tokens_fr.length), []],
+            french: range(0, tokens_fr.length),
             english: Object.fromEntries(
               Object.entries(tokens_en).map(([sentence, tokens]) => [
                 sentence,
-                [range(0, tokens.length), []],
-              ])
+                range(0, tokens.length),
+              ]),
             ),
+            subTree: []
           },
         },
       ],
@@ -363,6 +365,23 @@ const englishButtons = (
     </div>
   ));
 
+const SubParse = ({ sentence, node }: { sentence: SentenceInfo, node: SentenceRangeNode }): JSX.Element => {
+  if (node.subTree.length === 0) {
+    return <span>{node.french.map(index => <span key={index}>{sentence.tokens_fr[index].text} {' '}</span>)}</span>
+  }
+  else {
+    return <ViewParseTree tree={node.subTree} sentence={sentence} />
+  }
+}
+
+const ViewParseTree = ({ sentence, tree }: { sentence: SentenceInfo, tree: ParseTree }): JSX.Element => <div>{tree.map((parseItem, index) => {
+  if (parseItem.element === "quote") {
+    const { root } = parseItem;
+    return <div key={index} className="Parse-item">Quote: <SubParse sentence={sentence} node={root} /></div>
+  }
+  return <></>
+})}</div>
+
 const App = () => {
   const [appState, setAppState] = React.useState<AppState>(startingAppState);
 
@@ -386,13 +405,7 @@ const App = () => {
               <p>{frenchButtons(appState, setAppState)}</p>
             </div>
             <div>{englishButtons(appState, setAppState)}</div>
-            <div>
-              {appState.parseTrees[appState.currentSentenceString].map(
-                (tree, index) => (
-                  <div key={index}>{"" + tree}</div>
-                )
-              )}
-            </div>
+            <ViewParseTree sentence={appState.sentencesToAssociate[appState.currentSentenceString]} tree={appState.parseTrees[appState.currentSentenceString]} />
           </>
         ) : (
             <></>
