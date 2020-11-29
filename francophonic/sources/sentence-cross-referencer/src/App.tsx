@@ -99,6 +99,11 @@ interface Interjection {
   root: SentenceRange;
 }
 
+interface Unknown {
+  element: "unknown";
+  root: SentenceRange
+}
+
 type PathItem =
   | "root"
   | "subject"
@@ -125,7 +130,8 @@ type ParseItem =
   | Noun
   | NounPhrase
   | Conjunction
-  | Interjection;
+  | Interjection
+  | Unknown;
 
 type ParseTree = ParseItem[];
 
@@ -226,25 +232,25 @@ const initializeParseTree = (
   { tokens_fr, tokens_en }: SentenceInfo
 ): { [key: string]: ParseTree } =>
   tokens_fr.filter(({ text }) => text === '"').length === 2 &&
-  tokens_fr[0].text === '"' &&
-  tokens_fr[tokens_fr.length - 1].text === '"'
+    tokens_fr[0].text === '"' &&
+    tokens_fr[tokens_fr.length - 1].text === '"'
     ? {
-        [sentence]: [
-          {
-            element: "quote",
-            root: {
-              french: range(0, tokens_fr.length),
-              english: Object.fromEntries(
-                Object.entries(tokens_en).map(([sentence, tokens]) => [
-                  sentence,
-                  range(0, tokens.length),
-                ])
-              ),
-              subTree: [],
-            },
+      [sentence]: [
+        {
+          element: "quote",
+          root: {
+            french: range(0, tokens_fr.length),
+            english: Object.fromEntries(
+              Object.entries(tokens_en).map(([sentence, tokens]) => [
+                sentence,
+                range(0, tokens.length),
+              ])
+            ),
+            subTree: [],
           },
-        ],
-      }
+        },
+      ],
+    }
     : { [sentence]: [] };
 
 const analyzeNlpFile = async (
@@ -407,8 +413,8 @@ const ViewParseTree = ({
           <span key={index}>{sentence.tokens_fr[index].text} </span>
         ))
       ) : (
-        <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
-      )}
+          <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
+        )}
     </span>
   );
 
@@ -455,6 +461,72 @@ const ViewParseTree = ({
   );
 };
 
+const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { fr: Indices, en: { [key: string]: Indices } } => {
+  if (selectedParseNode.length === 0) {
+    return { fr: [], en: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])) }
+  }
+  if (selectedParseNode.length === 1) {
+    return { fr: range(0, sentenceInfo.tokens_fr.length), en: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, tokens]) => [sentence, range(0, tokens.length)])) }
+  }
+
+  const applicableParsePath: ParsePath = _.initial(selectedParseNode)
+  const node = parseIndex(parseTree, applicableParsePath)[_.last(applicableParsePath)![0]]
+  return {
+    en: node.root.english, fr: node.root.french
+  }
+
+}
+
+const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
+  const tokensAvailable = getTokensAvailable(appState.sentencesToAssociate[appState.currentSentenceString], appState.selectedParseNode, appState.parseTrees[appState.currentSentenceString])
+  return (<>
+    <TokenButtons
+      toggleSelect={(index, shift) =>
+        toggleSelectFrenchToken(index, shift, appState, setAppState)
+      }
+      sentenceTokens={
+        appState.sentencesToAssociate[appState.currentSentenceString]
+          .tokens_fr
+      }
+      selectedTokens={appState.selectedTokens.french}
+      buttonIsDisabled={(index) => !tokensAvailable.fr.includes(index)}
+    />
+
+    {Object.entries(
+      appState.sentencesToAssociate[appState.currentSentenceString]
+        .tokens_en
+    ).map(([sentence, tokens]) => (
+      <TokenButtons
+        toggleSelect={(index, shift) =>
+          toggleSelectEnglishToken(
+            sentence,
+            index,
+            shift,
+            appState,
+            setAppState
+          )
+        }
+        key={sentence}
+        sentenceTokens={tokens}
+        selectedTokens={appState.selectedTokens.english[sentence]}
+        buttonIsDisabled={(index) => !tokensAvailable.en[sentence].includes(index)}
+      />
+    ))}
+
+    <ViewParseTree
+      sentence={
+        appState.sentencesToAssociate[appState.currentSentenceString]
+      }
+      parseTree={appState.parseTrees[appState.currentSentenceString]}
+      selectedNode={appState.selectedParseNode}
+      setSelectedNode={(path) => {
+        setAppState({ ...appState, selectedParseNode: path });
+        console.log(path);
+      }}
+    />
+  </>)
+}
+
 const App = () => {
   const [appState, setAppState] = React.useState<AppState>(startingAppState);
 
@@ -473,75 +545,32 @@ const App = () => {
         </button>
 
         {appState.nlpFileLoaded ? (
-          <>
-            <TokenButtons
-              toggleSelect={(index, shift) =>
-                toggleSelectFrenchToken(index, shift, appState, setAppState)
-              }
-              sentenceTokens={
-                appState.sentencesToAssociate[appState.currentSentenceString]
-                  .tokens_fr
-              }
-              selectedTokens={appState.selectedTokens.french}
-              buttonIsDisabled={(index) => false}
-            />
-
-            {Object.entries(
-              appState.sentencesToAssociate[appState.currentSentenceString]
-                .tokens_en
-            ).map(([sentence, tokens]) => (
-              <TokenButtons
-                toggleSelect={(index, shift) =>
-                  toggleSelectEnglishToken(
-                    sentence,
-                    index,
-                    shift,
-                    appState,
-                    setAppState
-                  )
-                }
-                key={sentence}
-                sentenceTokens={tokens}
-                selectedTokens={appState.selectedTokens.english[sentence]}
-                buttonIsDisabled={(index) => false}
-              />
-            ))}
-
-            <ViewParseTree
-              sentence={
-                appState.sentencesToAssociate[appState.currentSentenceString]
-              }
-              parseTree={appState.parseTrees[appState.currentSentenceString]}
-              selectedNode={appState.selectedParseNode}
-              setSelectedNode={(path) => {
-                setAppState({ ...appState, selectedParseNode: path });
-                console.log(path);
-              }}
-            />
-          </>
+          <LoadedApp appState={appState} setAppState={setAppState} />
         ) : (
-          <></>
-        )}
+            <></>
+          )}
       </div>
-      {appState.nlpFileLoaded === true ? (
-        Object.entries(appState.sentencesToAssociate).map(
-          ([frenchSentence, info]) => (
-            <p key={frenchSentence}>
-              {info.tokens_fr.map(({ text }, index) => (
-                <span
-                  key={frenchSentence + index}
-                  className={classNames("french", "token")}
-                >
-                  {text}
-                </span>
-              ))}
-            </p>
+      {
+        appState.nlpFileLoaded === true ? (
+          Object.entries(appState.sentencesToAssociate).map(
+            ([frenchSentence, info]) => (
+              <p key={frenchSentence}>
+                {info.tokens_fr.map(({ text }, index) => (
+                  <span
+                    key={frenchSentence + index}
+                    className={classNames("french", "token")}
+                  >
+                    {text}
+                  </span>
+                ))}
+              </p>
+            )
           )
-        )
-      ) : (
-        <></>
-      )}
-    </div>
+        ) : (
+            <></>
+          )
+      }
+    </div >
   );
 };
 
