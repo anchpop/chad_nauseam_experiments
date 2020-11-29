@@ -41,3 +41,13 @@ button.token {
 button.token.selected {
   background-color: #9a2d38;
 }
+
+.Subparse {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 3px
+}
+
+.Parse-area {
+  padding: 1em;
+}

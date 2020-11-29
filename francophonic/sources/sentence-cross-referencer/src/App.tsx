@@ -313,57 +313,31 @@ const toggleSelectEnglishToken = (
   );
 };
 
-const frenchButtons = (
-  appState: AppStateLoaded,
-  setAppState: React.Dispatch<React.SetStateAction<AppState>>
-) =>
-  appState.sentencesToAssociate[appState.currentSentenceString].tokens_fr.map(
-    ({ text, pos }, index) => (
-      <button
-        key={appState.currentSentenceString + index}
-        className={classNames("french", pos.toLocaleLowerCase(), "token", {
-          selected: appState.selectedTokens.french.includes(index),
-        })}
-        onClick={(e) =>
-          toggleSelectFrenchToken(index, e.shiftKey, appState, setAppState)
-        }
-      >
-        {text}
-      </button>
-    )
-  );
+const TokenButtons = ({ sentenceTokens, selectedTokens, toggleSelect }:
+  {
+    sentenceTokens: Token[],
+    selectedTokens: number[],
+    toggleSelect: (index: number, shift: boolean) => void,
+  }
+): JSX.Element =>
+  <div>
+    <p>
+      {sentenceTokens.map(
+        ({ text, pos }, index) => (
+          <button
+            key={index}
+            className={classNames("french", pos.toLocaleLowerCase(), "token", {
+              selected: selectedTokens.includes(index),
+            })}
+            onClick={(e) =>
+              toggleSelect(index, e.shiftKey)
+            }
+          >
+            {text}
+          </button>
+        )
+      )}</p></div>;
 
-const englishButtons = (
-  appState: AppStateLoaded,
-  setAppState: React.Dispatch<React.SetStateAction<AppState>>
-) =>
-  Object.entries(
-    appState.sentencesToAssociate[appState.currentSentenceString].tokens_en
-  ).map(([englishSentence, info]) => (
-    <div key={englishSentence}>
-      {info.map(({ text, pos }, index) => (
-        <button
-          key={englishSentence + index}
-          className={classNames("english", pos.toLocaleLowerCase(), "token", {
-            selected: appState.selectedTokens.english[englishSentence].includes(
-              index
-            ),
-          })}
-          onClick={(e) =>
-            toggleSelectEnglishToken(
-              englishSentence,
-              index,
-              e.shiftKey,
-              appState,
-              setAppState
-            )
-          }
-        >
-          {text}
-        </button>
-      ))}
-    </div>
-  ));
 
 const SubParse = ({ sentence, node }: { sentence: SentenceInfo, node: SentenceRangeNode }): JSX.Element => {
   if (node.subTree.length === 0) {
@@ -377,7 +351,9 @@ const SubParse = ({ sentence, node }: { sentence: SentenceInfo, node: SentenceRa
 const ViewParseTree = ({ sentence, tree }: { sentence: SentenceInfo, tree: ParseTree }): JSX.Element => <div>{tree.map((parseItem, index) => {
   if (parseItem.element === "quote") {
     const { root } = parseItem;
-    return <div key={index} className="Parse-item">Quote: <SubParse sentence={sentence} node={root} /></div>
+    return (<div key={index} className="Parse-item">
+      Quote: <div className="Subparse"><SubParse sentence={sentence} node={root} /></div>
+    </div>)
   }
   return <></>
 })}</div>
@@ -401,11 +377,16 @@ const App = () => {
 
         {appState.nlpFileLoaded ? (
           <>
-            <div>
-              <p>{frenchButtons(appState, setAppState)}</p>
+
+            <TokenButtons toggleSelect={(index, shift) => toggleSelectFrenchToken(index, shift, appState, setAppState)} sentenceTokens={appState.sentencesToAssociate[appState.currentSentenceString].tokens_fr} selectedTokens={appState.selectedTokens.french} />
+
+            {Object.entries(appState.sentencesToAssociate[appState.currentSentenceString].tokens_en).map(([sentence, tokens]) =>
+              <TokenButtons toggleSelect={(index, shift) => toggleSelectEnglishToken(sentence, index, shift, appState, setAppState)} sentenceTokens={tokens} selectedTokens={appState.selectedTokens.english[sentence]} />
+            )}
+
+            <div className="Parse-area">
+              <ViewParseTree sentence={appState.sentencesToAssociate[appState.currentSentenceString]} tree={appState.parseTrees[appState.currentSentenceString]} />
             </div>
-            <div>{englishButtons(appState, setAppState)}</div>
-            <ViewParseTree sentence={appState.sentencesToAssociate[appState.currentSentenceString]} tree={appState.parseTrees[appState.currentSentenceString]} />
           </>
         ) : (
             <></>
