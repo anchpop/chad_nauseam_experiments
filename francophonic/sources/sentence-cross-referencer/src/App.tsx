@@ -233,7 +233,7 @@ const initializeParseTree = (
 ): { [key: string]: ParseTree } =>
   tokens_fr.filter(({ text }) => text === '"').length === 2 &&
     tokens_fr[0].text === '"' &&
-    tokens_fr[tokens_fr.length - 1].text === '"'
+    _.last(tokens_fr)!.text === '"'
     ? {
       [sentence]: [
         {
@@ -462,6 +462,19 @@ const ViewParseTree = ({
 };
 
 const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { fr: Indices, en: { [key: string]: Indices } } => {
+  const tokensGivenToChildren = (node: ParseItem): { fr: Indices, en: { [key: string]: Indices } } => {
+    if (node.element === "quote") {
+      const token_indices_fr = node.root.french;
+      const tokens_fr = sentenceInfo.tokens_fr
+      if (token_indices_fr.filter((i) => tokens_fr[i].text === '"').length === 2 &&
+        tokens_fr[0].text === '"' &&
+        _.last(tokens_fr)!.text === '"') {
+        return { en: Object.fromEntries(Object.entries(node.root.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), fr: _.tail(_.initial(node.root.french)) }
+      }
+    }
+    return { en: node.root.english, fr: node.root.french }
+  }
+
   if (selectedParseNode.length === 0) {
     return { fr: [], en: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])) }
   }
@@ -471,9 +484,7 @@ const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: Parse
 
   const applicableParsePath: ParsePath = _.initial(selectedParseNode)
   const node = parseIndex(parseTree, applicableParsePath)[_.last(applicableParsePath)![0]]
-  return {
-    en: node.root.english, fr: node.root.french
-  }
+  return tokensGivenToChildren(node)
 
 }
 
