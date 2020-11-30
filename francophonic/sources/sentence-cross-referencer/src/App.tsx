@@ -5,6 +5,7 @@ import * as _ from "lodash";
 
 import "./sakura-vader.css";
 import "./App.css";
+import { objectTraps } from "immer/dist/internal";
 
 const yaml = require("js-yaml");
 var classNames = require("classnames");
@@ -138,7 +139,7 @@ type ParseTree = ParseItem[];
 const traversePathItem = (
   tree: ParseTree,
   [index, item]: [number, PathItem]
-): ParseTree => {
+): SentenceRange => {
   const elem = tree[index];
   return (elem as any)[item];
 };
@@ -147,7 +148,7 @@ const parseIndex = (tree: ParseTree, parsePath: ParsePath): ParseTree => {
   if (parsePath.length === 0) {
     return tree;
   }
-  return parseIndex(traversePathItem(tree, parsePath[0]), _.tail(parsePath));
+  return parseIndex(traversePathItem(tree, parsePath[0]).subTree, _.tail(parsePath));
 };
 
 interface File {
@@ -186,12 +187,6 @@ interface AppStateLoaded {
   sentencesToAssociate: Sentences;
   currentSentenceString: string;
   parseTrees: { [key: string]: ParseTree };
-  selectedTokens: {
-    english: {
-      [k: string]: number[];
-    };
-    french: number[];
-  };
   selectedParseNode: ParsePath;
 }
 
@@ -293,7 +288,6 @@ const analyzeNlpFile = async (
     nlpFileHandle,
     sentencesToAssociate,
     currentSentenceString,
-    selectedTokens,
     parseTrees,
     selectedParseNode,
   };
@@ -323,6 +317,7 @@ const toggleSelectFrenchToken = (
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
+  /*
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
       draftState.selectedTokens.french = toggleTokens(
@@ -332,6 +327,7 @@ const toggleSelectFrenchToken = (
       );
     })
   );
+  */
 };
 
 const toggleSelectEnglishToken = (
@@ -341,6 +337,7 @@ const toggleSelectEnglishToken = (
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
+  /*
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
       draftState.selectedTokens.english[sentence] = toggleTokens(
@@ -350,6 +347,7 @@ const toggleSelectEnglishToken = (
       );
     })
   );
+  */
 };
 
 const TokenButtons = ({
@@ -461,35 +459,45 @@ const ViewParseTree = ({
   );
 };
 
-const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { fr: Indices, en: { [key: string]: Indices } } => {
-  const tokensGivenToChildren = (node: ParseItem): { fr: Indices, en: { [key: string]: Indices } } => {
+const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { french: Indices, english: { [key: string]: Indices } } => {
+  const tokensGivenToChildren = (node: ParseItem): { french: Indices, english: { [key: string]: Indices } } => {
     if (node.element === "quote") {
       const token_indices_fr = node.root.french;
       const tokens_fr = sentenceInfo.tokens_fr
       if (token_indices_fr.filter((i) => tokens_fr[i].text === '"').length === 2 &&
         tokens_fr[0].text === '"' &&
         _.last(tokens_fr)!.text === '"') {
-        return { en: Object.fromEntries(Object.entries(node.root.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), fr: _.tail(_.initial(node.root.french)) }
+        return { english: Object.fromEntries(Object.entries(node.root.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), french: _.tail(_.initial(node.root.french)) }
       }
     }
-    return { en: node.root.english, fr: node.root.french }
+    return { english: node.root.english, french: node.root.french }
   }
 
   if (selectedParseNode.length === 0) {
-    return { fr: [], en: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])) }
+    return { french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])) }
   }
   if (selectedParseNode.length === 1) {
-    return { fr: range(0, sentenceInfo.tokens_fr.length), en: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, tokens]) => [sentence, range(0, tokens.length)])) }
+    return { french: range(0, sentenceInfo.tokens_fr.length), english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, tokens]) => [sentence, range(0, tokens.length)])) }
   }
 
   const applicableParsePath: ParsePath = _.initial(selectedParseNode)
   const node = parseIndex(parseTree, applicableParsePath)[_.last(applicableParsePath)![0]]
   return tokensGivenToChildren(node)
+}
 
+const getTokensSelected = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { french: Indices, english: { [key: string]: Indices } } => {
+  if (selectedParseNode.length === 0) {
+    return {french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []]))}
+  }
+  const last = _.last(selectedParseNode)!
+  const node = traversePathItem(parseIndex(parseTree, _.initial(selectedParseNode)), last)
+  console.log(node)
+  return {french: node.french, english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, node.english[sentence]]))}
 }
 
 const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
   const tokensAvailable = getTokensAvailable(appState.sentencesToAssociate[appState.currentSentenceString], appState.selectedParseNode, appState.parseTrees[appState.currentSentenceString])
+  const tokensSelected = getTokensSelected(appState.sentencesToAssociate[appState.currentSentenceString], appState.selectedParseNode, appState.parseTrees[appState.currentSentenceString])
   return (<>
     <TokenButtons
       toggleSelect={(index, shift) =>
@@ -499,8 +507,8 @@ const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setApp
         appState.sentencesToAssociate[appState.currentSentenceString]
           .tokens_fr
       }
-      selectedTokens={appState.selectedTokens.french}
-      buttonIsDisabled={(index) => !tokensAvailable.fr.includes(index)}
+      selectedTokens={tokensSelected.french}
+      buttonIsDisabled={(index) => !tokensAvailable.french.includes(index)}
     />
 
     {Object.entries(
@@ -519,8 +527,8 @@ const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setApp
         }
         key={sentence}
         sentenceTokens={tokens}
-        selectedTokens={appState.selectedTokens.english[sentence]}
-        buttonIsDisabled={(index) => !tokensAvailable.en[sentence].includes(index)}
+        selectedTokens={tokensSelected.english[sentence]}
+        buttonIsDisabled={(index) => !tokensAvailable.english[sentence].includes(index)}
       />
     ))}
 
@@ -532,7 +540,6 @@ const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setApp
       selectedNode={appState.selectedParseNode}
       setSelectedNode={(path) => {
         setAppState({ ...appState, selectedParseNode: path });
-        console.log(path);
       }}
     />
   </>)
