@@ -150,6 +150,11 @@ const parseIndex = (tree: ParseTree, parsePath: ParsePath): ParseTree => {
   }
   return parseIndex(traversePathItem(tree, parsePath[0]).subTree, _.tail(parsePath));
 };
+const parseIndexParent = (tree: ParseTree, parsePath: ParsePath): ParseItem => {
+  console.assert(parsePath.length !== 0) 
+  const last = _.last(parsePath)!
+  return parseIndex(tree, _.initial(parsePath))[last[0]];
+};
 
 interface File {
   text: () => string;
@@ -317,17 +322,15 @@ const toggleSelectFrenchToken = (
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
-  /*
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
-      draftState.selectedTokens.french = toggleTokens(
+      const parent: ParseItem = parseIndexParent(draftState.parseTrees[draftState.currentSentenceString], draftState.selectedParseNode);
+      parent.root.french = toggleTokens(
         index,
         shift,
-        draftState.selectedTokens.french
-      );
+        parent.root.french)
     })
   );
-  */
 };
 
 const toggleSelectEnglishToken = (
@@ -337,17 +340,15 @@ const toggleSelectEnglishToken = (
   appState: AppStateLoaded,
   setAppState: React.Dispatch<React.SetStateAction<AppState>>
 ) => {
-  /*
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
-      draftState.selectedTokens.english[sentence] = toggleTokens(
+      const parent: ParseItem = parseIndexParent(draftState.parseTrees[draftState.currentSentenceString], draftState.selectedParseNode);
+      parent.root.english[sentence] = toggleTokens(
         index,
         shift,
-        draftState.selectedTokens.english[sentence]
-      );
+        parent.root.english[sentence])
     })
   );
-  */
 };
 
 const TokenButtons = ({
@@ -407,7 +408,7 @@ const ViewParseTree = ({
       }}
     >
       {node.subTree.length === 0 ? (
-        node.french.map((index) => (
+        [...node.french].sort().map((index) => (
           <span key={index}>{sentence.tokens_fr[index].text} </span>
         ))
       ) : (
@@ -491,7 +492,6 @@ const getTokensSelected = (sentenceInfo: SentenceInfo, selectedParseNode: ParseP
   }
   const last = _.last(selectedParseNode)!
   const node = traversePathItem(parseIndex(parseTree, _.initial(selectedParseNode)), last)
-  console.log(node)
   return {french: node.french, english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, node.english[sentence]]))}
 }
 
