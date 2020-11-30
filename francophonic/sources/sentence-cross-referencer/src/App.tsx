@@ -408,9 +408,31 @@ const ViewParseTree = ({
       }}
     >
       {node.subTree.length === 0 ? (
-        [...node.french].sort().map((index) => (
-          <span key={index}>{sentence.tokens_fr[index].text} </span>
-        ))
+        <div className="Parse-token-area">
+          <div className="Parse-token-group">
+            {
+              [...node.french].sort().map((index) => (
+                <div key={index} className="Parse-token french">{sentence.tokens_fr[index].text} </div>
+              ))
+            }
+          </div>
+          {
+            Object.entries(node.english).map(([englishSentence, indices], englishSentenceIndex) => 
+              <div className="Parse-token-group" key={englishSentenceIndex}>
+                {
+                  [...indices].sort().map(
+                    (index) => 
+                      <div key={index} className="Parse-token french">
+                        {
+                          sentence.tokens_en[englishSentence][index].text
+                        }
+                      </div>
+                    )
+                }
+              </div>
+            )
+          }
+        </div>
       ) : (
           <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
         )}
@@ -430,7 +452,7 @@ const ViewParseTree = ({
           const { root } = parseItem;
           return (
             <div key={index} className="Continueparse">
-              Quote:
+              <div className="Label">Quote: </div>
               <SubParse
                 node={root}
                 currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
@@ -454,7 +476,8 @@ const ViewParseTree = ({
           e.stopPropagation();
         }}
       >
-        Master: <ContinueParseTree tree={parseTree} currentPath={[]} />
+        <div className="Label">Master: </div>
+        <ContinueParseTree tree={parseTree} currentPath={[]} />
       </div>
     </div>
   );
