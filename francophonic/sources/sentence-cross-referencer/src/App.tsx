@@ -518,10 +518,27 @@ const getTokensSelected = (sentenceInfo: SentenceInfo, selectedParseNode: ParseP
   return {french: node.french, english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, node.english[sentence]]))}
 }
 
+const addNode = (parseTree: ParseTree, parsePath: ParsePath, toAdd: ParseItem) => 
+  produce(parseTree, (tree) => {
+    parseIndex(tree, parsePath) => 
+  })
+
+
+const Options = ({appState, setAppState}: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
+  
+  return (
+    <div className="Options-box">
+      <span>Add: </span>
+      <button >Quote</button>
+    </div>
+  )
+}
+
 const LoadedApp = ({ appState, setAppState }: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
   const tokensAvailable = getTokensAvailable(appState.sentencesToAssociate[appState.currentSentenceString], appState.selectedParseNode, appState.parseTrees[appState.currentSentenceString])
   const tokensSelected = getTokensSelected(appState.sentencesToAssociate[appState.currentSentenceString], appState.selectedParseNode, appState.parseTrees[appState.currentSentenceString])
   return (<>
+    <Options appState={appState} setAppState={setAppState} />
     <TokenButtons
       toggleSelect={(index, shift) =>
         toggleSelectFrenchToken(index, shift, appState, setAppState)
