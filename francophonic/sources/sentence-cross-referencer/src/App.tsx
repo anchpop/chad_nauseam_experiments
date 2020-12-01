@@ -136,6 +136,22 @@ type ParseItem =
 
 type ParseTree = ParseItem[];
 
+type ParseItemType =
+  | "Number"
+  | "Quote"
+  | "TransitiveVerb"
+  | "IntransitiveVerb"
+  | "Preposition"
+  | "Adverb"
+  | "Adjective"
+  | "Article"
+  | "Pronoun"
+  | "Noun"
+  | "NounPhrase"
+  | "Conjunction"
+  | "Interjection"
+  | "Unknown";
+
 const traversePathItem = (
   tree: ParseTree,
   [index, item]: [number, PathItem]
@@ -494,6 +510,9 @@ const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: Parse
         return { english: Object.fromEntries(Object.entries(node.root.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), french: _.tail(_.initial(node.root.french)) }
       }
     }
+    else {
+      throw "not supported in getTokensAvailable"
+    }
     return { english: node.root.english, french: node.root.french }
   }
 
@@ -518,9 +537,16 @@ const getTokensSelected = (sentenceInfo: SentenceInfo, selectedParseNode: ParseP
   return {french: node.french, english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, node.english[sentence]]))}
 }
 
-const addNode = (parseTree: ParseTree, parsePath: ParsePath, toAdd: ParseItem) => 
+const addNode = (sentenceInfo: SentenceInfo, parseTree: ParseTree, parsePath: ParsePath, toAdd: ParseItemType) => 
   produce(parseTree, (tree) => {
-    parseIndex(tree, parsePath) => 
+    const toAddTo = parseIndex(tree, parsePath)
+    if (toAdd === "Quote")
+    {
+      toAddTo.push({element: "quote", root: {french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])), subTree: []}}) 
+    }
+    else {
+      throw "not supported in addNode yet"
+    }
   })
 
 
