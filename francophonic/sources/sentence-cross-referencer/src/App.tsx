@@ -523,8 +523,7 @@ const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: Parse
     return { french: range(0, sentenceInfo.tokens_fr.length), english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, tokens]) => [sentence, range(0, tokens.length)])) }
   }
 
-  const applicableParsePath: ParsePath = _.initial(selectedParseNode)
-  const node = parseIndex(parseTree, applicableParsePath)[_.last(applicableParsePath)![0]]
+  const node = parseIndexParent(parseTree, _.initial(selectedParseNode))
   return tokensGivenToChildren(node)
 }
 
@@ -551,11 +550,16 @@ const addNode = (sentenceInfo: SentenceInfo, parseTree: ParseTree, parsePath: Pa
 
 
 const Options = ({appState, setAppState}: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
-  
   return (
     <div className="Options-box">
       <span>Add: </span>
-      <button >Quote</button>
+      <button onClick={() => {
+        setAppState(produce(appState, (draftAppState) => {
+          const currentSentenceString = draftAppState.currentSentenceString
+          const currentParseTree = draftAppState.parseTrees[currentSentenceString]
+          draftAppState.parseTrees[currentSentenceString] = addNode(draftAppState.sentencesToAssociate[currentSentenceString], currentParseTree, draftAppState.selectedParseNode, "Quote")
+        }))
+      }}>Quote</button>
     </div>
   )
 }
