@@ -476,6 +476,21 @@ const ViewParseTree = ({
             </div>
           );
         }
+        else if (parseItem.element === "number") {
+          const { root } = parseItem;
+          return (
+            <div key={index} className="Continueparse">
+              <div className="Label">Number: </div>
+              <SubParse
+                node={root}
+                currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
+              />
+            </div>
+          );
+        }
+        else {
+          throw "Not supported yet in ContinueParseTree"
+        }
         return <></>;
       })}
     </>
@@ -539,9 +554,15 @@ const getTokensSelected = (sentenceInfo: SentenceInfo, selectedParseNode: ParseP
 const addNode = (sentenceInfo: SentenceInfo, parseTree: ParseTree, parsePath: ParsePath, toAdd: ParseItemType) => 
   produce(parseTree, (tree) => {
     const toAddTo = parseIndex(tree, parsePath)
+    const emptyRoot =  {french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])), subTree: []};
     if (toAdd === "Quote")
     {
-      toAddTo.push({element: "quote", root: {french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])), subTree: []}}) 
+      toAddTo.push({element: "quote", root: emptyRoot}) 
+    }
+    else if (toAdd === "Number")
+    {
+      toAddTo.push({element: "number", root: emptyRoot}) 
+
     }
     else {
       throw "not supported in addNode yet"
@@ -550,16 +571,18 @@ const addNode = (sentenceInfo: SentenceInfo, parseTree: ParseTree, parsePath: Pa
 
 
 const Options = ({appState, setAppState}: { appState: AppStateLoaded, setAppState: React.Dispatch<React.SetStateAction<AppState>> }): JSX.Element => {
+  const ops: ParseItemType[] = ["Quote", "Number"]
   return (
     <div className="Options-box">
       <span>Add: </span>
-      <button onClick={() => {
+      {ops.map(nodeType => <button key={nodeType} onClick={() => {
         setAppState(produce(appState, (draftAppState) => {
           const currentSentenceString = draftAppState.currentSentenceString
           const currentParseTree = draftAppState.parseTrees[currentSentenceString]
-          draftAppState.parseTrees[currentSentenceString] = addNode(draftAppState.sentencesToAssociate[currentSentenceString], currentParseTree, draftAppState.selectedParseNode, "Quote")
+          draftAppState.parseTrees[currentSentenceString] = addNode(draftAppState.sentencesToAssociate[currentSentenceString], currentParseTree, draftAppState.selectedParseNode, nodeType)
         }))
-      }}>Quote</button>
+      }}>{nodeType}</button>)}
+      
     </div>
   )
 }
