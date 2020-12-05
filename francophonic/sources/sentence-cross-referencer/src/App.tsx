@@ -152,6 +152,11 @@ type ParseItemType =
   | "Interjection"
   | "Unknown";
 
+const structureDescription: [ParseItemType, {[K in PathItem]?: boolean}][] = [
+  ["Number", {"root": true}],
+  ["Quote", {"root": true}],
+] 
+
 const traversePathItem = (
   tree: ParseTree,
   [index, item]: [number, PathItem]
