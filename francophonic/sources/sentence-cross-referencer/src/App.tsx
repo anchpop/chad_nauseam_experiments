@@ -21,7 +21,7 @@ interface SentenceRangeNode {
 }
 
 type SentenceRange = SentenceRangeNode;
-
+/*
 interface Quote {
   element: "quote";
   root: SentenceRange;
@@ -104,6 +104,7 @@ interface Unknown {
   element: "unknown";
   root: SentenceRange
 }
+*/
 
 type PathItem =
   | "root"
@@ -118,21 +119,7 @@ type PathItem =
   | "part2";
 type ParsePath = [number, PathItem][];
 
-type ParseItem =
-  | Number
-  | Quote
-  | TransitiveVerb
-  | IntransitiveVerb
-  | Preposition
-  | Adverb
-  | Adjective
-  | Article
-  | Pronoun
-  | Noun
-  | NounPhrase
-  | Conjunction
-  | Interjection
-  | Unknown;
+type ParseItem = {element: ParseItemType, info: {[K in PathItem]?: SentenceRange}}
 
 type ParseTree = ParseItem[];
 
@@ -155,6 +142,7 @@ type ParseItemType =
 const structureDescription: [ParseItemType, {[K in PathItem]?: boolean}][] = [
   ["Number", {"root": true}],
   ["Quote", {"root": true}],
+  ["TransitiveVerb", {"root": true, subject: false, directObject: false, indirectObject: false, auxiliary: false, modification: false}],
 ] 
 
 const traversePathItem = (
@@ -258,20 +246,22 @@ const initializeParseTree = (
     ? {
       [sentence]: [
         {
-          element: "quote",
-          root: {
-            french: range(0, tokens_fr.length),
-            english: Object.fromEntries(
-              Object.entries(tokens_en).map(([sentence, tokens]) => [
-                sentence,
-                range(0, tokens.length),
-              ])
-            ),
-            subTree: [],
-          },
+          element: "Quote",
+          info: {
+            root: {
+              french: range(0, tokens_fr.length),
+              english: Object.fromEntries(
+                Object.entries(tokens_en).map(([sentence, tokens]) => [
+                  sentence,
+                  range(0, tokens.length),
+                ])
+              ),
+              subTree: [],
+            }
+          }
         },
       ],
-    }
+    } 
     : { [sentence]: [] };
 
 const analyzeNlpFile = async (
@@ -337,6 +327,8 @@ const toggleTokens = (index: number, shift: boolean, tokens: number[]) => {
   return tokens;
 };
 
+
+// toggleSelectFrenchToken and toggleSelectEnglishToken both need to change to not just change the root
 const toggleSelectFrenchToken = (
   index: number,
   shift: boolean,
@@ -346,10 +338,10 @@ const toggleSelectFrenchToken = (
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
       const parent: ParseItem = parseIndexParent(draftState.parseTrees[draftState.currentSentenceString], draftState.selectedParseNode);
-      parent.root.french = toggleTokens(
+      parent.info.root!.french = toggleTokens(
         index,
         shift,
-        parent.root.french)
+        parent.info.root!.french)
     })
   );
 };
@@ -364,10 +356,10 @@ const toggleSelectEnglishToken = (
   setAppState(
     produce(appState, (draftState: AppStateLoaded) => {
       const parent: ParseItem = parseIndexParent(draftState.parseTrees[draftState.currentSentenceString], draftState.selectedParseNode);
-      parent.root.english[sentence] = toggleTokens(
+      parent.info.root!.english[sentence] = toggleTokens(
         index,
         shift,
-        parent.root.english[sentence])
+        parent.info.root!.english[sentence])
     })
   );
 };
@@ -469,25 +461,26 @@ const ViewParseTree = ({
   }) => (
     <>
       {tree.map((parseItem, index) => {
-        if (parseItem.element === "quote") {
-          const { root } = parseItem;
+        // This should be refactored - there's no need to separately 
+        if (parseItem.element === "Quote") {
+          const { root } = parseItem.info;
           return (
             <div key={index} className="Continueparse">
               <div className="Label">Quote: </div>
               <SubParse
-                node={root}
+                node={root!}
                 currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
               />
             </div>
           );
         }
-        else if (parseItem.element === "number") {
-          const { root } = parseItem;
+        else if (parseItem.element === "Number") {
+          const { root } = parseItem.info;
           return (
             <div key={index} className="Continueparse">
               <div className="Label">Number: </div>
               <SubParse
-                node={root}
+                node={root!}
                 currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
               />
             </div>
@@ -521,19 +514,19 @@ const ViewParseTree = ({
 
 const getTokensAvailable = (sentenceInfo: SentenceInfo, selectedParseNode: ParsePath, parseTree: ParseTree): { french: Indices, english: { [key: string]: Indices } } => {
   const tokensGivenToChildren = (node: ParseItem): { french: Indices, english: { [key: string]: Indices } } => {
-    if (node.element === "quote") {
-      const token_indices_fr = node.root.french;
+    if (node.element === "Quote") {
+      const token_indices_fr = node.info.root!.french;
       const tokens_fr = sentenceInfo.tokens_fr
       if (token_indices_fr.filter((i) => tokens_fr[i].text === '"').length === 2 &&
         tokens_fr[0].text === '"' &&
         _.last(tokens_fr)!.text === '"') {
-        return { english: Object.fromEntries(Object.entries(node.root.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), french: _.tail(_.initial(node.root.french)) }
+        return { english: Object.fromEntries(Object.entries(node.info.root!.english).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])), french: _.tail(_.initial(node.info.root!.french)) }
       }
     }
     else {
       throw "not supported in getTokensAvailable"
     }
-    return { english: node.root.english, french: node.root.french }
+    return { english: node.info.root!.english, french: node.info.root!.french }
   }
 
   if (selectedParseNode.length === 0) {
@@ -562,11 +555,11 @@ const addNode = (sentenceInfo: SentenceInfo, parseTree: ParseTree, parsePath: Pa
     const emptyRoot =  {french: [], english: Object.fromEntries(Object.entries(sentenceInfo.tokens_en).map(([sentence, _]) => [sentence, []])), subTree: []};
     if (toAdd === "Quote")
     {
-      toAddTo.push({element: "quote", root: emptyRoot}) 
+      toAddTo.push({element: "Quote", info: {root: emptyRoot}}) 
     }
     else if (toAdd === "Number")
     {
-      toAddTo.push({element: "number", root: emptyRoot}) 
+      toAddTo.push({element: "Number", info: {root: emptyRoot}}) 
 
     }
     else {
