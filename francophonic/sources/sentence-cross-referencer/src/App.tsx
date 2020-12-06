@@ -514,11 +514,13 @@ const ViewParseTree = ({
         return (
           <div key={index} className="Continueparse">
             <div className="Label">{parseItem.element}: </div>
-            {Object.entries(desc).map(([pathItem, required], index) => (
+            {Object.entries(desc).map(([pathItem, required], index_) => (
               <SubParse
-                key={index}
+                key={index_}
                 node={parseItem.info[pathItem as PathItem]!}
-                currentPath={currentPath.concat([[index, "root"]])}
+                currentPath={currentPath.concat([
+                  [index, pathItem as PathItem],
+                ])}
               />
             ))}
           </div>
