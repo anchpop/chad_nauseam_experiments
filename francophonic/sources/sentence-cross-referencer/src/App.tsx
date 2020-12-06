@@ -141,6 +141,22 @@ type ParseItemType =
   | "Conjunction"
   | "Interjection"
   | "Unknown";
+const allParseItemTypes: ParseItemType[] = [
+  "Number",
+  "Quote",
+  "TransitiveVerb",
+  "IntransitiveVerb",
+  "Preposition",
+  "Adverb",
+  "Adjective",
+  "Article",
+  "Pronoun",
+  "Noun",
+  "NounPhrase",
+  "Conjunction",
+  "Interjection",
+  "Unknown",
+];
 
 const structureDescription: {
   [P in ParseItemType]: { [K in PathItem]?: boolean };
@@ -442,42 +458,47 @@ const ViewParseTree = ({
   }: {
     node: SentenceRangeNode;
     currentPath: ParsePath;
-  }): JSX.Element => (
-    <span
-      className={classNames("Subparse", {
-        Selected: _.isEqual(selectedNode, currentPath),
-      })}
-      onClick={(e) => {
-        setSelectedNode(currentPath);
-        e.stopPropagation();
-      }}
-    >
-      {node.subTree.length === 0 ? (
-        <div className="Parse-token-area">
-          <div className="Parse-token-group">
-            {[...node.french].sort().map((index) => (
-              <div key={index} className="Parse-token french">
-                {sentence.tokens_fr[index].text}{" "}
-              </div>
-            ))}
+  }): JSX.Element => {
+    console.assert(node !== undefined);
+    console.assert(node.subTree !== undefined, node);
+    console.assert(currentPath !== undefined);
+    return (
+      <span
+        className={classNames("Subparse", {
+          Selected: _.isEqual(selectedNode, currentPath),
+        })}
+        onClick={(e) => {
+          setSelectedNode(currentPath);
+          e.stopPropagation();
+        }}
+      >
+        {node.subTree.length === 0 ? (
+          <div className="Parse-token-area">
+            <div className="Parse-token-group">
+              {[...node.french].sort().map((index) => (
+                <div key={index} className="Parse-token french">
+                  {sentence.tokens_fr[index].text}{" "}
+                </div>
+              ))}
+            </div>
+            {Object.entries(node.english).map(
+              ([englishSentence, indices], englishSentenceIndex) => (
+                <div className="Parse-token-group" key={englishSentenceIndex}>
+                  {[...indices].sort().map((index) => (
+                    <div key={index} className="Parse-token french">
+                      {sentence.tokens_en[englishSentence][index].text}
+                    </div>
+                  ))}
+                </div>
+              )
+            )}
           </div>
-          {Object.entries(node.english).map(
-            ([englishSentence, indices], englishSentenceIndex) => (
-              <div className="Parse-token-group" key={englishSentenceIndex}>
-                {[...indices].sort().map((index) => (
-                  <div key={index} className="Parse-token french">
-                    {sentence.tokens_en[englishSentence][index].text}
-                  </div>
-                ))}
-              </div>
-            )
-          )}
-        </div>
-      ) : (
-        <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
-      )}
-    </span>
-  );
+        ) : (
+          <ContinueParseTree tree={node.subTree} currentPath={currentPath} />
+        )}
+      </span>
+    );
+  };
 
   const ContinueParseTree = ({
     tree,
@@ -488,15 +509,16 @@ const ViewParseTree = ({
   }) => (
     <>
       {tree.map((parseItem, index) => {
-        // This should be refactored - there's no need to separately
         const desc = structureDescription[parseItem.element];
+        console.log("parseItem parts", parseItem.info);
         return (
           <div key={index} className="Continueparse">
             <div className="Label">{parseItem.element}: </div>
-            {Object.entries(desc).map(([pathItem, required]) => (
+            {Object.entries(desc).map(([pathItem, required], index) => (
               <SubParse
+                key={index}
                 node={parseItem.info[pathItem as PathItem]!}
-                currentPath={currentPath.concat([[index, "root"]] as ParsePath)}
+                currentPath={currentPath.concat([[index, "root"]])}
               />
             ))}
           </div>
@@ -529,7 +551,8 @@ const getTokensAvailable = (
   parseTree: ParseTree
 ): { french: Indices; english: { [key: string]: Indices } } => {
   const tokensGivenToChildren = (
-    node: ParseItem
+    node: ParseItem,
+    branch: PathItem
   ): { french: Indices; english: { [key: string]: Indices } } => {
     if (node.element === "Quote") {
       const token_indices_fr = node.info.root!.french;
@@ -549,10 +572,11 @@ const getTokensAvailable = (
           french: _.tail(_.initial(node.info.root!.french)),
         };
       }
-    } else {
-      throw "not supported in getTokensAvailable";
     }
-    return { english: node.info.root!.english, french: node.info.root!.french };
+    return {
+      english: node.info[branch]!.english,
+      french: node.info[branch]!.french,
+    };
   };
 
   if (selectedParseNode.length === 0) {
@@ -579,7 +603,7 @@ const getTokensAvailable = (
   }
 
   const node = parseIndexParent(parseTree, _.initial(selectedParseNode));
-  return tokensGivenToChildren(node);
+  return tokensGivenToChildren(node, _.last(selectedParseNode)![1]);
 };
 
 const getTokensSelected = (
@@ -632,13 +656,18 @@ const addNode = (
       ),
       subTree: [],
     };
-    if (toAdd === "Quote") {
-      toAddTo.push({ element: "Quote", info: { root: emptyRoot } });
-    } else if (toAdd === "Number") {
-      toAddTo.push({ element: "Number", info: { root: emptyRoot } });
-    } else {
-      throw "not supported in addNode yet";
-    }
+
+    const newNode = {
+      element: toAdd,
+      info: Object.fromEntries(
+        Object.entries(structureDescription[toAdd]).map(([pathItem, _]) => [
+          pathItem,
+          emptyRoot,
+        ])
+      ),
+    };
+
+    toAddTo.push(newNode);
   });
 
 const Options = ({
@@ -648,11 +677,10 @@ const Options = ({
   appState: AppStateLoaded;
   setAppState: React.Dispatch<React.SetStateAction<AppState>>;
 }): JSX.Element => {
-  const ops: ParseItemType[] = ["Quote", "Number"];
   return (
     <div className="Options-box">
       <span>Add: </span>
-      {ops.map((nodeType) => (
+      {allParseItemTypes.map((nodeType) => (
         <button
           key={nodeType}
           onClick={() => {
