@@ -158,9 +158,10 @@ const allParseItemTypes: ParseItemType[] = [
   "Unknown",
 ];
 
-const structureDescription: {
-  [P in ParseItemType]: { [K in PathItem]?: boolean };
-} = {
+const structureDescription: Record<
+  ParseItemType,
+  { [K in PathItem]?: boolean }
+> = {
   Number: { root: true },
   Quote: { root: true },
   TransitiveVerb: {
