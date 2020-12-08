@@ -382,10 +382,11 @@ const toggleSelectFrenchToken = (
         draftState.parseTrees[draftState.currentSentenceString],
         draftState.selectedParseNode
       );
-      parent.info.root!.french = toggleTokens(
+      const branch = _.last(draftState.selectedParseNode)![1];
+      parent.info[branch]!.french = toggleTokens(
         index,
         shift,
-        parent.info.root!.french
+        parent.info[branch]!.french
       );
     })
   );
@@ -404,10 +405,11 @@ const toggleSelectEnglishToken = (
         draftState.parseTrees[draftState.currentSentenceString],
         draftState.selectedParseNode
       );
-      parent.info.root!.english[sentence] = toggleTokens(
+      const branch = _.last(draftState.selectedParseNode)![1];
+      parent.info[branch]!.english[sentence] = toggleTokens(
         index,
         shift,
-        parent.info.root!.english[sentence]
+        parent.info[branch]!.english[sentence]
       );
     })
   );
@@ -473,6 +475,11 @@ const ViewParseTree = ({
           e.stopPropagation();
         }}
       >
+        {currentPath.length > 0 && _.last(currentPath)![1] !== "root" ? (
+          <span>{_.last(currentPath)![1]}</span>
+        ) : (
+          <></>
+        )}
         {node.subTree.length === 0 ? (
           <div className="Parse-token-area">
             <div className="Parse-token-group">
