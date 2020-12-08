@@ -570,9 +570,12 @@ const getTokensAvailable = (
           english: Object.fromEntries(
             Object.entries(
               node.info.root!.english
-            ).map(([sentence, tokens]) => [sentence, _.tail(_.initial(tokens))])
+            ).map(([sentence, tokens]) => [
+              sentence,
+              _.tail(_.initial([...tokens].sort())),
+            ])
           ),
-          french: _.tail(_.initial(node.info.root!.french)),
+          french: _.tail(_.initial([...node.info.root!.french].sort())),
         };
       }
     }
