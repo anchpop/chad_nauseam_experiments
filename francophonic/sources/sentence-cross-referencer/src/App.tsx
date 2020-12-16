@@ -172,17 +172,47 @@ const structureDescription: Record<
     auxiliary: false,
     modification: false,
   },
-  IntransitiveVerb: {},
-  Preposition: {},
-  Adverb: {},
-  Adjective: {},
-  Article: {},
-  Pronoun: {},
-  Noun: {},
-  NounPhrase: {},
-  Conjunction: {},
-  Interjection: {},
-  Unknown: {},
+  IntransitiveVerb: {
+    root: true,
+    subject: false,
+    auxiliary: false,
+    modification: false,
+  },
+  Preposition: {
+    root: true,
+    relation: false,
+  },
+  Adverb: {
+    root: true,
+  },
+  Adjective: {
+    root: true,
+  },
+  Article: {
+    root: true,
+  },
+  Pronoun: {
+    root: true,
+  },
+  Noun: {
+    root: true,
+    article: false,
+    modification: false,
+  },
+  NounPhrase: {
+    root: true,
+  },
+  Conjunction: {
+    root: true,
+    part1: true,
+    part2: true,
+  },
+  Interjection: {
+    root: true,
+  },
+  Unknown: {
+    root: true,
+  },
 };
 
 const traversePathItem = (
