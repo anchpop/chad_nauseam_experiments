@@ -21,90 +21,6 @@ interface SentenceRangeNode {
 }
 
 type SentenceRange = SentenceRangeNode;
-/*
-interface Quote {
-  element: "quote";
-  root: SentenceRange;
-}
-
-interface Number {
-  element: "number";
-  root: SentenceRange;
-}
-
-interface TransitiveVerb {
-  element: "transitive verb";
-  root: SentenceRange;
-  subject: SentenceRange;
-  directObject: SentenceRange;
-  indirectObject?: SentenceRange;
-  auxiliary: SentenceRange;
-  modification: SentenceRange;
-}
-
-interface IntransitiveVerb {
-  element: "intransitive verb";
-  root: SentenceRange;
-  subject: SentenceRange;
-  auxiliary?: SentenceRange;
-  modification?: SentenceRange;
-}
-
-interface Preposition {
-  element: "preposition";
-  root: SentenceRange;
-  relation?: SentenceRange;
-}
-
-interface Adverb {
-  element: "adverb";
-  root: SentenceRange;
-}
-
-interface Article {
-  element: "article";
-  root: SentenceRange;
-}
-
-interface Pronoun {
-  element: "pronoun";
-  root: SentenceRange;
-}
-
-interface Noun {
-  element: "noun";
-  root: SentenceRange;
-  article?: SentenceRange;
-  modification?: SentenceRange;
-}
-
-interface Adjective {
-  element: "adjective";
-  root: SentenceRange;
-}
-
-interface NounPhrase {
-  element: "noun phrase";
-  root: SentenceRange;
-}
-
-interface Conjunction {
-  element: "conjunction";
-  root: SentenceRange;
-  part1: SentenceRange;
-  part2: SentenceRange;
-}
-
-interface Interjection {
-  element: "interjection";
-  root: SentenceRange;
-}
-
-interface Unknown {
-  element: "unknown";
-  root: SentenceRange
-}
-*/
 
 type PathItem =
   | "root"
@@ -285,7 +201,7 @@ type AppState = AppStateLoaded | AppStateUnloaded;
 
 const startingAppState: AppStateUnloaded = { nlpFileLoaded: false };
 
-const saveFile = async () => {
+const saveFile = async (appState: AppStateLoaded) => {
   const options = {
     types: [
       {
@@ -297,7 +213,9 @@ const saveFile = async () => {
     ],
   };
   const handle = await (window as any).showSaveFilePicker(options);
-  return handle;
+  const writable = await handle.createWritable();
+  await writable.write("test");
+  await writable.close();
 };
 
 const range = (from: number, to: number) => {
@@ -826,12 +744,25 @@ const App = () => {
   return (
     <div className="App">
       <div className="Main-container">
-        <button
-          onClick={async () => await analyzeNlpFile(appState, setAppState)}
-          id="But-get-nlp"
-        >
-          {appState.nlpFileLoaded ? "NLP File Loaded" : "Load NLP File"}
-        </button>
+        <div>
+          <button
+            onClick={async () => await analyzeNlpFile(appState, setAppState)}
+            id="But-get-nlp"
+          >
+            {appState.nlpFileLoaded ? "NLP File Loaded" : "Load NLP File"}
+          </button>
+
+          {appState.nlpFileLoaded ? (
+            <button
+              onClick={async () => await saveFile(appState)}
+              id="But-get-nlp"
+            >
+              Write info
+            </button>
+          ) : (
+            <></>
+          )}
+        </div>
 
         {appState.nlpFileLoaded ? (
           <LoadedApp appState={appState} setAppState={setAppState} />
@@ -839,7 +770,8 @@ const App = () => {
           <></>
         )}
       </div>
-      {appState.nlpFileLoaded === true ? (
+
+      {appState.nlpFileLoaded ? (
         Object.entries(appState.sentencesToAssociate).map(
           ([frenchSentence, info]) => (
             <p key={frenchSentence}>
