@@ -71,7 +71,7 @@ def main():
 
     pairs.sort(key=lambda sentence: rate_french_sentence_easiness(sentence[0], analysis), reverse=True)
 
-    data = {k: v for pair in pairs[:20] for k, v in get_nlp_info(nlp_en, nlp_fr, pair, analysis).items()}
+    data = {k: v for pair in pairs[:50] for k, v in get_nlp_info(nlp_en, nlp_fr, pair, analysis).items()}
 
     dump = yaml.dump(data, Dumper=Dumper, allow_unicode=True)
     with safer.open("work/nlp_sentences.yaml", "w", encoding='utf-8') as f:
