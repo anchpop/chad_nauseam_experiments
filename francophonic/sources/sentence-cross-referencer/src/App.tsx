@@ -214,7 +214,12 @@ const saveFile = async (appState: AppStateLoaded) => {
   };
   const handle = await (window as any).showSaveFilePicker(options);
   const writable = await handle.createWritable();
-  await writable.write("test");
+  await writable.write(
+    yaml.safeDump({
+      sentencesToAssociate: appState.sentencesToAssociate,
+      parseTrees: appState.parseTrees,
+    })
+  );
   await writable.close();
 };
 
