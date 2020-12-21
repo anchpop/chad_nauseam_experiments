@@ -5,7 +5,7 @@ import * as _ from "lodash";
 
 import "./sakura-vader.css";
 import "./App.css";
-import { objectTraps } from "immer/dist/internal";
+import { DRAFT_STATE, objectTraps } from "immer/dist/internal";
 
 const yaml = require("js-yaml");
 let classNames = require("classnames");
@@ -402,11 +402,13 @@ const ViewParseTree = ({
   parseTree,
   selectedNode,
   setSelectedNode,
+  deleteNode,
 }: {
   sentence: SentenceInfo;
   parseTree: ParseTree;
   selectedNode: ParsePath;
   setSelectedNode: (parsePath: ParsePath) => void;
+  deleteNode: (parsePath: ParsePath, index: number) => void;
 }): JSX.Element => {
   const SubParse = ({
     node,
@@ -471,9 +473,9 @@ const ViewParseTree = ({
     <>
       {tree.map((parseItem, index) => {
         const desc = structureDescription[parseItem.element];
-        console.log("parseItem parts", parseItem.info);
         return (
           <div key={index} className="Continueparse">
+            <button onClick={() => deleteNode(currentPath, index)}>x</button>
             <div className="Label">{parseItem.element}: </div>
             {Object.entries(desc).map(([pathItem, required], index_) => (
               <SubParse
@@ -638,34 +640,16 @@ const addNode = (
 
 const Options = ({
   appState,
-  setAppState,
+  setParseTree,
 }: {
   appState: AppStateLoaded;
-  setAppState: React.Dispatch<React.SetStateAction<AppState>>;
+  setParseTree: (parseItemType: ParseItemType) => void;
 }): JSX.Element => {
   return (
     <div className="Options-box">
       <span>Add: </span>
       {allParseItemTypes.map((nodeType) => (
-        <button
-          key={nodeType}
-          onClick={() => {
-            setAppState(
-              produce(appState, (draftAppState) => {
-                const currentSentenceString =
-                  draftAppState.currentSentenceString;
-                const currentParseTree =
-                  draftAppState.parseTrees[currentSentenceString];
-                draftAppState.parseTrees[currentSentenceString] = addNode(
-                  draftAppState.sentencesToAssociate[currentSentenceString],
-                  currentParseTree,
-                  draftAppState.selectedParseNode,
-                  nodeType
-                );
-              })
-            );
-          }}
-        >
+        <button key={nodeType} onClick={() => setParseTree(nodeType)}>
           {nodeType}
         </button>
       ))}
@@ -690,9 +674,31 @@ const LoadedApp = ({
     appState.selectedParseNode,
     appState.parseTrees[appState.currentSentenceString]
   );
+  const updateParseTree = (f: (parseTree: ParseTree) => ParseTree) => {
+    const parseTree: ParseTree =
+      appState.parseTrees[appState.currentSentenceString];
+    setAppState(
+      produce(appState, (draftState) => {
+        draftState.parseTrees[draftState.currentSentenceString] = f(parseTree);
+      })
+    );
+  };
+
   return (
     <>
-      <Options appState={appState} setAppState={setAppState} />
+      <Options
+        appState={appState}
+        setParseTree={(parseItemType) =>
+          updateParseTree((prevTree: ParseTree) =>
+            addNode(
+              appState.sentencesToAssociate[appState.currentSentenceString],
+              prevTree,
+              appState.selectedParseNode,
+              parseItemType
+            )
+          )
+        }
+      />
       <TokenButtons
         toggleSelect={(index, shift) =>
           toggleSelectFrenchToken(index, shift, appState, setAppState)
@@ -734,6 +740,17 @@ const LoadedApp = ({
         setSelectedNode={(path) => {
           setAppState({ ...appState, selectedParseNode: path });
         }}
+        deleteNode={(parsePath, index) =>
+          updateParseTree(
+            produce((draftTree) => {
+              const toDeleteParent = parseIndex(
+                appState.parseTrees[appState.currentSentenceString], // replace with drafttree
+                parsePath
+              );
+              toDeleteParent.splice(index);
+            })
+          )
+        }
       />
     </>
   );
@@ -741,10 +758,6 @@ const LoadedApp = ({
 
 const App = () => {
   const [appState, setAppState] = React.useState<AppState>(startingAppState);
-
-  if (appState.nlpFileLoaded) {
-    console.log(appState.parseTrees);
-  }
 
   return (
     <div className="App">
