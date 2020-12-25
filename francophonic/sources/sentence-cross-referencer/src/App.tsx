@@ -216,7 +216,6 @@ const saveFile = async (appState: AppStateLoaded) => {
   const writable = await handle.createWritable();
   await writable.write(
     yaml.safeDump({
-      sentencesToAssociate: appState.sentencesToAssociate,
       parseTrees: appState.parseTrees,
     })
   );
@@ -752,6 +751,22 @@ const LoadedApp = ({
           )
         }
       />
+
+      {Object.entries(appState.sentencesToAssociate).map(
+        ([frenchSentence, info]) => (
+          <button
+            disabled={frenchSentence == appState.currentSentenceString}
+            onClick={() =>
+              setAppState({
+                ...appState,
+                currentSentenceString: frenchSentence,
+              })
+            }
+          >
+            <p key={frenchSentence}>{frenchSentence}</p>
+          </button>
+        )
+      )}
     </>
   );
 };
@@ -788,25 +803,6 @@ const App = () => {
           <></>
         )}
       </div>
-
-      {appState.nlpFileLoaded ? (
-        Object.entries(appState.sentencesToAssociate).map(
-          ([frenchSentence, info]) => (
-            <p key={frenchSentence}>
-              {info.tokens_fr.map(({ text }, index) => (
-                <span
-                  key={frenchSentence + index}
-                  className={classNames("french", "token")}
-                >
-                  {text}
-                </span>
-              ))}
-            </p>
-          )
-        )
-      ) : (
-        <></>
-      )}
     </div>
   );
 };

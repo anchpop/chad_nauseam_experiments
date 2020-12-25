@@ -1,0 +1,1130 @@
+sentencesToAssociate:
+  '"3 pour 1 pour 2."':
+    tokens_en:
+      '"3 for 1 for 2."':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: '3'
+          pos: NUM
+          text: '3'
+          trailing_whitespace: ' '
+        - dep: prep
+          idx: 3
+          norm: for
+          pos: ADP
+          text: for
+          trailing_whitespace: ' '
+        - dep: pobj
+          idx: 7
+          norm: '1'
+          pos: NUM
+          text: '1'
+          trailing_whitespace: ' '
+        - dep: prep
+          idx: 9
+          norm: for
+          pos: ADP
+          text: for
+          trailing_whitespace: ' '
+        - dep: pobj
+          idx: 13
+          norm: '2'
+          pos: NUM
+          text: '2'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 14
+          norm: .
+          pos: PUNCT
+          text: .
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 15
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: '3'
+        pos: NUM
+        text: '3'
+        trailing_whitespace: ' '
+      - dep: case
+        idx: 3
+        norm: pour
+        pos: ADP
+        text: pour
+        trailing_whitespace: ' '
+      - dep: nmod
+        idx: 8
+        norm: '1'
+        pos: PRON
+        text: '1'
+        trailing_whitespace: ' '
+      - dep: case
+        idx: 10
+        norm: pour
+        pos: ADP
+        text: pour
+        trailing_whitespace: ' '
+      - dep: nmod
+        idx: 15
+        norm: '2'
+        pos: PRON
+        text: '2'
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 16
+        norm: .
+        pos: PUNCT
+        text: .
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 17
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"3 pour 2 pour 1."':
+    tokens_en:
+      '"3 for 2 for 1."':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: '3'
+          pos: NUM
+          text: '3'
+          trailing_whitespace: ' '
+        - dep: prep
+          idx: 3
+          norm: for
+          pos: ADP
+          text: for
+          trailing_whitespace: ' '
+        - dep: pobj
+          idx: 7
+          norm: '2'
+          pos: NUM
+          text: '2'
+          trailing_whitespace: ' '
+        - dep: prep
+          idx: 9
+          norm: for
+          pos: ADP
+          text: for
+          trailing_whitespace: ' '
+        - dep: pobj
+          idx: 13
+          norm: '1'
+          pos: NUM
+          text: '1'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 14
+          norm: .
+          pos: PUNCT
+          text: .
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 15
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: '3'
+        pos: NUM
+        text: '3'
+        trailing_whitespace: ' '
+      - dep: case
+        idx: 3
+        norm: pour
+        pos: ADP
+        text: pour
+        trailing_whitespace: ' '
+      - dep: nmod
+        idx: 8
+        norm: '2'
+        pos: PRON
+        text: '2'
+        trailing_whitespace: ' '
+      - dep: case
+        idx: 10
+        norm: pour
+        pos: ADP
+        text: pour
+        trailing_whitespace: ' '
+      - dep: nmod
+        idx: 15
+        norm: '1'
+        pos: PRON
+        text: '1'
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 16
+        norm: .
+        pos: PUNCT
+        text: .
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 17
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Et ?"':
+    tokens_en:
+      '"And?"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: and
+          pos: CCONJ
+          text: And
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 4
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 5
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: et
+        pos: CCONJ
+        text: Et
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 4
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 5
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"HARRY !"':
+    tokens_en:
+      '"HARRY!"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: harry
+          pos: PROPN
+          text: HARRY
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 6
+          norm: '!'
+          pos: PUNCT
+          text: '!'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 7
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: harry
+        pos: NOUN
+        text: HARRY
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 7
+        norm: '!'
+        pos: PUNCT
+        text: '!'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 8
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Harry !"':
+    tokens_en:
+      '"Harry!"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: harry
+          pos: PROPN
+          text: Harry
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 6
+          norm: '!'
+          pos: PUNCT
+          text: '!'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 7
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: harry
+        pos: PROPN
+        text: Harry
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 7
+        norm: '!'
+        pos: PUNCT
+        text: '!'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 8
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Harry -"':
+    tokens_en:
+      '"Harry -"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: harry
+          pos: PROPN
+          text: Harry
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 7
+          norm: '-'
+          pos: PUNCT
+          text: '-'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 8
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: harry
+        pos: PROPN
+        text: Harry
+        trailing_whitespace: ' '
+      - dep: 'flat:name'
+        idx: 7
+        norm: '-'
+        pos: PUNCT
+        text: '-'
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 8
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Je -"':
+    tokens_en:
+      '"I -"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: i
+          pos: PRON
+          text: I
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 3
+          norm: '-'
+          pos: PUNCT
+          text: '-'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 4
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: je
+        pos: PRON
+        text: Je
+        trailing_whitespace: ' '
+      - dep: ROOT
+        idx: 4
+        norm: '-'
+        pos: PUNCT
+        text: '-'
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 5
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Qui ?"':
+    tokens_en:
+      '"Who ?"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: who
+          pos: PRON
+          text: Who
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 5
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 6
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: qui
+        pos: PRON
+        text: Qui
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 5
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 6
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  '"Vous -"':
+    tokens_en:
+      '"You -"':
+        - dep: punct
+          idx: 0
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+        - dep: ROOT
+          idx: 1
+          norm: you
+          pos: PRON
+          text: You
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 5
+          norm: '-'
+          pos: PUNCT
+          text: '-'
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 6
+          norm: '"'
+          pos: PUNCT
+          text: '"'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: punct
+        idx: 0
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 1
+        norm: vous
+        pos: PRON
+        text: Vous
+        trailing_whitespace: ' '
+      - dep: ROOT
+        idx: 6
+        norm: '-'
+        pos: PUNCT
+        text: '-'
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 7
+        norm: '"'
+        pos: PUNCT
+        text: '"'
+        trailing_whitespace: ''
+  De ?:
+    tokens_en:
+      From?:
+        - dep: ROOT
+          idx: 0
+          norm: from
+          pos: ADP
+          text: From
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 4
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: de
+        pos: ADP
+        text: De
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 3
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Et ?:
+    tokens_en:
+      And?:
+        - dep: ROOT
+          idx: 0
+          norm: and
+          pos: CCONJ
+          text: And
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 3
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: et
+        pos: CCONJ
+        text: Et
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 3
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Et Je.:
+    tokens_en:
+      And I.:
+        - dep: cc
+          idx: 0
+          norm: and
+          pos: CCONJ
+          text: And
+          trailing_whitespace: ' '
+        - dep: ROOT
+          idx: 4
+          norm: i.
+          pos: NOUN
+          text: I.
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: cc
+        idx: 0
+        norm: et
+        pos: CCONJ
+        text: Et
+        trailing_whitespace: ' '
+      - dep: ROOT
+        idx: 3
+        norm: je
+        pos: PRON
+        text: Je
+        trailing_whitespace: ''
+      - dep: punct
+        idx: 5
+        norm: .
+        pos: PUNCT
+        text: .
+        trailing_whitespace: ''
+  HARRY !:
+    tokens_en:
+      HARRY!:
+        - dep: ROOT
+          idx: 0
+          norm: harry
+          pos: PROPN
+          text: HARRY
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 5
+          norm: '!'
+          pos: PUNCT
+          text: '!'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: harry
+        pos: NOUN
+        text: HARRY
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 6
+        norm: '!'
+        pos: PUNCT
+        text: '!'
+        trailing_whitespace: ''
+  HARRY ?:
+    tokens_en:
+      HARRY?:
+        - dep: ROOT
+          idx: 0
+          norm: harry
+          pos: PROPN
+          text: HARRY
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 5
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: harry
+        pos: NOUN
+        text: HARRY
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 6
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Harry !:
+    tokens_en:
+      Harry!:
+        - dep: ROOT
+          idx: 0
+          norm: harry
+          pos: PROPN
+          text: Harry
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 5
+          norm: '!'
+          pos: PUNCT
+          text: '!'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: harry
+        pos: PROPN
+        text: Harry
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 6
+        norm: '!'
+        pos: PUNCT
+        text: '!'
+        trailing_whitespace: ''
+  Harry ?:
+    tokens_en:
+      Harry?:
+        - dep: ROOT
+          idx: 0
+          norm: harry
+          pos: PROPN
+          text: Harry
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 5
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: harry
+        pos: PROPN
+        text: Harry
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 6
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Mais - !:
+    tokens_en:
+      But - !:
+        - dep: ROOT
+          idx: 0
+          norm: but
+          pos: CCONJ
+          text: But
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 4
+          norm: '-'
+          pos: INTJ
+          text: '-'
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 6
+          norm: '!'
+          pos: PUNCT
+          text: '!'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: mais
+        pos: CCONJ
+        text: Mais
+        trailing_whitespace: ' '
+      - dep: ROOT
+        idx: 5
+        norm: '-'
+        pos: PUNCT
+        text: '-'
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 7
+        norm: '!'
+        pos: PUNCT
+        text: '!'
+        trailing_whitespace: ''
+  Plus ?:
+    tokens_en:
+      More ?:
+        - dep: ROOT
+          idx: 0
+          norm: more
+          pos: ADJ
+          text: More
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 5
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: plus
+        pos: ADV
+        text: Plus
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 5
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Que… ?:
+    tokens_en:
+      That… ?:
+        - dep: ROOT
+          idx: 0
+          norm: that
+          pos: DET
+          text: That
+          trailing_whitespace: ''
+        - dep: punct
+          idx: 4
+          norm: ...
+          pos: PUNCT
+          text: …
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 6
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: mark
+        idx: 0
+        norm: que
+        pos: SCONJ
+        text: Que
+        trailing_whitespace: ''
+      - dep: ROOT
+        idx: 3
+        norm: ...
+        pos: NOUN
+        text: …
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 5
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+  Qui ?:
+    tokens_en:
+      Who ?:
+        - dep: ROOT
+          idx: 0
+          norm: who
+          pos: PRON
+          text: Who
+          trailing_whitespace: ' '
+        - dep: punct
+          idx: 4
+          norm: '?'
+          pos: PUNCT
+          text: '?'
+          trailing_whitespace: ''
+    tokens_fr:
+      - dep: ROOT
+        idx: 0
+        norm: qui
+        pos: PRON
+        text: Qui
+        trailing_whitespace: ' '
+      - dep: punct
+        idx: 4
+        norm: '?'
+        pos: PUNCT
+        text: '?'
+        trailing_whitespace: ''
+parseTrees:
+  '"3 pour 1 pour 2."':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+          english:
+            '"3 for 1 for 2."':
+              - 0
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+          subTree:
+            - element: Number
+              info:
+                root:
+                  french:
+                    - 1
+                  english:
+                    '"3 for 1 for 2."':
+                      - 1
+                  subTree: []
+            - element: Preposition
+              info:
+                root:
+                  french:
+                    - 2
+                  english:
+                    '"3 for 1 for 2."':
+                      - 2
+                  subTree: &ref_0 []
+                relation:
+                  french: []
+                  english:
+                    '"3 for 1 for 2."': []
+                  subTree: *ref_0
+            - element: Number
+              info:
+                root:
+                  french:
+                    - 3
+                  english:
+                    '"3 for 1 for 2."':
+                      - 3
+                  subTree: []
+            - element: Preposition
+              info:
+                root:
+                  french:
+                    - 4
+                  english:
+                    '"3 for 1 for 2."':
+                      - 4
+                  subTree: &ref_1 []
+                relation:
+                  french: []
+                  english:
+                    '"3 for 1 for 2."': []
+                  subTree: *ref_1
+            - element: Number
+              info:
+                root:
+                  french:
+                    - 5
+                  english:
+                    '"3 for 1 for 2."':
+                      - 5
+                  subTree: []
+  '"3 pour 2 pour 1."':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+          english:
+            '"3 for 2 for 1."':
+              - 0
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+          subTree: []
+  '"Et ?"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"And?"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"HARRY !"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"HARRY!"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"Harry !"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"Harry!"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"Harry -"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"Harry -"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"Je -"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"I -"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"Qui ?"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"Who ?"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  '"Vous -"':
+    - element: Quote
+      info:
+        root:
+          french:
+            - 0
+            - 1
+            - 2
+            - 3
+          english:
+            '"You -"':
+              - 0
+              - 1
+              - 2
+              - 3
+          subTree: []
+  De ?: []
+  Et ?: []
+  Et Je.: []
+  HARRY !: []
+  HARRY ?: []
+  Harry !: []
+  Harry ?: []
+  Mais - !: []
+  Plus ?: []
+  Que… ?: []
+  Qui ?: []
