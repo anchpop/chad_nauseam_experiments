@@ -59,7 +59,7 @@ const ReviewScreen = () => {
       imageLight={require("../assets/images/france/franceLight.jpg")}
       imageDark={require("../assets/images/france/franceDark.jpg")}
     >
-      <Question frenchText={sentence} parseNodes={associations} />
+      <Question frenchText={sentence} parseNodes={associations.parse} />
 
       <View style={reviewPageStyles.answerContainer}>
         <TextInput
