@@ -11,9 +11,23 @@ export interface ParseNode {
 
 export type ParseNodes = ParseNode[];
 
+export interface Token {
+  dep: string;
+  idx: number;
+  norm: string;
+  pos: string;
+  text: string;
+  trailing_whitespace: string;
+}
+
+export interface SentenceTokens {
+  tokens_en: { [key: string]: Token[] };
+  tokens_fr: Token[];
+}
+
 export interface AssociationInfo {
   parseTrees: {
-    [key: string]: { tokens: any; parse: ParseNodes };
+    [key: string]: { tokens: SentenceTokens; parse: ParseNodes };
   };
 }
 
