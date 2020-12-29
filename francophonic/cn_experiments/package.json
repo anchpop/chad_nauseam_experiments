@@ -18,6 +18,7 @@
     "expo": "^39.0.4",
     "expo-av": "~8.6.0",
     "expo-status-bar": "~1.0.2",
+    "immer": "^8.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "0.63.3",

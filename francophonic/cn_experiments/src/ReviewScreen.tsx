@@ -1,5 +1,6 @@
 import * as React from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import produce from "immer";
 
 import { Audio } from "expo-av";
 import { Ionicons } from "@expo/vector-icons";
@@ -76,13 +77,13 @@ const AnswerView = ({
 const Buttons = ({
   letters,
 }: {
-  letters: { text: string; correct: boolean }[];
+  letters: { text: string; onPress: () => void }[];
 }) => {
   const { reviewPageStyles } = useStyle();
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
-      {letters.map(({ text, correct }, index) => (
-        <TouchableOpacity key={index}>
+      {letters.map(({ text, onPress }, index) => (
+        <TouchableOpacity key={index} onPress={onPress}>
           <View style={reviewPageStyles.answerBox}>
             <Text style={reviewPageStyles.answerText}>{text}</Text>
           </View>
@@ -119,7 +120,20 @@ const ReviewScreen = () => {
     >
       <Question sentenceTokens={sentenceInfo.tokens} />
       <AnswerView enteredCharacters={enteredCharacters} />
-      <Buttons letters={[{ text: '"', correct: true }]} />
+      <Buttons
+        letters={[
+          {
+            text: '"',
+            onPress: () => {
+              setEnteredCharacters(
+                produce(enteredCharacters, (draftCharacters) => {
+                  draftCharacters[currentFocusedFrenchWord].entered += '"';
+                })
+              );
+            },
+          },
+        ]}
+      />
     </Container>
   );
 };
