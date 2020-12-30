@@ -2,6 +2,8 @@ import * as React from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import produce from "immer";
 
+import * as _ from "lodash";
+
 import { Audio } from "expo-av";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -17,6 +19,15 @@ import wordAssociations, {
   SentenceTokens,
   ParseNodes,
 } from "./data/wordAssociations";
+import { frenchContractions } from "./data/worddictionary";
+
+interface ReviewState {
+  enteredCharacters: { [key: number]: string };
+}
+
+const initialReviewState: () => ReviewState = () => ({
+  enteredCharacters: {},
+});
 
 const playSound = async () => {
   const soundObject = new Audio.Sound();
@@ -93,25 +104,89 @@ const Buttons = ({
   );
 };
 
+const findNodesAssociations = (
+  index: number,
+  parseNodesRoot: ParseNodes
+): { french: number[][]; english: { [key: string]: number[][] } } => {
+  const findNode = (
+    node: ParseNode
+  ): { french: number[][]; english: { [key: string]: number[][] } } => {
+    const parts = Object.entries(node.info)
+      .map(([_, p]) => {
+        if (p.french.includes(index)) {
+          const cont = findNodes(p.subTree);
+          return {
+            french: cont.french.concat([p.french]),
+            english: Object.fromEntries(
+              Object.entries(p.english).map(([k, v]) => [
+                k,
+                (cont.english[k] || []).concat([v]),
+              ])
+            ),
+          };
+        } else {
+          return { french: [], english: {} };
+        }
+      })
+      .filter(({ french }) => french.length > 0);
+    console.assert(parts.length <= 1);
+    if (parts.length == 0) {
+      return { french: [], english: {} };
+    } else {
+      return parts[0];
+    }
+  };
+
+  const findNodes = (
+    nodes: ParseNodes
+  ): { french: number[][]; english: { [key: string]: number[][] } } => {
+    const out = nodes.map(findNode);
+    const found = out.filter(({ french }) => french.length);
+    console.assert(found.length <= 1);
+    if (found.length == 0) {
+      return { french: [], english: {} };
+    } else {
+      return found[0];
+    }
+  };
+
+  return findNodes(parseNodesRoot);
+};
+
 const ReviewScreen = () => {
-  const [currentInput, setCurrentInput] = React.useState("");
   const { reviewPageStyles } = useStyle();
 
-  const [_, sentenceInfo] = Object.entries(wordAssociations.parseTrees)[0];
+  const [_s, sentenceInfo] = Object.entries(wordAssociations.parseTrees)[0];
 
-  const [enteredCharacters, setEnteredCharacters] = React.useState<
-    { entered: string; goal: string }[]
-  >(
-    Object.entries(sentenceInfo.tokens.tokens_en)[0][1].map(({ text }) => ({
-      entered: "",
-      goal: text,
-    }))
-  );
+  const [appState, setAppState] = React.useState(initialReviewState());
 
-  const [
-    currentFocusedFrenchWord,
-    setCurrentFocusedFrenchWord,
-  ] = React.useState(0);
+  const engSentenceSelected: string = Object.entries(
+    sentenceInfo.tokens.tokens_en
+  )[0][0];
+
+  const possump = findNodesAssociations(1, sentenceInfo.parse);
+
+  const allAssociations = _.range(
+    sentenceInfo.tokens.tokens_fr.length
+  ).map((i) => findNodesAssociations(i, sentenceInfo.parse));
+
+  const enteredCharactersObj = allAssociations
+    .map((possum, frenchIndex) => {
+      const englishIndex = possum.english[engSentenceSelected][0][0];
+      console.log(sentenceInfo.tokens.tokens_en[engSentenceSelected]);
+      return {
+        [englishIndex]: {
+          entered: appState.enteredCharacters[frenchIndex] || "",
+          goal:
+            sentenceInfo.tokens.tokens_en[engSentenceSelected][englishIndex]
+              .text,
+        },
+      };
+    })
+    .reduce((x, acc) => ({ ...x, ...acc }));
+  const enteredCharacters = _.range(
+    Object.keys(enteredCharactersObj).length
+  ).map((i) => enteredCharactersObj[i]);
 
   return (
     <Container
@@ -125,9 +200,10 @@ const ReviewScreen = () => {
           {
             text: '"',
             onPress: () => {
-              setEnteredCharacters(
-                produce(enteredCharacters, (draftCharacters) => {
-                  draftCharacters[currentFocusedFrenchWord].entered += '"';
+              setAppState(
+                produce(appState, (draftState) => {
+                  draftState.enteredCharacters[0] =
+                    (draftState.enteredCharacters[0] || "") + '"';
                 })
               );
             },

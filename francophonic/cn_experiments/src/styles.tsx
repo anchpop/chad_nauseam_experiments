@@ -87,7 +87,6 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
         flexShrink: 2,
       },
       answerBox: {
-        borderRadius: 100,
         backgroundColor: disaffect(base.backgroundColor, 0.3),
         marginRight: 4,
         padding: 3,

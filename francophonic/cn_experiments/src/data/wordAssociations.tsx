@@ -39,9 +39,9 @@ const associationInfo: AssociationInfo = {
           element: "Quote",
           info: {
             root: {
-              french: [0, 1, 2, 3, 4, 5, 6, 7],
+              french: [1, 2, 3, 4, 5, 6],
               english: {
-                '"3 for 1 for 2."': [0, 1, 2, 3, 4, 5, 6, 7],
+                '"3 for 1 for 2."': [1, 2, 3, 4, 5, 6],
               },
               subTree: [
                 {
@@ -118,7 +118,29 @@ const associationInfo: AssociationInfo = {
                     },
                   },
                 },
+                {
+                  element: "Punctuation",
+                  info: {
+                    root: {
+                      french: [6],
+                      english: {
+                        '"3 for 1 for 2."': [6],
+                      },
+                      subTree: [],
+                    },
+                  },
+                },
               ],
+            },
+            startQuote: {
+              french: [0],
+              english: { '"3 for 1 for 2."': [0] },
+              subTree: [],
+            },
+            endQuote: {
+              french: [7],
+              english: { '"3 for 1 for 2."': [7] },
+              subTree: [],
             },
           },
         },

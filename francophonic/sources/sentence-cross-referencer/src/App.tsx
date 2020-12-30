@@ -32,7 +32,9 @@ type PathItem =
   | "relation"
   | "article"
   | "part1"
-  | "part2";
+  | "part2"
+  | "startQuote"
+  | "endQuote";
 type ParsePath = [number, PathItem][];
 
 type ParseItem = {
@@ -56,6 +58,7 @@ type ParseItemType =
   | "NounPhrase"
   | "Conjunction"
   | "Interjection"
+  | "Punctuation"
   | "Unknown";
 const allParseItemTypes: ParseItemType[] = [
   "Number",
@@ -79,7 +82,12 @@ const structureDescription: Record<
   { [K in PathItem]?: boolean }
 > = {
   Number: { root: true },
-  Quote: { root: true },
+  Punctuation: { root: true },
+  Quote: {
+    root: true,
+    startQuote: false,
+    endQuote: false,
+  },
   TransitiveVerb: {
     root: true,
     subject: false,
@@ -244,11 +252,31 @@ const initializeParseTree = (
             element: "Quote",
             info: {
               root: {
-                french: range(0, tokens_fr.length),
+                french: range(1, tokens_fr.length - 1),
                 english: Object.fromEntries(
                   Object.entries(tokens_en).map(([sentence, tokens]) => [
                     sentence,
-                    range(0, tokens.length),
+                    range(1, tokens.length - 1),
+                  ])
+                ),
+                subTree: [],
+              },
+              startQuote: {
+                french: [0],
+                english: Object.fromEntries(
+                  Object.entries(tokens_en).map(([sentence, tokens]) => [
+                    sentence,
+                    [0],
+                  ])
+                ),
+                subTree: [],
+              },
+              endQuote: {
+                french: [tokens_fr.length - 1],
+                english: Object.fromEntries(
+                  Object.entries(tokens_en).map(([sentence, tokens]) => [
+                    sentence,
+                    [tokens.length - 1],
                   ])
                 ),
                 subTree: [],
