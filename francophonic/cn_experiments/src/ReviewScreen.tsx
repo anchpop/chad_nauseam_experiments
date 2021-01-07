@@ -153,40 +153,71 @@ const findNodesAssociations = (
   return findNodes(parseNodesRoot);
 };
 
+// I want to refactor this to use "lfrom" and "lto" instead of "french" and "english" as much as possible so it's easier to refactor parts of it into being language agnostic
 const ReviewScreen = () => {
   const { reviewPageStyles } = useStyle();
 
+  // Eventually we'll get this dynamically instead of hard-coding it, but since we actually only have one sentence association so far I don't think it makes a big difference for now
   const [_s, sentenceInfo] = Object.entries(wordAssociations.parseTrees)[0];
 
   const [appState, setAppState] = React.useState(initialReviewState());
 
-  const engSentenceSelected: string = Object.entries(
+  // This picks the first first possible lto sentence for no reason, I don't think something like this should be necessary past the MVP
+  const ltoSentenceSelected: string = Object.entries(
     sentenceInfo.tokens.tokens_en
   )[0][0];
-
-  const possump = findNodesAssociations(1, sentenceInfo.parse);
 
   const allAssociations = _.range(
     sentenceInfo.tokens.tokens_fr.length
   ).map((i) => findNodesAssociations(i, sentenceInfo.parse));
 
-  const enteredCharactersObj = allAssociations
-    .map((possum, frenchIndex) => {
-      const englishIndex = possum.english[engSentenceSelected][0][0];
-      console.log(sentenceInfo.tokens.tokens_en[engSentenceSelected]);
+  // Need to figure how this should work when there are multiple correct destination sentences! Because that isn't uncommon!
+  const ltoInfoObj = allAssociations
+    .map((associations, frenchIndex) => {
+      const englishIndex = associations.english[ltoSentenceSelected][0][0];
+      console.log(sentenceInfo.tokens.tokens_en[ltoSentenceSelected]);
       return {
         [englishIndex]: {
           entered: appState.enteredCharacters[frenchIndex] || "",
           goal:
-            sentenceInfo.tokens.tokens_en[engSentenceSelected][englishIndex]
+            sentenceInfo.tokens.tokens_en[ltoSentenceSelected][englishIndex]
               .text,
         },
       };
     })
     .reduce((x, acc) => ({ ...x, ...acc }));
-  const enteredCharacters = _.range(
-    Object.keys(enteredCharactersObj).length
-  ).map((i) => enteredCharactersObj[i]);
+
+  const ltoInfo: {
+    entered: string;
+    goal: string;
+  }[] = _.range(Object.keys(ltoInfoObj).length).map((i) => ltoInfoObj[i]);
+
+  const pairsToDo = ltoInfo
+    .map((content, ltoIndex) => ({
+      content,
+      ltoIndex,
+    }))
+    .filter(({ content }) => content.goal !== content.entered);
+
+  if (pairsToDo.length === 0) {
+    return <Text>no code for this part yet :p</Text>;
+  }
+
+  const englishIndex = pairsToDo[0].ltoIndex;
+
+  const letters = [
+    {
+      text: '"',
+      onPress: () => {
+        setAppState(
+          produce(appState, (draftState) => {
+            draftState.enteredCharacters[0] =
+              (draftState.enteredCharacters[0] || "") + '"';
+          })
+        );
+      },
+    },
+  ];
 
   return (
     <Container
@@ -194,22 +225,9 @@ const ReviewScreen = () => {
       imageDark={require("../assets/images/france/franceDark.jpg")}
     >
       <Question sentenceTokens={sentenceInfo.tokens} />
-      <AnswerView enteredCharacters={enteredCharacters} />
-      <Buttons
-        letters={[
-          {
-            text: '"',
-            onPress: () => {
-              setAppState(
-                produce(appState, (draftState) => {
-                  draftState.enteredCharacters[0] =
-                    (draftState.enteredCharacters[0] || "") + '"';
-                })
-              );
-            },
-          },
-        ]}
-      />
+      <AnswerView enteredCharacters={ltoInfo} />
+      <Buttons letters={letters} />
+      <Text>{pairsToDo[0].ltoIndex}</Text>
     </Container>
   );
 };
