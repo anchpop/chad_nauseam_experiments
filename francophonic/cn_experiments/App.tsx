@@ -1,4 +1,7 @@
 import * as React from "react";
+
+import { enableMapSet } from "immer";
+
 import { useColorScheme, useWindowDimensions } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -11,6 +14,8 @@ import { ThemeContext } from "./src/styles";
 const Stack = createStackNavigator();
 
 const App = () => {
+  enableMapSet();
+
   const isMobileDevice = useMediaQuery({
     maxDeviceWidth: 1224,
   });
