@@ -29,7 +29,8 @@ import wordAssociations, {
 } from "./data/wordAssociations";
 import { frenchContractions } from "./data/worddictionary";
 import associationInfo from "./data/wordAssociations";
-import { map } from "lodash";
+
+var shuffleSeed = require("shuffle-seed");
 
 interface ReviewState {
   enteredCharacters: Map<number[], string>;
@@ -125,14 +126,22 @@ const Buttons = ({
 }) => {
   const { reviewPageStyles } = useStyle();
   return (
-    <View style={{ flex: 1, flexDirection: "row" }}>
-      {letters.map(({ text, onPress }, index) => (
-        <TouchableOpacity key={index} onPress={onPress}>
-          <View style={reviewPageStyles.buttonBox}>
-            <Text style={reviewPageStyles.buttonText}>{text}</Text>
-          </View>
-        </TouchableOpacity>
-      ))}
+    <View
+      style={{
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "center",
+      }}
+    >
+      <Text style={{ textAlign: "right" }}>
+        {letters.map(({ text, onPress }, index) => (
+          <TouchableOpacity key={index} onPress={onPress}>
+            <View style={reviewPageStyles.buttonBox}>
+              <Text style={reviewPageStyles.buttonText}>{text}</Text>
+            </View>
+          </TouchableOpacity>
+        ))}
+      </Text>
     </View>
   );
 };
@@ -308,17 +317,31 @@ const ReviewScreen = () => {
 
   const ltoAnswer = ltoInfo[0]!;
 
-  const letters = possibleNextCharacters.map((letter) => ({
-    text: letter,
-    onPress: () => {
-      setAppState(
-        produce(appState, (draftState) => {
-          const previous = draftState.enteredCharacters.get(lfromChunk) || "";
-          draftState.enteredCharacters.set(lfromChunk, previous + letter);
-        })
-      );
-    },
-  }));
+  const letters = shuffleSeed.shuffle(
+    possibleNextCharacters
+      .map((letter) => ({
+        text: letter,
+        onPress: () => {
+          setAppState(
+            produce(appState, (draftState) => {
+              const previous =
+                draftState.enteredCharacters.get(lfromChunk) || "";
+              draftState.enteredCharacters.set(lfromChunk, previous + letter);
+            })
+          );
+        },
+      }))
+      .concat(
+        _.range(4).map((_i) => ({
+          text: ":",
+          onPress: () => {},
+        }))
+      ),
+    _.toString(
+      tokensCorrectlyEntered *
+        ltoAnswer[tokensCorrectlyEntered].enteredCharacters.length
+    )
+  );
 
   return (
     <Container
