@@ -3,9 +3,10 @@ import * as React from "react";
 import produce, { current, enableMapSet } from "immer";
 import * as _ from "lodash";
 
+import { useKeyPress } from "./useKeyPress";
+
 import "./sakura-vader.css";
 import "./App.css";
-import { DRAFT_STATE, objectTraps } from "immer/dist/internal";
 
 const yaml = require("js-yaml");
 let classNames = require("classnames");
@@ -198,6 +199,7 @@ interface AppStateLoaded {
   sentencesToAssociate: Sentences;
   currentSentenceString: string;
   parseTrees: { [key: string]: ParseTree };
+  previousParseTrees: ParseTree[];
   selectedParseNode: ParsePath;
 }
 
@@ -337,6 +339,7 @@ const analyzeNlpFile = async (
     sentencesToAssociate,
     currentSentenceString,
     parseTrees,
+    previousParseTrees: [],
     selectedParseNode,
   };
 
@@ -708,6 +711,8 @@ const LoadedApp = ({
   appState: AppStateLoaded;
   setAppState: React.Dispatch<React.SetStateAction<AppState>>;
 }): JSX.Element => {
+  const undoPressed = useKeyPress("z");
+
   const tokensAvailable = getTokensAvailable(
     appState.sentencesToAssociate[appState.currentSentenceString],
     appState.selectedParseNode,
@@ -720,12 +725,25 @@ const LoadedApp = ({
   );
   const updateParseTree = (f: (parseTree: ParseTree) => ParseTree) => {
     const newState = produce(appState, (draftState) => {
-      draftState.parseTrees[draftState.currentSentenceString] = f(
-        draftState.parseTrees[draftState.currentSentenceString]
-      );
+      const oldTree = draftState.parseTrees[draftState.currentSentenceString];
+      draftState.parseTrees[draftState.currentSentenceString] = f(oldTree);
+      draftState.previousParseTrees.push(oldTree);
     });
     setAppState(newState);
   };
+
+  if (undoPressed) {
+    if (appState.previousParseTrees.length > 0) {
+      setAppState(
+        produce(appState, (draftState) => {
+          const newParseTree = draftState.previousParseTrees.pop()!;
+          draftState.parseTrees[
+            draftState.currentSentenceString
+          ] = newParseTree;
+        })
+      );
+    }
+  }
 
   return (
     <>
@@ -804,6 +822,7 @@ const LoadedApp = ({
               setAppState({
                 ...appState,
                 currentSentenceString: frenchSentence,
+                previousParseTrees: [],
               })
             }
             key={index}
