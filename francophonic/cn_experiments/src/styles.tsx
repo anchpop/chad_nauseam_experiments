@@ -98,10 +98,19 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
         fontFamily: Platform.OS === "ios" ? "Courier" : "monospace", // this is dumb tbh
         fontSize: base.fontSize * 1.1,
       },
-      invisAnswerText: {
+      buttonBox: {
+        backgroundColor: disaffect(base.backgroundColor, 0.3),
+        marginRight: 4,
+        padding: 10,
+      },
+      buttonText: {
+        fontFamily: Platform.OS === "ios" ? "Courier" : "monospace", // this is dumb tbh
+        fontSize: base.fontSize * 1.4,
+      },
+      answerTextInvis: {
         fontFamily: Platform.OS === "ios" ? "Courier" : "monospace", // this is dumb tbh
         fontSize: base.fontSize * 1.1,
-        color: disaffect(base.backgroundColor, 0.3), // should always be the same as answerText.answerBox, should use a variable for this or find a better way to make it invisible
+        color: "#00000000",
       },
       submitButtonContainer: {
         flex: 1,
@@ -110,7 +119,7 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       questionText: {
         fontSize: base.fontSize,
       },
-      questionTexttHighlight: {
+      questionTextHighlight: {
         backgroundColor: "#FFEB3B",
       },
       answerTextInput: {

@@ -71,7 +71,7 @@ const Question = ({
                 <Text
                   style={
                     lfromChunk.includes(index)
-                      ? reviewPageStyles.questionTexttHighlight
+                      ? reviewPageStyles.questionTextHighlight
                       : {}
                   }
                 >
@@ -108,7 +108,7 @@ const AnswerView = ({
             ]}
           >
             <Text style={reviewPageStyles.answerText}>{enteredCharacters}</Text>
-            <Text style={reviewPageStyles.invisAnswerText}>
+            <Text style={reviewPageStyles.answerTextInvis}>
               {goal.substring(enteredCharacters.length, goal.length)}
             </Text>
           </Text>
@@ -128,8 +128,8 @@ const Buttons = ({
     <View style={{ flex: 1, flexDirection: "row" }}>
       {letters.map(({ text, onPress }, index) => (
         <TouchableOpacity key={index} onPress={onPress}>
-          <View style={reviewPageStyles.answerBox}>
-            <Text style={reviewPageStyles.answerText}>{text}</Text>
+          <View style={reviewPageStyles.buttonBox}>
+            <Text style={reviewPageStyles.buttonText}>{text}</Text>
           </View>
         </TouchableOpacity>
       ))}
