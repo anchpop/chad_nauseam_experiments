@@ -89,15 +89,24 @@ const Question = ({
 
 const AnswerView = ({
   enteredCharacters,
+  tokensCorrectlyEntered,
 }: {
   enteredCharacters: { enteredCharacters: string; goal: string }[];
+  tokensCorrectlyEntered: number;
 }) => {
   const { reviewPageStyles } = useStyle();
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
       {enteredCharacters.map(({ enteredCharacters, goal }, index) => (
         <View key={index}>
-          <Text style={reviewPageStyles.answerBox}>
+          <Text
+            style={[
+              reviewPageStyles.answerBox,
+              tokensCorrectlyEntered === index
+                ? reviewPageStyles.answerBoxHighlight
+                : {},
+            ]}
+          >
             <Text style={reviewPageStyles.answerText}>{enteredCharacters}</Text>
             <Text style={reviewPageStyles.invisAnswerText}>
               {goal.substring(enteredCharacters.length, goal.length)}
@@ -317,7 +326,10 @@ const ReviewScreen = () => {
       imageDark={require("../assets/images/france/franceDark.jpg")}
     >
       <Question sentenceTokens={sentenceInfo.tokens} lfromChunk={lfromChunk} />
-      <AnswerView enteredCharacters={ltoAnswer} />
+      <AnswerView
+        enteredCharacters={ltoAnswer}
+        tokensCorrectlyEntered={tokensCorrectlyEntered}
+      />
       <Buttons letters={letters} />
     </Container>
   );

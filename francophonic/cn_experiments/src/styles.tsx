@@ -91,6 +91,9 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
         marginRight: 4,
         padding: 3,
       },
+      answerBoxHighlight: {
+        backgroundColor: "#FFEB3B",
+      },
       answerText: {
         fontFamily: Platform.OS === "ios" ? "Courier" : "monospace", // this is dumb tbh
         fontSize: base.fontSize * 1.1,
