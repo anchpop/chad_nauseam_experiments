@@ -75,6 +75,7 @@ const allParseItemTypes: ParseItemType[] = [
   "NounPhrase",
   "Conjunction",
   "Interjection",
+  "Punctuation",
   "Unknown",
 ];
 
@@ -211,6 +212,11 @@ type AppState = AppStateLoaded | AppStateUnloaded;
 
 const startingAppState: AppStateUnloaded = { nlpFileLoaded: false };
 
+const trace = (a: any) => {
+  console.log(a);
+  return a;
+};
+
 const saveFile = async (appState: AppStateLoaded) => {
   const options = {
     types: [
@@ -227,15 +233,25 @@ const saveFile = async (appState: AppStateLoaded) => {
   await writable.write(
     yaml.safeDump({
       parseTrees: Object.fromEntries(
-        Object.entries(appState.parseTrees).map(
-          ([frenchSentence, parseTree]) => [
+        Object.entries(appState.parseTrees)
+          .filter(
+            ([frenchSentence, parseTree]) =>
+              !_.isEqual(
+                parseTree,
+                trace(
+                  initializeParseTree(
+                    appState.sentencesToAssociate[frenchSentence]
+                  )
+                )
+              )
+          )
+          .map(([frenchSentence, parseTree]) => [
             frenchSentence,
             {
               parse: parseTree,
               tokens: appState.sentencesToAssociate[frenchSentence],
             },
-          ]
-        )
+          ])
       ),
     })
   );
@@ -251,53 +267,51 @@ const range = (from: number, to: number) => {
   return arr;
 };
 
-const initializeParseTree = (
-  sentence: string,
-  { tokens_fr, tokens_en }: SentenceInfo
-): { [key: string]: ParseTree } =>
+const initializeParseTree = ({
+  tokens_fr,
+  tokens_en,
+}: SentenceInfo): ParseTree =>
   tokens_fr.filter(({ text }) => text === '"').length === 2 &&
   tokens_fr[0].text === '"' &&
   _.last(tokens_fr)!.text === '"'
-    ? {
-        [sentence]: [
-          {
-            element: "Quote",
-            info: {
-              root: {
-                french: range(1, tokens_fr.length - 1),
-                english: Object.fromEntries(
-                  Object.entries(tokens_en).map(([sentence, tokens]) => [
-                    sentence,
-                    range(1, tokens.length - 1),
-                  ])
-                ),
-                subTree: [],
-              },
-              startQuote: {
-                french: [0],
-                english: Object.fromEntries(
-                  Object.entries(tokens_en).map(([sentence, tokens]) => [
-                    sentence,
-                    [0],
-                  ])
-                ),
-                subTree: [],
-              },
-              endQuote: {
-                french: [tokens_fr.length - 1],
-                english: Object.fromEntries(
-                  Object.entries(tokens_en).map(([sentence, tokens]) => [
-                    sentence,
-                    [tokens.length - 1],
-                  ])
-                ),
-                subTree: [],
-              },
+    ? [
+        {
+          element: "Quote",
+          info: {
+            root: {
+              french: range(1, tokens_fr.length - 1),
+              english: Object.fromEntries(
+                Object.entries(tokens_en).map(([sentence, tokens]) => [
+                  sentence,
+                  range(1, tokens.length - 1),
+                ])
+              ),
+              subTree: [],
+            },
+            startQuote: {
+              french: [0],
+              english: Object.fromEntries(
+                Object.entries(tokens_en).map(([sentence, tokens]) => [
+                  sentence,
+                  [0],
+                ])
+              ),
+              subTree: [],
+            },
+            endQuote: {
+              french: [tokens_fr.length - 1],
+              english: Object.fromEntries(
+                Object.entries(tokens_en).map(([sentence, tokens]) => [
+                  sentence,
+                  [tokens.length - 1],
+                ])
+              ),
+              subTree: [],
             },
           },
-        ],
-      }
-    : { [sentence]: [] };
+        },
+      ]
+    : [];
 
 const analyzeNlpFile = async (
   appState: AppState,
@@ -327,7 +341,9 @@ const analyzeNlpFile = async (
   const parseTrees: { [key: string]: ParseTree } = Object.entries(
     sentencesToAssociate
   )
-    .map(([sentence, info]) => initializeParseTree(sentence, info))
+    .map(([sentence, info]) => ({
+      [sentence]: initializeParseTree(info),
+    }))
     .reduce((x, acc) => ({ ...x, ...acc }));
 
   const selectedParseNode: ParsePath = [];
@@ -509,35 +525,46 @@ const ViewParseTree = ({
   }: {
     tree: ParseTree;
     currentPath: ParsePath;
-  }) => (
-    <>
-      {tree.map((parseItem, index) => {
-        const desc = structureDescription[parseItem.element];
-        return (
-          <div key={index} className="Continueparse">
-            <button
-              onClick={(e) => {
-                deleteNode(currentPath, index);
-                e.stopPropagation();
-              }}
-            >
-              x
-            </button>
-            <div className="Label">{parseItem.element}: </div>
-            {Object.entries(desc).map(([pathItem, required], index_) => (
-              <SubParse
-                key={index_}
-                node={parseItem.info[pathItem as PathItem]!}
-                currentPath={currentPath.concat([
-                  [index, pathItem as PathItem],
-                ])}
-              />
-            ))}
-          </div>
-        );
-      })}
-    </>
-  );
+  }) => {
+    console.assert(tree !== undefined);
+    console.assert(currentPath !== undefined);
+
+    return (
+      <>
+        {tree.map((parseItem, index) => {
+          const desc = structureDescription[parseItem.element];
+          return (
+            <div key={index} className="Continueparse">
+              <button
+                onClick={(e) => {
+                  deleteNode(currentPath, index);
+                  e.stopPropagation();
+                }}
+              >
+                x
+              </button>
+              <div className="Label">{parseItem.element}: </div>
+              {Object.entries(desc).map(([pathItem, required], index_) => (
+                <SubParse
+                  key={index_}
+                  node={parseItem.info[pathItem as PathItem]!}
+                  currentPath={currentPath.concat([
+                    [index, pathItem as PathItem],
+                  ])}
+                />
+              ))}
+            </div>
+          );
+        })}
+      </>
+    );
+  };
+
+  console.assert(sentence !== undefined, "sentence undefined");
+  console.assert(parseTree !== undefined, "parseTree undefined");
+  console.assert(selectedNode !== undefined, "selectedNode");
+  console.assert(setSelectedNode !== undefined, "selectedNode undefined");
+  console.assert(deleteNode !== undefined, "deletedNode undefined");
 
   return (
     <div className="Parse-area">
