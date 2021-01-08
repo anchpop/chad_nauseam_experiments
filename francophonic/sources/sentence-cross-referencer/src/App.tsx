@@ -224,7 +224,17 @@ const saveFile = async (appState: AppStateLoaded) => {
   const writable = await handle.createWritable();
   await writable.write(
     yaml.safeDump({
-      parseTrees: appState.parseTrees,
+      parseTrees: Object.fromEntries(
+        Object.entries(appState.parseTrees).map(
+          ([frenchSentence, parseTree]) => [
+            frenchSentence,
+            {
+              parse: parseTree,
+              tokens: appState.sentencesToAssociate[frenchSentence],
+            },
+          ]
+        )
+      ),
     })
   );
   await writable.close();
@@ -502,7 +512,14 @@ const ViewParseTree = ({
         const desc = structureDescription[parseItem.element];
         return (
           <div key={index} className="Continueparse">
-            <button onClick={() => deleteNode(currentPath, index)}>x</button>
+            <button
+              onClick={(e) => {
+                deleteNode(currentPath, index);
+                e.stopPropagation();
+              }}
+            >
+              x
+            </button>
             <div className="Label">{parseItem.element}: </div>
             {Object.entries(desc).map(([pathItem, required], index_) => (
               <SubParse
@@ -702,13 +719,12 @@ const LoadedApp = ({
     appState.parseTrees[appState.currentSentenceString]
   );
   const updateParseTree = (f: (parseTree: ParseTree) => ParseTree) => {
-    const parseTree: ParseTree =
-      appState.parseTrees[appState.currentSentenceString];
-    setAppState(
-      produce(appState, (draftState) => {
-        draftState.parseTrees[draftState.currentSentenceString] = f(parseTree);
-      })
-    );
+    const newState = produce(appState, (draftState) => {
+      draftState.parseTrees[draftState.currentSentenceString] = f(
+        draftState.parseTrees[draftState.currentSentenceString]
+      );
+    });
+    setAppState(newState);
   };
 
   return (
@@ -740,7 +756,7 @@ const LoadedApp = ({
 
       {Object.entries(
         appState.sentencesToAssociate[appState.currentSentenceString].tokens_en
-      ).map(([sentence, tokens]) => (
+      ).map(([sentence, tokens], index) => (
         <TokenButtons
           toggleSelect={(index, shift) =>
             toggleSelectEnglishToken(
@@ -751,7 +767,7 @@ const LoadedApp = ({
               setAppState
             )
           }
-          key={sentence}
+          key={index}
           sentenceTokens={tokens}
           selectedTokens={tokensSelected.english[sentence]}
           buttonIsDisabled={(index) =>
@@ -769,27 +785,28 @@ const LoadedApp = ({
         }}
         deleteNode={(parsePath, index) =>
           updateParseTree(
-            produce((draftTree) => {
+            produce((draftTree: ParseTree) => {
               const toDeleteParent = parseIndex(
-                appState.parseTrees[appState.currentSentenceString], // replace with drafttree
+                draftTree, // replace with drafttree
                 parsePath
               );
-              toDeleteParent.splice(index);
+              toDeleteParent.splice(index, 1);
             })
           )
         }
       />
 
       {Object.entries(appState.sentencesToAssociate).map(
-        ([frenchSentence, info]) => (
+        ([frenchSentence, info], index) => (
           <button
-            disabled={frenchSentence == appState.currentSentenceString}
+            disabled={frenchSentence === appState.currentSentenceString}
             onClick={() =>
               setAppState({
                 ...appState,
                 currentSentenceString: frenchSentence,
               })
             }
+            key={index}
           >
             <p key={frenchSentence}>{frenchSentence}</p>
           </button>
