@@ -130,18 +130,16 @@ const Buttons = ({
       style={{
         flex: 1,
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "space-between",
       }}
     >
-      <Text style={{ textAlign: "right" }}>
-        {letters.map(({ text, onPress }, index) => (
-          <TouchableOpacity key={index} onPress={onPress}>
-            <View style={reviewPageStyles.buttonBox}>
-              <Text style={reviewPageStyles.buttonText}>{text}</Text>
-            </View>
-          </TouchableOpacity>
-        ))}
-      </Text>
+      {letters.map(({ text, onPress }, index) => (
+        <TouchableOpacity key={index} onPress={onPress}>
+          <View style={reviewPageStyles.buttonBox}>
+            <Text style={reviewPageStyles.buttonText}>{text}</Text>
+          </View>
+        </TouchableOpacity>
+      ))}
     </View>
   );
 };
@@ -338,8 +336,8 @@ const ReviewScreen = () => {
         }))
       ),
     _.toString(
-      tokensCorrectlyEntered *
-        ltoAnswer[tokensCorrectlyEntered].enteredCharacters.length
+      tokensCorrectlyEntered +
+        100 * ltoAnswer[tokensCorrectlyEntered].enteredCharacters.length
     )
   );
 
