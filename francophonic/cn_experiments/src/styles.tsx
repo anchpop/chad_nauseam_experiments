@@ -107,6 +107,9 @@ export const styles = ({ light, mobile }: ThemeInfo) => {
       questionText: {
         fontSize: base.fontSize,
       },
+      questionTexttHighlight: {
+        backgroundColor: "#FFEB3B",
+      },
       answerTextInput: {
         flex: 1,
         textAlignVertical: "top",

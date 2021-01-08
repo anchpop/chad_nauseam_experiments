@@ -1,5 +1,11 @@
 import * as React from "react";
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  RecyclerViewBackedScrollViewBase,
+} from "react-native";
 import produce from "immer";
 
 import * as _ from "lodash";
@@ -41,7 +47,13 @@ const playSound = async () => {
   await soundObject.playAsync();
 };
 
-const Question = ({ sentenceTokens }: { sentenceTokens: SentenceTokens }) => {
+const Question = ({
+  sentenceTokens,
+  lfromChunk,
+}: {
+  sentenceTokens: SentenceTokens;
+  lfromChunk: number[];
+}) => {
   const { reviewPageStyles } = useStyle();
   return (
     <View style={reviewPageStyles.questionContainer}>
@@ -56,7 +68,15 @@ const Question = ({ sentenceTokens }: { sentenceTokens: SentenceTokens }) => {
           {sentenceTokens.tokens_fr.map(
             ({ text, trailing_whitespace }, index) => (
               <Text key={index}>
-                <Text>{text}</Text>
+                <Text
+                  style={
+                    lfromChunk.includes(index)
+                      ? reviewPageStyles.questionTexttHighlight
+                      : {}
+                  }
+                >
+                  {text}
+                </Text>
                 {trailing_whitespace}
               </Text>
             )
@@ -291,72 +311,12 @@ const ReviewScreen = () => {
     },
   }));
 
-  /*itiriri(allAssociations.entries()).map(
-    ([frenchChunk, associations]) => ({
-      entered: appState.enteredCharacters.get(frenchChunk),
-      goal: "",
-    })
-  );*/
-
-  // Need to figure how this should work when there are multiple correct
-  // destination sentences! Because that isn't uncommon!
-  // (as far as I know this is the first time I assume there will be
-  // only one correct sentence)
-  // (you can tell I'm doing that because you'll see a reference to
-  // `ltoSentenceSelected`, which makes that assumption)
-  /*const ltoInfoObj = allAssociations
-    .map((associations, frenchIndex) => {
-      const englishIndex = associations.english[ltoSentenceSelected][0][0];
-      return {
-        [englishIndex]: {
-          entered: appState.enteredCharacters[frenchIndex] || "",
-          goal:
-            sentenceInfo.tokens.tokens_en[ltoSentenceSelected][englishIndex]
-              .text,
-        },
-      };
-    })
-    .reduce((x, acc) => ({ ...x, ...acc }));
-
-  const ltoInfo: {
-    entered: string;
-    goal: string;
-  }[] = _.range(Object.keys(ltoInfoObj).length).map((i) => ltoInfoObj[i]);
-
-  const pairsToDo = ltoInfo
-    .map((content, ltoIndex) => ({
-      content,
-      ltoIndex,
-    }))
-    .filter(({ content }) => content.goal !== content.entered);
-
-  if (pairsToDo.length === 0) {
-    return <Text>no code for this part yet :p</Text>;
-  }
-
-  const englishIndex = pairsToDo[0].ltoIndex;
-
-  const letters = [
-    {
-      text: '"',
-      onPress: () => {
-        setAppState(
-          produce(appState, (draftState) => {
-            draftState.enteredCharacters[0] =
-              (draftState.enteredCharacters[0] || "") + '"';
-          })
-        );
-      },
-    },
-  ];
-  */
-
   return (
     <Container
       imageLight={require("../assets/images/france/franceLight.jpg")}
       imageDark={require("../assets/images/france/franceDark.jpg")}
     >
-      <Question sentenceTokens={sentenceInfo.tokens} />
+      <Question sentenceTokens={sentenceInfo.tokens} lfromChunk={lfromChunk} />
       <AnswerView enteredCharacters={ltoAnswer} />
       <Buttons letters={letters} />
     </Container>
