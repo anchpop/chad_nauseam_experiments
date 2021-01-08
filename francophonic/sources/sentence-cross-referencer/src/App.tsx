@@ -759,18 +759,21 @@ const LoadedApp = ({
     setAppState(newState);
   };
 
-  if (undoPressed) {
-    if (appState.previousParseTrees.length > 0) {
-      setAppState(
-        produce(appState, (draftState) => {
-          const newParseTree = draftState.previousParseTrees.pop()!;
-          draftState.parseTrees[
-            draftState.currentSentenceString
-          ] = newParseTree;
-        })
-      );
+  React.useEffect(() => {
+    console.log(appState.previousParseTrees);
+    if (undoPressed) {
+      if (appState.previousParseTrees.length > 0) {
+        setAppState(
+          produce(appState, (draftState) => {
+            const newParseTree = draftState.previousParseTrees.pop()!;
+            draftState.parseTrees[
+              draftState.currentSentenceString
+            ] = newParseTree;
+          })
+        );
+      }
     }
-  }
+  }, [undoPressed]);
 
   return (
     <>
