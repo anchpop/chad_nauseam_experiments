@@ -618,6 +618,371 @@
     pos: PUNCT
     text: .
     trailing_whitespace: ''
+? '"Oui," dit-elle à nouveau, parce que quoi que le professeur Rogue soit sur le point
+  de dire, elle ne l''entendrait pas si elle répondait non.'
+: tokens_en:
+    '"Yes," she said again, because whatever Professor Snape was about to say, she wouldn''t hear him if she answered no.':
+    - dep: punct
+      idx: 0
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ''
+    - dep: intj
+      idx: 1
+      norm: 'yes'
+      pos: INTJ
+      text: 'Yes'
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 4
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 5
+      norm: '"'
+      pos: PUNCT
+      text: '"'
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 7
+      norm: she
+      pos: PRON
+      text: she
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 11
+      norm: said
+      pos: VERB
+      text: said
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 16
+      norm: again
+      pos: ADV
+      text: again
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 21
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 23
+      norm: because
+      pos: SCONJ
+      text: because
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 31
+      norm: whatever
+      pos: DET
+      text: whatever
+      trailing_whitespace: ' '
+    - dep: compound
+      idx: 40
+      norm: professor
+      pos: PROPN
+      text: Professor
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 50
+      norm: snape
+      pos: PROPN
+      text: Snape
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 56
+      norm: was
+      pos: VERB
+      text: was
+      trailing_whitespace: ' '
+    - dep: acomp
+      idx: 60
+      norm: about
+      pos: ADJ
+      text: about
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 66
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 69
+      norm: say
+      pos: VERB
+      text: say
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 72
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 74
+      norm: she
+      pos: PRON
+      text: she
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 78
+      norm: would
+      pos: AUX
+      text: would
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 83
+      norm: not
+      pos: PART
+      text: n't
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 87
+      norm: hear
+      pos: VERB
+      text: hear
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 92
+      norm: him
+      pos: PRON
+      text: him
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 96
+      norm: if
+      pos: SCONJ
+      text: if
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 99
+      norm: she
+      pos: PRON
+      text: she
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 103
+      norm: answered
+      pos: VERB
+      text: answered
+      trailing_whitespace: ' '
+    - dep: intj
+      idx: 112
+      norm: 'no'
+      pos: INTJ
+      text: 'no'
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 114
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: punct
+    idx: 0
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ''
+  - dep: advmod
+    idx: 1
+    norm: oui
+    pos: NOUN
+    text: Oui
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 4
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 5
+    norm: '"'
+    pos: PUNCT
+    text: '"'
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 7
+    norm: dit
+    pos: VERB
+    text: dit
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 10
+    norm: -elle
+    pos: PRON
+    text: -elle
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 16
+    norm: à
+    pos: ADP
+    text: à
+    trailing_whitespace: ' '
+  - dep: fixed
+    idx: 18
+    norm: nouveau
+    pos: ADJ
+    text: nouveau
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 25
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 27
+    norm: parce
+    pos: SCONJ
+    text: parce
+    trailing_whitespace: ' '
+  - dep: fixed
+    idx: 33
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: fixed
+    idx: 37
+    norm: quoi
+    pos: PRON
+    text: quoi
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 42
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 46
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 49
+    norm: professeur
+    pos: NOUN
+    text: professeur
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 60
+    norm: rogue
+    pos: PROPN
+    text: Rogue
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 66
+    norm: soit
+    pos: CCONJ
+    text: soit
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 71
+    norm: sur
+    pos: ADP
+    text: sur
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 75
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 78
+    norm: point
+    pos: NOUN
+    text: point
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 84
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: acl
+    idx: 87
+    norm: dire
+    pos: VERB
+    text: dire
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 91
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 93
+    norm: elle
+    pos: PRON
+    text: elle
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 98
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 101
+    norm: l'
+    pos: PRON
+    text: l'
+    trailing_whitespace: ''
+  - dep: advcl
+    idx: 103
+    norm: entendrait
+    pos: VERB
+    text: entendrait
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 114
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 118
+    norm: si
+    pos: SCONJ
+    text: si
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 121
+    norm: elle
+    pos: PRON
+    text: elle
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 126
+    norm: répondait
+    pos: VERB
+    text: répondait
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 136
+    norm: non
+    pos: ADV
+    text: non
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 139
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
 Alors, vous voulez bien le faire ? demanda Hagrid qui ne semblait pas avoir entendu ce que Harry venait de dire.:
   tokens_en:
     So, do you want to do it? Hagrid asked who didn't seem to have heard what Harry had just said.:
@@ -1106,210 +1471,448 @@ C'est pour ça qu'il essayait tout le temps de m'aider ! s'exclama Harry.:
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-C’est pour ça qu’il essayait tout le temps de m’aider ! s’exclama Harry.:
+C'était la dernière chose qu'il ne savait pas et c'est moi qui l'ai dite !:
   tokens_en:
-    That's why he was trying to help me all the time! Harry exclaimed.:
+    It was the last thing he didn't know and I said it!:
     - dep: nsubj
       idx: 0
-      norm: that
-      pos: DET
-      text: That
-      trailing_whitespace: ''
-    - dep: ROOT
-      idx: 4
-      norm: '''s'
-      pos: AUX
-      text: '''s'
+      norm: it
+      pos: PRON
+      text: It
       trailing_whitespace: ' '
-    - dep: advmod
+    - dep: ROOT
+      idx: 3
+      norm: was
+      pos: AUX
+      text: was
+      trailing_whitespace: ' '
+    - dep: det
       idx: 7
-      norm: why
-      pos: ADV
-      text: why
+      norm: the
+      pos: DET
+      text: the
+      trailing_whitespace: ' '
+    - dep: amod
+      idx: 11
+      norm: last
+      pos: ADJ
+      text: last
+      trailing_whitespace: ' '
+    - dep: attr
+      idx: 16
+      norm: thing
+      pos: NOUN
+      text: thing
       trailing_whitespace: ' '
     - dep: nsubj
-      idx: 11
+      idx: 22
       norm: he
       pos: PRON
       text: he
       trailing_whitespace: ' '
     - dep: aux
-      idx: 14
+      idx: 25
+      norm: do
+      pos: AUX
+      text: did
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 28
+      norm: not
+      pos: PART
+      text: n't
+      trailing_whitespace: ' '
+    - dep: relcl
+      idx: 32
+      norm: know
+      pos: VERB
+      text: know
+      trailing_whitespace: ' '
+    - dep: cc
+      idx: 37
+      norm: and
+      pos: CCONJ
+      text: and
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 41
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 43
+      norm: said
+      pos: VERB
+      text: said
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 48
+      norm: it
+      pos: PRON
+      text: it
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 50
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: c'
+    pos: PRON
+    text: C'
+    trailing_whitespace: ''
+  - dep: cop
+    idx: 2
+    norm: était
+    pos: AUX
+    text: était
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 8
+    norm: la
+    pos: DET
+    text: la
+    trailing_whitespace: ' '
+  - dep: amod
+    idx: 11
+    norm: dernière
+    pos: ADJ
+    text: dernière
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 20
+    norm: chose
+    pos: NOUN
+    text: chose
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 26
+    norm: qu'
+    pos: SCONJ
+    text: qu'
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 29
+    norm: il
+    pos: PRON
+    text: il
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 32
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 35
+    norm: savait
+    pos: VERB
+    text: savait
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 42
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 46
+    norm: et
+    pos: CCONJ
+    text: et
+    trailing_whitespace: ' '
+  - dep: expl:subj
+    idx: 49
+    norm: c'
+    pos: PRON
+    text: c'
+    trailing_whitespace: ''
+  - dep: cop
+    idx: 51
+    norm: est
+    pos: AUX
+    text: est
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 55
+    norm: moi
+    pos: PRON
+    text: moi
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 59
+    norm: qui
+    pos: PRON
+    text: qui
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 63
+    norm: l'
+    pos: PRON
+    text: l'
+    trailing_whitespace: ''
+  - dep: aux:tense
+    idx: 65
+    norm: ai
+    pos: AUX
+    text: ai
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 68
+    norm: dite
+    pos: VERB
+    text: dite
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 73
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
+Ce qui était exactement ce que Draco avait pensé, et il essayait de ne pas pleurer devant Harry.:
+  tokens_en:
+    Which was exactly what Draco had thought, and he was trying not to cry in front of Harry.:
+    - dep: nsubj
+      idx: 0
+      norm: which
+      pos: DET
+      text: Which
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 6
       norm: was
       pos: AUX
       text: was
       trailing_whitespace: ' '
-    - dep: ccomp
+    - dep: advmod
+      idx: 10
+      norm: exactly
+      pos: ADV
+      text: exactly
+      trailing_whitespace: ' '
+    - dep: dobj
       idx: 18
+      norm: what
+      pos: PRON
+      text: what
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 23
+      norm: draco
+      pos: PROPN
+      text: Draco
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 29
+      norm: had
+      pos: AUX
+      text: had
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 33
+      norm: thought
+      pos: VERB
+      text: thought
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 40
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: cc
+      idx: 42
+      norm: and
+      pos: CCONJ
+      text: and
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 46
+      norm: he
+      pos: PRON
+      text: he
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 49
+      norm: was
+      pos: AUX
+      text: was
+      trailing_whitespace: ' '
+    - dep: conj
+      idx: 53
       norm: trying
       pos: VERB
       text: trying
       trailing_whitespace: ' '
+    - dep: neg
+      idx: 60
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
     - dep: aux
-      idx: 25
+      idx: 64
       norm: to
       pos: PART
       text: to
       trailing_whitespace: ' '
     - dep: xcomp
-      idx: 28
-      norm: help
+      idx: 67
+      norm: cry
       pos: VERB
-      text: help
+      text: cry
       trailing_whitespace: ' '
-    - dep: dobj
-      idx: 33
-      norm: me
-      pos: PRON
-      text: me
+    - dep: prep
+      idx: 71
+      norm: in
+      pos: ADP
+      text: in
       trailing_whitespace: ' '
-    - dep: predet
-      idx: 36
-      norm: all
-      pos: DET
-      text: all
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 40
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: npadvmod
-      idx: 44
-      norm: time
+    - dep: pobj
+      idx: 74
+      norm: front
       pos: NOUN
-      text: time
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 48
-      norm: '!'
-      pos: PUNCT
-      text: '!'
+      text: front
       trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 50
+    - dep: prep
+      idx: 80
+      norm: of
+      pos: ADP
+      text: of
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 83
       norm: harry
       pos: PROPN
       text: Harry
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 56
-      norm: exclaimed
-      pos: VERB
-      text: exclaimed
       trailing_whitespace: ''
     - dep: punct
-      idx: 65
+      idx: 88
       norm: .
       pos: PUNCT
       text: .
       trailing_whitespace: ''
   tokens_fr:
-  - dep: nsubj
+  - dep: ROOT
     idx: 0
-    norm: c’
+    norm: ce
     pos: PRON
-    text: C’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 2
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 6
-    norm: pour
-    pos: ADP
-    text: pour
+    text: Ce
     trailing_whitespace: ' '
   - dep: nsubj
-    idx: 11
-    norm: ça
+    idx: 3
+    norm: qui
     pos: PRON
-    text: ça
+    text: qui
+    trailing_whitespace: ' '
+  - dep: cop
+    idx: 7
+    norm: était
+    pos: AUX
+    text: était
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 13
+    norm: exactement
+    pos: ADV
+    text: exactement
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 24
+    norm: ce
+    pos: PRON
+    text: ce
     trailing_whitespace: ' '
   - dep: obj
-    idx: 14
-    norm: qu’
+    idx: 27
+    norm: que
     pos: PRON
-    text: qu’
-    trailing_whitespace: ''
+    text: que
+    trailing_whitespace: ' '
   - dep: nsubj
-    idx: 17
+    idx: 31
+    norm: draco
+    pos: AUX
+    text: Draco
+    trailing_whitespace: ' '
+  - dep: aux:tense
+    idx: 37
+    norm: avait
+    pos: AUX
+    text: avait
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 43
+    norm: pensé
+    pos: VERB
+    text: pensé
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 48
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 50
+    norm: et
+    pos: CCONJ
+    text: et
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 53
     norm: il
     pos: PRON
     text: il
     trailing_whitespace: ' '
-  - dep: acl:relcl
-    idx: 20
+  - dep: conj
+    idx: 56
     norm: essayait
     pos: VERB
     text: essayait
     trailing_whitespace: ' '
-  - dep: amod
-    idx: 29
-    norm: tout
-    pos: ADJ
-    text: tout
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 34
-    norm: le
-    pos: DET
-    text: le
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 37
-    norm: temps
-    pos: NOUN
-    text: temps
-    trailing_whitespace: ' '
   - dep: mark
-    idx: 43
+    idx: 65
     norm: de
     pos: ADP
     text: de
     trailing_whitespace: ' '
-  - dep: iobj
-    idx: 46
-    norm: m’
-    pos: PRON
-    text: m’
-    trailing_whitespace: ''
+  - dep: advmod
+    idx: 68
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 71
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
   - dep: xcomp
-    idx: 48
-    norm: aider
+    idx: 75
+    norm: pleurer
     pos: VERB
-    text: aider
+    text: pleurer
     trailing_whitespace: ' '
-  - dep: punct
-    idx: 54
-    norm: '!'
-    pos: PUNCT
-    text: '!'
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 56
-    norm: s’
-    pos: PRON
-    text: s’
-    trailing_whitespace: ''
-  - dep: ROOT
-    idx: 58
-    norm: exclama
-    pos: VERB
-    text: exclama
+  - dep: case
+    idx: 83
+    norm: devant
+    pos: ADP
+    text: devant
     trailing_whitespace: ' '
   - dep: obl:mod
-    idx: 66
+    idx: 90
     norm: harry
     pos: PROPN
     text: Harry
     trailing_whitespace: ''
   - dep: punct
-    idx: 71
+    idx: 95
     norm: .
     pos: PUNCT
     text: .
@@ -1493,238 +2096,6 @@ Dudley avait à présent si peur de lui qu'il ne voulait jamais se trouver dans 
     text: ne
     trailing_whitespace: ' '
   - dep: ccomp
-    idx: 47
-    norm: voulait
-    pos: VERB
-    text: voulait
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 55
-    norm: jamais
-    pos: ADV
-    text: jamais
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 62
-    norm: se
-    pos: PRON
-    text: se
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 65
-    norm: trouver
-    pos: VERB
-    text: trouver
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 73
-    norm: dans
-    pos: ADP
-    text: dans
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 78
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: amod
-    idx: 81
-    norm: même
-    pos: ADJ
-    text: même
-    trailing_whitespace: ' '
-  - dep: obl:arg
-    idx: 86
-    norm: pièce
-    pos: NOUN
-    text: pièce
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 91
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-Dudley avait à présent si peur de lui qu’il ne voulait jamais se trouver dans la même pièce.:
-  tokens_en:
-    Dudley was now so afraid of him that he never wanted to be in the same room.:
-    - dep: nsubj
-      idx: 0
-      norm: dudley
-      pos: PROPN
-      text: Dudley
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 7
-      norm: was
-      pos: AUX
-      text: was
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 11
-      norm: now
-      pos: ADV
-      text: now
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 15
-      norm: so
-      pos: ADV
-      text: so
-      trailing_whitespace: ' '
-    - dep: acomp
-      idx: 18
-      norm: afraid
-      pos: ADJ
-      text: afraid
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 25
-      norm: of
-      pos: ADP
-      text: of
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 28
-      norm: him
-      pos: PRON
-      text: him
-      trailing_whitespace: ' '
-    - dep: mark
-      idx: 32
-      norm: that
-      pos: SCONJ
-      text: that
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 37
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: neg
-      idx: 40
-      norm: never
-      pos: ADV
-      text: never
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 46
-      norm: wanted
-      pos: VERB
-      text: wanted
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 53
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 56
-      norm: be
-      pos: VERB
-      text: be
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 59
-      norm: in
-      pos: ADP
-      text: in
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 62
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: amod
-      idx: 66
-      norm: same
-      pos: ADJ
-      text: same
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 71
-      norm: room
-      pos: NOUN
-      text: room
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 75
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: nsubj
-    idx: 0
-    norm: dudley
-    pos: PROPN
-    text: Dudley
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 7
-    norm: avait
-    pos: AUX
-    text: avait
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 13
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: fixed
-    idx: 15
-    norm: présent
-    pos: NOUN
-    text: présent
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 23
-    norm: si
-    pos: SCONJ
-    text: si
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 26
-    norm: peur
-    pos: NOUN
-    text: peur
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 31
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 34
-    norm: lui
-    pos: PRON
-    text: lui
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 38
-    norm: qu’
-    pos: SCONJ
-    text: qu’
-    trailing_whitespace: ''
-  - dep: nsubj
-    idx: 41
-    norm: il
-    pos: PRON
-    text: il
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 44
-    norm: ne
-    pos: ADV
-    text: ne
-    trailing_whitespace: ' '
-  - dep: acl:relcl
     idx: 47
     norm: voulait
     pos: VERB
@@ -2339,27 +2710,26 @@ Dudley avait à présent si peur de lui qu’il ne voulait jamais se trouver dan
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-? Est-ce que je suis vraiment la seule personne à avoir jamais pris la peine de lire
-  l’Histoire de Poudlard ? dit alors Hermione avec colère.
-: tokens_en:
-    Am I really the only person who has ever bothered to read Hogwarts History? Hermione said angrily.:
-    - dep: ROOT
+Et c'est à elle qu'on va demander de l'aide ?:
+  tokens_en:
+    And is that the one we are going to ask for help?:
+    - dep: cc
       idx: 0
-      norm: am
+      norm: and
+      pos: CCONJ
+      text: And
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 4
+      norm: is
       pos: AUX
-      text: Am
+      text: is
       trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 3
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 5
-      norm: really
-      pos: ADV
-      text: really
+    - dep: mark
+      idx: 7
+      norm: that
+      pos: SCONJ
+      text: that
       trailing_whitespace: ' '
     - dep: det
       idx: 12
@@ -2367,264 +2737,138 @@ Dudley avait à présent si peur de lui qu’il ne voulait jamais se trouver dan
       pos: DET
       text: the
       trailing_whitespace: ' '
-    - dep: amod
-      idx: 16
-      norm: only
-      pos: ADJ
-      text: only
-      trailing_whitespace: ' '
     - dep: attr
-      idx: 21
-      norm: person
+      idx: 16
+      norm: one
       pos: NOUN
-      text: person
+      text: one
       trailing_whitespace: ' '
     - dep: nsubj
-      idx: 28
-      norm: who
+      idx: 20
+      norm: we
       pos: PRON
-      text: who
+      text: we
       trailing_whitespace: ' '
     - dep: aux
-      idx: 32
-      norm: has
+      idx: 23
+      norm: are
       pos: AUX
-      text: has
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 36
-      norm: ever
-      pos: ADV
-      text: ever
+      text: are
       trailing_whitespace: ' '
     - dep: relcl
-      idx: 41
-      norm: bothered
+      idx: 27
+      norm: going
       pos: VERB
-      text: bothered
+      text: going
       trailing_whitespace: ' '
     - dep: aux
-      idx: 50
+      idx: 33
       norm: to
       pos: PART
       text: to
       trailing_whitespace: ' '
     - dep: xcomp
-      idx: 53
-      norm: read
+      idx: 36
+      norm: ask
       pos: VERB
-      text: read
+      text: ask
       trailing_whitespace: ' '
-    - dep: compound
-      idx: 58
-      norm: hogwarts
-      pos: PROPN
-      text: Hogwarts
+    - dep: prep
+      idx: 40
+      norm: for
+      pos: ADP
+      text: for
       trailing_whitespace: ' '
-    - dep: dobj
-      idx: 67
-      norm: history
-      pos: PROPN
-      text: History
+    - dep: pobj
+      idx: 44
+      norm: help
+      pos: NOUN
+      text: help
       trailing_whitespace: ''
     - dep: punct
-      idx: 74
+      idx: 48
       norm: '?'
       pos: PUNCT
       text: '?'
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 76
-      norm: hermione
-      pos: PROPN
-      text: Hermione
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 85
-      norm: said
-      pos: VERB
-      text: said
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 90
-      norm: angrily
-      pos: ADV
-      text: angrily
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 97
-      norm: .
-      pos: PUNCT
-      text: .
       trailing_whitespace: ''
   tokens_fr:
-  - dep: ROOT
+  - dep: cc
     idx: 0
-    norm: est
-    pos: VERB
-    text: Est
-    trailing_whitespace: ''
-  - dep: dep
-    idx: 3
-    norm: -ce
-    pos: PRON
-    text: -ce
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 7
-    norm: que
-    pos: SCONJ
-    text: que
+    norm: et
+    pos: CCONJ
+    text: Et
     trailing_whitespace: ' '
   - dep: nsubj
-    idx: 11
-    norm: je
+    idx: 3
+    norm: c'
     pos: PRON
-    text: je
+    text: c'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 5
+    norm: est
+    pos: VERB
+    text: est
     trailing_whitespace: ' '
-  - dep: cop
-    idx: 14
-    norm: suis
-    pos: AUX
-    text: suis
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 19
-    norm: vraiment
-    pos: ADV
-    text: vraiment
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 28
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: amod
-    idx: 31
-    norm: seule
-    pos: ADJ
-    text: seule
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 37
-    norm: personne
-    pos: NOUN
-    text: personne
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 46
+  - dep: case
+    idx: 9
     norm: à
     pos: ADP
     text: à
     trailing_whitespace: ' '
-  - dep: aux:tense
-    idx: 48
-    norm: avoir
-    pos: AUX
-    text: avoir
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 54
-    norm: jamais
-    pos: ADV
-    text: jamais
-    trailing_whitespace: ' '
-  - dep: acl
-    idx: 61
-    norm: pris
-    pos: VERB
-    text: pris
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 66
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 69
-    norm: peine
-    pos: NOUN
-    text: peine
+  - dep: obl:arg
+    idx: 11
+    norm: elle
+    pos: PRON
+    text: elle
     trailing_whitespace: ' '
   - dep: mark
-    idx: 75
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: acl
-    idx: 78
-    norm: lire
-    pos: VERB
-    text: lire
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 83
-    norm: l’
-    pos: DET
-    text: l’
+    idx: 16
+    norm: qu'
+    pos: SCONJ
+    text: qu'
     trailing_whitespace: ''
-  - dep: obj
-    idx: 85
-    norm: histoire
-    pos: NOUN
-    text: Histoire
+  - dep: nsubj
+    idx: 19
+    norm: 'on'
+    pos: PRON
+    text: 'on'
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 22
+    norm: va
+    pos: VERB
+    text: va
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 25
+    norm: demander
+    pos: VERB
+    text: demander
     trailing_whitespace: ' '
   - dep: case
-    idx: 94
+    idx: 34
     norm: de
     pos: ADP
     text: de
     trailing_whitespace: ' '
-  - dep: nmod
-    idx: 97
-    norm: poudlard
-    pos: PROPN
-    text: Poudlard
+  - dep: det
+    idx: 37
+    norm: l'
+    pos: DET
+    text: l'
+    trailing_whitespace: ''
+  - dep: obl:arg
+    idx: 39
+    norm: aide
+    pos: NOUN
+    text: aide
     trailing_whitespace: ' '
   - dep: punct
-    idx: 106
+    idx: 44
     norm: '?'
     pos: PUNCT
     text: '?'
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 108
-    norm: dit
-    pos: VERB
-    text: dit
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 112
-    norm: alors
-    pos: ADV
-    text: alors
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 118
-    norm: hermione
-    pos: PROPN
-    text: Hermione
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 127
-    norm: avec
-    pos: ADP
-    text: avec
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 132
-    norm: colère
-    pos: NOUN
-    text: colère
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 138
-    norm: .
-    pos: PUNCT
-    text: .
     trailing_whitespace: ''
 Et ce n'est pas parce que nous ne sommes pas d'accord, M. Potter, que vous devez avoir le dernier mot.:
   tokens_en:
@@ -3090,184 +3334,6 @@ Et je n'ai pas encore parlé de ce qu'il fait à l'école.:
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-Et je n’ai pas encore parlé de ce qu’il fait à l’école.:
-  tokens_en:
-    And I haven't talked about what he does in school yet.:
-    - dep: cc
-      idx: 0
-      norm: and
-      pos: CCONJ
-      text: And
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 4
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 6
-      norm: have
-      pos: AUX
-      text: have
-      trailing_whitespace: ''
-    - dep: neg
-      idx: 10
-      norm: not
-      pos: PART
-      text: n't
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 14
-      norm: talked
-      pos: VERB
-      text: talked
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 21
-      norm: about
-      pos: ADP
-      text: about
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 27
-      norm: what
-      pos: PRON
-      text: what
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 32
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: pcomp
-      idx: 35
-      norm: does
-      pos: VERB
-      text: does
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 40
-      norm: in
-      pos: ADP
-      text: in
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 43
-      norm: school
-      pos: NOUN
-      text: school
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 50
-      norm: yet
-      pos: ADV
-      text: yet
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 53
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: cc
-    idx: 0
-    norm: et
-    pos: CCONJ
-    text: Et
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 3
-    norm: je
-    pos: PRON
-    text: je
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 6
-    norm: n’
-    pos: ADV
-    text: n’
-    trailing_whitespace: ''
-  - dep: aux:tense
-    idx: 8
-    norm: ai
-    pos: AUX
-    text: ai
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 11
-    norm: pas
-    pos: ADV
-    text: pas
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 15
-    norm: encore
-    pos: ADV
-    text: encore
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 22
-    norm: parlé
-    pos: VERB
-    text: parlé
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 28
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: obl:arg
-    idx: 31
-    norm: ce
-    pos: PRON
-    text: ce
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 34
-    norm: qu’
-    pos: PRON
-    text: qu’
-    trailing_whitespace: ''
-  - dep: nsubj
-    idx: 37
-    norm: il
-    pos: PRON
-    text: il
-    trailing_whitespace: ' '
-  - dep: acl:relcl
-    idx: 40
-    norm: fait
-    pos: VERB
-    text: fait
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 45
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 47
-    norm: l’
-    pos: DET
-    text: l’
-    trailing_whitespace: ''
-  - dep: obl:arg
-    idx: 49
-    norm: école
-    pos: NOUN
-    text: école
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 54
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
 Et je vais faire ça parce que je pense que c'est important d'essayer de se mettre à la place des gens.:
   tokens_en:
     And I'm going to do this because I think it's important to try to put yourself in people's shoes.:
@@ -3493,292 +3559,6 @@ Et je vais faire ça parce que je pense que c'est important d'essayer de se mett
     norm: d'
     pos: ADP
     text: d'
-    trailing_whitespace: ''
-  - dep: dep
-    idx: 61
-    norm: essayer
-    pos: VERB
-    text: essayer
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 69
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 72
-    norm: se
-    pos: PRON
-    text: se
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 75
-    norm: mettre
-    pos: VERB
-    text: mettre
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 82
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 84
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: obl:arg
-    idx: 87
-    norm: place
-    pos: NOUN
-    text: place
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 93
-    norm: des
-    pos: ADP
-    text: des
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 97
-    norm: gens
-    pos: NOUN
-    text: gens
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 101
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-Et je vais faire ça parce que je pense que c’est important d’essayer de se mettre à la place des gens.:
-  tokens_en:
-    And I'm going to do this because I think it's important to try to put yourself in people's shoes.:
-    - dep: cc
-      idx: 0
-      norm: and
-      pos: CCONJ
-      text: And
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 4
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ''
-    - dep: aux
-      idx: 5
-      norm: am
-      pos: AUX
-      text: '''m'
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 8
-      norm: going
-      pos: VERB
-      text: going
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 14
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 17
-      norm: do
-      pos: VERB
-      text: do
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 20
-      norm: this
-      pos: DET
-      text: this
-      trailing_whitespace: ' '
-    - dep: mark
-      idx: 25
-      norm: because
-      pos: SCONJ
-      text: because
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 33
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: advcl
-      idx: 35
-      norm: think
-      pos: VERB
-      text: think
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 41
-      norm: it
-      pos: PRON
-      text: it
-      trailing_whitespace: ''
-    - dep: ccomp
-      idx: 43
-      norm: '''s'
-      pos: AUX
-      text: '''s'
-      trailing_whitespace: ' '
-    - dep: acomp
-      idx: 46
-      norm: important
-      pos: ADJ
-      text: important
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 56
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 59
-      norm: try
-      pos: VERB
-      text: try
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 63
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 66
-      norm: put
-      pos: VERB
-      text: put
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 70
-      norm: yourself
-      pos: PRON
-      text: yourself
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 79
-      norm: in
-      pos: ADP
-      text: in
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 82
-      norm: people
-      pos: NOUN
-      text: people
-      trailing_whitespace: ''
-    - dep: case
-      idx: 88
-      norm: '''s'
-      pos: PART
-      text: '''s'
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 91
-      norm: shoes
-      pos: NOUN
-      text: shoes
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 96
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: cc
-    idx: 0
-    norm: et
-    pos: CCONJ
-    text: Et
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 3
-    norm: je
-    pos: PRON
-    text: je
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 6
-    norm: vais
-    pos: VERB
-    text: vais
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 11
-    norm: faire
-    pos: VERB
-    text: faire
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 17
-    norm: ça
-    pos: PRON
-    text: ça
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 20
-    norm: parce
-    pos: SCONJ
-    text: parce
-    trailing_whitespace: ' '
-  - dep: fixed
-    idx: 26
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 30
-    norm: je
-    pos: PRON
-    text: je
-    trailing_whitespace: ' '
-  - dep: advcl
-    idx: 33
-    norm: pense
-    pos: VERB
-    text: pense
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 39
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: expl:subj
-    idx: 43
-    norm: c’
-    pos: PRON
-    text: c’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 45
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 49
-    norm: important
-    pos: ADJ
-    text: important
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 59
-    norm: d’
-    pos: ADP
-    text: d’
     trailing_whitespace: ''
   - dep: dep
     idx: 61
@@ -4364,244 +4144,6 @@ Et rien que pour ça, j'avais envie de faire tout ce qui était en mon pouvoir p
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-Et rien que pour ça, j’avais envie de faire tout ce qui était en mon pouvoir pour l’aider.:
-  tokens_en:
-    And just for that, I wanted to do everything in my power to help him.:
-    - dep: cc
-      idx: 0
-      norm: and
-      pos: CCONJ
-      text: And
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 4
-      norm: just
-      pos: ADV
-      text: just
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 9
-      norm: for
-      pos: ADP
-      text: for
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 13
-      norm: that
-      pos: DET
-      text: that
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 17
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 19
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 21
-      norm: wanted
-      pos: VERB
-      text: wanted
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 28
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 31
-      norm: do
-      pos: VERB
-      text: do
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 34
-      norm: everything
-      pos: PRON
-      text: everything
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 45
-      norm: in
-      pos: ADP
-      text: in
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 48
-      norm: my
-      pos: PRON
-      text: my
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 51
-      norm: power
-      pos: NOUN
-      text: power
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 57
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: advcl
-      idx: 60
-      norm: help
-      pos: VERB
-      text: help
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 65
-      norm: him
-      pos: PRON
-      text: him
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 68
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: cc
-    idx: 0
-    norm: et
-    pos: CCONJ
-    text: Et
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 3
-    norm: rien
-    pos: PRON
-    text: rien
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 8
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 12
-    norm: pour
-    pos: ADP
-    text: pour
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 17
-    norm: ça
-    pos: PRON
-    text: ça
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 19
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 21
-    norm: j’
-    pos: PRON
-    text: j’
-    trailing_whitespace: ''
-  - dep: aux:tense
-    idx: 23
-    norm: avais
-    pos: AUX
-    text: avais
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 29
-    norm: envie
-    pos: VERB
-    text: envie
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 35
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 38
-    norm: faire
-    pos: VERB
-    text: faire
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 44
-    norm: tout
-    pos: ADJ
-    text: tout
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 49
-    norm: ce
-    pos: PRON
-    text: ce
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 52
-    norm: qui
-    pos: PRON
-    text: qui
-    trailing_whitespace: ' '
-  - dep: cop
-    idx: 56
-    norm: était
-    pos: AUX
-    text: était
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 62
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 65
-    norm: mon
-    pos: DET
-    text: mon
-    trailing_whitespace: ' '
-  - dep: acl:relcl
-    idx: 69
-    norm: pouvoir
-    pos: NOUN
-    text: pouvoir
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 77
-    norm: pour
-    pos: ADP
-    text: pour
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 82
-    norm: l’
-    pos: PRON
-    text: l’
-    trailing_whitespace: ''
-  - dep: xcomp
-    idx: 84
-    norm: aider
-    pos: VERB
-    text: aider
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 89
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
 Harry essaya de comprendre ce que Dumbledore venait de lui dire, mais il eut mal à la tête, et il laissa tomber.:
   tokens_en:
     Harry tried to understand what Dumbledore had just told him, but his head hurt, and he let it go.:
@@ -4888,6 +4430,458 @@ Harry essaya de comprendre ce que Dumbledore venait de lui dire, mais il eut mal
     pos: PUNCT
     text: .
     trailing_whitespace: ''
+Harry jeta un coup d'œil autour de lui et vit que toute la classe le regardait.:
+  tokens_en:
+    Harry glanced around and saw the whole class looking at him.:
+    - dep: nsubj
+      idx: 0
+      norm: harry
+      pos: PROPN
+      text: Harry
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 6
+      norm: glanced
+      pos: VERB
+      text: glanced
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 14
+      norm: around
+      pos: ADV
+      text: around
+      trailing_whitespace: ' '
+    - dep: cc
+      idx: 21
+      norm: and
+      pos: CCONJ
+      text: and
+      trailing_whitespace: ' '
+    - dep: conj
+      idx: 25
+      norm: saw
+      pos: VERB
+      text: saw
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 29
+      norm: the
+      pos: DET
+      text: the
+      trailing_whitespace: ' '
+    - dep: amod
+      idx: 33
+      norm: whole
+      pos: ADJ
+      text: whole
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 39
+      norm: class
+      pos: NOUN
+      text: class
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 45
+      norm: looking
+      pos: VERB
+      text: looking
+      trailing_whitespace: ' '
+    - dep: prep
+      idx: 53
+      norm: at
+      pos: ADP
+      text: at
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 56
+      norm: him
+      pos: PRON
+      text: him
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 59
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: harry
+    pos: PROPN
+    text: Harry
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 6
+    norm: jeta
+    pos: VERB
+    text: jeta
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 11
+    norm: un
+    pos: DET
+    text: un
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 14
+    norm: coup
+    pos: NOUN
+    text: coup
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 19
+    norm: d'
+    pos: ADP
+    text: d'
+    trailing_whitespace: ''
+  - dep: nmod
+    idx: 21
+    norm: œil
+    pos: NOUN
+    text: œil
+    trailing_whitespace: ' '
+  - dep: dep
+    idx: 25
+    norm: autour
+    pos: ADV
+    text: autour
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 32
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: dep
+    idx: 35
+    norm: lui
+    pos: PRON
+    text: lui
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 39
+    norm: et
+    pos: CCONJ
+    text: et
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 42
+    norm: vit
+    pos: VERB
+    text: vit
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 46
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: amod
+    idx: 50
+    norm: toute
+    pos: ADJ
+    text: toute
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 56
+    norm: la
+    pos: DET
+    text: la
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 59
+    norm: classe
+    pos: NOUN
+    text: classe
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 66
+    norm: le
+    pos: PRON
+    text: le
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 69
+    norm: regardait
+    pos: VERB
+    text: regardait
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 78
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+'Harry n''eut même pas besoin que son côté Poufsouffle le dise : il y pensa de sa propre voix intérieure.':
+  tokens_en:
+    'Harry didn''t even need his Hufflepuff side to say it: he thought about it in his own inner voice.':
+    - dep: nsubj
+      idx: 0
+      norm: harry
+      pos: PROPN
+      text: Harry
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 6
+      norm: do
+      pos: AUX
+      text: did
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 9
+      norm: not
+      pos: PART
+      text: n't
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 13
+      norm: even
+      pos: ADV
+      text: even
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 18
+      norm: need
+      pos: VERB
+      text: need
+      trailing_whitespace: ' '
+    - dep: poss
+      idx: 23
+      norm: his
+      pos: PRON
+      text: his
+      trailing_whitespace: ' '
+    - dep: compound
+      idx: 27
+      norm: hufflepuff
+      pos: PROPN
+      text: Hufflepuff
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 38
+      norm: side
+      pos: NOUN
+      text: side
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 43
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 46
+      norm: say
+      pos: VERB
+      text: say
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 50
+      norm: it
+      pos: PRON
+      text: it
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 52
+      norm: ':'
+      pos: PUNCT
+      text: ':'
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 54
+      norm: he
+      pos: PRON
+      text: he
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 57
+      norm: thought
+      pos: VERB
+      text: thought
+      trailing_whitespace: ' '
+    - dep: prep
+      idx: 65
+      norm: about
+      pos: ADP
+      text: about
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 71
+      norm: it
+      pos: PRON
+      text: it
+      trailing_whitespace: ' '
+    - dep: prep
+      idx: 74
+      norm: in
+      pos: ADP
+      text: in
+      trailing_whitespace: ' '
+    - dep: poss
+      idx: 77
+      norm: his
+      pos: PRON
+      text: his
+      trailing_whitespace: ' '
+    - dep: amod
+      idx: 81
+      norm: own
+      pos: ADJ
+      text: own
+      trailing_whitespace: ' '
+    - dep: amod
+      idx: 85
+      norm: inner
+      pos: ADJ
+      text: inner
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 91
+      norm: voice
+      pos: NOUN
+      text: voice
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 96
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: harry
+    pos: PROPN
+    text: Harry
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 6
+    norm: n'
+    pos: ADV
+    text: n'
+    trailing_whitespace: ''
+  - dep: ROOT
+    idx: 8
+    norm: eut
+    pos: VERB
+    text: eut
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 12
+    norm: même
+    pos: ADV
+    text: même
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 17
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 21
+    norm: besoin
+    pos: NOUN
+    text: besoin
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 28
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 32
+    norm: son
+    pos: DET
+    text: son
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 36
+    norm: côté
+    pos: NOUN
+    text: côté
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 41
+    norm: poufsouffle
+    pos: PROPN
+    text: Poufsouffle
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 53
+    norm: le
+    pos: PRON
+    text: le
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 56
+    norm: dise
+    pos: VERB
+    text: dise
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 61
+    norm: ':'
+    pos: PUNCT
+    text: ':'
+    trailing_whitespace: ' '
+  - dep: expl:subj
+    idx: 63
+    norm: il
+    pos: PRON
+    text: il
+    trailing_whitespace: ' '
+  - dep: iobj
+    idx: 66
+    norm: y
+    pos: PRON
+    text: y
+    trailing_whitespace: ' '
+  - dep: advcl
+    idx: 68
+    norm: pensa
+    pos: VERB
+    text: pensa
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 74
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 77
+    norm: sa
+    pos: DET
+    text: sa
+    trailing_whitespace: ' '
+  - dep: amod
+    idx: 80
+    norm: propre
+    pos: ADJ
+    text: propre
+    trailing_whitespace: ' '
+  - dep: obl:arg
+    idx: 87
+    norm: voix
+    pos: NOUN
+    text: voix
+    trailing_whitespace: ' '
+  - dep: amod
+    idx: 92
+    norm: intérieure
+    pos: ADJ
+    text: intérieure
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 102
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
 Harry se rendait compte que ce qu'il venait de lui dire avait un sens pour Maugrey et il aurait bien voulu savoir lequel.:
   tokens_en:
     Harry realized that what he had just said made sense to Moody and he wished he knew which one.:
@@ -5162,276 +5156,418 @@ Harry se rendait compte que ce qu'il venait de lui dire avait un sens pour Maugr
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-Harry se rendait compte que ce qu’il venait de lui dire avait un sens pour Maugrey et il aurait bien voulu savoir lequel.:
+Il avait très bien compris ce qu'il avait à faire, le problème, c'était d'y arriver.:
   tokens_en:
-    Harry realized that what he had just said made sense to Moody and he wished he knew which one.:
+    He understood very well what he had to do, the problem was to get there.:
     - dep: nsubj
       idx: 0
-      norm: harry
-      pos: PROPN
-      text: Harry
+      norm: he
+      pos: PRON
+      text: He
       trailing_whitespace: ' '
     - dep: ROOT
-      idx: 6
-      norm: realized
+      idx: 3
+      norm: understood
       pos: VERB
-      text: realized
+      text: understood
       trailing_whitespace: ' '
-    - dep: mark
-      idx: 15
-      norm: that
-      pos: SCONJ
-      text: that
+    - dep: advmod
+      idx: 14
+      norm: very
+      pos: ADV
+      text: very
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 19
+      norm: well
+      pos: ADV
+      text: well
       trailing_whitespace: ' '
     - dep: dobj
-      idx: 20
+      idx: 24
       norm: what
       pos: PRON
       text: what
       trailing_whitespace: ' '
     - dep: nsubj
-      idx: 25
+      idx: 29
       norm: he
       pos: PRON
       text: he
       trailing_whitespace: ' '
-    - dep: aux
-      idx: 28
+    - dep: ccomp
+      idx: 32
       norm: had
-      pos: AUX
+      pos: VERB
       text: had
       trailing_whitespace: ' '
-    - dep: advmod
-      idx: 32
-      norm: just
-      pos: ADV
-      text: just
-      trailing_whitespace: ' '
-    - dep: csubj
-      idx: 37
-      norm: said
-      pos: VERB
-      text: said
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 42
-      norm: made
-      pos: VERB
-      text: made
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 47
-      norm: sense
-      pos: NOUN
-      text: sense
-      trailing_whitespace: ' '
-    - dep: dative
-      idx: 53
+    - dep: aux
+      idx: 36
       norm: to
-      pos: ADP
+      pos: PART
       text: to
       trailing_whitespace: ' '
-    - dep: pobj
-      idx: 56
-      norm: moody
-      pos: PROPN
-      text: Moody
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 62
-      norm: and
-      pos: CCONJ
-      text: and
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 66
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: conj
-      idx: 69
-      norm: wished
+    - dep: xcomp
+      idx: 39
+      norm: do
       pos: VERB
-      text: wished
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 76
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 79
-      norm: knew
-      pos: VERB
-      text: knew
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 84
-      norm: which
-      pos: DET
-      text: which
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 90
-      norm: one
-      pos: NUM
-      text: one
+      text: do
       trailing_whitespace: ''
     - dep: punct
-      idx: 93
+      idx: 41
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 43
+      norm: the
+      pos: DET
+      text: the
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 47
+      norm: problem
+      pos: NOUN
+      text: problem
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 55
+      norm: was
+      pos: AUX
+      text: was
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 59
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 62
+      norm: get
+      pos: VERB
+      text: get
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 66
+      norm: there
+      pos: ADV
+      text: there
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 71
       norm: .
       pos: PUNCT
       text: .
       trailing_whitespace: ''
   tokens_fr:
-  - dep: nsubj
+  - dep: expl:subj
     idx: 0
-    norm: harry
-    pos: PROPN
-    text: Harry
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 6
-    norm: se
+    norm: il
     pos: PRON
-    text: se
+    text: Il
     trailing_whitespace: ' '
-  - dep: ROOT
+  - dep: aux:tense
+    idx: 3
+    norm: avait
+    pos: AUX
+    text: avait
+    trailing_whitespace: ' '
+  - dep: advmod
     idx: 9
-    norm: rendait
+    norm: très
+    pos: ADV
+    text: très
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 14
+    norm: bien
+    pos: ADV
+    text: bien
+    trailing_whitespace: ' '
+  - dep: dep
+    idx: 19
+    norm: compris
     pos: VERB
-    text: rendait
+    text: compris
     trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 17
-    norm: compte
-    pos: NOUN
-    text: compte
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 24
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 28
+  - dep: obj
+    idx: 27
     norm: ce
     pos: PRON
     text: ce
     trailing_whitespace: ' '
   - dep: obj
-    idx: 31
-    norm: qu’
+    idx: 30
+    norm: qu'
     pos: PRON
-    text: qu’
+    text: qu'
     trailing_whitespace: ''
   - dep: nsubj
-    idx: 34
+    idx: 33
     norm: il
     pos: PRON
     text: il
     trailing_whitespace: ' '
   - dep: acl:relcl
-    idx: 37
-    norm: venait
-    pos: VERB
-    text: venait
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 44
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: iobj
-    idx: 47
-    norm: lui
-    pos: PRON
-    text: lui
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 51
-    norm: dire
-    pos: VERB
-    text: dire
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 56
+    idx: 36
     norm: avait
     pos: VERB
     text: avait
     trailing_whitespace: ' '
+  - dep: mark
+    idx: 42
+    norm: à
+    pos: ADP
+    text: à
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 44
+    norm: faire
+    pos: VERB
+    text: faire
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 49
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
   - dep: det
+    idx: 51
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 54
+    norm: problème
+    pos: NOUN
+    text: problème
+    trailing_whitespace: ''
+  - dep: punct
     idx: 62
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 64
+    norm: c'
+    pos: PRON
+    text: c'
+    trailing_whitespace: ''
+  - dep: cop
+    idx: 66
+    norm: était
+    pos: AUX
+    text: était
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 72
+    norm: d'
+    pos: ADP
+    text: d'
+    trailing_whitespace: ''
+  - dep: expl:comp
+    idx: 74
+    norm: y
+    pos: PRON
+    text: y
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 76
+    norm: arriver
+    pos: VERB
+    text: arriver
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 83
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+Il n'a jamais fait de mal à un élève, dit le côté Gryffondor de Harry.:
+  tokens_en:
+    He never harmed a student, said Harry's Gryffindor side.:
+    - dep: nsubj
+      idx: 0
+      norm: he
+      pos: PRON
+      text: He
+      trailing_whitespace: ' '
+    - dep: neg
+      idx: 3
+      norm: never
+      pos: ADV
+      text: never
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 9
+      norm: harmed
+      pos: VERB
+      text: harmed
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 16
+      norm: a
+      pos: DET
+      text: a
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 18
+      norm: student
+      pos: NOUN
+      text: student
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 25
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 27
+      norm: said
+      pos: VERB
+      text: said
+      trailing_whitespace: ' '
+    - dep: poss
+      idx: 32
+      norm: harry
+      pos: PROPN
+      text: Harry
+      trailing_whitespace: ''
+    - dep: case
+      idx: 37
+      norm: '''s'
+      pos: PART
+      text: '''s'
+      trailing_whitespace: ' '
+    - dep: compound
+      idx: 40
+      norm: gryffindor
+      pos: PROPN
+      text: Gryffindor
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 51
+      norm: side
+      pos: NOUN
+      text: side
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 55
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: expl:subj
+    idx: 0
+    norm: il
+    pos: PRON
+    text: Il
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 3
+    norm: n'
+    pos: ADV
+    text: n'
+    trailing_whitespace: ''
+  - dep: aux:tense
+    idx: 5
+    norm: a
+    pos: AUX
+    text: a
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 7
+    norm: jamais
+    pos: ADV
+    text: jamais
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 14
+    norm: fait
+    pos: VERB
+    text: fait
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 19
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 22
+    norm: mal
+    pos: NOUN
+    text: mal
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 26
+    norm: à
+    pos: ADP
+    text: à
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 28
     norm: un
     pos: DET
     text: un
     trailing_whitespace: ' '
-  - dep: obj
-    idx: 65
-    norm: sens
+  - dep: obl:arg
+    idx: 31
+    norm: élève
     pos: NOUN
-    text: sens
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 70
-    norm: pour
-    pos: ADP
-    text: pour
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 75
-    norm: maugrey
-    pos: PROPN
-    text: Maugrey
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 83
-    norm: et
-    pos: CCONJ
-    text: et
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 86
-    norm: il
-    pos: PRON
-    text: il
-    trailing_whitespace: ' '
-  - dep: aux:tense
-    idx: 89
-    norm: aurait
-    pos: AUX
-    text: aurait
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 96
-    norm: bien
-    pos: ADV
-    text: bien
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 101
-    norm: voulu
-    pos: VERB
-    text: voulu
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 107
-    norm: savoir
-    pos: VERB
-    text: savoir
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 114
-    norm: lequel
-    pos: PRON
-    text: lequel
+    text: élève
     trailing_whitespace: ''
   - dep: punct
-    idx: 120
+    idx: 36
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: advcl
+    idx: 38
+    norm: dit
+    pos: VERB
+    text: dit
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 42
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: obl:mod
+    idx: 45
+    norm: côté
+    pos: NOUN
+    text: côté
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 50
+    norm: gryffondor
+    pos: PROPN
+    text: Gryffondor
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 61
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 64
+    norm: harry
+    pos: PROPN
+    text: Harry
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 69
     norm: .
     pos: PUNCT
     text: .
@@ -6734,6 +6870,500 @@ Je crois que c'est moi qui ai eu l'idée de jouer avec, ce n'était pas une trè
     pos: PUNCT
     text: .
     trailing_whitespace: ''
+Je me sens comme si juste de commencer à apprendre le français et je me sens perdue et je ne me sens pas bien.:
+  tokens_en:
+    I feel like just starting to learn French and I feel lost and I don't feel good.:
+    - dep: nsubj
+      idx: 0
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 2
+      norm: feel
+      pos: VERB
+      text: feel
+      trailing_whitespace: ' '
+    - dep: intj
+      idx: 7
+      norm: like
+      pos: ADP
+      text: like
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 12
+      norm: just
+      pos: ADV
+      text: just
+      trailing_whitespace: ' '
+    - dep: pcomp
+      idx: 17
+      norm: starting
+      pos: VERB
+      text: starting
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 26
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 29
+      norm: learn
+      pos: VERB
+      text: learn
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 35
+      norm: french
+      pos: PROPN
+      text: French
+      trailing_whitespace: ' '
+    - dep: cc
+      idx: 42
+      norm: and
+      pos: CCONJ
+      text: and
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 46
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: conj
+      idx: 48
+      norm: feel
+      pos: VERB
+      text: feel
+      trailing_whitespace: ' '
+    - dep: acomp
+      idx: 53
+      norm: lost
+      pos: ADJ
+      text: lost
+      trailing_whitespace: ' '
+    - dep: cc
+      idx: 58
+      norm: and
+      pos: CCONJ
+      text: and
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 62
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 64
+      norm: do
+      pos: AUX
+      text: do
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 66
+      norm: not
+      pos: PART
+      text: n't
+      trailing_whitespace: ' '
+    - dep: conj
+      idx: 70
+      norm: feel
+      pos: VERB
+      text: feel
+      trailing_whitespace: ' '
+    - dep: acomp
+      idx: 75
+      norm: good
+      pos: ADJ
+      text: good
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 79
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: je
+    pos: PRON
+    text: Je
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 3
+    norm: me
+    pos: PRON
+    text: me
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 6
+    norm: sens
+    pos: VERB
+    text: sens
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 11
+    norm: comme
+    pos: ADP
+    text: comme
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 17
+    norm: si
+    pos: SCONJ
+    text: si
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 20
+    norm: juste
+    pos: ADV
+    text: juste
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 26
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: advcl
+    idx: 29
+    norm: commencer
+    pos: VERB
+    text: commencer
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 39
+    norm: à
+    pos: ADP
+    text: à
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 41
+    norm: apprendre
+    pos: VERB
+    text: apprendre
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 51
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 54
+    norm: français
+    pos: NOUN
+    text: français
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 63
+    norm: et
+    pos: CCONJ
+    text: et
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 66
+    norm: je
+    pos: PRON
+    text: je
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 69
+    norm: me
+    pos: PRON
+    text: me
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 72
+    norm: sens
+    pos: VERB
+    text: sens
+    trailing_whitespace: ' '
+  - dep: acl
+    idx: 77
+    norm: perdue
+    pos: VERB
+    text: perdue
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 84
+    norm: et
+    pos: CCONJ
+    text: et
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 87
+    norm: je
+    pos: PRON
+    text: je
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 90
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: iobj
+    idx: 93
+    norm: me
+    pos: PRON
+    text: me
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 96
+    norm: sens
+    pos: VERB
+    text: sens
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 101
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 105
+    norm: bien
+    pos: ADV
+    text: bien
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 109
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+Je n'ai pas le temps de te le dire maintenant, il faut que je réponde très vite.:
+  tokens_en:
+    I don't have time to tell you now, I have to answer very quickly.:
+    - dep: nsubj
+      idx: 0
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 2
+      norm: do
+      pos: AUX
+      text: do
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 4
+      norm: not
+      pos: PART
+      text: n't
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 8
+      norm: have
+      pos: VERB
+      text: have
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 13
+      norm: time
+      pos: NOUN
+      text: time
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 18
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: relcl
+      idx: 21
+      norm: tell
+      pos: VERB
+      text: tell
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 26
+      norm: you
+      pos: PRON
+      text: you
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 30
+      norm: now
+      pos: ADV
+      text: now
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 33
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 35
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 37
+      norm: have
+      pos: VERB
+      text: have
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 42
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 45
+      norm: answer
+      pos: VERB
+      text: answer
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 52
+      norm: very
+      pos: ADV
+      text: very
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 57
+      norm: quickly
+      pos: ADV
+      text: quickly
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 64
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: je
+    pos: PRON
+    text: Je
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 3
+    norm: n'
+    pos: ADV
+    text: n'
+    trailing_whitespace: ''
+  - dep: advcl
+    idx: 5
+    norm: ai
+    pos: VERB
+    text: ai
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 8
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 12
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 15
+    norm: temps
+    pos: NOUN
+    text: temps
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 21
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 24
+    norm: te
+    pos: PRON
+    text: te
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 27
+    norm: le
+    pos: PRON
+    text: le
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 30
+    norm: dire
+    pos: VERB
+    text: dire
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 35
+    norm: maintenant
+    pos: ADV
+    text: maintenant
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 45
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: expl:subj
+    idx: 47
+    norm: il
+    pos: PRON
+    text: il
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 50
+    norm: faut
+    pos: VERB
+    text: faut
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 55
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 59
+    norm: je
+    pos: PRON
+    text: je
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 62
+    norm: réponde
+    pos: VERB
+    text: réponde
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 70
+    norm: très
+    pos: ADV
+    text: très
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 75
+    norm: vite
+    pos: ADV
+    text: vite
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 79
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
 Je ne pense pas qu'il puisse arriver quoi que ce soit à Harry avec Dumbledore comme directeur de Poudlard.:
   tokens_en:
     I don't think anything could happen to Harry with Dumbledore as Head of Hogwarts.:
@@ -7234,9 +7864,9 @@ Je ne sais pas si Dumbledore le lui a demandé mais, en tout cas, c'est ce qu'il
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-Je ne sais pas si Dumbledore le lui a demandé mais, en tout cas, c’est ce qu’il fait, répondit Harry.:
+Je ne vous demanderai pas de m'en faire part, car je sais que vous ne le ferez jamais.:
   tokens_en:
-    I don't know if Dumbledore asked him to, but anyway he does, Harry replied.:
+    I won't ask you to let me know, because I know you never will.:
     - dep: nsubj
       idx: 0
       norm: i
@@ -7245,9 +7875,9 @@ Je ne sais pas si Dumbledore le lui a demandé mais, en tout cas, c’est ce qu�
       trailing_whitespace: ' '
     - dep: aux
       idx: 2
-      norm: do
+      norm: will
       pos: AUX
-      text: do
+      text: wo
       trailing_whitespace: ''
     - dep: neg
       idx: 4
@@ -7255,92 +7885,86 @@ Je ne sais pas si Dumbledore le lui a demandé mais, en tout cas, c’est ce qu�
       pos: PART
       text: n't
       trailing_whitespace: ' '
-    - dep: ccomp
+    - dep: ROOT
       idx: 8
+      norm: ask
+      pos: VERB
+      text: ask
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 12
+      norm: you
+      pos: PRON
+      text: you
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 16
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: xcomp
+      idx: 19
+      norm: let
+      pos: VERB
+      text: let
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 23
+      norm: me
+      pos: PRON
+      text: me
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 26
+      norm: know
+      pos: VERB
+      text: know
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 30
+      norm: ','
+      pos: PUNCT
+      text: ','
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 32
+      norm: because
+      pos: SCONJ
+      text: because
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 40
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 42
       norm: know
       pos: VERB
       text: know
       trailing_whitespace: ' '
-    - dep: mark
-      idx: 13
-      norm: if
-      pos: SCONJ
-      text: if
-      trailing_whitespace: ' '
     - dep: nsubj
-      idx: 16
-      norm: dumbledore
-      pos: PROPN
-      text: Dumbledore
+      idx: 47
+      norm: you
+      pos: PRON
+      text: you
+      trailing_whitespace: ' '
+    - dep: neg
+      idx: 51
+      norm: never
+      pos: ADV
+      text: never
       trailing_whitespace: ' '
     - dep: ccomp
-      idx: 27
-      norm: asked
-      pos: VERB
-      text: asked
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 33
-      norm: him
-      pos: PRON
-      text: him
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 37
-      norm: to
-      pos: PART
-      text: to
+      idx: 57
+      norm: will
+      pos: AUX
+      text: will
       trailing_whitespace: ''
     - dep: punct
-      idx: 39
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 41
-      norm: but
-      pos: CCONJ
-      text: but
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 45
-      norm: anyway
-      pos: ADV
-      text: anyway
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 52
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: conj
-      idx: 55
-      norm: does
-      pos: VERB
-      text: does
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 59
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: nsubj
       idx: 61
-      norm: harry
-      pos: PROPN
-      text: Harry
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 67
-      norm: replied
-      pos: VERB
-      text: replied
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 74
       norm: .
       pos: PUNCT
       text: .
@@ -7358,146 +7982,300 @@ Je ne sais pas si Dumbledore le lui a demandé mais, en tout cas, c’est ce qu�
     pos: ADV
     text: ne
     trailing_whitespace: ' '
-  - dep: ROOT
+  - dep: iobj
     idx: 6
-    norm: sais
+    norm: vous
+    pos: PRON
+    text: vous
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 11
+    norm: demanderai
     pos: VERB
-    text: sais
+    text: demanderai
     trailing_whitespace: ' '
   - dep: advmod
-    idx: 11
+    idx: 22
     norm: pas
     pos: ADV
     text: pas
     trailing_whitespace: ' '
   - dep: mark
-    idx: 15
-    norm: si
+    idx: 26
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 29
+    norm: m'
+    pos: PRON
+    text: m'
+    trailing_whitespace: ''
+  - dep: iobj
+    idx: 31
+    norm: en
+    pos: PRON
+    text: en
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 34
+    norm: faire
+    pos: VERB
+    text: faire
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 40
+    norm: part
+    pos: NOUN
+    text: part
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 44
+    norm: ','
+    pos: PUNCT
+    text: ','
+    trailing_whitespace: ' '
+  - dep: cc
+    idx: 46
+    norm: car
+    pos: CCONJ
+    text: car
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 50
+    norm: je
+    pos: PRON
+    text: je
+    trailing_whitespace: ' '
+  - dep: conj
+    idx: 53
+    norm: sais
+    pos: VERB
+    text: sais
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 58
+    norm: que
     pos: SCONJ
-    text: si
+    text: que
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 62
+    norm: vous
+    pos: PRON
+    text: vous
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 67
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 70
+    norm: le
+    pos: PRON
+    text: le
     trailing_whitespace: ' '
   - dep: ccomp
+    idx: 73
+    norm: ferez
+    pos: VERB
+    text: ferez
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 79
+    norm: jamais
+    pos: ADV
+    text: jamais
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 85
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
+Je pense donc que vous avez le droit de savoir ce qui s'est exactement passé.:
+  tokens_en:
+    So I think you have a right to know what exactly happened.:
+    - dep: advmod
+      idx: 0
+      norm: so
+      pos: ADV
+      text: So
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 3
+      norm: i
+      pos: PRON
+      text: I
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 5
+      norm: think
+      pos: VERB
+      text: think
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 11
+      norm: you
+      pos: PRON
+      text: you
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 15
+      norm: have
+      pos: VERB
+      text: have
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 20
+      norm: a
+      pos: DET
+      text: a
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 22
+      norm: right
+      pos: NOUN
+      text: right
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 28
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: acl
+      idx: 31
+      norm: know
+      pos: VERB
+      text: know
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 36
+      norm: what
+      pos: PRON
+      text: what
+      trailing_whitespace: ' '
+    - dep: advmod
+      idx: 41
+      norm: exactly
+      pos: ADV
+      text: exactly
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 49
+      norm: happened
+      pos: VERB
+      text: happened
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 57
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: je
+    pos: PRON
+    text: Je
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 3
+    norm: pense
+    pos: VERB
+    text: pense
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 9
+    norm: donc
+    pos: ADV
+    text: donc
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 14
+    norm: que
+    pos: SCONJ
+    text: que
+    trailing_whitespace: ' '
+  - dep: nsubj
     idx: 18
-    norm: dumbledore
-    pos: PROPN
-    text: Dumbledore
+    norm: vous
+    pos: PRON
+    text: vous
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 23
+    norm: avez
+    pos: VERB
+    text: avez
     trailing_whitespace: ' '
   - dep: det
-    idx: 29
+    idx: 28
     norm: le
     pos: DET
     text: le
     trailing_whitespace: ' '
-  - dep: iobj
-    idx: 32
-    norm: lui
-    pos: PRON
-    text: lui
-    trailing_whitespace: ' '
-  - dep: aux:tense
-    idx: 36
-    norm: a
-    pos: AUX
-    text: a
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 38
-    norm: demandé
-    pos: VERB
-    text: demandé
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 46
-    norm: mais
-    pos: CCONJ
-    text: mais
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 50
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 52
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 55
-    norm: tout
-    pos: DET
-    text: tout
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 60
-    norm: cas
+  - dep: obj
+    idx: 31
+    norm: droit
     pos: NOUN
-    text: cas
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 63
-    norm: ','
-    pos: PUNCT
-    text: ','
+    text: droit
     trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 65
-    norm: c’
-    pos: PRON
-    text: c’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 67
-    norm: est
-    pos: AUX
-    text: est
+  - dep: mark
+    idx: 37
+    norm: de
+    pos: ADP
+    text: de
     trailing_whitespace: ' '
-  - dep: conj
-    idx: 71
+  - dep: acl
+    idx: 40
+    norm: savoir
+    pos: VERB
+    text: savoir
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 47
     norm: ce
     pos: PRON
     text: ce
     trailing_whitespace: ' '
-  - dep: obj
-    idx: 74
-    norm: qu’
-    pos: PRON
-    text: qu’
-    trailing_whitespace: ''
   - dep: nsubj
-    idx: 77
-    norm: il
+    idx: 50
+    norm: qui
     pos: PRON
-    text: il
+    text: qui
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 54
+    norm: s'
+    pos: PRON
+    text: s'
+    trailing_whitespace: ''
+  - dep: aux:tense
+    idx: 56
+    norm: est
+    pos: AUX
+    text: est
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 60
+    norm: exactement
+    pos: ADV
+    text: exactement
     trailing_whitespace: ' '
   - dep: acl:relcl
-    idx: 80
-    norm: fait
+    idx: 71
+    norm: passé
     pos: VERB
-    text: fait
+    text: passé
     trailing_whitespace: ''
   - dep: punct
-    idx: 84
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: parataxis
-    idx: 86
-    norm: répondit
-    pos: NOUN
-    text: répondit
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 95
-    norm: harry
-    pos: PROPN
-    text: Harry
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 100
+    idx: 76
     norm: .
     pos: PUNCT
     text: .
@@ -7679,238 +8457,6 @@ Je pense que c'est tout simplement impossible, dit soudain Ron à l'autre bout d
     norm: l'
     pos: DET
     text: l'
-    trailing_whitespace: ''
-  - dep: amod
-    idx: 67
-    norm: autre
-    pos: ADJ
-    text: autre
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 73
-    norm: bout
-    pos: NOUN
-    text: bout
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 78
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 81
-    norm: la
-    pos: DET
-    text: la
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 84
-    norm: table
-    pos: NOUN
-    text: table
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 89
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-Je pense que c’est tout simplement impossible, dit soudain Ron à l’autre bout de la table.:
-  tokens_en:
-    I think it's just impossible, Ron said suddenly from the other end of the table.:
-    - dep: nsubj
-      idx: 0
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 2
-      norm: think
-      pos: VERB
-      text: think
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 8
-      norm: it
-      pos: PRON
-      text: it
-      trailing_whitespace: ''
-    - dep: ccomp
-      idx: 10
-      norm: '''s'
-      pos: AUX
-      text: '''s'
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 13
-      norm: just
-      pos: ADV
-      text: just
-      trailing_whitespace: ' '
-    - dep: acomp
-      idx: 18
-      norm: impossible
-      pos: ADJ
-      text: impossible
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 28
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 30
-      norm: ron
-      pos: PROPN
-      text: Ron
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 34
-      norm: said
-      pos: VERB
-      text: said
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 39
-      norm: suddenly
-      pos: ADV
-      text: suddenly
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 48
-      norm: from
-      pos: ADP
-      text: from
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 53
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: amod
-      idx: 57
-      norm: other
-      pos: ADJ
-      text: other
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 63
-      norm: end
-      pos: NOUN
-      text: end
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 67
-      norm: of
-      pos: ADP
-      text: of
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 70
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 74
-      norm: table
-      pos: NOUN
-      text: table
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 79
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: nsubj
-    idx: 0
-    norm: je
-    pos: PRON
-    text: Je
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 3
-    norm: pense
-    pos: VERB
-    text: pense
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 9
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 13
-    norm: c’
-    pos: PRON
-    text: c’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 15
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 19
-    norm: tout
-    pos: ADV
-    text: tout
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 24
-    norm: simplement
-    pos: ADV
-    text: simplement
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 35
-    norm: impossible
-    pos: ADJ
-    text: impossible
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 45
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: advcl
-    idx: 47
-    norm: dit
-    pos: VERB
-    text: dit
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 51
-    norm: soudain
-    pos: ADV
-    text: soudain
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 59
-    norm: ron
-    pos: PROPN
-    text: Ron
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 63
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 65
-    norm: l’
-    pos: DET
-    text: l’
     trailing_whitespace: ''
   - dep: amod
     idx: 67
@@ -8146,506 +8692,6 @@ Je suis sur le point de tuer ton amie et tu ne penses qu'à tes Verres.:
     trailing_whitespace: ''
   - dep: punct
     idx: 69
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-Je suis sur le point de tuer ton amie et tu ne penses qu’à tes Verres.:
-  tokens_en:
-    I'm about to kill your friend and you're just thinking about your Glasses.:
-    - dep: nsubj
-      idx: 0
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ''
-    - dep: ROOT
-      idx: 1
-      norm: am
-      pos: VERB
-      text: '''m'
-      trailing_whitespace: ' '
-    - dep: acomp
-      idx: 4
-      norm: about
-      pos: ADJ
-      text: about
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 10
-      norm: to
-      pos: PART
-      text: to
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 13
-      norm: kill
-      pos: VERB
-      text: kill
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 18
-      norm: your
-      pos: PRON
-      text: your
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 23
-      norm: friend
-      pos: NOUN
-      text: friend
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 30
-      norm: and
-      pos: CCONJ
-      text: and
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 34
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ''
-    - dep: aux
-      idx: 37
-      norm: are
-      pos: AUX
-      text: '''re'
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 41
-      norm: just
-      pos: ADV
-      text: just
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 46
-      norm: thinking
-      pos: VERB
-      text: thinking
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 55
-      norm: about
-      pos: ADP
-      text: about
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 61
-      norm: your
-      pos: PRON
-      text: your
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 66
-      norm: glasses
-      pos: NOUN
-      text: Glasses
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 73
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: nsubj
-    idx: 0
-    norm: je
-    pos: PRON
-    text: Je
-    trailing_whitespace: ' '
-  - dep: cop
-    idx: 3
-    norm: suis
-    pos: AUX
-    text: suis
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 8
-    norm: sur
-    pos: ADP
-    text: sur
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 12
-    norm: le
-    pos: DET
-    text: le
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 15
-    norm: point
-    pos: NOUN
-    text: point
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 21
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: acl
-    idx: 24
-    norm: tuer
-    pos: VERB
-    text: tuer
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 29
-    norm: ton
-    pos: DET
-    text: ton
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 33
-    norm: amie
-    pos: NOUN
-    text: amie
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 38
-    norm: et
-    pos: CCONJ
-    text: et
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 41
-    norm: tu
-    pos: PRON
-    text: tu
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 44
-    norm: ne
-    pos: ADV
-    text: ne
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 47
-    norm: penses
-    pos: VERB
-    text: penses
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 54
-    norm: qu’
-    pos: SCONJ
-    text: qu’
-    trailing_whitespace: ''
-  - dep: case
-    idx: 57
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 59
-    norm: tes
-    pos: DET
-    text: tes
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 63
-    norm: verres
-    pos: PROPN
-    text: Verres
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 69
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-J’ai un élève, d’ailleurs, qui le lit en ce moment et c’est lui qui m’en a parlé.:
-  tokens_en:
-    I have a student, by the way, reading it right now and he's the one who told me about it.:
-    - dep: nsubj
-      idx: 0
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 2
-      norm: have
-      pos: VERB
-      text: have
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 7
-      norm: a
-      pos: DET
-      text: a
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 9
-      norm: student
-      pos: NOUN
-      text: student
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 16
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 18
-      norm: by
-      pos: ADP
-      text: by
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 21
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 25
-      norm: way
-      pos: NOUN
-      text: way
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 28
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: advcl
-      idx: 30
-      norm: reading
-      pos: VERB
-      text: reading
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 38
-      norm: it
-      pos: PRON
-      text: it
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 41
-      norm: right
-      pos: ADV
-      text: right
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 47
-      norm: now
-      pos: ADV
-      text: now
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 51
-      norm: and
-      pos: CCONJ
-      text: and
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 55
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ''
-    - dep: ROOT
-      idx: 57
-      norm: '''s'
-      pos: AUX
-      text: '''s'
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 60
-      norm: the
-      pos: DET
-      text: the
-      trailing_whitespace: ' '
-    - dep: attr
-      idx: 64
-      norm: one
-      pos: NUM
-      text: one
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 68
-      norm: who
-      pos: PRON
-      text: who
-      trailing_whitespace: ' '
-    - dep: relcl
-      idx: 72
-      norm: told
-      pos: VERB
-      text: told
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 77
-      norm: me
-      pos: PRON
-      text: me
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 80
-      norm: about
-      pos: ADP
-      text: about
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 86
-      norm: it
-      pos: PRON
-      text: it
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 88
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: nsubj
-    idx: 0
-    norm: j’
-    pos: PRON
-    text: J’
-    trailing_whitespace: ''
-  - dep: ROOT
-    idx: 2
-    norm: ai
-    pos: VERB
-    text: ai
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 5
-    norm: un
-    pos: DET
-    text: un
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 8
-    norm: élève
-    pos: NOUN
-    text: élève
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 13
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 15
-    norm: d’
-    pos: ADP
-    text: d’
-    trailing_whitespace: ''
-  - dep: obl:mod
-    idx: 17
-    norm: ailleurs
-    pos: ADV
-    text: ailleurs
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 25
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 27
-    norm: qui
-    pos: PRON
-    text: qui
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 31
-    norm: le
-    pos: DET
-    text: le
-    trailing_whitespace: ' '
-  - dep: dep
-    idx: 34
-    norm: lit
-    pos: NOUN
-    text: lit
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 38
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 41
-    norm: ce
-    pos: DET
-    text: ce
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 44
-    norm: moment
-    pos: NOUN
-    text: moment
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 51
-    norm: et
-    pos: CCONJ
-    text: et
-    trailing_whitespace: ' '
-  - dep: expl:subj
-    idx: 54
-    norm: c’
-    pos: PRON
-    text: c’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 56
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 60
-    norm: lui
-    pos: PRON
-    text: lui
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 64
-    norm: qui
-    pos: PRON
-    text: qui
-    trailing_whitespace: ' '
-  - dep: iobj
-    idx: 68
-    norm: m’
-    pos: PRON
-    text: m’
-    trailing_whitespace: ''
-  - dep: iobj
-    idx: 70
-    norm: en
-    pos: PRON
-    text: en
-    trailing_whitespace: ' '
-  - dep: aux:tense
-    idx: 73
-    norm: a
-    pos: AUX
-    text: a
-    trailing_whitespace: ' '
-  - dep: acl:relcl
-    idx: 75
-    norm: parlé
-    pos: VERB
-    text: parlé
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 80
     norm: .
     pos: PUNCT
     text: .
@@ -9370,6 +9416,250 @@ Le directeur ne sait pas ce que j'ai fait, et je vous demande de ne pas lui dire
     pos: PUNCT
     text: .
     trailing_whitespace: ''
+M. Potter vous a dit qu'on ne saurait parler de ce sort avec ceux qui ne peuvent le lancer !:
+  tokens_en:
+    Mr. Potter told you that this spell cannot be discussed with those who cannot cast it!:
+    - dep: compound
+      idx: 0
+      norm: mr.
+      pos: PROPN
+      text: Mr.
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 4
+      norm: potter
+      pos: PROPN
+      text: Potter
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 11
+      norm: told
+      pos: VERB
+      text: told
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 16
+      norm: you
+      pos: PRON
+      text: you
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 20
+      norm: that
+      pos: SCONJ
+      text: that
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 25
+      norm: this
+      pos: DET
+      text: this
+      trailing_whitespace: ' '
+    - dep: nsubjpass
+      idx: 30
+      norm: spell
+      pos: NOUN
+      text: spell
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 36
+      norm: can
+      pos: AUX
+      text: can
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 39
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
+    - dep: auxpass
+      idx: 43
+      norm: be
+      pos: AUX
+      text: be
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 46
+      norm: discussed
+      pos: VERB
+      text: discussed
+      trailing_whitespace: ' '
+    - dep: prep
+      idx: 56
+      norm: with
+      pos: ADP
+      text: with
+      trailing_whitespace: ' '
+    - dep: pobj
+      idx: 61
+      norm: those
+      pos: DET
+      text: those
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 67
+      norm: who
+      pos: PRON
+      text: who
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 71
+      norm: can
+      pos: AUX
+      text: can
+      trailing_whitespace: ''
+    - dep: neg
+      idx: 74
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
+    - dep: relcl
+      idx: 78
+      norm: cast
+      pos: VERB
+      text: cast
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 83
+      norm: it
+      pos: PRON
+      text: it
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 85
+      norm: '!'
+      pos: PUNCT
+      text: '!'
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: m.
+    pos: NOUN
+    text: M.
+    trailing_whitespace: ' '
+  - dep: flat:name
+    idx: 3
+    norm: potter
+    pos: PROPN
+    text: Potter
+    trailing_whitespace: ' '
+  - dep: iobj
+    idx: 10
+    norm: vous
+    pos: PRON
+    text: vous
+    trailing_whitespace: ' '
+  - dep: aux:tense
+    idx: 15
+    norm: a
+    pos: AUX
+    text: a
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 17
+    norm: dit
+    pos: VERB
+    text: dit
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 21
+    norm: qu'
+    pos: SCONJ
+    text: qu'
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 24
+    norm: 'on'
+    pos: PRON
+    text: 'on'
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 27
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 30
+    norm: saurait
+    pos: VERB
+    text: saurait
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 38
+    norm: parler
+    pos: VERB
+    text: parler
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 45
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 48
+    norm: ce
+    pos: DET
+    text: ce
+    trailing_whitespace: ' '
+  - dep: obl:arg
+    idx: 51
+    norm: sort
+    pos: NOUN
+    text: sort
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 56
+    norm: avec
+    pos: ADP
+    text: avec
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 61
+    norm: ceux
+    pos: PRON
+    text: ceux
+    trailing_whitespace: ' '
+  - dep: nsubj
+    idx: 66
+    norm: qui
+    pos: PRON
+    text: qui
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 70
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: acl:relcl
+    idx: 73
+    norm: peuvent
+    pos: VERB
+    text: peuvent
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 81
+    norm: le
+    pos: PRON
+    text: le
+    trailing_whitespace: ' '
+  - dep: xcomp
+    idx: 84
+    norm: lancer
+    pos: VERB
+    text: lancer
+    trailing_whitespace: ' '
+  - dep: punct
+    idx: 91
+    norm: '!'
+    pos: PUNCT
+    text: '!'
+    trailing_whitespace: ''
 Mais ce n'est pas tout, reprit Harry d'une voix à peine plus forte qu'un murmure.:
   tokens_en:
     But that's not all, Harry said in a voice barely louder than a whisper.:
@@ -9577,232 +9867,6 @@ Mais ce n'est pas tout, reprit Harry d'une voix à peine plus forte qu'un murmur
     norm: qu'
     pos: SCONJ
     text: qu'
-    trailing_whitespace: ''
-  - dep: det
-    idx: 70
-    norm: un
-    pos: DET
-    text: un
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 73
-    norm: murmure
-    pos: NOUN
-    text: murmure
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 80
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-Mais ce n’est pas tout, reprit Harry d’une voix à peine plus forte qu’un murmure.:
-  tokens_en:
-    But that's not all, Harry said, his voice barely louder than a whisper.:
-    - dep: cc
-      idx: 0
-      norm: but
-      pos: CCONJ
-      text: But
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 4
-      norm: that
-      pos: DET
-      text: that
-      trailing_whitespace: ''
-    - dep: ROOT
-      idx: 8
-      norm: '''s'
-      pos: AUX
-      text: '''s'
-      trailing_whitespace: ' '
-    - dep: neg
-      idx: 11
-      norm: not
-      pos: PART
-      text: not
-      trailing_whitespace: ' '
-    - dep: attr
-      idx: 15
-      norm: all
-      pos: DET
-      text: all
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 18
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 20
-      norm: harry
-      pos: PROPN
-      text: Harry
-      trailing_whitespace: ' '
-    - dep: parataxis
-      idx: 26
-      norm: said
-      pos: VERB
-      text: said
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 30
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 32
-      norm: his
-      pos: PRON
-      text: his
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 36
-      norm: voice
-      pos: NOUN
-      text: voice
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 42
-      norm: barely
-      pos: ADV
-      text: barely
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 49
-      norm: louder
-      pos: ADV
-      text: louder
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 56
-      norm: than
-      pos: SCONJ
-      text: than
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 61
-      norm: a
-      pos: DET
-      text: a
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 63
-      norm: whisper
-      pos: NOUN
-      text: whisper
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 70
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: cc
-    idx: 0
-    norm: mais
-    pos: CCONJ
-    text: Mais
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 5
-    norm: ce
-    pos: PRON
-    text: ce
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 8
-    norm: n’
-    pos: ADV
-    text: n’
-    trailing_whitespace: ''
-  - dep: cop
-    idx: 10
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 14
-    norm: pas
-    pos: ADV
-    text: pas
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 18
-    norm: tout
-    pos: ADV
-    text: tout
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 22
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: fixed
-    idx: 24
-    norm: reprit
-    pos: VERB
-    text: reprit
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 31
-    norm: harry
-    pos: PROPN
-    text: Harry
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 37
-    norm: d’
-    pos: ADP
-    text: d’
-    trailing_whitespace: ''
-  - dep: det
-    idx: 39
-    norm: une
-    pos: DET
-    text: une
-    trailing_whitespace: ' '
-  - dep: obl:arg
-    idx: 43
-    norm: voix
-    pos: NOUN
-    text: voix
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 48
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 50
-    norm: peine
-    pos: NOUN
-    text: peine
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 56
-    norm: plus
-    pos: ADV
-    text: plus
-    trailing_whitespace: ' '
-  - dep: amod
-    idx: 61
-    norm: forte
-    pos: ADJ
-    text: forte
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 67
-    norm: qu’
-    pos: SCONJ
-    text: qu’
     trailing_whitespace: ''
   - dep: det
     idx: 70
@@ -10073,280 +10137,6 @@ Mais je ne pense pas qu'il puisse se trouver près de chez moi en ce moment, qu'
     text: que
     trailing_whitespace: ' '
   - dep: nsubj
-    idx: 90
-    norm: tu
-    pos: PRON
-    text: tu
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 93
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: dep
-    idx: 96
-    norm: penses
-    pos: NOUN
-    text: penses
-    trailing_whitespace: ' '
-  - dep: punct
-    idx: 103
-    norm: '?'
-    pos: PUNCT
-    text: '?'
-    trailing_whitespace: ''
-Mais je ne pense pas qu’il puisse se trouver près de chez moi en ce moment, qu’est-ce que tu en penses ?:
-  tokens_en:
-    But I don't think he could be near my house right now, what do you think?:
-    - dep: cc
-      idx: 0
-      norm: but
-      pos: CCONJ
-      text: But
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 4
-      norm: i
-      pos: PRON
-      text: I
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 6
-      norm: do
-      pos: AUX
-      text: do
-      trailing_whitespace: ''
-    - dep: neg
-      idx: 8
-      norm: not
-      pos: PART
-      text: n't
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 12
-      norm: think
-      pos: VERB
-      text: think
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 18
-      norm: he
-      pos: PRON
-      text: he
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 21
-      norm: could
-      pos: AUX
-      text: could
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 27
-      norm: be
-      pos: VERB
-      text: be
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 30
-      norm: near
-      pos: SCONJ
-      text: near
-      trailing_whitespace: ' '
-    - dep: poss
-      idx: 35
-      norm: my
-      pos: PRON
-      text: my
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 38
-      norm: house
-      pos: NOUN
-      text: house
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 44
-      norm: right
-      pos: ADV
-      text: right
-      trailing_whitespace: ' '
-    - dep: advmod
-      idx: 50
-      norm: now
-      pos: ADV
-      text: now
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 53
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 55
-      norm: what
-      pos: PRON
-      text: what
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 60
-      norm: do
-      pos: AUX
-      text: do
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 63
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 67
-      norm: think
-      pos: VERB
-      text: think
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 72
-      norm: '?'
-      pos: PUNCT
-      text: '?'
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: cc
-    idx: 0
-    norm: mais
-    pos: CCONJ
-    text: Mais
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 5
-    norm: je
-    pos: PRON
-    text: je
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 8
-    norm: ne
-    pos: ADV
-    text: ne
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 11
-    norm: pense
-    pos: VERB
-    text: pense
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 17
-    norm: pas
-    pos: ADV
-    text: pas
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 21
-    norm: qu’
-    pos: SCONJ
-    text: qu’
-    trailing_whitespace: ''
-  - dep: expl:subj
-    idx: 24
-    norm: il
-    pos: PRON
-    text: il
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 27
-    norm: puisse
-    pos: VERB
-    text: puisse
-    trailing_whitespace: ' '
-  - dep: expl:comp
-    idx: 34
-    norm: se
-    pos: PRON
-    text: se
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 37
-    norm: trouver
-    pos: VERB
-    text: trouver
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 45
-    norm: près
-    pos: ADV
-    text: près
-    trailing_whitespace: ' '
-  - dep: dep
-    idx: 50
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 53
-    norm: chez
-    pos: ADP
-    text: chez
-    trailing_whitespace: ' '
-  - dep: dep
-    idx: 58
-    norm: moi
-    pos: PRON
-    text: moi
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 62
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 65
-    norm: ce
-    pos: DET
-    text: ce
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 68
-    norm: moment
-    pos: NOUN
-    text: moment
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 74
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 76
-    norm: qu’
-    pos: PRON
-    text: qu’
-    trailing_whitespace: ''
-  - dep: dep
-    idx: 79
-    norm: est
-    pos: AUX
-    text: est
-    trailing_whitespace: ''
-  - dep: dep
-    idx: 82
-    norm: -ce
-    pos: PRON
-    text: -ce
-    trailing_whitespace: ' '
-  - dep: fixed
-    idx: 86
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: dep
     idx: 90
     norm: tu
     pos: PRON
@@ -10864,6 +10654,262 @@ Nous, on a vu que l'inspecteur, la maîtresse et le directeur n'avaient pas l'ai
     pos: PUNCT
     text: .
     trailing_whitespace: ''
+On se dit qu'on ne fait pas quelque chose parce qu'on n'a pas le temps de le faire.:
+  tokens_en:
+    We tell ourselves that we are not doing something because we do not have the time to do it.:
+    - dep: nsubj
+      idx: 0
+      norm: we
+      pos: PRON
+      text: We
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 3
+      norm: tell
+      pos: VERB
+      text: tell
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 8
+      norm: ourselves
+      pos: PRON
+      text: ourselves
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 18
+      norm: that
+      pos: SCONJ
+      text: that
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 23
+      norm: we
+      pos: PRON
+      text: we
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 26
+      norm: are
+      pos: AUX
+      text: are
+      trailing_whitespace: ' '
+    - dep: neg
+      idx: 30
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
+    - dep: ccomp
+      idx: 34
+      norm: doing
+      pos: VERB
+      text: doing
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 40
+      norm: something
+      pos: PRON
+      text: something
+      trailing_whitespace: ' '
+    - dep: mark
+      idx: 50
+      norm: because
+      pos: SCONJ
+      text: because
+      trailing_whitespace: ' '
+    - dep: nsubj
+      idx: 58
+      norm: we
+      pos: PRON
+      text: we
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 61
+      norm: do
+      pos: AUX
+      text: do
+      trailing_whitespace: ' '
+    - dep: neg
+      idx: 64
+      norm: not
+      pos: PART
+      text: not
+      trailing_whitespace: ' '
+    - dep: advcl
+      idx: 68
+      norm: have
+      pos: VERB
+      text: have
+      trailing_whitespace: ' '
+    - dep: det
+      idx: 73
+      norm: the
+      pos: DET
+      text: the
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 77
+      norm: time
+      pos: NOUN
+      text: time
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 82
+      norm: to
+      pos: PART
+      text: to
+      trailing_whitespace: ' '
+    - dep: relcl
+      idx: 85
+      norm: do
+      pos: VERB
+      text: do
+      trailing_whitespace: ' '
+    - dep: dobj
+      idx: 88
+      norm: it
+      pos: PRON
+      text: it
+      trailing_whitespace: ''
+    - dep: punct
+      idx: 90
+      norm: .
+      pos: PUNCT
+      text: .
+      trailing_whitespace: ''
+  tokens_fr:
+  - dep: nsubj
+    idx: 0
+    norm: 'on'
+    pos: PRON
+    text: 'On'
+    trailing_whitespace: ' '
+  - dep: expl:comp
+    idx: 3
+    norm: se
+    pos: PRON
+    text: se
+    trailing_whitespace: ' '
+  - dep: ROOT
+    idx: 6
+    norm: dit
+    pos: VERB
+    text: dit
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 10
+    norm: qu'
+    pos: SCONJ
+    text: qu'
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 13
+    norm: 'on'
+    pos: PRON
+    text: 'on'
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 16
+    norm: ne
+    pos: ADV
+    text: ne
+    trailing_whitespace: ' '
+  - dep: ccomp
+    idx: 19
+    norm: fait
+    pos: VERB
+    text: fait
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 24
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 28
+    norm: quelque
+    pos: DET
+    text: quelque
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 36
+    norm: chose
+    pos: NOUN
+    text: chose
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 42
+    norm: parce
+    pos: SCONJ
+    text: parce
+    trailing_whitespace: ' '
+  - dep: fixed
+    idx: 48
+    norm: qu'
+    pos: SCONJ
+    text: qu'
+    trailing_whitespace: ''
+  - dep: nsubj
+    idx: 51
+    norm: 'on'
+    pos: PRON
+    text: 'on'
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 54
+    norm: n'
+    pos: ADV
+    text: n'
+    trailing_whitespace: ''
+  - dep: advcl
+    idx: 56
+    norm: a
+    pos: VERB
+    text: a
+    trailing_whitespace: ' '
+  - dep: advmod
+    idx: 58
+    norm: pas
+    pos: ADV
+    text: pas
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 62
+    norm: le
+    pos: DET
+    text: le
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 65
+    norm: temps
+    pos: NOUN
+    text: temps
+    trailing_whitespace: ' '
+  - dep: mark
+    idx: 71
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: obj
+    idx: 74
+    norm: le
+    pos: PRON
+    text: le
+    trailing_whitespace: ' '
+  - dep: acl
+    idx: 77
+    norm: faire
+    pos: VERB
+    text: faire
+    trailing_whitespace: ''
+  - dep: punct
+    idx: 82
+    norm: .
+    pos: PUNCT
+    text: .
+    trailing_whitespace: ''
 ? Peut-être que vous avez besoin de passer du temps avec votre famille, mais que cette
   année vous n'avez pas réussi à le faire.
 : tokens_en:
@@ -11157,154 +11203,111 @@ Nous, on a vu que l'inspecteur, la maîtresse et le directeur n'avaient pas l'ai
     pos: PUNCT
     text: .
     trailing_whitespace: ''
-? Peut-être que vous avez besoin de passer du temps avec votre famille, mais que cette
-  année vous n’avez pas réussi à le faire.
-: tokens_en:
-    Maybe you need to spend some time with your family, but this year you haven't been able to.:
-    - dep: advmod
+Qu'est-ce que vous faites ? dit alors une voix à l'autre bout de la salle.:
+  tokens_en:
+    What are you doing ? then said a voice from across the room.:
+    - dep: dobj
       idx: 0
-      norm: maybe
-      pos: ADV
-      text: Maybe
+      norm: what
+      pos: PRON
+      text: What
+      trailing_whitespace: ' '
+    - dep: aux
+      idx: 5
+      norm: are
+      pos: AUX
+      text: are
       trailing_whitespace: ' '
     - dep: nsubj
-      idx: 6
+      idx: 9
       norm: you
       pos: PRON
       text: you
       trailing_whitespace: ' '
     - dep: ROOT
-      idx: 10
-      norm: need
+      idx: 13
+      norm: doing
       pos: VERB
-      text: need
+      text: doing
       trailing_whitespace: ' '
-    - dep: aux
-      idx: 15
-      norm: to
-      pos: PART
-      text: to
+    - dep: punct
+      idx: 19
+      norm: '?'
+      pos: PUNCT
+      text: '?'
       trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 18
-      norm: spend
+    - dep: advmod
+      idx: 21
+      norm: then
+      pos: ADV
+      text: then
+      trailing_whitespace: ' '
+    - dep: ROOT
+      idx: 26
+      norm: said
       pos: VERB
-      text: spend
+      text: said
       trailing_whitespace: ' '
     - dep: det
-      idx: 24
-      norm: some
+      idx: 31
+      norm: a
       pos: DET
-      text: some
+      text: a
       trailing_whitespace: ' '
     - dep: dobj
-      idx: 29
-      norm: time
+      idx: 33
+      norm: voice
       pos: NOUN
-      text: time
+      text: voice
       trailing_whitespace: ' '
     - dep: prep
-      idx: 34
-      norm: with
-      pos: ADP
-      text: with
-      trailing_whitespace: ' '
-    - dep: poss
       idx: 39
-      norm: your
-      pos: PRON
-      text: your
+      norm: from
+      pos: ADP
+      text: from
       trailing_whitespace: ' '
-    - dep: pobj
+    - dep: prep
       idx: 44
-      norm: family
-      pos: NOUN
-      text: family
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 50
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 52
-      norm: but
-      pos: CCONJ
-      text: but
+      norm: across
+      pos: ADP
+      text: across
       trailing_whitespace: ' '
     - dep: det
-      idx: 56
-      norm: this
+      idx: 51
+      norm: the
       pos: DET
-      text: this
+      text: the
       trailing_whitespace: ' '
-    - dep: npadvmod
-      idx: 61
-      norm: year
+    - dep: pobj
+      idx: 55
+      norm: room
       pos: NOUN
-      text: year
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 66
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 70
-      norm: have
-      pos: AUX
-      text: have
-      trailing_whitespace: ''
-    - dep: neg
-      idx: 74
-      norm: not
-      pos: PART
-      text: n't
-      trailing_whitespace: ' '
-    - dep: conj
-      idx: 78
-      norm: been
-      pos: VERB
-      text: been
-      trailing_whitespace: ' '
-    - dep: acomp
-      idx: 83
-      norm: able
-      pos: ADJ
-      text: able
-      trailing_whitespace: ' '
-    - dep: xcomp
-      idx: 88
-      norm: to
-      pos: PART
-      text: to
+      text: room
       trailing_whitespace: ''
     - dep: punct
-      idx: 90
+      idx: 59
       norm: .
       pos: PUNCT
       text: .
       trailing_whitespace: ''
   tokens_fr:
-  - dep: advmod
+  - dep: ROOT
     idx: 0
-    norm: peut
-    pos: ADV
-    text: Peut
+    norm: qu'
+    pos: PRON
+    text: Qu'
     trailing_whitespace: ''
-  - dep: advmod
-    idx: 4
-    norm: '-'
-    pos: ADV
-    text: '-'
-    trailing_whitespace: ''
-  - dep: advmod
-    idx: 5
-    norm: être
+  - dep: dep
+    idx: 3
+    norm: est
     pos: AUX
-    text: être
+    text: est
+    trailing_whitespace: ''
+  - dep: dep
+    idx: 6
+    norm: -ce
+    pos: PRON
+    text: -ce
     trailing_whitespace: ' '
   - dep: mark
     idx: 10
@@ -11318,140 +11321,86 @@ Nous, on a vu que l'inspecteur, la maîtresse et le directeur n'avaient pas l'ai
     pos: PRON
     text: vous
     trailing_whitespace: ' '
-  - dep: ROOT
+  - dep: dep
     idx: 19
-    norm: avez
+    norm: faites
     pos: VERB
-    text: avez
+    text: faites
     trailing_whitespace: ' '
-  - dep: obj
-    idx: 24
-    norm: besoin
-    pos: NOUN
-    text: besoin
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 31
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 34
-    norm: passer
-    pos: VERB
-    text: passer
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 41
-    norm: du
-    pos: ADP
-    text: du
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 44
-    norm: temps
-    pos: NOUN
-    text: temps
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 50
-    norm: avec
-    pos: ADP
-    text: avec
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 55
-    norm: votre
-    pos: DET
-    text: votre
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 61
-    norm: famille
-    pos: NOUN
-    text: famille
-    trailing_whitespace: ''
   - dep: punct
-    idx: 68
-    norm: ','
+    idx: 26
+    norm: '?'
     pos: PUNCT
-    text: ','
+    text: '?'
     trailing_whitespace: ' '
-  - dep: cc
-    idx: 70
-    norm: mais
-    pos: CCONJ
-    text: mais
+  - dep: ROOT
+    idx: 28
+    norm: dit
+    pos: VERB
+    text: dit
     trailing_whitespace: ' '
-  - dep: mark
-    idx: 75
-    norm: que
-    pos: SCONJ
-    text: que
+  - dep: advmod
+    idx: 32
+    norm: alors
+    pos: ADV
+    text: alors
     trailing_whitespace: ' '
   - dep: det
-    idx: 79
-    norm: cette
+    idx: 38
+    norm: une
     pos: DET
-    text: cette
+    text: une
     trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 85
-    norm: année
+  - dep: obj
+    idx: 42
+    norm: voix
     pos: NOUN
-    text: année
+    text: voix
     trailing_whitespace: ' '
-  - dep: iobj
-    idx: 91
-    norm: vous
-    pos: PRON
-    text: vous
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 96
-    norm: n’
-    pos: ADV
-    text: n’
-    trailing_whitespace: ''
-  - dep: aux:tense
-    idx: 98
-    norm: avez
-    pos: AUX
-    text: avez
-    trailing_whitespace: ' '
-  - dep: advmod
-    idx: 103
-    norm: pas
-    pos: ADV
-    text: pas
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 107
-    norm: réussi
-    pos: VERB
-    text: réussi
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 114
+  - dep: case
+    idx: 47
     norm: à
     pos: ADP
     text: à
     trailing_whitespace: ' '
-  - dep: obj
-    idx: 116
-    norm: le
-    pos: PRON
-    text: le
+  - dep: det
+    idx: 49
+    norm: l'
+    pos: DET
+    text: l'
+    trailing_whitespace: ''
+  - dep: amod
+    idx: 51
+    norm: autre
+    pos: ADJ
+    text: autre
     trailing_whitespace: ' '
-  - dep: xcomp
-    idx: 119
-    norm: faire
-    pos: VERB
-    text: faire
+  - dep: nmod
+    idx: 57
+    norm: bout
+    pos: NOUN
+    text: bout
+    trailing_whitespace: ' '
+  - dep: case
+    idx: 62
+    norm: de
+    pos: ADP
+    text: de
+    trailing_whitespace: ' '
+  - dep: det
+    idx: 65
+    norm: la
+    pos: DET
+    text: la
+    trailing_whitespace: ' '
+  - dep: nmod
+    idx: 68
+    norm: salle
+    pos: NOUN
+    text: salle
     trailing_whitespace: ''
   - dep: punct
-    idx: 124
+    idx: 73
     norm: .
     pos: PUNCT
     text: .
@@ -11760,335 +11709,6 @@ Nous, on a vu que l'inspecteur, la maîtresse et le directeur n'avaient pas l'ai
     norm: d'
     pos: ADP
     text: d'
-    trailing_whitespace: ''
-  - dep: acl
-    idx: 113
-    norm: apprendre
-    pos: VERB
-    text: apprendre
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 123
-    norm: le
-    pos: DET
-    text: le
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 126
-    norm: français
-    pos: NOUN
-    text: français
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 134
-    norm: .
-    pos: PUNCT
-    text: .
-    trailing_whitespace: ''
-? Quand vous êtes à l’école, vous prenez un cours de français, par exemple, et vous
-  savez que vous êtes en train d’apprendre le français.
-: tokens_en:
-    When you are at school, you take a French course, for example, and you know that you are learning French.:
-    - dep: advmod
-      idx: 0
-      norm: when
-      pos: ADV
-      text: When
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 5
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: advcl
-      idx: 9
-      norm: are
-      pos: VERB
-      text: are
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 13
-      norm: at
-      pos: ADP
-      text: at
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 16
-      norm: school
-      pos: NOUN
-      text: school
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 22
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 24
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: ROOT
-      idx: 28
-      norm: take
-      pos: VERB
-      text: take
-      trailing_whitespace: ' '
-    - dep: det
-      idx: 33
-      norm: a
-      pos: DET
-      text: a
-      trailing_whitespace: ' '
-    - dep: amod
-      idx: 35
-      norm: french
-      pos: ADJ
-      text: French
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 42
-      norm: course
-      pos: NOUN
-      text: course
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 48
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: prep
-      idx: 50
-      norm: for
-      pos: ADP
-      text: for
-      trailing_whitespace: ' '
-    - dep: pobj
-      idx: 54
-      norm: example
-      pos: NOUN
-      text: example
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 61
-      norm: ','
-      pos: PUNCT
-      text: ','
-      trailing_whitespace: ' '
-    - dep: cc
-      idx: 63
-      norm: and
-      pos: CCONJ
-      text: and
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 67
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: conj
-      idx: 71
-      norm: know
-      pos: VERB
-      text: know
-      trailing_whitespace: ' '
-    - dep: mark
-      idx: 76
-      norm: that
-      pos: SCONJ
-      text: that
-      trailing_whitespace: ' '
-    - dep: nsubj
-      idx: 81
-      norm: you
-      pos: PRON
-      text: you
-      trailing_whitespace: ' '
-    - dep: aux
-      idx: 85
-      norm: are
-      pos: AUX
-      text: are
-      trailing_whitespace: ' '
-    - dep: ccomp
-      idx: 89
-      norm: learning
-      pos: VERB
-      text: learning
-      trailing_whitespace: ' '
-    - dep: dobj
-      idx: 98
-      norm: french
-      pos: PROPN
-      text: French
-      trailing_whitespace: ''
-    - dep: punct
-      idx: 104
-      norm: .
-      pos: PUNCT
-      text: .
-      trailing_whitespace: ''
-  tokens_fr:
-  - dep: mark
-    idx: 0
-    norm: quand
-    pos: SCONJ
-    text: Quand
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 6
-    norm: vous
-    pos: PRON
-    text: vous
-    trailing_whitespace: ' '
-  - dep: advcl
-    idx: 11
-    norm: êtes
-    pos: VERB
-    text: êtes
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 16
-    norm: à
-    pos: ADP
-    text: à
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 18
-    norm: l’
-    pos: DET
-    text: l’
-    trailing_whitespace: ''
-  - dep: obl:arg
-    idx: 20
-    norm: école
-    pos: NOUN
-    text: école
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 25
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 27
-    norm: vous
-    pos: PRON
-    text: vous
-    trailing_whitespace: ' '
-  - dep: ROOT
-    idx: 32
-    norm: prenez
-    pos: VERB
-    text: prenez
-    trailing_whitespace: ' '
-  - dep: det
-    idx: 39
-    norm: un
-    pos: DET
-    text: un
-    trailing_whitespace: ' '
-  - dep: obj
-    idx: 42
-    norm: cours
-    pos: NOUN
-    text: cours
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 48
-    norm: de
-    pos: ADP
-    text: de
-    trailing_whitespace: ' '
-  - dep: nmod
-    idx: 51
-    norm: français
-    pos: ADJ
-    text: français
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 59
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 61
-    norm: par
-    pos: ADP
-    text: par
-    trailing_whitespace: ' '
-  - dep: obl:mod
-    idx: 65
-    norm: exemple
-    pos: NOUN
-    text: exemple
-    trailing_whitespace: ''
-  - dep: punct
-    idx: 72
-    norm: ','
-    pos: PUNCT
-    text: ','
-    trailing_whitespace: ' '
-  - dep: cc
-    idx: 74
-    norm: et
-    pos: CCONJ
-    text: et
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 77
-    norm: vous
-    pos: PRON
-    text: vous
-    trailing_whitespace: ' '
-  - dep: conj
-    idx: 82
-    norm: savez
-    pos: VERB
-    text: savez
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 88
-    norm: que
-    pos: SCONJ
-    text: que
-    trailing_whitespace: ' '
-  - dep: nsubj
-    idx: 92
-    norm: vous
-    pos: PRON
-    text: vous
-    trailing_whitespace: ' '
-  - dep: cop
-    idx: 97
-    norm: êtes
-    pos: AUX
-    text: êtes
-    trailing_whitespace: ' '
-  - dep: case
-    idx: 102
-    norm: en
-    pos: ADP
-    text: en
-    trailing_whitespace: ' '
-  - dep: ccomp
-    idx: 105
-    norm: train
-    pos: NOUN
-    text: train
-    trailing_whitespace: ' '
-  - dep: mark
-    idx: 111
-    norm: d’
-    pos: ADP
-    text: d’
     trailing_whitespace: ''
   - dep: acl
     idx: 113

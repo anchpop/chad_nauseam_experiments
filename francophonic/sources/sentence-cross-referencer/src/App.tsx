@@ -615,6 +615,7 @@ const getTokensAvailable = (
         };
       }
     }
+
     return {
       english: node.info[branch]!.english,
       french: node.info[branch]!.french,
@@ -645,7 +646,7 @@ const getTokensAvailable = (
   }
 
   const node = parseIndexParent(parseTree, _.initial(selectedParseNode));
-  return tokensGivenToChildren(node, _.last(selectedParseNode)![1]);
+  return tokensGivenToChildren(node, _.last(_.initial(selectedParseNode))![1]);
 };
 
 const getTokensSelected = (
