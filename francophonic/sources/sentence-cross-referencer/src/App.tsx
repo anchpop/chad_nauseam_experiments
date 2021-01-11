@@ -755,6 +755,19 @@ const LoadedApp = ({
     const newState = produce(appState, (draftState) => {
       const oldTree = draftState.parseTrees[draftState.currentSentenceString];
       draftState.parseTrees[draftState.currentSentenceString] = f(oldTree);
+      while (draftState.selectedParseNode.length > 0) {
+        try {
+          parseIndex(
+            draftState.parseTrees[draftState.currentSentenceString],
+            draftState.selectedParseNode
+          );
+          break;
+        } catch (error) {
+          draftState.selectedParseNode = _.initial(
+            draftState.selectedParseNode
+          );
+        }
+      }
       draftState.previousParseTrees.push(oldTree);
     });
     setAppState(newState);
@@ -854,6 +867,7 @@ const LoadedApp = ({
                 ...appState,
                 currentSentenceString: frenchSentence,
                 previousParseTrees: [],
+                selectedParseNode: [],
               })
             }
             key={index}
