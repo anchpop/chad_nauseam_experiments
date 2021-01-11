@@ -237,6 +237,7 @@ const ReviewScreen = () => {
     sentenceInfo.parse
   );
 
+  console.log("==============");
   const ltoInfoUnlimited: {
     enteredCharacters: string;
     goal: string;
@@ -255,6 +256,24 @@ const ReviewScreen = () => {
       goal: token.text,
       lfromChunk: association.french[0],
     }));
+
+    /*
+    Issue occurs when the leaves of the tree constitute more than one token: 
+      entered:  " goal:  "
+      entered:  A goal:  A
+      entered:  A goal:  lot
+
+    Here, the leaf node corresponds to "A lot", and this code incorrectly thinks "A" and "lot" are seperate goals 
+    (alternatively, it thinks "A" has been entered for both tokens when it should only have been entered for the first, 
+      depending on how you want to fix it. I actually think that might be the easier fix) 
+    */
+
+    console.log(
+      toEnter.every(({ enteredCharacters, goal }) => {
+        console.log("entered: ", enteredCharacters, "goal: ", goal);
+        return goal.startsWith(enteredCharacters);
+      })
+    );
 
     if (
       toEnter.every(({ enteredCharacters, goal }) =>
@@ -292,10 +311,24 @@ const ReviewScreen = () => {
     return <Text>no code for this part yet :3</Text>;
   }
 
+  console.assert(ltoInfo !== undefined);
+
   const possibleNextTokens = ltoInfo.map(
     (ltoAnswer) => ltoAnswer[tokensCorrectlyEntered]
   );
+  /*
+  console.assert(possibleNextTokens !== undefined);
 
+  possibleNextTokens.forEach((possibleNext) =>
+    console.assert(possibleNext !== undefined)
+  );
+  possibleNextTokens.forEach(({ lfromChunk }) =>
+    console.assert(lfromChunk !== undefined)
+  );
+  if (possibleNextTokens.length > 0) {
+    console.assert(possibleNextTokens[0] !== undefined);
+  }
+  console.log("test");
   // I *think* all the `lfromChunk`s should be equal but I'm not totally sure this is the case
   // This should check to make sure I didn't mess it up
   console.assert(
@@ -303,7 +336,7 @@ const ReviewScreen = () => {
       _.isEqual(lfromChunk, possibleNextTokens[0].lfromChunk)
     )
   );
-
+*/
   const lfromChunk = possibleNextTokens[0].lfromChunk;
 
   const possibleNextCharacters = _.uniq(

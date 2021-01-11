@@ -96,7 +96,7 @@ parseTrees:
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 6
-                            subTree: &ref_0 []
+                            subTree: &ref_1 []
                           subject:
                             french:
                               - 1
@@ -108,33 +108,57 @@ parseTrees:
                                 - 3
                                 - 1
                                 - 2
-                            subTree: *ref_0
+                            subTree:
+                              - element: Noun
+                                info:
+                                  root:
+                                    french:
+                                      - 3
+                                    english:
+                                      '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
+                                        - 4
+                                    subTree: &ref_0 []
+                                  article:
+                                    french: []
+                                    english:
+                                      '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
+                                    subTree: *ref_0
+                                  modification:
+                                    french:
+                                      - 1
+                                      - 2
+                                    english:
+                                      '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
+                                        - 3
+                                        - 2
+                                        - 1
+                                    subTree: []
                           directObject:
                             french:
                               - 4
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 7
-                            subTree: *ref_0
+                            subTree: *ref_1
                           indirectObject:
                             french:
                               - 7
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 8
-                            subTree: *ref_0
+                            subTree: *ref_1
                           auxiliary:
                             french:
                               - 5
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 5
-                            subTree: *ref_0
+                            subTree: *ref_1
                           modification:
                             french: []
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
-                            subTree: *ref_0
+                            subTree: *ref_1
                       - element: Punctuation
                         info:
                           root:
@@ -188,14 +212,14 @@ parseTrees:
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 14
-                            subTree: &ref_1 []
+                            subTree: &ref_2 []
                           subject:
                             french:
                               - 10
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                 - 11
-                            subTree: *ref_1
+                            subTree: *ref_2
                           directObject:
                             french:
                               - 15
@@ -229,7 +253,7 @@ parseTrees:
                                     english:
                                       '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                         - 19
-                                    subTree: &ref_6 []
+                                    subTree: &ref_7 []
                                   subject:
                                     french:
                                       - 15
@@ -248,13 +272,13 @@ parseTrees:
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 16
-                                            subTree: &ref_2 []
+                                            subTree: &ref_3 []
                                           article:
                                             french:
                                               - 15
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
-                                            subTree: *ref_2
+                                            subTree: *ref_3
                                           modification:
                                             french:
                                               - 16
@@ -290,14 +314,14 @@ parseTrees:
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 22
-                                            subTree: &ref_3 []
+                                            subTree: &ref_4 []
                                           subject:
                                             french:
                                               - 21
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 20
-                                            subTree: *ref_3
+                                            subTree: *ref_4
                                           directObject:
                                             french:
                                               - 22
@@ -305,24 +329,24 @@ parseTrees:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 23
                                                 - 24
-                                            subTree: *ref_3
-                                          indirectObject: &ref_5
-                                            french: &ref_4 []
+                                            subTree: *ref_4
+                                          indirectObject: &ref_6
+                                            french: &ref_5 []
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
-                                            subTree: *ref_3
+                                            subTree: *ref_4
                                           auxiliary:
-                                            french: *ref_4
+                                            french: *ref_5
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 21
-                                            subTree: *ref_3
-                                          modification: *ref_5
-                                  indirectObject: &ref_7
+                                            subTree: *ref_4
+                                          modification: *ref_6
+                                  indirectObject: &ref_8
                                     french: []
                                     english:
                                       '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
-                                    subTree: *ref_6
+                                    subTree: *ref_7
                                   auxiliary:
                                     french:
                                       - 18
@@ -330,15 +354,15 @@ parseTrees:
                                       '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                         - 18
                                         - 17
-                                    subTree: *ref_6
-                                  modification: *ref_7
-                          indirectObject: &ref_8
+                                    subTree: *ref_7
+                                  modification: *ref_8
+                          indirectObject: &ref_9
                             french: []
                             english:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
-                            subTree: *ref_1
-                          auxiliary: *ref_8
-                          modification: *ref_8
+                            subTree: *ref_2
+                          auxiliary: *ref_9
+                          modification: *ref_9
               - element: Punctuation
                 info:
                   root:
