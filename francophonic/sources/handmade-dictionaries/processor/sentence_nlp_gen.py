@@ -69,7 +69,8 @@ def main():
 
     pairs = [(k, v) for k, v in sentences.items() if True or ('"' not in k and '-' not in k)]
 
-    pairs.sort(key=lambda sentence: rate_french_sentence_easiness(sentence[0], analysis), reverse=True)
+    # pairs.sort(key=lambda sentence: rate_french_sentence_easiness(sentence[0], analysis), reverse=True)
+    pairs.sort(key=lambda sentence: rate_french_sentence_reading_level(sentence[0], analysis), reverse=True)
 
     data = {k: v for pair in pairs[:50] for k, v in get_nlp_info(nlp_en, nlp_fr, pair, analysis).items()}
 

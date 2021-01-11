@@ -110,6 +110,12 @@ def rate_french_sentence_easiness(sentence, analysis):
         sum(analysis.words[word].values()) for word in words
     ]) 
 
+def rate_french_sentence_reading_level(sentence, analysis):
+    words = set(line_to_words_french(sentence))
+    return sum([ # for our purposes, the sentence is as hard as the sum of the difficulty of all its words
+        sum(analysis.words[word].values()) for word in words
+    ]) 
+
 
 def flatten(l): return [item for sublist in l for item in sublist]
 
