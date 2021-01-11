@@ -33,7 +33,7 @@ import associationInfo from "./data/wordAssociations";
 var shuffleSeed = require("shuffle-seed");
 
 interface ReviewState {
-  enteredCharacters: Map<number[], string>;
+  enteredCharacters: Map<number[], string[]>;
 }
 
 const initialReviewState: () => ReviewState = () => ({
@@ -242,6 +242,7 @@ const ReviewScreen = () => {
     enteredCharacters: string;
     goal: string;
     lfromChunk: number[];
+    ltoChunkIndex: number;
   }[][] = ltoSentences.flatMap(([ltoSentence, ltoSentenceTokens]) => {
     const associations = ltoSentenceTokens.map((token, index) => ({
       association: itiriri(allAssociations.values())
@@ -250,12 +251,23 @@ const ReviewScreen = () => {
       token: token,
     }));
 
-    const toEnter = associations.map(({ association, token }) => ({
-      enteredCharacters:
-        appState.enteredCharacters.get(association.french[0]) || "",
-      goal: token.text,
-      lfromChunk: association.french[0],
-    }));
+    const toEnter = associations.map(
+      ({ association, token }, ltoTokenIndex) => {
+        const ltoIndices = association.english[ltoSentence][0];
+        const ltoChunkIndex = ltoIndices.findIndex((i) => i === ltoTokenIndex);
+
+        const enteredForChunk =
+          (appState.enteredCharacters.get(association.french[0]) || [])[
+            ltoChunkIndex
+          ] || "";
+        return {
+          enteredCharacters: enteredForChunk,
+          goal: token.text,
+          lfromChunk: association.french[0],
+          ltoChunkIndex,
+        };
+      }
+    );
 
     /*
     Issue occurs when the leaves of the tree constitute more than one token: 
@@ -349,19 +361,30 @@ const ReviewScreen = () => {
   const ltoAnswer = ltoInfo[0]!;
 
   const letters = shuffleSeed.shuffle(
-    possibleNextCharacters
-      .map((letter) => ({
-        text: letter,
-        onPress: () => {
-          setAppState(
-            produce(appState, (draftState) => {
-              const previous =
-                draftState.enteredCharacters.get(lfromChunk) || "";
-              draftState.enteredCharacters.set(lfromChunk, previous + letter);
-            })
-          );
-        },
-      }))
+    possibleNextTokens
+      .map(({ enteredCharacters, goal, ltoChunkIndex }) => {
+        const letter = goal.substring(enteredCharacters.length)[0]!;
+
+        return {
+          text: letter,
+          onPress: () => {
+            setAppState(
+              produce(appState, (draftState) => {
+                const previousEntered =
+                  draftState.enteredCharacters.get(lfromChunk) ||
+                  _.fill(Array(ltoChunkIndex + 1), "");
+                const newEntered: string[] = produce(
+                  previousEntered,
+                  (draftNew) => {
+                    draftNew[ltoChunkIndex] += letter;
+                  }
+                );
+                draftState.enteredCharacters.set(lfromChunk, newEntered);
+              })
+            );
+          },
+        };
+      })
       .concat(
         _.range(4).map((_i) => ({
           text: ":",
