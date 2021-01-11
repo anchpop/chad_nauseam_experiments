@@ -184,7 +184,6 @@ parseTrees:
                       - 21
                       - 22
                       - 23
-                      - 24
                     english:
                       '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                         - 11
@@ -201,7 +200,6 @@ parseTrees:
                         - 22
                         - 23
                         - 24
-                        - 25
                     subTree:
                       - element: TransitiveVerb
                         info:
@@ -321,6 +319,7 @@ parseTrees:
                                             english:
                                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
                                                 - 20
+                                                - 21
                                             subTree: *ref_4
                                           directObject:
                                             french:
@@ -338,8 +337,7 @@ parseTrees:
                                           auxiliary:
                                             french: *ref_5
                                             english:
-                                              '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
-                                                - 21
+                                              '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
                                             subTree: *ref_4
                                           modification: *ref_6
                                   indirectObject: &ref_8
@@ -362,7 +360,15 @@ parseTrees:
                               '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."': []
                             subTree: *ref_2
                           auxiliary: *ref_9
-                          modification: *ref_9
+                          modification:
+                            french:
+                              - 11
+                              - 13
+                            english:
+                              '"A lot of people have asked me this, but I don''t think Professor Quirrell would have wanted me to talk about it."':
+                                - 12
+                                - 13
+                            subTree: *ref_2
               - element: Punctuation
                 info:
                   root:

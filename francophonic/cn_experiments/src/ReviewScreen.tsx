@@ -98,23 +98,27 @@ const AnswerView = ({
   const { reviewPageStyles } = useStyle();
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
-      {enteredCharacters.map(({ enteredCharacters, goal }, index) => (
-        <View key={index}>
-          <Text
-            style={[
-              reviewPageStyles.answerBox,
-              tokensCorrectlyEntered === index
-                ? reviewPageStyles.answerBoxHighlight
-                : {},
-            ]}
-          >
-            <Text style={reviewPageStyles.answerText}>{enteredCharacters}</Text>
-            <Text style={reviewPageStyles.answerTextInvis}>
-              {goal.substring(enteredCharacters.length, goal.length)}
+      <Text>
+        {enteredCharacters.map(({ enteredCharacters, goal }, index) => (
+          <View key={index}>
+            <Text
+              style={[
+                reviewPageStyles.answerBox,
+                tokensCorrectlyEntered === index
+                  ? reviewPageStyles.answerBoxHighlight
+                  : {},
+              ]}
+            >
+              <Text style={reviewPageStyles.answerText}>
+                {enteredCharacters}
+              </Text>
+              <Text style={reviewPageStyles.answerTextInvis}>
+                {goal.substring(enteredCharacters.length, goal.length)}
+              </Text>
             </Text>
-          </Text>
-        </View>
-      ))}
+          </View>
+        ))}
+      </Text>
     </View>
   );
 };
@@ -237,12 +241,12 @@ const ReviewScreen = () => {
     sentenceInfo.parse
   );
 
-  console.log("==============");
   const ltoInfoUnlimited: {
     enteredCharacters: string;
     goal: string;
     lfromChunk: number[];
     ltoChunkIndex: number;
+    ltoChunkLength: number;
   }[][] = ltoSentences.flatMap(([ltoSentence, ltoSentenceTokens]) => {
     const associations = ltoSentenceTokens.map((token, index) => ({
       association: itiriri(allAssociations.values())
@@ -265,20 +269,10 @@ const ReviewScreen = () => {
           goal: token.text,
           lfromChunk: association.french[0],
           ltoChunkIndex,
+          ltoChunkLength: ltoIndices.length,
         };
       }
     );
-
-    /*
-    Issue occurs when the leaves of the tree constitute more than one token: 
-      entered:  " goal:  "
-      entered:  A goal:  A
-      entered:  A goal:  lot
-
-    Here, the leaf node corresponds to "A lot", and this code incorrectly thinks "A" and "lot" are seperate goals 
-    (alternatively, it thinks "A" has been entered for both tokens when it should only have been entered for the first, 
-      depending on how you want to fix it. I actually think that might be the easier fix) 
-    */
 
     console.log(
       toEnter.every(({ enteredCharacters, goal }) => {
@@ -323,32 +317,48 @@ const ReviewScreen = () => {
     return <Text>no code for this part yet :3</Text>;
   }
 
-  console.assert(ltoInfo !== undefined);
-
   const possibleNextTokens = ltoInfo.map(
     (ltoAnswer) => ltoAnswer[tokensCorrectlyEntered]
   );
-  /*
-  console.assert(possibleNextTokens !== undefined);
 
-  possibleNextTokens.forEach((possibleNext) =>
-    console.assert(possibleNext !== undefined)
-  );
-  possibleNextTokens.forEach(({ lfromChunk }) =>
-    console.assert(lfromChunk !== undefined)
-  );
-  if (possibleNextTokens.length > 0) {
-    console.assert(possibleNextTokens[0] !== undefined);
+  // assertions
+  if (true) {
+    if (ltoInfoUnlimited.length === 0) {
+      console.error("ltoInfoUnlimited is empty!");
+    }
+    if (ltoInfo.length === 0) {
+      console.error("ltoInfo is empty!");
+    }
+
+    if (possibleNextTokens === undefined) {
+      console.error("possibleNextTokens === undefined");
+    }
+    if (possibleNextTokens.length === 0) {
+      console.error("possibleNextTokens is empty");
+    }
+
+    possibleNextTokens.forEach((possibleNext) => {
+      if (possibleNext === undefined)
+        console.error("possibleNext === undefined");
+    });
+    possibleNextTokens.forEach(({ lfromChunk }) => {
+      if (lfromChunk === undefined) console.error("lfromChunk === undefined");
+    });
+    if (possibleNextTokens.length > 0) {
+      if (possibleNextTokens[0] === undefined) {
+        console.error("possibleNextTokens[0] === undefined");
+      }
+    }
+
+    // I *think* all the `lfromChunk`s should be equal but I'm not totally sure this is the case
+    // This should check to make sure I didn't mess it up
+    possibleNextTokens.forEach(({ lfromChunk }) => {
+      if (!_.isEqual(lfromChunk, possibleNextTokens[0].lfromChunk)) {
+        console.error("lfromChunk !== possibleNextTokens[0].lfromChunk");
+      }
+    });
   }
-  console.log("test");
-  // I *think* all the `lfromChunk`s should be equal but I'm not totally sure this is the case
-  // This should check to make sure I didn't mess it up
-  console.assert(
-    possibleNextTokens.every(({ lfromChunk }) =>
-      _.isEqual(lfromChunk, possibleNextTokens[0].lfromChunk)
-    )
-  );
-*/
+
   const lfromChunk = possibleNextTokens[0].lfromChunk;
 
   const possibleNextCharacters = _.uniq(
@@ -362,7 +372,7 @@ const ReviewScreen = () => {
 
   const letters = shuffleSeed.shuffle(
     possibleNextTokens
-      .map(({ enteredCharacters, goal, ltoChunkIndex }) => {
+      .map(({ enteredCharacters, goal, ltoChunkIndex, ltoChunkLength }) => {
         const letter = goal.substring(enteredCharacters.length)[0]!;
 
         return {
@@ -372,7 +382,7 @@ const ReviewScreen = () => {
               produce(appState, (draftState) => {
                 const previousEntered =
                   draftState.enteredCharacters.get(lfromChunk) ||
-                  _.fill(Array(ltoChunkIndex + 1), "");
+                  _.fill(Array(ltoChunkLength), "");
                 const newEntered: string[] = produce(
                   previousEntered,
                   (draftNew) => {
@@ -391,10 +401,10 @@ const ReviewScreen = () => {
           onPress: () => {},
         }))
       ),
-    _.toString(
+    /*_.toString(
       tokensCorrectlyEntered +
         100 * ltoAnswer[tokensCorrectlyEntered].enteredCharacters.length
-    )
+    )*/ 0
   );
 
   return (

@@ -248,7 +248,6 @@ const associationInfo: AssociationInfo = {
                         21,
                         22,
                         23,
-                        24,
                       ],
                       english: {
                         '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [
@@ -266,7 +265,6 @@ const associationInfo: AssociationInfo = {
                           22,
                           23,
                           24,
-                          25,
                         ],
                       },
                       subTree: [
@@ -403,6 +401,7 @@ const associationInfo: AssociationInfo = {
                                               english: {
                                                 '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [
                                                   20,
+                                                  21,
                                                 ],
                                               },
                                               subTree: [],
@@ -427,9 +426,7 @@ const associationInfo: AssociationInfo = {
                                             auxiliary: {
                                               french: [],
                                               english: {
-                                                '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [
-                                                  21,
-                                                ],
+                                                '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [],
                                               },
                                               subTree: [],
                                             },
@@ -487,9 +484,12 @@ const associationInfo: AssociationInfo = {
                               subTree: [],
                             },
                             modification: {
-                              french: [],
+                              french: [11, 13],
                               english: {
-                                '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [],
+                                '"A lot of people have asked me this, but I don\'t think Professor Quirrell would have wanted me to talk about it."': [
+                                  12,
+                                  13,
+                                ],
                               },
                               subTree: [],
                             },
